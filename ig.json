@@ -1,0 +1,33 @@
+{
+  "paths": {
+    "resources": [
+      "resources",
+      "examples"
+    ],
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa",
+    "specification": "http://build.fhir.org/"
+  },
+  "template": "https://github.com/ahdis/test-template",
+  "version": "4.0.0",
+  "fixed-business-version": "0.0.1",
+  "license" : "CC0-1.0",
+  "npm-name" : "ch.fhir.ig.ch-emed",
+  "path-pattern": "[type]-[id].html",
+  "canonicalBase": "http://fhir.ch/ig/ch-emed",
+  "dependencyList": [  
+        {
+       "name" : "chcore",
+       "package" : "ch.fhir.ig.core",
+       "version" : "dev"
+    }
+  ],
+  "source": "ch.fhir.ig.ch-emed-0.0.1.xml",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "special-urls": [],
+  "resources" : { 
+     "*" : "*"
+  }
+}

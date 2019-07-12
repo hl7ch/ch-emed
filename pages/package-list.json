@@ -1,0 +1,22 @@
+{
+  "package-id": "ch.fhir.ig.ech-med",
+  "title": "CH-EPR (R4)",
+  "introduction": "Implementation guide for the meta data specified in the framework of Annex 3 of the FDHA Ordinance on the electronic patient record in Switzerland",
+  "canonical": "http://fhir.ch/ig/ch-emed",
+  "list": [
+    {
+      "version": "current",
+      "date": "n/a",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://fhir.ch/ig/ch-emed/index.html",
+      "status": "ci-build"
+    },
+    {
+      "version": "dev",
+      "date": "n/a",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/ch-emed/index.html",
+      "status": "ci-build"
+    }
+  ]
+}
