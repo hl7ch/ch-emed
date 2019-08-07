@@ -1,7 +1,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="ch.fhir.ig.ch-emed-0.0.1"/>
-   <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed-0.0.1"/>
-   <name value="CDACHEMED"/>
+   <id value="ch.fhir.ig.ch-emed"/>
+   <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
+   <name value="CH_EMED"/>
+   <title value="CH-EMED"/>
    <status value="active"/>
    <experimental value="false"/>
    <date value="2019-07-10"/>

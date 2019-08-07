@@ -1,21 +1,22 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ch.fhir.ig.ch-emed-0.0.1",
+  "id" : "ch.fhir.ig.ch-emed",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/oliveregger/Documents/github/ch-emed/resources"
+    "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/oliveregger/Documents/github/ch-emed/examples"
+    "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/oliveregger/Documents/github/ch-emed/pages"
+    "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\pages"
   }],
-  "url" : "http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed-0.0.1",
+  "url" : "http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed",
   "version" : "0.0.1",
-  "name" : "CDACHEMED",
+  "name" : "CH_EMED",
+  "title" : "CH-EMED",
   "status" : "active",
   "experimental" : false,
   "date" : "2019-07-10T00:00:00+02:00",

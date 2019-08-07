@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ch.fhir.ig.ch-emed-0.0.1"/>
+  <id value="ch.fhir.ig.ch-emed"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/oliveregger/Documents/github/ch-emed/resources"/>
+    <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/oliveregger/Documents/github/ch-emed/examples"/>
+    <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/oliveregger/Documents/github/ch-emed/pages"/>
+    <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\pages"/>
   </extension>
-  <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed-0.0.1"/>
+  <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
   <version value="0.0.1"/>
-  <name value="CDACHEMED"/>
+  <name value="CH_EMED"/>
+  <title value="CH-EMED"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-07-10T00:00:00+02:00"/>

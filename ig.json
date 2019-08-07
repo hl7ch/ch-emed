@@ -24,7 +24,7 @@
        "version" : "dev"
     }
   ],
-  "source": "ch.fhir.ig.ch-emed-0.0.1.xml",
+  "source": "ch.fhir.ig.ch-emed.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "special-urls": [],
   "resources" : { 
