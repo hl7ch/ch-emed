@@ -1,8 +1,7 @@
 {
   "paths": {
     "resources": [
-      "resources",
-      "examples"
+      "resources"
     ],
     "pages": "pages",
     "temp": "temp",

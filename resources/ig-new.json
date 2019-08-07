@@ -6,10 +6,6 @@
     "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\resources"
   },
   {
-    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\examples"
-  },
-  {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\Users\\micha\\Documents\\GitHub\\ch-emed\\pages"
   }],

@@ -5,9 +5,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\resources"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\examples"/>
-  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="C:\Users\micha\Documents\GitHub\ch-emed\pages"/>
   </extension>
