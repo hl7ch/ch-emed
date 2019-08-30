@@ -30,12 +30,12 @@
       </grouping>
       <resource>
          <reference>
-            <reference value="StructureDefinition/MedicationPrescriptionDocument"/>
+            <reference value="StructureDefinition/ch-emed-medication-prescription-composition"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/MedicationCardDocument"/>
+            <reference value="StructureDefinition/ch-emed-medication-prescription-document"/>
          </reference>
       </resource>
    </definition>

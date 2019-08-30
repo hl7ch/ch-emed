@@ -9,7 +9,7 @@
     "qa": "qa",
     "specification": "http://build.fhir.org/"
   },
-  "template": "https://github.com/ahdis/test-template",
+  "template": "https://github.com/ahdis/ig-template",
   "version": "4.0.0",
   "fixed-business-version": "0.0.1",
   "license" : "CC0-1.0",
@@ -23,7 +23,7 @@
        "version" : "dev"
     }
   ],
-  "source": "ch.fhir.ig.ch-emed.xml",
+  "source": "implementationguide/ch.fhir.ig.ch-emed.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "special-urls": [],
   "resources" : { 
