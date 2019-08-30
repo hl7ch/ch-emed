@@ -19,7 +19,7 @@
   "dependencyList": [  
         {
        "name" : "chcore",
-       "package" : "ch.fhir.ig.core",
+       "package" : "ch.fhir.ig.ch-core",
        "version" : "dev"
     }
   ],
