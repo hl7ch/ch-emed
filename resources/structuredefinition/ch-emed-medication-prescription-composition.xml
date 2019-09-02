@@ -18,8 +18,92 @@
    <differential>
       <element id="Composition">
          <path value="Composition"/>
+      </element>
+      <element id="Composition.section">
+         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+            <valueString value="Section"/>
+         </extension>
+         <path value="Composition.section"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="code.coding.code"/>
+            </discriminator>
+            <ordered value="true"/>
+            <rules value="closed"/>
+         </slicing>
+      </element>
+      <element id="Composition.section:prescriptionSectionContentModule">
+         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+            <valueString value="Section"/>
+         </extension>
+         <path value="Composition.section"/>
+         <sliceName value="prescriptionSectionContentModule"/>
          <min value="1"/>
          <max value="1"/>
+      </element>
+      <element id="Composition.section.code:prescriptionSectionContentModule">
+         <path value="Composition.section.code"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section.code.coding:prescriptionSectionContentModule">
+         <path value="Composition.section.code.coding"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding.system:prescriptionSectionContentModule">
+         <path value="Composition.section.code.coding.system"/>
+         <min value="1"/>
+         <fixedUri value="http://loinc.org"/>
+      </element>
+      <element id="Composition.section.code.coding.code:prescriptionSectionContentModule">
+         <path value="Composition.section.code.coding.code"/>
+         <min value="1"/>
+         <fixedCode value="57828-6"/>
+      </element>
+      <element id="Composition.section.code.coding.display:prescriptionSectionContentModule">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"/>
+         </extension>
+         <path value="Composition.section.code.coding.display"/>
+         <min value="1"/>
+         <fixedString value="PRESCRIPTIONS"/>
+      </element>
+      <element id="Composition.section:remarksCoded">
+         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+            <valueString value="Section"/>
+         </extension>
+         <path value="Composition.section"/>
+         <sliceName value="remarksCoded"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code:remarksCoded">
+         <path value="Composition.section.code"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section.code.coding:remarksCoded">
+         <path value="Composition.section.code.coding"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding.system:remarksCoded">
+         <path value="Composition.section.code.coding.system"/>
+         <min value="1"/>
+         <fixedUri value="http://loinc.org"/>
+      </element>
+      <element id="Composition.section.code.coding.code:remarksCoded">
+         <path value="Composition.section.code.coding.code"/>
+         <min value="1"/>
+         <fixedCode value="48767-8"/>
+      </element>
+      <element id="Composition.section.code.coding.display:remarksCoded">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"/>
+         </extension>
+         <path value="Composition.section.code.coding.display"/>
+         <min value="1"/>
+         <fixedString value="Annotation comment"/>
       </element>
    </differential>
 </StructureDefinition>

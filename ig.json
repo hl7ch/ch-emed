@@ -1,13 +1,14 @@
 {
   "paths": {
     "resources": [
-      "resources"
+      "resources",
+      "examples"
     ],
     "pages": "pages",
     "temp": "temp",
     "output": "output",
     "qa": "qa",
-    "specification": "http://build.fhir.org/"
+    "specification": "http://hl7.org/fhir/r4"
   },
   "template": "https://github.com/ahdis/ig-template",
   "version": "4.0.0",
@@ -15,12 +16,22 @@
   "license" : "CC0-1.0",
   "npm-name" : "ch.fhir.ig.ch-emed",
   "path-pattern": "[type]-[id].html",
+  "extraTemplates": [
+    {
+      "name": "mappings",
+      "description": "Mappings"
+    },
+    {
+      "name": "examples",
+      "description": "Examples"
+    }
+  ],
   "canonicalBase": "http://fhir.ch/ig/ch-emed",
   "dependencyList": [  
         {
        "name" : "chcore",
        "package" : "ch.fhir.ig.ch-core",
-       "version" : "dev"
+       "version" : "current"
     }
   ],
   "source": "implementationguide/ch.fhir.ig.ch-emed.xml",
@@ -28,5 +39,6 @@
   "special-urls": [],
   "resources" : { 
      "*" : "*"
-  }
+  },
+  "suppressedWarningFile": "suppressedwarnings.txt"
 }
