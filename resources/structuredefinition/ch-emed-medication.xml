@@ -1,0 +1,21 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-medication"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+   <name value="CHEMEDMedication"/>
+   <title value="CH EMED Medication Profile"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 on behalf of eHealth Suisse"/>
+   <description value="Profile on Medication for the Medication Prescription Document"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Medication"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Medication">
+         <path value="Medication"/>
+      </element>
+      
+   </differential>
+</StructureDefinition>

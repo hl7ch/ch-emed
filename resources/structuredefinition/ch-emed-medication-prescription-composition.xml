@@ -1,8 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ch-emed-medication-prescription-composition"/>
-   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:hl7-org:v3"/>
-   </extension>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
    <name value="CHEMEDMedicationPrescriptionComposition"/>
    <title value="CH EMED Medication Prescription Composition Profile"/>
@@ -40,7 +37,7 @@
          <path value="Composition.section"/>
          <sliceName value="prescriptionSectionContentModule"/>
          <min value="1"/>
-         <max value="1"/>
+         <max value="*"/>
       </element>
       <element id="Composition.section.code:prescriptionSectionContentModule">
          <path value="Composition.section.code"/>
@@ -69,13 +66,25 @@
          <min value="1"/>
          <fixedString value="PRESCRIPTIONS"/>
       </element>
+      <element id="Composition.section.entry:prescriptionSectionContentModule">
+         <path value="Composition.section.entry"/>
+         <short value="A reference to data that supports this section"/>
+         <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
+         <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+         </type>
+      </element>
       <element id="Composition.section:remarksCoded">
          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
             <valueString value="Section"/>
          </extension>
          <path value="Composition.section"/>
          <sliceName value="remarksCoded"/>
-         <min value="0"/>
+         <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Composition.section.code:remarksCoded">
@@ -103,7 +112,19 @@
          </extension>
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
-         <fixedString value="Annotation comment"/>
+         <fixedString value="Annotation comment Imp"/>
+      </element>
+      <element id="Composition.section.entry:remarksCoded">
+         <path value="Composition.section.entry"/>
+         <short value="A reference to data that supports this section"/>
+         <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
+         <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+         </type>
       </element>
    </differential>
 </StructureDefinition>

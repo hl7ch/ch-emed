@@ -28,6 +28,38 @@
       <grouping>
          <name value="CH-EMED"/>
       </grouping>
+
+      <!-- references for examples -->
+      <resource>
+         <reference>
+            <reference value="Composition/CompMedicationPrescription"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/Norvasc"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationRequest/MedReqPrescription"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Patient/MonikaWegmueller"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Practitioner/FamilienHausarzt"/>
+         </reference>
+      </resource>
+
+      <!-- references for structure definitions -->
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medication-prescription-composition"/>
@@ -36,6 +68,16 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medication-prescription-document"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-request"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication"/>
          </reference>
       </resource>
    </definition>
