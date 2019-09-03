@@ -44,7 +44,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationRequest/MedReqPrescription"/>
+            <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
       </resource>
@@ -60,6 +60,11 @@
       </resource>
 
       <!-- references for structure definitions -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage"/>
+         </reference>
+      </resource>
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medication-prescription-composition"/>

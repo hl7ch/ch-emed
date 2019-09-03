@@ -1,0 +1,33 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-dosage"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+   <name value="CHEMEDDosage"/>
+   <title value="CH EMED Dosage Profile"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 on behalf of eHealth Suisse"/>
+   <description value="Profile on Dosage for the Medication Prescription Document"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <type value="Dosage"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Dosage">
+         <path value="Dosage"/>
+      </element>
+
+      <element id="Dosage.route">
+         <path value="Dosage.route"/>
+         <min value="0"/>
+         <max value="1"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
+
+
+   </differential>
+</StructureDefinition>

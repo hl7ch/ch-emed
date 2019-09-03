@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-  <id value="MedReqPrescription"/>
+  <id value="MedReqNorvasc"/>
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
   </meta>
@@ -12,4 +12,16 @@
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="true"/>
+  </substitution>
 </MedicationRequest>

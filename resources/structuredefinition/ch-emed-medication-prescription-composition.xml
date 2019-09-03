@@ -16,10 +16,21 @@
       <element id="Composition">
          <path value="Composition"/>
       </element>
+      <element id="Composition.subject">
+         <path value="Composition.subject"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.author">
+         <path value="Composition.author"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+         </type>
+      </element>
       <element id="Composition.section">
-         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-            <valueString value="Section"/>
-         </extension>
          <path value="Composition.section"/>
          <slicing>
             <discriminator>
@@ -31,9 +42,6 @@
          </slicing>
       </element>
       <element id="Composition.section:prescriptionSectionContentModule">
-         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-            <valueString value="Section"/>
-         </extension>
          <path value="Composition.section"/>
          <sliceName value="prescriptionSectionContentModule"/>
          <min value="1"/>
@@ -59,18 +67,12 @@
          <fixedCode value="57828-6"/>
       </element>
       <element id="Composition.section.code.coding.display:prescriptionSectionContentModule">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-            <valueBoolean value="true"/>
-         </extension>
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
          <fixedString value="PRESCRIPTIONS"/>
       </element>
       <element id="Composition.section.entry:prescriptionSectionContentModule">
          <path value="Composition.section.entry"/>
-         <short value="A reference to data that supports this section"/>
-         <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-         <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
          <min value="0"/>
          <max value="*"/>
          <type>
@@ -79,9 +81,6 @@
          </type>
       </element>
       <element id="Composition.section:remarksCoded">
-         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-            <valueString value="Section"/>
-         </extension>
          <path value="Composition.section"/>
          <sliceName value="remarksCoded"/>
          <min value="1"/>
@@ -107,18 +106,12 @@
          <fixedCode value="48767-8"/>
       </element>
       <element id="Composition.section.code.coding.display:remarksCoded">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-            <valueBoolean value="true"/>
-         </extension>
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
          <fixedString value="Annotation comment Imp"/>
       </element>
       <element id="Composition.section.entry:remarksCoded">
          <path value="Composition.section.entry"/>
-         <short value="A reference to data that supports this section"/>
-         <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-         <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
          <min value="0"/>
          <max value="1"/>
          <type>

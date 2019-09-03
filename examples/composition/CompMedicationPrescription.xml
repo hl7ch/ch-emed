@@ -30,7 +30,7 @@
       </coding>
     </code>
     <entry>
-      <reference value="MedicationRequest/MedReqPrescription"/>
+      <reference value="MedicationRequest/MedReqNorvasc"/>
     </entry>
   </section>
   <section>
