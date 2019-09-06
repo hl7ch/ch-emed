@@ -2,8 +2,7 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="MedReqNorvasc"/>
   <meta>
-    <!-- <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/> -->
-    <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
   </meta>
   <status value="active"/>
   <intent value="order"/>

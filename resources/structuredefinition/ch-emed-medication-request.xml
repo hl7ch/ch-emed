@@ -16,8 +16,6 @@
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
       </element>
-
-
       <element id="MedicationRequest.medication[x]">
          <path value="MedicationRequest.medication[x]"/>
          <type>
@@ -25,7 +23,6 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
          </type>
       </element>
-
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
          <short value="Who medication request is for"/>
@@ -35,7 +32,11 @@
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
          </type>
       </element>
-
+      <element id="MedicationRequest.note">
+         <path value="MedicationRequest.note"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
          <min value="1"/>
@@ -45,14 +46,30 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
          </type>
       </element>
-
-
+      <element id="MedicationRequest.dispenseRequest">
+         <path value="MedicationRequest.dispenseRequest"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
+         <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationRequest.dispenseRequest.quantity">
+         <path value="MedicationRequest.dispenseRequest.quantity"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
          <min value="0"/>
          <max value="1"/>
       </element>
-
-
+      <element id="MedicationRequest.substitution.allowed[x]">
+         <path value="MedicationRequest.substitution.allowed[x]"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
    </differential>
 </StructureDefinition>

@@ -2,8 +2,7 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="Norvasc"/>
   <meta>
-    <!-- <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/> -->
-    <profile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
   </meta>
   <code>
     <coding>
