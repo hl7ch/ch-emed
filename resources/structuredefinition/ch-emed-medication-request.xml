@@ -26,6 +26,16 @@
          </type>
       </element>
 
+      <element id="MedicationRequest.subject">
+         <path value="MedicationRequest.subject"/>
+         <short value="Who medication request is for"/>
+         <definition value="A link to a resource representing the person to whom the medication will be given."/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+         </type>
+      </element>
+
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
          <min value="1"/>

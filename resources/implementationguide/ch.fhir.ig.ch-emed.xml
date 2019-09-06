@@ -40,13 +40,13 @@
          <reference>
             <reference value="Medication/Norvasc"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
       </resource>
       <resource>
          <reference>

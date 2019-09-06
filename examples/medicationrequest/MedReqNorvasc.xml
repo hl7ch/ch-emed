@@ -2,17 +2,32 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="MedReqNorvasc"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+    <!-- <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/> -->
+    <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
   </meta>
   <status value="active"/>
-  <intent value="plan"/>
+  <intent value="order"/>
   <medicationReference>
     <reference value="Medication/Norvasc"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
+  <note>
+    <text value="zum Essen einnehmen"/>
+  </note>
   <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2019-06-12"/>
+          <end value="2019-09-12"/>
+        </boundsPeriod>
+        <when value="CM"/>
+        <when value="CV"/>
+      </repeat>
+    </timing>
+    <asNeededBoolean value="true"/>
     <route>
       <coding>
         <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
@@ -20,7 +35,21 @@
         <display value="Oral use"/>
       </coding>
     </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="Stk"/>
+        <system value="http://chmed16af.emediplan.ch/fhir/CodeSystem/chmed16af-codesystem-cdtyp9"/>
+        <code value="Stk"/>
+      </doseQuantity>
+    </doseAndRate>
   </dosageInstruction>
+  <dispenseRequest>
+    <numberOfRepeatsAllowed value="3"/>
+    <quantity>
+      <value value="1"/>
+    </quantity>
+  </dispenseRequest>
   <substitution>
     <allowedBoolean value="true"/>
   </substitution>
