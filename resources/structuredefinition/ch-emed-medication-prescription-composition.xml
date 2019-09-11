@@ -1,6 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ch-emed-medication-prescription-composition"/>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
+   <version value="0.0.1"/>
    <name value="CHEMEDMedicationPrescriptionComposition"/>
    <title value="CH EMED Medication Prescription Composition Profile"/>
    <status value="active"/>

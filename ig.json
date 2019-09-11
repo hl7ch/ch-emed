@@ -36,7 +36,9 @@
   ],
   "source": "implementationguide/ch.fhir.ig.ch-emed.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
-  "special-urls": [],
+  "special-urls": [
+    "urn:oid:0.4.0.127.0.16.1.1.2.1"
+  ],
   "resources" : { 
      "*" : "*"
   },

@@ -40,13 +40,13 @@
          <reference>
             <reference value="Medication/Norvasc"/>
          </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
       </resource>
       <resource>
          <reference>
@@ -57,6 +57,14 @@
          <reference>
             <reference value="Practitioner/FamilienHausarzt"/>
          </reference>
+      </resource>
+
+      <!-- references for code systems -->
+      <resource>
+         <reference>
+            <reference value="CodeSystem/edqm-standardterms"/>
+         </reference>
+         <exampleBoolean value="false"/>
       </resource>
 
       <!-- references for structure definitions -->
@@ -84,6 +92,20 @@
          <reference>
             <reference value="StructureDefinition/ch-emed-medication"/>
          </reference>
+      </resource>
+
+      <!-- references for value sets -->
+      <resource>
+         <reference>
+            <reference value="ValueSet/edqm-pharmaceuticaldoseform"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/edqm-routeofadministration"/>
+         </reference>
+         <exampleBoolean value="false"/>
       </resource>
    </definition>
 </ImplementationGuide>
