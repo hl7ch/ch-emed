@@ -1,0 +1,39 @@
+@host = http://test.fhir.ch/r4
+
+###
+PUT {{host}}/Patient/MonikaWegmueller HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./patient/MonikaWegmueller.xml
+
+###
+PUT {{host}}/Practitioner/FamilienHausarzt HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./practitioner/FamilienHausarzt.xml
+
+###
+PUT {{host}}/Medication/Norvasc HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./medication/Norvasc.xml
+
+###
+PUT {{host}}/MedicationRequest/MedReqNorvasc HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./medicationrequest/MedReqNorvasc.xml
+
+###
+PUT {{host}}/Composition/CompMedicationPrescription HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./composition/CompMedicationPrescription.xml
+
+###
+GET {{host}}/Patient/MonikaWegmueller HTTP/1.1
+Content-Type: application/fhir+xml
+
+###
+GET {{host}}/Composition/CompMedicationPrescription/$document HTTP/1.1
+Content-Type: application/fhir+xml

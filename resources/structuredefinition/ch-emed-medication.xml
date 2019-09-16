@@ -19,12 +19,13 @@
       </element>
       <element id="Medication.code">
          <path value="Medication.code"/>
-         <short value="GTIN Codes that identify this medication"/>
          <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
+         <short value="GTIN Codes that identify this medication"/>
+         <max value="1"/>
       </element>
       <element id="Medication.code.coding.system">
          <path value="Medication.code.coding.system"/>
@@ -42,6 +43,12 @@
       </element>
       <element id="Medication.code.coding.display">
          <path value="Medication.code.coding.display"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Medication.code.text">
+         <path value="Medication.code.text"/>
+         <short value="Name that identify this medication"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -64,6 +71,10 @@
          <path value="Medication.ingredient"/>
          <min value="1"/>
          <max value="1"/>
+      </element>
+      <element id="Medication.ingredient.strength">
+         <path value="Medication.ingredient.strength"/>
+         <min value="1"/>
       </element>
    </differential>
 </StructureDefinition>

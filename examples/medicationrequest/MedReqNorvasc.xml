@@ -4,6 +4,14 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
   </meta>
+  <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan">
+    <extension url="idDocument">
+      <valueString value="sample"/>
+    </extension>
+    <extension url="substanceAdministration">
+      <valueString value="sample"/>
+    </extension>
+  </extension>
   <status value="active"/>
   <intent value="order"/>
   <medicationReference>
@@ -16,6 +24,7 @@
     <text value="zum Essen einnehmen"/>
   </note>
   <dosageInstruction>
+    <text value="2x täglich eine Tablette morgens und abends einnehmen"/>
     <timing>
       <repeat>
         <boundsPeriod>
@@ -26,7 +35,7 @@
         <when value="CV"/>
       </repeat>
     </timing>
-    <asNeededBoolean value="true"/>
+    <asNeededBoolean value="false"/>
     <route>
       <coding>
         <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
@@ -37,9 +46,7 @@
     <doseAndRate>
       <doseQuantity>
         <value value="1"/>
-        <unit value="Stk"/>
-        <system value="http://chmed16af.emediplan.ch/fhir/CodeSystem/chmed16af-codesystem-cdtyp9"/>
-        <code value="Stk"/>
+        <unit value="Tablette"/>
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>

@@ -30,6 +30,12 @@
       </grouping>
 
       <!-- references for examples -->
+      <!--<resource>
+         <reference>
+            <reference value="Bundle/BundleMedicationPrescription"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-document"/>
+      </resource>-->
       <resource>
          <reference>
             <reference value="Composition/CompMedicationPrescription"/>
@@ -81,6 +87,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medication-prescription-document"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-request-treatmentplan"/>
          </reference>
       </resource>
       <resource>

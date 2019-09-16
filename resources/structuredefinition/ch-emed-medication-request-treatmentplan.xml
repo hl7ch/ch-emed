@@ -1,0 +1,93 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-medication-request-treatmentplan"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan"/>
+   <version value="0.0.1"/>
+   <name value="CHEMEDMedicationRequestTreatmentplan"/>
+   <title value="Reference to the Medication Treatment plan"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 on behalf of eHealth Suisse"/>
+   <description value="Reference to the Medication Treatment plan"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationRequest"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"/>
+         <short value="Reference to the Medication Treatment plan"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension:idDocument">
+         <path value="Extension.extension"/>
+         <sliceName value="idDocument"/>
+         <short value="ID of the Medication Treatment plan Document"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+         </type>
+      </element>
+      <element id="Extension.extension:idDocument.extension">
+         <path value="Extension.extension.extension"/>
+         <max value="0"/>
+      </element>
+      <element id="Extension.extension:idDocument.url">
+         <path value="Extension.extension.url"/>
+         <type>
+            <code value="uri"/>
+         </type>
+         <fixedUri value="idDocument"/>
+      </element>
+      <element id="Extension.extension:idDocument.valueString">
+         <path value="Extension.extension.valueString"/>
+         <type>
+            <code value="string"/>
+         </type>
+      </element>
+      <element id="Extension.extension:substanceAdministration">
+         <path value="Extension.extension"/>
+         <sliceName value="substanceAdministration"/>
+         <short value="Substance Administration"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+         </type>
+      </element>
+      <element id="Extension.extension:substanceAdministration.extension">
+         <path value="Extension.extension.extension"/>
+         <max value="0"/>
+      </element>
+      <element id="Extension.extension:substanceAdministration.url">
+         <path value="Extension.extension.url"/>
+         <type>
+            <code value="uri"/>
+         </type>
+         <fixedUri value="substanceAdministration"/>
+      </element>
+      <element id="Extension.extension:substanceAdministration.valueString">
+         <path value="Extension.extension.valueString"/>
+         <type>
+            <code value="string"/>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <type>
+            <code value="uri"/>
+         </type>
+         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+   </differential>
+</StructureDefinition>

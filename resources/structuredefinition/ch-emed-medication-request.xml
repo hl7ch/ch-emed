@@ -17,6 +17,27 @@
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
       </element>
+      <element id="MedicationRequest.extension">
+         <path value="MedicationRequest.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="MedicationRequest.extension:treatmentplan">
+         <path value="MedicationRequest.extension" />
+         <sliceName value="treatmentplan" />
+         <short value="Treatment plan"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan" />
+         </type>
+      </element>
       <element id="MedicationRequest.medication[x]">
          <path value="MedicationRequest.medication[x]"/>
          <type>

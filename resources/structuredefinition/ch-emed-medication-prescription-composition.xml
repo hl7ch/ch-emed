@@ -42,37 +42,37 @@
             <rules value="closed"/>
          </slicing>
       </element>
-      <element id="Composition.section:prescriptionSectionContentModule">
+      <element id="Composition.section:prescription">
          <path value="Composition.section"/>
-         <sliceName value="prescriptionSectionContentModule"/>
+         <sliceName value="prescription"/>
          <min value="1"/>
          <max value="*"/>
       </element>
-      <element id="Composition.section.code:prescriptionSectionContentModule">
+      <element id="Composition.section.code:prescription">
          <path value="Composition.section.code"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.code.coding:prescriptionSectionContentModule">
+      <element id="Composition.section.code.coding:prescription">
          <path value="Composition.section.code.coding"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding.system:prescriptionSectionContentModule">
+      <element id="Composition.section.code.coding.system:prescription">
          <path value="Composition.section.code.coding.system"/>
          <min value="1"/>
          <fixedUri value="http://loinc.org"/>
       </element>
-      <element id="Composition.section.code.coding.code:prescriptionSectionContentModule">
+      <element id="Composition.section.code.coding.code:prescription">
          <path value="Composition.section.code.coding.code"/>
          <min value="1"/>
          <fixedCode value="57828-6"/>
       </element>
-      <element id="Composition.section.code.coding.display:prescriptionSectionContentModule">
+      <element id="Composition.section.code.coding.display:prescription">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
          <fixedString value="PRESCRIPTIONS"/>
       </element>
-      <element id="Composition.section.entry:prescriptionSectionContentModule">
+      <element id="Composition.section.entry:prescription">
          <path value="Composition.section.entry"/>
          <min value="0"/>
          <max value="*"/>
@@ -81,37 +81,37 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
          </type>
       </element>
-      <element id="Composition.section:remarksCoded">
+      <element id="Composition.section:annotation">
          <path value="Composition.section"/>
-         <sliceName value="remarksCoded"/>
+         <sliceName value="annotation"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:remarksCoded">
+      <element id="Composition.section.code:annotation">
          <path value="Composition.section.code"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.code.coding:remarksCoded">
+      <element id="Composition.section.code.coding:annotation">
          <path value="Composition.section.code.coding"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding.system:remarksCoded">
+      <element id="Composition.section.code.coding.system:annotation">
          <path value="Composition.section.code.coding.system"/>
          <min value="1"/>
          <fixedUri value="http://loinc.org"/>
       </element>
-      <element id="Composition.section.code.coding.code:remarksCoded">
+      <element id="Composition.section.code.coding.code:annotation">
          <path value="Composition.section.code.coding.code"/>
          <min value="1"/>
          <fixedCode value="48767-8"/>
       </element>
-      <element id="Composition.section.code.coding.display:remarksCoded">
+      <element id="Composition.section.code.coding.display:annotation">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
          <fixedString value="Annotation comment Imp"/>
       </element>
-      <element id="Composition.section.entry:remarksCoded">
+      <element id="Composition.section.entry:annotation">
          <path value="Composition.section.entry"/>
          <min value="0"/>
          <max value="1"/>
