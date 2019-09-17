@@ -45,10 +45,11 @@
          </type>
          <fixedUri value="externalDocumentId"/>
       </element>
-      <element id="Extension.extension:externalDocumentId.valueUuid">
-         <path value="Extension.extension.valueUuid"/>
+      <element id="Extension.extension:externalDocumentId.valueString">
+         <path value="Extension.extension.valueString"/>
+         <short value="UUID"/>
          <type>
-            <code value="uuid"/>
+            <code value="string"/>
          </type>
       </element>
 
@@ -73,10 +74,11 @@
          </type>
          <fixedUri value="medicationTreatmentPlanId"/>
       </element>
-      <element id="Extension.extension:medicationTreatmentPlanId.valueUuid">
-         <path value="Extension.extension.valueUuid"/>
+      <element id="Extension.extension:medicationTreatmentPlanId.valueString">
+         <path value="Extension.extension.valueString"/>
+         <short value="UUID"/>
          <type>
-            <code value="uuid"/>
+            <code value="string"/>
          </type>
       </element>
 
