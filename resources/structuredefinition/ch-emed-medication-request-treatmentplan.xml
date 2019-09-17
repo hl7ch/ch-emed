@@ -23,60 +23,63 @@
          <short value="Reference to the Medication Treatment plan"/>
          <max value="1"/>
       </element>
-      <element id="Extension.extension:idDocument">
+
+      <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
-         <sliceName value="idDocument"/>
-         <short value="ID of the Medication Treatment plan Document"/>
+         <sliceName value="externalDocumentId"/>
+         <short value="ID of an external Document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Extension"/>
          </type>
       </element>
-      <element id="Extension.extension:idDocument.extension">
+      <element id="Extension.extension:externalDocumentId.extension">
          <path value="Extension.extension.extension"/>
          <max value="0"/>
       </element>
-      <element id="Extension.extension:idDocument.url">
+      <element id="Extension.extension:externalDocumentId.url">
          <path value="Extension.extension.url"/>
          <type>
             <code value="uri"/>
          </type>
-         <fixedUri value="idDocument"/>
+         <fixedUri value="externalDocumentId"/>
       </element>
-      <element id="Extension.extension:idDocument.valueString">
-         <path value="Extension.extension.valueString"/>
+      <element id="Extension.extension:externalDocumentId.valueUuid">
+         <path value="Extension.extension.valueUuid"/>
          <type>
-            <code value="string"/>
+            <code value="uuid"/>
          </type>
       </element>
-      <element id="Extension.extension:substanceAdministration">
+
+      <element id="Extension.extension:medicationTreatmentPlanId">
          <path value="Extension.extension"/>
-         <sliceName value="substanceAdministration"/>
-         <short value="Substance Administration"/>
+         <sliceName value="medicationTreatmentPlanId"/>
+         <short value="ID of a Medication Treatment Plan"/>
          <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Extension"/>
          </type>
       </element>
-      <element id="Extension.extension:substanceAdministration.extension">
+      <element id="Extension.extension:medicationTreatmentPlanId.extension">
          <path value="Extension.extension.extension"/>
          <max value="0"/>
       </element>
-      <element id="Extension.extension:substanceAdministration.url">
+      <element id="Extension.extension:medicationTreatmentPlanId.url">
          <path value="Extension.extension.url"/>
          <type>
             <code value="uri"/>
          </type>
-         <fixedUri value="substanceAdministration"/>
+         <fixedUri value="medicationTreatmentPlanId"/>
       </element>
-      <element id="Extension.extension:substanceAdministration.valueString">
-         <path value="Extension.extension.valueString"/>
+      <element id="Extension.extension:medicationTreatmentPlanId.valueUuid">
+         <path value="Extension.extension.valueUuid"/>
          <type>
-            <code value="string"/>
+            <code value="uuid"/>
          </type>
       </element>
+
       <element id="Extension.url">
          <path value="Extension.url"/>
          <type>
