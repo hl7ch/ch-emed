@@ -38,6 +38,12 @@
       </resource>-->
       <resource>
          <reference>
+            <reference value="Composition/CompMedicationDispense"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Composition/CompMedicationPrescription"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
@@ -77,6 +83,16 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-dosage"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-dispense-composition"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-dispense-document"/>
          </reference>
       </resource>
       <resource>
