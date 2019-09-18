@@ -6,7 +6,7 @@
    <title value="CH EMED Dosage Profile"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="HL7 on behalf of eHealth Suisse"/>
+   <publisher value="eHealth Suisse"/>
    <description value="Profile on Dosage for the Medication Prescription Document"/>
    <kind value="complex-type"/>
    <abstract value="false"/>

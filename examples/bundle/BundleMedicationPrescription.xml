@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="BundleMedicationPrescription"/>
    <meta>
-      <lastUpdated value="2019-09-16T12:53:04.058+00:00"/>
+      <lastUpdated value="2019-09-18T05:24:11.841+00:00"/>
       <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-document"/>
    </meta>
    <identifier>
@@ -149,16 +149,16 @@
          <MedicationRequest xmlns="http://hl7.org/fhir">
             <id value="MedReqNorvasc"/>
             <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-09-16T12:52:30.816+00:00"/>
+               <versionId value="2"/>
+               <lastUpdated value="2019-09-18T05:23:41.712+00:00"/>
                <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
             </meta>
             <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan">
-               <extension url="idDocument">
-                  <valueString value="sample"/>
+               <extension url="externalDocumentId">
+                  <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
                </extension>
-               <extension url="substanceAdministration">
-                  <valueString value="sample"/>
+               <extension url="medicationTreatmentPlanId">
+                  <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
                </extension>
             </extension>
             <status value="active"/>
