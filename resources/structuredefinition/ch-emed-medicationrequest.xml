@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medication-request"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+   <id value="ch-emed-medicationrequest"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationRequest"/>
    <title value="CH EMED Medication Request Profile"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Profile on Medication Request for the Medication Prescription Document"/>
+   <description value="Definition of the medication request"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationRequest"/>
@@ -16,6 +16,7 @@
    <differential>
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
+         <short value="CH EMED Medication Request"/>
       </element>
       <element id="MedicationRequest.extension">
          <path value="MedicationRequest.extension"/>
@@ -35,24 +36,32 @@
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan" />
          </type>
       </element>
       <element id="MedicationRequest.medication[x]">
          <path value="MedicationRequest.medication[x]"/>
+         <short value="Medication"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
          </type>
       </element>
+      <element id="MedicationRequest.medication[x].reference">
+         <path value="MedicationRequest.medication[x].reference"/>
+         <min value="1"/>
+      </element>
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
-         <short value="Who medication request is for"/>
-         <definition value="A link to a resource representing the person to whom the medication will be given."/>
+         <short value="Patient"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
          </type>
+      </element>
+      <element id="MedicationRequest.subject.reference">
+         <path value="MedicationRequest.subject.reference"/>
+         <min value="1"/>
       </element>
       <element id="MedicationRequest.note">
          <path value="MedicationRequest.note"/>

@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medication-request-treatmentplan"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan"/>
+   <id value="ch-emed-medicationrequest-treatmentplan"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationRequestTreatmentplan"/>
-   <title value="Reference to the Medication Treatment plan"/>
-   <status value="active"/>
+   <title value="CH EMED Treatmentplan Extension"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Extension to reference the Medication Treatment plan"/>
+   <description value="Extension to reference the medication treatment plan"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <context>
@@ -20,14 +20,14 @@
    <differential>
       <element id="Extension">
          <path value="Extension"/>
-         <short value="Reference to the Medication Treatment plan"/>
+         <short value="CH EMED Treatmentplan"/>
          <max value="1"/>
       </element>
 
       <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
          <sliceName value="externalDocumentId"/>
-         <short value="ID of an external Document"/>
+         <short value="ID of an external document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -47,7 +47,7 @@
       </element>
       <element id="Extension.extension:externalDocumentId.valueString">
          <path value="Extension.extension.valueString"/>
-         <short value="UUID"/>
+         <short value="Format: UUID"/>
          <type>
             <code value="string"/>
          </type>
@@ -56,7 +56,7 @@
       <element id="Extension.extension:medicationTreatmentPlanId">
          <path value="Extension.extension"/>
          <sliceName value="medicationTreatmentPlanId"/>
-         <short value="ID of a Medication Treatment Plan"/>
+         <short value="ID of a medication treatment plan"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -76,7 +76,7 @@
       </element>
       <element id="Extension.extension:medicationTreatmentPlanId.valueString">
          <path value="Extension.extension.valueString"/>
-         <short value="UUID"/>
+         <short value="Format: UUID"/>
          <type>
             <code value="string"/>
          </type>
@@ -87,7 +87,7 @@
          <type>
             <code value="uri"/>
          </type>
-         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request-treatmentplan"/>
+         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
       </element>
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>

@@ -4,10 +4,10 @@
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationDispenseDocument"/>
    <title value="CH EMED Medication Dispense Document Profile"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Profile on Bundle for the Medication Dispense Document"/>
+   <description value="Definition of the bundle for the medication dispense document"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Bundle"/>
@@ -16,6 +16,7 @@
    <differential>
       <element id="Bundle">
          <path value="Bundle"/>
+         <short value="CH EMED Medication Dispense Document"/>
       </element>
       <element id="Bundle.identifier">
          <path value="Bundle.identifier"/>
@@ -31,7 +32,6 @@
       </element>
       <element id="Bundle.type">
          <path value="Bundle.type" />
-         <short value="document" />
          <fixedCode value="document" />
       </element>
       <element id="Bundle.entry">
@@ -47,7 +47,7 @@
       <element id="Bundle.entry:Composition">
          <path value="Bundle.entry" />
          <sliceName value="Composition" />
-         <short value="Composition" />
+         <short value="Medication dispense composition" />
          <min value="1" />
          <max value="1" />
       </element>

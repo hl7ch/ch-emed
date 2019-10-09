@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
    <name value="CH_EMED"/>
    <title value="CH-EMED"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <date value="2019-07-10"/>
    <publisher value="eHealth Suisse"/>
@@ -51,7 +51,7 @@
          <reference>
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
       </resource>
       <resource>
          <reference>
@@ -100,17 +100,17 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-request-treatmentplan"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-medication-request"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-medication"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationrequest"/>
          </reference>
       </resource>
 

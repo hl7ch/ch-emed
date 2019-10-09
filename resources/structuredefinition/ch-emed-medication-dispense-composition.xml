@@ -4,10 +4,10 @@
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationDispenseComposition"/>
    <title value="CH EMED Medication Dispense Composition Profile"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Profile on Composition for the Medication Dispense"/>
+   <description value="Definition of the composition for the medication dispense"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -16,20 +16,31 @@
    <differential>
       <element id="Composition">
          <path value="Composition"/>
+         <short value="CH EMED Medication Dispense Composition"/>
       </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
+         <short value="Patient"/>
          <min value="1"/>
          <max value="1"/>
       </element>
+      <element id="Composition.subject.reference">
+         <path value="Composition.subject.reference"/>
+         <min value="1"/>
+      </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
+         <short value="Practitioner"/>
          <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
          </type>
+      </element>
+      <element id="Composition.author.reference">
+         <path value="Composition.author.reference"/>
+         <min value="1"/>
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
@@ -45,6 +56,7 @@
       <element id="Composition.section:dispense">
          <path value="Composition.section"/>
          <sliceName value="dispense"/>
+         <short value="Medication dispense"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -74,17 +86,23 @@
       </element>
       <element id="Composition.section.entry:dispense">
          <path value="Composition.section.entry"/>
+         <short value="Medication Request"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-            <!--<targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-request"/>-->
+            <!--<targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>-->
          </type>
+      </element>
+      <element id="Composition.section.entry:dispense.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
       </element>
       <element id="Composition.section:annotation">
          <path value="Composition.section"/>
          <sliceName value="annotation"/>
+         <short value="Annotation"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -120,6 +138,10 @@
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
          </type>
+      </element>
+      <element id="Composition.section.entry:annotation.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
       </element>
    </differential>
 </StructureDefinition>

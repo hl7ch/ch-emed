@@ -4,10 +4,10 @@
    <version value="0.0.1"/>
    <name value="CHEMEDDosage"/>
    <title value="CH EMED Dosage Profile"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Profile on Dosage for the Medication Prescription Document"/>
+   <description value="Definition of the medication dosage"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -16,6 +16,7 @@
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
+         <short value="CH EMED Dosage"/>
       </element>
       <element id="Dosage.text">
          <path value="Dosage.text"/>
@@ -51,11 +52,27 @@
          <path value="Dosage.route"/>
          <min value="0"/>
          <max value="1"/>
-         <patternCodeableConcept>
-            <coding>
-               <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-            </coding>
-         </patternCodeableConcept>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-routeofadministration"/>
+         </binding>
+      </element>
+      <element id="Dosage.route.coding">
+         <path value="Dosage.route.coding"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="Dosage.route.coding.system">
+         <path value="Dosage.route.coding.system"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.route.coding.code">
+         <path value="Dosage.route.coding.code"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.route.coding.display">
+         <path value="Dosage.route.coding.display"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
