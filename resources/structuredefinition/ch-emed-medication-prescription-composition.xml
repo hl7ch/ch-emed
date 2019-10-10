@@ -44,6 +44,7 @@
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
+         <min value="1"/>
          <slicing>
             <discriminator>
                <type value="value"/>
@@ -86,7 +87,7 @@
       </element>
       <element id="Composition.section.entry:prescription">
          <path value="Composition.section.entry"/>
-         <short value="Medication Request"/>
+         <short value="Medication request"/>
          <min value="0"/>
          <max value="*"/>
          <type>
