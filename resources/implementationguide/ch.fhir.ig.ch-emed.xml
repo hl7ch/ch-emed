@@ -23,7 +23,7 @@
       </grouping>
 
       <!-- references for examples -->
-      <!--<resource>
+      <resource>
          <reference>
             <reference value="Bundle/BundleMedicationCard"/>
          </reference>
@@ -34,7 +34,7 @@
             <reference value="Bundle/BundleMedicationDispense"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-document"/>
-      </resource>-->
+      </resource>
       <resource>
          <reference>
             <reference value="Bundle/BundleMedicationPrescription"/>

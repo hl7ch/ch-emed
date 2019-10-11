@@ -89,7 +89,7 @@
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
          <path value="MedicationRequest.dispenseRequest.quantity"/>
-         <min value="0"/>
+         <min value="1"/>
          <max value="1"/>
       </element>
       <element id="MedicationRequest.substitution">

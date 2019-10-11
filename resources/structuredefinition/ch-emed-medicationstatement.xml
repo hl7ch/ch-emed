@@ -18,7 +18,49 @@
          <path value="MedicationStatement"/>
          <short value="CH EMED Medication Statement"/>
       </element>
-      
-      
+      <element id="MedicationStatement.status">
+         <path value="MedicationStatement.status"/>
+      </element>
+      <element id="MedicationStatement.medication[x]">
+         <path value="MedicationStatement.medication[x]"/>
+         <short value="Medication"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+         </type>
+      </element>
+      <element id="MedicationStatement.medication[x].reference">
+         <path value="MedicationStatement.medication[x].reference"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationStatement.subject">
+         <path value="MedicationStatement.subject"/>
+         <short value="Patient"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+         </type>
+      </element>
+      <element id="MedicationStatement.subject.reference">
+         <path value="MedicationStatement.subject.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationStatement.reasonCode">
+         <path value="MedicationStatement.reasonCode"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationStatement.note">
+         <path value="MedicationStatement.note"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationStatement.dosage">
+         <path value="MedicationStatement.dosage"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+         </type>
+      </element>
    </differential>
 </StructureDefinition>

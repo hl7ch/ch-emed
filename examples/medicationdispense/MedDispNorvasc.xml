@@ -4,5 +4,53 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
   </meta>
-  
+  <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan">
+    <extension url="externalDocumentId">
+      <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+    </extension>
+    <extension url="medicationTreatmentPlanId">
+      <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+    </extension>
+  </extension>
+  <status value="in-progress"/>
+  <medicationReference>
+    <reference value="Medication/Norvasc"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <authorizingPrescription>
+    <reference value="MedicationRequest/MedReqNorvasc"/>
+  </authorizingPrescription>
+  <whenHandedOver value="2011-11-30T11:01:00.000+02:00"/>
+  <note>
+    <text value="zum Essen einnehmen"/>
+  </note>
+  <dosageInstruction>
+    <text value="2x täglich eine Tablette morgens und abends einnehmen"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2019-06-12"/>
+          <end value="2019-09-12"/>
+        </boundsPeriod>
+        <when value="CM"/>
+        <when value="CV"/>
+      </repeat>
+    </timing>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="Tablette"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
 </MedicationDispense>

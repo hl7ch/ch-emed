@@ -9,7 +9,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="10160-0"/>
-      <display value="History of medication use"/>
+      <display value="Hx of Medication use"/>
     </coding>
   </type>
   <subject>
@@ -26,7 +26,7 @@
       <coding>
         <system value="http://loinc.org"/>
         <code value="10160-0"/>
-        <display value="History of medication use"/>
+        <display value="Hx of Medication use"/>
       </coding>
     </code>
     <entry>

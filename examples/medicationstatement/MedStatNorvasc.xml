@@ -4,5 +4,44 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
   </meta>
-  
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/Norvasc"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <reasonCode>
+    <text value="Bluthochdruck"/>
+  </reasonCode>
+  <note>
+    <text value="zum Essen einnehmen"/>
+  </note>
+  <dosage>
+    <text value="2x täglich eine Tablette morgens und abends einnehmen"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2019-06-12"/>
+          <end value="2019-09-12"/>
+        </boundsPeriod>
+        <when value="CM"/>
+        <when value="CV"/>
+      </repeat>
+    </timing>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="Tablette"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
 </MedicationStatement>

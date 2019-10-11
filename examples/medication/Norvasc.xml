@@ -56,4 +56,7 @@
       </denominator>
     </strength>
   </ingredient>
+  <batch>
+    <lotNumber value="80-225960"/>
+  </batch>
 </Medication>

@@ -28,6 +28,9 @@
          <path value="Composition.subject.reference"/>
          <min value="1"/>
       </element>
+      <element id="Composition.date">
+         <path value="Composition.date"/>
+      </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
          <short value="Practitioner"/>
@@ -83,7 +86,7 @@
       <element id="Composition.section.code.coding.display:card">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
-         <fixedString value="History of medication use"/>
+         <fixedString value="Hx of Medication use"/>
       </element>
       <element id="Composition.section.entry:card">
          <path value="Composition.section.entry"/>
@@ -129,6 +132,9 @@
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
          <fixedString value="Annotation comment Imp"/>
+      </element>
+      <element id="Composition.section.text:annotation">
+         <path value="Composition.section.text"/>
       </element>
       <element id="Composition.section.entry:annotation">
          <path value="Composition.section.entry"/>
