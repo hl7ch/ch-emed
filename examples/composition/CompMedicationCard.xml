@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition xmlns="http://hl7.org/fhir">
-  <id value="CompMedicationPrescription"/>
+  <id value="CompMedicationCard"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-composition"/>
   </meta>
   <status value="final"/>
   <type>
     <coding>
       <system value="http://loinc.org"/>
-      <code value="57828-6"/>
-      <display value="PRESCRIPTIONS"/>
+      <code value="10160-0"/>
+      <display value="History of medication use"/>
     </coding>
   </type>
   <subject>
@@ -19,18 +19,18 @@
   <author>
     <reference value="Practitioner/FamilienHausarzt"/>
   </author>
-  <title value="Medication prescription"/>
+  <title value="Medication card"/>
   <section>
-    <title value="Arzneimittelverordnung"/>
+    <title value="Medikationsplan"/>
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <code value="57828-6"/>
-        <display value="PRESCRIPTIONS"/>
+        <code value="10160-0"/>
+        <display value="History of medication use"/>
       </coding>
     </code>
     <entry>
-      <reference value="MedicationRequest/MedReqNorvasc"/>
+      <reference value="MedicationStatement/MedStatNorvasc"/>
     </entry>
   </section>
   <section>

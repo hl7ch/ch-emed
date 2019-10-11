@@ -23,11 +23,29 @@
       </grouping>
 
       <!-- references for examples -->
+      <!--<resource>
+         <reference>
+            <reference value="Bundle/BundleMedicationCard"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-document"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Bundle/BundleMedicationDispense"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-document"/>
+      </resource>-->
       <resource>
          <reference>
             <reference value="Bundle/BundleMedicationPrescription"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-document"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Composition/CompMedicationCard"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-composition"/>
       </resource>
       <resource>
          <reference>
@@ -49,9 +67,21 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationDispense/MedDispNorvasc"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/MedStatNorvasc"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>
@@ -76,6 +106,16 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-dosage"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-card-composition"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-card-document"/>
          </reference>
       </resource>
       <resource>
@@ -105,12 +145,22 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-medicationdispense"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
          </reference>
       </resource>
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement"/>
          </reference>
       </resource>
 

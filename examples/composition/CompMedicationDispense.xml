@@ -19,9 +19,9 @@
   <author>
     <reference value="Practitioner/FamilienHausarzt"/>
   </author>
-  <title value="Medication Dispense"/>
+  <title value="Medication dispense"/>
   <section>
-    <title value="Dispense"/>
+    <title value="Abgabe"/>
     <code>
       <coding>
         <system value="http://loinc.org"/>
@@ -29,13 +29,9 @@
         <display value="Medication dispensed.brief Doc"/>
       </coding>
     </code>
-    <!--<entry>
-      <reference value="MedicationRequest/MedReqNorvasc"/>
-    </entry>-->
-    <text>
-      <status value="additional"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> TBD: Reference </div>
-    </text>
+    <entry>
+      <reference value="MedicationDispense/MedDispNorvasc"/>
+    </entry>
   </section>
   <section>
     <title value="Bemerkungen"/>

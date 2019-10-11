@@ -1,0 +1,24 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-medicationdispense"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+   <version value="0.0.1"/>
+   <name value="CHEMEDMedicationDispense"/>
+   <title value="CH EMED Medication Dispense Profile"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <description value="Definition of the medication dispense for the medication dispense"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="MedicationDispense"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="MedicationDispense">
+         <path value="MedicationDispense"/>
+         <short value="CH EMED Medication Dispense"/>
+      </element>
+      
+      
+   </differential>
+</StructureDefinition>

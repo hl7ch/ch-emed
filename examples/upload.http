@@ -25,10 +25,36 @@ Content-Type: application/fhir+xml
 < ./medicationrequest/MedReqNorvasc.xml
 
 ###
+PUT {{host}}/MedicationDispense/MedDispNorvasc HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./medicationdispense/MedDispNorvasc.xml
+
+###
+PUT {{host}}/MedicationStatement/MedStatNorvasc HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./medicationstatement/MedStatNorvasc.xml
+
+###
 PUT {{host}}/Composition/CompMedicationPrescription HTTP/1.1
 Content-Type: application/fhir+xml
 
 < ./composition/CompMedicationPrescription.xml
+
+###
+PUT {{host}}/Composition/CompMedicationDispense HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./composition/CompMedicationDispense.xml
+
+###
+PUT {{host}}/Composition/CompMedicationCard HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./composition/CompMedicationCard.xml
+
+
 
 ###
 GET {{host}}/Patient/MonikaWegmueller HTTP/1.1
@@ -36,4 +62,12 @@ Content-Type: application/fhir+xml
 
 ###
 GET {{host}}/Composition/CompMedicationPrescription/$document HTTP/1.1
+Content-Type: application/fhir+xml
+
+###
+GET {{host}}/Composition/CompMedicationDispense/$document HTTP/1.1
+Content-Type: application/fhir+xml
+
+###
+GET {{host}}/Composition/CompMedicationCard/$document HTTP/1.1
 Content-Type: application/fhir+xml

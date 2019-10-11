@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medication-dispense-composition"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition"/>
+   <id value="ch-emed-medication-card-composition"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-composition"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDMedicationDispenseComposition"/>
-   <title value="CH EMED Medication Dispense Composition Profile"/>
+   <name value="CHEMEDMedicationCardComposition"/>
+   <title value="CH EMED Medication Card Composition Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the composition for the medication dispense"/>
+   <description value="Definition of the composition for the medication card"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Composition">
          <path value="Composition"/>
-         <short value="CH EMED Medication Dispense Composition"/>
+         <short value="CH EMED Medication Card Composition"/>
       </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
@@ -54,48 +54,48 @@
             <rules value="closed"/>
          </slicing>
       </element>
-      <element id="Composition.section:dispense">
+      <element id="Composition.section:card">
          <path value="Composition.section"/>
-         <sliceName value="dispense"/>
-         <short value="Medication dispense"/>
+         <sliceName value="card"/>
+         <short value="Medication card"/>
          <min value="0"/>
-         <max value="1"/>
+         <max value="*"/>
       </element>
-      <element id="Composition.section.code:dispense">
+      <element id="Composition.section.code:card">
          <path value="Composition.section.code"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.code.coding:dispense">
+      <element id="Composition.section.code.coding:card">
          <path value="Composition.section.code.coding"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding.system:dispense">
+      <element id="Composition.section.code.coding.system:card">
          <path value="Composition.section.code.coding.system"/>
          <min value="1"/>
          <fixedUri value="http://loinc.org"/>
       </element>
-      <element id="Composition.section.code.coding.code:dispense">
+      <element id="Composition.section.code.coding.code:card">
          <path value="Composition.section.code.coding.code"/>
          <min value="1"/>
-         <fixedCode value="60590-7"/>
+         <fixedCode value="10160-0"/>
       </element>
-      <element id="Composition.section.code.coding.display:dispense">
+      <element id="Composition.section.code.coding.display:card">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
-         <fixedString value="Medication dispensed.brief Doc"/>
+         <fixedString value="History of medication use"/>
       </element>
-      <element id="Composition.section.entry:dispense">
+      <element id="Composition.section.entry:card">
          <path value="Composition.section.entry"/>
-         <short value="Medication dispense"/>
+         <short value="Medication statement"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
          </type>
       </element>
-      <element id="Composition.section.entry:dispense.reference">
+      <element id="Composition.section.entry:card.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
