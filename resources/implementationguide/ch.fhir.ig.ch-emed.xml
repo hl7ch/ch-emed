@@ -97,6 +97,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Organization/Hausarzt"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Patient/MonikaWegmueller"/>
          </reference>
       </resource>

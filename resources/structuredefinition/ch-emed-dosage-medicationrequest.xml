@@ -29,17 +29,14 @@
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Dosage.timing.repeat.bounds[x]">
          <path value="Dosage.timing.repeat.bounds[x]"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
          <min value="1"/>
-         <max value="*"/>
       </element>
       <element id="Dosage.asNeeded[x]">
          <path value="Dosage.asNeeded[x]"/>
@@ -55,7 +52,6 @@
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
          <min value="1"/>
-         <max value="*"/>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>

@@ -8,20 +8,25 @@
   <type>
     <coding>
       <system value="http://loinc.org"/>
-      <code value="57828-6"/>
-      <display value="PRESCRIPTIONS"/>
+      <code value="57833-6"/>
+      <display value="Prescription for medication"/>
     </coding>
+    <!-- TBD: Translation to SNOMED CT -->
   </type>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
-  <date value="2019-09-03T11:46:09+02:00"/>
+  <date value="2012-02-04T14:00:00+01:00"/>
   <author>
     <reference value="Practitioner/FamilienHausarzt"/>
   </author>
-  <title value="Medication prescription"/>
+  <title value="Rezept"/>
+  <custodian>
+    <reference value="Organization/Hausarzt"/>
+  </custodian>
   <section>
     <title value="Arzneimittelverordnung"/>
+    <!-- TBD: Text mit Tooling -->
     <code>
       <coding>
         <system value="http://loinc.org"/>
@@ -34,7 +39,8 @@
     </entry>
   </section>
   <section>
-    <title value="Bemerkungen"/>
+    <title value="Kommentar"/>
+    <!-- TBD: Text mit Tooling -->
     <code>
       <coding>
         <system value="http://loinc.org"/>

@@ -21,7 +21,6 @@
       <element id="Medication.code">
          <path value="Medication.code"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
@@ -51,12 +50,10 @@
          <path value="Medication.code.text"/>
          <short value="Name that identify this medication"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
          <min value="1"/>
-         <max value="1"/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
@@ -65,7 +62,6 @@
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
          <min value="1"/>
-         <max value="*"/>
       </element>
       <element id="Medication.form.coding.system">
          <path value="Medication.form.coding.system"/>
@@ -81,7 +77,6 @@
       </element>
       <element id="Medication.amount">
          <path value="Medication.amount"/>
-         <min value="1"/>
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
@@ -95,11 +90,13 @@
          <path value="Medication.ingredient.strength"/>
          <min value="1"/>
       </element>
-      <element id="Medication.batch">
-         <path value="Medication.batch"/>
+      <element id="Medication.ingredient.strength.numerator">
+         <path value="Medication.ingredient.strength.numerator"/>
+         <min value="1"/>
       </element>
-      <element id="Medication.batch.lotNumber">
-         <path value="Medication.batch.lotNumber"/>
+      <element id="Medication.ingredient.strength.denominator">
+         <path value="Medication.ingredient.strength.denominator"/>
+         <min value="1"/>
       </element>
    </differential>
 </StructureDefinition>

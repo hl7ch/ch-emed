@@ -18,6 +18,16 @@
          <path value="Composition"/>
          <short value="CH EMED Medication Prescription Composition"/>
       </element>
+      <element id="Composition.type">
+         <path value="Composition.type"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://loinc.org"/>
+               <code value="57833-6"/>
+               <display value="Prescription for medication"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
          <short value="Patient"/>
@@ -45,6 +55,18 @@
          <path value="Composition.author.reference"/>
          <min value="1"/>
       </element>
+      <element id="Composition.title">
+         <path value="Composition.title"/>
+         <short value="'Rezept' or 'Ordonnance' or 'Ricetta' or 'Prescription'"/>
+      </element>
+      <element id="Composition.custodian">
+         <path value="Composition.custodian"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.custodian.reference">
+         <path value="Composition.custodian.reference"/>
+         <min value="1"/>
+      </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
          <min value="1"/>
@@ -63,6 +85,11 @@
          <short value="Medication prescription"/>
          <min value="1"/>
          <max value="*"/>
+      </element>
+      <element id="Composition.section.title:prescription">
+         <path value="Composition.section.title"/>
+         <short value="'Arzneimittelverordnung' or 'Prescription médicamenteuse' or 'Prescrizione di droga' or 'Prescription for medication'"/>
+         <min value="1"/>
       </element>
       <element id="Composition.section.code:prescription">
          <path value="Composition.section.code"/>
@@ -108,6 +135,11 @@
          <short value="Annotation"/>
          <min value="1"/>
          <max value="1"/>
+      </element>
+      <element id="Composition.section.title:annotation">
+         <path value="Composition.section.title"/>
+         <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
+         <min value="1"/>
       </element>
       <element id="Composition.section.code:annotation">
          <path value="Composition.section.code"/>

@@ -65,7 +65,6 @@
       </element>
       <element id="MedicationRequest.note">
          <path value="MedicationRequest.note"/>
-         <min value="0"/>
          <max value="1"/>
       </element>
       <element id="MedicationRequest.dosageInstruction">
@@ -80,27 +79,19 @@
       <element id="MedicationRequest.dispenseRequest">
          <path value="MedicationRequest.dispenseRequest"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
          <path value="MedicationRequest.dispenseRequest.quantity"/>
-         <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
-         <min value="0"/>
-         <max value="1"/>
       </element>
       <element id="MedicationRequest.substitution.allowed[x]">
          <path value="MedicationRequest.substitution.allowed[x]"/>
-         <min value="1"/>
-         <max value="1"/>
       </element>
    </differential>
 </StructureDefinition>
