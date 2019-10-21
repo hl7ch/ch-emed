@@ -15,7 +15,7 @@
   <status value="active"/>
   <intent value="order"/>
   <medicationReference>
-    <reference value="Medication/Norvasc"/>
+    <reference value="Medication/Norvasc-MedicationRequest"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>

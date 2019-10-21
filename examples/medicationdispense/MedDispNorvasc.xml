@@ -14,7 +14,7 @@
   </extension>
   <status value="in-progress"/>
   <medicationReference>
-    <reference value="Medication/Norvasc"/>
+    <reference value="Medication/Norvasc-MedicationDispense"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>

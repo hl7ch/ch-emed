@@ -1,0 +1,78 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-dosage-medicationrequest"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationrequest"/>
+   <version value="0.0.1"/>
+   <name value="CHEMEDDosageMedicationRequest"/>
+   <title value="CH EMED Dosage Profile (Medication Request)"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <description value="Definition of the medication dosage for the medication request"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <type value="Dosage"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Dosage">
+         <path value="Dosage"/>
+         <short value="CH EMED Dosage"/>
+      </element>
+      <element id="Dosage.text">
+         <path value="Dosage.text"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.timing">
+         <path value="Dosage.timing"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.timing.repeat">
+         <path value="Dosage.timing.repeat"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Dosage.timing.repeat.bounds[x]">
+         <path value="Dosage.timing.repeat.bounds[x]"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Dosage.timing.repeat.when">
+         <path value="Dosage.timing.repeat.when"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="Dosage.asNeeded[x]">
+         <path value="Dosage.asNeeded[x]"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.route">
+         <path value="Dosage.route"/>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-routeofadministration"/>
+         </binding>
+      </element>
+      <element id="Dosage.route.coding">
+         <path value="Dosage.route.coding"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="Dosage.route.coding.system">
+         <path value="Dosage.route.coding.system"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.route.coding.code">
+         <path value="Dosage.route.coding.code"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.route.coding.display">
+         <path value="Dosage.route.coding.display"/>
+         <min value="1"/>
+      </element>
+      <element id="Dosage.doseAndRate">
+         <path value="Dosage.doseAndRate"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

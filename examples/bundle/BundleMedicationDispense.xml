@@ -2,7 +2,7 @@
     <id value="BundleMedicationDispense"/>
     <meta>
         <lastUpdated value="2019-10-11T13:17:52.308+00:00"/>
-        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-document"/>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
     </meta>
     <identifier>
         <system value="http://example.fhir"/>
@@ -17,7 +17,7 @@
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2019-10-11T13:14:58.191+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition"/>
+                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
                 </meta>
                 <status value="final"/>
                 <type>

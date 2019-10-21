@@ -26,7 +26,7 @@
          <short value="Medication"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
          </type>
       </element>
       <element id="MedicationStatement.medication[x].reference">
@@ -59,7 +59,7 @@
          <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationstatement"/>
          </type>
       </element>
    </differential>

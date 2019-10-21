@@ -2,7 +2,7 @@
 <Composition xmlns="http://hl7.org/fhir">
   <id value="CompMedicationDispense"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
   </meta>
   <status value="final"/>
   <type>

@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medication-dispense-document"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-document"/>
+   <id value="ch-emed-document-medicationcard"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDMedicationDispenseDocument"/>
-   <title value="CH EMED Medication Dispense Document Profile"/>
+   <name value="CHEMEDDocumentMedicationCard"/>
+   <title value="CH EMED Medication Card Document Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the bundle for the medication dispense document"/>
+   <description value="Definition of the bundle for the medication card document"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Bundle"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Bundle">
          <path value="Bundle"/>
-         <short value="CH EMED Medication Dispense Document"/>
+         <short value="CH EMED Medication Card Document"/>
       </element>
       <element id="Bundle.identifier">
          <path value="Bundle.identifier"/>
@@ -47,7 +47,7 @@
       <element id="Bundle.entry:Composition">
          <path value="Bundle.entry" />
          <sliceName value="Composition" />
-         <short value="Medication dispense composition" />
+         <short value="Medication card composition" />
          <min value="1" />
          <max value="1" />
       </element>
@@ -56,7 +56,7 @@
          <min value="1" />
          <type>
             <code value="Composition" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard" />
          </type>
       </element>
    </differential>

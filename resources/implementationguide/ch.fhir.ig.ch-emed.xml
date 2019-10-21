@@ -27,43 +27,55 @@
          <reference>
             <reference value="Bundle/BundleMedicationCard"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-document"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/BundleMedicationDispense"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-document"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/BundleMedicationPrescription"/>
+            <reference value="Bundle/2-6-MedicationPrescription-FHIR"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-document"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/CompMedicationCard"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-card-composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/CompMedicationDispense"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-dispense-composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/CompMedicationPrescription"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-prescription-composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/Norvasc"/>
+            <reference value="Medication/Norvasc-MedicationDispense"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/Norvasc-MedicationRequest"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/Norvasc-MedicationStatement"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
       </resource>
       <resource>
          <reference>
@@ -105,42 +117,62 @@
       <!-- references for structure definitions -->
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage"/>
+            <reference value="StructureDefinition/ch-emed-composition-medicationcard"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-card-composition"/>
+            <reference value="StructureDefinition/ch-emed-composition-medicationdispense"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-card-document"/>
+            <reference value="StructureDefinition/ch-emed-composition-medicationprescription"/>
+         </reference>
+      </resource>
+       <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-document-medicationcard"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-dispense-composition"/>
+            <reference value="StructureDefinition/ch-emed-document-medicationdispense"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-dispense-document"/>
+            <reference value="StructureDefinition/ch-emed-document-medicationprescription"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-prescription-composition"/>
+            <reference value="StructureDefinition/ch-emed-dosage-medicationstatement"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-prescription-document"/>
+            <reference value="StructureDefinition/ch-emed-dosage-medicationdispense"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication"/>
+            <reference value="StructureDefinition/ch-emed-dosage-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-medicationstatement"/>
+         </reference>
+      </resource>
+     <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-medicationdispense"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medication-medicationrequest"/>
          </reference>
       </resource>
       <resource>
