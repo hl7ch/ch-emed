@@ -4,6 +4,15 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
   </meta>
+  <language value="de-CH"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+    <valueString value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
   <status value="final"/>
   <type>
     <coding>
@@ -21,6 +30,17 @@
     <reference value="Practitioner/FamilienHausarzt"/>
   </author>
   <title value="Rezept"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
   <custodian>
     <reference value="Organization/Hausarzt"/>
   </custodian>

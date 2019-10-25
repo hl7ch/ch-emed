@@ -40,7 +40,6 @@
       </element>
       <element id="Dosage.asNeeded[x]">
          <path value="Dosage.asNeeded[x]"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
