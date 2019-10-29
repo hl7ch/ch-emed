@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="Comp-2-7-MedicationCard-FHIR"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+  </meta>
+  <language value="de-CH"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+    <valueString value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="56445-0"/>
+      <display value="Medication summary Doc"/>
+    </coding>
+    <!-- TBD: Translation to SNOMED CT -->
+  </type>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <date value="2012-02-04T14:05:00+01:00"/>
+  <author>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <title value="Medikationsplan"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/Hausarzt"/>
+  </custodian>
+  <section>
+    <title value="Medikamentenliste"/>
+    <!-- TBD: Text mit Tooling -->
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="Hx of Medication use"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="MedicationStatement/MedStatBeloczok"/>
+    </entry>
+    <entry>
+      <reference value="MedicationStatement/MedStatNorvasc"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Kommentar"/>
+    <!-- TBD: Text mit Tooling -->
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48767-8"/>
+        <display value="Annotation comment Imp"/>
+      </coding>
+    </code>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>
+    </text>
+  </section>
+</Composition>

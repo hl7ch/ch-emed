@@ -25,13 +25,7 @@
       <!-- references for examples -->
       <resource>
          <reference>
-            <reference value="Bundle/BundleMedicationCard"/>
-         </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Bundle/BundleMedicationDispense"/>
+            <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
@@ -43,43 +37,43 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/CompMedicationCard"/>
+            <reference value="Bundle/2-7-MedicationCard-FHIR"/>
          </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/CompMedicationDispense"/>
+            <reference value="Composition/Comp-2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/CompMedicationPrescription"/>
+            <reference value="Composition/Comp-2-6-MedicationPrescription-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/Norvasc-MedicationDispense"/>
+            <reference value="Composition/Comp-2-7-MedicationCard-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/Beloczok"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/Norvasc-MedicationRequest"/>
+            <reference value="Medication/Norvasc"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/Norvasc-MedicationStatement"/>
-         </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationDispense/MedDispNorvasc"/>
+            <reference value="MedicationDispense/MedDispBeloczok"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
@@ -88,6 +82,12 @@
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/MedStatBeloczok"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>

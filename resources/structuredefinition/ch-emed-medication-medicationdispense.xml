@@ -21,7 +21,6 @@
       <element id="Medication.code">
          <path value="Medication.code"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
@@ -51,12 +50,10 @@
          <path value="Medication.code.text"/>
          <short value="Name that identify this medication"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
          <min value="1"/>
-         <max value="1"/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
@@ -65,7 +62,7 @@
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
          <min value="1"/>
-         <max value="*"/>
+         <max value="1"/>
       </element>
       <element id="Medication.form.coding.system">
          <path value="Medication.form.coding.system"/>

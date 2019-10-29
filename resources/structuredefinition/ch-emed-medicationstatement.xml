@@ -56,7 +56,6 @@
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
          <min value="1"/>
-         <max value="1"/>
          <type>
             <code value="Dosage"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationstatement"/>

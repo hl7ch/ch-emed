@@ -51,6 +51,7 @@
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>

@@ -76,18 +76,20 @@
          <path value="MedicationDispense.authorizingPrescription.reference"/>
          <min value="1"/>
       </element>
+      <element id="MedicationDispense.quantity">
+         <path value="MedicationDispense.quantity"/>
+         <min value="1"/>
+      </element>
       <element id="MedicationDispense.whenHandedOver">
          <path value="MedicationDispense.whenHandedOver"/>
       </element>
       <element id="MedicationDispense.note">
          <path value="MedicationDispense.note"/>
-         <min value="0"/>
          <max value="1"/>
       </element>
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
          <min value="1"/>
-         <max value="1"/>
          <type>
             <code value="Dosage"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationdispense"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-  <id value="MedStatNorvasc"/>
+  <id value="MedStatBeloczok"/>
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
   </meta>
   <status value="completed"/>
   <medicationReference>
-    <reference value="Medication/Norvasc"/>
+    <reference value="Medication/Beloczok"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
@@ -15,14 +15,13 @@
     <text value="Bluthochdruck"/>
   </reasonCode>
   <dosage>
-    <text value="2x täglich eine Tablette morgens und abends einnehmen"/>
+    <text value="Morgens 1 Stück"/>
     <timing>
       <repeat>
         <boundsPeriod>
           <start value="2012-02-04"/>
         </boundsPeriod>
         <when value="ACM"/>
-        <when value="ACV"/>
       </repeat>
     </timing>
     <route>
@@ -35,6 +34,30 @@
     <doseAndRate>
       <doseQuantity>
         <value value="1"/>
+        <unit value="Tablette"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <text value="Abends 0.5 Stück"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2012-02-04"/>
+        </boundsPeriod>
+        <when value="ACV"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="0.5"/>
         <unit value="Tablette"/>
       </doseQuantity>
     </doseAndRate>

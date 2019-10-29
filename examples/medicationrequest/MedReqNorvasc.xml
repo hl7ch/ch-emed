@@ -15,7 +15,7 @@
   <status value="completed"/>
   <intent value="order"/>
   <medicationReference>
-    <reference value="Medication/Norvasc-MedicationRequest"/>
+    <reference value="Medication/Norvasc"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
@@ -27,8 +27,8 @@
         <boundsPeriod>
           <start value="2012-02-04"/>
         </boundsPeriod>
-        <when value="MORN"/>
-        <when value="EVE"/>
+        <when value="ACM"/>
+        <when value="ACV"/>
       </repeat>
     </timing>
     <route>

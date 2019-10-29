@@ -7,6 +7,12 @@ Content-Type: application/fhir+xml
 < ./patient/MonikaWegmueller.xml
 
 ###
+PUT {{host}}/Patient/MonikaWegmuellerRecipient HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./patient/MonikaWegmuellerRecipient.xml
+
+###
 PUT {{host}}/Practitioner/FamilienHausarzt HTTP/1.1
 Content-Type: application/fhir+xml
 
@@ -20,22 +26,16 @@ Content-Type: application/fhir+xml
 
 
 ###
-PUT {{host}}/Medication/Norvasc-MedicationDispense HTTP/1.1
+PUT {{host}}/Medication/Beloczok HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./medication/Norvasc-MedicationDispense.xml
+< ./medication/Beloczok.xml
 
 ###
-PUT {{host}}/Medication/Norvasc-MedicationRequest HTTP/1.1
+PUT {{host}}/Medication/Norvasc HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./medication/Norvasc-MedicationRequest.xml
-
-###
-PUT {{host}}/Medication/Norvasc-MedicationStatement HTTP/1.1
-Content-Type: application/fhir+xml
-
-< ./medication/Norvasc-MedicationStatement.xml
+< ./medication/Norvasc.xml
 
 
 ###
@@ -45,10 +45,16 @@ Content-Type: application/fhir+xml
 < ./medicationrequest/MedReqNorvasc.xml
 
 ###
-PUT {{host}}/MedicationDispense/MedDispNorvasc HTTP/1.1
+PUT {{host}}/MedicationDispense/MedDispBeloczok HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./medicationdispense/MedDispNorvasc.xml
+< ./medicationdispense/MedDispBeloczok.xml
+
+###
+PUT {{host}}/MedicationStatement/MedStatBeloczok HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./medicationstatement/MedStatBeloczok.xml
 
 ###
 PUT {{host}}/MedicationStatement/MedStatNorvasc HTTP/1.1
@@ -58,22 +64,22 @@ Content-Type: application/fhir+xml
 
 
 ###
-PUT {{host}}/Composition/CompMedicationPrescription HTTP/1.1
+PUT {{host}}/Composition/Comp-2-6-MedicationPrescription-FHIR HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/CompMedicationPrescription.xml
+< ./composition/Comp-2-6-MedicationPrescription-FHIR.xml
 
 ###
-PUT {{host}}/Composition/CompMedicationDispense HTTP/1.1
+PUT {{host}}/Composition/Comp-2-4-MedicationDispense-FHIR HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/CompMedicationDispense.xml
+< ./composition/Comp-2-4-MedicationDispense-FHIR.xml
 
 ###
-PUT {{host}}/Composition/CompMedicationCard HTTP/1.1
+PUT {{host}}/Composition/Comp-2-7-MedicationCard-FHIR HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/CompMedicationCard.xml
+< ./composition/Comp-2-7-MedicationCard-FHIR.xml
 
 
 
@@ -82,13 +88,13 @@ GET {{host}}/Patient/MonikaWegmueller HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/CompMedicationPrescription/$document HTTP/1.1
+GET {{host}}/Composition/Comp-2-6-MedicationPrescription-FHIR/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/CompMedicationDispense/$document HTTP/1.1
+GET {{host}}/Composition/Comp-2-4-MedicationDispense-FHIR/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/CompMedicationCard/$document HTTP/1.1
+GET {{host}}/Composition/Comp-2-7-MedicationCard-FHIR/$document HTTP/1.1
 Content-Type: application/fhir+xml

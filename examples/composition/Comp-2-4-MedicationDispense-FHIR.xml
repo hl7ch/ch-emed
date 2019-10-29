@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="Comp-2-4-MedicationDispense-FHIR"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
+  </meta>
+  <language value="de-CH"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+    <valueString value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60593-1"/>
+      <display value="Medication dispensed.extended Doc"/>
+    </coding>
+    <!-- TBD: Translation to SNOMED CT -->
+  </type>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <date value="2012-02-04T14:00:00+01:00"/>
+  <author>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <title value="Abgabe"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/Hausarzt"/>
+  </custodian>
+  <section>
+    <title value="Abgabe eines Medikaments"/>
+    <!-- TBD: Text mit Tooling -->
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="60590-7"/>
+        <display value="Medication dispensed.brief Doc"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="MedicationDispense/MedDispBeloczok"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Kommentar"/>
+    <!-- TBD: Text mit Tooling -->
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48767-8"/>
+        <display value="Annotation comment Imp"/>
+      </coding>
+    </code>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>
+    </text>
+  </section>
+</Composition>
