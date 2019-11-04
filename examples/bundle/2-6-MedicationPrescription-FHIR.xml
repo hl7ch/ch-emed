@@ -9,6 +9,7 @@
       <value value="urn:uuid:D41D72BA-2100-11E6-B67B-9E71128CAE77"/>
    </identifier>
    <type value="document"/>
+   <timestamp value="2019-10-29T06:40:26.623+00:00"/>
    <entry>
       <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-6-MedicationPrescription-FHIR"/>
       <resource>

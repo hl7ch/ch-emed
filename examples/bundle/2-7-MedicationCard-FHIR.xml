@@ -9,6 +9,7 @@
         <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
     </identifier>
     <type value="document"/>
+    <timestamp value="2019-10-29T06:43:21.021+00:00"/>
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-7-MedicationCard-FHIR"/>
         <resource>

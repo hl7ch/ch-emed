@@ -11,7 +11,7 @@
     "specification": "http://hl7.org/fhir/r4"
   },
   "template": "https://github.com/ahdis/ig-template",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "fixed-business-version": "0.0.1",
   "license" : "CC0-1.0",
   "npm-name" : "ch.fhir.ig.ch-emed",
@@ -32,6 +32,11 @@
        "name" : "chcore",
        "package" : "ch.fhir.ig.ch-core",
        "version" : "current"
+    },
+    {
+      "name": "cheprterm",
+      "package": "ch.fhir.ig.ch-epr-term",
+      "version": "current"
     }
   ],
   "source": "implementationguide/ch.fhir.ig.ch-emed.xml",
