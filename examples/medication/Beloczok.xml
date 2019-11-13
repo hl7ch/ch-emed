@@ -22,9 +22,9 @@
   <amount>
     <numerator>
       <value value="30"/>
-      <unit value="tbl"/>
+      <unit value="tablets"/>
       <system value="http://unitsofmeasure.org"/>
-      <code value="tbl"/>
+      <code value="1"/>
     </numerator>
     <denominator>
       <value value="1"/>
@@ -44,15 +44,15 @@
     <strength>
       <numerator>
         <value value="50"/>
-        <unit value="mg"/>
+        <unit value="milligram"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="mg"/>
       </numerator>
       <denominator>
         <value value="1"/>
-        <unit value="tbl"/>
+        <unit value="tablets"/>
         <system value="http://unitsofmeasure.org"/>
-        <code value="{tbl}"/>
+        <code value="1"/>
       </denominator>
     </strength>
   </ingredient>

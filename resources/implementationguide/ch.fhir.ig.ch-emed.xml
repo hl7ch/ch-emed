@@ -43,6 +43,12 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Bundle/chmed16af-mp-chemed-mc"/>
+         </reference>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="Composition/Comp-2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>

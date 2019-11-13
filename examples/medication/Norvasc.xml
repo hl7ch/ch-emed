@@ -44,7 +44,7 @@
     <strength>
       <numerator>
         <value value="10"/>
-        <unit value="mg"/>
+        <unit value="milligram"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="mg"/>
       </numerator>

@@ -88,6 +88,14 @@ GET {{host}}/Patient/MonikaWegmueller HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
+GET {{host}}/Patient/MonikaWegmuellerRecipient HTTP/1.1
+Content-Type: application/fhir+xml
+
+###
+GET {{host}}/Organization/Hausarzt HTTP/1.1
+Content-Type: application/fhir+xml
+
+###
 GET {{host}}/Composition/Comp-2-6-MedicationPrescription-FHIR/$document HTTP/1.1
 Content-Type: application/fhir+xml
 

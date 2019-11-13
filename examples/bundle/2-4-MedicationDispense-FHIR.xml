@@ -122,6 +122,29 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmuellerRecipient"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="MonikaWegmuellerRecipient"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2019-11-12T11:38:02.009+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                </meta>
+                <name>
+                    <family value="Wegmüller"/>
+                    <given value="Monika"/>
+                </name>
+                <address>
+                    <line value="Wiesenstr. 12"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8003"/>
+                    <country value="CH"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
@@ -145,6 +168,24 @@
                     <postalCode value="8005"/>
                 </address>
             </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="Hausarzt"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2019-11-12T11:38:46.414+00:00"/>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name value="Hausarzt"/>
+            </Organization>
         </resource>
     </entry>
     <entry>
@@ -255,9 +296,9 @@
                 <amount>
                     <numerator>
                         <value value="30"/>
-                        <unit value="tbl"/>
+                        <unit value="tablets"/>
                         <system value="http://unitsofmeasure.org"/>
-                        <code value="tbl"/>
+                        <code value="1"/>
                     </numerator>
                     <denominator>
                         <value value="1"/>
@@ -277,15 +318,15 @@
                     <strength>
                         <numerator>
                             <value value="50"/>
-                            <unit value="mg"/>
+                            <unit value="milligram"/>
                             <system value="http://unitsofmeasure.org"/>
                             <code value="mg"/>
                         </numerator>
                         <denominator>
                             <value value="1"/>
-                            <unit value="tbl"/>
+                            <unit value="tablets"/>
                             <system value="http://unitsofmeasure.org"/>
-                            <code value="{tbl}"/>
+                            <code value="1"/>
                         </denominator>
                     </strength>
                 </ingredient>
