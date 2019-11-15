@@ -67,6 +67,31 @@
       </resource>
       <resource>
          <reference>
+            <reference value="DocumentReference/DocRef-1-1-MedicationTreatmentPlan"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="DocumentReference/DocRef-1-2-MedicationDispense"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="DocumentReference/DocRef-2-1-MedicationList"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="DocumentReference/DocRef-2-2-PharmaceuticalAdvice"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="DocumentReference/DocRef-2-3-MedicationTreatmentPlan"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Medication/Beloczok"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>

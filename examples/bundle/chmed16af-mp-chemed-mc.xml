@@ -41,12 +41,10 @@
                </valueReference>
             </extension>
             -->
-            <!--
             <identifier>
                <system value="http://emediplan.ch/chmed16af/id"/>
                <value value="26d3dff7-ab05-4737-a49c-5eccd33595f6"/>
             </identifier>
-            -->
             <status value="final"/>
             <type>
                <coding>
