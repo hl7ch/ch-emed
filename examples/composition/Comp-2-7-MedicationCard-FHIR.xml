@@ -5,19 +5,36 @@
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
   </meta>
   <language value="de-CH"/>
-  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+    <valueIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
     <valueReference>
       <reference value="Patient/MonikaWegmuellerRecipient"/>
     </valueReference>
   </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
+  </identifier>
   <status value="final"/>
   <type>
     <coding>
       <system value="http://loinc.org"/>
       <code value="56445-0"/>
-      <display value="Medication summary Doc"/>
+      <display value="Medication summary"/>
     </coding>
-    <!-- TBD: Translation to SNOMED CT -->
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="721912009"/>
+      <display value="Medication summary document"/>
+    </coding>
   </type>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
@@ -43,14 +60,18 @@
   </custodian>
   <section>
     <title value="Medikamentenliste"/>
-    <!-- TBD: Text mit Tooling -->
     <code>
       <coding>
         <system value="http://loinc.org"/>
         <code value="10160-0"/>
-        <display value="Hx of Medication use"/>
+        <display value="History of medication use"/>
       </coding>
     </code>
+    <!-- TBD: Text mit Tooling -->
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> TBD </div>
+    </text>
     <entry>
       <reference value="MedicationStatement/MedStatBeloczok"/>
     </entry>
@@ -60,14 +81,14 @@
   </section>
   <section>
     <title value="Kommentar"/>
-    <!-- TBD: Text mit Tooling -->
     <code>
       <coding>
         <system value="http://loinc.org"/>
         <code value="48767-8"/>
-        <display value="Annotation comment Imp"/>
+        <display value="Annotation comment"/>
       </coding>
     </code>
+    <!-- TBD: Text mit Tooling -->
     <text>
       <status value="additional"/>
       <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>

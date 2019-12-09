@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="2-7-MedicationCard-FHIR"/>
     <meta>
-        <lastUpdated value="2019-10-29T06:43:21.021+00:00"/>
+        <lastUpdated value="2019-12-09T17:19:48.265+00:00"/>
         <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
     </meta>
     <identifier>
@@ -9,30 +9,47 @@
         <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2019-10-29T06:43:21.021+00:00"/>
+    <timestamp value="2012-02-04T14:05:00+01:00"/>
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-7-MedicationCard-FHIR"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
                 <id value="Comp-2-7-MedicationCard-FHIR"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2019-10-29T06:39:58.910+00:00"/>
+                    <versionId value="3"/>
+                    <lastUpdated value="2019-12-09T17:19:17.486+00:00"/>
                     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
                 </meta>
                 <language value="de-CH"/>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+                    <valueIdentifier>
+                        <system value="urn:ietf:rfc:3986"/>
+                        <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
+                    </valueIdentifier>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+                    <valueInteger value="1"/>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                     <valueReference>
                         <reference value="Patient/MonikaWegmuellerRecipient"/>
                     </valueReference>
                 </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:6B6ED376-A7DA-44CB-92D1-E75CE1AE73B0"/>
+                </identifier>
                 <status value="final"/>
                 <type>
-                    <!-- TBD: Translation to SNOMED CT -->
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="56445-0"/>
-                        <display value="Medication summary Doc"/>
+                        <display value="Medication summary"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="721912009"/>
+                        <display value="Medication summary document"/>
                     </coding>
                 </type>
                 <subject>
@@ -59,14 +76,18 @@
                 </custodian>
                 <section>
                     <title value="Medikamentenliste"/>
-                    <!-- TBD: Text mit Tooling -->
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="10160-0"/>
-                            <display value="Hx of Medication use"/>
+                            <display value="History of medication use"/>
                         </coding>
                     </code>
+                    <!-- TBD: Text mit Tooling -->
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml"> TBD </div>
+                    </text>
                     <entry>
                         <reference value="MedicationStatement/MedStatBeloczok"/>
                     </entry>
@@ -76,14 +97,14 @@
                 </section>
                 <section>
                     <title value="Kommentar"/>
-                    <!-- TBD: Text mit Tooling -->
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="48767-8"/>
-                            <display value="Annotation comment Imp"/>
+                            <display value="Annotation comment"/>
                         </coding>
                     </code>
+                    <!-- TBD: Text mit Tooling -->
                     <text>
                         <status value="additional"/>
                         <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>
@@ -93,66 +114,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
-        <resource>
-            <Patient xmlns="http://hl7.org/fhir">
-                <id value="MonikaWegmueller"/>
-                <meta>
-                    <versionId value="2"/>
-                    <lastUpdated value="2019-10-21T17:17:59.039+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-                </meta>
-                <identifier>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="MR"/>
-                        </coding>
-                    </type>
-                    <system value="urn:oid:2.999"/>
-                    <value value="11111111"/>
-                </identifier>
-                <name>
-                    <family value="Wegmüller"/>
-                    <given value="Monika"/>
-                </name>
-                <gender value="female"/>
-                <birthDate value="1943-05-15"/>
-            </Patient>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmuellerRecipient"/>
-        <resource>
-            <Patient xmlns="http://hl7.org/fhir">
-                <id value="MonikaWegmuellerRecipient"/>
-                <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2019-11-12T11:38:02.009+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-                </meta>
-                <name>
-                    <family value="Wegmüller"/>
-                    <given value="Monika"/>
-                </name>
-                <address>
-                    <line value="Wiesenstr. 12"/>
-                    <city value="Zürich"/>
-                    <postalCode value="8003"/>
-                    <country value="CH"/>
-                </address>
-            </Patient>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="FamilienHausarzt"/>
                 <meta>
                     <versionId value="2"/>
-                    <lastUpdated value="2019-10-21T17:18:04.341+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                    <lastUpdated value="2019-12-09T17:18:42.928+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
                 </meta>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
@@ -171,21 +140,38 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
         <resource>
-            <Organization xmlns="http://hl7.org/fhir">
-                <id value="Hausarzt"/>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="MonikaWegmueller"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2019-11-12T11:38:46.414+00:00"/>
-                    <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+                    <versionId value="2"/>
+                    <lastUpdated value="2019-12-09T17:18:37.829+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
                 </meta>
                 <identifier>
-                    <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601000234438"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.999"/>
+                    <value value="11111111"/>
                 </identifier>
-                <name value="Hausarzt"/>
-            </Organization>
+                <name>
+                    <family value="Wegmüller"/>
+                    <given value="Monika"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1943-05-15"/>
+                <address>
+                    <line value="Wiesenstr. 12"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8003"/>
+                    <country value="CH"/>
+                </address>
+            </Patient>
         </resource>
     </entry>
     <entry>
@@ -195,7 +181,7 @@
                 <id value="MedStatBeloczok"/>
                 <meta>
                     <versionId value="1"/>
-                    <lastUpdated value="2019-10-29T06:39:28.008+00:00"/>
+                    <lastUpdated value="2019-11-12T11:39:02.339+00:00"/>
                     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
                 </meta>
                 <status value="completed"/>
@@ -265,8 +251,8 @@
             <MedicationStatement xmlns="http://hl7.org/fhir">
                 <id value="MedStatNorvasc"/>
                 <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2019-10-29T06:39:31.366+00:00"/>
+                    <versionId value="1"/>
+                    <lastUpdated value="2019-11-12T11:39:04.922+00:00"/>
                     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
                 </meta>
                 <status value="completed"/>
@@ -308,78 +294,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Medication/Norvasc"/>
-        <resource>
-            <Medication xmlns="http://hl7.org/fhir">
-                <id value="Norvasc"/>
-                <meta>
-                    <versionId value="2"/>
-                    <lastUpdated value="2019-10-29T06:37:19.994+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
-                </meta>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.51.1.1"/>
-                        <code value="7680500440334"/>
-                        <display value="NORVASC Tabl 10 mg"/>
-                    </coding>
-                    <text value="NORVASC"/>
-                </code>
-                <form>
-                    <coding>
-                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                        <code value="10219000"/>
-                        <display value="Tablet"/>
-                    </coding>
-                </form>
-                <amount>
-                    <numerator>
-                        <value value="30"/>
-                        <unit value="tablets"/>
-                        <system value="http://unitsofmeasure.org"/>
-                        <code value="1"/>
-                    </numerator>
-                    <denominator>
-                        <value value="1"/>
-                        <system value="http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type"/>
-                        <code value="pkt"/>
-                    </denominator>
-                </amount>
-                <ingredient>
-                    <itemCodeableConcept>
-                        <coding>
-                            <system value="urn:oid:2.16.840.1.113883.6.73"/>
-                            <code value="C08CA01"/>
-                            <display value="amlodipine"/>
-                        </coding>
-                        <text value="Amlodipine"/>
-                    </itemCodeableConcept>
-                    <strength>
-                        <numerator>
-                            <value value="10"/>
-                            <unit value="milligram"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="mg"/>
-                        </numerator>
-                        <denominator>
-                            <value value="1"/>
-                            <unit value="tablets"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="1"/>
-                        </denominator>
-                    </strength>
-                </ingredient>
-            </Medication>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Medication/Beloczok"/>
         <resource>
             <Medication xmlns="http://hl7.org/fhir">
                 <id value="Beloczok"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2019-10-29T06:37:14.898+00:00"/>
+                    <versionId value="2"/>
+                    <lastUpdated value="2019-11-15T11:40:19.358+00:00"/>
                     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
                 </meta>
                 <code>
@@ -422,6 +343,71 @@
                     <strength>
                         <numerator>
                             <value value="50"/>
+                            <unit value="milligram"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="mg"/>
+                        </numerator>
+                        <denominator>
+                            <value value="1"/>
+                            <unit value="tablets"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="1"/>
+                        </denominator>
+                    </strength>
+                </ingredient>
+            </Medication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Medication/Norvasc"/>
+        <resource>
+            <Medication xmlns="http://hl7.org/fhir">
+                <id value="Norvasc"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2019-11-15T11:40:22.228+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
+                </meta>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.51.1.1"/>
+                        <code value="7680500440334"/>
+                        <display value="NORVASC Tabl 10 mg"/>
+                    </coding>
+                    <text value="NORVASC"/>
+                </code>
+                <form>
+                    <coding>
+                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                        <code value="10219000"/>
+                        <display value="Tablet"/>
+                    </coding>
+                </form>
+                <amount>
+                    <numerator>
+                        <value value="30"/>
+                        <unit value="tablets"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="1"/>
+                    </numerator>
+                    <denominator>
+                        <value value="1"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type"/>
+                        <code value="pkt"/>
+                    </denominator>
+                </amount>
+                <ingredient>
+                    <itemCodeableConcept>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.6.73"/>
+                            <code value="C08CA01"/>
+                            <display value="amlodipine"/>
+                        </coding>
+                        <text value="Amlodipine"/>
+                    </itemCodeableConcept>
+                    <strength>
+                        <numerator>
+                            <value value="10"/>
                             <unit value="milligram"/>
                             <system value="http://unitsofmeasure.org"/>
                             <code value="mg"/>
