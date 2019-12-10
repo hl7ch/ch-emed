@@ -7,7 +7,7 @@
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the medication for the medication statement"/>
+   <description value="Definition of the medication for the medication card document"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Medication"/>
@@ -53,11 +53,11 @@
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
-         <min value="1"/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
          </binding>
+         <min value="1"/>
       </element>
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
@@ -74,10 +74,6 @@
       </element>
       <element id="Medication.form.coding.display">
          <path value="Medication.form.coding.display"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.amount">
-         <path value="Medication.amount"/>
          <min value="1"/>
       </element>
       <element id="Medication.ingredient">

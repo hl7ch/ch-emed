@@ -92,18 +92,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/Beloczok"/>
-         </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Medication/Norvasc"/>
-         </reference>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="MedicationDispense/MedDispBeloczok"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
@@ -188,12 +176,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-medicationstatement"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-medicationdispense"/>
+            <reference value="StructureDefinition/ch-emed-dosage"/>
          </reference>
       </resource>
       <resource>
