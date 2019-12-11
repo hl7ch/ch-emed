@@ -2,8 +2,8 @@
    <id value="ch-emed-medicationrequest-treatmentplan"/>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDMedicationRequestTreatmentplan"/>
-   <title value="CH EMED Treatmentplan Extension"/>
+   <name value="CHEMEDMedicationRequestTreatmentPlan"/>
+   <title value="CH EMED Treatment Plan Extension"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -20,10 +20,9 @@
    <differential>
       <element id="Extension">
          <path value="Extension"/>
-         <short value="CH EMED Treatmentplan"/>
+         <short value="ID for Medication Treatment Plan"/>
          <max value="1"/>
       </element>
-
       <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
          <sliceName value="externalDocumentId"/>
@@ -52,7 +51,6 @@
             <code value="string"/>
          </type>
       </element>
-
       <element id="Extension.extension:medicationTreatmentPlanId">
          <path value="Extension.extension"/>
          <sliceName value="medicationTreatmentPlanId"/>
@@ -81,7 +79,6 @@
             <code value="string"/>
          </type>
       </element>
-
       <element id="Extension.url">
          <path value="Extension.url"/>
          <type>

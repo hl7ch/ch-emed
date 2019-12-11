@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationDispense"/>
-   <title value="CH EMED Medication Dispense Profile"/>
+   <title value="CH EMED MedicationDispense Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -16,7 +16,13 @@
    <differential>
       <element id="MedicationDispense">
          <path value="MedicationDispense"/>
-         <short value="CH EMED Medication Dispense"/>
+         <short value="CH EMED MedicationDispense"/>
+      </element>
+       <element id="MedicationDispense.contained">
+         <path value="MedicationDispense.contained"/>
+         <short value="Medication inline resource"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="MedicationDispense.extension">
          <path value="MedicationDispense.extension"/>
@@ -31,7 +37,7 @@
       <element id="MedicationDispense.extension:treatmentplan">
          <path value="MedicationDispense.extension" />
          <sliceName value="treatmentplan" />
-         <short value="Treatment plan"/>
+         <short value="Medication treatment plan"/>
          <min value="0"/>
          <max value="1"/>
          <type>
@@ -39,24 +45,24 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan" />
          </type>
       </element>
-      <element id="MedicationDispense.medication[x]">
-         <path value="MedicationDispense.medication[x]"/>
-         <short value="Medication"/>
+      <element id="MedicationDispense.status">
+         <path value="MedicationDispense.status"/>
+         <fixedCode value="completed"/> 
+      </element>
+      <element id="MedicationDispense.medicationReference">
+         <path value="MedicationDispense.medicationReference"/>
+         <short value="Reference to the contained medication"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
          </type>
-      </element>
-      <element id="MedicationDispense.medication[x].reference">
-         <path value="MedicationDispense.medication[x].reference"/>
-         <min value="1"/>
       </element>
       <element id="MedicationDispense.subject">
          <path value="MedicationDispense.subject"/>
          <short value="Patient"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
          </type>
       </element>
       <element id="MedicationDispense.subject.reference">
@@ -78,17 +84,21 @@
       </element>
       <element id="MedicationDispense.quantity">
          <path value="MedicationDispense.quantity"/>
+         <short value="Number of packages"/>
          <min value="1"/>
       </element>
       <element id="MedicationDispense.whenHandedOver">
          <path value="MedicationDispense.whenHandedOver"/>
+         <short value="When product was given out"/>
       </element>
       <element id="MedicationDispense.note">
          <path value="MedicationDispense.note"/>
+         <short value="Annotation"/>
          <max value="1"/>
       </element>
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
+         <short value="How the medication is to be used by the patient or administered by the caregiver"/>
          <min value="1"/>
          <type>
             <code value="Dosage"/>

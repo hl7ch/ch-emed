@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationMedicationDispense"/>
-   <title value="CH EMED Medication Profile (Medication Dispense)"/>
+   <title value="CH EMED Medication Profile (MedicationDispense)"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Medication">
          <path value="Medication"/>
-         <short value="CH EMED Medication"/>
+         <short value="CH EMED Medication (MedicationDispense)"/>
       </element>
       <element id="Medication.code">
          <path value="Medication.code"/>
@@ -29,6 +29,7 @@
       </element>
       <element id="Medication.code.coding.system">
          <path value="Medication.code.coding.system"/>
+         <short value="Global Trade Item Number (GS1)"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -53,6 +54,7 @@
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
+         <short value="Galenic form"/>
          <min value="1"/>
          <binding>
             <strength value="required"/>
@@ -78,6 +80,7 @@
       </element>
       <element id="Medication.amount">
          <path value="Medication.amount"/>
+         <short value="Package size"/>
          <min value="1"/>
       </element>
       <element id="Medication.ingredient">
@@ -87,16 +90,20 @@
       </element>
       <element id="Medication.ingredient.item[x]">
          <path value="Medication.ingredient.item[x]"/>
+         <short value="Name of active ingredient"/>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
+         <short value="Dose per unit"/>
          <min value="1"/>
       </element>
       <element id="Medication.batch">
          <path value="Medication.batch"/>
+         <short value="Details about packaged medications"/>
       </element>
       <element id="Medication.batch.lotNumber">
          <path value="Medication.batch.lotNumber"/>
+         <short value="Identifier assigned to batch"/>
       </element>
    </differential>
 </StructureDefinition>

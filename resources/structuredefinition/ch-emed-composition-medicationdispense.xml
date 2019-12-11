@@ -11,7 +11,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Composition">
@@ -31,15 +31,28 @@
             <rules value="open"/>
          </slicing>
       </element>
+      <element id="Composition.extension:setId">
+         <path value="Composition.extension"/>
+         <sliceName value="setId"/>
+      </element>
+      <element id="Composition.extension:versionNumber">
+         <path value="Composition.extension"/>
+         <sliceName value="versionNumber"/>
+      </element>
       <element id="Composition.extension:informationRecipient">
          <path value="Composition.extension"/>
          <sliceName value="informationRecipient"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
-         </type>
+      </element>
+      <element id="Composition.extension:dataEnterer">
+         <path value="Composition.extension"/>
+         <sliceName value="dataEnterer"/>
+      </element>
+      <element id="Composition.identifier">
+         <path value="Composition.identifier"/>
+      </element>
+      <element id="Composition.status">
+         <path value="Composition.status"/>
+         <fixedCode value="final"/>
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
@@ -47,36 +60,30 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="60593-1"/>
-               <display value="Medication dispensed.extended Doc"/>
+               <display value="Medication dispensed.extended"/>
             </coding>
+            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
+            <!--<coding>
+               <system value="http://snomed.info/sct"/>
+               <code value="275670009"/>
+               <display value="Medication Dispensation"/>
+            </coding>-->
          </patternCodeableConcept>
       </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
-         <short value="Patient"/>
-         <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Composition.subject.reference">
          <path value="Composition.subject.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.date">
          <path value="Composition.date"/>
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
-         <short value="Practitioner"/>
-         <min value="1"/>
-         <max value="1"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-         </type>
       </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
@@ -98,20 +105,35 @@
       <element id="Composition.confidentiality.extension:confidentialityCode">
          <path value="Composition.confidentiality.extension"/>
          <sliceName value="confidentialityCode"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
-         </type>
+      </element>
+      <element id="Composition.attester">
+         <path value="Composition.attester"/>
+         <slicing>
+            <discriminator>
+               <type value="value" />
+               <path value="mode" />
+            </discriminator>
+            <rules value="open" />
+         </slicing>
+      </element>
+      <element id="Composition.attester:legalAuthenticator">
+         <path value="Composition.attester"/>
+         <sliceName value="legalAuthenticator"/>
+      </element>
+      <element id="Composition.attester.mode:legalAuthenticator">
+         <path value="Composition.attester.mode"/>
+      </element>
+      <element id="Composition.attester.time:legalAuthenticator">
+         <path value="Composition.attester.time"/>
+      </element>
+      <element id="Composition.attester.party:legalAuthenticator">
+         <path value="Composition.attester.party"/>
       </element>
       <element id="Composition.custodian">
          <path value="Composition.custodian"/>
-         <min value="1"/>
       </element>
       <element id="Composition.custodian.reference">
          <path value="Composition.custodian.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
@@ -136,10 +158,12 @@
          <path value="Composition.section.title"/>
          <short value="'Abgabe eines Medikaments' or 'Dispensation d'un médicament' or 'Dispensazione di un medicamento' or 'Medication dispensed'"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code:dispense">
          <path value="Composition.section.code"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding:dispense">
          <path value="Composition.section.code.coding"/>
@@ -148,24 +172,32 @@
       </element>
       <element id="Composition.section.code.coding.system:dispense">
          <path value="Composition.section.code.coding.system"/>
-         <min value="1"/>
          <fixedUri value="http://loinc.org"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding.code:dispense">
          <path value="Composition.section.code.coding.code"/>
-         <min value="1"/>
          <fixedCode value="60590-7"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding.display:dispense">
          <path value="Composition.section.code.coding.display"/>
+         <fixedString value="Medication dispensed.brief"/>
          <min value="1"/>
-         <fixedString value="Medication dispensed.brief Doc"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.text:dispense">
+         <path value="Composition.section.text"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.entry:dispense">
          <path value="Composition.section.entry"/>
          <short value="Medication dispense"/>
-         <min value="0"/>
-         <max value="*"/>
+         <min value="1"/>
+         <max value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
@@ -179,17 +211,19 @@
          <path value="Composition.section"/>
          <sliceName value="annotation"/>
          <short value="Annotation"/>
-         <min value="1"/>
+         <min value="0"/>
          <max value="1"/>
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
          <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code:annotation">
          <path value="Composition.section.code"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding:annotation">
          <path value="Composition.section.code.coding"/>
@@ -209,15 +243,17 @@
       <element id="Composition.section.code.coding.display:annotation">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
-         <fixedString value="Annotation comment Imp"/>
+         <fixedString value="Annotation comment"/>
       </element>
       <element id="Composition.section.text:annotation">
          <path value="Composition.section.text"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.entry:annotation">
          <path value="Composition.section.entry"/>
          <min value="0"/>
-         <max value="1"/>
+         <max value="*"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>

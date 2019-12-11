@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationRequest"/>
-   <title value="CH EMED Medication Request Profile"/>
+   <title value="CH EMED MedicationRequest Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
-         <short value="CH EMED Medication Request"/>
+         <short value="CH EMED MedicationRequest"/>
       </element>
       <element id="MedicationRequest.extension">
          <path value="MedicationRequest.extension"/>
@@ -31,7 +31,7 @@
       <element id="MedicationRequest.extension:treatmentplan">
          <path value="MedicationRequest.extension" />
          <sliceName value="treatmentplan" />
-         <short value="Treatment plan"/>
+         <short value="Medication treatment plan"/>
          <min value="1"/>
          <max value="1"/>
          <type>

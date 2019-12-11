@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
    <version value="0.0.1"/>
    <name value="CHEMEDMedicationStatement"/>
-   <title value="CH EMED Medication Statement Profile"/>
+   <title value="CH EMED MedicationStatement Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -16,15 +16,21 @@
    <differential>
       <element id="MedicationStatement">
          <path value="MedicationStatement"/>
-         <short value="CH EMED Medication Statement"/>
+         <short value="CH EMED MedicationStatement"/>
       </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
          <fixedCode value="completed"/> 
       </element>
+      <element id="MedicationStatement.contained">
+         <path value="MedicationStatement.contained"/>
+         <short value="Medication inline resource"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
-         <short value="Medication"/>
+         <short value="Reference to the contained medication"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
@@ -44,6 +50,7 @@
       </element>
       <element id="MedicationStatement.reasonCode">
          <path value="MedicationStatement.reasonCode"/>
+         <short value="Treatment reason"/>
          <max value="1"/>
       </element>
       <element id="MedicationStatement.reasonCode.text">
@@ -51,10 +58,12 @@
       </element>
       <element id="MedicationStatement.note">
          <path value="MedicationStatement.note"/>
+         <short value="Annotation"/>
          <max value="1"/>
       </element>
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
+         <short value="Details of how medication is/was taken or should be taken"/>
          <min value="1"/>
          <type>
             <code value="Dosage"/>
