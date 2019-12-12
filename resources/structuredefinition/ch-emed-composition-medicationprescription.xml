@@ -11,7 +11,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Composition">
@@ -20,6 +20,7 @@
       </element>
       <element id="Composition.language">
          <path value="Composition.language"/>
+         <short value="Language of the document"/>
       </element>
       <element id="Composition.extension">
          <path value="Composition.extension"/>
@@ -31,52 +32,68 @@
             <rules value="open"/>
          </slicing>
       </element>
+      <element id="Composition.extension:setId">
+         <path value="Composition.extension"/>
+         <sliceName value="setId"/>
+         <short value="Set ID"/>
+      </element>
+      <element id="Composition.extension:versionNumber">
+         <path value="Composition.extension"/>
+         <sliceName value="versionNumber"/>
+         <short value="Version number"/>
+      </element>
       <element id="Composition.extension:informationRecipient">
          <path value="Composition.extension"/>
          <sliceName value="informationRecipient"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
-         </type>
+         <short value="A recipient of this document (person or organization)"/>
+      </element>
+      <element id="Composition.extension:dataEnterer">
+         <path value="Composition.extension"/>
+         <sliceName value="dataEnterer"/>
+         <short value="Person who entered information into this document if it is a person other than the author"/>
+      </element>
+      <element id="Composition.identifier">
+         <path value="Composition.identifier"/>
+         <short value="Identification number of the document"/>
+      </element>
+      <element id="Composition.status">
+         <path value="Composition.status"/>
+         <fixedCode value="final"/>
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
+         <short value="Document type"/>
          <patternCodeableConcept>
             <coding>
                <system value="http://loinc.org"/>
                <code value="57833-6"/>
                <display value="Prescription for medication"/>
             </coding>
+            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
+            <!--<coding>
+               <system value="http://snomed.info/sct"/>
+               <code value="440545006"/>
+               <display value="Drug prescription"/>
+               </coding>-->
          </patternCodeableConcept>
       </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
-         <short value="Patient"/>
-         <min value="1"/>
-         <max value="1"/>
+         <short value="A patient for whom this document instance was created"/>
       </element>
       <element id="Composition.subject.reference">
          <path value="Composition.subject.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.date">
          <path value="Composition.date"/>
+         <short value="The document's creation date and time"/>
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
-         <short value="Practitioner"/>
-         <min value="1"/>
-         <max value="1"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-         </type>
+         <short value="The author of the document (person or device)"/>
       </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
@@ -94,24 +111,46 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
+         <short value="Swiss realm of confidentiality code according to the Swiss EPR regulation"/>
       </element>
       <element id="Composition.confidentiality.extension:confidentialityCode">
          <path value="Composition.confidentiality.extension"/>
          <sliceName value="confidentialityCode"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
-         </type>
+      </element>
+      <element id="Composition.attester">
+         <path value="Composition.attester"/>
+         <slicing>
+            <discriminator>
+               <type value="value" />
+               <path value="mode" />
+            </discriminator>
+            <rules value="open" />
+         </slicing>
+         <short value="The authenticator of the document (person)"/>
+      </element>
+      <element id="Composition.attester:legalAuthenticator">
+         <path value="Composition.attester"/>
+         <sliceName value="legalAuthenticator"/>
+         <short value="The legal authenticator of the document (person)"/>
+      </element>
+      <element id="Composition.attester.mode:legalAuthenticator">
+         <path value="Composition.attester.mode"/>
+         <fixedCode value="legal"/>
+      </element>
+      <element id="Composition.attester.time:legalAuthenticator">
+         <path value="Composition.attester.time"/>
+         <short value="Timestamp of the signature"/>
+      </element>
+      <element id="Composition.attester.party:legalAuthenticator">
+         <path value="Composition.attester.party"/>
+         <short value="Who attested the composition"/>
       </element>
       <element id="Composition.custodian">
          <path value="Composition.custodian"/>
-         <min value="1"/>
+         <short value="The organization in whose name the document has been created"/>
       </element>
       <element id="Composition.custodian.reference">
          <path value="Composition.custodian.reference"/>
-         <min value="1"/>
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
@@ -130,16 +169,18 @@
          <sliceName value="prescription"/>
          <short value="Medication prescription"/>
          <min value="1"/>
-         <max value="*"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.title:prescription">
          <path value="Composition.section.title"/>
          <short value="'Arzneimittelverordnung' or 'Prescription médicamenteuse' or 'Prescrizione di droga' or 'Prescription for medication'"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code:prescription">
          <path value="Composition.section.code"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding:prescription">
          <path value="Composition.section.code.coding"/>
@@ -161,10 +202,16 @@
          <min value="1"/>
          <fixedString value="PRESCRIPTIONS"/>
       </element>
+      <element id="Composition.section.text:prescription">
+         <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
       <element id="Composition.section.entry:prescription">
          <path value="Composition.section.entry"/>
          <short value="Medication request"/>
-         <min value="0"/>
+         <min value="1"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
@@ -179,17 +226,19 @@
          <path value="Composition.section"/>
          <sliceName value="annotation"/>
          <short value="Annotation"/>
-         <min value="1"/>
+         <min value="0"/>
          <max value="1"/>
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
          <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code:annotation">
          <path value="Composition.section.code"/>
          <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.code.coding:annotation">
          <path value="Composition.section.code.coding"/>
@@ -209,15 +258,19 @@
       <element id="Composition.section.code.coding.display:annotation">
          <path value="Composition.section.code.coding.display"/>
          <min value="1"/>
-         <fixedString value="Annotation comment Imp"/>
+         <fixedString value="Annotation comment"/>
       </element>
       <element id="Composition.section.text:annotation">
          <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.entry:annotation">
          <path value="Composition.section.entry"/>
+         <short value="General comments"/>
          <min value="0"/>
-         <max value="1"/>
+         <max value="*"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>

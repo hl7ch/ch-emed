@@ -29,6 +29,7 @@
       </element>
       <element id="Medication.code.coding.system">
          <path value="Medication.code.coding.system"/>
+         <short value="Global Trade Item Number (GS1)"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -53,6 +54,7 @@
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
+         <short value="Galenic form"/>
          <min value="1"/>
          <binding>
             <strength value="required"/>
@@ -77,6 +79,7 @@
       </element>
       <element id="Medication.amount">
          <path value="Medication.amount"/>
+         <short value="Package size"/>
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
@@ -85,17 +88,11 @@
       </element>
       <element id="Medication.ingredient.item[x]">
          <path value="Medication.ingredient.item[x]"/>
+         <short value="Name of active ingredient"/>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.ingredient.strength.numerator">
-         <path value="Medication.ingredient.strength.numerator"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.ingredient.strength.denominator">
-         <path value="Medication.ingredient.strength.denominator"/>
+         <short value="Dose per unit"/>
          <min value="1"/>
       </element>
    </differential>

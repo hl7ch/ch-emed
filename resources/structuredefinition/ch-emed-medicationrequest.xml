@@ -18,6 +18,12 @@
          <path value="MedicationRequest"/>
          <short value="CH EMED MedicationRequest"/>
       </element>
+      <element id="MedicationRequest.contained">
+         <path value="MedicationRequest.contained"/>
+         <short value="Medication inline resource"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
       <element id="MedicationRequest.extension">
          <path value="MedicationRequest.extension"/>
          <slicing>
@@ -39,24 +45,24 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan" />
          </type>
       </element>
-      <element id="MedicationRequest.medication[x]">
-         <path value="MedicationRequest.medication[x]"/>
-         <short value="Medication"/>
+      <element id="MedicationRequest.medicationReference">
+         <path value="MedicationRequest.medicationReference"/>
+         <short value="Reference to the contained medication"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
          </type>
       </element>
-      <element id="MedicationRequest.medication[x].reference">
-         <path value="MedicationRequest.medication[x].reference"/>
-         <min value="1"/>
+      <element id="MedicationRequest.status">
+         <path value="MedicationRequest.status"/>
+         <fixedCode value="completed"/>
       </element>
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
          <short value="Patient"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
          </type>
       </element>
       <element id="MedicationRequest.subject.reference">
@@ -65,10 +71,12 @@
       </element>
       <element id="MedicationRequest.note">
          <path value="MedicationRequest.note"/>
+         <short value="Annotation"/>
          <max value="1"/>
       </element>
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
+         <short value="How the medication should be taken"/>
          <min value="1"/>
          <type>
             <code value="Dosage"/>
@@ -77,20 +85,25 @@
       </element>
       <element id="MedicationRequest.dispenseRequest">
          <path value="MedicationRequest.dispenseRequest"/>
+         <short value="Medication supply authorization"/>
          <min value="1"/>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
+         <short value="Repeated supply per medication"/>
          <min value="1"/>
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
          <path value="MedicationRequest.dispenseRequest.quantity"/>
+         <short value="Number of packages"/>
       </element>
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
+         <short value="Any restrictions on medication substitution"/>
       </element>
       <element id="MedicationRequest.substitution.allowed[x]">
          <path value="MedicationRequest.substitution.allowed[x]"/>
+         <short value="Whether substitution is allowed or not"/>
       </element>
    </differential>
 </StructureDefinition>

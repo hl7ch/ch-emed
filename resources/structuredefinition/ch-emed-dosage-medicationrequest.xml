@@ -11,7 +11,7 @@
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Dosage">
@@ -21,7 +21,6 @@
       <element id="Dosage.text">
          <path value="Dosage.text"/>
          <short value="Dosage instructions"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
@@ -40,8 +39,7 @@
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
-         <short value="Code for time period of occurrence"/>
-         <min value="1"/>
+          <short value="Code for time period of occurrence"/>
       </element>
       <element id="Dosage.asNeeded[x]">
          <path value="Dosage.asNeeded[x]"/>
@@ -49,7 +47,7 @@
       </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
-         <short value="How drug should enter body"/>
+         <short value="Route of administration"/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-routeofadministration"/>
@@ -57,26 +55,20 @@
       </element>
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
-         <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.route.coding.code">
          <path value="Dosage.route.coding.code"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.route.coding.display">
          <path value="Dosage.route.coding.display"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
          <short value="Amount of medication administered"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
    </differential>
 </StructureDefinition>

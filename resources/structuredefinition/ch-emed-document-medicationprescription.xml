@@ -20,6 +20,7 @@
       </element>
       <element id="Bundle.identifier">
          <path value="Bundle.identifier"/>
+         <short value="Identification number of the document"/>
          <min value="1"/>
       </element>
       <element id="Bundle.identifier.system">
@@ -33,6 +34,10 @@
       <element id="Bundle.type">
          <path value="Bundle.type" />
          <fixedCode value="document" />
+      </element>
+      <element id="Bundle.timestamp">
+         <path value="Bundle.timestamp" />
+         <short value="The document's creation date and time"/>
       </element>
       <element id="Bundle.entry">
          <path value="Bundle.entry" />

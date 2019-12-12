@@ -20,6 +20,7 @@
       </element>
       <element id="Composition.language">
          <path value="Composition.language"/>
+         <short value="Language of the document"/>
       </element>
       <element id="Composition.extension">
          <path value="Composition.extension"/>
@@ -34,21 +35,26 @@
       <element id="Composition.extension:setId">
          <path value="Composition.extension"/>
          <sliceName value="setId"/>
+         <short value="Set ID"/>
       </element>
       <element id="Composition.extension:versionNumber">
          <path value="Composition.extension"/>
          <sliceName value="versionNumber"/>
+         <short value="Version number"/>
       </element>
       <element id="Composition.extension:informationRecipient">
          <path value="Composition.extension"/>
          <sliceName value="informationRecipient"/>
+         <short value="A recipient of this document (person or organization)"/>
       </element>
       <element id="Composition.extension:dataEnterer">
          <path value="Composition.extension"/>
          <sliceName value="dataEnterer"/>
+         <short value="Person who entered information into this document if it is a person other than the author"/>
       </element>
       <element id="Composition.identifier">
          <path value="Composition.identifier"/>
+         <short value="Identification number of the document"/>
       </element>
       <element id="Composition.status">
          <path value="Composition.status"/>
@@ -56,6 +62,7 @@
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
+         <short value="Document type"/>
          <patternCodeableConcept>
             <coding>
                <system value="http://loinc.org"/>
@@ -72,15 +79,18 @@
       </element>
       <element id="Composition.subject">
          <path value="Composition.subject"/>
+         <short value="A patient for whom this document instance was created"/>
       </element>
       <element id="Composition.subject.reference">
          <path value="Composition.subject.reference"/>
       </element>
       <element id="Composition.date">
          <path value="Composition.date"/>
+         <short value="The document's creation date and time"/>
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
+         <short value="The author of the document (person or device)"/>
       </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
@@ -101,6 +111,7 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
+         <short value="Swiss realm of confidentiality code according to the Swiss EPR regulation"/>
       </element>
       <element id="Composition.confidentiality.extension:confidentialityCode">
          <path value="Composition.confidentiality.extension"/>
@@ -115,22 +126,27 @@
             </discriminator>
             <rules value="open" />
          </slicing>
+         <short value="The authenticator of the document (person)"/>
       </element>
       <element id="Composition.attester:legalAuthenticator">
          <path value="Composition.attester"/>
          <sliceName value="legalAuthenticator"/>
+         <short value="The legal authenticator of the document (person)"/>
       </element>
       <element id="Composition.attester.mode:legalAuthenticator">
          <path value="Composition.attester.mode"/>
       </element>
       <element id="Composition.attester.time:legalAuthenticator">
          <path value="Composition.attester.time"/>
+         <short value="Timestamp of the signature"/>
       </element>
       <element id="Composition.attester.party:legalAuthenticator">
          <path value="Composition.attester.party"/>
+         <short value="Who attested the composition"/>
       </element>
       <element id="Composition.custodian">
          <path value="Composition.custodian"/>
+         <short value="The organization in whose name the document has been created"/>
       </element>
       <element id="Composition.custodian.reference">
          <path value="Composition.custodian.reference"/>
@@ -183,6 +199,7 @@
       </element>
       <element id="Composition.section.text:card">
          <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -240,11 +257,13 @@
       </element>
       <element id="Composition.section.text:annotation">
          <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Composition.section.entry:annotation">
          <path value="Composition.section.entry"/>
+         <short value="General comments"/>
          <min value="0"/>
          <max value="*"/>
          <type>
