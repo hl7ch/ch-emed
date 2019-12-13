@@ -25,6 +25,7 @@
   </identifier>
   <status value="final"/>
   <type>
+    <!-- TBD: not sure yet -->
     <coding>
       <system value="http://loinc.org"/>
       <code value="60593-1"/>

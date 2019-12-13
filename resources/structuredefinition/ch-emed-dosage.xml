@@ -7,7 +7,7 @@
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the medication dosage for the medication card document and medication dispense document"/>
+   <description value="Definition of the medication dosage for the medication statement and medication dispense"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>

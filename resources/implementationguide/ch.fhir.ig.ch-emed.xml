@@ -25,6 +25,12 @@
       <!-- references for examples -->
       <resource>
          <reference>
+            <reference value="Bundle/1-1-MedicationTreatmentPlan-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
@@ -43,9 +49,9 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/chmed16af-mp-chemed-mc"/>
+            <reference value="Composition/Comp-1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
-         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>-->
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -116,6 +122,12 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationStatement/MedStatTriatec"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Organization/Hausarzt"/>
          </reference>
       </resource>
@@ -159,6 +171,11 @@
             <reference value="StructureDefinition/ch-emed-composition-medicationprescription"/>
          </reference>
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
+         </reference>
+      </resource>
        <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-document-medicationcard"/>
@@ -172,6 +189,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-document-medicationprescription"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
          </reference>
       </resource>
       <resource>
@@ -217,6 +239,16 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medicationstatement"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-substitution"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-treatmentreason"/>
          </reference>
       </resource>
 

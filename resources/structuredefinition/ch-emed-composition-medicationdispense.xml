@@ -64,17 +64,18 @@
          <path value="Composition.type"/>
          <short value="Document type"/>
          <patternCodeableConcept>
-            <coding>
+            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
+            <!--<coding>
                <system value="http://loinc.org"/>
                <code value="60593-1"/>
                <display value="Medication dispensed.extended"/>
-            </coding>
-            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
-            <!--<coding>
+            </coding>-->
+            <coding>
+               <!-- TBD: not sure yet -->
                <system value="http://snomed.info/sct"/>
                <code value="275670009"/>
                <display value="Medication Dispensation"/>
-            </coding>-->
+            </coding>
          </patternCodeableConcept>
       </element>
       <element id="Composition.subject">
@@ -111,11 +112,11 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         <short value="Swiss realm of confidentiality code according to the Swiss EPR regulation"/>
       </element>
       <element id="Composition.confidentiality.extension:confidentialityCode">
          <path value="Composition.confidentiality.extension"/>
          <sliceName value="confidentialityCode"/>
+         <short value="Swiss realm of confidentiality code according to the Swiss EPR regulation"/>
       </element>
       <element id="Composition.attester">
          <path value="Composition.attester"/>

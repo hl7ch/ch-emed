@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-composition-medicationprescription"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
+   <id value="ch-emed-composition-medicationtreatmentplan"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDCompositionMedicationPrescription"/>
-   <title value="CH EMED Medication Prescription Composition Profile"/>
+   <name value="CHEMEDCompositionMedicationTreatmentPlan"/>
+   <title value="CH EMED Medication Treatment Plan Composition Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the composition for the medication prescription document"/>
+   <description value="Definition of the composition for the medication treatment plan document"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Composition">
          <path value="Composition"/>
-         <short value="CH EMED Medication Prescription Composition"/>
+         <short value="CH EMED Medication Treatment Plan Composition"/>
       </element>
       <element id="Composition.language">
          <path value="Composition.language"/>
@@ -67,15 +67,15 @@
             <!-- TBD: multiple codings are not supported yet, see issue #26 -->
             <!--<coding>
                <system value="http://loinc.org"/>
-               <code value="57833-6"/>
-               <display value="Prescription for medication"/>
+               <code value="77603-9"/>
+               <display value="Medication treatment plan.extended"/>
             </coding>-->
             <coding>
                <!-- TBD: not sure yet -->
                <system value="http://snomed.info/sct"/>
-               <code value="440545006"/>
-               <display value="Drug prescription"/>
-               </coding>
+               <code value="761931002"/>
+               <display value="Medication Treatment Plan"/>
+            </coding>
          </patternCodeableConcept>
       </element>
       <element id="Composition.subject">
@@ -98,7 +98,7 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Rezept' or 'Ordonnance' or 'Ricetta' or 'Prescription'"/>
+         <short value="'Therapieentscheid Medikation' or 'Décision thérapeutique relative à la médication' or 'Decisione terapeutica di trattamento farmacologico' or 'Medication Treatment Plan'"/>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -136,7 +136,6 @@
       </element>
       <element id="Composition.attester.mode:legalAuthenticator">
          <path value="Composition.attester.mode"/>
-         <fixedCode value="legal"/>
       </element>
       <element id="Composition.attester.time:legalAuthenticator">
          <path value="Composition.attester.time"/>
@@ -165,61 +164,57 @@
             <rules value="closed"/>
          </slicing>
       </element>
-      <element id="Composition.section:prescription">
+      <element id="Composition.section:treatmentPlan">
          <path value="Composition.section"/>
-         <sliceName value="prescription"/>
-         <short value="Medication prescription"/>
+         <sliceName value="treatmentPlan"/>
+         <short value="Medication treatment plan"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.title:prescription">
+      <element id="Composition.section.title:treatmentPlan">
          <path value="Composition.section.title"/>
-         <short value="'Arzneimittelverordnung' or 'Prescription médicamenteuse' or 'Prescrizione di droga' or 'Prescription for medication'"/>
+         <short value="'Medikamentöser Behandlungsplan' or 'Plan de traitement médicamenteux' or 'Piano terapeutico farmacologico' or 'Medication Treatment Plan'"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:prescription">
+      <element id="Composition.section.code:treatmentPlan">
          <path value="Composition.section.code"/>
-         <min value="1"/>
+         <min value="0"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding:prescription">
+      <element id="Composition.section.code.coding:treatmentPlan">
          <path value="Composition.section.code.coding"/>
-         <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding.system:prescription">
+      <element id="Composition.section.code.coding.system:treatmentPlan">
          <path value="Composition.section.code.coding.system"/>
-         <min value="1"/>
          <fixedUri value="http://loinc.org"/>
       </element>
-      <element id="Composition.section.code.coding.code:prescription">
+      <element id="Composition.section.code.coding.code:treatmentPlan">
          <path value="Composition.section.code.coding.code"/>
-         <min value="1"/>
-         <fixedCode value="57828-6"/>
+         <fixedCode value="77604-7"/>
       </element>
-      <element id="Composition.section.code.coding.display:prescription">
+      <element id="Composition.section.code.coding.display:treatmentPlan">
          <path value="Composition.section.code.coding.display"/>
-         <min value="1"/>
-         <fixedString value="PRESCRIPTIONS"/>
+         <fixedString value="Medication treatment plan.brief"/>
       </element>
-      <element id="Composition.section.text:prescription">
+      <element id="Composition.section.text:treatmentPlan">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.entry:prescription">
+      <element id="Composition.section.entry:treatmentPlan">
          <path value="Composition.section.entry"/>
-         <short value="Medication request"/>
+         <short value="Medication statement"/>
          <min value="1"/>
-         <max value="*"/>
+         <max value="1"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
          </type>
       </element>
-      <element id="Composition.section.entry:prescription.reference">
+      <element id="Composition.section.entry:treatmentPlan.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
