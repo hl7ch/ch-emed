@@ -43,7 +43,7 @@
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-substitution" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution" />
          </type>
       </element>
 

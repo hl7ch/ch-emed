@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-composition-medicationlist"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
+   <id value="ch-emed-composition-pharmaceuticaladvice"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDCompositionMedicationList"/>
-   <title value="CH EMED Medication List Composition Profile"/>
+   <name value="CHEMEDCompositionPharmaceuticalAdvice"/>
+   <title value="CH EMED Pharmaceutical Advice Composition Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the composition for the medication list document"/>
+   <description value="Definition of the composition for the pharmaceutical advice document"/>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Composition">
          <path value="Composition"/>
-         <short value="CH EMED Medication List Composition"/>
+         <short value="CH EMED Pharmaceutical Advice Composition"/>
       </element>
       <element id="Composition.language">
          <path value="Composition.language"/>
@@ -67,13 +67,14 @@
             <!-- TBD: multiple codings are not supported yet, see issue #26 -->
             <!--<coding>
                <system value="http://loinc.org"/>
-               <code value="56445-0"/>
-               <display value="Medication summary"/>
+               <code value="61356-2"/>
+               <display value="Medication pharmaceutical advice.extended"/>
             </coding>-->
             <coding>
                <system value="http://snomed.info/sct"/>
-               <code value="721912009"/>
-               <display value="Medication summary document (record artifact)"/>
+               <!-- TBD: not sure yet -->
+               <code value="1221000195109"/>
+               <display value="Medication Comment"/>
             </coding>
          </patternCodeableConcept>
       </element>
@@ -97,7 +98,7 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Medikationsliste' or 'Liste de médication' or 'Elenco delle terapie farmacologiche' or 'Medication List'"/>
+         <short value="'Kommentar zur Medikation' or 'Commentaire relatif à la médication' or 'Commento sulla terapia farmacologica' or 'Pharmaceutical Advice'"/>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -163,114 +164,115 @@
             <rules value="closed"/>
          </slicing>
       </element>
-      <element id="Composition.section:list">
+      <element id="Composition.section:pharmaceuticalAdvice">
          <path value="Composition.section"/>
-         <sliceName value="list"/>
-         <short value="Medication list"/>
+         <sliceName value="pharmaceuticalAdvice"/>
+         <short value="Pharmaceutical advice"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.title:list">
+      <element id="Composition.section.title:pharmaceuticalAdvice">
          <path value="Composition.section.title"/>
-         <short value="'Medikamentenliste' or 'Liste de médicaments' or 'Lista farmaci' or 'Medication List'"/>
+         <short value="'Hinweise zur Medikation' or 'Conseils sur les médicaments' or 'Consigli sui medicamenti' or 'Pharmaceutical Advice'"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:list">
+      <element id="Composition.section.code:pharmaceuticalAdvice">
          <path value="Composition.section.code"/>
          <min value="0"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding:list">
+      <element id="Composition.section.code.coding:pharmaceuticalAdvice">
          <path value="Composition.section.code.coding"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code.coding.system:list">
+      <element id="Composition.section.code.coding.system:pharmaceuticalAdvice">
          <path value="Composition.section.code.coding.system"/>
          <fixedUri value="http://loinc.org"/>
       </element>
-      <element id="Composition.section.code.coding.code:list">
+      <element id="Composition.section.code.coding.code:pharmaceuticalAdvice">
          <path value="Composition.section.code.coding.code"/>
-         <fixedCode value="10160-0"/>
+         <fixedCode value="61357-0"/>
       </element>
-      <element id="Composition.section.code.coding.display:list">
+      <element id="Composition.section.code.coding.display:pharmaceuticalAdvice">
          <path value="Composition.section.code.coding.display"/>
-         <fixedString value="History of medication use"/>
+         <fixedString value="Medication pharmaceutical advice.brief"/>
       </element>
-      <element id="Composition.section.text:list">
+      <element id="Composition.section.text:pharmaceuticalAdvice">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.entry">
-         <path value="Composition.section.entry"/>
-         <slicing>
-            <discriminator>
-               <type value="profile"/>
-               <path value="resolve()"/>
-            </discriminator>
-            <ordered value="true"/>
-            <rules value="closed"/>
-         </slicing>
-      </element>
-      <element id="Composition.section.entry:medicationTreatmentPlan">
-         <path value="Composition.section.entry"/>
-         <sliceName value="medicationTreatmentPlan"/>
-         <short value="Medication treatment plan"/>
-         <min value="0"/>
-         <max value="*"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
-         </type>
-      </element>
-      <element id="Composition.section.entry:medicationTreatmentPlan.reference">
-         <path value="Composition.section.entry.reference"/>
-         <min value="1"/>
-      </element>
-      <element id="Composition.section.entry:medicationPrescription">
-         <path value="Composition.section.entry"/>
-         <sliceName value="medicationPrescription"/>
-         <short value="Medication prescription"/>
-         <min value="0"/>
-         <max value="*"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
-         </type>
-      </element>
-      <element id="Composition.section.entry:medicationPrescription.reference">
-         <path value="Composition.section.entry.reference"/>
-         <min value="1"/>
-      </element>
-      <element id="Composition.section.entry:medicationDispense">
-         <path value="Composition.section.entry"/>
-         <sliceName value="medicationDispense"/>
-         <short value="Medication dispense"/>
-         <min value="0"/>
-         <max value="*"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
-         </type>
-      </element>
-      <element id="Composition.section.entry:medicationDispense.reference">
-         <path value="Composition.section.entry.reference"/>
-         <min value="1"/>
-      </element>
       <element id="Composition.section.entry:pharmaceuticalAdvice">
          <path value="Composition.section.entry"/>
-         <sliceName value="pharmaceuticalAdvice"/>
-         <short value="Pharmaceutical advice"/>
-         <min value="0"/>
-         <max value="*"/>
+         <short value="Observation"/>
+         <min value="1"/>
+         <max value="1"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-pharmaceuticaladvice"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
          </type>
       </element>
       <element id="Composition.section.entry:pharmaceuticalAdvice.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section:annotation">
+         <path value="Composition.section"/>
+         <sliceName value="annotation"/>
+         <short value="Annotation"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.title:annotation">
+         <path value="Composition.section.title"/>
+         <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code:annotation">
+         <path value="Composition.section.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding:annotation">
+         <path value="Composition.section.code.coding"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding.system:annotation">
+         <path value="Composition.section.code.coding.system"/>
+         <min value="1"/>
+         <fixedUri value="http://loinc.org"/>
+      </element>
+      <element id="Composition.section.code.coding.code:annotation">
+         <path value="Composition.section.code.coding.code"/>
+         <min value="1"/>
+         <fixedCode value="48767-8"/>
+      </element>
+      <element id="Composition.section.code.coding.display:annotation">
+         <path value="Composition.section.code.coding.display"/>
+         <min value="1"/>
+         <fixedString value="Annotation comment"/>
+      </element>
+      <element id="Composition.section.text:annotation">
+         <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.entry:annotation">
+         <path value="Composition.section.entry"/>
+         <short value="General comments"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+         </type>
+      </element>
+      <element id="Composition.section.entry:annotation.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>

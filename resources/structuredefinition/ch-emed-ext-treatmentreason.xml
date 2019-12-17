@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-emed-treatmentreason"/>
-    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-treatmentreason"/>
+    <id value="ch-emed-ext-treatmentreason"/>
+    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason"/>
     <version value="0.2.0"/>
-    <name value="CHEMEDTreatmentReason"/>
-    <title value="CH EMED Treatment Reason Extension"/>
+    <name value="CHEMEDExtTreatmentReason"/>
+    <title value="CH EMED Extension Treatment Reason"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="eHealth Suisse"/>
@@ -33,7 +33,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-treatmentreason"/>
+            <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason"/>
         </element>
         <element id="Extension.valueString">
             <path value="Extension.valueString"/>

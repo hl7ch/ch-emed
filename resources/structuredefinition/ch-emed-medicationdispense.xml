@@ -42,7 +42,7 @@
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-treatmentreason" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason" />
          </type>
       </element>
       <element id="MedicationDispense.extension:treatmentPlan">
@@ -53,7 +53,7 @@
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
       </element>
       <element id="MedicationDispense.status">

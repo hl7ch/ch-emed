@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medicationrequest-treatmentplan"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
+   <id value="ch-emed-ext-treatmentplan"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDMedicationRequestTreatmentPlan"/>
-   <title value="CH EMED Treatment Plan Extension"/>
+   <name value="CHEMEDExtTreatmentPlan"/>
+   <title value="CH EMED Extension Treatment Plan"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -84,7 +84,7 @@
          <type>
             <code value="uri"/>
          </type>
-         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
+         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"/>
       </element>
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>

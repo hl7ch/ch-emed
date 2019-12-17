@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PharmaceuticalAdvice"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+  </meta>
+  <status value="final"/>
+  <code>
+    <coding>
+      <!-- TBD: IHE Pharmaceutical Advice Status List -->
+      <system value="1.3.6.1.4.1.19376.1.9.2.1"/>
+      <code value="CANCEL"/>
+    </coding>
+  </code>
+  <note>
+    <text value="Abgesetzt aufgrund UAW trockener Husten"/>
+  </note>
+</Observation>

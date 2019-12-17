@@ -37,6 +37,12 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Bundle/2-2-PharmaceuticalAdvice-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
@@ -64,6 +70,12 @@
             <reference value="Composition/Comp-2-1-MedicationList-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
       </resource>
       <resource>
          <reference>
@@ -145,6 +157,12 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Observation/PharmaceuticalAdvice"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Patient/MonikaWegmueller"/>
          </reference>
       </resource>
@@ -193,6 +211,11 @@
             <reference value="StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
          </reference>
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
+         </reference>
+      </resource>
        <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-document-medicationcard"/>
@@ -216,6 +239,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
          </reference>
       </resource>
       <resource>
@@ -250,7 +278,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medicationrequest-treatmentplan"/>
+            <reference value="StructureDefinition/ch-emed-ext-treatmentplan"/>
          </reference>
       </resource>
       <resource>
@@ -265,12 +293,17 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-substitution"/>
+            <reference value="StructureDefinition/ch-emed-observation"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-treatmentreason"/>
+            <reference value="StructureDefinition/ch-emed-ext-substitution"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-treatmentreason"/>
          </reference>
       </resource>
 

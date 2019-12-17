@@ -1,0 +1,217 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="2-2-PharmaceuticalAdvice-FHIR"/>
+    <meta>
+        <lastUpdated value="2019-12-17T16:20:59.278+00:00"/>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:8ED02D0A-2971-11E6-B67B-9E71128CAE77"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2012-02-04T14:00:00+01:00"/>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <id value="Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2019-12-17T16:20:22.199+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
+                </meta>
+                <language value="de-CH"/>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+                    <valueIdentifier>
+                        <system value="urn:ietf:rfc:3986"/>
+                        <value value="urn:uuid:8ED02D0A-2971-11E6-B67B-9E71128CAE77"/>
+                    </valueIdentifier>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+                    <valueInteger value="1"/>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
+                    <valueReference>
+                        <reference value="Patient/MonikaWegmuellerRecipient"/>
+                    </valueReference>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:8ED02D0A-2971-11E6-B67B-9E71128CAE77"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <!-- TBD: not sure yet -->
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="61356-2"/>
+                        <display value="Medication pharmaceutical advice.extended"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1221000195109"/>
+                        <display value="Medication Comment"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/MonikaWegmueller"/>
+                </subject>
+                <date value="2012-02-04T14:00:00+01:00"/>
+                <author>
+                    <reference value="Practitioner/FamilienHausarzt"/>
+                </author>
+                <title value="Kommentar zur Medikation"/>
+                <confidentiality value="N">
+                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="17621005"/>
+                                <display value="Normal"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                </confidentiality>
+                <custodian>
+                    <reference value="Organization/Hausarzt"/>
+                </custodian>
+                <section>
+                    <title value="Hinweise zur Medikation"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="61357-0"/>
+                            <display value="Medication pharmaceutical advice.brief"/>
+                        </coding>
+                    </code>
+                    <!-- TBD: Text mit Tooling -->
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml"> TBD </div>
+                    </text>
+                    <entry>
+                        <reference value="Observation/PharmaceuticalAdvice"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Kommentar"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="48767-8"/>
+                            <display value="Annotation comment"/>
+                        </coding>
+                    </code>
+                    <!-- TBD: Text mit Tooling -->
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>
+                    </text>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <id value="FamilienHausarzt"/>
+                <meta>
+                    <versionId value="4"/>
+                    <lastUpdated value="2019-12-12T08:24:15.078+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name>
+                    <family value="Hausarzt"/>
+                    <given value="Familien"/>
+                </name>
+                <address>
+                    <line value="Krankenstrasse 2"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="Hausarzt"/>
+                <meta>
+                    <versionId value="4"/>
+                    <lastUpdated value="2019-12-12T08:25:25.831+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name value="Hausarzt"/>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="MonikaWegmueller"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2019-12-09T17:18:37.829+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.999"/>
+                    <value value="11111111"/>
+                </identifier>
+                <name>
+                    <family value="Wegmüller"/>
+                    <given value="Monika"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1943-05-15"/>
+                <address>
+                    <line value="Wiesenstr. 12"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8003"/>
+                    <country value="CH"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/PharmaceuticalAdvice"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="PharmaceuticalAdvice"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2019-12-17T16:19:32.039+00:00"/>
+                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <!-- TBD: IHE Pharmaceutical Advice Status List -->
+                        <system value="1.3.6.1.4.1.19376.1.9.2.1"/>
+                        <code value="CANCEL"/>
+                    </coding>
+                </code>
+                <note>
+                    <text value="Abgesetzt aufgrund UAW trockener Husten"/>
+                </note>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
