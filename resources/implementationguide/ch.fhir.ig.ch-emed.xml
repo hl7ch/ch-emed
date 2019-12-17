@@ -31,6 +31,12 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Bundle/2-1-MedicationList-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
@@ -52,6 +58,12 @@
             <reference value="Composition/Comp-1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Composition/Comp-2-1-MedicationList-FHIR"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
       </resource>
       <resource>
          <reference>
@@ -168,6 +180,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-composition-medicationlist"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-composition-medicationprescription"/>
          </reference>
       </resource>
@@ -184,6 +201,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-document-medicationdispense"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-document-medicationlist"/>
          </reference>
       </resource>
       <resource>

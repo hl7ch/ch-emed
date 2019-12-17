@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="Comp-2-1-MedicationList-FHIR"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
+  </meta>
+  <language value="de-CH"/>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+    <valueIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:uuid:17931678-20B4-11E6-B67B-9E71128CAE77"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:17931678-20B4-11E6-B67B-9E71128CAE77"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="56445-0"/>
+      <display value="Medication summary"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="721912009"/>
+      <display value="Medication summary document (record artifact)"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <date value="2012-02-04T13:55:00+01:00"/>
+  <author>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <title value="Medikationsliste"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/Hausarzt"/>
+  </custodian>
+  <section>
+    <title value="Medikamentenliste"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="History of medication use"/>
+      </coding>
+    </code>
+    <!-- TBD: Text mit Tooling -->
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> TBD </div>
+    </text>
+    <entry>
+      <reference value="MedicationStatement/MedStatTriatec"/>
+    </entry>
+  </section>
+</Composition>

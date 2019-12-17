@@ -1,0 +1,279 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-composition-medicationlist"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
+   <version value="0.0.1"/>
+   <name value="CHEMEDCompositionMedicationList"/>
+   <title value="CH EMED Medication List Composition Profile"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <description value="Definition of the composition for the medication list document"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Composition"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Composition">
+         <path value="Composition"/>
+         <short value="CH EMED Medication List Composition"/>
+      </element>
+      <element id="Composition.language">
+         <path value="Composition.language"/>
+         <short value="Language of the document"/>
+      </element>
+      <element id="Composition.extension">
+         <path value="Composition.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Composition.extension:setId">
+         <path value="Composition.extension"/>
+         <sliceName value="setId"/>
+         <short value="Set ID"/>
+      </element>
+      <element id="Composition.extension:versionNumber">
+         <path value="Composition.extension"/>
+         <sliceName value="versionNumber"/>
+         <short value="Version number"/>
+      </element>
+      <element id="Composition.extension:informationRecipient">
+         <path value="Composition.extension"/>
+         <sliceName value="informationRecipient"/>
+         <short value="A recipient of this document (person or organization)"/>
+      </element>
+      <element id="Composition.extension:dataEnterer">
+         <path value="Composition.extension"/>
+         <sliceName value="dataEnterer"/>
+         <short value="Person who entered information into this document if it is a person other than the author"/>
+      </element>
+      <element id="Composition.identifier">
+         <path value="Composition.identifier"/>
+         <short value="Identification number of the document"/>
+      </element>
+      <element id="Composition.status">
+         <path value="Composition.status"/>
+         <fixedCode value="final"/>
+      </element>
+      <element id="Composition.type">
+         <path value="Composition.type"/>
+         <short value="Document type"/>
+         <patternCodeableConcept>
+            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
+            <!--<coding>
+               <system value="http://loinc.org"/>
+               <code value="56445-0"/>
+               <display value="Medication summary"/>
+            </coding>-->
+            <coding>
+               <system value="http://snomed.info/sct"/>
+               <code value="721912009"/>
+               <display value="Medication summary document (record artifact)"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
+      <element id="Composition.subject">
+         <path value="Composition.subject"/>
+         <short value="A patient for whom this document instance was created"/>
+      </element>
+      <element id="Composition.subject.reference">
+         <path value="Composition.subject.reference"/>
+      </element>
+      <element id="Composition.date">
+         <path value="Composition.date"/>
+         <short value="The document's creation date and time"/>
+      </element>
+      <element id="Composition.author">
+         <path value="Composition.author"/>
+         <short value="The author of the document (person or device)"/>
+      </element>
+      <element id="Composition.author.reference">
+         <path value="Composition.author.reference"/>
+      </element>
+      <element id="Composition.title">
+         <path value="Composition.title"/>
+         <short value="'Medikationsliste' or 'Liste de médication' or 'Elenco delle terapie farmacologiche' or 'Medication List'"/>
+      </element>
+      <element id="Composition.confidentiality">
+         <path value="Composition.confidentiality"/>
+      </element>
+      <element id="Composition.confidentiality.extension">
+         <path value="Composition.confidentiality.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Composition.confidentiality.extension:confidentialityCode">
+         <path value="Composition.confidentiality.extension"/>
+         <sliceName value="confidentialityCode"/>
+         <short value="Swiss realm of confidentiality code according to the Swiss EPR regulation"/>
+      </element>
+      <element id="Composition.attester">
+         <path value="Composition.attester"/>
+         <slicing>
+            <discriminator>
+               <type value="value" />
+               <path value="mode" />
+            </discriminator>
+            <rules value="open" />
+         </slicing>
+         <short value="The authenticator of the document (person)"/>
+      </element>
+      <element id="Composition.attester:legalAuthenticator">
+         <path value="Composition.attester"/>
+         <sliceName value="legalAuthenticator"/>
+         <short value="The legal authenticator of the document (person)"/>
+      </element>
+      <element id="Composition.attester.mode:legalAuthenticator">
+         <path value="Composition.attester.mode"/>
+      </element>
+      <element id="Composition.attester.time:legalAuthenticator">
+         <path value="Composition.attester.time"/>
+         <short value="Timestamp of the signature"/>
+      </element>
+      <element id="Composition.attester.party:legalAuthenticator">
+         <path value="Composition.attester.party"/>
+         <short value="Who attested the composition"/>
+      </element>
+      <element id="Composition.custodian">
+         <path value="Composition.custodian"/>
+         <short value="The organization in whose name the document has been created"/>
+      </element>
+      <element id="Composition.custodian.reference">
+         <path value="Composition.custodian.reference"/>
+      </element>
+      <element id="Composition.section">
+         <path value="Composition.section"/>
+         <min value="1"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="code.coding.code"/>
+            </discriminator>
+            <ordered value="true"/>
+            <rules value="closed"/>
+         </slicing>
+      </element>
+      <element id="Composition.section:list">
+         <path value="Composition.section"/>
+         <sliceName value="list"/>
+         <short value="Medication list"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.title:list">
+         <path value="Composition.section.title"/>
+         <short value="'Medikamentenliste' or 'Liste de médicaments' or 'Lista farmaci' or 'Medication List'"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code:list">
+         <path value="Composition.section.code"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding:list">
+         <path value="Composition.section.code.coding"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.code.coding.system:list">
+         <path value="Composition.section.code.coding.system"/>
+         <fixedUri value="http://loinc.org"/>
+      </element>
+      <element id="Composition.section.code.coding.code:list">
+         <path value="Composition.section.code.coding.code"/>
+         <fixedCode value="10160-0"/>
+      </element>
+      <element id="Composition.section.code.coding.display:list">
+         <path value="Composition.section.code.coding.display"/>
+         <fixedString value="History of medication use"/>
+      </element>
+      <element id="Composition.section.text:list">
+         <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section.entry">
+         <path value="Composition.section.entry"/>
+         <slicing>
+            <discriminator>
+               <type value="profile"/>
+               <path value="resolve()"/>
+            </discriminator>
+            <ordered value="true"/>
+            <rules value="closed"/>
+         </slicing>
+      </element>
+      <element id="Composition.section.entry:medicationTreatmentPlan">
+         <path value="Composition.section.entry"/>
+         <sliceName value="medicationTreatmentPlan"/>
+         <short value="Medication treatment plan"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         </type>
+      </element>
+      <element id="Composition.section.entry:medicationTreatmentPlan.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section.entry:medicationPrescription">
+         <path value="Composition.section.entry"/>
+         <sliceName value="medicationPrescription"/>
+         <short value="Medication prescription"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+         </type>
+      </element>
+      <element id="Composition.section.entry:medicationPrescription.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section.entry:medicationDispense">
+         <path value="Composition.section.entry"/>
+         <sliceName value="medicationDispense"/>
+         <short value="Medication dispense"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+         </type>
+      </element>
+      <element id="Composition.section.entry:medicationDispense.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section.entry:pharmaceuticalAdvice">
+         <path value="Composition.section.entry"/>
+         <sliceName value="pharmaceuticalAdvice"/>
+         <short value="Pharmaceutical advice"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Reference"/>
+            <!-- TBD: change to correct profile -->
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+         </type>
+      </element>
+      <element id="Composition.section.entry:pharmaceuticalAdvice.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>
