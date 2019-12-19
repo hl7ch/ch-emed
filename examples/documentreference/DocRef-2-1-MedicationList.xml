@@ -45,20 +45,4 @@
       <display value="Unstructured EPR document"/>
     </format>
   </content>
-  <context>
-    <facilityType>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="264358009"/>
-      <display value="General practice premises (environment)"/>
-    </coding>
-    </facilityType>
-    <practiceSetting>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="394802001"/>
-      <display value="General medicine (qualifier value)"/>
-    </coding>
-    </practiceSetting>
-  </context>
 </DocumentReference>  

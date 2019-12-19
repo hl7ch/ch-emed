@@ -71,10 +71,10 @@
                <display value="Medication treatment plan.extended"/>
             </coding>-->
             <coding>
-               <!-- TBD: not sure yet -->
+               <!-- TBD -->
                <system value="http://snomed.info/sct"/>
-               <code value="761931002"/>
-               <display value="Medication Treatment Plan"/>
+               <code value="419891008"/>
+               <display value="Record artifact (record artifact)"/>
             </coding>
          </patternCodeableConcept>
       </element>

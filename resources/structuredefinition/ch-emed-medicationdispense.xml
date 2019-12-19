@@ -18,7 +18,7 @@
          <path value="MedicationDispense"/>
          <short value="CH EMED MedicationDispense"/>
       </element>
-       <element id="MedicationDispense.contained">
+      <element id="MedicationDispense.contained">
          <path value="MedicationDispense.contained"/>
          <short value="Medication inline resource"/>
          <min value="1"/>
@@ -58,7 +58,7 @@
       </element>
       <element id="MedicationDispense.status">
          <path value="MedicationDispense.status"/>
-         <fixedCode value="completed"/> 
+         <fixedCode value="completed"/>
       </element>
       <element id="MedicationDispense.medicationReference">
          <path value="MedicationDispense.medicationReference"/>
@@ -109,11 +109,34 @@
       </element>
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
+         <slicing>
+            <discriminator>
+               <type value="profile"/>
+               <path value="$this"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
          <short value="How the medication is to be used by the patient or administered by the caregiver"/>
          <min value="1"/>
+      </element>
+      <element id="MedicationDispense.dosageInstruction:nonstructured">
+         <path value="MedicationDispense.dosageInstruction"/>
+         <sliceName value="nonstructured"/>
+         <short value="Free text dosage instructions"/>
+         <min value="1"/>
+         <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
+         </type>
+      </element>
+      <element id="MedicationDispense.dosageInstruction:structured">
+         <path value="MedicationDispense.dosageInstruction"/>
+         <sliceName value="structured"/>
+         <short value="Structured dosage instructions"/>
+         <type>
+            <code value="Dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
          </type>
       </element>
    </differential>

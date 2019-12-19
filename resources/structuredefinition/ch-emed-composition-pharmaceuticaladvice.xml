@@ -72,9 +72,9 @@
             </coding>-->
             <coding>
                <system value="http://snomed.info/sct"/>
-               <!-- TBD: not sure yet -->
-               <code value="1221000195109"/>
-               <display value="Medication Comment"/>
+               <!-- TBD -->
+               <code value="419891008"/>
+               <display value="Record artifact (record artifact)"/>
             </coding>
          </patternCodeableConcept>
       </element>

@@ -1,26 +1,26 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-dosage-medicationrequest"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationrequest"/>
+   <id value="ch-emed-dosage-structured"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDDosageMedicationRequest"/>
-   <title value="CH EMED Dosage Profile (MedicationRequest)"/>
+   <name value="CHEMEDDosageStructured"/>
+   <title value="CH EMED Dosage Structured Profile (MedicationStatement / MedicationDispense)"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the medication dosage for the medication request"/>
+   <description value="Definition of the medication structured dosage for the medication statement and medication dispense"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage (MedicationRequest)"/>
+         <short value="CH EMED Dosage Structured (MedicationStatement / MedicationDispense)"/>
       </element>
-      <element id="Dosage.text">
-         <path value="Dosage.text"/>
-         <short value="Dosage instructions"/>
+      <element id="Dosage.sequence">
+         <path value="Dosage.sequence"/>
+         <short value="The order of the dosage instructions"/>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
@@ -30,12 +30,10 @@
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
          <short value="When the event is to occur"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.timing.repeat.bounds[x]">
          <path value="Dosage.timing.repeat.bounds[x]"/>
          <short value="Length/Range of lengths, or (Start and/or end) limits"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
@@ -55,20 +53,28 @@
       </element>
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.route.coding.code">
          <path value="Dosage.route.coding.code"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.route.coding.display">
          <path value="Dosage.route.coding.display"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
          <short value="Amount of medication administered"/>
-         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Dosage.doseAndRate.dose[x]">
+         <path value="Dosage.doseAndRate.dose[x]"/>        
       </element>
    </differential>
 </StructureDefinition>

@@ -8,18 +8,17 @@
   <type>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <!-- TBD: not sure yet -->
-      <code value="275670009"/> 
-      <display value="Medication Dispensation"/>
-      <!-- wrong display: 275670009 = Prescription exemption certificate (record artifact) -->
+      <!-- TBD -->
+      <code value="419891008"/> 
+      <display value="Record artifact (record artifact)"/>
     </coding>
   </type>
   <category>
     <coding>
       <system value="http://snomed.info/sct"/>
       <!-- TBD: not sure yet -->
-      <code value="422735006"/>
-      <display value="Summary clinical document (record artifact)"/>
+      <code value="419891008"/> 
+      <display value="Record artifact (record artifact)"/>
     </coding>
   </category>
   <subject>
@@ -48,20 +47,4 @@
       <display value="Unstructured EPR document"/>
     </format>
   </content>
-  <context>
-    <facilityType>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="264358009"/>
-      <display value="General practice premises (environment)"/>
-    </coding>
-    </facilityType>
-    <practiceSetting>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="394802001"/>
-      <display value="General medicine (qualifier value)"/>
-    </coding>
-    </practiceSetting>
-  </context>
 </DocumentReference>  

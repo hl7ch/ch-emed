@@ -16,7 +16,7 @@
           <code value="7680500440334"/>
           <display value="NORVASC Tabl 10 mg"/>
         </coding>
-        <text value="NORVASC"/>
+        <text value="NORVASC Tabl 10 mg"/>
       </code>
       <form>
         <coding>
@@ -28,15 +28,9 @@
       <amount>
         <numerator>
           <value value="30"/>
-          <unit value="tablets"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="1"/>
         </numerator>
         <denominator>
-          <value value="1"/>
-          <unit value="Package"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="1"/>
+            <value value="1"/>
         </denominator>
       </amount>
       <ingredient>
@@ -46,31 +40,32 @@
             <code value="C08CA01"/>
             <display value="amlodipine"/>
           </coding>
-          <text value="Amlodipine"/>
+          <text value="amlodipine"/>
         </itemCodeableConcept>
         <strength>
           <numerator>
             <value value="10"/>
-            <unit value="milligram"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mg"/>
           </numerator>
           <denominator>
             <value value="1"/>
-            <unit value="tablets"/>
             <system value="http://unitsofmeasure.org"/>
-            <code value="1"/>
           </denominator>
         </strength>
       </ingredient>
     </Medication>
   </contained>
   <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
-    <extension url="externalDocumentId">
-      <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+    <extension url="id">
+      <valueIdentifier>
+        <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+      </valueIdentifier>
     </extension>
-    <extension url="medicationTreatmentPlanId">
-      <valueString value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+    <extension url="externalDocumentId">
+      <valueIdentifier>
+        <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
+      </valueIdentifier>
     </extension>
   </extension>
   <status value="completed"/>
@@ -81,8 +76,13 @@
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
+  <note>
+    <text value="-"/>
+  </note>
   <dosageInstruction>
     <text value="Morgens und abends je 1 Tablette nehmen"/>
+  </dosageInstruction>
+  <dosageInstruction>
     <timing>
       <repeat>
         <boundsPeriod>
@@ -101,10 +101,8 @@
     </route>
     <doseAndRate>
       <doseQuantity>
-        <value value="1"/>
-        <unit value="tablets"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="1"/>
+        <!--<value value="1"/>-->
+        <unit value="Tbl"/>
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>

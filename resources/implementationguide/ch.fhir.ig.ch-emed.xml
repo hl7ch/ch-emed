@@ -122,6 +122,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="DocumentReference/DocRef-2-7-MedicationCard"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/MedDispBeloczok"/>
          </reference>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
@@ -248,12 +253,17 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage"/>
+            <reference value="StructureDefinition/ch-emed-dosage-nonstructured"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-medicationrequest"/>
+            <reference value="StructureDefinition/ch-emed-dosage-structured-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-structured"/>
          </reference>
       </resource>
       <resource>

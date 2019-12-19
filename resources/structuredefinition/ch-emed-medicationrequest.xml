@@ -76,11 +76,34 @@
       </element>
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
+         <slicing>
+            <discriminator>
+               <type value="profile"/>
+               <path value="$this"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
          <short value="How the medication should be taken"/>
          <min value="1"/>
+      </element>
+      <element id="MedicationRequest.dosageInstruction:nonstructured">
+         <path value="MedicationRequest.dosageInstruction"/>
+         <sliceName value="nonstructured"/>
+         <short value="Free text dosage instructions"/>
+         <min value="1"/>
+         <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationrequest"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
+         </type>
+      </element>
+      <element id="MedicationRequest.dosageInstruction:structured">
+         <path value="MedicationRequest.dosageInstruction"/>
+         <sliceName value="structured"/>
+         <short value="Structured dosage instructions"/>
+         <type>
+            <code value="Dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-medicationrequest"/>
          </type>
       </element>
       <element id="MedicationRequest.dispenseRequest">

@@ -33,8 +33,8 @@
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="275670009"/>
-      <display value="Medication Dispensation"/>
+      <code value="419891008"/>
+      <display value="Record artifact (record artifact)"/>
     </coding>
   </type>
   <subject>

@@ -14,6 +14,14 @@
       <type value="element"/>
       <expression value="MedicationRequest"/>
    </context>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationDispense"/>
+   </context>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationStatement"/>
+   </context>
    <type value="Extension"/>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
    <derivation value="constraint"/>
@@ -23,6 +31,37 @@
          <short value="ID for Medication Treatment Plan"/>
          <max value="1"/>
       </element>
+
+      <element id="Extension.extension:id">
+         <path value="Extension.extension"/>
+         <sliceName value="id"/>
+         <short value="ID of a medication treatment plan"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+         </type>
+      </element>
+      <element id="Extension.extension:id.extension">
+         <path value="Extension.extension.extension"/>
+         <max value="0"/>
+      </element>
+      <element id="Extension.extension:id.url">
+         <path value="Extension.extension.url"/>
+         <type>
+            <code value="uri"/>
+         </type>
+         <fixedUri value="id"/>
+      </element>
+      <element id="Extension.extension:id.valueIdentifier">
+         <path value="Extension.extension.valueIdentifier"/>
+         <short value="Value of extension"/>
+         <type>
+            <code value="Identifier"/>
+         </type>
+      </element>
+      
+
       <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
          <sliceName value="externalDocumentId"/>
@@ -44,41 +83,14 @@
          </type>
          <fixedUri value="externalDocumentId"/>
       </element>
-      <element id="Extension.extension:externalDocumentId.valueString">
-         <path value="Extension.extension.valueString"/>
-         <short value="Format: UUID"/>
+      <element id="Extension.extension:externalDocumentId.valueIdentifier">
+         <path value="Extension.extension.valueIdentifier"/>
+         <short value="Value of extension"/>
          <type>
-            <code value="string"/>
+            <code value="Identifier"/>
          </type>
       </element>
-      <element id="Extension.extension:medicationTreatmentPlanId">
-         <path value="Extension.extension"/>
-         <sliceName value="medicationTreatmentPlanId"/>
-         <short value="ID of a medication treatment plan"/>
-         <min value="1"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-         </type>
-      </element>
-      <element id="Extension.extension:medicationTreatmentPlanId.extension">
-         <path value="Extension.extension.extension"/>
-         <max value="0"/>
-      </element>
-      <element id="Extension.extension:medicationTreatmentPlanId.url">
-         <path value="Extension.extension.url"/>
-         <type>
-            <code value="uri"/>
-         </type>
-         <fixedUri value="medicationTreatmentPlanId"/>
-      </element>
-      <element id="Extension.extension:medicationTreatmentPlanId.valueString">
-         <path value="Extension.extension.valueString"/>
-         <short value="Format: UUID"/>
-         <type>
-            <code value="string"/>
-         </type>
-      </element>
+
       <element id="Extension.url">
          <path value="Extension.url"/>
          <type>
@@ -91,5 +103,6 @@
          <min value="0"/>
          <max value="0"/>
       </element>
+      
    </differential>
 </StructureDefinition>
