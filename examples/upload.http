@@ -94,6 +94,12 @@ Content-Type: application/fhir+xml
 
 < ./documentreference/DocRef-2-3-MedicationTreatmentPlan.xml
 
+###
+PUT {{host}}/DocumentReference/DocRef-2-7-MedicationCard HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./documentreference/DocRef-2-7-MedicationCard.xml
+
 
 
 ###
