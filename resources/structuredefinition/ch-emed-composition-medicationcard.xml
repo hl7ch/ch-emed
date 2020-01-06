@@ -156,11 +156,11 @@
          <min value="1"/>
          <slicing>
             <discriminator>
-               <type value="value"/>
-               <path value="code.coding.code"/>
+               <type value="pattern"/>
+               <path value="code"/>
             </discriminator>
-            <ordered value="true"/>
-            <rules value="closed"/>
+            <ordered value="false"/>
+            <rules value="open"/>
          </slicing>
       </element>
       <element id="Composition.section:card">
@@ -178,24 +178,14 @@
       </element>
       <element id="Composition.section.code:card">
          <path value="Composition.section.code"/>
-         <min value="0"/>
-         <max value="1"/>
-      </element>
-      <element id="Composition.section.code.coding:card">
-         <path value="Composition.section.code.coding"/>
-         <max value="1"/>
-      </element>
-      <element id="Composition.section.code.coding.system:card">
-         <path value="Composition.section.code.coding.system"/>
-         <fixedUri value="http://loinc.org"/>
-      </element>
-      <element id="Composition.section.code.coding.code:card">
-         <path value="Composition.section.code.coding.code"/>
-         <fixedCode value="10160-0"/>
-      </element>
-      <element id="Composition.section.code.coding.display:card">
-         <path value="Composition.section.code.coding.display"/>
-         <fixedString value="History of medication use"/>
+         <min value="1"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://loinc.org"/>
+               <code value="10160-0"/>
+               <display value="History of medication use"/>
+            </coding>
+         </patternCodeableConcept>
       </element>
       <element id="Composition.section.text:card">
          <path value="Composition.section.text"/>
@@ -217,6 +207,11 @@
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
+      <element id="Composition.section.section:card">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
       <element id="Composition.section:annotation">
          <path value="Composition.section"/>
          <sliceName value="annotation"/>
@@ -233,27 +228,13 @@
       <element id="Composition.section.code:annotation">
          <path value="Composition.section.code"/>
          <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="Composition.section.code.coding:annotation">
-         <path value="Composition.section.code.coding"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="Composition.section.code.coding.system:annotation">
-         <path value="Composition.section.code.coding.system"/>
-         <min value="1"/>
-         <fixedUri value="http://loinc.org"/>
-      </element>
-      <element id="Composition.section.code.coding.code:annotation">
-         <path value="Composition.section.code.coding.code"/>
-         <min value="1"/>
-         <fixedCode value="48767-8"/>
-      </element>
-      <element id="Composition.section.code.coding.display:annotation">
-         <path value="Composition.section.code.coding.display"/>
-         <min value="1"/>
-         <fixedString value="Annotation comment"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://loinc.org"/>
+               <code value="48767-8"/>
+               <display value="Annotation comment"/>
+            </coding>
+         </patternCodeableConcept>
       </element>
       <element id="Composition.section.text:annotation">
          <path value="Composition.section.text"/>
@@ -274,6 +255,11 @@
       <element id="Composition.section.entry:annotation.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
+      </element>
+      <element id="Composition.section.section:annotation">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
       </element>
    </differential>
 </StructureDefinition>
