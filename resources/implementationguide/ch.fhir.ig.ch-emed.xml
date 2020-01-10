@@ -268,7 +268,32 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medication-medicationstatement"/>
+            <reference value="StructureDefinition/ch-emed-ext-dispense"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-pharmaceuticaladvice"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-prescription"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-substitution"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-treatmentplan"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-treatmentreason"/>
          </reference>
       </resource>
      <resource>
@@ -283,12 +308,12 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medicationdispense"/>
+            <reference value="StructureDefinition/ch-emed-medication-medicationstatement"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-treatmentplan"/>
+            <reference value="StructureDefinition/ch-emed-medicationdispense"/>
          </reference>
       </resource>
       <resource>
@@ -304,16 +329,6 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-observation"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-ext-substitution"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-ext-treatmentreason"/>
          </reference>
       </resource>
 

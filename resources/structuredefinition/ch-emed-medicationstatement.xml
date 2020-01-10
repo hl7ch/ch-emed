@@ -48,7 +48,7 @@
       <element id="MedicationStatement.extension:treatmentPlan">
          <path value="MedicationStatement.extension" />
          <sliceName value="treatmentPlan" />
-         <short value="Medication treatment plan"/>
+         <short value="Reference to the medication treatment plan"/>
          <min value="0"/>
          <max value="1"/>
          <type>

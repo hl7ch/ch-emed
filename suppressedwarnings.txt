@@ -1,3 +1,21 @@
 A resource should have narrative for robust management [text.div.exists()]
 The value provided ('rm-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#rm-CH) is not valid in the value set CommonLanguages)
 Resource has a language, but the XHTML does not have a language tag
+
+The display "Annotation comment" is not a valid display for the code {http://loinc.org}48767-8 - should be one of ["Annotation comment [Interpretation] Narrative","Annotation comment Imp"]
+The display "Medication pharmaceutical advice.brief" is not a valid display for the code {http://loinc.org}61357-0 - should be one of ["Medication pharmaceutical advice.brief Document","Medication pharm advice.brief Doc"]
+The display "Medication treatment plan.brief" is not a valid display for the code {http://loinc.org}77604-7 - should be one of ["Medication treatment plan.brief Document","Med tx plan.brief Doc"]
+The display "Medical Prescription record (record artifact)" is not a valid display for the code {http://snomed.info/sct}761938008 - should be one of ["Medicinal prescription record","Medicinal prescription","Medicinal prescription record (record artifact)","Drug prescription record"]
+The display "History of medication use" is not a valid display for the code {http://loinc.org}10160-0 - should be one of ["History of Medication use Narrative","Hx of Medication use"]
+The display "Medication dispensed.brief" is not a valid display for the code {http://loinc.org}60590-7 - should be one of ["Medication dispensed.brief Document","Medication dispensed.brief Doc"]
+[The display "Medication summary" is not a valid display for the code {http://loinc.org}56445-0 - should be one of ["Medication summary Document","Medication summary Doc"]]
+[The display "Medical Prescription record (record artifact)" is not a valid display for the code {http://snomed.info/sct}761938008 - should be one of ["Medicinal prescription record","Medicinal prescription","Medicinal prescription record (record artifact)","Drug prescription record"]]
+[The display "Medication dispensed.extended" is not a valid display for the code {http://loinc.org}60593-1 - should be one of ["Medication dispensed.extended Document","Medication dispensed.extended Doc"]]
+[The display "Medication pharmaceutical advice.extended" is not a valid display for the code {http://loinc.org}61356-2 - should be one of ["Medication pharmaceutical advice.extended Document","Medication pharm advice.extended Doc"]]
+[The display "Medication treatment plan.extended" is not a valid display for the code {http://loinc.org}77603-9 - should be one of ["Medication treatment plan.extended Document","Med tx plan.extended Doc"]]
+The display "Drug prescription" is not a valid display for the code {http://snomed.info/sct}440545006 - should be one of ["Prescription record (record artifact)","Prescription record"]
+The display "Medication dispensed.extended" is not a valid display for the code {http://loinc.org}60593-1 - should be one of ["Medication dispensed.extended Document","Medication dispensed.extended Doc"]
+The display "Medication Dispensation" is not a valid display for the code {http://snomed.info/sct}275670009 - should be one of ["Prescription exemption certificate","Prescription season ticket","Prescription exemption certificate (record artifact)"]
+The display "Medication pharmaceutical advice.extended" is not a valid display for the code {http://loinc.org}61356-2 - should be one of ["Medication pharmaceutical advice.extended Document","Medication pharm advice.extended Doc"]
+The display "Medication treatment plan.extended" is not a valid display for the code {http://loinc.org}77603-9 - should be one of ["Medication treatment plan.extended Document","Med tx plan.extended Doc"]
+The display "Medication Treatment Plan" is not a valid display for the code {http://snomed.info/sct}761931002 - should be one of ["Medication treatment plan report (record artifact)","Medication treatment plan report"]

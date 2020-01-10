@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-ext-treatmentplan"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"/>
+   <id value="ch-emed-ext-dispense"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense"/>
    <version value="0.0.1"/>
-   <name value="CHEMEDExtTreatmentPlan"/>
-   <title value="CH EMED Extension Treatment Plan"/>
+   <name value="CHEMEDExtDispense"/>
+   <title value="CH EMED Extension Dispense"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Extension to reference the medication treatment plan"/>
+   <description value="Extension to reference the medication dispense"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <context>
@@ -32,13 +32,13 @@
    <differential>
       <element id="Extension">
          <path value="Extension"/>
-         <short value="ID for Medication Treatment Plan"/>
+         <short value="ID for Medication Dispense"/>
          <max value="1"/>
       </element>
       <element id="Extension.extension:id">
          <path value="Extension.extension"/>
          <sliceName value="id"/>
-         <short value="ID of a medication treatment plan"/>
+         <short value="ID of a medication dispense"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -96,7 +96,7 @@
          <type>
             <code value="uri"/>
          </type>
-         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"/>
+         <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense"/>
       </element>
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>

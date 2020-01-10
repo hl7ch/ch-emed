@@ -45,10 +45,32 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason" />
          </type>
       </element>
+      <element id="MedicationDispense.extension:prescription">
+         <path value="MedicationDispense.extension" />
+         <sliceName value="prescription" />
+         <short value="Reference to the medication prescription"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription" />
+         </type>
+      </element>
+      <element id="MedicationDispense.extension:pharmaceuticalAdvice">
+         <path value="MedicationDispense.extension" />
+         <sliceName value="pharmaceuticalAdvice" />
+         <short value="Reference to the pharmaceutical advice"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice" />
+         </type>
+      </element>
       <element id="MedicationDispense.extension:treatmentPlan">
          <path value="MedicationDispense.extension" />
          <sliceName value="treatmentPlan" />
-         <short value="Medication treatment plan"/>
+         <short value="Reference to the medication treatment plan"/>
          <min value="0"/>
          <max value="1"/>
          <type>
@@ -78,19 +100,6 @@
       </element>
       <element id="MedicationDispense.subject.reference">
          <path value="MedicationDispense.subject.reference"/>
-         <min value="1"/>
-      </element>
-      <element id="MedicationDispense.authorizingPrescription">
-         <path value="MedicationDispense.authorizingPrescription"/>
-         <short value="Medication prescription"/>
-         <max value="1"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.authorizingPrescription.reference">
-         <path value="MedicationDispense.authorizingPrescription.reference"/>
          <min value="1"/>
       </element>
       <element id="MedicationDispense.quantity">

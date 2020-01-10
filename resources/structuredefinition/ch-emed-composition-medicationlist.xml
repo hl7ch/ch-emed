@@ -258,7 +258,7 @@
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-pharmaceuticaladvice"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
          </type>
       </element>
       <element id="Composition.section.entry:pharmaceuticalAdvice.reference">
