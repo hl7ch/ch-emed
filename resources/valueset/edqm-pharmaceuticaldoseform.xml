@@ -4,13 +4,15 @@
    <meta>
       <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20180410165730"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2018-04-10T16:57:30+02:00"/>
+         <start value="2018-04-10T16:57:30+01:00"/>
       </valuePeriod>
    </extension>
-   <url value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
+   <url
+             value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
    <identifier>
       <use value="official"/>
       <system value="http://art-decor.org/ns/oids/vs"/>

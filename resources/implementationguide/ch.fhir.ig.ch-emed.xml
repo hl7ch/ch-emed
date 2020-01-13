@@ -189,6 +189,12 @@
          </reference>
          <exampleBoolean value="false"/>
       </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/ihe-pharmaceuticaladvicestatuslist"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
 
       <!-- references for structure definitions -->
       <resource>
@@ -342,6 +348,12 @@
       <resource>
          <reference>
             <reference value="ValueSet/edqm-routeofadministration"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
          </reference>
          <exampleBoolean value="false"/>
       </resource>

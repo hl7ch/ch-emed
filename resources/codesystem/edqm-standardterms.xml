@@ -6,7 +6,7 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2018-04-10T16:57:30+02:00"/>
+         <start value="2018-04-10T16:57:30+01:00"/>
       </valuePeriod>
    </extension>
    <url value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
@@ -133,7 +133,7 @@
       </designation>
       <designation>
          <language value="fr-CH"/>
-         <value value="Solution buvable"/>
+         <value value="Solution  buvable"/>
       </designation>
       <designation>
          <language value="it-CH"/>
