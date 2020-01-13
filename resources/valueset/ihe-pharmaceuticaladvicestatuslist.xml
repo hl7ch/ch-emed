@@ -20,6 +20,7 @@
    </identifier>
    <version value="2020-01-06T13:57:19"/>
    <name value="IHEPharmaceuticalAdviceStatusList"/>
+   <title value="IHE Pharmaceutical Advice Status List"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
