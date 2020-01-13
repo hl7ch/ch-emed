@@ -64,12 +64,6 @@
          <path value="Composition.type"/>
          <short value="Document type"/>
          <patternCodeableConcept>
-            <!-- TBD: multiple codings are not supported yet, see issue #26 -->
-            <!--<coding>
-               <system value="http://loinc.org"/>
-               <code value="56445-0"/>
-               <display value="Medication summary"/>
-            </coding>-->
             <coding>
                <system value="http://snomed.info/sct"/>
                <code value="721912009"/>
