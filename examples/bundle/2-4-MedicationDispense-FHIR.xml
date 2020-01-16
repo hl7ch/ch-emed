@@ -42,14 +42,14 @@
                 <status value="final"/>
                 <type>
                     <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419891008"/>
+                        <display value="Record artifact (record artifact)"/>
+                    </coding>
+                    <coding>
                         <system value="http://loinc.org"/>
                         <code value="60593-1"/>
                         <display value="Medication dispensed.extended"/>
-                    </coding>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="275670009"/>
-                        <display value="Medication Dispensation"/>
                     </coding>
                 </type>
                 <subject>
@@ -162,7 +162,7 @@
                 <meta>
                     <versionId value="2"/>
                     <lastUpdated value="2019-12-09T17:18:37.829+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
                 </meta>
                 <identifier>
                     <type>

@@ -241,10 +241,6 @@
          <short value="General comments"/>
          <min value="0"/>
          <max value="*"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-         </type>
       </element>
       <element id="Composition.section.entry:annotation.reference">
          <path value="Composition.section.entry.reference"/>

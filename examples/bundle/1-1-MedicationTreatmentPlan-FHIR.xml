@@ -43,14 +43,14 @@
                 <type>
                     <!-- TBD: not sure yet -->
                     <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419891008"/>
+                        <display value="Record artifact (record artifact)"/>
+                    </coding>
+                    <coding>
                         <system value="http://loinc.org"/>
                         <code value="77603-9"/>
                         <display value="Medication treatment plan.extended"/>
-                    </coding>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="761931002"/>
-                        <display value="Medication Treatment Plan"/>
                     </coding>
                 </type>
                 <subject>
@@ -163,7 +163,7 @@
                 <meta>
                     <versionId value="2"/>
                     <lastUpdated value="2019-12-09T17:18:37.829+00:00"/>
-                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+                    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
                 </meta>
                 <identifier>
                     <type>
