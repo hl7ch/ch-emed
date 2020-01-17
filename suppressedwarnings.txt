@@ -19,3 +19,10 @@ The display "Medication pharmaceutical advice.extended" is not a valid display f
 The display "Medication treatment plan.extended" is not a valid display for the code {http://loinc.org}77603-9 - should be one of ["Medication treatment plan.extended Document","Med tx plan.extended Doc"]
 The display "Medication Treatment Plan" is not a valid display for the code {http://snomed.info/sct}761931002 - should be one of ["Medication treatment plan report (record artifact)","Medication treatment plan report"]
 The display "Medication summary" is not a valid display for the code {http://loinc.org}56445-0 - should be one of ["Medication summary Document","Medication summary Doc"]
+
+The value provided ('fr-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = Error sending HTTP Post/Put Payload)
+The value provided ('de-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = Error sending HTTP Post/Put Payload)
+The value provided ('it-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = Error sending HTTP Post/Put Payload)
+
+Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.6.73' is unknown so the code cannot be validated

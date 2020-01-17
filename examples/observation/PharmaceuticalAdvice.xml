@@ -7,8 +7,7 @@
   <status value="final"/>
   <code>
     <coding>
-      <!-- TBD: IHE Pharmaceutical Advice Status List -->
-      <system value="1.3.6.1.4.1.19376.1.9.2.1"/>
+      <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
       <code value="CANCEL"/>
     </coding>
   </code>
