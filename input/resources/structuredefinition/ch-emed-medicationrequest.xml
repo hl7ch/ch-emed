@@ -45,6 +45,10 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
       </element>
+      <element id="MedicationRequest.status">
+         <path value="MedicationRequest.status"/>
+         <fixedCode value="completed"/>
+      </element>
       <element id="MedicationRequest.medicationReference">
          <path value="MedicationRequest.medicationReference"/>
          <short value="Reference to the contained medication"/>
@@ -52,10 +56,6 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
          </type>
-      </element>
-      <element id="MedicationRequest.status">
-         <path value="MedicationRequest.status"/>
-         <fixedCode value="completed"/>
       </element>
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>

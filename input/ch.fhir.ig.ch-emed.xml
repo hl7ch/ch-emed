@@ -45,73 +45,73 @@
          <reference>
             <reference value="Bundle/1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-medicationdispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/2-1-MedicationList-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-medicationlist"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/2-2-PharmaceuticalAdvice-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-medicationdispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/2-6-MedicationPrescription-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-medicationprescription"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription"/>
       </resource>
       <resource>
          <reference>
             <reference value="Bundle/2-7-MedicationCard-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-document-medicationcard"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-2-1-MedicationList-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-medicationlist"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-2-4-MedicationDispense-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-medicationdispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-2-6-MedicationPrescription-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-medicationprescription"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
       </resource>
       <resource>
          <reference>
             <reference value="Composition/Comp-2-7-MedicationCard-FHIR"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-composition-medicationcard"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
       </resource>
       <resource>
          <reference>
@@ -147,31 +147,31 @@
          <reference>
             <reference value="MedicationDispense/MedDispBeloczok"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-medicationdispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationRequest/MedReqNorvasc"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-medicationrequest"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationStatement/MedStatBeloczok"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationStatement/MedStatNorvasc"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationStatement/MedStatTriatec"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>
@@ -182,7 +182,7 @@
          <reference>
             <reference value="Observation/PharmaceuticalAdvice"/>
          </reference>
-         <exampleCanonical value="StructureDefinition/ch-emed-observation"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
       </resource>
       <resource>
          <reference>
