@@ -68,11 +68,10 @@
       <element id="Observation.code">
          <path value="Observation.code"/>
          <short value="Observation code"/>
-         <patternCodeableConcept>
-            <coding>
-               <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
-            </coding>
-         </patternCodeableConcept>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
+         </binding>
       </element>
       <element id="Observation.note">
          <path value="Observation.note"/>
