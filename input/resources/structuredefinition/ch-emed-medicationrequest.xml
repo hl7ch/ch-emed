@@ -69,6 +69,14 @@
          <path value="MedicationRequest.subject.reference"/>
          <min value="1"/>
       </element>
+      <element id="MedicationRequest.reasonCode">
+         <path value="MedicationRequest.reasonCode"/>
+         <short value="Treatment reason"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationRequest.reasonCode.text">
+         <path value="MedicationRequest.reasonCode.text"/>
+      </element>
       <element id="MedicationRequest.note">
          <path value="MedicationRequest.note"/>
          <short value="Annotation"/>
