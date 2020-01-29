@@ -10,7 +10,7 @@
     <publisher value="eHealth Suisse"/>
     <description value="Extension for substitution"/>
     <fhirVersion value="4.0.1"/>
-    <kind value="primitive-type"/>
+    <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
