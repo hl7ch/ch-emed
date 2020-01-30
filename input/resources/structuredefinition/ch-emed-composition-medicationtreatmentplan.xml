@@ -90,7 +90,7 @@
       <element id="Composition.author.extension">
          <path value="Composition.author.extension"/>
          <short value="Timestamp of the authorship/data input"/>
-         <min value="1"/>
+         <min value="0"/>
          <max value="1"/>
          <type>
             <code value="Extension"/>
