@@ -1,7 +1,57 @@
 <div xmlns="http://www.w3.org/1999/xhtml" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
   
-  <div>
+  <!--<div>
     {% include list-profiles.xhtml %}
+  </div>-->
+
+  <h3>Medication Card document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-medicationcard.html">CH EMED Medication Card Document Profile</a> Definition of the bundle for the medication card document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-medicationcard.html">CH EMED Medication Card Composition Profile</a> Definition of the composition for the medication card document</li>
+    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
+    <li><a href="StructureDefinition-ch-emed-medication-medicationstatement.html">CH EMED Medication Profile (MedicationStatement)</a> Definition of the medication for the medication statement</li>
   </div>
+
+  <h3>Medication Prescription document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-medicationprescription.html">CH EMED Medication Prescription Document Profile</a> Definition of the bundle for the medication prescription document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-medicationprescription.html">CH EMED Medication Prescription Composition Profile</a> Definition of the composition for the medication prescription document</li>
+    <li><a href="StructureDefinition-ch-emed-medicationrequest.html">CH EMED MedicationRequest Profile</a> Definition of the medication request</li>
+    <li><a href="StructureDefinition-ch-emed-medication-medicationrequest.html">CH EMED Medication Profile (MedicationRequest)</a> Definition of the medication for the medication request</li>
+  </div>
+
+  <h3>Medication Dispense document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-medicationdispense.html">CH EMED Medication Dispense Document Profile</a> Definition of the bundle for the medication dispense document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-medicationdispense.html">CH EMED Medication Dispense Composition Profile</a> Definition of the composition for the medication dispense document</li>
+    <li><a href="StructureDefinition-ch-emed-medicationdispense.html">CH EMED MedicationDispense Profile</a> Definition of the medication dispense</li>
+    <li><a href="StructureDefinition-ch-emed-medication-medicationdispense.html">CH EMED Medication Profile (MedicationDispense)</a> Definition of the medication for the medication dispense</li>
+  </div>
+
+  <h3>Medication Treatment Plan document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-medicationtreatmentplan.html">CH EMED Medication Treatment Plan Document Profile</a> Definition of the bundle for the medication treatment plan document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-medicationtreatmentplan.html">CH EMED Medication Treatment Plan Composition Profile</a> Definition of the composition for the medication treatment plan document</li>
+    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
+    <li><a href="StructureDefinition-ch-emed-medication-medicationstatement.html">CH EMED Medication Profile (MedicationStatement)</a> Definition of the medication for the medication statement</li>
+  </div>
+
+  <h3>Pharmaceutical Advice document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-pharmaceuticaladvice.html">CH EMED Pharmaceutical Advice Document Profile</a> Definition of the bundle for the pharmaceutical advice document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html">CH EMED Pharmaceutical Advice Composition Profile</a> Definition of the composition for the pharmaceutical advice document</li>
+    <li><a href="StructureDefinition-ch-emed-observation.html">CH EMED Observation Profile</a> Definition of the observation</li>
+  </div>
+
+  <h3>Medication List document</h3>
+  <div>
+    <li><a href="StructureDefinition-ch-emed-document-medicationlist.html">CH EMED Medication List Document Profile</a> Definition of the bundle for the medication list document</li>
+    <li><a href="StructureDefinition-ch-emed-composition-medicationlist.html">CH EMED Medication List Composition Profile</a> Definition of the composition for the medication list document</li> 
+    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
+    <li><a href="StructureDefinition-ch-emed-medicationrequest.html">CH EMED MedicationRequest Profile</a> Definition of the medication request</li>
+    <li><a href="StructureDefinition-ch-emed-medicationdispense.html">CH EMED MedicationDispense Profile</a> Definition of the medication dispense</li>
+    <li><a href="StructureDefinition-ch-emed-observation.html">CH EMED Observation Profile</a> Definition of the observation</li>
+  </div>
+
 </div>
