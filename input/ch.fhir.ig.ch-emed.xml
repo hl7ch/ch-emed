@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
    <version value="0.0.1"/>
    <name value="CH_EMED"/>
-   <title value="CH-EMED"/>
+   <title value="CH EMED"/>
    <status value="draft"/>
    <experimental value="false"/>
    <date value="2019-07-10"/>
