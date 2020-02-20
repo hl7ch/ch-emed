@@ -109,4 +109,13 @@
   <dispenseRequest>
     <numberOfRepeatsAllowed value="2"/>
   </dispenseRequest>
+  <substitution>
+    <allowedCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+        <code value="E"/>
+        <display value="equivalent"/>
+      </coding>
+    </allowedCodeableConcept>
+  </substitution>
 </MedicationRequest>

@@ -51,6 +51,15 @@
       </ingredient>
     </Medication>
   </contained>
+  <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+        <code value="E"/>
+        <display value="equivalent"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
   <status value="completed"/>
   <medicationReference>
     <reference value="#Triatec"/>
