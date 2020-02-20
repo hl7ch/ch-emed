@@ -3,11 +3,11 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
    <version value="0.0.1"/>
    <name value="CHEMEDDosageNonStructured"/>
-   <title value="CH EMED Dosage Non-Structured Profile (MedicationStatement / MedicationDispense)"/>
+   <title value="CH EMED Dosage Non-Structured Profile"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the non-structured medication dosage for the medication statement and medication dispense"/>
+   <description value="Definition of the non-structured dosage"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -16,7 +16,7 @@
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage Non-Structured (MedicationStatement / MedicationDispense)"/>
+         <short value="CH EMED Dosage Non-Structured"/>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
