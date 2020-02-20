@@ -45,7 +45,15 @@
          <reference>
             <reference value="Bundle/1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
-         <name value="1-1-MedicationTreatmentPlan-FHIR"/>
+         <name value="1-1 Medication Treatment Plan document"/>
+         <description value="Example for Bundle"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Bundle/1-2-MedicationDispense"/>
+         </reference>
+         <name value="1-2 Medication Dispense document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
@@ -53,7 +61,7 @@
          <reference>
             <reference value="Bundle/2-1-MedicationList-FHIR"/>
          </reference>
-         <name value="2-1-MedicationList-FHIR"/>
+         <name value="2-1 Medication List document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
       </resource>
@@ -61,7 +69,7 @@
          <reference>
             <reference value="Bundle/2-2-PharmaceuticalAdvice-FHIR"/>
          </reference>
-         <name value="2-2-PharmaceuticalAdvice-FHIR"/>
+         <name value="2-2 Pharmaceutical Advice document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
       </resource>
@@ -69,7 +77,7 @@
          <reference>
             <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
          </reference>
-         <name value="2-4-MedicationDispense-FHIR"/>
+         <name value="2-4 Medication Dispense document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
       </resource>
@@ -77,7 +85,7 @@
          <reference>
             <reference value="Bundle/2-6-MedicationPrescription-FHIR"/>
          </reference>
-         <name value="2-6-MedicationPrescription-FHIR"/>
+         <name value="2-6 Medication Prescription document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription"/>
       </resource>
@@ -85,15 +93,23 @@
          <reference>
             <reference value="Bundle/2-7-MedicationCard-FHIR"/>
          </reference>
-         <name value="2-7-MedicationCard-FHIR"/>
+         <name value="2-7 Medication Card document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
       </resource>
       <resource>
          <reference>
+            <reference value="Composition/1-2-MedicationDispense"/>
+         </reference>
+         <name value="1-2 Composition for Medication Dispense document"/>
+         <description value="Example for Composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Composition/Comp-1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
-         <name value="Comp-1-1-MedicationTreatmentPlan-FHIR"/>
+         <name value="1-1 Composition for Medication Treatment Plan document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
@@ -101,7 +117,7 @@
          <reference>
             <reference value="Composition/Comp-2-1-MedicationList-FHIR"/>
          </reference>
-         <name value="Comp-2-1-MedicationList-FHIR"/>
+         <name value="2-1 Composition for Medication List document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationlist"/>
       </resource>
@@ -109,7 +125,7 @@
          <reference>
             <reference value="Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
          </reference>
-         <name value="Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+         <name value="2-2 Composition for Pharmaceutical Advice document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
       </resource>
@@ -117,7 +133,7 @@
          <reference>
             <reference value="Composition/Comp-2-4-MedicationDispense-FHIR"/>
          </reference>
-         <name value="Comp-2-4-MedicationDispense-FHIR"/>
+         <name value="2-4 Composition for Medication Dispense document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
       </resource>
@@ -125,7 +141,7 @@
          <reference>
             <reference value="Composition/Comp-2-6-MedicationPrescription-FHIR"/>
          </reference>
-         <name value="Comp-2-6-MedicationPrescription-FHIR"/>
+         <name value="2-6 Composition for Medication Prescription document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
       </resource>
@@ -133,7 +149,7 @@
          <reference>
             <reference value="Composition/Comp-2-7-MedicationCard-FHIR"/>
          </reference>
-         <name value="Comp-2-7-MedicationCard-FHIR"/>
+         <name value="2-7 Composition for Medication Card document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
       </resource>
@@ -141,49 +157,56 @@
          <reference>
             <reference value="DocumentReference/DocRef-1-1-MedicationTreatmentPlan"/>
          </reference>
-         <name value="DocRef-1-1-MedicationTreatmentPlan"/>
+         <name value="1-1 Document Reference for Medication Treatment Plan document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
             <reference value="DocumentReference/DocRef-1-2-MedicationDispense"/>
          </reference>
-         <name value="DocRef-1-2-MedicationDispense"/>
+         <name value="1-2 Document Reference for Medication Dispense document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
             <reference value="DocumentReference/DocRef-2-1-MedicationList"/>
          </reference>
-         <name value="DocRef-2-1-MedicationList"/>
+         <name value="2-1 Document Reference for Medication List document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
             <reference value="DocumentReference/DocRef-2-2-PharmaceuticalAdvice"/>
          </reference>
-         <name value="DocRef-2-2-PharmaceuticalAdvice"/>
+         <name value="2-2 Document Reference for Pharmaceutical Advice document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
             <reference value="DocumentReference/DocRef-2-3-MedicationTreatmentPlan"/>
          </reference>
-         <name value="DocRef-2-3-MedicationTreatmentPlan"/>
+         <name value="2-3 Document Reference for Medication Treatment Plan document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
             <reference value="DocumentReference/DocRef-2-7-MedicationCard"/>
          </reference>
-         <name value="DocRef-2-7-MedicationCard"/>
+         <name value="2-7 Document Reference for Medication Card document"/>
          <description value="Example for DocumentReference"/>
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationDispense/MedDispBeloczok"/>
+            <reference value="Medication/1-2-Triatec"/>
          </reference>
-         <name value="MedDispBeloczok"/>
+         <name value="1-2 Medication Triatec"/>
+         <description value="Example for Medication"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/1-2-MedDispTriatec"/>
+         </reference>
+         <name value="1-2 Medication Dispense with Medication Triatec"/>
          <description value="Example for MedicationDispense"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
@@ -221,6 +244,13 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Organization/Custodian"/>
+         </reference>
+         <name value="Custodian"/>
+         <description value="Example for Organization"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Organization/Hausarzt"/>
          </reference>
          <name value="Hausarzt"/>
@@ -238,21 +268,21 @@
          <reference>
             <reference value="Patient/MonikaWegmueller"/>
          </reference>
-         <name value="MonikaWegmueller"/>
+         <name value="Monika Wegmueller"/>
          <description value="Example for Patient"/>
       </resource>
       <resource>
          <reference>
             <reference value="Patient/MonikaWegmuellerRecipient"/>
          </reference>
-         <name value="MonikaWegmuellerRecipient"/>
+         <name value="Monika Wegmueller as Information Recipient"/>
          <description value="Example for Patient"/>
       </resource>
       <resource>
          <reference>
             <reference value="Practitioner/FamilienHausarzt"/>
          </reference>
-         <name value="FamilienHausarzt"/>
+         <name value="Familien Hausarzt"/>
          <description value="Example for Practitioner"/>
       </resource>
 
