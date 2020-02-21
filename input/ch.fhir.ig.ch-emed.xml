@@ -43,6 +43,13 @@
       <!-- references for examples -->
       <resource>
          <reference>
+            <reference value="Binary/pdf1"/>
+         </reference>
+         <name value="2-6 PDF1 as original representation"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Bundle/1-1-MedicationTreatmentPlan-FHIR"/>
          </reference>
          <name value="1-1 Medication Treatment Plan document"/>
@@ -83,7 +90,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/2-6-MedicationPrescription-FHIR"/>
+            <reference value="Bundle/2-6-MedicationPrescription"/>
          </reference>
          <name value="2-6 Medication Prescription document"/>
          <description value="Example for Bundle"/>
@@ -139,7 +146,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-2-6-MedicationPrescription-FHIR"/>
+            <reference value="Composition/2-6-MedicationPrescription"/>
          </reference>
          <name value="2-6 Composition for Medication Prescription document"/>
          <description value="Example for Composition"/>
@@ -213,6 +220,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/2-6-Norvasc"/>
+         </reference>
+         <name value="2-6 Medication Norvasc"/>
+         <description value="Example for Medication in MedicationRequest"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
@@ -229,9 +244,9 @@
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationRequest/MedReqNorvasc"/>
+            <reference value="MedicationRequest/2-6-MedReqNorvasc"/>
          </reference>
-         <name value="MedReqNorvasc"/>
+         <name value="2-6 Medication Request with Medication Norvasc"/>
          <description value="Example for MedicationRequest"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
       </resource>
