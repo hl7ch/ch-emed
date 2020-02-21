@@ -38,11 +38,12 @@
                 </identifier>
                 <status value="final"/>
                 <type>
-                    <!--<coding>
+                    <!-- TBD -->
+                    <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="419891008"/>
                         <display value="Record artifact (record artifact)"/>
-                    </coding>-->
+                    </coding>
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="60593-1"/>

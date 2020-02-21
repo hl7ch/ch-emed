@@ -25,6 +25,7 @@
     </identifier>
     <status value="final"/>
     <type>
+        <!-- TBD -->
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="419891008"/>

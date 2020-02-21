@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="2-4-MedicationDispense"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
+  </meta>
+  <language value="de-CH"/>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+    <valueIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <!-- TBD -->
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="419891008"/>
+      <display value="Record artifact (record artifact)"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60593-1"/>
+      <display value="Medication dispensed.extended"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <date value="2012-02-04T14:00:00+01:00"/>
+  <author>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+      <valueDateTime value="2012-02-04T14:00:00+01:00"/>
+    </extension>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <author>
+    <reference value="Organization/Hausarzt"/>
+  </author>
+  <title value="Abgabe"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normally accessible"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/Custodian"/>
+  </custodian>
+  <section>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
+      <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>
+      </valueIdentifier>
+    </extension>
+    <title value="Abgabe eines Medikaments"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="60590-7"/>
+        <display value="Medication dispensed.brief"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <thead>
+            <tr>
+              <th>Präpartename</th>
+              <th>Wirkstoffname</th>
+              <th>Galenische Form</th>
+              <th>Dosis pro Einheit</th>
+              <th>Anzahl Packungen</th>
+              <th>Packungsgrösse</th>
+              <th>Dosierung</th>
+              <th>Dos.Morgen</th>
+              <th>Dos.Mittag</th>
+              <th>Dos.Abend</th>
+              <th>Dos.Nacht</th>
+              <th>Verabreichungsweg</th>
+              <th>Kommentar</th>
+              <th>Behandlungsrund</th>
+              <th>Datum/Zeit der Abgabe/ Anwendung</th>
+              <th>Identifikation des Empfängers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="dis.1">
+              <td id="dis.1.brandedmedication">Beloc Zok</td>
+              <td id="dis.1.ingredient">Metoprolol</td>
+              <td id="dis.1.packageform">Ret Tbl</td>
+              <td id="dis.1.dosequantity">50 mg</td>
+              <td id="dis.1.nopackages">1</td>
+              <td id="dis.1.packagesize">30 Stk</td>
+              <td id="dis.1.dosageintakemode">Morgens 1 und abends 1/2 Tablette nehmen</td>
+              <td id="dis.1.dosagemorning">1</td>
+              <td id="dis.1.dosagelunch">0</td>
+              <td id="dis.1.dosageevening">0.5</td>
+              <td id="dis.1.routecode">oral</td>
+              <td id="dis.1.note"/>
+              <td id="dis.1.datefromto"/>
+              <td id="dis.1.reason">Bluthochdruck</td>
+              <td id="dis.1.dipsensedate"/>
+              <td id="dis.1.dipsenseto"/>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <entry>
+      <reference value="MedicationDispense/2-4-MedDispBeloczok"/>
+    </entry>
+  </section>
+</Composition>

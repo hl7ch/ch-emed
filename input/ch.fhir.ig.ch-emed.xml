@@ -75,7 +75,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/2-4-MedicationDispense-FHIR"/>
+            <reference value="Bundle/2-4-MedicationDispense"/>
          </reference>
          <name value="2-4 Medication Dispense document"/>
          <description value="Example for Bundle"/>
@@ -131,7 +131,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-2-4-MedicationDispense-FHIR"/>
+            <reference value="Composition/2-4-MedicationDispense"/>
          </reference>
          <name value="2-4 Composition for Medication Dispense document"/>
          <description value="Example for Composition"/>
@@ -200,13 +200,30 @@
             <reference value="Medication/1-2-Triatec"/>
          </reference>
          <name value="1-2 Medication Triatec"/>
-         <description value="Example for Medication"/>
+         <description value="Example for Medication in MedicationDispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/2-4-Beloczok"/>
+         </reference>
+         <name value="2-4 Medication Beloc Zok"/>
+         <description value="Example for Medication in MedicationDispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
+         <description value="Example for MedicationDispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/2-4-MedDispBeloczok"/>
+         </reference>
+         <name value="1-2 Medication Dispense with Medication Beloc Zok"/>
          <description value="Example for MedicationDispense"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
