@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-  <id value="MedStatBeloczok"/>
+  <id value="2-7-MedStatNorvasc"/>
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
   </meta>
   <contained>
-    <Medication xmlns="http://hl7.org/fhir">
-      <id value="Beloczok"/>
-      <meta>
-        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
-      </meta>
+    <Medication>
+      <id value="med"/>
       <code>
+        <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+          <valueUrl value="#mtpc.2.brandedmedication"/>
+        </extension>
         <coding>
           <system value="urn:oid:2.51.1.1"/>
-          <code value="7680521101306"/>
-          <display value="BELOC ZOK Ret Tabl 50 mg 30 Stk"/>
+          <code value="7680500440334"/>
+          <display value="NORVASC Tabl 10 mg"/>
         </coding>
-        <text value="BELOC ZOK Ret Tabl 50 mg"/>
+        <text value="NORVASC Tabl 10 mg"/>
       </code>
       <form>
         <coding>
@@ -28,66 +28,82 @@
       <amount>
         <numerator>
           <value value="30"/>
+          <unit value="tablets"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="1"/>
         </numerator>
         <denominator>
           <value value="1"/>
+          <unit value="Package"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="1"/>
         </denominator>
       </amount>
       <ingredient>
         <itemCodeableConcept>
           <coding>
-            <system value="urn:oid:2.16.840.1.113883.6.73"/>
-            <code value="C07AB02"/>
-            <display value="Metoprolol"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="386864001"/>
+            <display value="Amlodipine (substance)"/>
           </coding>
-          <text value="Metoprolol"/>
+          <text value="Amlodipine"/>
         </itemCodeableConcept>
         <strength>
           <numerator>
-            <value value="50"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg"/>
+            <value value="10"/>
+            <unit value="mg"/>
           </numerator>
           <denominator>
             <value value="1"/>
-            <system value="http://unitsofmeasure.org"/>
           </denominator>
         </strength>
       </ingredient>
     </Medication>
   </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+    <valueUrl value="#mtpc.2"/>
+  </extension>
   <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
     <extension url="id">
       <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
       </valueIdentifier>
     </extension>
     <extension url="externalDocumentId">
       <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
       </valueIdentifier>
     </extension>
   </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"/>
+  </identifier>
   <status value="completed"/>
   <medicationReference>
-    <reference value="#Beloczok"/>
+    <reference value="#med"/>
   </medicationReference>
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
   <reasonCode>
+    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+      <valueUrl value="#mtpc.2.reason"/>
+    </extension>
     <text value="Bluthochdruck"/>
   </reasonCode>
   <note>
+    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+      <valueUrl value="#mtpc.2.note"/>
+    </extension>
     <text value="-"/>
   </note>
   <dosage>
-    <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-  </dosage>
-  <dosage>
     <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dosagetype">
       <valueIdentifier>
-        <value value="1.3.6.1.4.1.19376.1.5.3.1.4.9"/>
+        <value value="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
       </valueIdentifier>
     </extension>
     <timing>
@@ -95,6 +111,8 @@
         <boundsPeriod>
           <start value="2012-02-04"/>
         </boundsPeriod>
+        <when value="ACM"/>
+        <when value="ACV"/>
       </repeat>
     </timing>
     <route>
@@ -104,14 +122,6 @@
         <display value="Oral use"/>
       </coding>
     </route>
-  </dosage>
-  <dosage>
-    <sequence value="1"/>
-    <timing>
-      <repeat>
-        <when value="ACM"/>
-      </repeat>
-    </timing>
     <doseAndRate>
       <doseQuantity>
         <value value="1"/>
@@ -119,16 +129,9 @@
     </doseAndRate>
   </dosage>
   <dosage>
-    <sequence value="2"/>
-    <timing>
-      <repeat>
-        <when value="ACV"/>
-      </repeat>
-    </timing>
-    <doseAndRate>
-      <doseQuantity>
-        <value value="0.5"/>
-      </doseQuantity>
-    </doseAndRate>
+    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+      <valueUrl value="#mtpc.2.dosageintakemode"/>
+    </extension>
+    <text value="Morgens und abends je 1 Tablette nehmen"/>
   </dosage>
 </MedicationStatement>

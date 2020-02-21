@@ -43,9 +43,16 @@
       <!-- references for examples -->
       <resource>
          <reference>
-            <reference value="Binary/pdf1"/>
+            <reference value="Binary/2-6-pdf"/>
          </reference>
-         <name value="2-6 PDF1 as original representation"/>
+         <name value="2-6 PDF as original representation of the Medication Prescription document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-7-pdf"/>
+         </reference>
+         <name value="2-7 PDF as original representation of the Medication Card document"/>
          <description value="Example for Binary"/>
       </resource>
       <resource>
@@ -98,7 +105,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/2-7-MedicationCard-FHIR"/>
+            <reference value="Bundle/2-7-MedicationCard"/>
          </reference>
          <name value="2-7 Medication Card document"/>
          <description value="Example for Bundle"/>
@@ -154,7 +161,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-2-7-MedicationCard-FHIR"/>
+            <reference value="Composition/2-7-MedicationCard"/>
          </reference>
          <name value="2-7 Composition for Medication Card document"/>
          <description value="Example for Composition"/>
@@ -228,6 +235,22 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/2-7-Beloczok"/>
+         </reference>
+         <name value="2-7 Medication Beloczok"/>
+         <description value="Example for Medication in MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Medication/2-7-Norvasc"/>
+         </reference>
+         <name value="2-7 Medication Norvasc"/>
+         <description value="Example for Medication in MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
@@ -252,26 +275,18 @@
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationStatement/MedStatBeloczok"/>
+            <reference value="MedicationStatement/2-7-MedStatBeloczok"/>
          </reference>
-         <name value="MedStatBeloczok"/>
+         <name value="2-7-MedStatBeloczok"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationStatement/MedStatNorvasc"/>
+            <reference value="MedicationStatement/2-7-MedStatNorvasc"/>
          </reference>
-         <name value="MedStatNorvasc"/>
+         <name value="2-7-MedStatNorvasc"/>
          <description value="Example for MedicationStatment"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationStatement/MedStatTriatec"/>
-         </reference>
-         <name value="MedStatTriatec"/>
-         <description value="Exmaple for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
