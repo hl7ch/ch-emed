@@ -26,6 +26,9 @@
   <author>
     <reference value="Practitioner/FamilienHausarzt"/>
   </author>
+  <custodian>
+    <reference value="Organization/Cara"/>
+  </custodian>
   <securityLabel>
     <coding>
       <system value="http://snomed.info/sct"/>
