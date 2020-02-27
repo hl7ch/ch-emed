@@ -132,9 +132,12 @@
          <path value="MedicationRequest.substitution"/>
          <short value="Any restrictions on medication substitution"/>
       </element>
-      <element id="MedicationRequest.substitution.allowed[x]">
-         <path value="MedicationRequest.substitution.allowed[x]"/>
-         <short value="Whether substitution is allowed or not"/>
+      <element id="MedicationRequest.substitution.allowedCodeableConcept">
+         <path value="MedicationRequest.substitution.allowedCodeableConcept"/>
+         <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
+         </binding>
       </element>
    </differential>
 </StructureDefinition>

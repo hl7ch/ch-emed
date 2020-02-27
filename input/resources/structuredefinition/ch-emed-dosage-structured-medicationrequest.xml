@@ -7,7 +7,7 @@
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the structured medication dosage for the medication request"/>
+   <description value="Definition of the structured dosage for the medication request"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -17,6 +17,31 @@
       <element id="Dosage">
          <path value="Dosage"/>
          <short value="CH EMED Dosage Structured (MedicationRequest)"/>
+      </element>
+      <element id="Dosage.extension">
+         <path value="Dosage.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Dosage.extension:dosageType">
+         <path value="Dosage.extension"/>
+         <sliceName value="dosageType"/>
+         <short value="Dosage type"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dosagetype"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".templateId"/>
+         </mapping>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>

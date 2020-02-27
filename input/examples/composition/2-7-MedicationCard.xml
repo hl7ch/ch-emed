@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="2-7-MedicationCard"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+  </meta>
+  <language value="de-CH"/>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+    <valueIdentifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
+    <valueReference>
+      <reference value="Patient/MonikaWegmuellerRecipient"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="56445-0"/>
+      <display value="Medication summary"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="721912009"/>
+      <display value="Medication summary document (record artifact)"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <date value="2012-02-04T14:05:00+01:00"/>
+  <author>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+      <valueDateTime value="2012-02-04T13:55:00+01:00"/>
+    </extension>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <author>
+    <reference value="Organization/Hausarzt"/>
+  </author>
+  <title value="Medikationsplan"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normally accessible"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/Custodian"/>
+  </custodian>
+  <section>
+    <title value="Kommentar"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48767-8"/>
+        <display value="Annotation comment"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <span id="co1">
+                  Kommentar zu Medication Treatment
+        </span>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Original representation"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="55108-5"/>
+        <display value="Clinical presentation"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            Representation of the original view:
+        <img src="2-7-pdf"/>
+      </div>
+    </text>
+    <entry>
+      <reference value="Binary/2-7-pdf"/>
+    </entry>
+  </section>
+  <section>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
+      <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:5fb3eacf-be0d-42aa-9619-abf008c50051"/>
+      </valueIdentifier>
+    </extension>
+    <title value="Medikamentenliste"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="History of medication use"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <thead>
+            <tr>
+              <th>Präpartename</th>
+              <th>Wirkstoffname</th>
+              <th>Galenische Form</th>
+              <th>Dosis pro Einheit</th>
+              <th>Dosierung</th>
+              <th>Dos.Morgen</th>
+              <th>Dos.Mittag</th>
+              <th>Dos.Abend</th>
+              <th>Dos.Nacht</th>
+              <th>Verabreichungsweg</th>
+              <th>Kommentar</th>
+              <th>Anwendungsdauer</th>
+              <th>Behandlungsgrund</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="mtpc.1">
+              <td id="mtpc.1.brandedmedication">Beloc Zok</td>
+              <td id="mtpc.1.ingredient">Metoprolol</td>
+              <td id="mtpc.1.packageform"> Ret Tbl</td>
+              <td id="mtpc.1.dosequantity">2.5 mg</td>
+              <td id="mtpc.1.dosageintakemode">Morgens 1 und abends 1/2 Tablette nehmen</td>
+              <td id="mtpc.1.dosagemorning">1</td>
+              <td id="mtpc.1.dosagelunch">0</td>
+              <td id="mtpc.1.dosageevening">0.5</td>
+              <td id="mtpc.1.dosagenight">0</td>
+              <td id="mtpc.1.routecode">oral</td>
+              <td id="mtpc.1.note">-</td>
+              <td id="mtpc.1.datefromto"/>
+              <td id="mtpc.1.reason">Bluthochdruck</td>
+            </tr>
+            <tr id="mtpc.2">
+              <td id="mtpc.2.brandedmedication">Norvasc</td>
+              <td id="mtpc.2.ingredient">Amlodipin</td>
+              <td id="mtpc.2.packageform">Tbl</td>
+              <td id="mtpc.2.dosequantity">10 mg</td>
+              <td id="mtpc.2.dosageintakemode">Morgens und abends je 1 Tablette nehmen</td>
+              <td id="mtpc.2.dosagemorning">1</td>
+              <td id="mtpc.2.dosagelunch">0</td>
+              <td id="mtpc.2.dosageevening">1</td>
+              <td id="mtpc.2.dosagenight">0</td>
+              <td id="mtpc.2.routecode">oral</td>
+              <td id="mtpc.2.note"/>
+              <td id="mtpc.2.datefromto">-</td>
+              <td id="mtpc.2.reason">Bluthochdruck</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </text>
+    <entry>
+      <reference value="MedicationStatement/2-7-MedStatBeloczok"/>
+    </entry>
+    <entry>
+      <reference value="MedicationStatement/2-7-MedStatNorvasc"/>
+    </entry>
+  </section>
+</Composition>
