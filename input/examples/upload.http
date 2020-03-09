@@ -109,34 +109,34 @@ Content-Type: application/fhir+xml
 < ./composition/1-1-MedicationTreatmentPlan.xml
 
 ###
-PUT {{host}}/Composition/Comp-2-1-MedicationList-FHIR HTTP/1.1
+PUT {{host}}/Composition/2-1-MedicationList HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-2-1-MedicationList-FHIR.xml
+< ./composition/2-1-MedicationList.xml
 
 ###
-PUT {{host}}/Composition/Comp-2-2-PharmaceuticalAdvice-FHIR HTTP/1.1
+PUT {{host}}/Composition/2-2-PharmaceuticalAdvice HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-2-2-PharmaceuticalAdvice-FHIR.xml
+< ./composition/2-2-PharmaceuticalAdvice.xml
 
 ###
-PUT {{host}}/Composition/Comp-2-6-MedicationPrescription-FHIR HTTP/1.1
+PUT {{host}}/Composition/2-6-MedicationPrescription HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-2-6-MedicationPrescription-FHIR.xml
+< ./composition/2-6-MedicationPrescription.xml
 
 ###
-PUT {{host}}/Composition/Comp-2-4-MedicationDispense-FHIR HTTP/1.1
+PUT {{host}}/Composition/2-4-MedicationDispense HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-2-4-MedicationDispense-FHIR.xml
+< ./composition/2-4-MedicationDispense.xml
 
 ###
-PUT {{host}}/Composition/Comp-2-7-MedicationCard-FHIR HTTP/1.1
+PUT {{host}}/Composition/2-7-MedicationCard HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-2-7-MedicationCard-FHIR.xml
+< ./composition/2-7-MedicationCard.xml
 
 
 
@@ -157,27 +157,27 @@ Content-Type: application/fhir+xml
 
 
 ###
-GET {{host}}/Composition/1-1-MedicationTreatmentPlan-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/1-1-MedicationTreatmentPlan/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/Comp-2-1-MedicationList-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/2-1-MedicationList/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/Comp-2-2-PharmaceuticalAdvice-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/2-2-PharmaceuticalAdvice/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/Comp-2-6-MedicationPrescription-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/2-6-MedicationPrescription/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/Comp-2-4-MedicationDispense-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/2-4-MedicationDispense/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
-GET {{host}}/Composition/Comp-2-7-MedicationCard-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/2-7-MedicationCard/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 

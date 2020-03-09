@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="2-1-MedicationList-FHIR"/>
+    <id value="2-1-MedicationList"/>
     <meta>
         <lastUpdated value="2019-12-17T10:30:38.767+00:00"/>
         <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
@@ -11,10 +11,10 @@
     <type value="document"/>
     <timestamp value="2012-02-04T13:55:00+01:00"/>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-1-MedicationList-FHIR"/>
+        <fullUrl value="http://test.fhir.ch/r4/Composition/2-1-MedicationList"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="Comp-2-1-MedicationList-FHIR"/>
+                <id value="2-1-MedicationList"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2019-12-17T10:30:04.599+00:00"/>

@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="2-2-PharmaceuticalAdvice-FHIR"/>
+    <id value="2-2-PharmaceuticalAdvice"/>
     <meta>
         <lastUpdated value="2019-12-17T16:20:59.278+00:00"/>
         <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
@@ -11,10 +11,10 @@
     <type value="document"/>
     <timestamp value="2012-02-04T14:00:00+01:00"/>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+        <fullUrl value="http://test.fhir.ch/r4/Composition/2-2-PharmaceuticalAdvice"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+                <id value="2-2-PharmaceuticalAdvice"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2019-12-17T16:20:22.199+00:00"/>

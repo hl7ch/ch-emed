@@ -73,7 +73,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/2-1-MedicationList-FHIR"/>
+            <reference value="Bundle/2-1-MedicationList"/>
          </reference>
          <name value="2-1 Medication List document"/>
          <description value="Example for Bundle"/>
@@ -81,11 +81,19 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/2-2-PharmaceuticalAdvice-FHIR"/>
+            <reference value="Bundle/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Pharmaceutical Advice document"/>
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Bundle/2-3-MedicationTreatmentPlan"/>
+         </reference>
+         <name value="2-3 Medication Treatment Plan document"/>
+         <description value="Example for Bundle"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -113,14 +121,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/1-2-MedicationDispense"/>
-         </reference>
-         <name value="1-2 Composition for Medication Dispense document"/>
-         <description value="Example for Composition"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>
@@ -129,7 +129,15 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-2-1-MedicationList-FHIR"/>
+            <reference value="Composition/1-2-MedicationDispense"/>
+         </reference>
+         <name value="1-2 Composition for Medication Dispense document"/>
+         <description value="Example for Composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Composition/2-1-MedicationList"/>
          </reference>
          <name value="2-1 Composition for Medication List document"/>
          <description value="Example for Composition"/>
@@ -137,11 +145,19 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-2-2-PharmaceuticalAdvice-FHIR"/>
+            <reference value="Composition/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Composition for Pharmaceutical Advice document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Composition/2-3-MedicationTreatmentPlan"/>
+         </reference>
+         <name value="2-3 Composition for Medication Treatment Plan document"/>
+         <description value="Example for Composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -286,6 +302,14 @@
             <reference value="MedicationStatement/1-1-MedStatTriatec"/>
          </reference>
          <name value="1-1-MedStatTriatec"/>
+         <description value="Example for MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/2-3-MedStatBeloczok"/>
+         </reference>
+         <name value="2-3-MedStatBeloczok"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
