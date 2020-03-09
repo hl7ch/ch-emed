@@ -243,6 +243,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/2-3-Beloczok"/>
+         </reference>
+         <name value="2-3 Medication Beloc Zok"/>
+         <description value="Example for Medication in MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Medication/2-4-Beloczok"/>
          </reference>
          <name value="2-4 Medication Beloc Zok"/>
@@ -328,13 +336,6 @@
          <name value="2-7-MedStatNorvasc"/>
          <description value="Example for MedicationStatment"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Organization/Cara"/>
-         </reference>
-         <name value="Cara"/>
-         <description value="Example for Organization"/>
       </resource>
       <resource>
          <reference>
