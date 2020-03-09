@@ -291,6 +291,13 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Organization/Cara"/>
+         </reference>
+         <name value="Cara"/>
+         <description value="Example for Organization"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Organization/Custodian"/>
          </reference>
          <name value="Custodian"/>
