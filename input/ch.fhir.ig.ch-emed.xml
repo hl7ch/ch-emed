@@ -57,11 +57,11 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/1-1-MedicationTreatmentPlan-FHIR"/>
+            <reference value="Bundle/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Medication Treatment Plan document"/>
          <description value="Example for Bundle"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -121,7 +121,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/Comp-1-1-MedicationTreatmentPlan-FHIR"/>
+            <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>
          <description value="Example for Composition"/>
@@ -211,6 +211,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/1-1-Triatec"/>
+         </reference>
+         <name value="1-1 Medication Triatec"/>
+         <description value="Example for Medication in MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Medication/1-2-Triatec"/>
          </reference>
          <name value="1-2 Medication Triatec"/>
@@ -272,6 +280,14 @@
          <name value="2-6 Medication Request with Medication Norvasc"/>
          <description value="Example for MedicationRequest"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/1-1-MedStatTriatec"/>
+         </reference>
+         <name value="1-1-MedStatTriatec"/>
+         <description value="Example for MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
       <resource>
          <reference>

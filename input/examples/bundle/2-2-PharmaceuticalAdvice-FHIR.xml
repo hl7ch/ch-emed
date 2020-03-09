@@ -93,21 +93,7 @@
                         <reference value="Observation/PharmaceuticalAdvice"/>
                     </entry>
                 </section>
-                <section>
-                    <title value="Kommentar"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="48767-8"/>
-                            <display value="Annotation comment"/>
-                        </coding>
-                    </code>
-                    <!-- TBD: Text mit Tooling -->
-                    <text>
-                        <status value="additional"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml"> Allgemeine Bemerkungen </div>
-                    </text>
-                </section>
+                
             </Composition>
         </resource>
     </entry>

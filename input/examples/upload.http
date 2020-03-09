@@ -103,10 +103,10 @@ Content-Type: application/fhir+xml
 
 
 ###
-PUT {{host}}/Composition/Comp-1-1-MedicationTreatmentPlan-FHIR HTTP/1.1
+PUT {{host}}/Composition/1-1-MedicationTreatmentPlan HTTP/1.1
 Content-Type: application/fhir+xml
 
-< ./composition/Comp-1-1-MedicationTreatmentPlan-FHIR.xml
+< ./composition/1-1-MedicationTreatmentPlan.xml
 
 ###
 PUT {{host}}/Composition/Comp-2-1-MedicationList-FHIR HTTP/1.1
@@ -157,7 +157,7 @@ Content-Type: application/fhir+xml
 
 
 ###
-GET {{host}}/Composition/Comp-1-1-MedicationTreatmentPlan-FHIR/$document HTTP/1.1
+GET {{host}}/Composition/1-1-MedicationTreatmentPlan-FHIR/$document HTTP/1.1
 Content-Type: application/fhir+xml
 
 ###
