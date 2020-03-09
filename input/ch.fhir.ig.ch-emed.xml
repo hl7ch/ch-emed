@@ -605,6 +605,16 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="usecase-german.html"/>
+            <title value="Anwendungsfälle"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="usecase-french.html"/>
+            <title value="Cas d’application"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="profiles.html"/>
             <title value="Profiles"/>
             <generation value="html"/>

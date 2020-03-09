@@ -1,0 +1,7 @@
+Die hier skizzierten Anwendungsfälle (UC = Use Case) beziehen sich auf Beispiele, wie sie heute bei den verschiedenen Akteuren im Schweizer Gesundheitswesen vorkommen, die mit dem vorliegenden Thema zu tun haben. Einige Anwendungsfälle werden erst möglich, wenn durch Import/Export-Mechanismen alle relevanten Informationen interoperabel fliessen können.
+
+Ziel ist einerseits die Bereitstellung von Informationen zum Gesundheitszustand des Patienten in einer menschlich lesbaren Form für die am Behandlungspfad beteiligten Personen. Andererseits sollen durch die elektronische Verarbeitung der Informationen Prozesse in den ICT-Systemen optimiert werden können.
+Nachfolgend beschriebene Anwendungsfälle verdeutlichen diese Zusammenhänge im vorliegenden Kontext. 
+
+### Einführung
+Die IPAG hat in ihrem Bericht ein Use Case erarbeitet für die Illustration der interprofessionellen Prozesse und Kommunikation in der eMedikation. Im Fallbeispiel werden Situationen geschildert, mit welchen die verschiedenen, an der medikamentösen Behandlung eines Patienten beteiligten Gesundheitsfachpersonen im Alltag konfrontiert werden können. Dieses Fallbeispiel beschreibt die ersten 2 Schritte des Use Case des IPAG Bericht eMedikation im Kapitel 6 Appendix II: Use Case Frau Wegmüller. 
