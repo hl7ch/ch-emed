@@ -5,9 +5,6 @@
         <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
     </meta>
     <code>
-        <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-            <valueUrl value="#mtp.1.brandedmedication"/>
-        </extension>
         <coding>
             <system value="urn:oid:2.51.1.1"/>
             <code value="7680521101306"/>

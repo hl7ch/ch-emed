@@ -4,9 +4,6 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-    <valueUrl value="#padv.1"/>
-  </extension>
   <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
     <extension url="id">
       <valueIdentifier>
@@ -34,9 +31,6 @@
   </code>
   <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
   <note>
-    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-      <valueUrl value="#padv.1.note"/>
-    </extension>
     <text value="Abgesetzt aufgrund UAW trockener Husten"/>
   </note>
 </Observation>

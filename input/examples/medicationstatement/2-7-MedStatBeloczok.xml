@@ -8,9 +8,6 @@
     <Medication>
       <id value="med"/>
       <code>
-        <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-          <valueUrl value="#mtpc.1.brandedmedication"/>
-        </extension>
         <coding>
           <system value="urn:oid:2.51.1.1"/>
           <code value="7680521101306"/>
@@ -60,9 +57,6 @@
       </ingredient>
     </Medication>
   </contained>
-  <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-    <valueUrl value="#mtpc.1"/>
-  </extension>
   <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
     <extension url="id">
       <valueIdentifier>
@@ -89,21 +83,12 @@
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
   <reasonCode>
-    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-      <valueUrl value="#mtpc.1.reason"/>
-    </extension>
     <text value="Bluthochdruck"/>
   </reasonCode>
   <note>
-    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-      <valueUrl value="#mtpc.1.note"/>
-    </extension>
     <text value="-"/>
   </note>
   <dosage>
-    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-      <valueUrl value="#mtpc.1.dosageintakemode"/>
-    </extension>
     <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
   </dosage>
   <dosage>

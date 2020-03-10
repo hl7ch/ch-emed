@@ -8,9 +8,6 @@
     <Medication>
       <id value="med"/>
       <code>
-        <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-          <valueUrl value="#dis.1.brandedmedication"/>
-        </extension>
         <coding>
           <system value="urn:oid:2.51.1.1"/>
           <code value="7680538751228"/>
@@ -61,9 +58,6 @@
       </ingredient>
     </Medication>
   </contained>
-  <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-    <valueUrl value="#mtp.1"/>
-  </extension>
   <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
     <extension url="id">
       <valueIdentifier>

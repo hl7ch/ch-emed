@@ -389,6 +389,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                   <valueUrl value="#pre.1.reason"/>
                </extension>
+               <text value="-"/>
             </reasonCode>
             <note>
                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
