@@ -203,10 +203,9 @@
          <slicing>
             <discriminator>
                <type value="profile"/>
-               <path value="resolve()"/>
+               <path value="$this.resolve()"/>
             </discriminator>
-            <ordered value="true"/>
-            <rules value="closed"/>
+            <rules value="open"/>
          </slicing>
       </element>
       <element id="Composition.section.entry:medicationTreatmentPlan">
