@@ -8,7 +8,7 @@
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
     <valueIdentifier>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:uuid:17931678-20B4-11E6-B67B-9E71128CAE77"/>
+      <value value="urn:uuid:17931678-20b4-11e6-b67b-9e71128cae77"/>
     </valueIdentifier>
   </extension>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
@@ -21,7 +21,7 @@
   </extension>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:uuid:17931678-20B4-11E6-B67B-9E71128CAE77"/>
+    <value value="urn:uuid:17931678-20b4-11e6-b67b-9e71128cae77"/>
   </identifier>
   <status value="final"/>
   <type>
@@ -41,7 +41,13 @@
   </subject>
   <date value="2012-02-04T13:55:00+01:00"/>
   <author>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+      <valueDateTime value="2012-02-04T13:55:00+01:00"/>
+    </extension>
     <reference value="Practitioner/FamilienHausarzt"/>
+  </author>
+  <author>
+    <reference value="Organization/Hausarzt"/>
   </author>
   <title value="Medikationsliste"/>
   <confidentiality value="N">
@@ -50,15 +56,21 @@
         <coding>
           <system value="http://snomed.info/sct"/>
           <code value="17621005"/>
-          <display value="Normal"/>
+          <display value="Normally accessible"/>
         </coding>
       </valueCodeableConcept>
     </extension>
   </confidentiality>
   <custodian>
-    <reference value="Organization/Hausarzt"/>
+    <reference value="Organization/Custodian"/>
   </custodian>
   <section>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
+      <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:f5ee14ee-52dc-48b0-8d96-e2713c99e607"/>
+      </valueIdentifier>
+    </extension>
     <title value="Medikamentenliste"/>
     <code>
       <coding>
@@ -67,13 +79,52 @@
         <display value="History of medication use"/>
       </coding>
     </code>
-    <!-- TBD: Text mit Tooling -->
     <text>
-      <status value="additional"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> TBD </div>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <table>
+          <thead>
+            <tr>
+              <th>Präpartename</th>
+              <th>Wirkstoffname</th>
+              <th>Galenische Form</th>
+              <th>Dosis pro Einheit</th>
+              <th>Dosierung</th>
+              <th>Dos.Morgen</th>
+              <th>Dos.Mittag</th>
+              <th>Dos.Abend</th>
+              <th>Dos.Nacht</th>
+              <th>Verabreichungsweg</th>
+              <th>Kommentar</th>
+              <th>Anwendungsdauer</th>
+              <th>Behandlungsgrund</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="mtp.1">
+              <td id="mtp.1.brandedmedication">Triatec</td>
+              <td id="mtp.1.ingredient">Ramipril</td>
+              <td id="mtp.1.packageform">Tbl</td>
+              <td id="mtp.1.dosequantity">2.5 mg</td>
+              <td id="mtp.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
+              <td id="mtp.1.dosagemorning">0.5</td>
+              <td id="mtp.1.dosagelunch">0</td>
+              <td id="mtp.1.dosageevening">0</td>
+              <td id="mtp.1.dosagenight">0</td>
+              <td id="mtp.1.routecode">oral</td>
+              <td id="mtp.1.note"></td>
+              <td id="mtp.1.datefromto"></td>
+              <td id="mtp.1.reason">Bluthochdruck</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </text>
     <entry>
-      <reference value="MedicationStatement/MedStatTriatec"/>
+      <reference value="MedicationStatement/2-1-MedStatTriatec"/>
+    </entry>
+    <entry>
+      <reference value="MedicationDispense/2-1-MedDispTriatec"/>
     </entry>
   </section>
 </Composition>

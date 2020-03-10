@@ -125,8 +125,7 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         <short value="How the medication is to be used by the patient or administered by the caregiver"/>
-         <min value="1"/>
+         <short value="How the medication should be taken"/>
       </element>
       <element id="MedicationDispense.dosageInstruction:nonstructured">
          <path value="MedicationDispense.dosageInstruction"/>

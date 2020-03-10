@@ -92,7 +92,6 @@
             <rules value="open"/>
          </slicing>
          <short value="How the medication should be taken"/>
-         <min value="1"/>
       </element>
       <element id="MedicationRequest.dosageInstruction:nonstructured">
          <path value="MedicationRequest.dosageInstruction"/>
