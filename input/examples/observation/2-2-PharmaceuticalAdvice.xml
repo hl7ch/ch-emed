@@ -29,6 +29,9 @@
       <code value="CANCEL"/>
     </coding>
   </code>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
   <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
   <note>
     <text value="Abgesetzt aufgrund UAW trockener Husten"/>

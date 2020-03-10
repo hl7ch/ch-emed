@@ -7,9 +7,6 @@
   <contained>
     <Medication>
       <id value="med"/>
-      <meta>
-        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
-      </meta>
       <code>
         <coding>
           <system value="urn:oid:2.51.1.1"/>
