@@ -73,6 +73,10 @@
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
          </binding>
       </element>
+      <element id="Observation.effectiveDateTime">
+         <path value="Observation.effectiveDateTime"/>
+         <short value="Effective Time"/>
+      </element>
       <element id="Observation.note">
          <path value="Observation.note"/>
          <short value="Annotation"/>

@@ -293,7 +293,7 @@
          <reference>
             <reference value="Medication/2-7-Beloczok"/>
          </reference>
-         <name value="2-7 Medication Beloczok"/>
+         <name value="2-7 Medication Beloc Zok"/>
          <description value="Example for Medication in MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
       </resource>
@@ -333,7 +333,7 @@
          <reference>
             <reference value="MedicationStatement/1-1-MedStatTriatec"/>
          </reference>
-         <name value="1-1-MedStatTriatec"/>
+         <name value="1-1 Medication Statement with Medication Triatec"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
@@ -341,7 +341,7 @@
          <reference>
             <reference value="MedicationStatement/2-3-MedStatBeloczok"/>
          </reference>
-         <name value="2-3-MedStatBeloczok"/>
+         <name value="2-3 Medication Statement with Medication Beloc Zok"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
@@ -349,7 +349,7 @@
          <reference>
             <reference value="MedicationStatement/2-5-MedStatNorvasc"/>
          </reference>
-         <name value="2-3-MedStatNorvasc"/>
+         <name value="2-3 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
@@ -357,7 +357,7 @@
          <reference>
             <reference value="MedicationStatement/2-7-MedStatBeloczok"/>
          </reference>
-         <name value="2-7-MedStatBeloczok"/>
+         <name value="2-7 Medication Statement with Medication Beloc Zok"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
@@ -365,7 +365,7 @@
          <reference>
             <reference value="MedicationStatement/2-7-MedStatNorvasc"/>
          </reference>
-         <name value="2-7-MedStatNorvasc"/>
+         <name value="2-7 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatment"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
       </resource>
@@ -385,9 +385,9 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Observation/PharmaceuticalAdvice"/>
+            <reference value="Observation/2-2-PharmaceuticalAdvice"/>
          </reference>
-         <name value="PharmaceuticalAdvice"/>
+         <name value="2-2 Observation for Pharmaceutical Advice document"/>
          <description value="Example for Observation"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
       </resource>
