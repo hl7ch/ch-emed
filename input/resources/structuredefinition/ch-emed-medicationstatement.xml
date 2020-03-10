@@ -56,6 +56,16 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
       </element>
+      <element id="MedicationStatement.identifier">
+         <path value="MedicationStatement.identifier"/>
+         <short value="Medication treatment plan item ID"/>
+      </element>
+      <element id="MedicationStatement.identifier.system">
+         <path value="MedicationStatement.identifier.system"/>
+      </element>
+      <element id="MedicationStatement.identifier.value">
+         <path value="MedicationStatement.identifier.value"/>
+      </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
          <fixedCode value="completed"/>

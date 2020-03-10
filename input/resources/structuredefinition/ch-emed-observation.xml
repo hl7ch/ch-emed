@@ -61,6 +61,16 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense" />
          </type>
       </element>
+      <element id="Observation.identifier">
+         <path value="Observation.identifier"/>
+         <short value="Pharmaceutical advice item ID"/>
+      </element>
+      <element id="Observation.identifier.system">
+         <path value="Observation.identifier.system"/>
+      </element>
+      <element id="Observation.identifier.value">
+         <path value="Observation.identifier.value"/>
+      </element>
       <element id="Observation.status">
          <path value="Observation.status"/>
          <fixedCode value="final"/>

@@ -56,6 +56,12 @@
          <path value="Composition.identifier"/>
          <short value="Identification number of the document"/>
       </element>
+      <element id="Composition.identifier.system">
+         <path value="Composition.identifier.system"/>
+      </element>
+      <element id="Composition.identifier.value">
+         <path value="Composition.identifier.value"/>
+      </element>
       <element id="Composition.status">
          <path value="Composition.status"/>
          <fixedCode value="final"/>
@@ -175,6 +181,26 @@
          <min value="1"/>
          <max value="1"/>
       </element>
+
+      <element id="Composition.section.extension">
+         <path value="Composition.section.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Composition.section.extension:sectionId">
+         <path value="Composition.section.extension"/>
+         <sliceName value="sectionId"/>         
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
+         </type>
+      </element>
+
       <element id="Composition.section.title:dispense">
          <path value="Composition.section.title"/>
          <short value="'Abgabe eines Medikaments' or 'Dispensation d'un médicament' or 'Dispensazione di un medicamento' or 'Medication dispensed'"/>

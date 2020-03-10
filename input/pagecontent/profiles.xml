@@ -48,10 +48,6 @@
   <div>
     <li><a href="StructureDefinition-ch-emed-document-medicationlist.html">CH EMED Medication List Document Profile</a> Definition of the bundle for the medication list document</li>
     <li><a href="StructureDefinition-ch-emed-composition-medicationlist.html">CH EMED Medication List Composition Profile</a> Definition of the composition for the medication list document</li> 
-    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
-    <li><a href="StructureDefinition-ch-emed-medicationrequest.html">CH EMED MedicationRequest Profile</a> Definition of the medication request</li>
-    <li><a href="StructureDefinition-ch-emed-medicationdispense.html">CH EMED MedicationDispense Profile</a> Definition of the medication dispense</li>
-    <li><a href="StructureDefinition-ch-emed-observation.html">CH EMED Observation Profile</a> Definition of the observation</li>
   </div>
 
 </div>
