@@ -70,8 +70,8 @@
          <path value="Composition.type"/>
          <short value="Document type"/>
          <patternCodeableConcept>
+            <!-- TBD -->
             <coding>
-               <!-- TBD -->
                <system value="http://snomed.info/sct"/>
                <code value="419891008"/>
                <display value="Record artifact (record artifact)"/>

@@ -6,17 +6,17 @@
   </meta>
   <status value="current"/>
   <type>
+    <!-- TBD -->
     <coding>
       <system value="http://snomed.info/sct"/>
-      <!-- TBD -->
       <code value="419891008"/> 
       <display value="Record artifact (record artifact)"/>
     </coding>
   </type>
   <category>
+    <!-- TBD -->
     <coding>
       <system value="http://snomed.info/sct"/>
-      <!-- TBD: not sure yet -->
       <code value="419891008"/> 
       <display value="Record artifact (record artifact)"/>
     </coding>
