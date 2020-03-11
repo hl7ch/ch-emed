@@ -47,7 +47,7 @@ Anlässlich einer Nachkontrolle der Hypertonie klagt Frau Wegmüller über einen
 Er vermutet eine bekannte unerwünschte Arzneimittelnebenwirkung (UAW) für Ramipril und setzt diese medikamentöse Therapie ab.
 
 {:class="table table-bordered"}
-| Präparat- name | Wirkstoff- name | Dosis pro Wirkstoff | Galenische Form | Dosis pro Einheit | Dosierung | Dos. Morgen | Dos. Mittag | Dos. Abend | Dos. Nacht | Verabreichungs- weg | Anwendungs- dauer | Behandlungs- grund | Kommentar
+| Präparate- name | Wirkstoff- name | Dosis pro Wirkstoff | Galenische Form | Dosis pro Einheit | Dosierung | Dos. Morgen | Dos. Mittag | Dos. Abend | Dos. Nacht | Verabreichungs- weg | Anwendungs- dauer | Behandlungs- grund | Kommentar |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
 | Triatec | Ramipril | | Tbl | 2.5 mg / Tbl | Morgens 1/2 Tablette nehmen | 0.5 | 0 | 0 | 0 | oral | | Bluthochdruck | Abgesetzt aufgrund UAW trockener Husten |
 
@@ -68,7 +68,6 @@ Da sich gleichzeitig die Blutdruckwerte verschlechtert haben, verordnet der Arzt
 | Beloc Zok | Metoprolol | | Ret Tbl | 50 mg / Tbl | 1 | 30 Stk | Morgens 1 und abends 1/2 Tablette nehmen | 1  | 0  | 0.5 | 0  | oral | | | Bluthochdruck | | |
 
 *Abgabe*: [2-4 Medication Dispense document](Bundle-2-4-MedicationDispense.html)
-
 
 {:class="table table-bordered"}
 | Präparate- name | Wirkstoff- name | Dosis pro Wirkstoff | Galenische Form | Dosis pro Einheit | Dosierung | Dos. Morgen | Dos. Mittag | Dos. Abend | Dos. Nacht | Verabreichungs- weg | Kommentar | Anwendungs- dauer | Behandlungs- grund |
