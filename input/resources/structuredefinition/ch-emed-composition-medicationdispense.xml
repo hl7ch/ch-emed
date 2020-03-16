@@ -108,7 +108,8 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Abgabe' or 'Remise' or 'Dispensazione' or 'Dispense'"/>
+         <short value="'Abgabe' in german or 'Remise' in french or 'Dispensazione' in italian or 'Dispense' in english
+                        or titles in other languages are also allowed"/>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -203,7 +204,9 @@
 
       <element id="Composition.section.title:dispense">
          <path value="Composition.section.title"/>
-         <short value="'Abgabe eines Medikaments' or 'Dispensation d'un médicament' or 'Dispensazione di un medicamento' or 'Medication dispensed'"/>
+         <short value="'Abgabe eines Medikaments' in german or 'Dispensation d'un médicament' in french
+                        or 'Dispensazione di un medicamento' in italian or 'Medication dispensed' in english
+                        or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -252,7 +255,8 @@
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
-         <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
+         <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment'
+                        or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>

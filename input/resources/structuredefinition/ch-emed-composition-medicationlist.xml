@@ -107,7 +107,8 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Medikationsliste' or 'Liste de médication' or 'Elenco delle terapie farmacologiche' or 'Medication List'"/>
+         <short value="'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or 'Medication List' in english
+                        or titles in other languages are also allowed"/>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -203,7 +204,8 @@
 
       <element id="Composition.section.title:list">
          <path value="Composition.section.title"/>
-         <short value="'Medikamentenliste' or 'Liste de médicaments' or 'Lista farmaci' or 'Medication List'"/>
+         <short value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
+                        or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>

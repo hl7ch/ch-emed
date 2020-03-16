@@ -108,7 +108,9 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Kommentar zur Medikation' or 'Commentaire relatif à la médication' or 'Commento sulla terapia farmacologica' or 'Pharmaceutical Advice'"/>
+         <short value="'Kommentar zur Medikation' in german or 'Commentaire relatif à la médication' in french 
+                        or 'Commento sulla terapia farmacologica' in italian or 'Pharmaceutical Advice' in english 
+                        or titles in other languages are also allowed"/>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -203,7 +205,9 @@
       
       <element id="Composition.section.title:pharmaceuticalAdvice">
          <path value="Composition.section.title"/>
-         <short value="'Hinweise zur Medikation' or 'Conseils sur les médicaments' or 'Consigli sui medicamenti' or 'Pharmaceutical Advice'"/>
+         <short value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french 
+                        or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english 
+                        or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -252,7 +256,8 @@
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
-         <short value="'Kommentar' or 'Commentaire' or 'Osservazione' or 'Comment'"/>
+         <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
+                        or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>
