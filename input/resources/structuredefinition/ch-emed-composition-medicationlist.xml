@@ -244,7 +244,7 @@
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
          </type>
       </element>
       <element id="Composition.section.entry:medicationTreatmentPlan.reference">

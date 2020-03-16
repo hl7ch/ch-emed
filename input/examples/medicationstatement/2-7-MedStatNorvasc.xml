@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="2-7-MedStatNorvasc"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
   </meta>
   <contained>
     <Medication>

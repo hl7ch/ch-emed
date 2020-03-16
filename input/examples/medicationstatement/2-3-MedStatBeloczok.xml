@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="2-3-MedStatBeloczok"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
   </meta>
   <contained>
     <Medication>

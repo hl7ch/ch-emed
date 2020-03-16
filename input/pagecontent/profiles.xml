@@ -9,7 +9,7 @@
   <div>
     <li><a href="StructureDefinition-ch-emed-document-medicationcard.html">CH EMED Medication Card Document Profile</a> Definition of the bundle for the medication card document</li>
     <li><a href="StructureDefinition-ch-emed-composition-medicationcard.html">CH EMED Medication Card Composition Profile</a> Definition of the composition for the medication card document</li>
-    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
+    <li><a href="StructureDefinition-ch-emed-medicationstatement-card.html">CH EMED MedicationStatement Profile (Medication Card document)</a> Definition of the medication statement for the Medication Card document</li>
     <li><a href="StructureDefinition-ch-emed-medication-medicationstatement.html">CH EMED Medication Profile (MedicationStatement)</a> Definition of the medication for the medication statement</li>
   </div>
 
@@ -33,7 +33,7 @@
   <div>
     <li><a href="StructureDefinition-ch-emed-document-medicationtreatmentplan.html">CH EMED Medication Treatment Plan Document Profile</a> Definition of the bundle for the medication treatment plan document</li>
     <li><a href="StructureDefinition-ch-emed-composition-medicationtreatmentplan.html">CH EMED Medication Treatment Plan Composition Profile</a> Definition of the composition for the medication treatment plan document</li>
-    <li><a href="StructureDefinition-ch-emed-medicationstatement.html">CH EMED MedicationStatement Profile</a> Definition of the medication statement</li>
+    <li><a href="StructureDefinition-ch-emed-medicationstatement-treatmentplan.html">CH EMED MedicationStatement Profile (Medication Treatment Plan document)</a> Definition of the medication statement for the Medication Treatment Plan document</li>
     <li><a href="StructureDefinition-ch-emed-medication-medicationstatement.html">CH EMED Medication Profile (MedicationStatement)</a> Definition of the medication for the medication statement</li>
   </div>
 

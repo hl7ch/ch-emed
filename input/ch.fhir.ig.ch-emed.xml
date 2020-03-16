@@ -351,7 +351,7 @@
          </reference>
          <name value="1-1 Medication Statement with Medication Triatec"/>
          <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -359,7 +359,7 @@
          </reference>
          <name value="2-1 Medication Statement with Medication Triatec"/>
          <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -367,7 +367,7 @@
          </reference>
          <name value="2-3 Medication Statement with Medication Beloc Zok"/>
          <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -375,7 +375,7 @@
          </reference>
          <name value="2-5 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
          <reference>
@@ -383,7 +383,7 @@
          </reference>
          <name value="2-7 Medication Statement with Medication Beloc Zok"/>
          <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
       </resource>
       <resource>
          <reference>
@@ -391,7 +391,7 @@
          </reference>
          <name value="2-7 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatment"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
       </resource>
       <resource>
          <reference>
@@ -589,7 +589,12 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medicationstatement"/>
+            <reference value="StructureDefinition/ch-emed-medicationstatement-card"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
          </reference>
       </resource>
       <resource>
