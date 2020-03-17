@@ -268,7 +268,7 @@
                         </form>
                         <amount>
                             <numerator>
-                                <value value="20"/>
+                                <value value="30"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
