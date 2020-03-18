@@ -549,6 +549,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-ext-representedorganization"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-ext-substitution"/>
          </reference>
       </resource>
