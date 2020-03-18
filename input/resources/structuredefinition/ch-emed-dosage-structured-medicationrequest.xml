@@ -65,10 +65,7 @@
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
           <short value="Code for time period of occurrence"/>
-      </element>
-      <element id="Dosage.asNeeded[x]">
-         <path value="Dosage.asNeeded[x]"/>
-         <short value="Take 'as needed'"/>
+          <min value="1"/>
       </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>

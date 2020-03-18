@@ -25,7 +25,6 @@
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
          <short value="GTIN code that identify this medication"/>
-         <max value="1"/>
       </element>
       <element id="Medication.code.coding.system">
          <path value="Medication.code.coding.system"/>
@@ -64,7 +63,6 @@
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.form.coding.system">
          <path value="Medication.form.coding.system"/>
@@ -78,14 +76,24 @@
          <path value="Medication.form.coding.display"/>
          <min value="1"/>
       </element>
+      <element id="Medication.amount">
+         <path value="Medication.amount"/>
+         <short value="Package size"/>
+      </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Medication.ingredient.item[x]">
-         <path value="Medication.ingredient.item[x]"/>
+      <element id="Medication.ingredient.itemCodeableConcept">
+         <path value="Medication.ingredient.itemCodeableConcept"/>
          <short value="Name of active ingredient"/>
+      </element>
+      <element id="Medication.ingredient.itemCodeableConcept.coding">
+         <path value="Medication.ingredient.itemCodeableConcept.coding"/>
+      </element>
+      <element id="Medication.ingredient.itemCodeableConcept.text">
+         <path value="Medication.ingredient.itemCodeableConcept.text"/>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>

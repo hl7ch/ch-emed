@@ -50,7 +50,6 @@
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
-         <min value="1"/>
       </element>
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
@@ -64,10 +63,6 @@
          <path value="Dosage.timing.repeat.when"/>
          <short value="Code for time period of occurrence"/>
       </element>
-      <element id="Dosage.asNeeded[x]">
-         <path value="Dosage.asNeeded[x]"/>
-         <short value="Take 'as needed'"/>
-      </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
          <short value="Route of administration"/>
@@ -79,7 +74,6 @@
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>
