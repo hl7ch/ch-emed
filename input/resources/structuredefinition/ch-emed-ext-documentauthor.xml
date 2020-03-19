@@ -8,7 +8,7 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="eHealth Suisse"/>
-    <description value="Extension for the author of the original document"/>
+    <description value="Extension to represent the author of the original document in the medication statement (for the Medication Card document)"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -22,13 +22,13 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Extension"/>
+            <short value="CH EMED Extension"/>
             <max value="1"/>
         </element>
         <element id="Extension.extension:author">
             <path value="Extension.extension"/>
             <sliceName value="author"/>
-            <short value="Author of the original document"/>
+            <short value="The author of the original document"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -48,7 +48,6 @@
         </element>
         <element id="Extension.extension:author.valueReference">
             <path value="Extension.extension.valueReference"/>
-            <short value="The author of the original document"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>

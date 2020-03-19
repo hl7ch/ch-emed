@@ -8,7 +8,7 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="eHealth Suisse"/>
-    <description value="Extension for substitution"/>
+    <description value="Extension to represent the substitution of a medication"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -22,7 +22,7 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="CH EMED Substitution"/>
+            <short value="CH EMED Extension"/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
@@ -37,7 +37,7 @@
         </element>
         <element id="Extension.valueCodeableConcept">
             <path value="Extension.valueCodeableConcept"/>
-            <short value="Substitution"/>
+            <short value="Substitution of the medication"/>
             <min value="1"/>
             <max value="1"/>
             <type>

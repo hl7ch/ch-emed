@@ -8,7 +8,7 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="eHealth Suisse"/>
-    <description value="Extension for the author's organization"/>
+    <description value="Extension to represent the organization of the author"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -26,7 +26,7 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="CH EMED Represented Organization"/>
+            <short value="CH EMED Extension"/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
@@ -41,6 +41,7 @@
         </element>
         <element id="Extension.valueReference">
             <path value="Extension.valueReference"/>
+            <short value="The organization of the author"/>
             <min value="1"/>
             <max value="1"/>
             <type>

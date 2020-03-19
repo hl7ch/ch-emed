@@ -7,7 +7,7 @@
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Extension to reference the medication prescription"/>
+   <description value="Extension to represent the reference to the Medication Prescritpion document"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <context>
@@ -32,13 +32,13 @@
    <differential>
       <element id="Extension">
          <path value="Extension"/>
-         <short value="ID for Medication Prescription"/>
+         <short value="CH EMED Extension"/>
          <max value="1"/>
       </element>
       <element id="Extension.extension:id">
          <path value="Extension.extension"/>
          <sliceName value="id"/>
-         <short value="ID of a medication prescription"/>
+         <short value="ID of the Medication Prescription document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -58,7 +58,6 @@
       </element>
       <element id="Extension.extension:id.valueIdentifier">
          <path value="Extension.extension.valueIdentifier"/>
-         <short value="Value of extension"/>
          <type>
             <code value="Identifier"/>
          </type>
@@ -66,7 +65,7 @@
       <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
          <sliceName value="externalDocumentId"/>
-         <short value="ID of an external document"/>
+         <short value="ID of the external document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -86,7 +85,6 @@
       </element>
       <element id="Extension.extension:externalDocumentId.valueIdentifier">
          <path value="Extension.extension.valueIdentifier"/>
-         <short value="Value of extension"/>
          <type>
             <code value="Identifier"/>
          </type>
