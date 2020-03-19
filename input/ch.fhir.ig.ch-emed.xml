@@ -129,6 +129,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Bundle/MedicationCard-DifferentAuthors"/>
+         </reference>
+         <name value="Medication Card document with different authors (document/section/entry)"/>
+         <description value="Example for Bundle"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>
@@ -525,6 +533,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-dosage-structured"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-documentauthor"/>
          </reference>
       </resource>
       <resource>

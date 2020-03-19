@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-emed-ext-documentauthor"/>
+    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor"/>
+    <version value="0.1.0"/>
+    <name value="CHEMEDExtDocumentAuthor"/>
+    <title value="CH EMED Extension Document Author"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="eHealth Suisse"/>
+    <description value="Extension for the author of the original document"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationStatement"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Extension"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension:author">
+            <path value="Extension.extension"/>
+            <sliceName value="author"/>
+            <short value="Author of the original document"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+        </element>
+        <element id="Extension.extension:author.extension">
+            <path value="Extension.extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.extension:author.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="author"/>
+        </element>
+        <element id="Extension.extension:author.valueReference">
+            <path value="Extension.extension.valueReference"/>
+            <short value="The author of the original document"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+            </type>
+        </element>
+
+        <element id="Extension.extension:representedOrganization">
+            <path value="Extension.extension"/>
+            <sliceName value="representedOrganization"/>
+            <short value="The author's organization"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization"/>
+            </type>
+        </element>
+
+        <element id="Extension.extension:timestamp">
+            <path value="Extension.extension"/>
+            <sliceName value="timestamp"/>
+            <short value="Timestamp of the authorship/data input"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+            </type>
+        </element>
+
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>
