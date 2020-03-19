@@ -221,6 +221,37 @@
             </coding>
          </patternCodeableConcept>
       </element>
+
+      <!-- Author of the section -->
+      <element id="Composition.section.author:dispense">
+         <path value="Composition.section.author"/>
+         <short value="The author of the section (person or device) if different from the author/timestamp of the document"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+         </type>
+      </element>
+      <element id="Composition.section:dispense.author.extension">
+         <path value="Composition.section.author.extension"/>
+         <short value="Timestamp of the authorship/data input"/>
+         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+         </type>
+      </element>
+      <element id="Composition.section:dispense.author.reference">
+         <path value="Composition.section.author.reference"/>
+         <min value="1"/>
+      </element>
+
       <element id="Composition.section.text:dispense">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
