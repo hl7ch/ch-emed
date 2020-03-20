@@ -10,6 +10,11 @@
     <publisher value="eHealth Suisse"/>
     <description value="Extension to represent the author of the original document in the medication statement (for the Medication Card document)"/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="cda"/>
+        <uri value="http://hl7.org/v3/cda"/>
+        <name value="CDA (R2)"/>
+    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -24,6 +29,10 @@
             <path value="Extension"/>
             <short value="CH EMED Extension"/>
             <max value="1"/>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".author"/>
+            </mapping>
         </element>
         <element id="Extension.extension:author">
             <path value="Extension.extension"/>
@@ -34,6 +43,10 @@
             <type>
                 <code value="Extension"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".assignedAuthor.assignedPerson"/>
+            </mapping>
         </element>
         <element id="Extension.extension:author.extension">
             <path value="Extension.extension.extension"/>
@@ -69,6 +82,10 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".assignedAuthor.representedOrganization"/>
+            </mapping>
         </element>
 
         <element id="Extension.extension:timestamp">
@@ -81,6 +98,10 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".time"/>
+            </mapping>
         </element>
 
         <element id="Extension.url">

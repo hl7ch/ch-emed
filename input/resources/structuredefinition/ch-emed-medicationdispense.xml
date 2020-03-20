@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication dispense"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationDispense"/>
@@ -17,6 +22,10 @@
       <element id="MedicationDispense">
          <path value="MedicationDispense"/>
          <short value="CH EMED MedicationDispense"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="supply"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.contained">
          <path value="MedicationDispense.contained"/>
@@ -44,6 +53,10 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.observation.text"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.extension:prescription">
          <path value="MedicationDispense.extension" />
@@ -55,6 +68,10 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.extension:pharmaceuticalAdvice">
          <path value="MedicationDispense.extension" />
@@ -66,6 +83,10 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.extension:treatmentPlan">
          <path value="MedicationDispense.extension" />
@@ -77,10 +98,18 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.identifier">
          <path value="MedicationDispense.identifier"/>
          <short value="Dispense item ID"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".id"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.identifier.system">
          <path value="MedicationDispense.identifier.system"/>
@@ -99,6 +128,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.subject">
          <path value="MedicationDispense.subject"/>
@@ -107,6 +140,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.recordTarget"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.subject.reference">
          <path value="MedicationDispense.subject.reference"/>
@@ -116,6 +153,10 @@
          <path value="MedicationDispense.quantity"/>
          <short value="Number of packages"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".quantity"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.whenHandedOver">
          <path value="MedicationDispense.whenHandedOver"/>
@@ -125,6 +166,10 @@
          <path value="MedicationDispense.note"/>
          <short value="Annotation"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
       </element>
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
@@ -173,6 +218,10 @@
             <strength value="preferred"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
          </binding>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.code"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>     

@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the non-structured dosage"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -27,6 +32,10 @@
          <path value="Dosage.text"/>
          <short value="Dosage instructions"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.text"/>
+         </mapping>
       </element>
       <element id="Dosage.additionalInstruction">
          <path value="Dosage.additionalInstruction"/>

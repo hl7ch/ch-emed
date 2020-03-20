@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the structured dosage for the medication statement and medication dispense"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -46,10 +51,18 @@
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
          <short value="The order of the dosage instructions"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.sequenceNumber"/>
+         </mapping>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".effectiveTime"/>
+         </mapping>
       </element>
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
@@ -58,10 +71,18 @@
       <element id="Dosage.timing.repeat.bounds[x]">
          <path value="Dosage.timing.repeat.bounds[x]"/>
          <short value="Length/Range of lengths, or (Start and/or end) limits"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".low/.high"/>
+         </mapping>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
          <short value="Code for time period of occurrence"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".event"/>
+         </mapping>
       </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
@@ -74,6 +95,10 @@
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".routeCode"/>
+         </mapping>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>
@@ -94,6 +119,10 @@
       </element>
       <element id="Dosage.doseAndRate.dose[x]">
          <path value="Dosage.doseAndRate.dose[x]"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".doseQuantity"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>

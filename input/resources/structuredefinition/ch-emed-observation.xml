@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the observation"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Observation"/>
@@ -17,6 +22,10 @@
       <element id="Observation">
          <path value="Observation"/>
          <short value="CH EMED Observation"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="observation"/>
+         </mapping>
       </element>
       <element id="Observation.extension">
          <path value="Observation.extension"/>
@@ -38,6 +47,10 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="Observation.extension:prescription">
          <path value="Observation.extension" />
@@ -49,6 +62,10 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="Observation.extension:dispense">
          <path value="Observation.extension" />
@@ -60,10 +77,18 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.supply.id"/>
+         </mapping>
       </element>
       <element id="Observation.identifier">
          <path value="Observation.identifier"/>
          <short value="Pharmaceutical advice item ID"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".id"/>
+         </mapping>
       </element>
       <element id="Observation.identifier.system">
          <path value="Observation.identifier.system"/>
@@ -74,6 +99,10 @@
       <element id="Observation.status">
          <path value="Observation.status"/>
          <fixedCode value="final"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".statusCode"/>
+         </mapping>
       </element>
       <element id="Observation.code">
          <path value="Observation.code"/>
@@ -82,6 +111,10 @@
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
          </binding>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".code"/>
+         </mapping>
       </element>
       <element id="Observation.subject">
          <path value="Observation.subject"/>
@@ -90,6 +123,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.recordTarget"/>
+         </mapping>
       </element>
       <element id="Observation.subject.reference">
          <path value="Observation.subject.reference"/>
@@ -98,6 +135,10 @@
       <element id="Observation.effectiveDateTime">
          <path value="Observation.effectiveDateTime"/>
          <short value="Effective Time"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".effectiveTime"/>
+         </mapping>
       </element>
       <element id="Observation.note">
          <path value="Observation.note"/>
@@ -107,6 +148,10 @@
       </element>
       <element id="Observation.note.text">
          <path value="Observation.note.text"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".text"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>

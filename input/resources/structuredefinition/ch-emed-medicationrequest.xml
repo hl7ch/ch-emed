@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication request"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationRequest"/>
@@ -17,6 +22,10 @@
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
          <short value="CH EMED MedicationRequest"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="substanceAdministration"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.contained">
          <path value="MedicationRequest.contained"/>
@@ -44,10 +53,18 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.substanceAdministration.id"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.identifier">
          <path value="MedicationRequest.identifier"/>
          <short value="Prescription item ID"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".id"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.identifier.system">
          <path value="MedicationRequest.identifier.system"/>
@@ -58,6 +75,10 @@
       <element id="MedicationRequest.status">
          <path value="MedicationRequest.status"/>
          <fixedCode value="completed"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".statusCode"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.medicationReference">
          <path value="MedicationRequest.medicationReference"/>
@@ -66,6 +87,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationrequest"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
@@ -74,6 +99,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.recordTarget"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.subject.reference">
          <path value="MedicationRequest.subject.reference"/>
@@ -83,6 +112,10 @@
          <path value="MedicationRequest.reasonCode"/>
          <short value="Treatment reason"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.observation.text"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.reasonCode.text">
          <path value="MedicationRequest.reasonCode.text"/>
@@ -91,6 +124,10 @@
          <path value="MedicationRequest.note"/>
          <short value="Annotation"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
@@ -132,10 +169,18 @@
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
          <short value="Repeated supply per medication"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".repeatNumber"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
          <path value="MedicationRequest.dispenseRequest.quantity"/>
          <short value="Number of packages"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.supply.quantity"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
@@ -147,6 +192,10 @@
             <strength value="preferred"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
          </binding>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.code"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>

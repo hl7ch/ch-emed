@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication statement for the Medication Treatment Plan document"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationStatement"/>
@@ -17,6 +22,10 @@
       <element id="MedicationStatement">
          <path value="MedicationStatement"/>
          <short value="CH EMED MedicationStatement"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="substanceAdministration"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.contained">
          <path value="MedicationStatement.contained"/>
@@ -44,10 +53,18 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution" />
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.code"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <short value="Medication treatment plan item ID"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".id"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.identifier.system">
          <path value="MedicationStatement.identifier.system"/>
@@ -58,6 +75,10 @@
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
          <fixedCode value="completed"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".statusCode"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
@@ -66,6 +87,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.subject">
          <path value="MedicationStatement.subject"/>
@@ -74,6 +99,10 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
          </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.recordTarget"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.subject.reference">
          <path value="MedicationStatement.subject.reference"/>
@@ -83,6 +112,10 @@
          <path value="MedicationStatement.reasonCode"/>
          <short value="Treatment reason"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.observation.text"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
@@ -91,6 +124,10 @@
          <path value="MedicationStatement.note"/>
          <short value="Annotation"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
       </element>
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>

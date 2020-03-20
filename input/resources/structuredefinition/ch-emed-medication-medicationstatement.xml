@@ -8,6 +8,11 @@
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication for the medication statement"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Medication"/>
@@ -17,6 +22,10 @@
       <element id="Medication">
          <path value="Medication"/>
          <short value="CH EMED Medication (MedicationStatement)"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
+         </mapping>
       </element>
       <element id="Medication.code">
          <path value="Medication.code"/>
@@ -25,6 +34,14 @@
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
          <short value="GTIN code that identify this medication"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".code"/>
+         </mapping>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:code"/>
+         </mapping>
       </element>
       <element id="Medication.code.coding.system">
          <path value="Medication.code.coding.system"/>
@@ -50,6 +67,14 @@
          <path value="Medication.code.text"/>
          <short value="Name that identify this medication"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".name"/>
+         </mapping>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:name"/>
+         </mapping>
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
@@ -63,6 +88,14 @@
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:formCode"/>
+         </mapping>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:formCode"/>
+         </mapping>
       </element>
       <element id="Medication.form.coding.system">
          <path value="Medication.form.coding.system"/>
@@ -79,11 +112,19 @@
       <element id="Medication.amount">
          <path value="Medication.amount"/>
          <short value="Package size"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:capacityQuantity"/>
+         </mapping>
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
          <min value="1"/>
          <max value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:ingredient"/>
+         </mapping>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept">
          <path value="Medication.ingredient.itemCodeableConcept"/>
@@ -91,14 +132,26 @@
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding">
          <path value="Medication.ingredient.itemCodeableConcept.coding"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:ingredient.pharm:code"/>
+         </mapping>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:ingredient.pharm:name"/>
+         </mapping>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
          <short value="Dose per unit"/>
          <min value="1"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".pharm:quantity"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>
