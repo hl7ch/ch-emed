@@ -209,6 +209,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Composition/DifferentAuthors"/>
+         </reference>
+         <name value="Medication Card composition with different authors (document/section)"/>
+         <description value="Example for Composition"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="DocumentReference/DocRef-1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Document Reference for Medication Treatment Plan document"/>

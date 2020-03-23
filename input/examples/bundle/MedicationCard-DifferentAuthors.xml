@@ -79,6 +79,7 @@
         <custodian>
           <reference value="Organization/Custodian"/>
         </custodian>
+
         <section>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
             <valueIdentifier>
@@ -363,7 +364,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <!--<entry>
+  <entry>
     <fullUrl value="http://test.fhir.ch/r4/Organization/AuthorSectionOrganization"/>
     <resource>
       <Organization>
@@ -375,7 +376,7 @@
         <name value="AuthorSectionOrganization"/>
       </Organization>
     </resource>
-  </entry>-->
+  </entry>
 
   <!-- author (and his organization) of the medical decision -->
   <entry>

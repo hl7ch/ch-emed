@@ -28,11 +28,9 @@ The value provided ('de-CH') is not in the value set http://hl7.org/fhir/ValueSe
 The value provided ('it-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = Error sending HTTP Post/Put Payload)
 
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
+Code System URI "urn:oid:2.51.1.1" ist unbekannt, so dass der Code nicht validiert werden kann
 Code System URI 'urn:oid:2.16.840.1.113883.6.73' is unknown so the code cannot be validated
 
 The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
 
-Profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense, Element 'MedicationDispense.dosageInstruction[nonstructured]'': Unable to check minimum required (1) due to lack of slicing validation
-Profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest, Element 'MedicationRequest.dosageInstruction[nonstructured]'': Unable to check minimum required (1) due to lack of slicing validation
-Profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement, Element 'MedicationStatement.dosage[nonstructured]'': Unable to check minimum required (1) due to lack of slicing validation
