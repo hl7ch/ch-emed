@@ -717,5 +717,9 @@
          <code value="special-url"/>
          <value value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
       </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="urn:oid:2.51.1.1"/>
+      </parameter>
    </definition>
 </ImplementationGuide>
