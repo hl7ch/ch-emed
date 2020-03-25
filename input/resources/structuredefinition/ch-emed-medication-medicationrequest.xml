@@ -137,6 +137,25 @@
             <map value=".pharm:ingredient.pharm:code"/>
          </mapping>
       </element>
+      <element id="Medication.ingredient.itemCodeableConcept.coding.system">
+         <path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="uri"/>
+         </type>
+         <fixedUri value="http://snomed.info/sct"/>
+      </element>
+      <element id="Medication.ingredient.itemCodeableConcept.coding.code">
+         <path value="Medication.ingredient.itemCodeableConcept.coding.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Medication.ingredient.itemCodeableConcept.coding.display">
+         <path value="Medication.ingredient.itemCodeableConcept.coding.display"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
          <mapping>
