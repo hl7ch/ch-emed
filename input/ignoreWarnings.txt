@@ -30,3 +30,4 @@ The value provided ('it-CH') is not in the value set http://hl7.org/fhir/ValueSe
 The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
 
+Code System URI "urn:oid:2.51.1.1" ist unbekannt, so dass der Code nicht validiert werden kann
