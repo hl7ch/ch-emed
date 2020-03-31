@@ -80,4 +80,48 @@
   <quantity>
     <value value="1"/>
   </quantity>
+  <note>
+    <text value="-"/>
+  </note>
+  <dosageInstruction>
+    <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dosagetype">
+      <valueIdentifier>
+        <value value="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+      </valueIdentifier>
+    </extension>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2011-11-29"/>
+        </boundsPeriod>
+        <when value="ACM"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="0.5"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <text value="Morgens 1/2 Tablette nehmen"/>
+  </dosageInstruction>
+  <!-- substitution just as test case -->
+  <substitution>
+    <wasSubstituted value="true"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+        <code value="E"/>
+        <display value="equivalent"/>
+      </coding>
+    </type>
+  </substitution>
 </MedicationDispense>
