@@ -120,7 +120,7 @@
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
          <min value="1"/>
-         <max value="1"/>
+         <max value="*"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:ingredient"/>
