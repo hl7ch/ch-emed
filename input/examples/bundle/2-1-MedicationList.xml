@@ -134,10 +134,10 @@
                         </div>
                     </text>
                     <entry>
-                        <reference value="MedicationStatement/2-1-MedStatTriatec"/>
+                        <reference value="MedicationStatement/1-1-MedStatTriatec"/>
                     </entry>
                     <entry>
-                        <reference value="MedicationDispense/2-1-MedDispTriatec"/>
+                        <reference value="MedicationDispense/1-2-MedDispTriatec"/>
                     </entry>
                 </section>
             </Composition>
@@ -245,10 +245,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-1-MedStatTriatec"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/1-1-MedStatTriatec"/>
         <resource>
             <MedicationStatement>
-                <id value="2-1-MedStatTriatec"/>
+                <id value="1-1-MedStatTriatec"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -363,10 +363,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationDispense/2-1-MedDispTriatec"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationDispense/1-2-MedDispTriatec"/>
         <resource>
             <MedicationDispense xmlns="http://hl7.org/fhir">
-                <id value="2-1-MedDispTriatec"/>
+                <id value="1-2-MedDispTriatec"/>
                 <contained>
                     <Medication>
                         <id value="med"/>

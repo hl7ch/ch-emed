@@ -29,6 +29,7 @@
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
       <version value="current"/>
+      <!--<version value="dev"/>-->
    </dependsOn>
    <dependsOn id="cheprterm">
       <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
@@ -275,14 +276,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Medication/2-1-Triatec"/>
-         </reference>
-         <name value="2-1 Medication Triatec"/>
-         <description value="Example for Medication in MedicationStatement (and MedicationDispense)"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Medication/2-3-Beloczok"/>
          </reference>
          <name value="2-3 Medication Beloc Zok"/>
@@ -339,14 +332,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="MedicationDispense/2-1-MedDispTriatec"/>
-         </reference>
-         <name value="2-1 Medication Dispense with Medication Triatec"/>
-         <description value="Example for MedicationDispense"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="MedicationDispense/2-4-MedDispBeloczok"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Beloc Zok"/>
@@ -366,14 +351,6 @@
             <reference value="MedicationStatement/1-1-MedStatTriatec"/>
          </reference>
          <name value="1-1 Medication Statement with Medication Triatec"/>
-         <description value="Example for MedicationStatement"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationStatement/2-1-MedStatTriatec"/>
-         </reference>
-         <name value="2-1 Medication Statement with Medication Triatec"/>
          <description value="Example for MedicationStatement"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
