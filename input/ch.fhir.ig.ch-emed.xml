@@ -637,6 +637,36 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="medication-treatment-plan-document.html"/>
+            <title value="Medication Treatment Plan document"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="medication-prescription-document.html"/>
+            <title value="Medication Prescription document"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="medication-dispense-document.html"/>
+            <title value="Medication Dispense document"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="pharmaceutical-advice-document.html"/>
+            <title value="Pharmaceutical Advice document"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="medication-list-document.html"/>
+            <title value="Medication List document"/>
+            <generation value="html"/>
+         </page>
+         <page>
+            <nameUrl value="medication-card-document.html"/>
+            <title value="Medication Card document"/>
+            <generation value="html"/>
+         </page>
+         <page>
             <nameUrl value="usecase-german.html"/>
             <title value="Anwendungsfälle"/>
             <generation value="markdown"/>
@@ -662,6 +692,7 @@
             <generation value="html"/>
          </page>
       </page>
+
       <parameter>
          <code value="generate-json"/>
          <value value="true"/>

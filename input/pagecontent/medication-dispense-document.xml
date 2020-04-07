@@ -1,0 +1,33 @@
+<div xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+
+    <p>
+        The Medication Dispense document describes the direct dispensation of ONE drug to a patient or legitimized 
+        third party with regard to a later application of the product by a qualified health professional.
+    </p>
+    <div>
+        <li>IPAG report: eDispense</li>
+        <li>IHE Pharmacy Profil: DIS (Dispense)</li>
+    </div>
+
+    <p></p>
+
+    <h3>FHIR document (Bundle)</h3>
+    <p>
+        This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. 
+        A Bundle has alist of entries. The first entry is the Composition, in which all contained entries are then referenced.
+    </p>
+    <p>
+        <div style="max-width:40%;">
+            <img src="assets/images/medication-dispense-document.png" width="472" />
+        </div>
+    </p>
+
+    <div>
+        <li><a href="StructureDefinition-ch-emed-document-medicationdispense.html">Medication Dispense document</a> Profile</li>
+        <li><a href="Bundle-1-2-MedicationDispense.xml.html">1-2 Medication Dispense document</a> Example of a Bundle (xml)</li>
+        <li><a href="Bundle-2-4-MedicationDispense.xml.html">2-4 Medication Dispense document</a> Example of a Bundle (xml)</li>
+    </div>
+
+    <p> </p>
+</div>

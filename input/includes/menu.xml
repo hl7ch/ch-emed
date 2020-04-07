@@ -1,9 +1,34 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
+  <!--<li>
     <a href="toc.html">Table of Contents</a>
-  </li>
+  </li>-->
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documents<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="medication-treatment-plan-document.html">Medication Treatment Plan document</a>
+      </li>
+      <li>
+        <a href="medication-prescription-document.html">Medication Prescription document</a>
+      </li>
+      <li>
+        <a href="medication-dispense-document.html">Medication Dispense document</a>
+      </li>
+      <li>
+        <a href="pharmaceutical-advice-document.html">Pharmaceutical Advice document</a>
+      </li>
+      <li>
+        <a href="medication-list-document.html">Medication List document</a>
+      </li>
+      <li>
+        <a href="medication-card-document.html">Medication Card document</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Case<b class="caret">
