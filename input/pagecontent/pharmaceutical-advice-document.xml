@@ -25,7 +25,7 @@
 
     <div>
         <li><a href="StructureDefinition-ch-emed-document-pharmaceuticaladvice.html">Pharmaceutical Advice document</a> Profile</li>
-        <li><a href="Bundle-2-2-MedicationTreatmentPlan.xml.html">2-2 Pharmaceutical Advice document</a> Example of a Bundle (xml)</li>
+        <li><a href="Bundle-2-2-PharmaceuticalAdvice.xml.html">2-2 Pharmaceutical Advice document</a> Example of a Bundle (xml)</li>
     </div>
 
     <p> </p>
