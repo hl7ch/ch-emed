@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ch-emed-medication-medicationdispense"/>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
-   <version value="0.0.1"/>
+   <version value="0.1.0"/>
    <name value="CHEMEDMedicationMedicationDispense"/>
    <title value="CH EMED Medication Profile (MedicationDispense)"/>
    <status value="draft"/>

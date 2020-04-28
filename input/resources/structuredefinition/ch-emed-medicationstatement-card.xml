@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ch-emed-medicationstatement-card"/>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
-   <version value="0.0.1"/>
+   <version value="0.1.0"/>
    <name value="CHEMEDMedicationStatementCard"/>
    <title value="CH EMED MedicationStatement Profile (Medication Card document)"/>
    <status value="draft"/>

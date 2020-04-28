@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ch-emed-document-medicationtreatmentplan"/>
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
-   <version value="0.0.1"/>
+   <version value="0.1.0"/>
    <name value="CHEMEDDocumentMedicationTreatmentPlan"/>
    <title value="CH EMED Medication Treatment Plan Document Profile"/>
    <status value="draft"/>

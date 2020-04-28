@@ -1,12 +1,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="0.0.1"/>
+   <version value="0.1.0"/>
    <name value="CH_EMED"/>
-   <title value="CH EMED"/>
+   <title value="CH EMED (R4)"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2019-07-10"/>
+   <date value="2020-05-04"/>
    <publisher value="eHealth Suisse"/>
    <contact>
       <name value="eHealth Suisse"/>
@@ -29,7 +29,6 @@
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
       <version value="current"/>
-      <!--<version value="dev"/>-->
    </dependsOn>
    <dependsOn id="cheprterm">
       <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
@@ -708,6 +707,7 @@
       <parameter>
          <code value="releaselabel"/>
          <value value="CI build"/>
+         <!--<value value="Draft Standard for Trial Use"/>-->
       </parameter>
       <parameter>
          <code value="path-pages" />
