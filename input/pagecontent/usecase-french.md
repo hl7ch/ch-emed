@@ -93,6 +93,3 @@ En plus du cas d’application IPAG, le médecin de premier recours élabore un 
 | Norvasc | Amlodipin | | Cpr. | 10 mg / Cpr. | 1 comprimé le matin et le soir | 1 | 0 | 1 | 0 | oral | | | Hypertension |
 
 *Plan de médication*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
-
-#### Limitation
-Les documents FHIR de l’exemple ci-dessus sont reliés les uns aux autres. Cela signifie que la remise peut se rapporter à la décision thérapeutique. Les liens sont établis via l’ID des documents ainsi que l’ID de chaque décision thérapeutique. 

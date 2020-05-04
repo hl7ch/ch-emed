@@ -93,6 +93,3 @@ Zusätzlich zum IPAG Anwendungsfall erstellt der Hausarzt einen Medikationsplan 
 | Norvasc | Amlodipin | | Tbl | 10 mg / Tbl | Morgens und abends je 1 Tablette einnehmen | 1 | 0 | 1 | 0 | oral | | | Bluthochdruck |
 
 *Medikationsplan*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
-
-#### Abgrenzung
-Die FHIR-Dokumente im obigen Beispiel verlinken sich untereinander. Das heisst, die Abgabe kann auf den Therapieentscheid zeigen. Die Verlinkung geht über die Dokumenten-Id sowie die Id des einzelnen Therapieentscheids.
