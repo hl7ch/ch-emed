@@ -13,7 +13,7 @@
     },
     {
       "version": "0.1.0",
-      "date": "2020-05-04",
+      "date": "2020-05-07",
       "desc": "eHealth Suisse DSTU 1",
       "path": "http://fhir.ch/ig/ch-emed",
       "status": "trial-use",
