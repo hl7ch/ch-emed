@@ -52,6 +52,9 @@
          <path value="Dosage.sequence"/>
          <short value="The order of the dosage instructions"/>
       </element>
+      <element id="Dosage.text">
+         <path value="Dosage.text"/>
+      </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
