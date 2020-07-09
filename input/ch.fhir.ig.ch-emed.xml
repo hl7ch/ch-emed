@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="0.1.0"/>
+   <version value="0.1.1"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="draft"/>
