@@ -12,14 +12,23 @@
       "fhirVersion": "4.0.1"
     },
     {
-      "version": "0.1.0",
-      "date": "2020-05-07",
+      "version": "0.1.1",
+      "date": "2020-08-18",
       "desc": "eHealth Suisse DSTU 1",
       "path": "http://fhir.ch/ig/ch-emed",
       "status": "trial-use",
       "sequence" : "DSTU 1",
       "fhirVersion": "4.0.1",
       "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2020-05-07",
+      "desc": "eHealth Suisse DSTU 1",
+      "path": "http://fhir.ch/ig/ch-emed/0.1.0",
+      "status": "trial-use",
+      "sequence" : "DSTU 1",
+      "fhirVersion": "4.0.1"
     }
   ]
 }

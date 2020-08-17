@@ -6,7 +6,7 @@
    <title value="CH EMED (R4)"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2020-05-04"/>
+   <date value="2020-08-18"/>
    <publisher value="eHealth Suisse"/>
    <contact>
       <name value="eHealth Suisse"/>
@@ -28,12 +28,12 @@
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
-      <version value="current"/>
+      <version value="1.0.0"/>
    </dependsOn>
    <dependsOn id="cheprterm">
       <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
       <packageId value="ch.fhir.ig.ch-epr-term"/>
-      <version value="current"/>
+      <version value="2.0.4"/>
    </dependsOn>
    <definition>
       <grouping>
@@ -706,8 +706,8 @@
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="CI build"/>
-         <!--<value value="Draft Standard for Trial Use"/>-->
+         <!--<value value="CI build"/>-->
+         <value value="Draft Standard for Trial Use"/>
       </parameter>
       <parameter>
          <code value="path-pages" />
