@@ -5,3 +5,4 @@ template/**
 .vscode/**
 resources/implementationguide/ig-*.*
 org.hl7.*.jar
+**.jar
