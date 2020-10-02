@@ -104,9 +104,9 @@
             <reference value="Practitioner/AuthorSection"/>
           </author>
           <!--Exception in thread "main" java.lang.Error: Attempt to read a single element when there is more than one present (author)-->
-          <!--<author>
+          <author>
             <reference value="Organization/AuthorSectionOrganization"/>
-          </author>-->
+          </author>
 
           <text>
             <status value="generated"/>
@@ -364,7 +364,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <!--<entry>
+  <entry>
     <fullUrl value="http://test.fhir.ch/r4/Organization/AuthorSectionOrganization"/>
     <resource>
       <Organization>
@@ -376,7 +376,7 @@
         <name value="AuthorSectionOrganization"/>
       </Organization>
     </resource>
-  </entry>-->
+  </entry>
 
   <!-- author (and his organization) of the medical decision -->
   <entry>
