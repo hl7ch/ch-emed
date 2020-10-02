@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="0.1.1"/>
+   <version value="0.1.2"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="draft"/>
@@ -25,6 +25,7 @@
    <packageId value="ch.fhir.ig.ch-emed"/>
    <license value="CC-BY-SA-4.0"/>
    <fhirVersion value="4.0.1"/>
+   <!-- Publication 2020-08-18 v0.1.1-->
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
@@ -209,14 +210,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Composition/DifferentAuthors"/>
-         </reference>
-         <name value="Medication Card composition with different authors (document/section)"/>
-         <description value="Example for Composition"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="DocumentReference/DocRef-1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Document Reference for Medication Treatment Plan document"/>
@@ -384,6 +377,13 @@
          <name value="2-7 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatment"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Organization/Cara"/>
+         </reference>
+         <name value="Cara"/>
+         <description value="Example for Organization"/>
       </resource>
       <resource>
          <reference>
