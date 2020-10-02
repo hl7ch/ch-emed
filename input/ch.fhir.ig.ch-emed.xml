@@ -316,6 +316,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/TriatecWithLocalCodes"/>
+         </reference>
+         <name value="Triatec with local Codes"/>
+         <description value="Example for Medication with local Codes"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
