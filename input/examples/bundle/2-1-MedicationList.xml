@@ -98,6 +98,7 @@
                             <table>
                                 <thead>
                                     <tr>
+                                        <th>Typ des Dokuments</th>
                                         <th>Präpartename</th>
                                         <th>Wirkstoffname</th>
                                         <th>Galenische Form</th>
@@ -115,6 +116,7 @@
                                 </thead>
                                 <tbody>
                                     <tr id="mtp.1">
+                                        <td id="mtp.1.documenttype">Medication Treatment Plan document</td>
                                         <td id="mtp.1.brandedmedication">Triatec</td>
                                         <td id="mtp.1.ingredient">Ramipril</td>
                                         <td id="mtp.1.packageform">Tbl</td>
@@ -128,6 +130,51 @@
                                         <td id="mtp.1.note"></td>
                                         <td id="mtp.1.datefromto"></td>
                                         <td id="mtp.1.reason">Bluthochdruck</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Typ des Dokuments</th>
+                                        <th>Präpartename</th>
+                                        <th>Wirkstoffname</th>
+                                        <th>Galenische Form</th>
+                                        <th>Dosis pro Einheit</th>
+                                        <th>Anzahl Packungen</th>
+                                        <th>Packungsgrösse</th>
+                                        <th>Dosierung</th>
+                                        <th>Dos.Morgen</th>
+                                        <th>Dos.Mittag</th>
+                                        <th>Dos.Abend</th>
+                                        <th>Dos.Nacht</th>
+                                        <th>Verabreichungsweg</th>
+                                        <th>Kommentar</th>
+                                        <th>Behandlungsrund</th>
+                                        <th>Datum/Zeit der Abgabe/ Anwendung</th>
+                                        <th>Identifikation des Empfängers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="dis.1">
+                                        <td id="dis.1.documenttype">Medication Dispense document</td>
+                                        <td id="dis.1.brandedmedication">Triatec</td>
+                                        <td id="dis.1.ingredient">Ramipril</td>
+                                        <td id="dis.1.dosequantity">2.5 mg</td>
+                                        <td id="dis.1.packageform">Tbl</td>
+                                        <td id="dis.1.nopackages">1</td>
+                                        <td id="dis.1.packagesize">20</td>
+                                        <td id="dis.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
+                                        <td id="dis.1.dosagemorning">0.5</td>
+                                        <td id="dis.1.dosagelunch">0</td>
+                                        <td id="dis.1.dosageevening">0</td>
+                                        <td id="dis.1.dosagenight">0</td>
+                                        <td id="dis.1.routecode">oral</td>
+                                        <td id="dis.1.note"></td>
+                                        <td id="dis.1.datefromto"></td>
+                                        <td id="dis.1.reason">Bluthochdruck</td>
+                                        <td id="dis.1.dipsensedate"></td>
+                                        <td id="dis.1.dipsenseto"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -372,7 +419,7 @@
                         <id value="med"/>
                         <code>
                             <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                <valueUrl value="#mtp.1.brandedmedication"/>
+                                <valueUrl value="#dis.1.brandedmedication"/>
                             </extension>
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
@@ -419,7 +466,7 @@
                     </Medication>
                 </contained>
                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                    <valueUrl value="#mtp.1"/>
+                    <valueUrl value="#dis.1"/>
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
@@ -450,6 +497,9 @@
                     <value value="1"/>
                 </quantity>
                 <note>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#dis.1.note"/>
+                    </extension>
                     <text value="-"/>
                 </note>
                 <dosageInstruction>
@@ -480,6 +530,9 @@
                     </doseAndRate>
                 </dosageInstruction>
                 <dosageInstruction>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#dis.1.dosageintakemode"/>
+                    </extension>
                     <text value="Morgens 1/2 Tablette nehmen"/>
                 </dosageInstruction>
                 <!-- substitution just as test case -->
