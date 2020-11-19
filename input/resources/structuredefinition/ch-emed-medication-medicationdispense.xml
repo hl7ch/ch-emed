@@ -56,7 +56,6 @@
       </element>
       <element id="Medication.code.coding:GTIN.system">
          <path value="Medication.code.coding.system"/>
-         <sliceName value="GTIN"/>
          <short value="Global Trade Item Number (GS1)"/>
          <min value="1"/>
          <max value="1"/>
@@ -64,13 +63,11 @@
       </element>
       <element id="Medication.code.coding:GTIN.code">
          <path value="Medication.code.coding.code"/>
-         <sliceName value="GTIN"/>
          <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Medication.code.coding:GTIN.display">
          <path value="Medication.code.coding.display"/>
-         <sliceName value="GTIN"/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -162,20 +159,17 @@
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.system">
          <path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
-         <sliceName value="SCT"/>
          <min value="1"/>
          <max value="1"/>
          <fixedUri value="http://snomed.info/sct"/>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.code">
          <path value="Medication.ingredient.itemCodeableConcept.coding.code"/>
-         <sliceName value="SCT"/>
          <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.display">
          <path value="Medication.ingredient.itemCodeableConcept.coding.display"/>
-         <sliceName value="SCT"/>
          <min value="1"/>
          <max value="1"/>
       </element>
