@@ -614,6 +614,14 @@
       </resource>
 
       <!-- references for value sets -->
+
+      <resource>
+         <reference>
+            <reference value="ValueSet/ActivePharmaceuticalIngredient"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
+   
       <resource>
          <reference>
             <reference value="ValueSet/edqm-pharmaceuticaldoseform"/>
@@ -632,7 +640,7 @@
          </reference>
          <exampleBoolean value="false"/>
       </resource>
-
+      
       <!-- pages, parameters -->
       <page>
          <nameUrl value="toc.html"/>

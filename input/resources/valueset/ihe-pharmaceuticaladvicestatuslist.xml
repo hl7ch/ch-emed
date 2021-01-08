@@ -20,7 +20,8 @@
    </identifier>
    <version value="2020-01-06T13:57:19"/>
    <name value="IHEPharmaceuticalAdviceStatusList"/>
-   <title value="IHE Pharmaceutical Advice Status List"/>
+   <title
+               value="IHE Pharmaceutical Advice Status List"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -38,35 +39,35 @@
          <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;&#xA;&#xA;    &#xA;    Item:&#xA;    &#xA;    &#xA;&#xA;Medication Treatment Plan&#xA; Item is active (allow to document complementary information).&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    &#xA;    &#xA;&#xA;Prescription Item is active (e.g., can be dispensed, no change expected but allowed if &#xA;recommended medication given).&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Dispense Item:&#xA;    &#xA;    &#xA;&#xA;Dispense Item is active (e.g., resumed from being suspended)."/>
+               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;    Item:&#xA;    Medication Treatment Plan Item is active (allow to document complementary information).Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    Prescription Item is active (e.g., can be dispensed, no change expected but allowed if recommended medication given).Usage in case when this Pharmaceutical Advice references a Dispense Item:&#xA;    Dispense Item is active (e.g., resumed from being suspended)."/>
             </extension>
             <code value="OK"/>
             <display value="OK"/>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;&#xA;    Item:&#xA;    &#xA;&#xA;Change of planning.&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    &#xA;&#xA;Dispense with change expected&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Dispense Item:&#xA;    &#xA;&#xA;Change in any information element of the Dispense Item except th&#xA;e medication (&#xA;e.g., &#xA;dosage&#xA;instructions&#xA;, patient instructions, etc.). The original Medicine Entry Item referenced by the &#xA;Dispense Item shall be unchanged."/>
+               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;    Item:&#xA;    Change of planning.Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    Dispense with change expectedUsage in case when this Pharmaceutical Advice references a Dispense Item:&#xA;    Change in any information element of the Dispense Item except the medication (e.g., dosageinstructions, patient instructions, etc.). The original Medicine Entry Item referenced by the Dispense Item shall be unchanged."/>
             </extension>
             <code value="CHANGE"/>
             <display value="CHANGE"/>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;&#xA;    Item:&#xA;    &#xA;&#xA;Refusal to integrate this medication in the treatment plan until further discussion with the &#xA;medication treatment planner&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    &#xA;&#xA;Refusal to dispense until further discussion with prescriber"/>
+               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;    Item:&#xA;    Refusal to integrate this medication in the treatment plan until further discussion with the medication treatment plannerUsage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    Refusal to dispense until further discussion with prescriber"/>
             </extension>
             <code value="REFUSE"/>
             <display value="REFUSE"/>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;&#xA;    Item:&#xA;    &#xA;&#xA;Definite cancelation of the Medication Treatment Plan Item (item will not be part of the &#xA;treatment plan any more).&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    &#xA;&#xA;Definite &#xA;cancelation&#xA; of the &#xA;Prescription Item&#xA; (item will not be dispensed)&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Dispense item:&#xA;    &#xA;&#xA;Definite stopping of the dispensed medication (patient stops intak&#xA;e of the medication)"/>
+               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;    Item:&#xA;    Definite cancelation of the Medication Treatment Plan Item (item will not be part of the treatment plan any more).Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    Definite cancelation of the Prescription Item (item will not be dispensed)Usage in case when this Pharmaceutical Advice references a Dispense item:&#xA;    Definite stopping of the dispensed medication (patient stops intake of the medication)"/>
             </extension>
             <code value="CANCEL"/>
             <display value="CANCEL"/>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;&#xA;    Item:&#xA;    &#xA;&#xA;Medication Treatment Plan Item is temporarily set to suspended with the decision on how to &#xA;continue postponed to a later point of time (e.g., release it again by setting it to OK, finally &#xA;cancel it by setting to CANCEL, etc.). The item shall not be part of the active treatment plan &#xA;during set to suspended.&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    &#xA;&#xA;Prescription Item is temporarily set to suspended with the decision on how to continue &#xA;postponed to a later point of time (e.g., release it again by setting it to OK, finally cancel it &#xA;by setting to CANCEL, etc.). The item shall not be dispensed during set to s&#xA;uspended.&#xA;&#xA;&#xA;    Usage in case when this Pharmaceutical Advice references a Dispense item:&#xA;    &#xA;&#xA;Dispense item is temporarily set to suspended with the decision on how to continue &#xA;postponed to a later point of time (e.g., release it again by setting it to OK, finally c&#xA;ancel it &#xA;by setting to CANCEL, etc.). The medication shall not be taken by the patient during set to &#xA;suspended."/>
+               <valueString value="Usage in case when this Pharmaceutical Advice references a Medication Treatment Plan &#xA;&#xA;    Item:&#xA;    Medication Treatment Plan Item is temporarily set to suspended with the decision on how to continue postponed to a later point of time (e.g., release it again by setting it to OK, finally cancel it by setting to CANCEL, etc.). The item shall not be part of the active treatment plan during set to suspended.Usage in case when this Pharmaceutical Advice references a Prescription Item:&#xA;    Prescription Item is temporarily set to suspended with the decision on how to continue postponed to a later point of time (e.g., release it again by setting it to OK, finally cancel it by setting to CANCEL, etc.). The item shall not be dispensed during set to suspended.Usage in case when this Pharmaceutical Advice references a Dispense item:&#xA;    Dispense item is temporarily set to suspended with the decision on how to continue postponed to a later point of time (e.g., release it again by setting it to OK, finally cancel it by setting to CANCEL, etc.). The medication shall not be taken by the patient during set to suspended."/>
             </extension>
             <code value="SUSPEND"/>
             <display value="SUSPEND"/>

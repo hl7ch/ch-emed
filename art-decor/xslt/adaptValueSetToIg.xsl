@@ -44,7 +44,7 @@
             </fhir:title>
           </xsl:when>
         <xsl:otherwise>
-          <xsl:apply-templates />
+          <fhir:title><xsl:attribute name="value"><xsl:value-of select="@value" /></xsl:attribute></fhir:title>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:template>
@@ -59,8 +59,6 @@
         <xsl:value-of select="replace(., '^\s+|\s+$', '')"/>
       </xsl:attribute>
     </xsl:template>
-
-
 
     <xsl:template match="node()|@*">
       <xsl:copy>

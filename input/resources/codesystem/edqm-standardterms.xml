@@ -4,11 +4,6 @@
    <meta>
       <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20180410165730"/>
    </meta>
-   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
-      <valuePeriod>
-         <start value="2018-04-10T16:57:30+01:00"/>
-      </valuePeriod>
-   </extension>
    <url value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
    <identifier>
       <use value="official"/>

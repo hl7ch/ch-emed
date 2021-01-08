@@ -101,6 +101,9 @@
       </xsl:attribute>
     </xsl:template>
 
+    <xsl:template match="fhir:extension">
+    </xsl:template>
+
     <xsl:template match="node()|@*">
       <xsl:copy>
          <xsl:apply-templates select="node()|@*"/>

@@ -67,7 +67,7 @@
     </xsl:template>
 
     <xsl:template match="fhir:ValueSet/fhir:compose">
-        <xsl:apply-templates select="$codes" />
+       <xsl:apply-templates select="$codes"/>
     </xsl:template>
 
     <xsl:template match="fhir:ValueSet/fhir:compose/fhir:include">
@@ -75,6 +75,8 @@
     </xsl:template>
 
    <xsl:template match="fhir:ValueSet/fhir:system/fhir:include/fhir:concept/fhir:system" /> 
+
+
 
     <!-- The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/designation-use (http://hl7.org/fhir/ValueSet/designation-use, and a code should come from this value set unless it has no suitable code) (error message = The code system "http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType" is not known; The code provided (http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType#preferred) is not valid in the value set DesignationUse) -->
     <!-- remove it -->
@@ -92,6 +94,15 @@
       <xsl:attribute name="value" namespace="{namespace-uri()}">
         <xsl:value-of select="replace(., '^\s+|\s+$', '')"/>
       </xsl:attribute>
+    </xsl:template>
+
+    <xsl:template match="fhir:value/@value">
+      <xsl:attribute name="value" namespace="{namespace-uri()}">
+        <xsl:value-of select="replace(., '^\s+|\s+$', '')"/>
+      </xsl:attribute>
+    </xsl:template>
+
+    <xsl:template match="fhir:extension">
     </xsl:template>
 
     <xsl:template match="node()|@*">
