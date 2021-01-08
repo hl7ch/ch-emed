@@ -137,40 +137,14 @@
       <element id="Medication.ingredient.itemCodeableConcept">
          <path value="Medication.ingredient.itemCodeableConcept"/>
          <short value="Name of active ingredient"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding">
-         <path value="Medication.ingredient.itemCodeableConcept.coding"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="system"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
+         <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>
+         </binding>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:ingredient.pharm:code"/>
          </mapping>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding:SCT">
-         <path value="Medication.ingredient.itemCodeableConcept.coding"/>
-         <sliceName value="SCT"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.system">
-         <path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
-         <min value="1"/>
-         <max value="1"/>
-         <fixedUri value="http://snomed.info/sct"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.code">
-         <path value="Medication.ingredient.itemCodeableConcept.coding.code"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding:SCT.display">
-         <path value="Medication.ingredient.itemCodeableConcept.coding.display"/>
-         <min value="1"/>
-         <max value="1"/>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
