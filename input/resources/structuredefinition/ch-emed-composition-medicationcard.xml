@@ -185,6 +185,8 @@
          <path value="Composition.section"/>
          <sliceName value="originalRepresentation"/>
          <short value="Original representation"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="Composition.section.title:originalRepresentation">
          <path value="Composition.section.title"/>
