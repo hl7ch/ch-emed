@@ -44,6 +44,55 @@
       <!-- references for examples -->
       <resource>
          <reference>
+            <reference value="Binary/1-1-pdf"/>
+         </reference>
+         <name value="1-1 PDF as original representation of the Medication Treatment Plan document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/1-2-pdf"/>
+         </reference>
+         <name value="1-2 PDF as original representation of the Medication Dispense document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-1-pdf"/>
+         </reference>
+         <name value="2-1 PDF as original representation of the Medication List document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-2-pdf"/>
+         </reference>
+         <name value="2-2 PDF as original representation of the Pharmaceutical Advice document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-3-pdf"/>
+         </reference>
+         <name value="2-3 PDF as original representation of the Medication Treatment Plan document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-4-pdf"/>
+         </reference>
+         <name value="2-4 PDF as original representation of the Medication Dispense document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Binary/2-5-pdf"/>
+         </reference>
+         <name value="2-5 PDF as original representation of the Medication Treatment Plan document"/>
+         <description value="Example for Binary"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Binary/2-6-pdf"/>
          </reference>
          <name value="2-6 PDF as original representation of the Medication Prescription document"/>
