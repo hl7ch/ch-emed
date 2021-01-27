@@ -128,8 +128,6 @@
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
-         <min value="1"/>
-         <max value="*"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:ingredient"/>
@@ -138,26 +136,31 @@
       <element id="Medication.ingredient.itemCodeableConcept">
          <path value="Medication.ingredient.itemCodeableConcept"/>
          <short value="Name of active ingredient"/>
+      </element>
+      <element id="Medication.ingredient.itemCodeableConcept.coding">
+         <path value="Medication.ingredient.itemCodeableConcept.coding"/>
+         <short value="Ingredients shall be coded with SNOMED CT"/>
          <binding>
             <strength value="extensible"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>
          </binding>
          <mapping>
             <identity value="cda"/>
-            <map value=".pharm:ingredient.pharm:code"/>
+            <map value=".pharm:code"/>
          </mapping>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
+         <short value="If no code ist available, the text should indicate the ingredient name"/>
+         <min value="1"/>
          <mapping>
             <identity value="cda"/>
-            <map value=".pharm:ingredient.pharm:name"/>
+            <map value=".pharm:name"/>
          </mapping>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
          <short value="Dose per unit"/>
-         <min value="1"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:quantity"/>
