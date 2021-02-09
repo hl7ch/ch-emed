@@ -87,7 +87,6 @@
       <element id="Medication.form">
          <path value="Medication.form"/>
          <short value="Galenic form"/>
-         <min value="1"/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
