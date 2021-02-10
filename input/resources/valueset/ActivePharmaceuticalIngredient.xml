@@ -38,6 +38,30 @@
       <include>
          <system value="http://snomed.info/sct"/>
          <concept>
+            <code value="82622003"/>
+            <display value="Retinol (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Retinol (Vitamin A)"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rétinol (Vitamine a)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Retinolo (vitamina A)"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Retinol (Vitamin A)"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Retinol"/>
+            </designation>
+         </concept>
+         <concept>
             <code value="259496005"/>
             <display value="5-aminolevulinic acid (substance)"/>
             <designation>
@@ -1030,7 +1054,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Allopurinol"/>
+               <value value="allopurinol"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -1942,7 +1966,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="argipressine (vasopressine)"/>
+               <value value="argipressine (Vasopressine)"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -2086,11 +2110,11 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="acide ascorbique (vitamine C, E300)"/>
+               <value value="acide ascorbique (Vitamine C, E300)"/>
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Acido ascorbico (vitamina C, E300)"/>
+               <value value="Acido ascorbico (Vitamina C, E300)"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -3550,7 +3574,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Brivudine"/>
+               <value value="brivudine"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -4590,7 +4614,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="carvédilol"/>
+               <value value="Caspofungin"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -4662,7 +4686,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Cefepim"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -4974,7 +4998,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Chloroquine"/>
+               <value value="Chloroquin"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -5238,7 +5262,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Cilastatin"/>
+               <value value="Cilazapril"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -6094,7 +6118,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Cocaïne"/>
+               <value value="cocaïne"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -7078,7 +7102,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="delta-9-tÃ©trahydrocannabinol (THC)"/>
+               <value value="delta-9-tétrahydrocannabinol (THC)"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -8278,7 +8302,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Doxycycline"/>
+               <value value="doxycycline"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -8286,7 +8310,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Doxycyclin"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -8566,7 +8590,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Ã&#x89;conazole"/>
+               <value value="éconazole"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -8590,7 +8614,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="éconazole"/>
+               <value value="éculizumab"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -8598,7 +8622,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Eculizumab"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -9966,7 +9990,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Etonogestrel"/>
+               <value value="Etoposid"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -10254,7 +10278,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Fenofibrat"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -10662,7 +10686,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Fluconazol"/>
+               <value value="Fludarabin"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -10966,7 +10990,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Flurbiprofène"/>
+               <value value="flurbiprofène"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -11062,7 +11086,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="fcide folique"/>
+               <value value="acide folique"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -11322,7 +11346,7 @@
             <display value="Frovatriptan (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="&#x9; Fosinopril"/>
+               <value value="Frovatriptan"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -11970,11 +11994,11 @@
             <display value="Golimumab (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="&#x9; Glycopyrronium-Kation"/>
+               <value value="Golimumab"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Golimumab"/>
+               <value value="golimumab"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -12338,7 +12362,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Epatite B (HBV) vaccino "/>
+               <value value="Epatite B (HBV) vaccino"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -12534,7 +12558,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value=" Human chorionic gonadotropin"/>
+               <value value="Fibrinogen (human)"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -12650,7 +12674,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Papillomavirus umano tipo 16 e tipo 18 (HPV) vaccino "/>
+               <value value="Papillomavirus umano tipo 16 e tipo 18 (HPV) vaccino"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -12674,7 +12698,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Papillomavirus umano tipo 9 (HPV) vaccino "/>
+               <value value="Papillomavirus umano tipo 9 (HPV) vaccino"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -12894,7 +12918,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Hydrotalcite"/>
+               <value value="Hydrotalcit"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -13486,7 +13510,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="iIndacatérol"/>
+               <value value="indacatérol"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -13750,7 +13774,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="iInsuline lispro"/>
+               <value value="insuline lispro"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -13818,7 +13842,7 @@
             <display value="Interferon beta-1a (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="interféron bêta-1a"/>
+               <value value="Interferon beta-1a"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -14694,7 +14718,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Lactulose"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -15050,7 +15074,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="&#x9; Levetiracetam (substance)"/>
+               <value value="Levetiracetam"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -15238,7 +15262,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="évonorgestrel"/>
+               <value value="lévonorgestrel"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -15614,7 +15638,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1.01296E+15"/>
+            <code value="1012961000168107"/>
             <display value="Lonoctocog alfa (substance)"/>
             <designation>
                <language value="de-CH"/>
@@ -17214,7 +17238,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Midazolam"/>
+               <value value="Midodrin"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -18078,7 +18102,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Naratriptan"/>
+               <value value="Nateglinid"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -19134,7 +19158,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="TODO"/>
+               <value value="Omeprazol"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -20446,7 +20470,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="phytoménadione (vitamine k1)"/>
+               <value value="phytoménadione (Vitamine K1)"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -21210,7 +21234,7 @@
             <display value="Prilocaine (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="prilocaïne"/>
+               <value value="Prilocain"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -21222,7 +21246,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="prilocaïne"/>
+               <value value="Prilocain"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -21622,7 +21646,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="protéine c humaine"/>
+               <value value="protéine C humaine"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -21646,7 +21670,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="protéine s humaine"/>
+               <value value="protéine S humaine"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -22170,11 +22194,11 @@
             <display value="Rasagiline (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="rasagilin"/>
+               <value value="Rasagilin"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Rasagiline"/>
+               <value value="rasagiline"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -22310,30 +22334,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="82622003"/>
-            <display value="Retinol (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Retinol (Vitamin A)"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="rétinol (vitamine a)"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Retinolo (vitamina A)"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Retinol (Vitamin A)"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Retinol"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="387188005"/>
             <display value="Ribavirin (substance)"/>
             <designation>
@@ -22366,7 +22366,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="riboflavine (vitamine B2, E101)"/>
+               <value value="riboflavine (Vitamine B2, E101)"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -25150,7 +25150,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="encéphalite verno-estivale fsme inactivé vaccin"/>
+               <value value="encéphalite verno-estivale FSME inactivé vaccin"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -25842,11 +25842,11 @@
             <display value="Triamcinolone (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="triamcinolon"/>
+               <value value="Triamcinolon"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="Triamcinolone"/>
+               <value value="triamcinolone"/>
             </designation>
             <designation>
                <language value="it-CH"/>
@@ -25890,7 +25890,7 @@
             <display value="Triazolam (substance)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="triazolam"/>
+               <value value="Triazolam"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -26926,7 +26926,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="tocophérol dl-alfa (E307)"/>
+               <value value="tocophérol DL-alfa (E307)"/>
             </designation>
             <designation>
                <language value="it-CH"/>

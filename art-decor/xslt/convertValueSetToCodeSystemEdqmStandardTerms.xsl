@@ -12,7 +12,7 @@
     <xsl:param name="vs2" select="'../templates/2.16.756.5.30.1.1.11.2.xml'" />
     <xsl:param name="doc2" select="document($vs2)" />
 
-    <xsl:variable name="system" select="concat('urn:oid:',$codeSystem)" />
+    <xsl:variable name="system" select="'http://fhir.de/CodeSystem/edqm'" />
     <xsl:variable name="codes" select="//fhir:ValueSet/fhir:compose/fhir:include[fhir:system[@value=$system]]/fhir:concept" />
     <xsl:variable name="codes2" select="$doc2/fhir:ValueSet/fhir:compose/fhir:include[fhir:system[@value=$system]]/fhir:concept" />
 

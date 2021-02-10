@@ -34,6 +34,8 @@
       </fhir:url>   
     </xsl:template>
 
+
+
     <!-- RouteOfAdministration (EDQM) map to EDQM - RouteOfAdministration -->
     <xsl:template match="fhir:ValueSet/fhir:title">
       <xsl:choose>
@@ -48,6 +50,22 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:template>
+
+       <!-- include/system has changed from an oid to  http://fhir.de/CodeSystem/edqm -->
+       <xsl:template match="fhir:include/fhir:system">
+       <xsl:choose>
+           <xsl:when test="contains(@value, 'http://fhir.de/CodeSystem/edqm')">
+             <fhir:system>
+               <xsl:attribute name="value"><xsl:value-of select="'urn:oid:0.4.0.127.0.16.1.1.2.1'" />
+               </xsl:attribute>
+             </fhir:system>
+           </xsl:when>
+         <xsl:otherwise>
+           <fhir:system><xsl:attribute name="value"><xsl:value-of select="@value" /></xsl:attribute></fhir:system>
+         </xsl:otherwise>
+       </xsl:choose>
+     </xsl:template>
+ 
 
     <!-- The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/designation-use (http://hl7.org/fhir/ValueSet/designation-use, and a code should come from this value set unless it has no suitable code) (error message = The code system "http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType" is not known; The code provided (http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType#preferred) is not valid in the value set DesignationUse) -->
     <!-- remove it -->
