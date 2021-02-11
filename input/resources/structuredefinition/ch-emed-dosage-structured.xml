@@ -128,6 +128,14 @@
             <identity value="cda"/>
             <map value=".doseQuantity"/>
          </mapping>
+         <type>
+            <code value="Range"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
+         </type>
+         <type>
+            <code value="Quantity"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
+         </type>
       </element>
    </differential>
 </StructureDefinition>

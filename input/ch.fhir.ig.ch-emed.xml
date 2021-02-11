@@ -1,12 +1,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="0.1.2"/>
+   <version value="0.2.0"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2020-08-18"/>
+   <date value="2021-02-12"/>
    <publisher value="eHealth Suisse"/>
    <contact>
       <name value="eHealth Suisse"/>
@@ -30,12 +30,12 @@
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
-      <version value="1.0.0"/>
+      <version value="1.2.0"/>
    </dependsOn>
    <dependsOn id="cheprterm">
       <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
       <packageId value="ch.fhir.ig.ch-epr-term"/>
-      <version value="2.0.4"/>
+      <version value="2.0.x"/>
    </dependsOn>
    <definition>
       <grouping>
@@ -662,6 +662,16 @@
             <reference value="StructureDefinition/ch-emed-observation"/>
          </reference>
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-quantity"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-range"/>
+         </reference>
+      </resource>
 
       <!-- references for value sets -->
 
@@ -690,7 +700,12 @@
          </reference>
          <exampleBoolean value="false"/>
       </resource>
-      
+      <resource>
+         <reference>
+            <reference value="ValueSet/UnitsOfPresentation"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>      
       <!-- pages, parameters -->
       <page>
          <nameUrl value="toc.html"/>
@@ -772,8 +787,9 @@
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="CI build"/>
-         <!--<value value="Draft Standard for Trial Use"/>-->
+<!--         <value value="CI build"/> -->
+         <value value="Draft Standard for Trial Use"/>
+         <value value="STU 1 Informative Ballot"/>
       </parameter>
       <parameter>
          <code value="path-pages" />
@@ -781,7 +797,7 @@
       </parameter>
       <parameter>
          <code value="copyrightyear"/>
-         <value value="2020+"/>
+         <value value="2021+"/>
       </parameter>
       <parameter>
          <code value="special-url"/>
