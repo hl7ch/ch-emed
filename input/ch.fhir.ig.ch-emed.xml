@@ -26,16 +26,10 @@
    <packageId value="ch.fhir.ig.ch-emed"/>
    <license value="CC-BY-SA-4.0"/>
    <fhirVersion value="4.0.1"/>
-   <!-- Publication 2020-08-18 v0.1.1-->
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
       <version value="1.2.0"/>
-   </dependsOn>
-   <dependsOn id="cheprterm">
-      <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
-      <packageId value="ch.fhir.ig.ch-epr-term"/>
-      <version value="2.0.x"/>
    </dependsOn>
    <definition>
       <grouping>
@@ -674,14 +668,12 @@
       </resource>
 
       <!-- references for value sets -->
-
       <resource>
          <reference>
             <reference value="ValueSet/ActivePharmaceuticalIngredient"/>
          </reference>
          <exampleBoolean value="false"/>
       </resource>
-   
       <resource>
          <reference>
             <reference value="ValueSet/edqm-pharmaceuticaldoseform"/>
@@ -772,23 +764,9 @@
             <generation value="html"/>
          </page>
       </page>
-
-      <parameter>
-         <code value="generate-json"/>
-         <value value="true"/>
-      </parameter>
-      <parameter>
-         <code value="generate-xml"/>
-         <value value="true"/>
-      </parameter>
-      <parameter>
-         <code value="generate-turtle"/>
-         <value value="false"/>
-      </parameter>
       <parameter>
          <code value="releaselabel"/>
-<!--         <value value="CI build"/> -->
-         <value value="Draft Standard for Trial Use"/>
+         <!-- <value value="CI build"/> -->
          <value value="STU 1 Informative Ballot"/>
       </parameter>
       <parameter>
