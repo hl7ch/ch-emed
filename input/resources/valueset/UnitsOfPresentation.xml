@@ -2009,7 +2009,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="PPM "/>
+            <code value="PPM"/>
             <display value="Parts Per Million"/>
             <designation>
                <language value="de-CH"/>
