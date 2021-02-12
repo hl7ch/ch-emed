@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="0.2.0"/>
+   <version value="0.3.0"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="active"/>
@@ -766,8 +766,8 @@
       </page>
       <parameter>
          <code value="releaselabel"/>
-         <!-- <value value="CI build"/> -->
-         <value value="STU 1 Informative Ballot"/>
+         <value value="CI build"/>
+         <!--<value value="STU 1 Informative Ballot"/>-->
       </parameter>
       <parameter>
          <code value="path-pages" />
