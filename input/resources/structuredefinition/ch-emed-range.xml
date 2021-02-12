@@ -2,7 +2,7 @@
     <id value="ch-emed-range"/>
     <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
     <version value="4.0.1"/>
-    <name value="Range with emed units"/>
+    <name value="CHEMEDRangeWithEmedUnits"/>
     <title value="CH EMED Range with units"/>
     <status value="active"/>
     <date value="2021-02-11"/>

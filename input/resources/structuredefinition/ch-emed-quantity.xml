@@ -2,7 +2,7 @@
     <id value="ch-emed-quantity"/>
     <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
     <version value="4.0.1"/>
-    <name value="Quantity with emed units"/>
+    <name value="CHEMEDQuantityWithEmedUnits"/>
     <title value="CH EMED Quantity with units"/>
     <status value="active"/>
     <date value="2021-02-11"/>
