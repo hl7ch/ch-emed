@@ -21,7 +21,7 @@
    <version value="2018-04-10T16:57:30"/>
    <name value="PharmaceuticalDoseFormEDQM"/>
    <title value="EDQM - Pharmaceutical Dose Form"/>
-   <status value="draft"/>
+   <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>

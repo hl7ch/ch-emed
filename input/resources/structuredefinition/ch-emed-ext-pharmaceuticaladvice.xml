@@ -4,7 +4,7 @@
    <version value="0.1.0"/>
    <name value="CHEMEDExtPharmaceuticalAdvice"/>
    <title value="CH EMED Extension Pharmaceutical Advice"/>
-   <status value="draft"/>
+   <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Extension to represent the reference to the Pharmaceutical Advice document"/>

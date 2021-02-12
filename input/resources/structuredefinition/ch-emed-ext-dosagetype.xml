@@ -5,7 +5,7 @@
     <version value="0.2.0"/>
     <name value="CHEMEDExtDosageType"/>
     <title value="CH EMED Extension Dosage Type"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="eHealth Suisse"/>
     <description value="Extension to represent the dosage type using a template ID as used in a CDA document"/>

@@ -4,7 +4,7 @@
    <version value="0.1.0"/>
    <name value="CHEMEDMedicationRequest"/>
    <title value="CH EMED MedicationRequest Profile"/>
-   <status value="draft"/>
+   <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication request"/>
