@@ -109,9 +109,12 @@
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="1"/>
-            </doseQuantity>
-        </doseAndRate>
+               <value value="1"/>
+               <unit value="Tablette" />
+               <system value="http://snomed.info/sct"/>
+               <code value="732936001"/>
+             </doseQuantity>
+         </doseAndRate>
     </dosageInstruction>
     <dosageInstruction>
         <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dosagetype">
@@ -137,9 +140,12 @@
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="0.5"/>
-            </doseQuantity>
-        </doseAndRate>
+               <value value="0.5"/>
+               <unit value="Tablette" />
+               <system value="http://snomed.info/sct"/>
+               <code value="732936001"/>
+             </doseQuantity>
+         </doseAndRate>
     </dosageInstruction>
     <!-- substitution just as test case -->
     <substitution>
