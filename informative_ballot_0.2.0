@@ -1,0 +1,57 @@
+Resolution Desk Informative Ballot CH EMED STU 0.2.0 
+General information 
+The ballot on Version STU 0.2.0 took place from February 15 to March 15, 2021. In parallel, an eMedication Projectathon was organized (March 10-12) where the Medication documents were tested and issues could be collected. 
+25 issues were opened during the ballot time. Additionally, there were several tickets opened in the analogous CDA project on Art-Décor: 
+•	Issues CH-EMED 
+•	Issues CDA-CH-EMED 
+ 
+Main comments 
+The issues were evaluated and labelled There was only one duplicate (#30), although several issues touched on similar topics. Only one issue was labelled with “wontfix” (#18). The mainly disputed topics are listed below and a short summary given: 
+ 
+Medication Statement 
+The issues on Medication Statement concern required cardinalities and the coding of the drug, but also of the ingredients. There was not an overarching topic, but the single issues are nevertheless very relevant and have to be solved. 
+ 
+Tickets: 
+#39 At least coded active drug ingredients 
+#27 Package size 
+#26 CH EMED MedicationStatement Identifier as uuid required 
+#24 EDQM - Pharmaceutical Dose Form 
+#23 CH EMED Medication Profile - amount / ingredien.strength with uni 
+#21 medication.code: cardinality should be 0 ...1  
+#16 required nonstructured Dosage to strict?  
+ 
+Structured Dosage including UnitsOfPresentation Value Set 
+Strongly connected to the issues of Medication Statement are issues on the structured dosage, mostly on the untis coding. The according value set UnitsOfPresentation, which was introduced after the EPR Projectathon 2020, with the support of HCI solutions, led to several discussions also during the eMedication Projectathon.  
+Another Value Set which got higher attention was the EventTiming: How to code the point in time when a drug should be taken? 
+ 
+Tickets: 
+#37 CH EMED Quantity with units: 1..1 
+#35 define EventTiming for 1-1-1-1 dosing 
+#22 2-7 Medication Card document - XML Representation1 
+#38 UnitsOfPresentation 
+#32 UnitsOfPresentation 
+ 
+Original representation (PDF) 
+Which eMedication documents should include the orginal represention (decision taken during eMed Projectathon: Medication Card and Prespcription), which formats are allowed and what is the required minimum content? 
+ 
+Tickets: 
+#29 specify data elements for original representations 
+#28 CR: remove required PDF from Compostitions others than Prescription and Medication Card 
+#25 2-7 Medication Card document PDF representation is not correct  
+#17 Original Representation of examples are not PFD 1/A compliant 
+ 
+Profile use 
+This issue came up also in the CH-VACD project, therefore citation of its summary: «The discussion point is which profile should be used for the kind of documents. EPR or nonEPR.
+What may be used when uploading to EPR. Are there restrictions?» 
+ 
+Tickets: 
+#36 subject Reference 
+ 
+Single issues 
+Other topics not belonging to the categories presented above: 
+#40 Fixed Values for system in codings don't allow multiple codings 
+#34 Annotation section.entry.reference 1..1?  
+#33 CH EMED Observation Profile 
+#31 set "must support" flags 
+#19 Hint: 2 definitions in IG with with same resourceType and id 
+
