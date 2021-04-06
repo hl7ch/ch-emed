@@ -419,7 +419,10 @@
                <doseAndRate>
                   <doseQuantity>
                      <value value="1"/>
-                  </doseQuantity>
+                     <unit value="Tablette" />
+                     <system value="http://snomed.info/sct"/>
+                     <code value="732936001"/>
+                   </doseQuantity>
                </doseAndRate>
             </dosageInstruction>
             <dosageInstruction>
