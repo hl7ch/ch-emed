@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-medication-medicationstatement"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationstatement"/>
+   <id value="ch-emed-medication"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
    <version value="0.1.0"/>
-   <name value="CHEMEDMedicationMedicationStatement"/>
-   <title value="CH EMED Medication Profile (MedicationStatement)"/>
+   <name value="CHEMEDMedication"/>
+   <title value="CH EMED Medication Profile"/>
    <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
-   <description value="Definition of the medication for the medication statement"/>
+   <description value="Definition of the medication proifle"/>
    <mapping>
       <identity value="cda"/>
       <uri value="http://hl7.org/v3/cda"/>
@@ -21,19 +21,24 @@
    <differential>
       <element id="Medication">
          <path value="Medication"/>
-         <short value="CH EMED Medication (MedicationStatement)"/>
+         <short value="CH EMED Medication"/>
          <mapping>
             <identity value="cda"/>
             <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
          </mapping>
+         <constraint>
+            <key value="ch-emed-med-1"/>
+            <severity value="error"/>
+            <human value="Medication or ingredient name has to be specified"/>
+            <expression value="code.text or ingredient.itemCodeableConcept.text"/>
+         </constraint>
       </element>
       <element id="Medication.code">
          <path value="Medication.code"/>
-         <min value="1"/>
       </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
-         <short value="GTIN code that identify this medication"/>
+         <short value="Code of the medication (GTIN)"/>
          <slicing>
             <discriminator>
                <type value="value"/>
@@ -73,7 +78,7 @@
       </element>
       <element id="Medication.code.text">
          <path value="Medication.code.text"/>
-         <short value="Name that identify this medication"/>
+         <short value="Medication name"/>
          <min value="1"/>
          <mapping>
             <identity value="cda"/>
@@ -133,11 +138,10 @@
       </element>
       <element id="Medication.ingredient.itemCodeableConcept">
          <path value="Medication.ingredient.itemCodeableConcept"/>
-         <short value="Name of active ingredient"/>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding">
          <path value="Medication.ingredient.itemCodeableConcept.coding"/>
-         <short value="Ingredients shall be coded with SNOMED CT"/>
+         <short value="Ingredients coded with SNOMED CT"/>
          <binding>
             <strength value="extensible"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>

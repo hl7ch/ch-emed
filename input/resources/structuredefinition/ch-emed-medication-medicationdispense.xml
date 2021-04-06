@@ -16,7 +16,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Medication"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Medication">
@@ -27,95 +27,8 @@
             <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
          </mapping>
       </element>
-      <element id="Medication.code">
-         <path value="Medication.code"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.code.coding">
-         <path value="Medication.code.coding"/>
-         <short value="GTIN code that identify this medication"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="system"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".code"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:code"/>
-         </mapping>
-      </element>
-      <element id="Medication.code.coding:GTIN">
-         <path value="Medication.code.coding"/>
-         <sliceName value="GTIN"/>
-      </element>
-      <element id="Medication.code.coding:GTIN.system">
-         <path value="Medication.code.coding.system"/>
-         <short value="Global Trade Item Number (GS1)"/>
-         <min value="1"/>
-         <max value="1"/>
-         <fixedUri value="urn:oid:2.51.1.1"/>
-      </element>
-      <element id="Medication.code.coding:GTIN.code">
-         <path value="Medication.code.coding.code"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="Medication.code.coding:GTIN.display">
-         <path value="Medication.code.coding.display"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="Medication.code.text">
-         <path value="Medication.code.text"/>
-         <short value="Name that identify this medication"/>
-         <min value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".name"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:name"/>
-         </mapping>
-      </element>
-      <element id="Medication.form">
-         <path value="Medication.form"/>
-         <short value="Galenic form"/>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform"/>
-         </binding>
-      </element>
-      <element id="Medication.form.coding">
-         <path value="Medication.form.coding"/>
-         <min value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:formCode"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:formCode"/>
-         </mapping>
-      </element>
-      <element id="Medication.form.coding.system">
-         <path value="Medication.form.coding.system"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.form.coding.code">
-         <path value="Medication.form.coding.code"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.form.coding.display">
-         <path value="Medication.form.coding.display"/>
-         <min value="1"/>
-      </element>
+
+
       <element id="Medication.amount">
          <path value="Medication.amount"/>
          <short value="Package size"/>
@@ -123,46 +36,6 @@
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:capacityQuantity"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient">
-         <path value="Medication.ingredient"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:ingredient"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept">
-         <path value="Medication.ingredient.itemCodeableConcept"/>
-         <short value="Name of active ingredient"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.coding">
-         <path value="Medication.ingredient.itemCodeableConcept.coding"/>
-         <short value="Ingredients shall be coded with SNOMED CT"/>
-         <binding>
-            <strength value="extensible"/>
-            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>
-         </binding>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:code"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept.text">
-         <path value="Medication.ingredient.itemCodeableConcept.text"/>
-         <short value="Ingredient name"/>
-         <min value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:name"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.strength">
-         <path value="Medication.ingredient.strength"/>
-         <short value="Dose per unit"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:quantity"/>
          </mapping>
       </element>
       <element id="Medication.batch">
