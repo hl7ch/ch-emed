@@ -149,7 +149,7 @@
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
-         <short value="If no code ist available, the text should indicate the ingredient name"/>
+         <short value="Ingredient name"/>
          <min value="1"/>
          <mapping>
             <identity value="cda"/>
