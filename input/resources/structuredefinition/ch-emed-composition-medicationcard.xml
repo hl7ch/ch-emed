@@ -73,12 +73,11 @@
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
-         <short value="Document type"/>
+         <short value="Medication summary document"/>
          <patternCodeableConcept>
             <coding>
                <system value="http://snomed.info/sct"/>
                <code value="721912009"/>
-               <display value="Medication summary document (record artifact)"/>
             </coding>
          </patternCodeableConcept>
       </element>
