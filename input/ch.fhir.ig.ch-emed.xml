@@ -29,7 +29,7 @@
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
-      <version value="1.2.0"/>
+      <version value="current"/> <!-- set to 2.0.0 after STU2 Ballot is through -->
    </dependsOn>
    <definition>
       <grouping>
