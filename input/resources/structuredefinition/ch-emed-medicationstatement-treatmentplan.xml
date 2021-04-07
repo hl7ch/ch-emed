@@ -61,6 +61,8 @@
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <short value="Medication treatment plan item ID"/>
+         <min value="1"/>
+         <max value="1"/>
          <mapping>
             <identity value="cda"/>
             <map value=".id"/>
@@ -68,9 +70,13 @@
       </element>
       <element id="MedicationStatement.identifier.system">
          <path value="MedicationStatement.identifier.system"/>
+         <min value="1"/>
+         <fixedUri value="urn:ietf:rfc:3986"/>
       </element>
       <element id="MedicationStatement.identifier.value">
          <path value="MedicationStatement.identifier.value"/>
+         <short value="identifier value as uuid"/>
+         <min value="1"/>
       </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>

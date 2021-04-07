@@ -106,6 +106,8 @@
       <element id="MedicationDispense.identifier">
          <path value="MedicationDispense.identifier"/>
          <short value="Dispense item ID"/>
+         <min value="1"/>
+         <max value="1"/>
          <mapping>
             <identity value="cda"/>
             <map value=".id"/>
@@ -113,9 +115,13 @@
       </element>
       <element id="MedicationDispense.identifier.system">
          <path value="MedicationDispense.identifier.system"/>
+         <min value="1"/>
+         <fixedUri value="urn:ietf:rfc:3986"/>
       </element>
       <element id="MedicationDispense.identifier.value">
          <path value="MedicationDispense.identifier.value"/>
+         <short value="identifier value as uuid"/>
+         <min value="1"/>
       </element>
       <element id="MedicationDispense.status">
          <path value="MedicationDispense.status"/>
