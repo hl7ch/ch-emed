@@ -661,6 +661,11 @@
             <reference value="StructureDefinition/ch-emed-range"/>
          </reference>
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ratio"/>
+         </reference>
+      </resource>
 
       <!-- references for value sets -->
       <resource>

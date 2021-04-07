@@ -1,13 +1,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-emed-range"/>
-    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
+    <id value="ch-emed-ratio"/>
+    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ratio"/>
     <version value="4.0.1"/>
-    <name value="CHEMEDRangeWithEmedUnits"/>
-    <title value="CH EMED Range with units"/>
+    <name value="CHEMEDRatioWithEmedUnits"/>
+    <title value="CH EMED Ratio with units"/>
     <status value="active"/>
-    <date value="2021-02-11"/>
+    <date value="2021-04-07"/>
     <publisher value="eHealth Suisse"/>
-    <description value="A quantity with defined units"/>
+    <description value="A ration with defined units"/>
     <mapping>
         <identity value="cda"/>
         <uri value="http://hl7.org/v3/cda"/>
@@ -16,22 +16,24 @@
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
-    <type value="Range"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Range"/>
+    <type value="Ratio"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Range">
-            <path value="Range"/>
+        <element id="Ratio">
+            <path value="Ratio"/>
         </element>
-        <element id="Range.low">
-            <path value="Range.low"/>
+        <element id="Ratio.numerator">
+            <path value="Ratio.numerator"/>
+            <min value="1"/>
             <type>
                 <code value="Quantity"/>
                 <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
             </type>
         </element>
-        <element id="Range.high">
-            <path value="Range.high"/>
+        <element id="Ratio.denominator">
+            <path value="Ratio.denominator"/>
+            <min value="1"/>
             <type>
                 <code value="Quantity"/>
                 <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
