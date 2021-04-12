@@ -242,13 +242,20 @@
       <MedicationStatement>
         <id value="MedStatBeloczok"/>
         <contained>
-          <Medication>
+          <Medication xmlns="http://hl7.org/fhir">
             <id value="med"/>
             <code>
-              <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                <valueUrl value="#mtpc.1.brandedmedication"/>
-              </extension>
-              <text value="BELOC ZOK Ret Tabl 50 mg"/>
+              <coding>
+                <system value="urn:oid:2.51.1.1"/>
+                <code value="7680538751228"/>
+                <display value="TRIATEC Tabl 2.5 mg 20 Stk"/>
+              </coding>
+              <coding>
+                <system value="http://example.com/localcode"/>
+                <code value="Local Code"/>
+                <display value="Triatec"/>
+              </coding>
+              <text value="TRIATEC Tabl 2.5 mg"/>
             </code>
             <form>
               <coding>
@@ -257,22 +264,41 @@
                 <display value="Tablet"/>
               </coding>
             </form>
+            <amount>
+              <numerator>
+                <value value="20"/>
+                <unit value="Tablet"/>
+                <system value="http://snomed.info/sct"/>
+                <code value="732936001"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="Package"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{Package}"/>
+              </denominator>
+            </amount>
             <ingredient>
               <itemCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct"/>
-                  <code value="372826007"/>
-                  <display value="Metoprolol (substance)"/>
+                  <code value="386872004"/>
+                  <display value="Ramipril (substance)"/>
                 </coding>
-                <text value="Metoprolol"/>
+                <text value="Ramipril"/>
               </itemCodeableConcept>
               <strength>
                 <numerator>
-                  <value value="50"/>
+                  <value value="2.5"/>
                   <unit value="mg"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mg"/>
                 </numerator>
                 <denominator>
                   <value value="1"/>
+                  <unit value="Tablet"/>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="732936001"/>
                 </denominator>
               </strength>
             </ingredient>

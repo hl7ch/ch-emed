@@ -251,9 +251,6 @@
                     <Medication>
                         <id value="med"/>
                         <code>
-                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                <valueUrl value="#dis.1.brandedmedication"/>
-                            </extension>
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
                                 <code value="7680521101306"/>
@@ -270,10 +267,16 @@
                         </form>
                         <amount>
                             <numerator>
-                                <value value="30"/>
+                                <value value="20"/>
+                                <unit value="Tablet"/>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="732936001"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
+                                <unit value="Package"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Package}"/>
                             </denominator>
                         </amount>
                         <ingredient>
@@ -289,9 +292,14 @@
                                 <numerator>
                                     <value value="50"/>
                                     <unit value="mg"/>
+                                    <system value="http://unitsofmeasure.org"/>
+                                    <code value="mg"/>
                                 </numerator>
                                 <denominator>
                                     <value value="1"/>
+                                    <unit value="Tablet"/>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="732936001"/>
                                 </denominator>
                             </strength>
                         </ingredient>
@@ -369,7 +377,7 @@
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>
-                  </doseAndRate>
+                    </doseAndRate>
                 </dosageInstruction>
                 <dosageInstruction>
                     <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dosagetype">
@@ -400,7 +408,7 @@
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>
-                  </doseAndRate>
+                    </doseAndRate>
                 </dosageInstruction>
                 <!-- substitution just as test case -->
                 <substitution>

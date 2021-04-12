@@ -25,9 +25,15 @@
       <amount>
         <numerator>
           <value value="20"/>
+          <unit value="Tablet"/>
+          <system value="http://snomed.info/sct"/>
+          <code value="732936001"/>
         </numerator>
         <denominator>
           <value value="1"/>
+          <unit value="Package"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{Package}"/>
         </denominator>
       </amount>
       <ingredient>
@@ -43,10 +49,14 @@
           <numerator>
             <value value="2.5"/>
             <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
           </numerator>
           <denominator>
             <value value="1"/>
-            <unit value="1"/>
+            <unit value="Tablet"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="732936001"/>
           </denominator>
         </strength>
       </ingredient>
@@ -106,12 +116,12 @@
     </route>
     <doseAndRate>
       <doseQuantity>
-         <value value="0.5"/>
-         <unit value="Tablette" />
-         <system value="http://snomed.info/sct"/>
-         <code value="732936001"/>
-       </doseQuantity>
-   </doseAndRate>
+        <value value="0.5"/>
+        <unit value="Tablette" />
+        <system value="http://snomed.info/sct"/>
+        <code value="732936001"/>
+      </doseQuantity>
+    </doseAndRate>
   </dosageInstruction>
   <dosageInstruction>
     <text value="Morgens 1/2 Tablette nehmen"/>

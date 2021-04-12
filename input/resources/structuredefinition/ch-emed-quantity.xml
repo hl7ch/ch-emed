@@ -22,18 +22,30 @@
     <differential>
         <element id="Quantity">
             <path value="Quantity"/>
-            <short value="A fixed quantity (no comparator)"/>
-            <definition value="The comparator is not used on a SimpleQuantity"/>
             <min value="0"/>
             <max value="*"/>
             <isModifier value="false"/>
         </element>
+        <element id="Quantity.value">
+            <path value="Quantity.value"/>
+            <min value="1"/>
+        </element>
+        <element id="Quantity.unit">
+            <path value="Quantity.unit"/>
+            <min value="1"/>
+        </element>
+        <element id="Quantity.system">
+            <path value="Quantity.system"/>
+            <short value="System of the code from Units of Presentation"/>
+            <min value="1"/>
+        </element>
         <element id="Quantity.code">
             <path value="Quantity.code"/>
-            <definition value="Boundt ot Units of Presentation"/>
+            <definition value="Units of Presentation"/>
+            <min value="1"/>
             <binding>
                 <strength value="required"/>
-                <description value="The unit used describing the quantity."/>
+                <description value="The coded unit used describing the quantity."/>
                 <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/UnitsOfPresentation"/>
             </binding>
         </element>

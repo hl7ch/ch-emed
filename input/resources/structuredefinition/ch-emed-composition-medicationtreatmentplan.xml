@@ -223,7 +223,7 @@
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>

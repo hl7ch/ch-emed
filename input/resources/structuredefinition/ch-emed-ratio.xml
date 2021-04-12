@@ -7,7 +7,7 @@
     <status value="active"/>
     <date value="2021-04-07"/>
     <publisher value="eHealth Suisse"/>
-    <description value="A ration with defined units"/>
+    <description value="A ratio with defined units"/>
     <mapping>
         <identity value="cda"/>
         <uri value="http://hl7.org/v3/cda"/>
