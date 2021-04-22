@@ -330,7 +330,7 @@
             </form>
             <amount>
               <numerator>
-                <value value="20"/>
+                <value value="30"/>
                 <unit value="Tablet"/>
                 <system value="http://snomed.info/sct"/>
                 <code value="732936001"/>
@@ -504,7 +504,7 @@
             </form>
             <amount>
               <numerator>
-                <value value="20"/>
+                <value value="30"/>
                 <unit value="Tablet"/>
                 <system value="http://snomed.info/sct"/>
                 <code value="732936001"/>
