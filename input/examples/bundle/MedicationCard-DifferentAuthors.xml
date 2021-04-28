@@ -152,7 +152,7 @@
                     <td id="mtpc.1.brandedmedication">Beloc Zok</td>
                     <td id="mtpc.1.ingredient">Metoprolol</td>
                     <td id="mtpc.1.packageform"> Ret Tbl</td>
-                    <td id="mtpc.1.dosequantity">2.5 mg</td>
+                    <td id="mtpc.1.dosequantity">50 mg</td>
                     <td id="mtpc.1.dosageintakemode">Morgens 1 und abends 1/2 Tablette nehmen</td>
                     <td id="mtpc.1.dosagemorning">1</td>
                     <td id="mtpc.1.dosagelunch">0</td>
@@ -247,15 +247,15 @@
             <code>
               <coding>
                 <system value="urn:oid:2.51.1.1"/>
-                <code value="7680538751228"/>
-                <display value="TRIATEC Tabl 2.5 mg 20 Stk"/>
+                <code value="7680521101306"/>
+                <display value="BELOC ZOK Ret Tabl 50 mg 30 Stk"/>
               </coding>
               <coding>
                 <system value="http://example.com/localcode"/>
                 <code value="Local Code"/>
-                <display value="Triatec"/>
+                <display value="Beloc Zok"/>
               </coding>
-              <text value="TRIATEC Tabl 2.5 mg"/>
+              <text value="BELOC ZOK Ret Tabl 50 mg"/>
             </code>
             <form>
               <coding>
@@ -266,7 +266,7 @@
             </form>
             <amount>
               <numerator>
-                <value value="20"/>
+                <value value="30"/>
                 <unit value="Tablet"/>
                 <system value="http://snomed.info/sct"/>
                 <code value="732936001"/>
@@ -282,14 +282,14 @@
               <itemCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct"/>
-                  <code value="386872004"/>
-                  <display value="Ramipril (substance)"/>
+                  <code value="372826007"/>
+                  <display value="Metoprolol (substance)"/>
                 </coding>
-                <text value="Ramipril"/>
+                <text value="Metoprolol"/>
               </itemCodeableConcept>
               <strength>
                 <numerator>
-                  <value value="2.5"/>
+                  <value value="50"/>
                   <unit value="mg"/>
                   <system value="http://unitsofmeasure.org"/>
                   <code value="mg"/>
