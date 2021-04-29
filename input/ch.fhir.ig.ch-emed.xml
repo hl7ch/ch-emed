@@ -277,6 +277,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/MedicationWithTwoIngredients"/>
+         </reference>
+         <name value="Medication with 2 Ingredients"/>
+         <description value="Example for Medication with 2 Ingredients"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
