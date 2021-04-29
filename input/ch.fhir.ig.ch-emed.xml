@@ -205,48 +205,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="DocumentReference/DocRef-1-1-MedicationTreatmentPlan"/>
-         </reference>
-         <name value="1-1 Document Reference for Medication Treatment Plan document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="DocumentReference/DocRef-1-2-MedicationDispense"/>
-         </reference>
-         <name value="1-2 Document Reference for Medication Dispense document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="DocumentReference/DocRef-2-1-MedicationList"/>
-         </reference>
-         <name value="2-1 Document Reference for Medication List document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="DocumentReference/DocRef-2-2-PharmaceuticalAdvice"/>
-         </reference>
-         <name value="2-2 Document Reference for Pharmaceutical Advice document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="DocumentReference/DocRef-2-3-MedicationTreatmentPlan"/>
-         </reference>
-         <name value="2-3 Document Reference for Medication Treatment Plan document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="DocumentReference/DocRef-2-7-MedicationCard"/>
-         </reference>
-         <name value="2-7 Document Reference for Medication Card document"/>
-         <description value="Example for DocumentReference"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Medication/1-1-Triatec"/>
          </reference>
          <name value="1-1 Medication Triatec"/>
@@ -380,13 +338,6 @@
          <name value="2-7 Medication Statement with Medication Norvasc"/>
          <description value="Example for MedicationStatment"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Organization/Cara"/>
-         </reference>
-         <name value="Cara"/>
-         <description value="Example for Organization"/>
       </resource>
       <resource>
          <reference>

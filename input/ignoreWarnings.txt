@@ -26,7 +26,6 @@ The Implementation Guide contains no examples for this extension
 # The following code systems/value sets are external and not supported by terminology server (or an example)
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
 The value provided ('rm-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#rm-CH) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
-The Coding provided (urn:oid:2.16.756.5.30.1.127.3.10.10#urn:che:epr:EPR_Unstructured_Document) is not in the value set http://hl7.org/fhir/ValueSet/formatcodes, and a code is recommended to come from this value set. (error message = Not in value set http://hl7.org/fhir/ValueSet/formatcodes)
 Code System URI 'http://example.com/localcode' is unknown so the code cannot be validated
 
 # This ValueSet exists: http://terminology.hl7.org/ValueSet/v3-NullFlavor
