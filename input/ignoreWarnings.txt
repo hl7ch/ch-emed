@@ -22,6 +22,7 @@ The display "Clinical presentation" is not a valid display for the code {http://
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement'): The Implementation Guide contains no examples for this profile
 
 # The following code systems/value sets are external and not supported by terminology server (or an example)
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
