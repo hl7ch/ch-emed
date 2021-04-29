@@ -30,7 +30,7 @@
             <key value="ch-emed-med-1"/>
             <severity value="error"/>
             <human value="Medication or ingredient name has to be specified"/>
-            <expression value="code.text or ingredient.itemCodeableConcept.text"/>
+            <expression value="code.text.exists() or ingredient.itemCodeableConcept.text.exists()"/>
          </constraint>
       </element>
       <element id="Medication.code">
