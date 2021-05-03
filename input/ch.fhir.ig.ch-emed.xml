@@ -556,6 +556,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-medicationstatement-card"/>
          </reference>
       </resource>

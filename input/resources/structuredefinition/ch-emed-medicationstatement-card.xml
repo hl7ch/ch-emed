@@ -16,23 +16,20 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationStatement"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
    <derivation value="constraint"/>
    <differential>
       <element id="MedicationStatement">
          <path value="MedicationStatement"/>
-         <short value="CH EMED MedicationStatement"/>
+         <short value="CH EMED MedicationStatement (Medication Card document)"/>
          <mapping>
             <identity value="cda"/>
             <map value="substanceAdministration"/>
          </mapping>
       </element>
-      <element id="MedicationStatement.contained">
+      <!--<element id="MedicationStatement.contained">
          <path value="MedicationStatement.contained"/>
-         <short value="Medication inline resource"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
+      </element>-->
       <element id="MedicationStatement.extension">
          <path value="MedicationStatement.extension"/>
          <slicing>
@@ -76,62 +73,33 @@
          </mapping>
       </element>
       
-      <element id="MedicationStatement.identifier">
+      <!--<element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
-         <short value="Medication treatment plan item ID"/>
-         <min value="1"/>
-         <max value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".id"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.identifier.system">
          <path value="MedicationStatement.identifier.system"/>
-         <min value="1"/>
          <fixedUri value="urn:ietf:rfc:3986"/>
       </element>
       <element id="MedicationStatement.identifier.value">
          <path value="MedicationStatement.identifier.value"/>
-         <min value="1"/>
-         <short value="identifier value as uuid"/>
       </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
          <fixedCode value="completed"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".statusCode"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
-         <short value="Reference to the contained medication"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
          </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.subject">
          <path value="MedicationStatement.subject"/>
-         <short value="Patient"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value="ClinicalDocument.recordTarget"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.subject.reference">
          <path value="MedicationStatement.subject.reference"/>
-         <min value="1"/>
-      </element>
+      </element>-->
 
       <!-- Medication Treatment Plan Author -->
       <element id="MedicationStatement.informationSource">
@@ -196,26 +164,14 @@
          <min value="1"/>
       </element>
 
-      <element id="MedicationStatement.reasonCode">
+      <!--<element id="MedicationStatement.reasonCode">
          <path value="MedicationStatement.reasonCode"/>
-         <short value="Treatment reason"/>
-         <max value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.observation.text"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
       </element>
       <element id="MedicationStatement.note">
          <path value="MedicationStatement.note"/>
-         <short value="Annotation"/>
-         <max value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.text"/>
-         </mapping>
       </element>
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
@@ -226,28 +182,14 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         <short value="How the medication should be taken"/>
-         <min value="1"/>
       </element>
       <element id="MedicationStatement.dosage:nonstructured">
          <path value="MedicationStatement.dosage"/>
          <sliceName value="nonstructured"/>
-         <short value="Free text dosage instructions"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
-         </type>
       </element>
       <element id="MedicationStatement.dosage:structured">
          <path value="MedicationStatement.dosage"/>
          <sliceName value="structured"/>
-         <short value="Structured dosage instructions"/>
-         <type>
-            <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
-         </type>
-      </element>
+      </element>-->
    </differential>
 </StructureDefinition>
