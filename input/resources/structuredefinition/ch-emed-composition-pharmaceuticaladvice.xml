@@ -58,9 +58,11 @@
       </element>
       <element id="Composition.identifier.system">
          <path value="Composition.identifier.system"/>
+         <min value="1"/>
       </element>
       <element id="Composition.identifier.value">
          <path value="Composition.identifier.value"/>
+         <min value="1"/>
       </element>
       <element id="Composition.status">
          <path value="Composition.status"/>
