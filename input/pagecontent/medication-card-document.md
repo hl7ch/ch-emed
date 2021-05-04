@@ -8,5 +8,11 @@ This exchange format is defined as a document type that corresponds to a Bundle 
     
 {% include img.html img="medication-card-document.png" caption="Fig.: Medication Card document" width="40%" %}
 
-* Profile: [Medication Card document](StructureDefinition-ch-emed-document-medicationcard.html)
-* Example Medication Card document (xml): [2-7](Bundle-2-7-MedicationCard.xml.html)
+#### Example instances
+* 2-7 Medication Card document: [XML](Bundle-2-7-MedicationCard.xml.html), [JSON](Bundle-2-7-MedicationCard.json.html)
+
+### Resource profiles
+* [CH EMED Medication Card Document Profile](StructureDefinition-ch-emed-document-medicationcard.html)
+* [CH EMED Medication Card Composition Profile](StructureDefinition-ch-emed-composition-medicationcard.html)
+* [CH EMED MedicationStatement Profile (Medication Card document)](StructureDefinition-ch-emed-medicationstatement-card.html)
+* [CH EMED Medication Profile](StructureDefinition-ch-emed-medication.html)

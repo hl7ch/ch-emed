@@ -9,5 +9,13 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 
 {% include img.html img="medication-dispense-document.png" caption="Fig.: Medication Dispense document" width="40%" %}
 
-* Profile: [Medication Dispense document](StructureDefinition-ch-emed-document-medicationdispense.html)
-* Example Medication Dispense document (xml): [1-2](Bundle-1-2-MedicationDispense.xml.html), [2-4](Bundle-2-4-MedicationDispense.xml.html)
+#### Example instances
+* 1-1 Medication Dispense document: [XML](Bundle-1-2-MedicationDispense.xml.html), [JSON](Bundle-1-2-MedicationDispense.json.html)
+* 2-4 Medication Dispense document: [XML](Bundle-2-4-MedicationDispense.xml.html), [JSON](Bundle-2-4-MedicationDispense.json.html)
+
+### Resource profiles
+* [CH EMED Medication Dispense Document Profile](StructureDefinition-ch-emed-document-medicationdispense.html)
+* [CH EMED Medication Dispense Composition Profile](StructureDefinition-ch-emed-composition-medicationdispense.html)
+* [CH EMED MedicationDispense Profile](StructureDefinition-ch-emed-medicationdispense.html)
+* [CH EMED Medication Profile (MedicationDispense)](StructureDefinition-ch-emed-medication-medicationdispense.html)
+
