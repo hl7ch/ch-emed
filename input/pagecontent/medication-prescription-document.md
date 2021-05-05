@@ -12,8 +12,10 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 #### Example instances
 * 2-6 Medication Prescription document: [XML](Bundle-2-6-MedicationPrescription.xml.html), [JSON](Bundle-2-6-MedicationPrescription.json.html)
 
-### Resource profiles
+### Profiles
 * [CH EMED Medication Prescription Document Profile](StructureDefinition-ch-emed-document-medicationprescription.html)
 * [CH EMED Medication Prescription Composition Profile](StructureDefinition-ch-emed-composition-medicationprescription.html)
 * [CH EMED MedicationRequest Profile](StructureDefinition-ch-emed-medicationrequest.html)
 * [CH EMED Medication Profile](StructureDefinition-ch-emed-medication.html)
+* [CH EMED Dosage Non-Structured Profile](StructureDefinition-ch-emed-dosage-nonstructured.html)
+* [CH EMED Dosage Structured Profile (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-medicationrequest.html)
