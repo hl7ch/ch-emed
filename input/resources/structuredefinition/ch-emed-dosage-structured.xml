@@ -76,6 +76,7 @@
       <element id="Dosage.timing.repeat.bounds[x]">
          <path value="Dosage.timing.repeat.bounds[x]"/>
          <short value="Length/Range of lengths, or (Start and/or end) limits"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".low/.high"/>
@@ -84,6 +85,7 @@
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
          <short value="Code for time period of occurrence"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".event"/>
@@ -100,6 +102,7 @@
       <element id="Dosage.route.coding">
          <path value="Dosage.route.coding"/>
          <min value="1"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".routeCode"/>
@@ -124,10 +127,6 @@
       </element>
       <element id="Dosage.doseAndRate.dose[x]">
          <path value="Dosage.doseAndRate.dose[x]"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".doseQuantity"/>
-         </mapping>
          <type>
             <code value="Range"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
@@ -136,6 +135,11 @@
             <code value="Quantity"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
          </type>
+         <mustSupport value="true"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".doseQuantity"/>
+         </mapping>
       </element>
    </differential>
 </StructureDefinition>

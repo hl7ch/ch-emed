@@ -88,6 +88,7 @@
       <element id="Composition.date">
          <path value="Composition.date"/>
          <short value="The document's creation date and time"/>
+         <mustSupport value="true"/>
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
@@ -174,6 +175,7 @@
             <ordered value="false"/>
             <rules value="open"/>
          </slicing>
+         <mustSupport value="true"/>
       </element>
 
       <!-- Section Original Representation-->
@@ -221,6 +223,7 @@
          <short value="Medication card"/>
          <min value="1"/>
          <max value="1"/>
+         <mustSupport value="true"/>
       </element>
       <!-- Extension for Section-ID -->
       <element id="Composition.section.extension">
@@ -303,6 +306,7 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
          </type>
+         <mustSupport value="true"/>
       </element>
       <element id="Composition.section.entry:card.reference">
          <path value="Composition.section.entry.reference"/>
@@ -321,6 +325,7 @@
          <short value="Annotation"/>
          <min value="0"/>
          <max value="1"/>
+         <mustSupport value="true"/>
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
@@ -345,6 +350,7 @@
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
+         <mustSupport value="true"/>
       </element>
    </differential>
 </StructureDefinition>

@@ -166,30 +166,30 @@
 
       <!--<element id="MedicationStatement.reasonCode">
          <path value="MedicationStatement.reasonCode"/>
-      </element>
+      </element>-->
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
+         <mustSupport value="true"/>
       </element>
-      <element id="MedicationStatement.note">
-         <path value="MedicationStatement.note"/>
+
+      <element id="MedicationStatement.note.text">
+         <path value="MedicationStatement.note.text"/>
+         <mustSupport value="true"/>
       </element>
+
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
-         <slicing>
-            <discriminator>
-               <type value="profile"/>
-               <path value="$this"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
+         <mustSupport value="true"/>
       </element>
       <element id="MedicationStatement.dosage:nonstructured">
          <path value="MedicationStatement.dosage"/>
          <sliceName value="nonstructured"/>
+         <mustSupport value="true"/>
       </element>
       <element id="MedicationStatement.dosage:structured">
          <path value="MedicationStatement.dosage"/>
          <sliceName value="structured"/>
-      </element>-->
+         <mustSupport value="true"/>
+      </element>
    </differential>
 </StructureDefinition>
