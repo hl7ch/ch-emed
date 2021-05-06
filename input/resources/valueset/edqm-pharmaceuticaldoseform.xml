@@ -8,7 +8,7 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2018-04-10T16:57:30+01:00"/>
+         <start value="2018-04-10T16:57:30+02:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -21,7 +21,7 @@
    <version value="2018-04-10T16:57:30"/>
    <name value="PharmaceuticalDoseFormEDQM"/>
    <title value="EDQM - Pharmaceutical Dose Form"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>

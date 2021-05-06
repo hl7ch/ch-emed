@@ -631,7 +631,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/UnitsOfPresentation"/>
+            <reference value="ValueSet/UnitCode"/>
          </reference>
          <exampleBoolean value="false"/>
       </resource>

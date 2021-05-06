@@ -134,9 +134,9 @@
 			<param name="templateId" value="2.16.756.5.30.1.1.11.82" />
 		</antcall>
 	</target>
-	<target name="transformUnitsOfPresentation" depends="init">
+	<target name="transformUnitCode" depends="init">
 		<antcall target="transformPharmValueSet">
-			<param name="resourceId" value="UnitsOfPresentation" />
+			<param name="resourceId" value="UnitCode" />
 			<param name="templateId" value="2.16.756.5.30.1.1.11.83" />
 		</antcall>
 	</target>
@@ -160,7 +160,7 @@
 		<antcall target="transformIHEPharmaceuticalAdviceStatusList" />
 		<antcall target="transformIHEPharmaceuticalAdviceStatusListToCodeSystem" />
 		<antcall target="transformActivePharmaceuticalIngredient" />
-		<antcall target="transformUnitsOfPresentation" />
+		<antcall target="transformUnitCode" />
 		<antcall target="transformTimingEvent" />
 	</target>
 </project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="UnitsOfPresentation"/>
+   <id value="UnitCode"/>
    <meta>
       <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.83--20210210222402"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
@@ -8,20 +8,20 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2021-02-10T22:24:02+01:00"/>
+         <start value="2021-02-10T22:24:02+02:00"/>
       </valuePeriod>
    </extension>
    <url
-             value="http://fhir.ch/ig/ch-emed/ValueSet/UnitsOfPresentation"/>
+             value="http://fhir.ch/ig/ch-emed/ValueSet/UnitCode"/>
    <identifier>
       <use value="official"/>
       <system value="http://art-decor.org/ns/oids/vs"/>
       <value value="2.16.756.5.30.1.1.11.83"/>
    </identifier>
    <version value="2021-02-10T22:24:02"/>
-   <name value="UnitsOfPresentation"/>
-   <title value="UnitsOfPresentation"/>
-   <status value="active"/>
+   <name value="UnitCode"/>
+   <title value="UnitCode"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>
@@ -31,7 +31,7 @@
          <value value="www.e-health-suisse.ch"/>
       </telecom>
    </contact>
-   <description value="UnitsOfPresentation"/>
+   <description value="UnitCode"/>
    <immutable value="false"/>
    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
    <compose>
@@ -42,7 +42,11 @@
             <display value="Actuation (unit of presentation)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="Betätigung (Sprühstoss)"/>
+               <value value="Sprühstoss"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Hub"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -186,7 +190,7 @@
             <display value="Block (unit of presentation)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="Stein"/>
+               <value value="Block"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -198,7 +202,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Stein"/>
+               <value value="Block"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -566,30 +570,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="733000006"/>
-            <display value="Lozenge (unit of presentation)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Lutschtablette"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="pastille dure"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Pastiglia"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Lutschtablette"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Lozenge"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="733001005"/>
             <display value="Lyophilisate (unit of presentation)"/>
             <designation>
@@ -690,7 +670,7 @@
             <display value="Patch (unit of presentation)"/>
             <designation>
                <language value="de-CH"/>
-               <value value="Pflaster"/>
+               <value value="Patch"/>
             </designation>
             <designation>
                <language value="fr-CH"/>
@@ -702,7 +682,7 @@
             </designation>
             <designation>
                <language value="rm-CH"/>
-               <value value="Pflaster"/>
+               <value value="Patch"/>
             </designation>
             <designation>
                <language value="en-US"/>
@@ -1554,7 +1534,7 @@
          </concept>
          <concept>
             <code value="umol"/>
-            <display value="micromol"/>
+            <display value="micromole"/>
             <designation>
                <language value="de-CH"/>
                <value value="µmol"/>
@@ -1817,7 +1797,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="S"/>
+            <code value="s"/>
             <display value="Second"/>
             <designation>
                <language value="de-CH"/>
@@ -1841,7 +1821,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="MIN"/>
+            <code value="min"/>
             <display value="Minute"/>
             <designation>
                <language value="de-CH"/>
@@ -1865,7 +1845,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="HR"/>
+            <code value="h"/>
             <display value="Hour"/>
             <designation>
                <language value="de-CH"/>
@@ -1889,7 +1869,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="D"/>
+            <code value="d"/>
             <display value="Day"/>
             <designation>
                <language value="de-CH"/>
@@ -1961,7 +1941,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="10*6.U"/>
+            <code value="10*6.{Unit}"/>
             <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
             <designation>
                <language value="de-CH"/>
@@ -1985,7 +1965,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="10*6.iU"/>
+            <code value="10*6.[iU]"/>
             <display value="MillionInternationalUnit"/>
             <designation>
                <language value="de-CH"/>
@@ -2009,7 +1989,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="PPM"/>
+            <code value="[ppm]"/>
             <display value="Parts Per Million"/>
             <designation>
                <language value="de-CH"/>
@@ -2057,8 +2037,8 @@
             </designation>
          </concept>
          <concept>
-            <code value="U{PIECE(S)}"/>
-            <display value="Piece(s)"/>
+            <code value="{Piece}"/>
+            <display value="Piece"/>
             <designation>
                <language value="de-CH"/>
                <value value="Stk"/>
@@ -2081,7 +2061,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="tsp_m"/>
+            <code value="[tsp_m]"/>
             <display value="teaspoon - metric"/>
             <designation>
                <language value="de-CH"/>
@@ -2105,7 +2085,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="10*3.U"/>
+            <code value="10*3.{Unit}"/>
             <display value="Thousand Per * Unit"/>
             <designation>
                <language value="de-CH"/>
@@ -2129,7 +2109,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="U"/>
+            <code value="{Unit}"/>
             <display value="Unit"/>
             <designation>
                <language value="de-CH"/>
@@ -2153,7 +2133,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="iU"/>
+            <code value="[iU]"/>
             <display value="international unit"/>
             <designation>
                <language value="de-CH"/>
@@ -2177,7 +2157,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="CFU"/>
+            <code value="[CFU]"/>
             <display value="Colony Forming Units"/>
             <designation>
                <language value="de-CH"/>

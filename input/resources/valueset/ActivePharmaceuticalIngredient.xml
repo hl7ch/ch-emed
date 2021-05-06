@@ -8,7 +8,7 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2020-09-25T11:02:35+01:00"/>
+         <start value="2020-09-25T11:02:35+02:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -21,7 +21,7 @@
    <version value="2020-09-25T11:02:35"/>
    <name value="ActivePharmaceuticalIngredient"/>
    <title value="ActivePharmaceuticalIngredient"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>
@@ -37,30 +37,6 @@
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
-         <concept>
-            <code value="82622003"/>
-            <display value="Retinol (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Retinol (Vitamin A)"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="rétinol (Vitamine a)"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Retinolo (vitamina A)"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Retinol (Vitamin A)"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Retinol"/>
-            </designation>
-         </concept>
          <concept>
             <code value="259496005"/>
             <display value="5-aminolevulinic acid (substance)"/>
@@ -22331,6 +22307,30 @@
             <designation>
                <language value="en-US"/>
                <value value="Retigabine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="82622003"/>
+            <display value="Retinol (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Retinol (Vitamin A)"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rétinol (Vitamine a)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Retinolo (vitamina A)"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Retinol (Vitamin A)"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Retinol"/>
             </designation>
          </concept>
          <concept>

@@ -46,7 +46,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="The coded unit used describing the quantity."/>
-                <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/UnitsOfPresentation"/>
+                <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/UnitCode"/>
             </binding>
         </element>
     </differential>
