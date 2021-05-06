@@ -141,6 +141,20 @@
       </resource>
       <resource>
          <reference>
+            <reference value="CodeSystem/v3-TimingEvent"/>
+         </reference>
+         <name value="v3-TimingEvent Supplement"/>
+         <description value="Translations of concepts for v3-TimingEvent"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/event-timing"/>
+         </reference>
+         <name value="event-timing Supplement"/>
+         <description value="Translations of concepts for event-timing"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>

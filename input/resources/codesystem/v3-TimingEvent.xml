@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="v3-TimingEvent"/>
+   <meta>
+      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.127.77.4.11.2--20200710002808"/>
+   </meta>
+   <url value="http://fhir.ch/ig/ch-emed/CodeSystem/v3-TimingEvent"/>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.840.1.113883.5.139"/>
+   </identifier>
+   <version value="2.0.0"/>
+   <name value="TimingEvent"/>
+   <title value="TimingEvent"/>
+   <status value="active"/>
+   <date value="2021-05-26"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+   </contact>
+   <hierarchyMeaning value="is-a"/>
+   <content value="supplement"/>
+   <supplements value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+   <concept>
+      <code value="AC"/>
+      <display value="Before the meal"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Vor der Mahlzeit"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Avant le repas"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima del pasto"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Avant il past"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Before the meal"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="HS"/>
+      <display value="Before sleep"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Vor dem Schlafengehen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Avant le coucher"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima di andare a dormire"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Avant che ir a durmir"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Before sleep"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ACD"/>
+      <display value="Before lunch"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Vor dem Mittagessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Avant le repas de midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima di pranzo"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Avant gentar"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Before lunch"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ACM"/>
+      <display value="Before breakfast"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Vor dem Frühstück"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Avant le petit-déjeuner"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima di colazione"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Avant ensolver"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Before breakfast"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ACV"/>
+      <display value="Before dinner"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Vor dem Abendessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Avant le repas du soir"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima di cena"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Avant tschaina"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Before dinner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="C"/>
+      <display value="During meals"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Während der Mahlzeit"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Pendant le repas"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Durante il pasto"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Durant il past"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="During meals"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="CD"/>
+      <display value="During lunch"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Während des Mittagessens"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Pendant le repas de midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Durante il pranzo"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Durant gentar"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="During lunch"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="CM"/>
+      <display value="During breakfast"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Während des Frühstücks"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Pendant le petit-déjeuner"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Durante la prima colazione"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Durant ensolver"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="During breakfast"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="CV"/>
+      <display value="During dinner"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Während des Abendessens"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Pendant le repas du soir"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Durante la cena"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Durant tschaina"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="During dinner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="IC"/>
+      <display value="Between meals"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Zwischen den Mahlzeiten"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Entre les repas"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tra un pasto e l'altro"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Tranter ils pasts"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Between meals"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ICD"/>
+      <display value="Between lunch and dinner"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Zwischen Mittag- und Abendessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Entre le repas de midi et du soir"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tra pranzo e cena"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Tranter gentar e tschaina"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Between lunch and dinner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ICM"/>
+      <display value="Between breakfast and lunch"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Zwischen Frühstück und Mittagessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Entre le petit-déjeuner et le repas de midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tra colazione e pranzo"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Tranter ensolver e gentar"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Between breakfast and lunch"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ICV"/>
+      <display value="Between dinner and bedtime"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Zwischen Abendessen und Schlafenszeit"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Entre le repas du soir et le coucher"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tra la cena e l'ora di andare a letto"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Tranter tschaina ed ir a durmir"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Between dinner and bedtime"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PC"/>
+      <display value="After the meal"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nach dem Essen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après le repas"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Dopo il pasto"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Suenter il past"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="After the meal"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PCD"/>
+      <display value="After lunch"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nach dem Mittagessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après le repas de midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Dopo pranzo"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Suenter gentar"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="After lunch"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PCM"/>
+      <display value="After breakfast"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nach dem Frühstück"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après le petit-déjeuner"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Dopo la prima colazione"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Suenter ensolver"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="After breakfast"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PCV"/>
+      <display value="After dinner"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nach dem Abendessen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après le repas du soir"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Dopo cena"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Suenter tschaina"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="After dinner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="WAKE"/>
+      <display value="Upon waking up"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Beim Aufwachen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Au réveil"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Al risveglio"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Cun sa dasdar"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Upon waking up"/>
+      </designation>
+   </concept>
+</CodeSystem>
