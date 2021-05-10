@@ -1,47 +1,12 @@
 # CH EMED Implementation Guide (R4) 
-eMedication FHIR profiles for Switzerland
+eMedication FHIR IG for Switzerland, see also [fhir.ch](https://fhir.ch)
 
+1. [CI-Build](http://build.fhir.org/ig/ehealthsuisse/ch-emed/index.html) 
+2. Mapping Table [FHIR and CDA](https://docs.google.com/spreadsheets/d/1Ui3NGFE2I8yiOlHELk-B0Pke2l9-Jbe5BTeYOnS8-uE/edit#gid=1859696266) for each exchange format
+3. synchronize ART-DECOR CH-EMED terminology with this implementation guide:
 
-## Building the Implementation Guide
-
-You can build the Implementation Guide with the [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation).
-
-- For building the Implementation Guide you need to install [Jekyll](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation#IGPublisherDocumentation-Jekyll).
-
-- Clone this repository and change into its main directory.
-- Download the latest version of IG Publisher:
 ```
-wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
+cd art-decor
+ant clean
+ant dist
 ```
-- Build the Implementation Guide:
-```
-java -Xms3550m -Xmx3550m -jar publisher.jar -ig ig.ini
-```
-
-### Validate a Resource
-If you are in the main directory of the Implementation Guide you can check your example against the specification of this IG with the [Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator).
-
-- Download the latest version of Validator: 
-```
-wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator_cli.jar
-```
-- Validate the resource against a profile (e.g. ch-emed-document-medicationcard): 
-```
-java -jar validator_cli.jar [file path] -version 4.0.1 -ig output -profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard
- ```
-
-
-## Validating without Building the IG
-
-If you do not want to build the IG locally, you can validate your example against the Implementation Guide with the [Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) as follows:
-
-- Download the latest version of Validator: 
-```
-wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator_cli.jar
-```
-- Validate the resource:
-```
-java -jar validator_cli.jar [file path] -version 4.0.1 -ig ch.fhir.ig.ch-emed#current -profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard
-```
-
-In case the current published IG (#current) is not found, replace #current with the current version (e.g. #1.0.0) of the published IG (http://fhir.ch/ig/ch-emed/history.html)
