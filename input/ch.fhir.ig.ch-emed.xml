@@ -141,6 +141,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Bundle/PharmaceuticalAdvice-ChangeDosage"/>
+         </reference>
+         <name value="Pharmaceutical Advice document to change the dosage"/>
+         <description value="Example for Bundle"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="CodeSystem/v3-TimingEvent"/>
          </reference>
          <name value="v3-TimingEvent Supplement"/>
@@ -556,6 +564,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-ext-treatmentreason"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-medicationstatement-changed"/>
          </reference>
       </resource>
       <resource>
