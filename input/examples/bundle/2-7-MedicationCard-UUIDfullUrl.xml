@@ -75,48 +75,6 @@
           <type value="Organization"/>
         </custodian>
         <section>
-          <title value="Kommentar"/>
-          <code>
-            <coding>
-              <system value="http://loinc.org"/>
-              <code value="48767-8"/>
-              <display value="Annotation comment"/>
-            </coding>
-          </code>
-          <text>
-            <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml">
-              <span id="co1">
-                  Kommentar zu Medication Treatment
-              </span>
-            </div>
-          </text>
-        </section>
-        <section>
-          <title value="Original representation"/>
-          <code>
-            <coding>
-              <system value="http://loinc.org"/>
-              <code value="55108-5"/>
-              <display value="Clinical presentation"/>
-            </coding>
-          </code>
-          <text>
-            <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            Representation of the original view:
-              <img src="2-7-pdf"/>
-            </div>
-          </text>
-          <entry>
-            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-              <valueUrl value="2-7-pdf"/>
-            </extension>
-            <reference value="urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef"/>
-            <type value="Binary"/>
-          </entry>
-        </section>
-        <section>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
             <valueIdentifier>
               <system value="urn:ietf:rfc:3986"/>
@@ -194,6 +152,48 @@
           <entry>
             <reference value="urn:uuid:99e5810c-1afa-43da-8a0e-e7f9086e300a"/>
             <type value="MedicationStatement"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Kommentar"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="48767-8"/>
+              <display value="Annotation comment"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <span id="co1">
+                  Kommentar zu Medication Treatment
+              </span>
+            </div>
+          </text>
+        </section>
+        <section>
+          <title value="Original representation"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="55108-5"/>
+              <display value="Clinical presentation"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+            Representation of the original view:
+              <img src="2-7-pdf"/>
+            </div>
+          </text>
+          <entry>
+            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+              <valueUrl value="2-7-pdf"/>
+            </extension>
+            <reference value="urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef"/>
+            <type value="Binary"/>
           </entry>
         </section>
       </Composition>
