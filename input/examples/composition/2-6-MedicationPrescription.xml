@@ -111,52 +111,6 @@
         <display value="PRESCRIPTIONS"/>
       </coding>
     </code>
-    <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <table>
-          <thead>
-            <tr>
-              <th>Präpartename</th>
-              <th>Wirkstoffname</th>
-              <th>Galenische Form</th>
-              <th>Dosis pro Einheit</th>
-              <th>Wiederholter Bezug pro Arzneimittel</th>
-              <th>Dosierung</th>
-              <th>Dos.Morgen</th>
-              <th>Dos.Mittag</th>
-              <th>Dos.Abend</th>
-              <th>Dos.Nacht</th>
-              <th>Verabreichungsweg</th>
-              <th>Kommentar</th>
-              <th>Anwendungsdauer</th>
-              <th>Substituierbarkeit</th>
-              <th>Behandlungsgrund</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="pre.1">
-              <td id="pre.1.brandedmedication">Norvasc</td>
-              <td id="pre.1.ingredient">Amlodipin</td>
-              <td id="pre.1.dosequantity">Tbl</td>
-              <td id="pre.1.packageform">10 mg/Tabl</td>
-              <td id="pre.1.repeat">Dauerrezept 3 Monate</td>
-              <td id="pre.1.dosageintakemode">Morgens und abends je 1 Tablette nehmen</td>
-              <td id="pre.1.packagesize">30</td>
-              <td id="pre.1.dosagemorning">1</td>
-              <td id="pre.1.dosagelunch">0</td>
-              <td id="pre.1.dosageevening">1</td>
-              <td id="pre.1.dosagenight">0</td>
-              <td id="pre.1.routecode">oral</td>
-              <td id="pre.1.note"/>
-              <td id="pre.1.datefromto"/>
-              <td id="pre.1.subst"/>
-              <td id="pre.1.reason"/>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </text>
     <entry>
       <reference value="MedicationRequest/2-6-MedReqNorvasc"/>
     </entry>

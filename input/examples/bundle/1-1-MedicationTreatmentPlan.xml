@@ -297,9 +297,6 @@
                         </ingredient>
                     </Medication>
                 </contained>
-                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                    <valueUrl value="#mtp.1"/>
-                </extension>
                 <!-- substitution just as test case -->
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution">
                     <valueCodeableConcept>
@@ -322,15 +319,9 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <reasonCode>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                        <valueUrl value="#mtp.1.reason"/>
-                    </extension>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <note>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                        <valueUrl value="#mtp.1.note"/>
-                    </extension>
                     <text value="-"/>
                 </note>
                 <dosage>
@@ -364,9 +355,6 @@
                     </doseAndRate>
                 </dosage>
                 <dosage>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                        <valueUrl value="#mtp.1.dosageintakemode"/>
-                    </extension>
                     <text value="Morgens 1/2 Tablette nehmen"/>
                 </dosage>
             </MedicationStatement>
