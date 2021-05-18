@@ -32,6 +32,7 @@
          <path value="Dosage.text"/>
          <short value="Dosage instructions"/>
          <min value="1"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".entryRelationship.substanceAdministration.text"/>

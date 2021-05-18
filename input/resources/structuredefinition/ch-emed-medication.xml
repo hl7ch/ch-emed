@@ -80,6 +80,7 @@
          <path value="Medication.code.text"/>
          <short value="Medication name"/>
          <min value="1"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".name"/>
@@ -100,6 +101,7 @@
       <element id="Medication.form.coding">
          <path value="Medication.form.coding"/>
          <min value="1"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:formCode"/>
@@ -159,6 +161,7 @@
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
          <short value="Ingredient name"/>
          <min value="1"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:name"/>
@@ -167,6 +170,7 @@
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
          <short value="Dose per unit"/>
+         <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".pharm:quantity"/>
