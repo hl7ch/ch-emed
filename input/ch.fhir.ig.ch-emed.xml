@@ -495,12 +495,27 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-medicationrequest"/>
+            <reference value="StructureDefinition/ch-emed-dosage-structured"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured"/>
+            <reference value="StructureDefinition/ch-emed-dosage-structured-normal"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-structured-split"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-structured-normal-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
          </reference>
       </resource>
       <resource>
@@ -511,11 +526,6 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-ext-dispense"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-ext-dosagetype"/>
          </reference>
       </resource>
       <resource>
