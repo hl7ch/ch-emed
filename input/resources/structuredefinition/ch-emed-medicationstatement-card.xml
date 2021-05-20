@@ -86,15 +86,13 @@
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
          <fixedCode value="completed"/>
+      </element>-->
+      <element id="MedicationStatement.medication[x]:medicationReference">
+         <path value="MedicationStatement.medication[x]"/>
+         <sliceName value="medicationReference"/>
+         <mustSupport value="true"/>
       </element>
-      <element id="MedicationStatement.medicationReference">
-         <path value="MedicationStatement.medicationReference"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
-         </type>
-      </element>
-      <element id="MedicationStatement.subject">
+      <!--<element id="MedicationStatement.subject">
          <path value="MedicationStatement.subject"/>
       </element>
       <element id="MedicationStatement.subject.reference">
