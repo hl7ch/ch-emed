@@ -22,6 +22,12 @@
       <element id="MedicationRequest">
          <path value="MedicationRequest"/>
          <short value="CH EMED MedicationRequest"/>
+         <constraint>
+               <key value="ch-dosage-2"/>
+               <severity value="error"/>
+               <human value="If dosing is structured it must be normal or split dosing"/>
+               <expression value="dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 or dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0"/>
+         </constraint>
          <mapping>
             <identity value="cda"/>
             <map value="substanceAdministration"/>
@@ -158,13 +164,26 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
          </type>
       </element>
-      <element id="MedicationRequest.dosageInstruction:structured">
+      <element id="MedicationRequest.dosageInstruction:structurednormal">
          <path value="MedicationRequest.dosageInstruction"/>
-         <sliceName value="structured"/>
-         <short value="Structured dosage instructions"/>
+         <sliceName value="structurednormal"/>
+         <short value="Structured Normal Dosing"/>
+         <min value="0"/>
+         <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-medicationrequest"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal-medicationrequest"/>
+         </type>
+      </element>
+      <element id="MedicationRequest.dosageInstruction:structuredsplit">
+         <path value="MedicationRequest.dosageInstruction"/>
+         <sliceName value="structuredsplit"/>
+         <short value="Structured Split Dsosing"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
          </type>
       </element>
       <element id="MedicationRequest.dispenseRequest">

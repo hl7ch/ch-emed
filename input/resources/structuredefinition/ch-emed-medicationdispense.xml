@@ -22,6 +22,12 @@
       <element id="MedicationDispense">
          <path value="MedicationDispense"/>
          <short value="CH EMED MedicationDispense"/>
+         <constraint>
+               <key value="ch-dosage-3"/>
+               <severity value="error"/>
+               <human value="If dosing is structured it must be normal or split dosing"/>
+               <expression value="dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 or dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0"/>
+         </constraint>
          <mapping>
             <identity value="cda"/>
             <map value="supply"/>
@@ -200,13 +206,26 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
          </type>
       </element>
-      <element id="MedicationDispense.dosageInstruction:structured">
+      <element id="MedicationDispense.dosageInstruction:structurednormal">
          <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="structured"/>
-         <short value="Structured dosage instructions"/>
+         <sliceName value="structurednormal"/>
+         <short value="Structured Normal Dosing"/>
+         <min value="0"/>
+         <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal"/>
+         </type>
+      </element>
+      <element id="MedicationDispense.dosageInstruction:structuredsplit">
+         <path value="MedicationDispense.dosageInstruction"/>
+         <sliceName value="structuredsplit"/>
+         <short value="Structured Split Dosing"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="Dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split"/>
          </type>
       </element>
       <element id="MedicationDispense.substitution">
