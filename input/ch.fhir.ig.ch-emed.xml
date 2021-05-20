@@ -515,11 +515,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-dosagetype"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-ext-pharmaceuticaladvice"/>
          </reference>
       </resource>
