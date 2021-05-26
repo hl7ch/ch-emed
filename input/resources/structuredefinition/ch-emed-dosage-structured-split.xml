@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split"/>
    <version value="0.1.0"/>
    <name value="CHEMEDDosageStructuredSplit"/>
-   <title value="CH EMED Dosage Structured Profile Split dosing"/>
+   <title value="CH EMED Dosage Structured Profile Split Dosing"/>
    <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
