@@ -696,6 +696,11 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="dosage.html"/>
+            <title value="Dosage"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="profiles.html"/>
             <title value="Profiles"/>
             <generation value="html"/>

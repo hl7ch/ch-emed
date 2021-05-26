@@ -1,0 +1,37 @@
+@startuml
+
+skinparam svgDimensionStyle false
+
+object "Dosage" as dosage {
+  baseDefinition: http://hl7.org/fhir/StructureDefinition/Dosage
+}
+object "CH EMED Dosage Non-Structured Profile" as dosagenonstructured {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured
+}
+object "CH EMED Dosage Structured Profile (MedicationStatement / MedicationDispense)" as dosagestructured {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured
+}
+object "CH EMED Dosage Structured Profile Normal Dosing" as dosagestructurednormal {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal
+  Normal dosing (IHE PHARM 1.3.6.1.4.1.19376.1.5.3.1.4.7.1)
+}
+object "CH EMED Dosage Structured Profile Split dosing" as dosagestructuredsplit {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split
+  Split dosing (IHE PHARM 1.3.6.1.4.1.19376.1.5.3.1.4.9)
+}
+object "CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)" as dosagestructurednormalmedicationrequest {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal-medicationrequest
+  Normal dosing (IHE PHARM 1.3.6.1.4.1.19376.1.5.3.1.4.7.1)
+}
+object "CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)" as dosagestructuredsplitmedicationrequest {
+  url = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split-medicationrequest
+  Split dosing (IHE PHARM 1.3.6.1.4.1.19376.1.5.3.1.4.9)
+}
+
+dosage <|-- dosagenonstructured
+dosage <|-- dosagestructured
+dosagestructured <|-- dosagestructurednormal
+dosagestructured <|-- dosagestructuredsplit
+dosagestructurednormal <|-- dosagestructurednormalmedicationrequest
+dosagestructuredsplit <|-- dosagestructuredsplitmedicationrequest
+@enduml
