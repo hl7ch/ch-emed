@@ -18,9 +18,6 @@
       <Composition>
         <id value="2-7-MedicationCard"/>
         <language value="de-CH"/>
-        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-          <valueUnsignedInt value="1"/>
-        </extension>
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
           <valueReference>
             <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -72,12 +69,6 @@
           <reference value="Organization/Custodian"/>
         </custodian>
         <section>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-            <valueIdentifier>
-              <system value="urn:ietf:rfc:3986"/>
-              <value value="urn:uuid:5fb3eacf-be0d-42aa-9619-abf008c50051"/>
-            </valueIdentifier>
-          </extension>
           <title value="Medikamentenliste"/>
           <code>
             <coding>
@@ -272,7 +263,7 @@
             <amount>
               <numerator>
                 <value value="30"/>
-                <unit value="Tablet"/>
+                <unit value="Tablet (unit of presentation)"/>
                 <system value="http://snomed.info/sct"/>
                 <code value="732936001"/>
               </numerator>
@@ -295,13 +286,13 @@
               <strength>
                 <numerator>
                   <value value="50"/>
-                  <unit value="mg"/>
+                  <unit value="milligram"/>
                   <system value="http://unitsofmeasure.org"/>
                   <code value="mg"/>
                 </numerator>
                 <denominator>
                   <value value="1"/>
-                  <unit value="Tablet"/>
+                  <unit value="Tablet (unit of presentation)"/>
                   <system value="http://snomed.info/sct"/>
                   <code value="732936001"/>
                 </denominator>
@@ -363,7 +354,7 @@
           <doseAndRate>
             <doseQuantity>
               <value value="1"/>
-              <unit value="Tablette" />
+              <unit value="Tablet (unit of presentation)"/>
               <system value="http://snomed.info/sct"/>
               <code value="732936001"/>
             </doseQuantity>
@@ -389,7 +380,7 @@
           <doseAndRate>
             <doseQuantity>
               <value value="0.5"/>
-              <unit value="Tablette" />
+              <unit value="Tablet (unit of presentation)"/>
               <system value="http://snomed.info/sct"/>
               <code value="732936001"/>
             </doseQuantity>
@@ -424,7 +415,7 @@
             <amount>
               <numerator>
                 <value value="30"/>
-                <unit value="Tablet"/>
+                <unit value="Tablet (unit of presentation)"/>
                 <system value="http://snomed.info/sct"/>
                 <code value="732936001"/>
               </numerator>
@@ -447,13 +438,13 @@
               <strength>
                 <numerator>
                   <value value="10"/>
-                  <unit value="mg"/>
+                  <unit value="milligram"/>
                   <system value="http://unitsofmeasure.org"/>
                   <code value="mg"/>
                 </numerator>
                 <denominator>
                   <value value="1"/>
-                  <unit value="Tablet"/>
+                  <unit value="Tablet (unit of presentation)"/>
                   <system value="http://snomed.info/sct"/>
                   <code value="732936001"/>
                 </denominator>
@@ -513,7 +504,7 @@
           <doseAndRate>
             <doseQuantity>
               <value value="1"/>
-              <unit value="Tablette" />
+              <unit value="Tablet (unit of presentation)"/>
               <system value="http://snomed.info/sct"/>
               <code value="732936001"/>
             </doseQuantity>
