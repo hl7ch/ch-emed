@@ -1,6 +1,7 @@
 ### Overview
 
-Intro TBD (1-1-1-1 format, normal/split)
+This implementation guide currently describes the unstructured and the structured dosage. For the unstructured form, the dosage is given as free text. With structured dosing, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. In this case, an additional differentiation is made whether it is a normal or split dosing. For normal dosing, the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For split dosing, the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).
+
 
 <div>{% include dosage.svg %}</div>
 
@@ -72,11 +73,11 @@ The normal dosing is represented using **one structured dosage element**.
 
 See the full example: [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.json.html)
 
-#### Split Dosing (incl. Dosage Non-Structured)
+### Split Dosing (incl. Dosage Non-Structured)
 The split dosing differs from the normal dosing in that the dosage element can be repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element **sequence**.   
 (One non-structured dosage element may be additionally be present.)
 
-**Dosage example according the use case step 2-3:**
+#### Dosage example according the use case step 2-3
 
 {:class="table table-bordered"}
 | Dosage non-structured | Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
