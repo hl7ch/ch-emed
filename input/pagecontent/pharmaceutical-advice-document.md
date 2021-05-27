@@ -3,6 +3,16 @@ The **Pharmaceutical Advice document** is a document in which health professiona
 * IPAG report: eMedicationComment
 * IHE Pharmacy Profil: PADV (Pharmacy Pharmaceutical Advice)
 
+The Pharmaceutical Advice document may have het following purposes:
+* Document complementary information on active medication ([OK](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+* Change of medication ([CHANGE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+   * [Example](Bundle-PharmaceuticalAdvice-ChangeDosage.html) with dosage change: 1 tablet in the morning instead of 0.5 tablet (as decided in use case step 1-1) 
+* Refusal the medication until further discussion ([REFUSE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+* Definite cancelation of the medication ([CANCEL](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+   * [Example](Bundle-2-2-PharmaceuticalAdvice.html) from use case step 2-2: Medication is being stopped due to adverse medication reaction (dry cough)
+* Medication is temporarily set to suspended with the decision on how to continue postponded to al later point of time ([SUSPEND](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+* Comment on medication ([COMMENT](ValueSet-ihe-pharmaceuticaladvicestatuslist.html))
+
 
 ### FHIR document (Bundle)
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
