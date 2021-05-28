@@ -5,11 +5,15 @@ This implementation guide currently describes the unstructured and the structure
 
 The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Module (1.3.6.1.4.1.19376.1.9.1.3.6)* in the [IHE Pharmacy Technical Framework Supplement Community Prescription (PRE)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PRE.pdf).
 
-#### Timing
+#### Timing Event
 For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) are recommended for the Swiss use.
 
+#### Route of Administration
+A code for specifying the route of administration into or onto a patient's body comes from the [ValueSet EDQM - RouteOfAdministration](ValueSet-edqm-routeofadministration.html).
 
-<div>{% include dosage.svg %}</div>
+#### Dose and Rate
+The amount of medication administered is represented with SNOMED CT or UCUM codes, which are defined in the ValueSet [UnitCode](ValueSet-UnitCode.html).
+
 
 
 <div markdown="5" class="dragon">
@@ -163,3 +167,6 @@ The split dosing differs from the normal dosing in that the dosage element can b
 ```
 
 See the full example: [2-3 Medication Treatment Plan document](Bundle-2-3-MedicationTreatmentPlan.json.html)
+
+### Dosage Profiles
+<div>{% include dosage.svg %}</div>
