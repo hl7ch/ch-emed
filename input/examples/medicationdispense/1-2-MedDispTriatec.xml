@@ -99,7 +99,7 @@
         <boundsPeriod>
           <start value="2011-11-29"/>
         </boundsPeriod>
-        <when value="ACM"/>
+        <when value="MORN"/>
       </repeat>
     </timing>
     <route>

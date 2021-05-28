@@ -323,7 +323,7 @@
               <boundsPeriod>
                 <start value="2012-02-04"/>
               </boundsPeriod>
-              <when value="ACM"/>
+              <when value="MORN"/>
             </repeat>
           </timing>
           <route>
@@ -349,7 +349,7 @@
               <boundsPeriod>
                 <start value="2012-02-04"/>
               </boundsPeriod>
-              <when value="ACV"/>
+              <when value="EVE"/>
             </repeat>
           </timing>
           <route>
@@ -472,8 +472,8 @@
               <boundsPeriod>
                 <start value="2012-02-04"/>
               </boundsPeriod>
-              <when value="ACM"/>
-              <when value="ACV"/>
+              <when value="MORN"/>
+              <when value="EVE"/>
             </repeat>
           </timing>
           <route>

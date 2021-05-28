@@ -5,6 +5,10 @@ This implementation guide currently describes the unstructured and the structure
 
 The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Module (1.3.6.1.4.1.19376.1.9.1.3.6)* in the [IHE Pharmacy Technical Framework Supplement Community Prescription (PRE)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PRE.pdf).
 
+#### Timing
+For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) are recommended for the Swiss use.
+
+
 <div>{% include dosage.svg %}</div>
 
 
@@ -46,7 +50,7 @@ The normal dosing is represented using **one structured dosage element**.
                 "start" : "2011-11-29"
             },
             "when" : [
-                "ACM"
+                "MORN"
             ]
           }
         },
@@ -63,7 +67,7 @@ The normal dosing is represented using **one structured dosage element**.
             {
             "doseQuantity" : {
                 "value" : 0.5,
-                "unit" : "Tablette",
+                "unit" : "Tablet (unit of presentation)",
                 "system" : "http://snomed.info/sct",
                 "code" : "732936001"
             }
@@ -99,7 +103,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
                 "start" : "2012-02-04"
             },
             "when" : [
-                "ACM"
+                "MORN"
             ]
           }
         },
@@ -116,7 +120,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
           {
             "doseQuantity" : {
                 "value" : 1,
-                "unit" : "Tablette",
+                "unit" : "Tablet (unit of presentation)",
                 "system" : "http://snomed.info/sct",
                 "code" : "732936001"
             }
@@ -131,7 +135,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
                 "start" : "2012-02-04"
             },
             "when" : [
-                "ACV"
+                "EVE"
             ]
           }
         },
@@ -148,7 +152,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
             {
             "doseQuantity" : {
                 "value" : 0.5,
-                "unit" : "Tablette",
+                "unit" : "Tablet (unit of presentation)",
                 "system" : "http://snomed.info/sct",
                 "code" : "732936001"
             }
