@@ -1,7 +1,9 @@
 @startuml
 
 skinparam svgDimensionStyle false
-title Different dosage forms in CH EMED with the links to the profiles
+
+title Dosage instructions in CH EMED with the links to the profiles
+skinparam titleFontSize 12
 
 object "Dosage" as dosage {
   [[http://hl7.org/fhir/StructureDefinition/Dosage Dosage (basic profile)]]
