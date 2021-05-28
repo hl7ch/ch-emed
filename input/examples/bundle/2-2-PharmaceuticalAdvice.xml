@@ -189,11 +189,7 @@
                     <value value="7601000234438"/>
                 </identifier>
                 <name value="Hausarzt"/>
-                <telecom>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor">
-                        <valueCode value="NI"/>
-                    </extension>
-                </telecom>
+
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>

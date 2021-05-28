@@ -25,7 +25,7 @@
       <amount>
         <numerator>
           <value value="20"/>
-          <unit value="Tablet"/>
+          <unit value="Tablet (unit of presentation)"/>
           <system value="http://snomed.info/sct"/>
           <code value="732936001"/>
         </numerator>
@@ -48,13 +48,13 @@
         <strength>
           <numerator>
             <value value="2.5"/>
-            <unit value="mg"/>
+            <unit value="milligram"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mg"/>
           </numerator>
           <denominator>
             <value value="1"/>
-            <unit value="Tablet"/>
+            <unit value="Tablet (unit of presentation)"/>
             <system value="http://snomed.info/sct"/>
             <code value="732936001"/>
           </denominator>
@@ -98,7 +98,7 @@
     <doseAndRate>
       <doseQuantity>
         <value value="0.5"/>
-        <unit value="Tablette" />
+        <unit value="Tablet (unit of presentation)"/>
         <system value="http://snomed.info/sct"/>
         <code value="732936001"/>
       </doseQuantity>
