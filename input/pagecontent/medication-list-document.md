@@ -1,7 +1,7 @@
 The **Medication List document** aims to fully comprise the current medication of a patient. It consists of Medication Treatment Plan, Medication Prescription, Medication Dispense and Pharmaceutical Advice entries.
 
-* IPAG report: eCurrentMedication
-* IHE Pharmacy Profil: PML (Pharmacy Medication List)
+* [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eCurrentMedication
+* [IHE Pharmacy Technical Framework Supplement: Community Medication List (PML)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PML.pdf)
 
 
 ### FHIR document (Bundle)

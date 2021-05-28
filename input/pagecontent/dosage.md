@@ -3,7 +3,7 @@
 This implementation guide currently describes the unstructured and the structured dosage. For the unstructured form, the dosage is given as free text. With structured dosing, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. In this case, an additional differentiation is made whether it is a normal or split dosing. For [normal dosing](#normal-dosing-incl-dosage-non-structured), the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For [split dosing](#split-dosing-incl-dosage-non-structured), the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).
 
 
-The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Module (1.3.6.1.4.1.19376.1.9.1.3.6)* in the [IHE Pharmacy Technical Framework Supplement Community Prescription (PRE)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PRE.pdf).
+The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Module (1.3.6.1.4.1.19376.1.9.1.3.6)* in the [IHE Pharmacy Technical Framework Supplement: Community Prescription (PRE)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PRE.pdf).
 
 #### Timing Event
 For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) are highly recommended for the Swiss use.

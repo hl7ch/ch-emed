@@ -1,7 +1,7 @@
 The **Medication Dispense document** describes the direct dispensation of ONE drug to a patient or legitimized third party with regard to a later application of the product by a qualified health professional.
     
-* IPAG report: eDispense
-* IHE Pharmacy Profil: DIS (Dispense)
+* [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eDispense
+* [IHE Pharmacy Technical Framework Supplement: Community Dispense (DIS)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_DIS.pdf)
 
 
 ### FHIR document (Bundle)

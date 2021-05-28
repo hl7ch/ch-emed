@@ -1,6 +1,6 @@
 The **Medication Card document** describes the current medication of a patient, medications (MORE) that have been, is or will be taken by the patient.
     
-* IPAG report: eCurrentMedication, different view
+* [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eCurrentMedication, different view
 
 
 ### FHIR document (Bundle)
