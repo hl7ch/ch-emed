@@ -111,7 +111,6 @@
                   <status value="generated"/>
                   <div xmlns="http://www.w3.org/1999/xhtml">
                      <a href="Binary/2-6-pdf">Representation of the original view</a>
-                     <img src="2-6-pdf"/>
                   </div>
                </text>
                <entry>
@@ -347,7 +346,7 @@
                   <value value="1"/>
                </quantity>
             </dispenseRequest>
-            <!-- substitution just as test case -->
+            <!-- substitution just as test case 
             <substitution>
                <allowedCodeableConcept>
                   <coding>
@@ -356,7 +355,7 @@
                      <display value="equivalent"/>
                   </coding>
                </allowedCodeableConcept>
-            </substitution>
+            </substitution> -->
          </MedicationRequest>
       </resource>
    </entry>

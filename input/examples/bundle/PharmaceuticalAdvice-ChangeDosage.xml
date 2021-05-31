@@ -80,12 +80,6 @@
                     <reference value="Organization/Custodian"/>
                 </custodian>
                 <section>
-                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"/>
-                        </valueIdentifier>
-                    </extension>
                     <title value="Hinweise zur Medikation"/>
                     <code>
                         <coding>

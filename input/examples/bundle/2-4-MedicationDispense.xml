@@ -18,9 +18,6 @@
             <Composition>
                 <id value="2-4-MedicationDispense"/>
                 <language value="de-CH"/>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                    <valueUnsignedInt value="1"/>
-                </extension>
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                     <valueReference>
                         <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -32,16 +29,15 @@
                 </identifier>
                 <status value="final"/>
                 <type>
-                    <!-- TBD -->
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="419891008"/>
-                        <display value="Record artifact (record artifact)"/>
-                    </coding>
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="60593-1"/>
                         <display value="Medication dispensed.extended"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419891008"/>
+                        <display value="Record artifact (record artifact)"/>
                     </coding>
                 </type>
                 <subject>
@@ -73,12 +69,6 @@
                     <reference value="Organization/Custodian"/>
                 </custodian>
                 <section>
-                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>
-                        </valueIdentifier>
-                    </extension>
                     <title value="Abgabe eines Medikaments"/>
                     <code>
                         <coding>
@@ -301,6 +291,9 @@
                         </ingredient>
                     </Medication>
                 </contained>
+                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                    <valueUrl value="#dis.1"/>
+                </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
                         <valueIdentifier>
@@ -330,13 +323,18 @@
                     <value value="1"/>
                 </quantity>
                 <note>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#dis.1.note"/>
+                    </extension>
                     <text value="-"/>
                 </note>
                 <dosageInstruction>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#dis.1.dosageintakemode"/>
+                    </extension>
                     <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
                 </dosageInstruction>
                 <dosageInstruction>
-
                     <sequence value="1"/>
                     <timing>
                         <repeat>
@@ -363,7 +361,6 @@
                     </doseAndRate>
                 </dosageInstruction>
                 <dosageInstruction>
-
                     <sequence value="2"/>
                     <timing>
                         <repeat>
@@ -389,7 +386,7 @@
                         </doseQuantity>
                     </doseAndRate>
                 </dosageInstruction>
-                <!-- substitution just as test case -->
+                <!-- substitution just as test case
                 <substitution>
                     <wasSubstituted value="true"/>
                     <type>
@@ -399,7 +396,7 @@
                             <display value="equivalent"/>
                         </coding>
                     </type>
-                </substitution>
+                </substitution> -->
             </MedicationDispense>
         </resource>
     </entry>

@@ -30,16 +30,15 @@
                 </identifier>
                 <status value="final"/>
                 <type>
-                    <!-- TBD -->
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="419891008"/>
-                        <display value="Record artifact (record artifact)"/>
-                    </coding>
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="77603-9"/>
                         <display value="Medication treatment plan.extended"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419891008"/>
+                        <display value="Record artifact (record artifact)"/>
                     </coding>
                 </type>
                 <subject>
@@ -71,12 +70,6 @@
                     <reference value="Organization/Custodian"/>
                 </custodian>
                 <section>
-                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
-                        </valueIdentifier>
-                    </extension>
                     <title value="Medikamentöser Behandlungsplan"/>
                     <code>
                         <coding>
