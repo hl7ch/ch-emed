@@ -77,7 +77,7 @@
     </text>
   </section>
   <section>
-    <title value="Original representation"/>
+    <title value="Original Darstellung"/>
     <code>
       <coding>
         <system value="http://loinc.org"/>

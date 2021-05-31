@@ -109,8 +109,13 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <short value="'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in italian or 'Medication Card' in english
+         <constraint>
+            <key value="ch-emed-title"/>
+            <severity value="error"/>
+            <human value="'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in talian or 'Medication Card' in english
                         or titles in other languages are also allowed"/>
+            <expression value="($this='Medikationsplan' and %resource.language.startsWith('de')) or ($this='Plan de médication' and %resource.language.startsWith('fr')) or ($this='Piano farmacologico' and %resource.language.startsWith('it')) or ($this='Medication Card' and %resource.language.startsWith('en'))"/>
+         </constraint>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -188,7 +193,13 @@
       </element>
       <element id="Composition.section.title:originalRepresentation">
          <path value="Composition.section.title"/>
-         <short value="Original representation"/>
+         <constraint>
+            <key value="ch-emed-sect-or"/>
+            <severity value="error"/>
+            <human value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in talian or 'Original representation' in english
+                        or titles in other languages are also allowed"/>
+            <expression value="($this='Original Darstellung' and %resource.language.startsWith('de')) or ($this='Représentation originale' and %resource.language.startsWith('fr')) or ($this='Rappresentazione originale' and %resource.language.startsWith('it')) or ($this='Original representation' and %resource.language.startsWith('en'))"/>
+         </constraint>
       </element>
       <element id="Composition.section.code:originalRepresentation">
          <path value="Composition.section.code"/>
@@ -215,7 +226,7 @@
       <element id="Composition.section.section:originalRepresentation">
          <path value="Composition.section.section"/>
       </element>
-      
+
       <!-- Section Card (Medication Statement) -->
       <element id="Composition.section:card">
          <path value="Composition.section"/>
@@ -242,8 +253,13 @@
       </element>
       <element id="Composition.section.title:card">
          <path value="Composition.section.title"/>
-         <short value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in talian or 'Medication List' in english
+         <constraint>
+            <key value="ch-emed-sect-card"/>
+            <severity value="error"/>
+            <human value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in talian or 'Medication List' in english
                         or titles in other languages are also allowed"/>
+            <expression value="($this='Medikamentenliste' and %resource.language.startsWith('de')) or ($this='Liste de médicaments' and %resource.language.startsWith('fr')) or ($this='Lista farmaci' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
+         </constraint>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -329,8 +345,13 @@
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
-         <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
+         <constraint>
+            <key value="ch-emed-sect-annoot"/>
+            <severity value="error"/>
+            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in talian or 'Comment' in english
                         or titles in other languages are also allowed"/>
+            <expression value="($this='Kommentar' and %resource.language.startsWith('de')) or ($this='Commentaire' and %resource.language.startsWith('fr')) or ($this='Osservazione' and %resource.language.startsWith('it')) or ($this='Comment' and %resource.language.startsWith('en'))"/>
+         </constraint>
          <min value="1"/>
          <max value="1"/>
       </element>
