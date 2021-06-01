@@ -16,9 +16,7 @@
             <Composition>
                 <id value="2-2-PharmaceuticalAdvice"/>
                 <language value="de-CH"/>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                    <valueUnsignedInt value="1"/>
-                </extension>
+
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                     <valueReference>
                         <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -228,6 +226,9 @@
         <resource>
             <Observation>
                 <id value="2-2-PharmaceuticalAdvice"/>
+                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                    <valueUrl value="#padv.1"/>
+                </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
                         <valueIdentifier>
@@ -258,6 +259,9 @@
                 </subject>
                 <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
                 <note>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#padv.1.note"/>
+                    </extension>
                     <text value="Abgesetzt aufgrund UAW trockener Husten"/>
                 </note>
             </Observation>

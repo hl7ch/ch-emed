@@ -5,9 +5,6 @@
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription"/>
   </meta>
   <language value="de-CH"/>
-  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-    <valueUnsignedInt value="1"/>
-  </extension>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
     <valueReference>
       <reference value="Patient/MonikaWegmuellerRecipient"/>
