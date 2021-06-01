@@ -16,7 +16,6 @@
             <Composition>
                 <id value="2-5-MedicationTreatmentPlan"/>
                 <language value="de-CH"/>
-
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                     <valueReference>
                         <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -230,6 +229,9 @@
                     <Medication>
                         <id value="med"/>
                         <code>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                <valueUrl value="#mtp.1"/>
+                            </extension>
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
                                 <code value="7680500440334"/>
