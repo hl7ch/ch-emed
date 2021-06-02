@@ -226,9 +226,6 @@
         <resource>
             <Observation>
                 <id value="2-2-PharmaceuticalAdvice"/>
-                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                    <valueUrl value="#padv.1"/>
-                </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
                         <valueIdentifier>

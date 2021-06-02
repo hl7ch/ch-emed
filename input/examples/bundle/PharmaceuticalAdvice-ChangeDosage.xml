@@ -37,16 +37,15 @@
                 </identifier>
                 <status value="final"/>
                 <type>
-                    <!-- TBD -->
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="419891008"/>
-                        <display value="Record artifact (record artifact)"/>
-                    </coding>
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="61356-2"/>
                         <display value="Medication pharmaceutical advice.extended"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="419891008"/>
+                        <display value="Record artifact (record artifact)"/>
                     </coding>
                 </type>
                 <subject>
@@ -190,11 +189,7 @@
                     <value value="7601000234438"/>
                 </identifier>
                 <name value="Hausarzt"/>
-                <telecom>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor">
-                        <valueCode value="NI"/>
-                    </extension>
-                </telecom>
+
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>
@@ -277,6 +272,9 @@
                 </subject>
                 <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
                 <note>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#padv.1.note"/>
+                    </extension>
                     <text value="Dosierungsänderung: Morgens 1 Tablette anstatt 0.5 Tablette"/>
                 </note>
             </Observation>
@@ -291,6 +289,9 @@
                     <Medication>
                         <id value="med"/>
                         <code>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                <valueUrl value="#padv.1"/>
+                            </extension>
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
                                 <code value="7680538751228"/>
@@ -308,7 +309,7 @@
                         <amount>
                             <numerator>
                                 <value value="20"/>
-                                <unit value="Tablet"/>
+                                <unit value="Tablet (unit of presentation)"/>
                                 <system value="http://snomed.info/sct"/>
                                 <code value="732936001"/>
                             </numerator>
@@ -331,13 +332,13 @@
                             <strength>
                                 <numerator>
                                     <value value="2.5"/>
-                                    <unit value="mg"/>
+                                    <unit value="milligram"/>
                                     <system value="http://unitsofmeasure.org"/>
                                     <code value="mg"/>
                                 </numerator>
                                 <denominator>
                                     <value value="1"/>
-                                    <unit value="Tablet"/>
+                                    <unit value="Tablet (unit of presentation)"/>
                                     <system value="http://snomed.info/sct"/>
                                     <code value="732936001"/>
                                 </denominator>
@@ -345,6 +346,9 @@
                         </ingredient>
                     </Medication>
                 </contained>
+                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                    <valueUrl value="#padv.1"/>
+                </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"/>
@@ -357,9 +361,15 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <reasonCode>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#padv.1.reason"/>
+                    </extension>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <note>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#padv.1.note"/>
+                    </extension>
                     <text value="-"/>
                 </note>
                 <dosage>
@@ -368,7 +378,7 @@
                             <boundsPeriod>
                                 <start value="2011-11-29"/>
                             </boundsPeriod>
-                            <when value="ACM"/>
+                            <when value="MORN"/>
                         </repeat>
                     </timing>
                     <route>
@@ -381,13 +391,16 @@
                     <doseAndRate>
                         <doseQuantity>
                             <value value="1"/>
-                            <unit value="Tablette" />
+                            <unit value="Tablet (unit of presentation)"/>
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>
                     </doseAndRate>
                 </dosage>
                 <dosage>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                        <valueUrl value="#padv.1.dosageintakemode"/>
+                    </extension>
                     <text value="Morgens 1 Tablette nehmen"/>
                 </dosage>
             </MedicationStatement>
