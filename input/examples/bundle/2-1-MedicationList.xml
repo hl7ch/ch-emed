@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="2-1-MedicationList"/>
     <meta>
@@ -13,14 +12,13 @@
     <type value="document"/>
     <timestamp value="2012-02-04T13:55:00+01:00"/>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Composition/2-1-MedicationList"/>
+        <fullUrl value="urn:uuid:eb4023eb-bc97-4223-86ac-5e2d80fd94ec"/>
         <resource>
             <Composition>
-                <id value="2-1-MedicationList"/>
                 <language value="de-CH"/>
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                     <valueReference>
-                        <reference value="Patient/MonikaWegmuellerRecipient"/>
+                        <reference value="urn:uuid:e89c0e17-a3af-4179-a089-1a2189f5241c"/>
                     </valueReference>
                 </extension>
                 <identifier>
@@ -41,17 +39,17 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
+                    <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                 </subject>
                 <date value="2012-02-04T13:55:00+01:00"/>
                 <author>
                     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
                         <valueDateTime value="2012-02-04T13:55:00+01:00"/>
                     </extension>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
                 </author>
                 <author>
-                    <reference value="Organization/Hausarzt"/>
+                    <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
                 </author>
                 <title value="Medikationsliste"/>
                 <confidentiality value="N">
@@ -66,9 +64,15 @@
                     </extension>
                 </confidentiality>
                 <custodian>
-                    <reference value="Organization/Custodian"/>
+                    <reference value="urn:uuid:c7ab130a-7962-47f8-bd62-4f40e0099f4d"/>
                 </custodian>
                 <section>
+                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:f5ee14ee-52dc-48b0-8d96-e2713c99e607"/>
+                        </valueIdentifier>
+                    </extension>
                     <title value="Medikamentenliste"/>
                     <code>
                         <coding>
@@ -112,8 +116,8 @@
                                         <td id="mtp.1.dosageevening">0</td>
                                         <td id="mtp.1.dosagenight">0</td>
                                         <td id="mtp.1.routecode">oral</td>
-                                        <td id="mtp.1.note"></td>
-                                        <td id="mtp.1.datefromto"></td>
+                                        <td id="mtp.1.note"/>
+                                        <td id="mtp.1.datefromto"/>
                                         <td id="mtp.1.reason">Bluthochdruck</td>
                                     </tr>
                                 </tbody>
@@ -155,31 +159,30 @@
                                         <td id="dis.1.dosageevening">0</td>
                                         <td id="dis.1.dosagenight">0</td>
                                         <td id="dis.1.routecode">oral</td>
-                                        <td id="dis.1.note"></td>
-                                        <td id="dis.1.datefromto"></td>
+                                        <td id="dis.1.note"/>
+                                        <td id="dis.1.datefromto"/>
                                         <td id="dis.1.reason">Bluthochdruck</td>
-                                        <td id="dis.1.dipsensedate"></td>
-                                        <td id="dis.1.dipsenseto"></td>
+                                        <td id="dis.1.dipsensedate"/>
+                                        <td id="dis.1.dipsenseto"/>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </text>
                     <entry>
-                        <reference value="MedicationStatement/1-1-MedStatTriatec"/>
+                        <reference value="urn:uuid:733f5a67-5347-43bb-a3e1-068b10a0d808"/>
                     </entry>
                     <entry>
-                        <reference value="MedicationDispense/1-2-MedDispTriatec"/>
+                        <reference value="urn:uuid:97ebd6b4-f0d9-4ee6-a81b-0853c259d5b6"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
+        <fullUrl value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
         <resource>
             <Patient>
-                <id value="MonikaWegmueller"/>
                 <identifier>
                     <type>
                         <coding>
@@ -206,10 +209,9 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
+        <fullUrl value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
         <resource>
             <Practitioner>
-                <id value="FamilienHausarzt"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000234438"/>
@@ -222,16 +224,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <fullUrl value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
         <resource>
             <Organization>
-                <id value="Hausarzt"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000234438"/>
                 </identifier>
                 <name value="Hausarzt"/>
-
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>
@@ -242,10 +242,9 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/Custodian"/>
+        <fullUrl value="urn:uuid:c7ab130a-7962-47f8-bd62-4f40e0099f4d"/>
         <resource>
             <Organization>
-                <id value="Custodian"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000234438"/>
@@ -255,10 +254,9 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmuellerRecipient"/>
+        <fullUrl value="urn:uuid:e89c0e17-a3af-4179-a089-1a2189f5241c"/>
         <resource>
             <Patient>
-                <id value="MonikaWegmuellerRecipient"/>
                 <name>
                     <family value="Wegmüller"/>
                     <given value="Monika"/>
@@ -273,10 +271,9 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/1-1-MedStatTriatec"/>
+        <fullUrl value="urn:uuid:733f5a67-5347-43bb-a3e1-068b10a0d808"/>
         <resource>
             <MedicationStatement>
-                <id value="1-1-MedStatTriatec"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -347,7 +344,7 @@
                     <reference value="#med"/>
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
+                    <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                 </subject>
                 <reasonCode>
                     <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
@@ -396,10 +393,9 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationDispense/1-2-MedDispTriatec"/>
+        <fullUrl value="urn:uuid:97ebd6b4-f0d9-4ee6-a81b-0853c259d5b6"/>
         <resource>
-            <MedicationDispense xmlns="http://hl7.org/fhir">
-                <id value="1-2-MedDispTriatec"/>
+            <MedicationDispense>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -484,7 +480,7 @@
                     <reference value="#med"/>
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
+                    <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                 </subject>
                 <quantity>
                     <value value="1"/>
@@ -526,17 +522,6 @@
                     </extension>
                     <text value="Morgens 1/2 Tablette nehmen"/>
                 </dosageInstruction>
-                <!-- substitution just as test case -->
-                <substitution>
-                    <wasSubstituted value="true"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                            <code value="E"/>
-                            <display value="equivalent"/>
-                        </coding>
-                    </type>
-                </substitution>
             </MedicationDispense>
         </resource>
     </entry>
