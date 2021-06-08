@@ -366,12 +366,6 @@
                     </extension>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
-                <note>
-                    <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                        <valueUrl value="#padv.1.note"/>
-                    </extension>
-                    <text value="-"/>
-                </note>
                 <dosage>
                     <timing>
                         <repeat>
