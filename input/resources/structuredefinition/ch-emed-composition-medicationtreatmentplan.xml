@@ -208,9 +208,9 @@
          <constraint>
             <key value="ch-emed-sect-mtp"/>
             <severity value="error"/>
-            <human value="'Medikamentöser Behandlungsplan' in german or 'Plan de traitement médicamenteux' in french or 'Piano terapeutico farmacologico' in talian or 'Medication Treatment Plan' in english
+            <human value="'Medikamentöser Behandlungsplan' in german or 'Plan de traitement médicamenteux' in french or 'Piano terapeutico farmacologico' in talian or 'Medication Treatment Plan' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Medikamentöser Behandlungsplan' and %resource.language.startsWith('de')) or ($this='DPlan de traitement médicamenteux' and %resource.language.startsWith('fr')) or ($this='Piano terapeutico farmacologico' and %resource.language.startsWith('it')) or ($this='Medication Treatment Plan' and %resource.language.startsWith('en'))"/>
+            <expression value="($this='Medikamentöser Behandlungsplan' and %resource.language.startsWith('de')) or ($this='Plan de traitement médicamenteux' and %resource.language.startsWith('fr')) or ($this='Piano terapeutico farmacologico' and %resource.language.startsWith('it')) or ($this='Medication Treatment Plan' and %resource.language.startsWith('en'))"/>
          </constraint>
          <min value="1"/>
          <max value="1"/>

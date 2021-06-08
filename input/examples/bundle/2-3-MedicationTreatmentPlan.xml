@@ -67,7 +67,7 @@
                     <reference value="Organization/Custodian"/>
                 </custodian>
                 <section>
-                    <title value="Medikamentöser Behandlungsplan"/>
+                    <title value="Medikamentöser Behandlungsplan"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
