@@ -20,4 +20,292 @@
    </contact>
    <content value="supplement"/>
    <supplements value="http://hl7.org/fhir/event-timing"/>
+   <concept>
+      <code value="PHS"/>
+      <display value="After Sleep"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nach dem Einschlafen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après le coucher"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Dopo il sonno"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Nach dem Einschlafen"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="After Sleep"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="NIGHT"/>
+      <display value="Night"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nacht"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Nuit"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Notte"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Nacht"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Night"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EVE.late"/>
+      <display value="Late Evening"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Später Abend"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Fin de soirée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tarda serata"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Später Abend"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Late Evening"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EVE.early"/>
+      <display value="Early Evening"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Früher Abend"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Début de soirée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima serata"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Früher Abend"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Early Evening"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EVE"/>
+      <display value="Evening"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Abend"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Soirée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Sera"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Abend"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Evening"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="AFT.late"/>
+      <display value="Late Afternoon"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Später Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Fin d’après-midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tardo pomeriggio"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Später Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Late Afternoon"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="AFT.early"/>
+      <display value="Early Afternoon"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Früher Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Début d’après-midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Primo pomeriggio"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Früher Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Early Afternoon"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="AFT"/>
+      <display value="Afternoon"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Après-midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Pomeriggio"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Nachmittag"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Afternoon"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="NOON"/>
+      <display value="Noon"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Mittag"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Midi"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Mezzogiorno"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Mittag"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Noon"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MORN.late"/>
+      <display value="Late Morning"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Später Morgen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Fin de matinée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Tarda mattinata"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Später Morgen"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Late Morning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MORN.early"/>
+      <display value="Early Morning"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Früher Morgen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Début de matinée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Prima mattina"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Früher Morgen"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Early Morning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MORN"/>
+      <display value="Morning"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Morgen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Matinée"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="Mattina"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="Morgen"/>
+      </designation>
+      <designation>
+         <language value="en-US"/>
+         <value value="Morning"/>
+      </designation>
+   </concept>
 </CodeSystem>

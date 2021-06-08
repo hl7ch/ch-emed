@@ -7862,30 +7862,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="428126001"/>
-            <display value="Diphtheria vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Diphtherie-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="diphtérie vaccin"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Difterite vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Diphtherie-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Diphtheria vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="387453004"/>
             <display value="Dipotassium clorazepate (substance)"/>
             <designation>
@@ -12134,30 +12110,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="412374001"/>
-            <display value="Haemophilus influenzae type b vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Haemophilus-influenza-b-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin Haemophilus influenza type B"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Anti-Hemophilus influenzae tipo B (Hib) vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Haemophilus-influenza-b-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Haemophilus influenzae type b vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="395735005"/>
             <display value="Halcinonide (substance)"/>
             <designation>
@@ -12254,30 +12206,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="396423004"/>
-            <display value="Hepatitis A virus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Hepatitis-A-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="hépatite A vaccin"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Epatite A (HAV) vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Hepatitis-A-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Hepatitis A virus vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="303233001"/>
             <display value="Hepatitis B antigen (substance)"/>
             <designation>
@@ -12299,54 +12227,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Hepatitis B antigen"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="412402004"/>
-            <display value="Hepatitis B virus recombinant vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Hepatitis-B-Impfstoff, rekombiniert, monovalent"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="hépatite B vaccin recombiné, monovalent"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Epatite B vaccino ricombinato (ADNr)"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Hepatitis-B-Impfstoff, rekombiniert, monovalent"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Hepatitis B virus recombinant vaccine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="396424005"/>
-            <display value="Hepatitis B virus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Hepatitis-B-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin hépatite B"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Epatite B (HBV) vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Hepatitis-B-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Hepatitis B virus vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -12635,54 +12515,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Human menopausal gonadotropin"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="722219008"/>
-            <display value="Human papilloma virus type 16 and type 18 vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Papillomavirus (human)-Impfstoff, Typ 16 und Typ 18"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="papillomavirus vaccin humain, type 16 et type 18"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Papillomavirus umano tipo 16 e tipo 18 (HPV) vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Papillomavirus (human)-Impfstoff, Typ 16 und Typ 18"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Human papilloma virus type 16 and type 18 vaccine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="724330005"/>
-            <display value="Human papilloma virus type 9 vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Papillomavirus (human)-Impfstoff, Typ 9"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="papillomavirus vaccin humain, type 9"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Papillomavirus umano tipo 9 (HPV) vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Papillomavirus (human)-Impfstoff, Typ 9"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Human papilloma virus type 9 vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -13454,30 +13286,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="396435000"/>
-            <display value="Inactivated Poliovirus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Poliomyelitis-Impfstoff inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="poliomyélite vaccin inactivé"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Poliomielite vaccino inattivato"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Poliomyelitis-Impfstoff inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Inactivated Poliovirus vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="702801003"/>
             <display value="Indacaterol (substance)"/>
             <designation>
@@ -13571,30 +13379,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Infliximab"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="419826009"/>
-            <display value="Influenza split virion vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Influenza-Spalt-Impfstoff, inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin grippal inactivé, virion fragmenté"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Influenza vaccino inattivato, virus frammentati"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Influenza-Spalt-Impfstoff, inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Influenza split virion vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -15542,30 +15326,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="764303004"/>
-            <display value="Live typhoid vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Typhus-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="typhus vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Tifo vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Typhus-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Live typhoid vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="708808004"/>
             <display value="Lixisenatide (substance)"/>
             <designation>
@@ -16214,54 +15974,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="396427003"/>
-            <display value="Measles vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Masern-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="rougeole vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Morbillo vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Masern-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Measles vaccine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="396429000"/>
-            <display value="Measles, mumps and rubella vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Masern-Mumps-Röteln-Lebendimpfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="rougeole-oreillons-rubéole vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Morbillo, parotite, rosolia vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Masern-Mumps-Röteln-Lebendimpfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Measles, mumps and rubella vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="387311004"/>
             <display value="Mebendazole (substance)"/>
             <designation>
@@ -16571,54 +16283,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Memantine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="768366003"/>
-            <display value="Meningococcus group C vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Meningokokken C-Saccharid-T-Konjugat-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="méningite vaccin polysaccharidique C, conjugué T"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Meningite vaccino polisaccaridico C, coniugato"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Meningokokken C-Saccharid-T-Konjugat-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Meningococcus group C vaccine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="424891007"/>
-            <display value="Meningococcus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Meningokokken-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="méningite vaccin"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Meningite vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Meningokokken-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Meningococcus vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -17675,30 +17339,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Moxonidine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="396431009"/>
-            <display value="Mumps vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Mumps-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="virus des oreillons vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Parotite vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Mumps-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Mumps vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -20054,30 +19694,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="396433007"/>
-            <display value="Pertussis vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Pertussis-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin anticoquelucheux"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Pertosse vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Pertussis-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Pertussis vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="704226002"/>
             <display value="Pertuzumab (substance)"/>
             <designation>
@@ -20723,30 +20339,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Plerixafor"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="417011002"/>
-            <display value="Pneumococcal polysaccharide vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Pneumokokken-Polysaccharid-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="pneumocoque vaccin polysaccharidique"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Pneumococchi vaccino polisaccaridico"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Pneumokokken-Polysaccharid-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Pneumococcal polysaccharide vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -22910,30 +22502,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="396438003"/>
-            <display value="Rubella vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Röteln-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="rubéole vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Rosolia vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Röteln-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Rubella vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="429835003"/>
             <display value="Rufinamide (substance)"/>
             <designation>
@@ -24230,30 +23798,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="703745000"/>
-            <display value="Sulfamethoxazole and trimethoprim (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Sulfamethoxazol und Trimethoprim"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="sulfaméthoxazole et triméthoprime"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Sulfametossazolo e trimetoprim"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Sulfamethoxazol und Trimethoprim"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Sulfamethoxazole and trimethoprim"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="387248006"/>
             <display value="Sulfasalazine (substance)"/>
             <designation>
@@ -24854,30 +24398,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="412375000"/>
-            <display value="Tetanus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Tetanus-Adsorbat-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="tétanos vaccin adsorbé"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Tetano vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Tetanus-Adsorbat-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Tetanus vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="387309008"/>
             <display value="Tetracaine (substance)"/>
             <designation>
@@ -25139,30 +24659,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Ticagrelor"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="398783009"/>
-            <display value="Tick-borne encephalitis vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="FSME-Impfstoff, inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="encéphalite verno-estivale FSME inactivé vaccin"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Meningoencefalite verno-estiva (FSME) vaccino inattivato"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="FSME-Impfstoff, inaktiviert"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Tick-borne encephalitis vaccine"/>
             </designation>
          </concept>
          <concept>
@@ -26582,54 +26078,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="412529007"/>
-            <display value="Varicella virus live vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Varizellen-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin varicelle vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Varicella vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Varizellen-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Varicella virus live vaccine"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="396442000"/>
-            <display value="Varicella virus vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Varizellen-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="vaccin varicelle"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Varicella vaccino"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Varizellen-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Varicella virus vaccine"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="259858000"/>
             <display value="Varicella-zoster virus antibody (substance)"/>
             <designation>
@@ -27035,30 +26483,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Xylometazoline"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="396444004"/>
-            <display value="Yellow fever vaccine (substance)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Gelbfieber-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="fièvre jaune vaccin vivant"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Febbre gialla vaccino vivo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Gelbfieber-Lebend-Impfstoff"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Yellow fever vaccine"/>
             </designation>
          </concept>
          <concept>

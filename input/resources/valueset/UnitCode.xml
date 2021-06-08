@@ -1917,7 +1917,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="tbs_m"/>
+            <code value="[tbs_m]"/>
             <display value="tablespoon - metric"/>
             <designation>
                <language value="de-CH"/>

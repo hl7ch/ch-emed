@@ -31,7 +31,7 @@
          <value value="www.e-health-suisse.ch"/>
       </telecom>
    </contact>
-   <description value="Valueset RouteOufAdministration from EQM, ROA, export 24.4.2018, see https://standardterms.edqm.eu/#"/>
+   <description value="Valueset RouteOfAdministration from EDQM, ROA, export 1.6.2021, see https://standardterms.edqm.eu/#"/>
    <immutable value="false"/>
    <compose>
       <include>
@@ -54,6 +54,10 @@
                <language value="it-CH"/>
                <value value="Uso auricolare"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung am Ohr"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -68,6 +72,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie buccogingivale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Somministrazione buccale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Buccale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -88,6 +100,10 @@
                <language value="it-CH"/>
                <value value="Uso cutaneo"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung auf der Haut"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -106,6 +122,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso dentale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="dentale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -126,6 +146,10 @@
                <language value="it-CH"/>
                <value value="Uso endocervicale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="endozervikale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -145,10 +169,14 @@
                <language value="it-CH"/>
                <value value="Uso endosinusiale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung in den Nebenhöhlen"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Administration of a medicinal product to the trachea and/or bronchiae by instillation (preparations for inhalation are excluded; see inhalation use)."/>
+               <valueString value="Administration of a medicinal product to the trachea and/or bronchi by instillation (preparations for inhalation are excluded"/>
             </extension>
             <code value="20008000"/>
             <display value="Endotracheopulmonary use"/>
@@ -163,6 +191,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso endotracheobronchiale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="endotracheopulmonale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -183,6 +215,10 @@
                <language value="it-CH"/>
                <value value="Uso epidurale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="epidurale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -201,6 +237,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso epilesionale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zum Auftragen auf die Wunde"/>
             </designation>
          </concept>
          <concept>
@@ -221,6 +261,10 @@
                <language value="it-CH"/>
                <value value="Uso extra-amniotico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="extraamniotische Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -235,6 +279,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie extracorporelle"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso extracorporeo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="extrakorporale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -255,6 +307,10 @@
                <language value="it-CH"/>
                <value value="Uso gastrointestinale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="gastrointestinale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -273,6 +329,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso gastrico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Anwendung mittels Magensonde"/>
             </designation>
          </concept>
          <concept>
@@ -293,10 +353,14 @@
                <language value="it-CH"/>
                <value value="Uso gengivale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung am Zahnfleisch"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Clearance of the blood by means of a semipermeable membrane. [Previous English term 'Hemodialysis' corrected 04/07/11.]"/>
+               <valueString value="Clearance of the blood by means of a semipermeable membrane. Previous English term 'Hemodialysis' corrected 04/07/11."/>
             </extension>
             <code value="20015000"/>
             <display value="Haemodialysis"/>
@@ -311,6 +375,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Emodialisi"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Hämodialyse"/>
             </designation>
          </concept>
          <concept>
@@ -327,6 +395,14 @@
                <language value="fr-CH"/>
                <value value="Implantation"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Impianto"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Implantation"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -340,6 +416,14 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
+               <value value="Infiltration"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Infiltrazione"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
                <value value="Infiltration"/>
             </designation>
          </concept>
@@ -361,6 +445,10 @@
                <language value="it-CH"/>
                <value value="Uso inalatorio"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Inhalation"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -379,6 +467,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intestinale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intestinale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -399,6 +491,10 @@
                <language value="it-CH"/>
                <value value="Uso intra-amniotico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraamniotische Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -417,6 +513,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso endoarterioso"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraarterielle Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -437,6 +537,10 @@
                <language value="it-CH"/>
                <value value="Uso intra-articolare"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraartikuläre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -456,6 +560,10 @@
                <language value="it-CH"/>
                <value value="Uso intrabursale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrabursale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -470,6 +578,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie intracamérulaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracamerale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrakamerale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -490,6 +606,10 @@
                <language value="it-CH"/>
                <value value="Uso intracardiaco"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intracardiale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -504,6 +624,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie intracartilagineuse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracartilagineo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrakartilaginäre Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -524,10 +652,14 @@
                <language value="it-CH"/>
                <value value="Uso intracavernoso"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrakavernöse Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Administration of a medicinal product directly to the brain tissue."/>
+               <valueString value="Administration of a medicinal product directly to the brain tissue. This term is only for use when a more-specific term (e.g. 'Intraputaminal use') is not applicable."/>
             </extension>
             <code value="20027010"/>
             <display value="Intracerebral use"/>
@@ -542,6 +674,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intracerebrale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Intrazerebrale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -562,6 +698,10 @@
                <language value="it-CH"/>
                <value value="Uso intracervicale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrazervikale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -577,10 +717,18 @@
                <language value="fr-CH"/>
                <value value="Voie intracholangiopancréatique"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracolangiopancreatico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Anwendung in der Cholangiopankreatikographie"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Administration of a medicinal product into the Cisterna Magna"/>
+               <valueString value="Administration of a medicinal product into the cisterna magna."/>
             </extension>
             <code value="20028500"/>
             <display value="Intracisternal use"/>
@@ -591,6 +739,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie intracisternale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracisternale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intracisternale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -611,6 +767,10 @@
                <language value="it-CH"/>
                <value value="Uso intracoronarico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrakoronare Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -629,6 +789,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intradermico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intradermale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -649,6 +813,10 @@
                <language value="it-CH"/>
                <value value="Uso intradiscale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intradiskale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -664,6 +832,14 @@
                <language value="fr-CH"/>
                <value value="Voie intraépidermique"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraepidermico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraepidermale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -678,6 +854,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie intraglandulaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraghiandolare"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraglanduläre Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -698,6 +882,10 @@
                <language value="it-CH"/>
                <value value="Uso intralesionale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraläsionale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -716,6 +904,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intralinfatico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intralymphatische Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -736,6 +928,10 @@
                <language value="it-CH"/>
                <value value="Uso intramuscolare"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intramuskuläre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -754,6 +950,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intraoculare"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraokulare Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -774,6 +974,10 @@
                <language value="it-CH"/>
                <value value="Uso intraosseo"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraossäre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -792,6 +996,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intrapericardico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Intraperikardial"/>
             </designation>
          </concept>
          <concept>
@@ -812,6 +1020,10 @@
                <language value="it-CH"/>
                <value value="Uso intraperitoneale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraperitoneale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -831,6 +1043,10 @@
                <language value="it-CH"/>
                <value value="Uso intrapleurico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrapleurale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -846,6 +1062,14 @@
                <language value="fr-CH"/>
                <value value="Voie intraportale"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraportale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraportale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -860,6 +1084,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie intraprostatique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraprostatico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intraprostatische Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -880,6 +1112,10 @@
                <language value="it-CH"/>
                <value value="Uso intrasternale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrasternale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -898,6 +1134,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intratecale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrathekale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -918,6 +1158,10 @@
                <language value="it-CH"/>
                <value value="Uso intratumorale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intratumorale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -936,6 +1180,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso intrauterino"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intrauterine Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -956,6 +1204,10 @@
                <language value="it-CH"/>
                <value value="Uso endovenoso"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intravenöse Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -974,6 +1226,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso endovescicale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intravesikale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -994,6 +1250,10 @@
                <language value="it-CH"/>
                <value value="Uso intravitreo"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Intravitreal"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1011,7 +1271,11 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="0"/>
+               <value value="Iontoforesi"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Iontophorese"/>
             </designation>
          </concept>
          <concept>
@@ -1032,10 +1296,14 @@
                <language value="it-CH"/>
                <value value="Uso laringofaringeo"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Anwendung im Rachen und am Kehlkopf"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use."/>
+               <valueString value="Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded"/>
             </extension>
             <code value="20049000"/>
             <display value="Nasal use"/>
@@ -1050,6 +1318,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso nasale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="nasale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1070,6 +1342,10 @@
                <language value="it-CH"/>
                <value value="Uso oftalmico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung am Auge"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1088,6 +1364,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso orale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zum Einnehmen"/>
             </designation>
          </concept>
          <concept>
@@ -1108,6 +1388,10 @@
                <language value="it-CH"/>
                <value value="Per mucosa orale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung in der Mundhöhle"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1126,6 +1410,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso orofaringeo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur Anwendung im Mund- und Rachenraum"/>
             </designation>
          </concept>
          <concept>
@@ -1146,6 +1434,10 @@
                <language value="it-CH"/>
                <value value="Uso periarticolare"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="periartikuläre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1164,6 +1456,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso perineurale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="perineurale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1184,6 +1480,10 @@
                <language value="it-CH"/>
                <value value="Uso periodontale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="zur periodontalen Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1199,6 +1499,14 @@
                <language value="fr-CH"/>
                <value value="Voie périosseuse"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso periosseo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="periossäre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1213,6 +1521,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie péritumorale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso peritumorale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="peritumorale Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1233,6 +1549,10 @@
                <language value="it-CH"/>
                <value value="Uso iuxtasclerale posteriore"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="posteriore juxtasclerale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1252,6 +1572,10 @@
                <language value="it-CH"/>
                <value value="Uso rettale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rektale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1266,6 +1590,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie rétrobulbaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso retrobulbare"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="retrobulbäre Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1286,6 +1618,10 @@
                <language value="it-CH"/>
                <value value="Via di somministrazione non specificabile"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Art der Anwendung nicht spezifizierbar"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1304,6 +1640,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Scarificazione"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Einritzen der Haut"/>
             </designation>
          </concept>
          <concept>
@@ -1324,6 +1664,10 @@
                <language value="it-CH"/>
                <value value="Uso subcongiuntivale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="subkonjunktivale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1342,6 +1686,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso sottocutaneo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="subkutane Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1362,6 +1710,10 @@
                <language value="it-CH"/>
                <value value="Uso sublinguale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Sublingual"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1376,6 +1728,14 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie sous-muqueuse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso sottomucosale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="submuköse Anwendung"/>
             </designation>
          </concept>
          <concept>
@@ -1396,6 +1756,10 @@
                <language value="it-CH"/>
                <value value="Uso transdermico"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="transdermale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1414,6 +1778,10 @@
             <designation>
                <language value="it-CH"/>
                <value value="Uso uretrale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Anwendung in der Harnröhre"/>
             </designation>
          </concept>
          <concept>
@@ -1434,6 +1802,10 @@
                <language value="it-CH"/>
                <value value="Uso vaginale"/>
             </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="vaginale Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1449,6 +1821,14 @@
                <language value="fr-CH"/>
                <value value="Voie intracérébroventriculaire"/>
             </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracerebroventricolare"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intracerebroventrikuläre Anwendung"/>
+            </designation>
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -1463,6 +1843,60 @@
             <designation>
                <language value="fr-CH"/>
                <value value="Voie subrétinale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso sottoretinico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="subretinale Anwendung"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the cornea of the eye."/>
+            </extension>
+            <code value="20084000"/>
+            <display value="Intracorneal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intracorneale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracornéenne"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracorneale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="intracorneale Anwendung"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into one or both of the putamen of the brain."/>
+            </extension>
+            <code value="20086000"/>
+            <display value="Intraputaminal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Intraputaminale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="null"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Intraputaminale"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Intraputaminale Anwendung"/>
             </designation>
          </concept>
       </include>
