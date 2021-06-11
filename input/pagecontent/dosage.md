@@ -34,27 +34,28 @@ The amount of medication administered is represented with SNOMED CT or UCUM code
 The normal dosing is represented using **one structured dosage element**.   
 One non-structured dosage element may be additionally be present.
 
-#### Dosage example according the use case step 1-1
+#### Dosage example according the use case step 2-5
 
 {:class="table table-bordered"}
 | Dosage non-structured | Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
 | :------- | :------- | :------- | :------- | :------- | :------- |
-| Morgens 1/2 Tablette nehmen | 0.5 | 0 | 0 | 0 | oral |
+| Morgens und abends je 1 Tablette einnehmen | 1 | 0 | 1 | 0 | oral |
 
 
 ```json
     "dosage" : [
       {
-        "text" : "Morgens 1/2 Tablette nehmen"
+        "text" : "Morgens und abends je 1 Tablette einnehmen"
       },
       {
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
-                "start" : "2011-11-29"
+                "start" : "2012-02-04"
             },
             "when" : [
-                "MORN"
+                "MORN",
+                "EVE"
             ]
           }
         },
@@ -70,7 +71,7 @@ One non-structured dosage element may be additionally be present.
         "doseAndRate" : [
             {
             "doseQuantity" : {
-                "value" : 0.5,
+                "value" : 1,
                 "unit" : "Tablet (unit of presentation)",
                 "system" : "http://snomed.info/sct",
                 "code" : "732936001"
@@ -81,7 +82,7 @@ One non-structured dosage element may be additionally be present.
     ]
 ```
 
-See the full example: [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.json.html)
+See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.json.html)
 
 ### Split Dosing (incl. Dosage Non-Structured)
 The split dosing differs from the normal dosing in that the dosage element can be repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element **sequence**.   
