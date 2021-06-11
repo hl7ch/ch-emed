@@ -1,6 +1,7 @@
 {
   "package-id": "ch.fhir.ig.ch-emed",
   "title": "CH EMED (R4)",
+  "category": "National Base",
   "introduction": "Implementation Guide for the eMedication in Switzerland.",
   "canonical": "http://fhir.ch/ig/ch-emed",
   "list": [
