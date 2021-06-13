@@ -1,3 +1,7 @@
+<div markdown="1" class="stu-note">
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/) until September 24th, 2021 midnight. Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+</div>
+
 ### Introduction
 This implemenation guide is based on the [CDA-CH-EMED eMedication](https://art-decor.org/art-decor/decor-project--cdachemed-) [ART-DECOR®](https://www.art-decor.org/mediawiki/index.php/Main_Page) specification which has been [published by eHealth Suisse](http://ehealthsuisse.art-decor.org/).   
 [CDA-CH-EMED](https://art-decor.org/art-decor/decor-project--cdachemed-) defines the documents for the exchange of medication information in the context of the EPR (electronic patient record) in Switzerland. The documents are based on the IHE Pharmacy Technical Framework modelled and specialized in the Building Block Repository [CH-PHARM](https://art-decor.org/art-decor/decor-project--ch-pharm-). Base for this modelling was the report from [IPAG eMedikation, 7.6.2017](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf) and the work of IPAG/eHealth Suisse.
