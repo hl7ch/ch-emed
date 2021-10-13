@@ -4,9 +4,9 @@
 The Ballot STU 2 took place from August 1 to September 24. From September 20 to
 September 24, a Projectathon was organized to test eMedication and provide feedback on
 the exchange format.
-During the Ballot 13 problems were reported. No issues were reported for CDA-CH-EMED
+During the Ballot 13 problems were reported for CH EMED. No issues were reported for CDA-CH-EMED
 and two issues are reported for CH-PHARM on ART-Decor:
-* [Issues CH-EMED](https://github.com/ehealthsuisse/ch-emed/issues)
+* [Issues CH EMED](https://github.com/ehealthsuisse/ch-emed/issues)
 * [Issues CH-PHARM](https://art-decor.org/art-decor/decor-issues--ch-pharm-)
 
 ## Comment topic Medication
@@ -33,10 +33,10 @@ ActSubstanceAdminSubstitutionCode or translation in UnitCode-Value Set
 * [#75](https://github.com/ehealthsuisse/ch-emed/issues/75) Why are patient and author not must-support flagged? -- CH EMED Medication Card
 Composition Profile
 * [#70](https://github.com/ehealthsuisse/ch-emed/issues/70) Remove language requirements of titles
-* [#71](https://github.com/ehealthsuisse/ch-emed/issues/71) MedicationDispense: languageCode fr-CH not accepted
+* [#68](https://github.com/ehealthsuisse/ch-emed/issues/68) MedicationDispense: languageCode fr-CH not accepted
 * [#65](https://github.com/ehealthsuisse/ch-emed/issues/65) CH EMED Extension Substitution - ValueSets not equal to CDA
-* [#50](https://github.com/ehealthsuisse/ch-emed/issues/50) Missing value in ActSubstanceAdminSubstitutionCode
-* [#51](https://github.com/ehealthsuisse/ch-emed/issues/51) Translation Adjustments for SCT-Codes in UnitCode-VS
+* [#50 ART-Decor](https://art-decor.org/art-decor/decor-issues--ch-pharm) Missing value in ActSubstanceAdminSubstitutionCode
+* [#51 ART-Decor](https://art-decor.org/art-decor/decor-issues--ch-pharm) Translation Adjustments for SCT-Codes in UnitCode-VS
 
 ## Other comments
 Other feedback that has been given concerns incorrect test data in an example, adjustment
@@ -47,3 +47,5 @@ of the examples, typos in the specifications and new arrangement of mustSupport 
 * [#66](https://github.com/ehealthsuisse/ch-emed/issues/66) Hausarzt: Organization.telecom nullFlavor
 * [#71](https://github.com/ehealthsuisse/ch-emed/issues/71) CH EMED Pharmaceutical Advice Composition Profile
 * [#62](https://github.com/ehealthsuisse/ch-emed/issues/62) mustSupport for Required item&#39;s in Medication Card Composition? inconsistent handling
+* [#74](https://github.com/ehealthsuisse/ch-emed/issues/74) Change description of MedicationStatement.identifier
+* [#63](https://github.com/ehealthsuisse/ch-emed/issues/63) CH EMED Medication Prescription Composition Profile Typo
