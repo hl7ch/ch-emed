@@ -12,4 +12,5 @@ All notable changes to this project will be documented in this file.
 
  
 ### Fixed
-* [#63](https://github.com/ehealthsuisse/ch-emed/issues/63): Typo in CH EMED Medication Prescription Composition Profile
+* [#63](https://github.com/ehealthsuisse/ch-emed/issues/63): Typo in constraint "ch-emed-sect-annot"
+   * [CH EMED Medication Prescription Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationprescription.html)
