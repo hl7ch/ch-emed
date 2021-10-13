@@ -1,12 +1,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="1.0.0"/>
+   <version value="1.1.0"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <date value="2021-06-14"/>
+   <date value="2021-10-13"/>
    <publisher value="eHealth Suisse"/>
    <contact>
       <name value="eHealth Suisse"/>
