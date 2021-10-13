@@ -12,4 +12,4 @@ All notable changes to this project will be documented in this file.
 
  
 ### Fixed
-* 
+* [#63](https://github.com/ehealthsuisse/ch-emed/issues/63): Typo in CH EMED Medication Prescription Composition Profile

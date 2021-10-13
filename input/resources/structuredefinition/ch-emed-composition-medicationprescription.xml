@@ -342,7 +342,7 @@
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
          <constraint>
-            <key value="ch-emed-sect-annoot"/>
+            <key value="ch-emed-sect-annot"/>
             <severity value="error"/>
             <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in talian or 'Comment' in english
                         or titles in other languages are also allowed"/>
