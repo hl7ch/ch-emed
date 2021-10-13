@@ -208,9 +208,9 @@
          <constraint>
             <key value="ch-emed-sect-padv"/>
             <severity value="error"/>
-            <human value="'Hinweise zur Medikation' in german or 'onseils sur les médicaments' in french or 'Consigli sui medicamenti' in talian or 'Pharmaceutical Advice' in english
+            <human value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in talian or 'Pharmaceutical Advice' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Hinweise zur Medikation' and %resource.language.startsWith('de')) or ($this='onseils sur les médicaments' and %resource.language.startsWith('fr')) or ($this='Consigli sui medicamenti' and %resource.language.startsWith('it')) or ($this='Pharmaceutical Advice' and %resource.language.startsWith('en'))"/>
+            <expression value="($this='Hinweise zur Medikation' and %resource.language.startsWith('de')) or ($this='Conseils sur les médicaments' and %resource.language.startsWith('fr')) or ($this='Consigli sui medicamenti' and %resource.language.startsWith('it')) or ($this='Pharmaceutical Advice' and %resource.language.startsWith('en'))"/>
          </constraint>
          <min value="1"/>
          <max value="1"/>
