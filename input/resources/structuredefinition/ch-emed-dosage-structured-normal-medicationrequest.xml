@@ -50,10 +50,16 @@
          <short value="When the event is to occur"/>
          <min value="1"/>
       </element>
-      <element id="Dosage.timing.repeat.bounds[x]">
-         <path value="Dosage.timing.repeat.bounds[x]"/>
-         <short value="Length/Range of lengths, or (Start and/or end) limits"/>
+      <element id="Dosage.timing.repeat.boundsPeriod">
+         <path value="Dosage.timing.repeat.boundsPeriod"/>
+         <short value="Start and/or end of treatment"/>
          <min value="1"/>
+      </element>
+      <element id="Dosage.timing.repeat.boundsPeriod.start">
+         <path value="Dosage.timing.repeat.boundsPeriod.start"/>
+      </element>
+      <element id="Dosage.timing.repeat.boundsPeriod.end">
+         <path value="Dosage.timing.repeat.boundsPeriod.end"/>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>

@@ -58,13 +58,27 @@
          <path value="Dosage.timing.repeat"/>
          <short value="When the event is to occur"/>
       </element>
-      <element id="Dosage.timing.repeat.bounds[x]">
-         <path value="Dosage.timing.repeat.bounds[x]"/>
-         <short value="Length/Range of lengths, or (Start and/or end) limits"/>
+      <element id="Dosage.timing.repeat.boundsPeriod">
+         <path value="Dosage.timing.repeat.boundsPeriod"/>
+         <short value="Start and/or end of treatment"/>
          <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>
             <map value=".low/.high"/>
+         </mapping>
+      </element>
+      <element id="Dosage.timing.repeat.boundsPeriod.start">
+         <path value="Dosage.timing.repeat.boundsPeriod.start"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".low"/>
+         </mapping>
+      </element>
+      <element id="Dosage.timing.repeat.boundsPeriod.end">
+         <path value="Dosage.timing.repeat.boundsPeriod.end"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".high"/>
          </mapping>
       </element>
       <element id="Dosage.timing.repeat.when">
