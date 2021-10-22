@@ -731,8 +731,8 @@
       </page>
       <parameter>
          <code value="releaselabel"/>
-         <!--<value value="CI build"/>-->
-         <value value="STU 2 Ballot"/>
+         <value value="CI Build"/>
+         <!--<value value="STU 2 Ballot"/>-->
       </parameter>
       <parameter>
          <code value="path-pages" />
