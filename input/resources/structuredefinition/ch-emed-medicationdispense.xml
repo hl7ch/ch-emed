@@ -111,7 +111,7 @@
       </element>
       <element id="MedicationDispense.identifier">
          <path value="MedicationDispense.identifier"/>
-         <short value="Dispense item ID"/>
+         <short value="MedicationDispense Identifier"/>
          <min value="1"/>
          <max value="1"/>
          <mapping>
@@ -126,7 +126,7 @@
       </element>
       <element id="MedicationDispense.identifier.value">
          <path value="MedicationDispense.identifier.value"/>
-         <short value="identifier value as uuid"/>
+         <short value="Identifier value as UUID"/>
          <min value="1"/>
       </element>
       <element id="MedicationDispense.status">

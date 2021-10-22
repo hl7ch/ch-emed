@@ -42,7 +42,7 @@
       
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
-         <short value="Medication treatment plan item ID"/>
+         <short value="MedicationStatement Identifier"/>
          <min value="1"/>
          <max value="1"/>
          <mapping>
@@ -58,7 +58,7 @@
       <element id="MedicationStatement.identifier.value">
          <path value="MedicationStatement.identifier.value"/>
          <min value="1"/>
-         <short value="identifier value as uuid"/>
+         <short value="Identifier value as UUID"/>
       </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>

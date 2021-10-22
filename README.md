@@ -10,3 +10,9 @@ cd art-decor
 ant clean
 ant dist
 ```
+
+## Development
+
+* [Change log](https://github.com/ehealthsuisse/ch-emed/blob/master/changelog.md)
+* [Mapping of data elements](https://docs.google.com/spreadsheets/d/1Ui3NGFE2I8yiOlHELk-B0Pke2l9-Jbe5BTeYOnS8-uE/edit?usp=sharing)
+* [Meeting notes](https://docs.google.com/document/d/1OlCn8qZHIPZG-P_PmL7t2kNPYJwOVImy6v62PXzANys/edit?usp=sharing)
