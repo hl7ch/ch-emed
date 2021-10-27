@@ -14,6 +14,8 @@ The following documents have been defined:
 
 **Download**: You can download this implementation guide in npm format from [here](package.tgz).
 
+### Must Support
+The flag [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) requires that a creator and the consumer MUST support these elements if known. The mustSupport flag has been derived from the elements marked as the minimum data set in the IPAG report.
 
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
