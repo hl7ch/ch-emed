@@ -15,7 +15,10 @@ The following documents have been defined:
 **Download**: You can download this implementation guide in npm format from [here](package.tgz).
 
 ### Must Support
-The flag [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) requires that a creator and the consumer MUST support these elements if known. The mustSupport flag has been derived from the elements marked as the minimum data set in the IPAG report.
+The flag [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) requires that the creator and the consumer MUST support these **elements if they are known**. The flag mustSupport = `true` is set for all elements marked as minimum data set in the IPAG report. 
+The concept of 'Must Support' is only applied to the [Medication Card document](medication-card-document.html#fhir-document-bundle). The original representation of this document MUST be embedded as a PDF in PDF/A-1 or PDF/A-2 format. The required **elements in the PDF** also correspond to the minimum data set in the IPAG report, i.e. the elements with mustSupport = `true`.
+
+In the corresponding profiles, all elements with mustSupport = `true` are displayed in the *Snapshot Table (Must Support)* in the section [Formal Views of Profile Content](StructureDefinition-ch-emed-medicationstatement-card.html#profile) (MedicationStatement as example). The minimum cardinality of the elements has no effect on this view.
 
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
