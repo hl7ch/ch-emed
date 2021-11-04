@@ -182,7 +182,6 @@
             <ordered value="false"/>
             <rules value="open"/>
          </slicing>
-         <mustSupport value="true"/>
       </element>
 
       <!-- Section Original Representation-->
@@ -192,6 +191,7 @@
          <short value="Original representation"/>
          <min value="1"/>
          <max value="1"/>
+         <mustSupport value="true"/>
       </element>
       <element id="Composition.section.title:originalRepresentation">
          <path value="Composition.section.title"/>
@@ -224,6 +224,7 @@
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
          </type>
+         <mustSupport value="true"/>
       </element>
       <element id="Composition.section.section:originalRepresentation">
          <path value="Composition.section.section"/>
@@ -374,6 +375,11 @@
          <min value="1"/>
          <max value="1"/>
          <mustSupport value="true"/>
+      </element>
+      <element id="Composition.section.section:card">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
       </element>
    </differential>
 </StructureDefinition>

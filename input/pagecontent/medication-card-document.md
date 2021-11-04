@@ -8,7 +8,7 @@ The **Medication Card document** describes the current medication of a patient, 
 ### FHIR document (Bundle)
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
 
-The representation of the Medication Card document SHALL be embedded as a PDF in PDF/A-1 or PDF/A-2 format. The required elements in the PDF correspond to the minimum data set in the IPAG report. In the FHIR profiles, the flag [mustSupport](https://www.hl7.org/fhir/conformance-rules.html#mustSupport) is set to `true` for these elements.
+The representation of the Medication Card document SHALL be embedded as a PDF in PDF/A-1 or PDF/A-2 format. The required elements in the PDF correspond to the minimum data set in the IPAG report. In the FHIR profiles, the flag [mustSupport](index.html#must-support) is set to `true` for these elements.
     
 {% include img.html img="medication-card-document.png" caption="Fig.: Medication Card document" width="40%" %}
 
