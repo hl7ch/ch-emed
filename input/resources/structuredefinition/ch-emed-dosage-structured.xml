@@ -84,6 +84,12 @@
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
          <short value="Code for time period of occurrence"/>
+         <constraint>
+            <key value="ch-emed-event-timing"/>
+            <severity value="warning"/>
+            <human value="For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended."/>
+            <expression value="$this='MORN' or $this='NOON' or $this='EVE' or $this='NIGHT'"/>
+         </constraint>
          <mustSupport value="true"/>
          <mapping>
             <identity value="cda"/>

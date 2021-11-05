@@ -379,6 +379,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationStatement/NotRecommendedTimingCodes"/>
+         </reference>
+         <name value="Medication Statement with NOT recommended timing codes"/>
+         <description value="Example for MedicationStatment with NOT recommended timing codes"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="Organization/Custodian"/>
          </reference>
          <name value="Custodian"/>
