@@ -15,13 +15,13 @@ The following documents have been defined:
 **Download**: You can download this implementation guide in npm format from [here](package.tgz).
 
 ### MustSupport
-For all elements listed in the **minimum data set in the IPAG [report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf)** the corresponding FHIR elements 'mustSupport' flag have been set to true. 'MustSupport' flags are currently only defined for the [Medication Card document](medication-card-document.html#fhir-document-bundle).
+For all elements listed in the **minimum data set in the [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf)** the corresponding FHIR elements 'mustSupport' flag have been set to `true`. 'MustSupport' flags are currently only defined for the [Medication Card document](medication-card-document.html#fhir-document-bundle).
 
 #### Meaning of the Flag MustSupport for this Implementation Guide
 The flag [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) follows the IHE use of **R2** as defined in [Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir). It demands that the content creator **must support these elements if they are known**. If the sending application has data for the element, it is required to populate the element with a non-empty value. If the value is not known, the element may be omitted. A receiving application may ignore the information conveyed by the element. A receiving application shall not raise an error solely due to the presence or absence of the element. 
 
 #### Implication of MustSupport to the Original Representation
- The original representation of the [Medication Card document](medication-card-document.html#fhir-document-bundle) document must be embedded as a PDF in PDF/A-1 or PDF/A-2 format. If elements of the minimum data set in the IPAG report are provided in the bundle, they are also required to be represented in the original representation (pdf).
+ The original representation of the [Medication Card document](medication-card-document.html#fhir-document-bundle) document must be embedded as a PDF in PDF/A-1 or PDF/A-2 format. If elements of the minimum data set in the IPAG report are provided in the bundle, they are also required to be represented in the original representation (PDF).
 
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
