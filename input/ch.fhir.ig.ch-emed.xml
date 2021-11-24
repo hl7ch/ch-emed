@@ -722,6 +722,11 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="repeated-purchase.html"/>
+            <title value="Repeated Purchase"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="profiles.html"/>
             <title value="Profiles"/>
             <generation value="html"/>

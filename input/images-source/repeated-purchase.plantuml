@@ -1,0 +1,52 @@
+@startuml
+
+skinparam svgDimensionStyle false
+
+title Prescription and repeated purchase per medication
+skinparam titleFontSize 12
+
+object "Prescription\n**without** repetition note" as withoutnote {
+  * Initial dispense
+}
+
+
+object "Prescription\n**with** repetition note" as withnote {
+  
+}
+
+object "**General** repetition note\n//'ad rep.', 'Rep', 'Dauerrezept' etc.//" as general {
+  * Initial dispense
+  * Additional dispense(s)\naccording to the dosage or until a certain point in time *
+}
+
+object "**Numerical** repetition note\n " as numerical {
+  * Initial dispense
+  * Additional dispense(s)\naccording to the number of repeats allowed
+}
+
+object "Specific repetition note\n//'ne rep.'//" as none {
+  * Initial dispense
+  * No repetitions allowed
+}
+
+
+
+object "Repeat prescription\n**without** duration information" as repeatwithduration {
+  * Initial dispense
+  * Additional dispense(s)\nuntil a certain point in time *
+}
+
+object "Repeat prescription\n**with** duration information" as repeatwithoutduration {
+  * Initial dispense
+  * Additional dispense(s)\naccording to the duration
+}
+
+
+withnote --|> numerical
+withnote --|> general
+withnote --|> none
+
+general --|> repeatwithduration
+general --|> repeatwithoutduration
+
+@enduml
