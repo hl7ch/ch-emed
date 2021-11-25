@@ -1,14 +1,24 @@
+<div markdown="5" class="dragon">
+    <p>
+    This topic is currently being worked on. 
+    </p>
+    <p>
+    There are different approaches as to how the repeated dispense per medication can be interpreted. At the moment, a common understanding and a possible solution are under development.
+    </p>
+</div>
+<p>&nbsp;</p>
+
 ### Overview
-In the use case of this implementation guide ([de](usecase-german.html)/[fr](usecase-french.html)), one example of a so-called **repeated purchase per medication** (Wiederholter Bezug pro Arzneimittel/Retrait répété du médicament) is described for the prescription. There are other possibilities besides this example, which are explained in more detail here.
+In the use case of this implementation guide ([de](usecase-german.html)/[fr](usecase-french.html)), one example of a so-called **repeated dispense per medication** (Wiederholter Bezug pro Arzneimittel/Retrait répété du médicament) is described for the prescription. Besides this example, there are other possibilities of repeated dispense. The different variants are explained in more detail here.
 
-<div>{% include repeated-purchase.svg %}</div>
+<div>{% include repeated-dispense.svg %}</div>
 
-*Note: No special cases are covered here. The use of the phrase "until a certain point in time *" was chosen because there are different regulations depending on the prescription category (e.g. narcotics) or legal/tariff regulations.*
+*Note: No special cases are covered here. * The use of the phrase "until a certain point in time" was chosen because there are different regulations depending on the prescription category (e.g. narcotics) or legal/tariff regulations.*
 
 ### Period of validity of the prescription and number of repeats
-A principal differentiation must therefore be made between the **period of validity of the prescription** (within which period the medication may be purchased) and the **number of repeats** (in which quantity the medicament may be purchased).
+A principal differentiation must therefore be made between the **period of validity of the prescription** (within which period the medication may be dispensed) and the **number of repeats** (in which quantity the medicament may be dispensed).
 
-{% include img.html img="repeated-purchase.png" caption="Fig.: Period of validity (blue) and number of repeats (t2/t3)" width="60%" %}
+{% include img.html img="repeated-dispense.png" caption="Fig.: Period of validity (blue) and number of repeats (t2/t3)" width="60%" %}
 
 
 ### Examples

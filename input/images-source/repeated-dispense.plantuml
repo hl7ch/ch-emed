@@ -2,7 +2,7 @@
 
 skinparam svgDimensionStyle false
 
-title Prescription and repeated purchase per medication
+title Prescription and repeated dispense per medication
 skinparam titleFontSize 12
 
 object "Prescription\n**without** repetition note" as withoutnote {

@@ -44,7 +44,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">eMedication Specifics<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
@@ -52,7 +52,7 @@
         <a href="dosage.html">Dosage</a>
       </li>
       <li>
-        <a href="repeated-purchase.html">Repeated Purchase (Prescription)</a>
+        <a href="repeated-dispense.html">Repeated Dispense (Prescription)</a>
       </li>
     </ul>
   </li>
