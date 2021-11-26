@@ -24,6 +24,7 @@
       </telecom>
    </contact>
    <description value="IHE Pharmaceutical Advice Status List"/>
+   <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
       <code value="OK"/>
