@@ -163,6 +163,12 @@
                <family value="Hausarzt"/>
                <given value="Familien"/>
             </name>
+            <address>
+               <line value="Krankenstrasse 2"/>
+               <city value="Zürich"/>
+               <postalCode value="8005"/>
+               <country value="CH"/>
+            </address>
          </Practitioner>
       </resource>
    </entry>

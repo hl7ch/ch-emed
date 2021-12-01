@@ -314,6 +314,12 @@
           <family value="Author"/>
           <given value="Document"/>
         </name>
+        <address>
+          <line value="Dokumentenweg 11"/>
+          <city value="Zürich"/>
+          <postalCode value="8000"/>
+          <country value="CH"/>
+        </address>
       </Practitioner>
     </resource>
   </entry>
@@ -345,6 +351,12 @@
           <family value="Author"/>
           <given value="Section"/>
         </name>
+        <address>
+          <line value="Sektionsweg 13"/>
+          <city value="Zürich"/>
+          <postalCode value="8000"/>
+          <country value="CH"/>
+        </address>
       </Practitioner>
     </resource>
   </entry>
@@ -376,6 +388,12 @@
           <family value="Author"/>
           <given value="MedicalDecision"/>
         </name>
+        <address>
+          <line value="Entscheidungsstrasse 15"/>
+          <city value="Zürich"/>
+          <postalCode value="8000"/>
+          <country value="CH"/>
+        </address>
       </Practitioner>
     </resource>
   </entry>
@@ -407,6 +425,12 @@
           <family value="Author"/>
           <given value="OriginalDocument"/>
         </name>
+        <address>
+          <line value="Originalstrasse 17"/>
+          <city value="Zürich"/>
+          <postalCode value="8000"/>
+          <country value="CH"/>
+        </address>
       </Practitioner>
     </resource>
   </entry>

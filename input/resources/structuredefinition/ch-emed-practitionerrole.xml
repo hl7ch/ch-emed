@@ -1,0 +1,39 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-practitionerrole"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+   <version value="0.1.0"/>
+   <name value="CHEMEDPractitionerRole"/>
+   <title value="CH EMED PractitionerRole Profile"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <description value="Definition of the practitioner role for the eMedication context"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="PractitionerRole"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="PractitionerRole">
+         <path value="PractitionerRole"/>
+         <short value="CH EMED PractitionerRole"/>
+      </element>
+      <element id="PractitionerRole.practitioner">
+         <path value="PractitionerRole.practitioner"/>
+         <min value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
+         </type>
+      </element>
+      <element id="PractitionerRole.practitioner.reference">
+         <path value="PractitionerRole.practitioner.reference"/>
+         <min value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

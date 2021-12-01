@@ -166,6 +166,12 @@
           <family value="Hausarzt"/>
           <given value="Familien"/>
         </name>
+        <address>
+          <line value="Krankenstrasse 2"/>
+          <city value="Zürich"/>
+          <postalCode value="8005"/>
+          <country value="CH"/>
+        </address>
       </Practitioner>
     </resource>
   </entry>
@@ -251,7 +257,7 @@
               </numerator>
               <denominator>
                 <value value="1"/>
-               <unit value="Package"/>
+                <unit value="Package"/>
                 <system value="http://unitsofmeasure.org"/>
                 <code value="{Package}"/>
               </denominator>
