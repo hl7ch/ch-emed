@@ -63,6 +63,7 @@
     </xsl:template>
    
     <xsl:template match="fhir:ValueSet/fhir:immutable">
+       <fhir:caseSensitive value="true"/>
        <fhir:content value="complete"/>
     </xsl:template>
 
