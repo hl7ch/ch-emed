@@ -7,8 +7,8 @@
    <url value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
    <identifier>
       <use value="official"/>
-      <system value="http://art-decor.org/ns/oids/vs"/>
-      <value value="2.16.756.5.30.1.1.11.4"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.756.5.30.1.1.11.4"/>
    </identifier>
    <version value="2020-01-06T13:57:19"/>
    <name value="IHEPharmaceuticalAdviceStatusList"/>
@@ -24,6 +24,7 @@
       </telecom>
    </contact>
    <description value="IHE Pharmaceutical Advice Status List"/>
+   <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
       <code value="OK"/>

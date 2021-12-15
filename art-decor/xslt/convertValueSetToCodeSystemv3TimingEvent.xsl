@@ -47,7 +47,6 @@
       <fhir:contact>
         <fhir:name value="eHealth Suisse"/>
       </fhir:contact>
-      <fhir:hierarchyMeaning value="is-a"/>
       <fhir:content value="supplement"/>
       <fhir:supplements value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" />
 
