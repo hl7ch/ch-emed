@@ -124,10 +124,10 @@
     <text value="Morgens und abends je 1 Tablette nehmen"/>
   </dosageInstruction>
   <dispenseRequest>
-    <numberOfRepeatsAllowed value="2"/>
-    <quantity>
-      <value value="1"/>
-    </quantity>
+    <validityPeriod>
+      <start value="2012-02-04"/>
+      <end value="2012-05-03"/>
+    </validityPeriod>
   </dispenseRequest>
   <!-- substitution just as test case -->
   <substitution>

@@ -30,3 +30,5 @@ All notable changes to this project will be documented in this file.
    * [Organization Hausarzt](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/Organization-Hausarzt.html)
 * [#71](https://github.com/ehealthsuisse/ch-emed/issues/71): Typo in constraint "ch-emed-sect-padv"
    * [CH EMED Pharmaceutical Advice Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html)
+* [#69](https://github.com/ehealthsuisse/ch-emed/issues/63): Wrong data in example 2-6 Medication Prescription document (base64 pdf, MedicationRequest.dispenseRequest)
+   * [2-6 Medication Prescription document](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/Bundle-2-6-MedicationPrescription.html) 
