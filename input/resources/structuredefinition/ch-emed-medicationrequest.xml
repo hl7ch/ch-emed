@@ -186,15 +186,14 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
          </type>
       </element>
+
       <element id="MedicationRequest.dispenseRequest">
          <path value="MedicationRequest.dispenseRequest"/>
          <short value="Medication supply authorization"/>
-         <min value="1"/>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
          <short value="Repeated supply per medication"/>
-         <min value="1"/>
          <mapping>
             <identity value="cda"/>
             <map value=".repeatNumber"/>
@@ -208,6 +207,7 @@
             <map value=".entryRelationship.supply.quantity"/>
          </mapping>
       </element>
+      
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
          <short value="Any restrictions on medication substitution"/>

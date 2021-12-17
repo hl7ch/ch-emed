@@ -21,6 +21,8 @@ All notable changes to this project will be documented in this file.
    * [CH EMED MedicationDispense Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationdispense.html) 
    * [CH EMED Observation Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-observation.html)
 * [#62](https://github.com/ehealthsuisse/ch-emed/issues/62): Provide a [separate paragraph](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/index.html#must-support) on the flag mustSupport on the front page of the IG.
+* [#76](https://github.com/ehealthsuisse/ch-emed/issues/62): Set minimum cardinality for element `MedicationRequest.dispenseRequest.numberOfRepeatsAllowed` (and `MedicationRequest.dispenseRequest`) back to 0, according to changes in CDA.
+   * [CH EMED MedicationRequest Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest.html)
 
  
 ### Fixed
