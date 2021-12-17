@@ -1,0 +1,52 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-practitioner"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
+   <version value="0.1.0"/>
+   <name value="CHEMEDPractitioner"/>
+   <title value="CH EMED Practitioner Profile"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <description value="Definition of the practitioner for the eMedication context"/>
+   <mapping>
+      <identity value="cda"/>
+      <uri value="http://hl7.org/v3/cda"/>
+      <name value="CDA (R2)"/>
+   </mapping>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Practitioner"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Practitioner">
+         <path value="Practitioner"/>
+         <short value="CH EMED Practitioner"/>
+      </element>
+
+      <element id="Practitioner.identifier">
+         <path value="Practitioner.identifier" />
+         <slicing>
+            <discriminator>
+               <type value="value" />
+               <path value="system" />
+            </discriminator>
+            <rules value="open" />
+         </slicing>
+      </element>
+      <element id="Practitioner.identifier:GLN">
+         <path value="Practitioner.identifier"/>
+         <sliceName value="GLN"/>
+         <mustSupport value="true"/>
+      </element>
+      <element id="Practitioner.name">
+         <path value="Practitioner.name"/>
+         <mustSupport value="true"/>
+      </element>
+      <element id="Practitioner.address">
+         <path value="Practitioner.address"/>
+         <min value="1"/>
+         <mustSupport value="true"/>
+      </element>
+   </differential>
+</StructureDefinition>

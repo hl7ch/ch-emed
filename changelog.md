@@ -26,6 +26,17 @@ All notable changes to this project will be documented in this file.
 * [#62](https://github.com/ehealthsuisse/ch-emed/issues/62): Provide a [separate paragraph](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/index.html#must-support) on the flag mustSupport on the front page of the IG.
 * [#76](https://github.com/ehealthsuisse/ch-emed/issues/62): Set minimum cardinality for element `MedicationRequest.dispenseRequest.numberOfRepeatsAllowed` (and `MedicationRequest.dispenseRequest`) back to 0, according to changes in CDA.
    * [CH EMED MedicationRequest Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest.html)
+* [#80](https://github.com/ehealthsuisse/ch-emed/issues/80): Update references for the document author (Composition.author)
+   * Change references for Composition.author from 'CH Core Practitioner Profile EPR' to 'CH EMED Practitioner Profile' and from 'CH Core Practitioner Role Profile' to 'CH EMED PractitionerRole Profile'.
+      * [CH EMED Medication Card Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationcard.html) 
+      * [CH EMED Medication Dispense Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationdispense.html)
+      * [CH EMED Medication List Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationlist.html)
+      * [CH EMED Medication Prescription Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationprescription.html)
+      * [CH EMED Medication Treatment Plan Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)
+      * [CH EMED Pharmaceutical Advice Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html)
+   * Add profiles (derived from CH Core EPR profiles)
+      * [CH EMED Practitioner Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-practitioner.html): Practitioner.address 1..*, set MS
+      * [CH EMED PractitionerRole Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-practitionerrole.html): PractitionerRole.practitioner 1..1   
 
  
 ### Fixed

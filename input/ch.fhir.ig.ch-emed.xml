@@ -427,6 +427,7 @@
          </reference>
          <name value="Familien Hausarzt"/>
          <description value="Example for Practitioner"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
       </resource>
 
       <!-- references for code systems -->
@@ -617,6 +618,16 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-observation"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-practitioner"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-practitionerrole"/>
          </reference>
       </resource>
       <resource>

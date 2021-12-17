@@ -94,6 +94,15 @@
       <element id="Composition.author">
          <path value="Composition.author"/>
          <short value="The author of the document (person or device)"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+         </type>
          <mustSupport value="true"/>
       </element>
       <element id="Composition.author.extension">

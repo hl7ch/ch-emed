@@ -8,15 +8,15 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2020-09-25T11:02:35+02:00"/>
+         <start value="2020-09-25T11:02:35+01:00"/>
       </valuePeriod>
    </extension>
    <url
              value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>
    <identifier>
       <use value="official"/>
-      <system value="http://art-decor.org/ns/oids/vs"/>
-      <value value="2.16.756.5.30.1.1.11.82"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.756.5.30.1.1.11.82"/>
    </identifier>
    <version value="2020-09-25T11:02:35"/>
    <name value="ActivePharmaceuticalIngredient"/>
@@ -37,6 +37,198 @@
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="1156222009"/>
+            <display value="Trofosfamide (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Trofosfamide"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="trofosfamide"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Trofosfamide"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Trofosfamide"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156231009"/>
+            <display value="Obidoxime chloride (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Obidoxim chlorid"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="obidoxime chlorure"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Obidoxim chlorid"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Obidoxime chloride"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156230005"/>
+            <display value="Ajmaline (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Ajmalin"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="ajmaline"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Ajmalin"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Ajmaline"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156228008"/>
+            <display value="Darvadstrocel (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Darvadstrocel"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="darvadstrocel"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Darvadstrocel"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Darvadstrocel"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156227003"/>
+            <display value="Levomethadone (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Levomethadon"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="lévométhadone"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Levomethadon"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Levomethadone"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156229000"/>
+            <display value="Butylscopolamine (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Butylscopolamin"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="butylscopolamine"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Butylscopolamin"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Butylscopolamine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156223004"/>
+            <display value="Opipramol (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Opipramol"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="opipramol"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Opipramol"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Opipramol"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1156232002"/>
+            <display value="Flufenamic acid (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Flufenaminsäure"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="acide flufénamique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="TODO"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Flufenaminsäure"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Flufenamic acid"/>
+            </designation>
+         </concept>
          <concept>
             <code value="259496005"/>
             <display value="5-aminolevulinic acid (substance)"/>

@@ -18,7 +18,6 @@
    <contact>
       <name value="eHealth Suisse"/>
    </contact>
-   <hierarchyMeaning value="is-a"/>
    <content value="supplement"/>
    <supplements value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
    <concept>
