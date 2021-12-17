@@ -16,7 +16,7 @@ object "Prescription\n**with** repetition note" as withnote {
 
 object "**General** repetition note\n//'ad rep.', 'Rep', 'Dauerrezept' etc.//" as general {
   * Initial dispense
-  * Additional dispense(s)\naccording to the dosage or until a certain point in time *
+  * Additional dispense(s)\naccording to the dosage or until a certain point in time
 }
 
 object "**Numerical** repetition note\n " as numerical {
@@ -31,12 +31,12 @@ object "Specific repetition note\n//'ne rep.'//" as none {
 
 
 
-object "Repeat prescription\n**without** duration information" as repeatwithduration {
+object "Repeated prescription\n**without** duration information" as repeatwithduration {
   * Initial dispense
-  * Additional dispense(s)\nuntil a certain point in time *
+  * Additional dispense(s)\nuntil a certain point in time
 }
 
-object "Repeat prescription\n**with** duration information" as repeatwithoutduration {
+object "Repeated prescription\n**with** duration information" as repeatwithoutduration {
   * Initial dispense
   * Additional dispense(s)\naccording to the duration
 }
