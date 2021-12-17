@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 * [#73](https://github.com/ehealthsuisse/ch-emed/issues/73): Add warning if non-recommended timing-event codes are used in the structured dosage.
    * [CH EMED Dosage Structured Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-dosage-structured.html) 
+* [#76](https://github.com/ehealthsuisse/ch-emed/issues/76): Elaboration of the repeated dispense.
+   * [Additional tab with detailed description](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/repeated-dispense.html) 
+   * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
 
    
 ### Changed / Updated
