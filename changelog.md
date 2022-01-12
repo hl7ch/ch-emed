@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 * [#73](https://github.com/ehealthsuisse/ch-emed/issues/73): Add warning if non-recommended timing-event codes are used in the structured dosage.
    * [CH EMED Dosage Structured Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-dosage-structured.html) 
+* [#76](https://github.com/ehealthsuisse/ch-emed/issues/76): Elaboration of the repeated dispense.
+   * [Additional tab with detailed description](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/repeated-dispense.html) 
+   * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
 
    
 ### Changed / Updated
@@ -21,6 +24,8 @@ All notable changes to this project will be documented in this file.
    * [CH EMED MedicationDispense Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationdispense.html) 
    * [CH EMED Observation Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-observation.html)
 * [#62](https://github.com/ehealthsuisse/ch-emed/issues/62): Provide a [separate paragraph](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/index.html#must-support) on the flag mustSupport on the front page of the IG.
+* [#76](https://github.com/ehealthsuisse/ch-emed/issues/62): Set minimum cardinality for element `MedicationRequest.dispenseRequest.numberOfRepeatsAllowed` (and `MedicationRequest.dispenseRequest`) back to 0, according to changes in CDA.
+   * [CH EMED MedicationRequest Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-medicationrequest.html)
 * [#80](https://github.com/ehealthsuisse/ch-emed/issues/80): Update references for the document author (Composition.author)
    * Change references for Composition.author from 'CH Core Practitioner Profile EPR' to 'CH EMED Practitioner Profile' and from 'CH Core Practitioner Role Profile' to 'CH EMED PractitionerRole Profile'.
       * [CH EMED Medication Card Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-medicationcard.html) 
@@ -41,3 +46,5 @@ All notable changes to this project will be documented in this file.
    * [Organization Hausarzt](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/Organization-Hausarzt.html)
 * [#71](https://github.com/ehealthsuisse/ch-emed/issues/71): Typo in constraint "ch-emed-sect-padv"
    * [CH EMED Pharmaceutical Advice Composition Profile](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html)
+* [#69](https://github.com/ehealthsuisse/ch-emed/issues/63): Wrong data in example 2-6 Medication Prescription document (base64 pdf, MedicationRequest.dispenseRequest)
+   * [2-6 Medication Prescription document](http://build.fhir.org/ig/ehealthsuisse/ch-emed/branches/master/Bundle-2-6-MedicationPrescription.html) 

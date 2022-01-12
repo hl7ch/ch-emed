@@ -186,15 +186,36 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
          </type>
       </element>
+
       <element id="MedicationRequest.dispenseRequest">
          <path value="MedicationRequest.dispenseRequest"/>
          <short value="Medication supply authorization"/>
-         <min value="1"/>
+      </element>
+      <element id="MedicationRequest.dispenseRequest.validityPeriod">
+         <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
+         <short value="Period of validity of the prescription"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.documentationOf.serviceEvent.effectiveTime"/>
+         </mapping>
+      </element>
+      <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
+         <path value="MedicationRequest.dispenseRequest.validityPeriod.start"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.documentationOf.serviceEvent.effectiveTime.low"/>
+         </mapping>
+      </element>
+      <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
+         <path value="MedicationRequest.dispenseRequest.validityPeriod.end"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value="ClinicalDocument.documentationOf.serviceEvent.effectiveTime.high"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
-         <short value="Repeated supply per medication"/>
-         <min value="1"/>
+         <short value="Repeated supply per medication (without initial dispense)"/>
          <mapping>
             <identity value="cda"/>
             <map value=".repeatNumber"/>
@@ -208,6 +229,7 @@
             <map value=".entryRelationship.supply.quantity"/>
          </mapping>
       </element>
+      
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
          <short value="Any restrictions on medication substitution"/>
