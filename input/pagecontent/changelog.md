@@ -3,7 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 2 Ballot
 
-[Resolution desk](1.0.0_STU2-ballot.md)
+[Resolution desk](https://github.com/hl7ch/ch-emed/blob/master/1.0.0_STU2-ballot.md)
 
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
@@ -30,7 +30,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
    * [CH EMED MedicationRequest Profile](StructureDefinition-ch-emed-medicationrequest.html)
    * [CH EMED MedicationDispense Profile](StructureDefinition-ch-emed-medicationdispense.html) 
    * [CH EMED Observation Profile](StructureDefinition-ch-emed-observation.html)
-* [#62](https://github.com/ehealthsuisse/ch-emed/issues/62): Provide a [separate paragraph](index.html#must-support) on the flag mustSupport on the front page of the IG.
+* [#62](https://github.com/ehealthsuisse/ch-emed/issues/62): Provide a [separate paragraph](index.html#mustsupport) on the flag mustSupport on the front page of the IG.
 * [#76](https://github.com/ehealthsuisse/ch-emed/issues/62): Set minimum cardinality for element `MedicationRequest.dispenseRequest.numberOfRepeatsAllowed` (and `MedicationRequest.dispenseRequest`) back to 0, according to changes in CDA.
    * [CH EMED MedicationRequest Profile](StructureDefinition-ch-emed-medicationrequest.html)
 * [#80](https://github.com/ehealthsuisse/ch-emed/issues/80): Update references for the document author (Composition.author)
@@ -58,4 +58,4 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 ### STU 1 Ballot
 
-[Resolution desk](0.2.0_STU1-informative-ballot.md)
+[Resolution desk](https://github.com/hl7ch/ch-emed/blob/master/0.2.0_STU1-informative-ballot.md)
