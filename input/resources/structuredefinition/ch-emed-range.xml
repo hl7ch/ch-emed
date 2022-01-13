@@ -6,7 +6,6 @@
     <title value="CH EMED Range with units"/>
     <status value="active"/>
     <date value="2021-02-11"/>
-    <publisher value="eHealth Suisse"/>
     <description value="A range with defined quantity/units"/>
     <mapping>
         <identity value="cda"/>

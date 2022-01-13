@@ -6,7 +6,6 @@
    <title value="CH EMED MedicationStatement Profile (Medication Treatment Plan document)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Definition of the medication statement for the Medication Treatment Plan document"/>
    <mapping>
       <identity value="cda"/>

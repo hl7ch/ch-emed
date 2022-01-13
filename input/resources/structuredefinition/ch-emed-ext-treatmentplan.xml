@@ -6,7 +6,6 @@
    <title value="CH EMED Extension Treatment Plan"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Extension to represent the reference to the Medication Treatment Plan document"/>
    <mapping>
       <identity value="cda"/>

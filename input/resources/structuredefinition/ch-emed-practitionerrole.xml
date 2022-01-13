@@ -6,7 +6,6 @@
    <title value="CH EMED PractitionerRole Profile"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Definition of the practitioner role for the eMedication context"/>
    <mapping>
       <identity value="cda"/>

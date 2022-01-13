@@ -7,7 +7,6 @@
     <title value="CH EMED Extension Represented Organization"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="eHealth Suisse"/>
     <description value="Extension to represent the organization of the author"/>
     <fhirVersion value="4.0.1"/>
     <mapping>

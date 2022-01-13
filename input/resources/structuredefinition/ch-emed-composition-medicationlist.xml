@@ -6,7 +6,6 @@
    <title value="CH EMED Medication List Composition Profile"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Definition of the composition for the medication list document"/>
    <mapping>
       <identity value="cda"/>

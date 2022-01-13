@@ -7,7 +7,6 @@
     <title value="CH EMED Extension MedicationStatement Changed"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="eHealth Suisse"/>
     <description value="Extension to represent the changed MedicationStatement"/>
     <fhirVersion value="4.0.1"/>
     <mapping>

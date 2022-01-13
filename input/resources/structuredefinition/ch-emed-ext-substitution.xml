@@ -7,7 +7,6 @@
     <title value="CH EMED Extension Substitution"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="eHealth Suisse"/>
     <description value="Extension to represent the substitution of a medication"/>
     <fhirVersion value="4.0.1"/>
     <mapping>

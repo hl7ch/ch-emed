@@ -6,7 +6,6 @@
    <title value="CH EMED Medication Treatment Plan Document Profile"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Definition of the bundle for the medication treatment plan document"/>
    <kind value="resource"/>
    <abstract value="false"/>

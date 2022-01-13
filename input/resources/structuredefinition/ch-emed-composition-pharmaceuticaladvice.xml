@@ -6,7 +6,6 @@
    <title value="CH EMED Pharmaceutical Advice Composition Profile"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Definition of the composition for the pharmaceutical advice document"/>
    <mapping>
       <identity value="cda"/>

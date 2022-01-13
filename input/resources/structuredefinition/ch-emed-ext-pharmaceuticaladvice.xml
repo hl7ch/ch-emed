@@ -6,7 +6,6 @@
    <title value="CH EMED Extension Pharmaceutical Advice"/>
    <status value="active"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
    <description value="Extension to represent the reference to the Pharmaceutical Advice document"/>
    <mapping>
       <identity value="cda"/>

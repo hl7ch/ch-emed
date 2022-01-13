@@ -6,7 +6,6 @@
     <title value="CH EMED Ratio with units"/>
     <status value="active"/>
     <date value="2021-04-07"/>
-    <publisher value="eHealth Suisse"/>
     <description value="A ratio with defined units"/>
     <mapping>
         <identity value="cda"/>
