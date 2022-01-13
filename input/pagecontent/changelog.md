@@ -52,3 +52,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#69](https://github.com/hl7ch/ch-emed/issues/63): Wrong data in example 2-6 Medication Prescription document (base64 pdf, MedicationRequest.dispenseRequest)
    * [2-6 Medication Prescription document](Bundle-2-6-MedicationPrescription.html) 
 
+### Issues resolved without amendment
+* [#70](https://github.com/hl7ch/ch-emed/issues/70) Remove language requirements of titles
+* [#68](https://github.com/hl7ch/ch-emed/issues/68) MedicationDispense: languageCode fr-CH not accepted
+* [#65](https://github.com/hl7ch/ch-emed/issues/65) CH EMED Extension Substitution - ValueSets not equal to CDA
