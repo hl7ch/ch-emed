@@ -15,14 +15,6 @@
    <title value="EDQM - Standard Terms"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
-   <contact>
-      <name value="eHealth Suisse"/>
-      <telecom>
-         <system value="url"/>
-         <value value="www.e-health-suisse.ch"/>
-      </telecom>
-   </contact>
    <description value="EDQM - Standard Terms used in Swizerland (aggregations of codes of ValueSets RouteOfAdmministartion, Dose Form, see original codes system defined in https://standardterms.edqm.eu/#)"/>
    <caseSensitive value="false"/>
    <content value="complete"/>

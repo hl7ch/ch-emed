@@ -23,14 +23,6 @@
    <title value="EDQM - Pharmaceutical Dose Form"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
-   <contact>
-      <name value="eHealth Suisse"/>
-      <telecom>
-         <system value="url"/>
-         <value value="www.e-health-suisse.ch"/>
-      </telecom>
-   </contact>
    <description value="Valueset Pharmaceutical Dose Form from EDQM, PDF, export20.5.2021, see https://standardterms.edqm.eu/#"/>
    <immutable value="false"/>
    <compose>

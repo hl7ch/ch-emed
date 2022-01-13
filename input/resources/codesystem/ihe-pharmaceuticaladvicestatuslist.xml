@@ -15,14 +15,6 @@
    <title value="IHE Pharmaceutical Advice Status List"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <publisher value="eHealth Suisse"/>
-   <contact>
-      <name value="eHealth Suisse"/>
-      <telecom>
-         <system value="url"/>
-         <value value="www.e-health-suisse.ch"/>
-      </telecom>
-   </contact>
    <description value="IHE Pharmaceutical Advice Status List"/>
    <caseSensitive value="true"/>
    <content value="complete"/>
