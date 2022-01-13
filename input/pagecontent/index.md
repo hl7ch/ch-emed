@@ -12,7 +12,14 @@ The following documents have been defined:
 - [Medication List document](medication-list-document.html)
 - [Medication Card document](medication-card-document.html)
 
-**Download**: You can download this implementation guide in npm format from [here](package.tgz).
+<div markdown="1" class="stu-note">
+
+[Significant Changes, Open and Closed Issues](changelog.html)
+
+</div>
+
+
+**Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
 ### MustSupport
 For all elements listed in the **minimum data set in the [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf)** the corresponding FHIR elements 'mustSupport' flag have been set to `true`. 'MustSupport' flags are currently only defined for the [Medication Card document](medication-card-document.html#fhir-document-bundle).
