@@ -23,6 +23,14 @@
    <title value="UnitCode"/>
    <status value="draft"/>
    <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+      <telecom>
+         <system value="url"/>
+         <value value="www.e-health-suisse.ch"/>
+      </telecom>
+   </contact>
    <description value="UnitCode"/>
    <immutable value="false"/>
    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
@@ -46,7 +54,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Erogazione"/>
+               <value value="erogazione"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -70,7 +78,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Fiala"/>
+               <value value="fiala"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -94,7 +102,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Applicatore"/>
+               <value value="applicatore"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -118,7 +126,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Sacca"/>
+               <value value="sacca"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -142,7 +150,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Fusto"/>
+               <value value="fusto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -166,7 +174,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Blister"/>
+               <value value="blister"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -190,7 +198,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Blocco"/>
+               <value value="blocco"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -214,7 +222,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Flacone"/>
+               <value value="flacone"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -238,7 +246,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cachet"/>
+               <value value="cachet"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -262,7 +270,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Capsula"/>
+               <value value="capsula"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -286,7 +294,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cartuccia"/>
+               <value value="cartuccia"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -310,7 +318,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Gomma da masticare"/>
+               <value value="gomma da masticare"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -334,7 +342,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Contenitore"/>
+               <value value="contenitore"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -358,7 +366,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Bicchiere dosatore"/>
+               <value value="bicchiere dosatore"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -382,7 +390,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cilindro"/>
+               <value value="cilindro"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -406,7 +414,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Garza"/>
+               <value value="garza"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -430,7 +438,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Goccia"/>
+               <value value="goccia"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -454,7 +462,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Film"/>
+               <value value="film"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -478,7 +486,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Impianto"/>
+               <value value="impianto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -502,7 +510,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Inalatore"/>
+               <value value="inalatore"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -526,7 +534,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Inserto"/>
+               <value value="inserto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -550,7 +558,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Vasetto"/>
+               <value value="vasetto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -574,7 +582,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Liofilizzato"/>
+               <value value="liofilizzato"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -598,7 +606,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Matrice"/>
+               <value value="matrice"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -622,7 +630,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Tampone"/>
+               <value value="tampone"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -646,7 +654,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Pastiglia molle"/>
+               <value value="pastiglia molle"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -670,7 +678,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cerotto"/>
+               <value value="cerotto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -694,7 +702,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Penna"/>
+               <value value="penna"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -718,7 +726,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Ovulo"/>
+               <value value="ovulo"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -742,7 +750,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Granuli"/>
+               <value value="granuli"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -766,7 +774,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Pipetta"/>
+               <value value="pipetta"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -790,7 +798,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cerotto"/>
+               <value value="cerotto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -814,7 +822,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Supporto"/>
+               <value value="supporto"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -834,11 +842,11 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="petit sachet"/>
+               <value value="pochette"/>
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Sachetta"/>
+               <value value="sachetta"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -862,7 +870,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Bustina"/>
+               <value value="bustina"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -886,7 +894,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Spugna"/>
+               <value value="spugna"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -910,7 +918,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cucciaio"/>
+               <value value="cucciaio"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -934,7 +942,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Stick"/>
+               <value value="stick"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -958,7 +966,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Cannuccia"/>
+               <value value="cannuccia"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -982,7 +990,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Strip"/>
+               <value value="strip"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1006,7 +1014,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Supposta"/>
+               <value value="supposta"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1030,7 +1038,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Siringa"/>
+               <value value="siringa"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1054,7 +1062,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Sistema"/>
+               <value value="sistema"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1078,7 +1086,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Compressa"/>
+               <value value="compressa"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1102,7 +1110,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Tampone"/>
+               <value value="tampone"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1126,7 +1134,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Filo"/>
+               <value value="filo"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1150,7 +1158,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Tubo"/>
+               <value value="tubo"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1174,7 +1182,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Recipiente a tenuta"/>
+               <value value="recipiente a tenuta"/>
             </designation>
             <designation>
                <language value="rm-CH"/>
@@ -1198,7 +1206,7 @@
             </designation>
             <designation>
                <language value="it-CH"/>
-               <value value="Flaconcino"/>
+               <value value="flaconcino"/>
             </designation>
             <designation>
                <language value="rm-CH"/>

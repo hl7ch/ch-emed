@@ -14,6 +14,10 @@
    <title value="EventTiming"/>
    <status value="active"/>
    <date value="2021-05-26"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+   </contact>
    <content value="supplement"/>
    <supplements value="http://hl7.org/fhir/event-timing"/>
    <concept>
