@@ -13,8 +13,8 @@
       "current": true
     },
     {
-      "version": "1.0.0",
-      "date": "2022-01-13",
+      "version": "2.0.0",
+      "date": "2022-02-11",
       "desc": "HL7 Switzerland STU 2",
       "path": "http://fhir.ch/ig/ch-emed",
       "status": "trial-use",
