@@ -42,5 +42,5 @@ A Pharmaceutical Advice document contains one Observation. The Observation refer
 
 #### Adding a comment on an existing medication
 * [COMMENT](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
-   * The Observation refers the original document (Medication Treatment Pland document, Medication Prescription document, Medication Dispense document) and includes a generel comment as annotation.
+   * The Observation refers the original document (Medication Treatment Plan document, Medication Prescription document, Medication Dispense document) and includes a generel comment as annotation.
 
