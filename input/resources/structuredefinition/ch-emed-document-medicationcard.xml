@@ -19,7 +19,6 @@
       </element>
       <element id="Bundle.identifier">
          <path value="Bundle.identifier"/>
-         <short value="Identification number of the document"/>
          <min value="1"/>
       </element>
       <element id="Bundle.identifier.system">
