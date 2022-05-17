@@ -168,6 +168,7 @@
       <element id="Composition.custodian">
          <path value="Composition.custodian"/>
          <short value="The organization in whose name the document has been created"/>
+         <min value="1"/>
       </element>
       <element id="Composition.custodian.reference">
          <path value="Composition.custodian.reference"/>
