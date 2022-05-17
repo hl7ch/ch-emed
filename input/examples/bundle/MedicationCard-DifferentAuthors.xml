@@ -175,7 +175,7 @@
         <id value="Custodian"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234438"/>
+          <value value="7601000121219"/>
         </identifier>
         <name value="Hausarzt"/>
       </Organization>
@@ -308,7 +308,7 @@
         <id value="AuthorDocument"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234439"/>
+          <value value="7601000987655"/>
         </identifier>
         <name>
           <family value="Author"/>
@@ -330,7 +330,7 @@
         <id value="AuthorDocumentOrganization"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234439"/>
+          <value value="7601000987655"/>
         </identifier>
         <name value="AuthorDocumentOrganization"/>
       </Organization>
@@ -345,7 +345,7 @@
         <id value="AuthorSection"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234400"/>
+          <value value="7601000975317"/>
         </identifier>
         <name>
           <family value="Author"/>
@@ -367,7 +367,7 @@
         <id value="AuthorSectionOrganization"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234400"/>
+          <value value="7601000975317"/>
         </identifier>
         <name value="AuthorSectionOrganization"/>
       </Organization>
@@ -382,7 +382,7 @@
         <id value="AuthorMedicalDecision"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234401"/>
+          <value value="7601000989895"/>
         </identifier>
         <name>
           <family value="Author"/>
@@ -404,7 +404,7 @@
         <id value="AuthorMedicalDecisionOrganization"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234401"/>
+          <value value="7601000989895"/>
         </identifier>
         <name value="AuthorMedicalDecisionOrganization"/>
       </Organization>
@@ -419,7 +419,7 @@
         <id value="AuthorOriginalDocument"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234401"/>
+          <value value="7601000989895"/>
         </identifier>
         <name>
           <family value="Author"/>
@@ -441,7 +441,7 @@
         <id value="AuthorOriginalDocumentOrganization"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
-          <value value="7601000234401"/>
+          <value value="7601000989895"/>
         </identifier>
         <name value="AuthorOriginalDocumentOrganization"/>
       </Organization>
