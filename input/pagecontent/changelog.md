@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
 * [#86](https://github.com/hl7ch/ch-emed/issues/86): Update minimum cardinality of Composition.custodian (due to relaxation in the underlying CH Core profile)
+* [#101](https://github.com/hl7ch/ch-emed/issues/101): Update profiles -> Composition.author.extension:time (according to update in CH Core)
 
 #### Fixed
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
