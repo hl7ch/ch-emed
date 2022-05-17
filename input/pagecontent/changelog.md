@@ -1,7 +1,17 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 2 Ballot
+### STU 3 Ballot
+
+#### Changed / Updated
+* [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
+* [#86](https://github.com/hl7ch/ch-emed/issues/86): Update minimum cardinality of Composition.custodian (due to relaxation in the underlying CH Core profile)
+
+#### Fixed
+* [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
+* [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
+
+### STU 2 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.
