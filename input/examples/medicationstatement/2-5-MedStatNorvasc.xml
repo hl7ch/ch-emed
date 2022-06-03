@@ -105,7 +105,4 @@
       </doseQuantity>
     </doseAndRate>
   </dosage>
-  <dosage>
-    <text value="Morgens und abends je 1 Tablette nehmen"/>
-  </dosage>
 </MedicationStatement>

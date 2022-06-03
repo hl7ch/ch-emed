@@ -76,7 +76,6 @@
               <th>Dosis pro Einheit</th>
               <th>Anzahl Packungen</th>
               <th>Packungsgrösse</th>
-              <th>Dosierung</th>
               <th>Dos.Morgen</th>
               <th>Dos.Mittag</th>
               <th>Dos.Abend</th>
@@ -96,7 +95,6 @@
               <td id="dis.1.dosequantity">50 mg</td>
               <td id="dis.1.nopackages">1</td>
               <td id="dis.1.packagesize">30 Stk</td>
-              <td id="dis.1.dosageintakemode">Morgens 1 und abends 1/2 Tablette nehmen</td>
               <td id="dis.1.dosagemorning">1</td>
               <td id="dis.1.dosagelunch">0</td>
               <td id="dis.1.dosageevening">0.5</td>

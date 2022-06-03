@@ -104,7 +104,4 @@
       </doseQuantity>
     </doseAndRate>
   </dosage>
-  <dosage>
-    <text value="Morgens 1/2 Tablette nehmen"/>
-  </dosage>
 </MedicationStatement>
