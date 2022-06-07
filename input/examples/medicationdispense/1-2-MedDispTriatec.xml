@@ -118,9 +118,6 @@
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>
-  <dosageInstruction>
-    <text value="Morgens 1/2 Tablette nehmen"/>
-  </dosageInstruction>
   <!-- substitution just as test case -->
   <substitution>
     <wasSubstituted value="true"/>

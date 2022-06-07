@@ -320,9 +320,6 @@
           <text value="-"/>
         </note>
         <dosage>
-          <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-        </dosage>
-        <dosage>
           <sequence value="1"/>
           <timing>
             <repeat>
@@ -472,7 +469,6 @@
           <text value="-"/>
         </note>
         <dosage>
-
           <timing>
             <repeat>
               <boundsPeriod>
@@ -497,9 +493,6 @@
               <code value="732936001"/>
             </doseQuantity>
           </doseAndRate>
-        </dosage>
-        <dosage>
-          <text value="Morgens und abends je 1 Tablette nehmen"/>
         </dosage>
       </MedicationStatement>
     </resource>

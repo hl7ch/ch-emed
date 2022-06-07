@@ -1,7 +1,7 @@
 ### Overview
 
-This implementation guide currently describes the unstructured and the structured dosage. For the unstructured form, the dosage is given as free text. With structured dosing, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. In this case, an additional differentiation is made whether it is a normal or split dosing. For [normal dosing](#normal-dosing-incl-dosage-non-structured), the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For [split dosing](#split-dosing-incl-dosage-non-structured), the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).
-
+This implementation guide currently describes the unstructured and the structured dosage. For the unstructured form, the dosage is given as free text. With structured dosing, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. In this case, an additional differentiation is made whether it is a normal or split dosing. For [normal dosing](#structured-dosage---normal-dosing), the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For [split dosing](#structured-dosage---split-dosing), the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).   
+If possible, the structured dosage should be provided. If no structured dosage is available or for complex dosages, the unstructured dosage can be used. To avoid discrepancies between information of the structured and unstructured dosage, it is not possible to indicate both.
 
 The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Module (1.3.6.1.4.1.19376.1.9.1.3.6)* in the [IHE Pharmacy Technical Framework Supplement: Community Prescription (PRE)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PRE.pdf).
 
@@ -30,23 +30,19 @@ The amount of medication administered is represented with SNOMED CT or UCUM code
 <p>&nbsp;</p>
 
 
-### Normal Dosing (incl. Dosage Non-Structured)
+### Structured Dosage - Normal Dosing
 The normal dosing is represented using **one structured dosage element**.   
-One non-structured dosage element may be additionally be present.
 
 #### Dosage example according the use case step 2-5
 
 {:class="table table-bordered"}
-| Dosage non-structured | Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
-| :------- | :------- | :------- | :------- | :------- | :------- |
-| Morgens und abends je 1 Tablette einnehmen | 1 | 0 | 1 | 0 | oral |
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
+| :------- | :------- | :------- | :------- | :------- |
+| 1 | 0 | 1 | 0 | oral |
 
 
 ```json
     "dosage" : [
-      {
-        "text" : "Morgens und abends je 1 Tablette einnehmen"
-      },
       {
         "timing" : {
             "repeat" : {
@@ -84,24 +80,20 @@ One non-structured dosage element may be additionally be present.
 
 See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.json.html)
 
-### Split Dosing (incl. Dosage Non-Structured)
+### Structured Dosage - Split Dosing
 The split dosing differs from the normal dosing in that the dosage element can be repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element **sequence**.   
-One non-structured dosage element may be additionally be present.
 
 #### Dosage example according the use case step 2-3
 
 {:class="table table-bordered"}
-| Dosage non-structured | Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
-| :------- | :------- | :------- | :------- | :------- | :------- |
-| Morgens 1 und abends 1/2 Tablette einnehmen | 1 | 0 | 0.5 | 0 | oral |
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
+| :------- | :------- | :------- | :------- | :------- |
+| 1 | 0 | 0.5 | 0 | oral |
 
 ```json
     "dosage" : [
       {
-        "text" : "Morgens 1 und abends 1/2 Tablette nehmen"
-      },
-      {
-        "sequence" : 1,
+        "sequence" : 0,
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
@@ -133,7 +125,7 @@ One non-structured dosage element may be additionally be present.
         ]
       },
       {
-        "sequence" : 2,
+        "sequence" : 1,
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {

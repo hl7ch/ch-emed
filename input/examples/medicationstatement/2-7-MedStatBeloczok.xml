@@ -94,9 +94,6 @@
     <text value="-"/>
   </note>
   <dosage>
-    <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-  </dosage>
-  <dosage>
     <sequence value="1"/>
     <timing>
       <repeat>

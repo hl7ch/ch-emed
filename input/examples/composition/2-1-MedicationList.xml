@@ -74,7 +74,6 @@
               <th>Wirkstoffname</th>
               <th>Galenische Form</th>
               <th>Dosis pro Einheit</th>
-              <th>Dosierung</th>
               <th>Dos.Morgen</th>
               <th>Dos.Mittag</th>
               <th>Dos.Abend</th>
@@ -91,7 +90,6 @@
               <td id="mtp.1.ingredient">Ramipril</td>
               <td id="mtp.1.packageform">Tbl</td>
               <td id="mtp.1.dosequantity">2.5 mg</td>
-              <td id="mtp.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
               <td id="mtp.1.dosagemorning">0.5</td>
               <td id="mtp.1.dosagelunch">0</td>
               <td id="mtp.1.dosageevening">0</td>

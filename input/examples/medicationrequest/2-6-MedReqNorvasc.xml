@@ -120,9 +120,6 @@
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>
-  <dosageInstruction>
-    <text value="Morgens und abends je 1 Tablette nehmen"/>
-  </dosageInstruction>
   <dispenseRequest>
     <validityPeriod>
       <start value="2012-02-04"/>
