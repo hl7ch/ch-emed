@@ -93,7 +93,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
 ```json
     "dosage" : [
       {
-        "sequence" : 0,
+        "sequence" : 1,
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
@@ -125,7 +125,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
         ]
       },
       {
-        "sequence" : 1,
+        "sequence" : 2,
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
