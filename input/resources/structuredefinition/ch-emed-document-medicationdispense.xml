@@ -37,6 +37,7 @@
          <path value="Bundle.timestamp" />
          <short value="The document's creation date and time"/>
       </element>
+
       <element id="Bundle.entry">
          <path value="Bundle.entry" />
          <slicing>
@@ -47,6 +48,7 @@
             <rules value="open" />
          </slicing>
       </element>
+      
       <element id="Bundle.entry:Composition">
          <path value="Bundle.entry" />
          <sliceName value="Composition" />
@@ -60,6 +62,19 @@
          <type>
             <code value="Resource" />
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationdispense" />
+         </type>
+      </element>
+
+      <element id="Bundle.entry:MedicationDispense">
+         <path value="Bundle.entry" />
+         <sliceName value="MedicationDispense" />
+      </element>
+      <element id="Bundle.entry:MedicationDispense.resource">
+         <path value="Bundle.entry.resource" />
+         <min value="1" />
+         <type>
+            <code value="Resource" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense" />
          </type>
       </element>
    </differential>
