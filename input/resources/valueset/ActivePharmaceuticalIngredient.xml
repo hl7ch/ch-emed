@@ -2,13 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ActivePharmaceuticalIngredient"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.82--20200925110235"/>
+      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.82--20220302152514"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2020-09-25T11:02:35+01:00"/>
+         <start value="2022-03-02T15:25:14+02:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -18,10 +18,10 @@
       <system value="urn:ietf:rfc:3986"/>
       <value value="urn:oid:2.16.756.5.30.1.1.11.82"/>
    </identifier>
-   <version value="2020-09-25T11:02:35"/>
+   <version value="2022-03-02T15:25:14"/>
    <name value="ActivePharmaceuticalIngredient"/>
    <title value="ActivePharmaceuticalIngredient"/>
-   <status value="draft"/>
+   <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>
@@ -18130,7 +18130,7 @@
             </designation>
             <designation>
                <language value="en-US"/>
-               <value value="nimésulide"/>
+               <value value="Nicotine"/>
             </designation>
          </concept>
          <concept>

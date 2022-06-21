@@ -13,7 +13,7 @@
    <version value="2021-06-01T18:03:30"/>
    <name value="EdqmStandardTerms"/>
    <title value="EDQM - Standard Terms"/>
-   <status value="draft"/>
+   <status value="active"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>
@@ -8764,6 +8764,26 @@
       <designation>
          <language value="rm-CH"/>
          <value value="extrakorporale Anwendung"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="20087000"/>
+      <display value="Extrapleural use"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="extrapleurale Anwendung"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="voie extrapleural"/>
+      </designation>
+      <designation>
+         <language value="it-CH"/>
+         <value value="uso extrapleurico"/>
+      </designation>
+      <designation>
+         <language value="rm-CH"/>
+         <value value="extrapleurale Anwendung"/>
       </designation>
    </concept>
    <concept>
