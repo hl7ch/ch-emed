@@ -17,10 +17,10 @@ The representation of the Medication Card document SHALL be embedded as a PDF in
 * 2-7 Medication Card document with UUID for fullUrl: [XML](Bundle-2-7-MedicationCard-UUIDfullUrl.xml.html), [JSON](Bundle-2-7-MedicationCard-UUIDfulUrl.json.html)
 
 ### Profiles
-* [CH EMED Medication Card Document Profile](StructureDefinition-ch-emed-document-medicationcard.html)
-* [CH EMED Medication Card Composition Profile](StructureDefinition-ch-emed-composition-medicationcard.html)
-* [CH EMED MedicationStatement Profile (Medication Card document)](StructureDefinition-ch-emed-medicationstatement-card.html)
-* [CH EMED Medication Profile](StructureDefinition-ch-emed-medication.html)
-* [CH EMED Dosage Non-Structured Profile](StructureDefinition-ch-emed-dosage-nonstructured.html)
-* [CH EMED Dosage Structured Profile Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
-* [CH EMED Dosage Structured Profile Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)
+* [CH EMED Medication Card Document](StructureDefinition-ch-emed-document-medicationcard.html)
+* [CH EMED Medication Card Composition](StructureDefinition-ch-emed-composition-medicationcard.html)
+* [CH EMED MedicationStatement (Medication Card document)](StructureDefinition-ch-emed-medicationstatement-card.html)
+* [CH EMED Medication](StructureDefinition-ch-emed-medication.html)
+* [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
+* [CH EMED Dosage Structured Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
+* [CH EMED Dosage Structured Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)

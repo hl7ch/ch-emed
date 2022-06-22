@@ -15,10 +15,10 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 * 2-4 Medication Dispense document: [XML](Bundle-2-4-MedicationDispense.xml.html), [JSON](Bundle-2-4-MedicationDispense.json.html)
 
 ### Profiles
-* [CH EMED Medication Dispense Document Profile](StructureDefinition-ch-emed-document-medicationdispense.html)
-* [CH EMED Medication Dispense Composition Profile](StructureDefinition-ch-emed-composition-medicationdispense.html)
-* [CH EMED MedicationDispense Profile](StructureDefinition-ch-emed-medicationdispense.html)
-* [CH EMED Medication Profile (MedicationDispense)](StructureDefinition-ch-emed-medication-medicationdispense.html)
-* [CH EMED Dosage Non-Structured Profile](StructureDefinition-ch-emed-dosage-nonstructured.html)
-* [CH EMED Dosage Structured Profile Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
-* [CH EMED Dosage Structured Profile Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)
+* [CH EMED Medication Dispense Document](StructureDefinition-ch-emed-document-medicationdispense.html)
+* [CH EMED Medication Dispense Composition](StructureDefinition-ch-emed-composition-medicationdispense.html)
+* [CH EMED MedicationDispense](StructureDefinition-ch-emed-medicationdispense.html)
+* [CH EMED Medication (MedicationDispense)](StructureDefinition-ch-emed-medication-medicationdispense.html)
+* [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
+* [CH EMED Dosage Structured Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
+* [CH EMED Dosage Structured Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)

@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
    <version value="0.1.0"/>
    <name value="CHEMEDMedicationDispense"/>
-   <title value="CH EMED MedicationDispense Profile"/>
+   <title value="CH EMED MedicationDispense"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication dispense"/>

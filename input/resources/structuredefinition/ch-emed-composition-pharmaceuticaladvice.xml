@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-pharmaceuticaladvice"/>
    <version value="0.1.0"/>
    <name value="CHEMEDCompositionPharmaceuticalAdvice"/>
-   <title value="CH EMED Pharmaceutical Advice Composition Profile"/>
+   <title value="CH EMED Pharmaceutical Advice Composition"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the composition for the pharmaceutical advice document"/>

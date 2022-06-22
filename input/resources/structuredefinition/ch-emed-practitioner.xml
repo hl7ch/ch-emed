@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
    <version value="0.1.0"/>
    <name value="CHEMEDPractitioner"/>
-   <title value="CH EMED Practitioner Profile"/>
+   <title value="CH EMED Practitioner"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the practitioner for the eMedication context"/>

@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
    <version value="0.1.0"/>
    <name value="CHEMEDMedication"/>
-   <title value="CH EMED Medication Profile"/>
+   <title value="CH EMED Medication"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication"/>

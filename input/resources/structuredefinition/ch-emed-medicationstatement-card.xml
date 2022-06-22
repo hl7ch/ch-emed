@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
    <version value="0.1.0"/>
    <name value="CHEMEDMedicationStatementCard"/>
-   <title value="CH EMED MedicationStatement Profile (Medication Card document)"/>
+   <title value="CH EMED MedicationStatement (Medication Card document)"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication statement for the Medication Card document"/>

@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
    <version value="0.1.0"/>
    <name value="CHEMEDDosageStructured"/>
-   <title value="CH EMED Dosage Structured Profile"/>
+   <title value="CH EMED Dosage Structured"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the structured dosage"/>

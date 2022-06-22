@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
    <version value="0.1.0"/>
    <name value="CHEMEDCompositionMedicationTreatmentPlan"/>
-   <title value="CH EMED Medication Treatment Plan Composition Profile"/>
+   <title value="CH EMED Medication Treatment Plan Composition"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the composition for the medication treatment plan document"/>

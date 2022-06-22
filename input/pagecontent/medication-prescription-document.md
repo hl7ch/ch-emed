@@ -16,10 +16,10 @@ The representation of the Medication Prescription document SHALL be embedded as 
 * 2-6 Medication Prescription document: [XML](Bundle-2-6-MedicationPrescription.xml.html), [JSON](Bundle-2-6-MedicationPrescription.json.html)
 
 ### Profiles
-* [CH EMED Medication Prescription Document Profile](StructureDefinition-ch-emed-document-medicationprescription.html)
-* [CH EMED Medication Prescription Composition Profile](StructureDefinition-ch-emed-composition-medicationprescription.html)
-* [CH EMED MedicationRequest Profile](StructureDefinition-ch-emed-medicationrequest.html)
-* [CH EMED Medication Profile](StructureDefinition-ch-emed-medication.html)
-* [CH EMED Dosage Non-Structured Profile](StructureDefinition-ch-emed-dosage-nonstructured.html)
-* [CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
-* [CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)
+* [CH EMED Medication Prescription Document](StructureDefinition-ch-emed-document-medicationprescription.html)
+* [CH EMED Medication Prescription Composition](StructureDefinition-ch-emed-composition-medicationprescription.html)
+* [CH EMED MedicationRequest](StructureDefinition-ch-emed-medicationrequest.html)
+* [CH EMED Medication](StructureDefinition-ch-emed-medication.html)
+* [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
+* [CH EMED Dosage Structured Normal Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
+* [CH EMED Dosage Structured Split Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)

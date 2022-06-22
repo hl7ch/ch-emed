@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
    <version value="0.1.0"/>
    <name value="CHEMEDMedicationRequest"/>
-   <title value="CH EMED MedicationRequest Profile"/>
+   <title value="CH EMED MedicationRequest"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication request"/>

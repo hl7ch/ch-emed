@@ -17,10 +17,10 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 
 
 ### Profiles
-* [CH EMED Medication Treatment Plan Document Profile](StructureDefinition-ch-emed-document-medicationtreatmentplan.html)
-* [CH EMED Medication Treatment Plan Composition Profile](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)
-* [CH EMED MedicationStatement Profile (Medication Treatment Plan document)](StructureDefinition-ch-emed-medicationstatement-treatmentplan.html)
-* [CH EMED Medication Profile](StructureDefinition-ch-emed-medication.html)
-* [CH EMED Dosage Non-Structured Profile](StructureDefinition-ch-emed-dosage-nonstructured.html)
-* [CH EMED Dosage Structured Profile Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
-* [CH EMED Dosage Structured Profile Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)
+* [CH EMED Medication Treatment Plan Document](StructureDefinition-ch-emed-document-medicationtreatmentplan.html)
+* [CH EMED Medication Treatment Plan Composition](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)
+* [CH EMED MedicationStatement (Medication Treatment Plan document)](StructureDefinition-ch-emed-medicationstatement-treatmentplan.html)
+* [CH EMED Medication](StructureDefinition-ch-emed-medication.html)
+* [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
+* [CH EMED Dosage Structured Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)
+* [CH EMED Dosage Structured Split Dosing](StructureDefinition-ch-emed-dosage-structured-split.html)

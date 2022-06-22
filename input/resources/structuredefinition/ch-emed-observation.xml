@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
    <version value="0.1.0"/>
    <name value="CHEMEDObservation"/>
-   <title value="CH EMED Observation Profile"/>
+   <title value="CH EMED Observation"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the observation"/>

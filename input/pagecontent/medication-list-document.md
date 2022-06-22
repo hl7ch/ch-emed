@@ -14,9 +14,9 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 * 2-1 Medication List document: [XML](Bundle-2-1-MedicationList.xml.html), [JSON](Bundle-2-1-MedicationList.json.html)
 
 ### Profiles
-* [CH EMED Medication List Document Profile](StructureDefinition-ch-emed-document-medicationlist.html)
-* [CH EMED Medication List Composition Profile](StructureDefinition-ch-emed-composition-medicationlist.html)
-* [CH EMED MedicationStatement Profile (Medication Treatment Plan document)](StructureDefinition-ch-emed-medicationstatement-treatmentplan.html)
-* [CH EMED MedicationRequest Profile](StructureDefinition-ch-emed-medicationrequest.html)
-* [CH EMED MedicationDispense Profile](StructureDefinition-ch-emed-medicationdispense.html)
-* [CH EMED Observation Profile](StructureDefinition-ch-emed-observation.html)
+* [CH EMED Medication List Document](StructureDefinition-ch-emed-document-medicationlist.html)
+* [CH EMED Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html)
+* [CH EMED MedicationStatement (Medication Treatment Plan document)](StructureDefinition-ch-emed-medicationstatement-treatmentplan.html)
+* [CH EMED MedicationRequest](StructureDefinition-ch-emed-medicationrequest.html)
+* [CH EMED MedicationDispense](StructureDefinition-ch-emed-medicationdispense.html)
+* [CH EMED Observation](StructureDefinition-ch-emed-observation.html)

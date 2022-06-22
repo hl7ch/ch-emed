@@ -3,7 +3,7 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
    <version value="0.1.0"/>
    <name value="CHEMEDPractitionerRole"/>
-   <title value="CH EMED PractitionerRole Profile"/>
+   <title value="CH EMED PractitionerRole"/>
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the practitioner role for the eMedication context"/>

@@ -3,7 +3,7 @@
     <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ratio"/>
     <version value="4.0.1"/>
     <name value="CHEMEDRatioWithEmedUnits"/>
-    <title value="CH EMED Ratio with units"/>
+    <title value="CH EMED Ratio with Units"/>
     <status value="active"/>
     <date value="2021-04-07"/>
     <description value="A ratio with defined units"/>
