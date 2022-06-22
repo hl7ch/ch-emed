@@ -25,6 +25,10 @@ Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
 Code System URI 'http://example.com/localcode' is unknown so the code cannot be validated
 The value provided ('rm-CH') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#rm-CH) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 
+# Slicing information about narrativeLink extension
+This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense
+
 # Problem in the base profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
