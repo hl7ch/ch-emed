@@ -2,13 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="edqm-routeofadministration"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.2--20180405172834"/>
+      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.2--20220608154214"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2018-04-05T17:28:34+01:00"/>
+         <start value="2022-06-08T15:42:14+02:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -18,7 +18,7 @@
       <system value="urn:ietf:rfc:3986"/>
       <value value="urn:oid:2.16.756.5.30.1.1.11.2"/>
    </identifier>
-   <version value="2018-04-05T17:28:34"/>
+   <version value="2022-06-08T15:42:14"/>
    <name value="RouteOfAdministrationEDQM"/>
    <title value="EDQM - RouteOfAdministration"/>
    <status value="draft"/>
@@ -287,6 +287,29 @@
             <designation>
                <language value="rm-CH"/>
                <value value="extrakorporale Anwendung"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medical product dirrectly outside the pleural cavity, between the parietal pleural and the endothoracic fascia."/>
+            </extension>
+            <code value="20087000"/>
+            <display value="Extrapleural use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="extrapleurale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="voie extrapleural"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="uso extrapleurico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="extrapleurale Anwendung"/>
             </designation>
          </concept>
          <concept>
