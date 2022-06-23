@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 Ballot
+### STU 3 Ballot (2022-06-29)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -12,6 +12,12 @@ issue90-dosage
 * [#90](https://github.com/hl7ch/ch-emed/issues/90): Dosage in Medication Prescription document - Relax minimum cardinality of Dosage.timing.repeat.boundsPeriod to 0
 * [#106](https://github.com/hl7ch/ch-emed/issues/106): Improve slicing that info entry[x] warnings are not shown
 * [#110](https://github.com/hl7ch/ch-emed/issues/110): Update title of the profiles for a better readability of the references
+* Update value sets
+   * [#89](https://github.com/hl7ch/ch-emed/issues/89): ActivePharmaceuticalIngredient -> fix typo (Nicotine)
+   * [#94](https://github.com/hl7ch/ch-emed/issues/94): EDQM - RouteOfAdministration -> add EDQM code '20087000' (Extrapleural use)
+   * [#93](https://github.com/hl7ch/ch-emed/issues/93): UnitCode -> add UCUM code 'a' (year)
+   * UnitCode -> update the fr-CH display value for '732982009' from 'poche' to 'sac'
+   * [#111](https://github.com/hl7ch/ch-emed/issues/111): UnitCode -> add UCUM code 'mo' (month)
 
 #### Fixed
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
