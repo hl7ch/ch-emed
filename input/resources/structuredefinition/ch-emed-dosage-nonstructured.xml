@@ -50,7 +50,7 @@
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <min value="0"/>
-         <!--<max value="0"/> TBD: Test case PMP -->
+         <max value="0"/>
       </element>
       <element id="Dosage.asNeeded[x]">
          <path value="Dosage.asNeeded[x]"/>
