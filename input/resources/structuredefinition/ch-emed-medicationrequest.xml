@@ -71,6 +71,24 @@
             <map value=".entryRelationship.substanceAdministration.id"/>
          </mapping>
       </element>
+
+      <!-- document author -->
+      <element id="MedicationRequest.extension:authorDocument">
+         <path value="MedicationRequest.extension" />
+         <sliceName value="authorDocument" />
+         <short value="Author of the original document if different from the author of the medical decision (MedicationRequest.performer)"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor" />
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author"/>
+         </mapping>
+      </element>
+
       <element id="MedicationRequest.identifier">
          <path value="MedicationRequest.identifier"/>
          <short value="MedicationRequest Identifier"/>
@@ -127,6 +145,70 @@
          <path value="MedicationRequest.subject.reference"/>
          <min value="1"/>
       </element>
+
+      <!-- MedicationRequest Author -->
+      <element id="MedicationRequest.performer">
+         <path value="MedicationRequest.performer"/>
+         <short value="The author of the medical decision"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author.assignedAuthor.assignedPerson"/>
+         </mapping>
+      </element>
+
+      <element id="MedicationRequest.performer.extension">
+         <path value="MedicationRequest.performer.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="MedicationRequest.performer.extension:authorTime">
+         <path value="MedicationRequest.performer.extension"/>
+         <sliceName value="authorTime"/>
+         <short value="Timestamp of the authorship/data input"/>
+         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author.time"/>
+         </mapping>
+      </element>
+      <element id="MedicationRequest.performer.extension:authorOrganization">
+         <path value="MedicationRequest.performer.extension"/>
+         <sliceName value="authorOrganization"/>
+         <short value="The author's organization"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author.assignedAuthor.representedOrganization"/>
+         </mapping>
+      </element>
+      <element id="MedicationRequest.performer.reference">
+         <path value="MedicationRequest.performer.reference"/>
+         <min value="1"/>
+      </element>
+
       <element id="MedicationRequest.reasonCode">
          <path value="MedicationRequest.reasonCode"/>
          <short value="Treatment reason"/>

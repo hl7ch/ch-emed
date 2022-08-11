@@ -10,6 +10,7 @@ During the ballot, the following comments came in, which will be taken into acco
 See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 #### Added
+* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document
 
 #### Changed / Updated
 

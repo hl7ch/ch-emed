@@ -7,7 +7,7 @@
     <title value="CH EMED Extension Document Author"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="Extension to represent the author of the original document in the medication statement (for the Medication Card document)"/>
+    <description value="Extension to represent the author of the original document (for the Medication Card document and the Medication List document)"/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="cda"/>
@@ -19,6 +19,18 @@
     <context>
         <type value="element"/>
         <expression value="MedicationStatement"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationDispense"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationRequest"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Observation"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

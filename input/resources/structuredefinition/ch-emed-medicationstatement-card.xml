@@ -54,23 +54,6 @@
             <map value=".entryRelationship.substanceAdministration.id"/>
          </mapping>
       </element>
-
-      <!-- Medication Treatment Plan document author -->
-      <element id="MedicationStatement.extension:authorDocument">
-         <path value="MedicationStatement.extension" />
-         <sliceName value="authorDocument" />
-         <short value="Author of the original document if different from the information source"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor" />
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author"/>
-         </mapping>
-      </element>
       
       <!--<element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
@@ -97,69 +80,6 @@
       <element id="MedicationStatement.subject.reference">
          <path value="MedicationStatement.subject.reference"/>
       </element>-->
-
-      <!-- Medication Treatment Plan Author -->
-      <element id="MedicationStatement.informationSource">
-         <path value="MedicationStatement.informationSource"/>
-         <short value="The author of the medical decision"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.assignedAuthor.assignedPerson"/>
-         </mapping>
-      </element>
-
-      <element id="MedicationStatement.informationSource.extension">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="MedicationStatement.informationSource.extension:authorTime">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <sliceName value="authorTime"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.time"/>
-         </mapping>
-      </element>
-      <element id="MedicationStatement.informationSource.extension:authorOrganization">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <sliceName value="authorOrganization"/>
-         <short value="The author's organization"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.assignedAuthor.representedOrganization"/>
-         </mapping>
-      </element>
-      <element id="MedicationStatement.informationSource.reference">
-         <path value="MedicationStatement.informationSource.reference"/>
-         <min value="1"/>
-      </element>
 
       <!--<element id="MedicationStatement.reasonCode">
          <path value="MedicationStatement.reasonCode"/>
