@@ -7,7 +7,7 @@
     <title value="CH EMED Extension Document Author"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="Extension to represent the author of the original document (for the Medication Card document and the Medication List document)"/>
+    <description value="Extension to represent the author and its organization of the original document (for the Medication Card document and the Medication List document)"/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="cda"/>
@@ -45,76 +45,10 @@
                 <map value=".author"/>
             </mapping>
         </element>
-        <element id="Extension.extension:author">
+        <element id="Extension.extension">
             <path value="Extension.extension"/>
-            <sliceName value="author"/>
-            <short value="The author of the original document"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".assignedAuthor.assignedPerson"/>
-            </mapping>
-        </element>
-        <element id="Extension.extension:author.extension">
-            <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.extension:author.url">
-            <path value="Extension.extension.url"/>
-            <type>
-                <code value="uri"/>
-            </type>
-            <fixedUri value="author"/>
-        </element>
-        <element id="Extension.extension:author.valueReference">
-            <path value="Extension.extension.valueReference"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            </type>
-        </element>
-
-        <element id="Extension.extension:representedOrganization">
-            <path value="Extension.extension"/>
-            <sliceName value="representedOrganization"/>
-            <short value="The author's organization"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".assignedAuthor.representedOrganization"/>
-            </mapping>
-        </element>
-
-        <element id="Extension.extension:timestamp">
-            <path value="Extension.extension"/>
-            <sliceName value="timestamp"/>
-            <short value="Timestamp of the authorship/data input"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".time"/>
-            </mapping>
-        </element>
-
         <element id="Extension.url">
             <path value="Extension.url"/>
             <type>
@@ -122,10 +56,50 @@
             </type>
             <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor"/>
         </element>
-        <element id="Extension.value[x]">
-            <path value="Extension.value[x]"/>
-            <min value="0"/>
-            <max value="0"/>
+        
+        <element id="Extension.valueReference">
+            <path value="Extension.valueReference"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".assignedAuthor.assignedPerson/representedOrganization"/>
+            </mapping>
         </element>
+
+        <element id="Extension.valueReference.extension">
+            <path value="Extension.valueReference.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Extension.valueReference.extension:time">
+            <path value="Extension.valueReference.extension"/>
+            <sliceName value="time"/>
+            <short value="Timestamp of the authorship/data input"/>
+            <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as Extension.valueReference -->
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".assignedAuthor.time"/>
+            </mapping>
+        </element>
+        <element id="Extension.valueReference.reference">
+            <path value="Extension.valueReference.reference"/>
+            <min value="1"/>
+        </element>
+
     </differential>
 </StructureDefinition>
