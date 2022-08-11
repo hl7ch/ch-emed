@@ -1,6 +1,24 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### STU 3 (2022-xx-xx)
+
+#### Open Issues
+During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
+* ...
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
+
+#### Added
+
+#### Changed / Updated
+
+#### Fixed
+
+#### Issues resolved without amendment
+
+
+
 ### STU 3 Ballot (2022-07-07)
 
 #### Changed / Updated
