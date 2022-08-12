@@ -280,7 +280,7 @@
          <short value="The author and its organization of the section if different from the author/timestamp of the document"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
          </type>
       </element>
 
