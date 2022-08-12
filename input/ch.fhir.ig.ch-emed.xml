@@ -29,7 +29,7 @@
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
-      <version value="2.1.0"/>
+      <version value="current"/>
    </dependsOn>
    <definition>
       <grouping>
@@ -730,6 +730,11 @@
          <page>
             <nameUrl value="repeated-dispense.html"/>
             <title value="Repeated Dispense"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="different-authors.html"/>
+            <title value="Different Authors"/>
             <generation value="markdown"/>
          </page>
          <page>

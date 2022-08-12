@@ -10,9 +10,10 @@ During the ballot, the following comments came in, which will be taken into acco
 See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 #### Added
-* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document
+* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html).
 
 #### Changed / Updated
+* [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level -> Simplification of CH EMED Extension Document Author, limit author references to PractitionerRole (remove CH EMED Extension Represented Organization)
 
 #### Fixed
 
