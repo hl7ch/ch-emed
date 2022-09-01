@@ -44,18 +44,25 @@
       </element>
       <element id="Dosage.patientInstruction">
          <path value="Dosage.patientInstruction"/>
-         <min value="0"/>
-         <max value="0"/>
+         <short value="Patient medication instructions (e.g. 'take with food')"/>
+         <mustSupport value="true"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <min value="0"/>
          <max value="0"/>
       </element>
-      <element id="Dosage.asNeeded[x]">
-         <path value="Dosage.asNeeded[x]"/>
-         <min value="0"/>
-         <max value="0"/>
+      <element id="Dosage.asNeededBoolean">
+         <path value="Dosage.asNeededBoolean"/>
+         <short value="In reserve (to be taken by the patient only if the need arises - e.g. pains)"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.code"/>
+         </mapping>
       </element>
       <element id="Dosage.site">
          <path value="Dosage.site"/>
