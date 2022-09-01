@@ -44,6 +44,7 @@ The normal dosing is represented using **one structured dosage element**.
 ```json
     "dosage" : [
       {
+        "patientInstruction" : "-",
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
@@ -94,6 +95,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
     "dosage" : [
       {
         "sequence" : 1,
+        "patientInstruction" : "-",
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
@@ -126,6 +128,7 @@ The split dosing differs from the normal dosing in that the dosage element can b
       },
       {
         "sequence" : 2,
+        "patientInstruction" : "-",
         "timing" : {
             "repeat" : {
             "boundsPeriod" : {
