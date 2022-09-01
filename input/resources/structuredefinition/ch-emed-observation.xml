@@ -226,7 +226,7 @@
 
       <element id="Observation.note">
          <path value="Observation.note"/>
-         <short value="Annotation"/>
+         <short value="COMMENT: the actual comment. OK/CHANGE/REFUSE/CANCEL/SUSPEND: the reason why the action was done."/>
          <min value="1"/>
          <max value="1"/>
       </element>
