@@ -226,7 +226,7 @@
 
       <element id="Observation.note">
          <path value="Observation.note"/>
-         <short value="Annotation"/>
+         <short value="COMMENT: the actual comment. OK/CHANGE/REFUSE/CANCEL/SUSPEND: the reason why the action was done."/>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -234,7 +234,7 @@
          <path value="Observation.note.text"/>
          <mapping>
             <identity value="cda"/>
-            <map value=".text"/>
+            <map value="COMMENT: .text. OK/CHANGE/REFUSE/CANCEL/SUSPEND: .entryRelationsship where [hl7:act [hl7:templateId [@root='2.16.756.5.30.1.1.10.4.2']]]"/>
          </mapping>
       </element>
    </differential>

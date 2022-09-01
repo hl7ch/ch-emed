@@ -29,7 +29,7 @@
             <short value="CH EMED Extension"/>
             <mapping>
                 <identity value="cda"/>
-                <map value=".observation.entryRelationship where [hl7:substanceAdministration [hl7:templateId [@root='1.3.6.1.4.1.19376.1.9.1.3.7']]]"/>
+                <map value=".entryRelationship where [hl7:substanceAdministration [hl7:templateId [@root='1.3.6.1.4.1.19376.1.9.1.3.7']]]"/>
             </mapping>
         </element>
         <element id="Extension.extension">

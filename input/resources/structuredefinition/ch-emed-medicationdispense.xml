@@ -245,15 +245,6 @@
          <path value="MedicationDispense.whenHandedOver"/>
          <short value="When product was given out"/>
       </element>
-      <element id="MedicationDispense.note">
-         <path value="MedicationDispense.note"/>
-         <short value="Annotation"/>
-         <max value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.text"/>
-         </mapping>
-      </element>
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
          <slicing>

@@ -90,10 +90,8 @@
   <quantity>
     <value value="1"/>
   </quantity>
-  <note>
-    <text value="-"/>
-  </note>
   <dosageInstruction>
+    <patientInstruction value="-"/>
     <timing>
       <repeat>
         <boundsPeriod>

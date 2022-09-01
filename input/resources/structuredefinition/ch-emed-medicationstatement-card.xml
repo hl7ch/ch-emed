@@ -26,9 +26,7 @@
             <map value="substanceAdministration"/>
          </mapping>
       </element>
-      <!--<element id="MedicationStatement.contained">
-         <path value="MedicationStatement.contained"/>
-      </element>-->
+
       <element id="MedicationStatement.extension">
          <path value="MedicationStatement.extension"/>
          <slicing>
@@ -54,44 +52,32 @@
             <map value=".entryRelationship.substanceAdministration.id"/>
          </mapping>
       </element>
-      
-      <!--<element id="MedicationStatement.identifier">
-         <path value="MedicationStatement.identifier"/>
-      </element>
-      <element id="MedicationStatement.identifier.system">
-         <path value="MedicationStatement.identifier.system"/>
-         <fixedUri value="urn:ietf:rfc:3986"/>
-      </element>
-      <element id="MedicationStatement.identifier.value">
-         <path value="MedicationStatement.identifier.value"/>
-      </element>
-      <element id="MedicationStatement.status">
-         <path value="MedicationStatement.status"/>
-         <fixedCode value="completed"/>
-      </element>-->
+
       <element id="MedicationStatement.medication[x]:medicationReference">
          <path value="MedicationStatement.medication[x]"/>
          <sliceName value="medicationReference"/>
          <mustSupport value="true"/>
       </element>
-      <!--<element id="MedicationStatement.subject">
-         <path value="MedicationStatement.subject"/>
-      </element>
-      <element id="MedicationStatement.subject.reference">
-         <path value="MedicationStatement.subject.reference"/>
-      </element>-->
 
-      <!--<element id="MedicationStatement.reasonCode">
-         <path value="MedicationStatement.reasonCode"/>
-      </element>-->
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
          <mustSupport value="true"/>
       </element>
 
+      <element id="MedicationStatement.note">
+         <path value="MedicationStatement.note"/>
+         <short value="Annotation comment"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act"/>
+         </mapping>
+      </element>
       <element id="MedicationStatement.note.text">
          <path value="MedicationStatement.note.text"/>
-         <mustSupport value="true"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
       </element>
 
       <element id="MedicationStatement.dosage">

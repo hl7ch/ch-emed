@@ -76,10 +76,8 @@
   <reasonCode>
     <text value="Bluthochdruck"/>
   </reasonCode>
-  <note>
-    <text value="-"/>
-  </note>
   <dosage>
+    <patientInstruction value="-"/>
     <timing>
       <repeat>
         <boundsPeriod>

@@ -276,6 +276,7 @@
 
         <dosage>
           <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
+          <patientInstruction value="-"/>
         </dosage>
       </MedicationStatement>
     </resource>
