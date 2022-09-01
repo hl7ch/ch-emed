@@ -187,15 +187,6 @@
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
       </element>
-      <element id="MedicationStatement.note">
-         <path value="MedicationStatement.note"/>
-         <short value="Annotation"/>
-         <max value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.text"/>
-         </mapping>
-      </element>
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
          <slicing>

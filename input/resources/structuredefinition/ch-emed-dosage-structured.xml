@@ -45,6 +45,15 @@
          <min value="0"/>
          <max value="0"/>
       </element>
+      <element id="Dosage.patientInstruction">
+         <path value="Dosage.patientInstruction"/>
+         <short value="Patient medication instructions (e.g. 'take with food')"/>
+         <mustSupport value="true"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.text"/>
+         </mapping>
+      </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
