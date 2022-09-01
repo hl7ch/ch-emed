@@ -1,27 +1,29 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 (2022-xx-xx)
+### STU 3 Ballot - Projectathon 2022 - v2.2.0 (2022-09)
 
-#### Open Issues
-During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
-* ...
-
-See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
+These changes for the Projectathon are implemented on the branch [projectathon2022](https://github.com/hl7ch/ch-emed/tree/projectathon2022) and can be found on the corresponding [CI build](http://build.fhir.org/ig/hl7ch/ch-emed/branches/projectathon2022/index.html).
 
 #### Added
 * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html).
 
 #### Changed / Updated
 * [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level -> Simplification of CH EMED Extension Document Author, limit author references to PractitionerRole (remove CH EMED Extension Represented Organization)
+* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note'. 
+   * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation.
+   * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
+* Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
+   * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here. 
+   * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> the CDA spec allows a reserve medication for normal dosage, the normal dosage is either structured or unstructured.
 
 #### Fixed
 
-#### Issues resolved without amendment
 
 
 
-### STU 3 Ballot (2022-07-07)
+
+### STU 3 Ballot - v2.1.0 (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -43,7 +45,7 @@ issue90-dosage
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
 * [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
 
-### STU 2 (2022-02-11)
+### STU 2 - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.
