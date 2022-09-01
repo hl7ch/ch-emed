@@ -22,18 +22,16 @@
          <path value="MedicationStatement"/>
          <short value="CH EMED MedicationStatement"/>
          <constraint>
-               <key value="ch-dosage-1"/>
-               <severity value="error"/>
-               <human value="If dosing is structured it must be normal or split dosing"/>
-               <expression value="dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 or dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0"/>
+            <key value="ch-dosage-1"/>
+            <severity value="error"/>
+            <human value="If dosing is structured it must be normal or split dosing"/>
+            <expression value="dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 or dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0"/>
          </constraint>
          <constraint>
-               <key value="ch-dosage-4"/>
-               <severity value="error"/>
-               <human value="Provide dosage structured or unstructured, combination is not allowed (provide structured dosage if possible)"/>
-               <expression value="dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured')).count()=0 or
-                                 (dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 and 
-                                  dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0)"/>
+            <key value="ch-dosage-4"/>
+            <severity value="error"/>
+            <human value="Provide dosage structured or unstructured, combination is not allowed (provide structured dosage if possible)"/>
+            <expression value="dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured')).count()=0 or (dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 and dosage.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0)"/>
          </constraint>
          <mapping>
             <identity value="cda"/>
@@ -46,7 +44,35 @@
          <min value="1"/>
          <max value="1"/>
       </element>
-      
+
+      <element id="MedicationStatement.extension">
+         <path value="MedicationStatement.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+
+      <!-- document author -->
+      <element id="MedicationStatement.extension:authorDocument">
+         <path value="MedicationStatement.extension" />
+         <sliceName value="authorDocument" />
+         <short value="Author of the original document if different from the author of the medical decision (MedicationStatement.informationSource)"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor" />
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author"/>
+         </mapping>
+      </element>
+
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <short value="MedicationStatement Identifier"/>
@@ -101,6 +127,51 @@
       </element>
       <element id="MedicationStatement.subject.reference">
          <path value="MedicationStatement.subject.reference"/>
+         <min value="1"/>
+      </element>
+
+      <!-- MedicationStatement Author -->
+      <element id="MedicationStatement.informationSource">
+         <path value="MedicationStatement.informationSource"/>
+         <short value="The author and its organization of the medical decision"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author.assignedAuthor.assignedPerson/representedOrganization"/>
+         </mapping>
+      </element>
+
+      <element id="MedicationStatement.informationSource.extension">
+         <path value="MedicationStatement.informationSource.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="MedicationStatement.informationSource.extension:time">
+         <path value="MedicationStatement.informationSource.extension"/>
+         <sliceName value="time"/>
+         <short value="Timestamp of the authorship/data input"/>
+         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+         </type>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".author.time"/>
+         </mapping>
+      </element>
+      <element id="MedicationStatement.informationSource.reference">
+         <path value="MedicationStatement.informationSource.reference"/>
          <min value="1"/>
       </element>
 
