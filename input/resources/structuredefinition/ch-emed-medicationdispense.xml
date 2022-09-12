@@ -188,6 +188,10 @@
       </element>
 
       <!-- MedicationDispense Author -->
+      <element id="MedicationDispense.performer">
+         <path value="MedicationDispense.performer"/>
+         <max value="1"/>
+      </element>
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
          <short value="The author and its organization of the medical decision"/>
@@ -211,7 +215,7 @@
             <rules value="open"/>
          </slicing>
       </element>
-      <element id="MedicationDispense.performer.actor.extension:ime">
+      <element id="MedicationDispense.performer.actor.extension:time">
          <path value="MedicationDispense.performer.actor.extension"/>
          <sliceName value="time"/>
          <short value="Timestamp of the authorship/data input"/>
