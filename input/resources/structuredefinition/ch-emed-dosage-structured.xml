@@ -104,6 +104,14 @@
             <map value=".event"/>
          </mapping>
       </element>
+      <element id="Dosage.asNeededBoolean">
+         <path value="Dosage.asNeededBoolean"/>
+         <short value="In reserve (to be taken by the patient only if the need arises - e.g. pains)"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".entryRelationship.act.code"/>
+         </mapping>
+      </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
          <short value="Route of administration"/>
