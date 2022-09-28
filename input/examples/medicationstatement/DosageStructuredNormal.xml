@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="DosageStructuredNormal"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+    </meta>
+    <contained>
+        <Medication>
+            <id value="med"/>
+            <code>
+                <coding>
+                    <system value="urn:oid:2.51.1.1"/>
+                    <code value="7680557660419"/>
+                    <display value="ALGIFOR-L forte Filmtabl 400 mg"/>
+                </coding>
+                <text value="ALGIFOR-L forte Filmtabl 400 mg"/>
+            </code>
+            <form>
+                <coding>
+                    <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                    <code value="10221000"/>
+                    <display value="Film-coated tablet"/>
+                </coding>
+            </form>
+            <amount>
+                <numerator>
+                    <value value="20"/>
+                    <unit value="Piece(s)"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="732936001"/>
+                </numerator>
+                <denominator>
+                    <value value="1"/>
+                    <unit value="Package"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="{Piece}"/>
+                </denominator>
+            </amount>
+            <ingredient>
+                <itemCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="425516000"/>
+                        <display value="Ibuprofen lysin"/>
+                    </coding>
+                    <text value="Ibuprofenum (ut Ibuprofenum lysinum)"/>
+                </itemCodeableConcept>
+                <strength>
+                    <numerator>
+                        <value value="400"/>
+                        <unit value="milligram"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mg"/>
+                    </numerator>
+                    <denominator>
+                        <value value="1"/>
+                        <unit value="Tablet (unit of presentation)"/>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="732936001"/>
+                    </denominator>
+                </strength>
+            </ingredient>
+        </Medication>
+    </contained>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:44bb63eb-168c-4659-bc18-a18a979120cb"/>
+    </identifier>
+    <status value="completed"/>
+    <medicationReference>
+        <reference value="#med"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/MonikaWegmueller"/>
+    </subject>
+    <reasonCode>
+        <text value="Schmerzen"/>
+    </reasonCode>
+    <dosage>
+        <patientInstruction value="Die Tabletten mit genügend Flüssigkeit einnehmen."/>
+        <timing>
+            <repeat>
+                <boundsPeriod>
+                    <start value="2022-09-01"/>
+                    <end value="2022-09-03"/>
+                </boundsPeriod>
+                <when value="MORN"/>
+                <when value="NOON"/>
+                <when value="EVE"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="true"/>
+        <route>
+            <coding>
+                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                <code value="20053000"/>
+                <display value="Oral use"/>
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1"/>
+                <unit value="Tablet (unit of presentation)"/>
+                <system value="http://snomed.info/sct"/>
+                <code value="732936001"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

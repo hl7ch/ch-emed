@@ -430,6 +430,23 @@
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
       </resource>
 
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/DosageStructuredNormal"/>
+         </reference>
+         <name value="Dosage structured normal"/>
+         <description value="Example for dosage structured normal (1-1-1-1)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/DosageNarrativeNormal"/>
+         </reference>
+         <name value="Dosage narrative normal"/>
+         <description value="Example for dosage narrative normal (free text)"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>-->
+      </resource>
+
       <!-- references for code systems -->
       <resource>
          <reference>
