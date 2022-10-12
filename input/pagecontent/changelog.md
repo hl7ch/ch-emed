@@ -12,6 +12,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 #### Added
 
 #### Changed / Updated
+* [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, PractitionerRole, Practitioner, Organization)
 
 #### Fixed
 

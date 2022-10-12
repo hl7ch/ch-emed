@@ -387,6 +387,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Observation/2-2-PharmaceuticalAdvice"/>
+         </reference>
+         <name value="2-2 Observation for Pharmaceutical Advice document"/>
+         <description value="Example for Observation"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Organization/Custodian"/>
          </reference>
          <name value="Custodian"/>
@@ -398,14 +406,7 @@
          </reference>
          <name value="Hausarzt"/>
          <description value="Example for Organization"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/2-2-PharmaceuticalAdvice"/>
-         </reference>
-         <name value="2-2 Observation for Pharmaceutical Advice document"/>
-         <description value="Example for Observation"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization"/>
       </resource>
       <resource>
          <reference>
@@ -428,6 +429,14 @@
          <name value="Familien Hausarzt"/>
          <description value="Example for Practitioner"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
+         </reference>
+         <name value="Familien Hausarzt @ Hausarzt"/>
+         <description value="Example for PractitionerRole"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
       </resource>
 
       <!-- references for code systems -->
@@ -618,6 +627,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-observation"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-organization"/>
          </reference>
       </resource>
       <resource>
