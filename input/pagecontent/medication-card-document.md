@@ -14,7 +14,7 @@ The representation of the Medication Card document SHALL be embedded as a PDF in
 
 #### Example instances
 * 2-7 Medication Card document: [XML](Bundle-2-7-MedicationCard.xml.html), [JSON](Bundle-2-7-MedicationCard.json.html)
-* 2-7 Medication Card document with UUID for fullUrl: [XML](Bundle-2-7-MedicationCard-UUIDfullUrl.xml.html), [JSON](Bundle-2-7-MedicationCard-UUIDfulUrl.json.html)
+* 2-7 Medication Card document with UUID for fullUrl: [XML](Bundle-2-7-MedicationCard-UUIDfullUrl.xml.html), [JSON](Bundle-2-7-MedicationCard-UUIDfullUrl.json.html)
 
 ### Profiles
 * [CH EMED Medication Card Document](StructureDefinition-ch-emed-document-medicationcard.html)

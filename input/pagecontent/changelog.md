@@ -14,6 +14,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 #### Changed / Updated
 
 #### Fixed
+* [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
 
 #### Issues resolved without amendment
 
