@@ -149,7 +149,7 @@
       <!-- MedicationRequest Author -->
       <element id="MedicationRequest.performer">
          <path value="MedicationRequest.performer"/>
-         <short value="The author and its organization of the medical decision"/>
+         <short value="The author and her/his organization of the medical decision"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>

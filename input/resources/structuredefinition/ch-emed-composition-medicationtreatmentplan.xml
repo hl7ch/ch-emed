@@ -231,10 +231,12 @@
       <!-- Author of the section -->
       <element id="Composition.section:treatmentPlan.author">
          <path value="Composition.section.author"/>
-         <short value="The author and its organization of the section if different from the author/timestamp of the document"/>
+         <short value="The author and her/his organization of the section if different from the author/timestamp of the document"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
       </element>
 
