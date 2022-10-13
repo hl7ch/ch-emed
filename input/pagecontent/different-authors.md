@@ -7,14 +7,14 @@ When creating/publishing an eMedication document, there may be one or more autho
 *The general practitioner Dr. med. Familien Hausarzt recommends medication treatment with Triatec to Monika Wegmüller. He documents his therapy decision using the [Medication Treatment Plan document](Composition-1-1-MedicationTreatmentPlan.html).*
 
 In this case, the author of the document and the medical decision is the same. In the eMedication document Dr. med. Familien Hausarzt is mapped once.
-* **Author document & author medical decision**: Composition.author -> Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson)
+* **Author document & author medical decision**: Composition.author
 
 #### Different Authors
 *The specialist Dr. med. Sandra Meier orders Monika Wegmüller to be treated with Aspirin and also issues a prescription. The medical practice assistant Andrew Stabilo creates the corresponding eMedication documents (Medication Treatment Plan document, Medication Prescription document).*
 
 In this case, the author of the document and the author of the medical decision are different. In the eMedication documents, these two authors are mapped differently.
-* **Author document**: Composition.author -> Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson)
-* **Author medical decision**: Composition.section.author -> Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson)
+* **Author document**: Composition.author
+* **Author medical decision**: Composition.section.author
 
 #### Overview different levels
 
@@ -31,24 +31,24 @@ In this case, the author of the document and the author of the medical decision 
 #### Medication Card document
 *The pharmacist creates a Medication Plan document for Mona Muster, which provides the patient with an overview of her current medication.*
 
-* **Author document**: Composition.author -> Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson)
-* **Author(s) medical decision(s)**: MedicationStatement.informationSource -> Reference(CH EMED PractitionerRole)
-* **Author(s) original document(s)** (if different from the author of the medical decision): MedicationStatement.extension:authorDocument -> Reference(CH Core Patient &#124; CH Core PractitionerRole &#124; RelatedPerson)
+* **Author document**: Composition.author
+* **Author(s) medical decision(s)**: MedicationStatement.informationSource
+* **Author(s) original document(s)** (if different from the author of the medical decision): MedicationStatement.extension:authorDocument
 
 #### Medication List document
 *The pharmacist wants to get an overview of Tim Muster's current medication and therefore requests his Medication List document.*
 
-* **Author document**: The Medication List document is a dynamically generated document, generally created by a machine/software; Composition.author -> Reference(Device)
+* **Author document**: The Medication List document is a dynamically generated document, generally created by a machine/software; Composition.author
 * **Author(s) medical decision(s)**
-   * MTP: MedicationStatement.informationSource -> Reference(CH EMED PractitionerRole)
-   * PRE: MedicationRequest.performer -> Reference(CH EMED PractitionerRole)
-   * DIS: MedicationDispense.performer.actor -> Reference(CH EMED PractitionerRole)
-   * PADV: Observation.performer -> Reference(CH EMED PractitionerRole)
+   * MTP: MedicationStatement.informationSource
+   * PRE: MedicationRequest.performer
+   * DIS: MedicationDispense.performer.actor
+   * PADV: Observation.performer
 * **Author(s) original document(s)** (if different from the author of the medical decision)
-   * MTP: MedicationStatement.extension:authorDocument -> Reference(CH Core Patient &#124; CH Core PractitionerRole &#124; RelatedPerson)
-   * PRE: MedicationRequest.extension:authorDocument -> Reference(CH Core Patient &#124; CH Core PractitionerRole &#124; RelatedPerson)
-   * DIS: MedicationDispense.extension:authorDocument -> Reference(CH Core Patient &#124; CH Core PractitionerRole &#124; RelatedPerson)
-   * PADV: Observation.extension:authorDocument -> Reference(CH Core Patient &#124; CH Core PractitionerRole &#124; RelatedPerson)
+   * MTP: MedicationStatement.extension:authorDocument
+   * PRE: MedicationRequest.extension:authorDocument
+   * DIS: MedicationDispense.extension:authorDocument
+   * PADV: Observation.extension:authorDocument
 
 #### Overview different levels
 
