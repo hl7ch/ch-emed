@@ -89,15 +89,15 @@
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
-         <short value="The author of the document (person or device)"/>
+         <short value="The author of the document (device, which dynamically generates the document)"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+            <!--<targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>-->
+            <!--<targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>-->
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+            <!--<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>-->
+            <!--<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>-->
+            <!--<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>-->
          </type>
       </element>
       <element id="Composition.author.extension:time">

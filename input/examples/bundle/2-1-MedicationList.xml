@@ -46,10 +46,7 @@
                     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
                         <valueDateTime value="2012-02-04T13:55:00+01:00"/>
                     </extension>
-                    <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
-                </author>
-                <author>
-                    <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
+                    <reference value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
                 </author>
                 <title value="Medikationsliste"/>
                 <confidentiality value="N">
@@ -175,6 +172,21 @@
             </Composition>
         </resource>
     </entry>
+
+    <!--  Composition.author  -->
+    <entry>
+        <fullUrl value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
+        <resource>
+            <Device>
+                <deviceName>
+                    <name value="Device name"/>
+                    <type value="manufacturer-name"/>
+                </deviceName>
+            </Device>
+        </resource>
+    </entry>
+
+    <!-- Composition.subject & MedicationStatement.subject -->
     <entry>
         <fullUrl value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
         <resource>
@@ -204,6 +216,22 @@
             </Patient>
         </resource>
     </entry>
+
+    <!-- Entries: author medical decision -->
+    <entry>
+        <fullUrl value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+        <resource>
+            <PractitionerRole>
+                <practitioner>
+                    <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
+                </practitioner>
+                <organization>
+                    <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
+                </organization>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <!-- Entries: author medical decision -->
     <entry>
         <fullUrl value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
         <resource>
@@ -225,6 +253,7 @@
             </Practitioner>
         </resource>
     </entry>
+    <!-- Entries: author medical decision -->
     <entry>
         <fullUrl value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
         <resource>
@@ -243,6 +272,8 @@
             </Organization>
         </resource>
     </entry>
+
+    <!-- Composition.custodian -->
     <entry>
         <fullUrl value="urn:uuid:c7ab130a-7962-47f8-bd62-4f40e0099f4d"/>
         <resource>
@@ -255,6 +286,8 @@
             </Organization>
         </resource>
     </entry>
+
+    <!-- Composition.extension:informationRecipient -->
     <entry>
         <fullUrl value="urn:uuid:e89c0e17-a3af-4179-a089-1a2189f5241c"/>
         <resource>
@@ -272,6 +305,8 @@
             </Patient>
         </resource>
     </entry>
+
+    <!-- Composition.section: 1. entry -->
     <entry>
         <fullUrl value="urn:uuid:733f5a67-5347-43bb-a3e1-068b10a0d808"/>
         <resource>
@@ -348,6 +383,9 @@
                 <subject>
                     <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                 </subject>
+                <informationSource>
+                    <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                </informationSource>
                 <reasonCode>
                     <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                         <valueUrl value="#mtp.1.reason"/>
@@ -383,6 +421,8 @@
             </MedicationStatement>
         </resource>
     </entry>
+
+    <!-- Composition.section: 2. entry -->
     <entry>
         <fullUrl value="urn:uuid:97ebd6b4-f0d9-4ee6-a81b-0853c259d5b6"/>
         <resource>
@@ -473,6 +513,11 @@
                 <subject>
                     <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                 </subject>
+                <performer>
+                    <actor>
+                        <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                    </actor>
+                </performer>
                 <quantity>
                     <value value="1"/>
                 </quantity>

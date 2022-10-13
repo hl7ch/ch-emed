@@ -149,20 +149,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="CodeSystem/v3-TimingEvent"/>
-         </reference>
-         <name value="v3-TimingEvent Supplement"/>
-         <description value="Translations of concepts for v3-TimingEvent"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CodeSystem/event-timing"/>
-         </reference>
-         <name value="event-timing Supplement"/>
-         <description value="Translations of concepts for event-timing"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>
@@ -232,6 +218,13 @@
          <name value="2-7 Composition for Medication Card document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Device/Device"/>
+         </reference>
+         <name value="Device"/>
+         <description value="Example for Device"/>
       </resource>
       <resource>
          <reference>
@@ -459,6 +452,20 @@
             <reference value="CodeSystem/ihe-pharmaceuticaladvicestatuslist"/>
          </reference>
          <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/v3-TimingEvent"/>
+         </reference>
+         <name value="v3-TimingEvent Supplement"/>
+         <description value="Translations of concepts for v3-TimingEvent"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/event-timing"/>
+         </reference>
+         <name value="event-timing Supplement"/>
+         <description value="Translations of concepts for event-timing"/>
       </resource>
 
       <!-- references for structure definitions -->
