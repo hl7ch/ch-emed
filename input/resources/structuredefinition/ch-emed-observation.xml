@@ -101,7 +101,7 @@
       <element id="Observation.extension:authorDocument">
          <path value="Observation.extension" />
          <sliceName value="authorDocument" />
-         <short value="Author of the original document if different from the author of the medical decision (Observation.performer)"/>
+         <short value="LIST: Author of the original document if different from the author of the medical decision (Observation.performer), see also 'Guidance - Different Authors'"/>
          <min value="0"/>
          <max value="1"/>
          <type>
@@ -182,7 +182,7 @@
       <!-- Observation Author -->
       <element id="Observation.performer">
          <path value="Observation.performer"/>
-         <short value="The author and her/his organization of the medical decision"/>
+         <short value="LIST: The author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>

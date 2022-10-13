@@ -121,7 +121,7 @@
       <element id="MedicationDispense.extension:authorDocument">
          <path value="MedicationDispense.extension" />
          <sliceName value="authorDocument" />
-         <short value="Author of the original document if different from the author of the medical decision (MedicationDispense.performer.actor)"/>
+         <short value="LIST: Author of the original document if different from the author of the medical decision (MedicationDispense.performer.actor), see also 'Guidance - Different Authors'"/>
          <min value="0"/>
          <max value="1"/>
          <type>
@@ -194,7 +194,7 @@
       </element>
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
-         <short value="The author and her/his organization of the medical decision"/>
+         <short value="LIST: The author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
