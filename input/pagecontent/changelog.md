@@ -13,6 +13,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level
    * Entry level: Usage of CH Core Extension 'Author of the content'
    * Entry level: Limit references for author of medical decision to PractitionerRole (remove CH EMED Extension Represented Organization) 
+* [#151](https://github.com/hl7ch/ch-emed/issues/151): 
+   * MTP/PRE/DIS/PADV: Composition.author -> Remove reference to Device (it's always a person)
+   * LIST: Composition.author -> Remove all references except Device (it's always a device)
+      * Update example 2-1 Medication List document: Change Composition.author from person to device, add author of medical decision to entries
 * [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note' 
    * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
 * Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
