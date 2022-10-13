@@ -9,6 +9,7 @@ These changes for the Projectathon are implemented on the branch [projectathon20
 * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html).
 
 #### Changed / Updated
+* Update dependency to the current version of CH Core -> STU3 (v3.0.0)
 * [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level -> Simplification of CH EMED Extension Document Author, limit author references to PractitionerRole (remove CH EMED Extension Represented Organization)
 * [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note'. 
    * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation.
