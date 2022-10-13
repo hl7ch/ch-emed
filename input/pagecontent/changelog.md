@@ -4,26 +4,26 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 3 - v3.0.0 (2022-xx-xx)
 
 #### Added
-* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html).
+* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html)
+   * [#133](https://github.com/hl7ch/ch-emed/issues/133): Add a hint to the guidance in the profiles
 
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
    * [#146](https://github.com/hl7ch/ch-emed/issues/146): Replacing the Extension 'CH EMED Extension Document Author' with the CH Core Extension 'Author of the content'
 * [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level
    * Entry level: Usage of CH Core Extension 'Author of the content'
-   * Entry level: Limit references for author of medical decision to PractitionerRole (remove CH EMED Extension Represented Organization)
-* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note'. 
-   * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation.
+   * Entry level: Limit references for author of medical decision to PractitionerRole (remove CH EMED Extension Represented Organization) 
+* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note' 
    * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
 * Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
-   * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here. 
-   * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> the CDA spec allows a reserve medication for normal dosage, the normal dosage is either structured or unstructured.
+   * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
+   * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
 
 #### Fixed
 
 
-
-
+#### Issues resolved without amendment
+* [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
 
 ### STU 3 Ballot - v2.1.0 (2022-07-07)
 
