@@ -554,11 +554,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-documentauthor"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-ext-dispense"/>
          </reference>
       </resource>

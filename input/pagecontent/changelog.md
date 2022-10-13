@@ -1,15 +1,14 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 Ballot - Projectathon 2022 - v2.2.0 (2022-09)
-
-These changes for the Projectathon are implemented on the branch [projectathon2022](https://github.com/hl7ch/ch-emed/tree/projectathon2022) and can be found on the corresponding [CI build](http://build.fhir.org/ig/hl7ch/ch-emed/branches/projectathon2022/index.html).
+### STU 3 - v3.0.0 (2022-xx-xx)
 
 #### Added
 * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html).
 
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
+   * [#146](https://github.com/hl7ch/ch-emed/issues/146): Replacing the Extension 'CH EMED Extension Document Author' with the CH Core Extension 'Author of the content'
 * [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level -> Simplification of CH EMED Extension Document Author, limit author references to PractitionerRole (remove CH EMED Extension Represented Organization)
 * [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note'. 
    * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation.

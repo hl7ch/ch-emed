@@ -126,7 +126,7 @@
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor" />
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author" />
          </type>
          <mapping>
             <identity value="cda"/>

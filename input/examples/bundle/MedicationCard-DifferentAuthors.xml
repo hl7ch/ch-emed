@@ -244,8 +244,8 @@
           </Medication>
         </contained>
 
-        <!-- author (and his organization) of the original document if different from the information source-->
-        <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor">
+        <!-- author and her/his organization of the original document if different from the information source-->
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
           <valueReference>
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
               <valueDateTime value="2020-03-04T13:05:00+01:00"/>
