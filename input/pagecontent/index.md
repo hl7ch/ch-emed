@@ -14,9 +14,7 @@ The following documents have been defined:
 
 <div markdown="1" class="stu-note">
 
-This implementation guide is under ballot for STU 3 by [HL7 Switzerland](https://www.hl7.ch/) until September 30th, 2022 midnight. Please add your feedback via the 'Propose a change'-link in the footer on the page where you have comments.
-
-[Significant Changes, Open and Closed Issues](changelog.html)
+[Significant changes, open and closed issues](changelog.html)
 
 </div>
 
