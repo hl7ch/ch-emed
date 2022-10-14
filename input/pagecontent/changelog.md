@@ -17,6 +17,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * MTP/PRE/DIS/PADV: Composition.author -> Remove reference to Device (it's always a person)
    * LIST: Composition.author -> Remove all references except Device (it's always a device)
       * Update example 2-1 Medication List document: Change Composition.author from person to device, add author of medical decision to entries
+   * CARD/LIST: Remove element Compositon.section.author from differential (profile)
 * [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note' 
    * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
 * Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
