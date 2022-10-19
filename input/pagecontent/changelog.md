@@ -16,6 +16,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
+* [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
 
 #### Issues resolved without amendment
 
