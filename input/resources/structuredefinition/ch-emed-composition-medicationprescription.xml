@@ -112,7 +112,7 @@
          <constraint>
                <key value="ch-emed-title-pre"/>
                <severity value="error"/>
-               <human value="'Rezept' in german or 'Ordonnance' in french or 'Ricetta' in talian or 'Prescription' in english
+               <human value="'Rezept' in german or 'Ordonnance' in french or 'Ricetta' in italian or 'Prescription' in english
                         or titles in other languages are also allowed"/>
                <expression value="($this='Rezept' and %resource.language.startsWith('de')) or ($this='Ordonnance' and %resource.language.startsWith('fr')) or ($this='Ricetta' and %resource.language.startsWith('it')) or ($this='Prescription' and %resource.language.startsWith('en'))"/>
          </constraint>  
@@ -197,7 +197,7 @@
          <constraint>
             <key value="ch-emed-sect-or"/>
             <severity value="error"/>
-            <human value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in talian or 'Original representation' in english
+            <human value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in italian or 'Original representation' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Original Darstellung' and %resource.language.startsWith('de')) or ($this='Représentation originale' and %resource.language.startsWith('fr')) or ($this='Rappresentazione originale' and %resource.language.startsWith('it')) or ($this='Original representation' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -256,7 +256,7 @@
          <constraint>
             <key value="ch-emed-sect-pre"/>
             <severity value="error"/>
-            <human value="'Arzneimittelverordnung' in german or 'Prescription médicamenteuse' in french or 'Prescrizione di droga' in talian or 'Prescription for medication' in english
+            <human value="'Arzneimittelverordnung' in german or 'Prescription médicamenteuse' in french or 'Prescrizione di droga' in italian or 'Prescription for medication' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Arzneimittelverordnung' and %resource.language.startsWith('de')) or ($this='Prescription médicamenteuse' and %resource.language.startsWith('fr')) or ($this='Prescrizione di droga' and %resource.language.startsWith('it')) or ($this='Prescription for medication' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -346,7 +346,7 @@
          <constraint>
             <key value="ch-emed-sect-annot"/>
             <severity value="error"/>
-            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in talian or 'Comment' in english
+            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Kommentar' and %resource.language.startsWith('de')) or ($this='Commentaire' and %resource.language.startsWith('fr')) or ($this='Osservazione' and %resource.language.startsWith('it')) or ($this='Comment' and %resource.language.startsWith('en'))"/>
          </constraint>

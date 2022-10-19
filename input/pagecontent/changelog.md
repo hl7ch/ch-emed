@@ -15,6 +15,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
 
 #### Fixed
+* [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
 * [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
 
 #### Issues resolved without amendment
