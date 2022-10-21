@@ -319,10 +319,8 @@
             <reasonCode>
                <text value="-"/>
             </reasonCode>
-            <note>
-               <text value="-"/>
-            </note>
             <dosageInstruction>
+               <patientInstruction value="-"/>
                <timing>
                   <repeat>
                      <boundsPeriod>

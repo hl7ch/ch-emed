@@ -335,6 +335,7 @@
                     <value value="1"/>
                 </quantity>
                 <dosageInstruction>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>

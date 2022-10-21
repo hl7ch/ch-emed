@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="DosageNarrativeNormal"/>
+    <contained>
+        <Medication>
+            <id value="med"/>
+            <code>
+                <coding>
+                    <system value="urn:oid:2.51.1.1"/>
+                    <code value="7680542960319"/>
+                    <display value="ECOFENAC Sandoz Lipogel 1 %"/>
+                </coding>
+                <text value="ECOFENAC Sandoz Lipogel 1 %"/>
+            </code>
+            <form>
+                <coding>
+                    <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                    <code value="10503000"/>
+                    <display value="Gel"/>
+                </coding>
+            </form>
+            <amount>
+                <numerator>
+                    <value value="100"/>
+                    <unit value="gram"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                </numerator>
+                <denominator>
+                    <value value="1"/>
+                    <unit value="Tube"/>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="733024003"/>
+                </denominator>
+            </amount>
+            <ingredient>
+                <itemCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="7034005"/>
+                        <display value="Diclofenac (substance)"/>
+                    </coding>
+                    <text value="Diclofenac"/>
+                </itemCodeableConcept>
+                <strength>
+                    <numerator>
+                        <value value="1"/>
+                        <unit value="gram"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="g"/>
+                    </numerator>
+                    <denominator>
+                        <value value="100"/>
+                        <unit value="gram"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="g"/>
+                    </denominator>
+                </strength>
+            </ingredient>
+        </Medication>
+    </contained>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:dc3787c5-66db-4430-9f1d-b4a694ca466e"/>
+    </identifier>
+    <status value="completed"/>
+    <medicationReference>
+        <reference value="#med"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/MonikaWegmueller"/>
+    </subject>
+    <reasonCode>
+        <text value="Tendinitis (tennis elbow)"/>
+    </reasonCode>
+    <dosage>
+        <text value="Application 3-4 times a day, for a maximum of 14 days"/>
+        <patientInstruction value="Apply cherry-sized amount of the gel to the elbow and rub in gently"/>
+        <timing>
+            <repeat>
+                <boundsPeriod>
+                    <start value="2022-09-01"/>
+                </boundsPeriod>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="true"/>
+        <route>
+            <coding>
+                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                <code value="20003000"/>
+                <display value="Cutaneous use"/>
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="2"/>
+                <unit value="gram"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

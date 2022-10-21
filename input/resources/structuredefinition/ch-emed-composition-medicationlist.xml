@@ -89,13 +89,10 @@
       </element>
       <element id="Composition.author">
          <path value="Composition.author"/>
-         <short value="The author of the document (person or device)"/>
+         <short value="The author of the document (device, which dynamically generates the document)"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
       </element>
       <element id="Composition.author.extension:time">
@@ -190,7 +187,7 @@
          <max value="1"/>
       </element>
       <!-- Extension for Section-ID -->
-      <element id="Composition.section.extension">
+      <element id="Composition.section:list.extension">
          <path value="Composition.section.extension"/>
          <slicing>
             <discriminator>
@@ -200,11 +197,11 @@
             <rules value="open"/>
          </slicing>
       </element>
-      <element id="Composition.section.extension:sectionId">
+      <element id="Composition.section:list.extension:sectionId">
          <path value="Composition.section.extension"/>
          <sliceName value="sectionId"/>         
       </element>
-      <element id="Composition.section.title:list">
+      <element id="Composition.section:list.title">
          <path value="Composition.section.title"/>
          <constraint>
                <key value="ch-emed-sect-list"/>
@@ -216,7 +213,7 @@
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:list">
+      <element id="Composition.section:list.code">
          <path value="Composition.section.code"/>
          <min value="1"/>
          <patternCodeableConcept>
@@ -227,46 +224,14 @@
             </coding>
          </patternCodeableConcept>
       </element>
-      <!-- Author of the section -->
-      <element id="Composition.section.author:list">
-         <path value="Composition.section.author"/>
-         <short value="The author of the section (person or device) if different from the author/timestamp of the document"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
-            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
-         </type>
-      </element>
-      <element id="Composition.section:list.author.extension">
-         <path value="Composition.section.author.extension"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.time"/>
-         </mapping>
-      </element>
-      <element id="Composition.section:list.author.reference">
-         <path value="Composition.section.author.reference"/>
-         <min value="1"/>
-      </element>
-      <element id="Composition.section.text:list">
+
+      <element id="Composition.section:list.text">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.entry">
+      <element id="Composition.section:list.entry">
          <path value="Composition.section.entry"/>
          <slicing>
             <discriminator>
@@ -276,7 +241,7 @@
             <rules value="open"/>
          </slicing>
       </element>
-      <element id="Composition.section.entry:medicationTreatmentPlan">
+      <element id="Composition.section:list.entry:medicationTreatmentPlan">
          <path value="Composition.section.entry"/>
          <sliceName value="medicationTreatmentPlan"/>
          <short value="Medication treatment plan"/>
@@ -287,11 +252,11 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
          </type>
       </element>
-      <element id="Composition.section.entry:medicationTreatmentPlan.reference">
+      <element id="Composition.section:list.entry:medicationTreatmentPlan.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.entry:medicationPrescription">
+      <element id="Composition.section:list.entry:medicationPrescription">
          <path value="Composition.section.entry"/>
          <sliceName value="medicationPrescription"/>
          <short value="Medication prescription"/>
@@ -302,11 +267,11 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
          </type>
       </element>
-      <element id="Composition.section.entry:medicationPrescription.reference">
+      <element id="Composition.section:list.entry:medicationPrescription.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.entry:medicationDispense">
+      <element id="Composition.section:list.entry:medicationDispense">
          <path value="Composition.section.entry"/>
          <sliceName value="medicationDispense"/>
          <short value="Medication dispense"/>
@@ -317,11 +282,11 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
          </type>
       </element>
-      <element id="Composition.section.entry:medicationDispense.reference">
+      <element id="Composition.section:list.entry:medicationDispense.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.entry:pharmaceuticalAdvice">
+      <element id="Composition.section:list.entry:pharmaceuticalAdvice">
          <path value="Composition.section.entry"/>
          <sliceName value="pharmaceuticalAdvice"/>
          <short value="Pharmaceutical advice"/>
@@ -332,11 +297,11 @@
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
          </type>
       </element>
-      <element id="Composition.section.entry:pharmaceuticalAdvice.reference">
+      <element id="Composition.section:list.entry:pharmaceuticalAdvice.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section.section:list">
+      <element id="Composition.section:list.section">
          <path value="Composition.section.section"/>
          <min value="0"/>
          <max value="0"/>

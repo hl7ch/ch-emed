@@ -103,11 +103,7 @@
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
               <valueDateTime value="2020-03-04T11:05:00+01:00"/>
             </extension>
-            <reference value="Practitioner/AuthorSection"/>
-          </author>
-          <!--Exception in thread "main" java.lang.Error: Attempt to read a single element when there is more than one present (author)-->
-          <author>
-            <reference value="Organization/AuthorSectionOrganization"/>
+            <reference value="PractitionerRole/AuthorSection"/>
           </author>
           <entry>
             <reference value="MedicationStatement/MedStatBeloczok"/>
@@ -247,21 +243,14 @@
           </Medication>
         </contained>
 
-        <!-- author (and his organization) of the original document if different from the information source-->
-        <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-documentauthor">
-          <extension url="author">
-            <valueReference>
-              <reference value="Practitioner/AuthorOriginalDocument"/>
-            </valueReference>
-          </extension>
-          <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization">
-            <valueReference>
-              <reference value="Organization/AuthorOriginalDocumentOrganization"/>
-            </valueReference>
-          </extension>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-            <valueDateTime value="2020-03-04T13:05:00+01:00"/>
-          </extension>
+        <!-- author and her/his organization of the original document if different from the information source-->
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+          <valueReference>
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+              <valueDateTime value="2020-03-04T13:05:00+01:00"/>
+            </extension>
+            <reference value="PractitionerRole/AuthorOriginalDocument"/>
+          </valueReference>
         </extension>
 
         <identifier>
@@ -281,16 +270,12 @@
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
             <valueDateTime value="2020-03-04T12:05:00+01:00"/>
           </extension>
-          <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-representedorganization">
-            <valueReference>
-              <reference value="Organization/AuthorMedicalDecisionOrganization"/>
-            </valueReference>
-          </extension>
-          <reference value="Practitioner/AuthorMedicalDecision"/>
+          <reference value="PractitionerRole/AuthorMedicalDecision"/>
         </informationSource>
 
         <dosage>
           <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
+          <patientInstruction value="-"/>
         </dosage>
       </MedicationStatement>
     </resource>
@@ -312,10 +297,24 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorDocument"/>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorDocument"/>
+    <resource>
+      <PractitionerRole>
+        <id value="AuthorDocument"/>
+        <practitioner>
+          <reference value="Practitioner/AuthorDocumentPractitioner"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/AuthorDocumentOrganization"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorDocumentPractitioner"/>
     <resource>
       <Practitioner>
-        <id value="AuthorDocument"/>
+        <id value="AuthorDocumentPractitioner"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000987655"/>
@@ -349,10 +348,24 @@
 
   <!-- author (and his organization) of the section-->
   <entry>
-    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorSection"/>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorSection"/>
+    <resource>
+      <PractitionerRole>
+        <id value="AuthorSection"/>
+        <practitioner>
+          <reference value="Practitioner/AuthorSectionPractitioner"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/AuthorSectionOrganization"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorSectionPractitioner"/>
     <resource>
       <Practitioner>
-        <id value="AuthorSection"/>
+        <id value="AuthorSectionPractitioner"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000975317"/>
@@ -386,10 +399,24 @@
 
   <!-- author (and his organization) of the medical decision -->
   <entry>
-    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorMedicalDecision"/>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorMedicalDecision"/>
+    <resource>
+      <PractitionerRole>
+        <id value="AuthorMedicalDecision"/>
+        <practitioner>
+          <reference value="Practitioner/AuthorMedicalDecisionPractitioner"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/AuthorMedicalDecisionOrganization"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorMedicalDecisionPractitioner"/>
     <resource>
       <Practitioner>
-        <id value="AuthorMedicalDecision"/>
+        <id value="AuthorMedicalDecisionPractitioner"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000989895"/>
@@ -423,10 +450,24 @@
 
   <!-- author (and his organization) of the original document if different from the information source-->
   <entry>
-    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorOriginalDocument"/>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorOriginalDocument"/>
+    <resource>
+      <PractitionerRole>
+        <id value="AuthorOriginalDocument"/>
+        <practitioner>
+          <reference value="Practitioner/AuthorOriginalDocumentPractitioner"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/AuthorOriginalDocumentOrganization"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorOriginalDocumentPractitioner"/>
     <resource>
       <Practitioner>
-        <id value="AuthorOriginalDocument"/>
+        <id value="AuthorOriginalDocumentPractitioner"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000989895"/>

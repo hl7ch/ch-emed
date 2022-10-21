@@ -335,6 +335,7 @@
                 </quantity>
                 <dosageInstruction>
                     <sequence value="1"/>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -361,6 +362,7 @@
                 </dosageInstruction>
                 <dosageInstruction>
                     <sequence value="2"/>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>

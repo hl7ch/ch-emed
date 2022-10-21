@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ch.fhir.ig.ch-emed"/>
    <url value="http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed"/>
-   <version value="3.0.0"/>
+   <version value="2.2.0"/>
    <name value="CH_EMED"/>
    <title value="CH EMED (R4)"/>
    <status value="active"/>
@@ -149,20 +149,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="CodeSystem/v3-TimingEvent"/>
-         </reference>
-         <name value="v3-TimingEvent Supplement"/>
-         <description value="Translations of concepts for v3-TimingEvent"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CodeSystem/event-timing"/>
-         </reference>
-         <name value="event-timing Supplement"/>
-         <description value="Translations of concepts for event-timing"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Composition/1-1-MedicationTreatmentPlan"/>
          </reference>
          <name value="1-1 Composition for Medication Treatment Plan document"/>
@@ -232,6 +218,13 @@
          <name value="2-7 Composition for Medication Card document"/>
          <description value="Example for Composition"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Device/Device"/>
+         </reference>
+         <name value="Device"/>
+         <description value="Example for Device"/>
       </resource>
       <resource>
          <reference>
@@ -439,6 +432,23 @@
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
       </resource>
 
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/DosageStructuredNormal"/>
+         </reference>
+         <name value="Dosage structured normal"/>
+         <description value="Example for dosage structured normal (1-1-1-1)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/DosageNarrativeNormal"/>
+         </reference>
+         <name value="Dosage narrative normal"/>
+         <description value="Example for dosage narrative normal (free text)"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>-->
+      </resource>
+
       <!-- references for code systems -->
       <resource>
          <reference>
@@ -451,6 +461,20 @@
             <reference value="CodeSystem/ihe-pharmaceuticaladvicestatuslist"/>
          </reference>
          <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/v3-TimingEvent"/>
+         </reference>
+         <name value="v3-TimingEvent Supplement"/>
+         <description value="Translations of concepts for v3-TimingEvent"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/event-timing"/>
+         </reference>
+         <name value="event-timing Supplement"/>
+         <description value="Translations of concepts for event-timing"/>
       </resource>
 
       <!-- references for structure definitions -->
@@ -546,11 +570,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-documentauthor"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-ext-dispense"/>
          </reference>
       </resource>
@@ -562,11 +581,6 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-ext-prescription"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-ext-representedorganization"/>
          </reference>
       </resource>
       <resource>
@@ -749,6 +763,11 @@
          <page>
             <nameUrl value="repeated-dispense.html"/>
             <title value="Repeated Dispense"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="different-authors.html"/>
+            <title value="Different Authors"/>
             <generation value="markdown"/>
          </page>
          <page>

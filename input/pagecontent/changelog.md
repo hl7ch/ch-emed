@@ -1,18 +1,28 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 (2022-xx-xx)
-
-#### Open Issues
-During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
-* ...
-
-See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
+### STU 3 - v3.0.0 (2022-xx-xx)
 
 #### Added
+* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html)
+   * [#133](https://github.com/hl7ch/ch-emed/issues/133): Add a hint to the guidance in the profiles
 
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
+   * [#146](https://github.com/hl7ch/ch-emed/issues/146): Replacing the Extension 'CH EMED Extension Document Author' with the CH Core Extension 'Author of the content'
+* [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level
+   * Entry level: Usage of CH Core Extension 'Author of the content'
+   * Entry level: Limit references for author of medical decision to PractitionerRole (remove CH EMED Extension Represented Organization) 
+* [#151](https://github.com/hl7ch/ch-emed/issues/151): 
+   * MTP/PRE/DIS/PADV: Composition.author -> Remove reference to Device (it's always a person)
+   * LIST: Composition.author -> Remove all references except Device (it's always a device)
+      * Update example 2-1 Medication List document: Change Composition.author from person to device, add author of medical decision to entries
+   * CARD/LIST: Remove element Compositon.section.author from differential (profile)
+* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note' 
+   * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
+* Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
+   * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
+   * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
 * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, PractitionerRole, Practitioner, Organization)
 * [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the introduction text according to the current status 
 
@@ -20,11 +30,11 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
 * [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
 
+
 #### Issues resolved without amendment
+* [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
 
-
-
-### STU 3 Ballot (2022-07-07)
+### STU 3 Ballot - v2.1.0 (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -46,7 +56,7 @@ issue90-dosage
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
 * [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
 
-### STU 2 (2022-02-11)
+### STU 2 - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.

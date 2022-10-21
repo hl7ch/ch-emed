@@ -35,7 +35,7 @@
     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
       <valueDateTime value="2012-02-04T13:55:00+01:00"/>
     </extension>
-    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
+    <reference value="Device/Device"/>
   </author>
   <title value="Medikationsliste"/>
   <confidentiality value="N">

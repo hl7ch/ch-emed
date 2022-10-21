@@ -312,11 +312,9 @@
         <reasonCode>
           <text value="Bluthochdruck"/>
         </reasonCode>
-        <note>
-          <text value="-"/>
-        </note>
         <dosage>
           <sequence value="1"/>
+          <patientInstruction value="-"/>
           <timing>
             <repeat>
               <boundsPeriod>
@@ -343,6 +341,7 @@
         </dosage>
         <dosage>
           <sequence value="2"/>
+          <patientInstruction value="-"/>
           <timing>
             <repeat>
               <boundsPeriod>
@@ -460,10 +459,8 @@
         <reasonCode>
           <text value="Bluthochdruck"/>
         </reasonCode>
-        <note>
-          <text value="-"/>
-        </note>
         <dosage>
+          <patientInstruction value="-"/>
           <timing>
             <repeat>
               <boundsPeriod>
