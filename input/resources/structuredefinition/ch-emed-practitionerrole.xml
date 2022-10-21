@@ -22,6 +22,7 @@
          <path value="PractitionerRole"/>
          <short value="CH EMED PractitionerRole"/>
       </element>
+
       <element id="PractitionerRole.practitioner">
          <path value="PractitionerRole.practitioner"/>
          <min value="1"/>
@@ -32,6 +33,19 @@
       </element>
       <element id="PractitionerRole.practitioner.reference">
          <path value="PractitionerRole.practitioner.reference"/>
+         <min value="1"/>
+      </element>
+
+      <element id="PractitionerRole.organization">
+         <path value="PractitionerRole.organization"/>
+         <min value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization"/>
+         </type>
+      </element>
+      <element id="PractitionerRole.organization.reference">
+         <path value="PractitionerRole.organization.reference"/>
          <min value="1"/>
       </element>
    </differential>

@@ -92,12 +92,10 @@
          <short value="The author of the document (person)"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
             <!--<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>-->
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
          </type>
       </element>
       <element id="Composition.author.extension:time">
@@ -112,7 +110,7 @@
          <constraint>
             <key value="ch-emed-title-dis"/>
             <severity value="error"/>
-            <human value="'Abgabe' in german or 'Remise' in french or 'Dispensazione' in talian or 'Dispense' in english
+            <human value="'Abgabe' in german or 'Remise' in french or 'Dispensazione' in italian or 'Dispense' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Abgabe' and %resource.language.startsWith('de')) or ($this='Remise' and %resource.language.startsWith('fr')) or ($this='Dispensazione' and %resource.language.startsWith('it')) or ($this='Dispense' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -211,7 +209,7 @@
          <constraint>
             <key value="ch-emed-sect-dis"/>
             <severity value="error"/>
-            <human value="'Abgabe eines Medikaments' in german or 'Dispensation d'un médicament' in french or 'Dispensazione di un medicamento' in talian or 'Medication dispensed' in english
+            <human value="'Abgabe eines Medikaments' in german or 'Dispensation d'un médicament' in french or 'Dispensazione di un medicamento' in italian or 'Medication dispensed' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Abgabe eines Medikaments' and %resource.language.startsWith('de')) or ($this='Dispensation d\'un médicament' and %resource.language.startsWith('fr')) or ($this='Dispensazione di un medicamento' and %resource.language.startsWith('it')) or ($this='Medication dispensed' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -311,7 +309,7 @@
          <constraint>
             <key value="ch-emed-sect-annoot"/>
             <severity value="error"/>
-            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in talian or 'Comment' in english
+            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Kommentar' and %resource.language.startsWith('de')) or ($this='Commentaire' and %resource.language.startsWith('fr')) or ($this='Osservazione' and %resource.language.startsWith('it')) or ($this='Comment' and %resource.language.startsWith('en'))"/>
          </constraint>

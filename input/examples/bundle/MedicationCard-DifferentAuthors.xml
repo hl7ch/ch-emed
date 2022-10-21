@@ -17,7 +17,6 @@
       <Composition>
         <id value="MedicationCard"/>
         <language value="de-CH"/>
-
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
           <valueReference>
             <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -45,12 +44,12 @@
         </subject>
         <date value="2020-03-04T10:05:00+01:00"/>
 
-        <!-- author (and his organization) of the document-->
+        <!-- author and his organization of the document-->
         <author>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
             <valueDateTime value="2020-03-04T10:05:00+01:00"/>
           </extension>
-          <reference value="PractitionerRole/AuthorDocument"/>
+          <reference value="PractitionerRole/AuthorDocumentAtOrganization"/>
         </author>
 
         <title value="Medikationsplan"/>
@@ -282,7 +281,21 @@
     </resource>
   </entry>
 
-  <!-- author (and his organization) of the document-->
+  <!-- author and his organization of the document-->
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorDocumentAtOrganization"/>
+    <resource>
+      <PractitionerRole>
+        <id value="AuthorDocumentAtOrganization"/>
+        <practitioner>
+          <reference value="Practitioner/AuthorDocument"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/AuthorDocumentOrganization"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorDocument"/>
     <resource>
@@ -310,12 +323,6 @@
           <family value="Author"/>
           <given value="Document"/>
         </name>
-        <address>
-          <line value="Dokumentenweg 11"/>
-          <city value="Zürich"/>
-          <postalCode value="8000"/>
-          <country value="CH"/>
-        </address>
       </Practitioner>
     </resource>
   </entry>
@@ -329,6 +336,12 @@
           <value value="7601000987655"/>
         </identifier>
         <name value="AuthorDocumentOrganization"/>
+        <address>
+          <line value="Dokumentenweg 11"/>
+          <city value="Zürich"/>
+          <postalCode value="8000"/>
+          <country value="CH"/>
+        </address>
       </Organization>
     </resource>
   </entry>

@@ -46,10 +46,7 @@
                     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
                         <valueDateTime value="2011-11-29T11:00:00+01:00"/>
                     </extension>
-                    <reference value="Practitioner/FamilienHausarzt"/>
-                </author>
-                <author>
-                    <reference value="Organization/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </author>
                 <title value="Therapieentscheid Medikation"/>
                 <confidentiality value="N">
@@ -152,6 +149,20 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
+        <resource>
+            <PractitionerRole>
+                <id value="FamilienHausarztAtHausarzt"/>
+                <practitioner>
+                    <reference value="Practitioner/FamilienHausarzt"/>
+                </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
         <resource>
             <Practitioner>
@@ -164,12 +175,6 @@
                     <family value="Hausarzt"/>
                     <given value="Familien"/>
                 </name>
-                <address>
-                    <line value="Krankenstrasse 2"/>
-                    <city value="Zürich"/>
-                    <postalCode value="8005"/>
-                    <country value="CH"/>
-                </address>
             </Practitioner>
         </resource>
     </entry>
