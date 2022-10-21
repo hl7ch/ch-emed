@@ -113,7 +113,7 @@
          <constraint>
             <key value="ch-emed-title"/>
             <severity value="error"/>
-            <human value="'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in talian or 'Medication Card' in english
+            <human value="'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in italian or 'Medication Card' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Medikationsplan' and %resource.language.startsWith('de')) or ($this='Plan de médication' and %resource.language.startsWith('fr')) or ($this='Piano farmacologico' and %resource.language.startsWith('it')) or ($this='Medication Card' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -198,7 +198,7 @@
          <constraint>
             <key value="ch-emed-sect-or"/>
             <severity value="error"/>
-            <human value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in talian or 'Original representation' in english
+            <human value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in italian or 'Original representation' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Original Darstellung' and %resource.language.startsWith('de')) or ($this='Représentation originale' and %resource.language.startsWith('fr')) or ($this='Rappresentazione originale' and %resource.language.startsWith('it')) or ($this='Original representation' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -259,7 +259,7 @@
          <constraint>
             <key value="ch-emed-sect-card"/>
             <severity value="error"/>
-            <human value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in talian or 'Medication List' in english
+            <human value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Medikamentenliste' and %resource.language.startsWith('de')) or ($this='Liste de médicaments' and %resource.language.startsWith('fr')) or ($this='Lista farmaci' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
          </constraint>
@@ -351,7 +351,7 @@
          <constraint>
             <key value="ch-emed-sect-annoot"/>
             <severity value="error"/>
-            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in talian or 'Comment' in english
+            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
             <expression value="($this='Kommentar' and %resource.language.startsWith('de')) or ($this='Commentaire' and %resource.language.startsWith('fr')) or ($this='Osservazione' and %resource.language.startsWith('it')) or ($this='Comment' and %resource.language.startsWith('en'))"/>
          </constraint>
