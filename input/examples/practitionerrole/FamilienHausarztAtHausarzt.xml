@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="FamilienHausarztAtHausarzt"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+  </meta>
+  <practitioner>
+    <reference value="Practitioner/FamilienHausarzt"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/Hausarzt"/>
+  </organization>
+</PractitionerRole>

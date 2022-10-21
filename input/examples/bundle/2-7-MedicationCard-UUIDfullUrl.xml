@@ -45,10 +45,7 @@
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
             <valueDateTime value="2012-02-04T13:55:00+01:00"/>
           </extension>
-          <reference value="urn:uuid:34dc227e-fac0-4104-958e-33510f453631"/>
-        </author>
-        <author>
-          <reference value="urn:uuid:7801bb18-5c19-4d4c-bcb5-536a1f51f83e"/>
+          <reference value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
         </author>
         <title value="Medikationsplan"/>
         <confidentiality value="N">
@@ -151,6 +148,19 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
+    <resource>
+      <PractitionerRole>
+        <practitioner>
+          <reference value="urn:uuid:34dc227e-fac0-4104-958e-33510f453631"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:7801bb18-5c19-4d4c-bcb5-536a1f51f83e"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="urn:uuid:34dc227e-fac0-4104-958e-33510f453631"/>
     <resource>
       <Practitioner>
@@ -162,12 +172,6 @@
           <family value="Hausarzt"/>
           <given value="Familien"/>
         </name>
-        <address>
-          <line value="Krankenstrasse 2"/>
-          <city value="Zürich"/>
-          <postalCode value="8005"/>
-          <country value="CH"/>
-        </address>
       </Practitioner>
     </resource>
   </entry>

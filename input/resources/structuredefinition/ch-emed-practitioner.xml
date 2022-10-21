@@ -42,10 +42,5 @@
          <path value="Practitioner.name"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Practitioner.address">
-         <path value="Practitioner.address"/>
-         <min value="1"/>
-         <mustSupport value="true"/>
-      </element>
    </differential>
 </StructureDefinition>
