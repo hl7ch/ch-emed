@@ -47,6 +47,7 @@
                         <valueDateTime value="2012-02-04T13:55:00+01:00"/>
                     </extension>
                     <reference value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
+                    <type value="Device"/>
                 </author>
                 <title value="Medikationsliste"/>
                 <confidentiality value="N">
@@ -164,9 +165,11 @@
                     </text>
                     <entry>
                         <reference value="urn:uuid:733f5a67-5347-43bb-a3e1-068b10a0d808"/>
+                        <type value="MedicationStatement"/>
                     </entry>
                     <entry>
                         <reference value="urn:uuid:97ebd6b4-f0d9-4ee6-a81b-0853c259d5b6"/>
+                        <type value="MedicationDispense"/>
                     </entry>
                 </section>
             </Composition>
@@ -217,23 +220,8 @@
         </resource>
     </entry>
 
-    <!-- Entries: author medical decision -->
     <entry>
         <fullUrl value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
-        <resource>
-            <PractitionerRole>
-                <practitioner>
-                    <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
-                </practitioner>
-                <organization>
-                    <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
-                </organization>
-            </PractitionerRole>
-        </resource>
-    </entry>
-    <!-- Entries: author medical decision -->
-    <entry>
-        <fullUrl value="urn:uuid:7ccd1305-6994-4605-8256-67be52480608"/>
         <resource>
             <PractitionerRole>
                 <practitioner>
@@ -260,7 +248,6 @@
             </Practitioner>
         </resource>
     </entry>
-    <!-- Entries: author medical decision -->
     <entry>
         <fullUrl value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
         <resource>
@@ -392,6 +379,7 @@
                 </subject>
                 <informationSource>
                     <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                    <type value="PractitionerRole"/>
                 </informationSource>
                 <reasonCode>
                     <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
@@ -523,6 +511,7 @@
                 <performer>
                     <actor>
                         <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                        <type value="PractitionerRole"/>
                     </actor>
                 </performer>
                 <quantity>
