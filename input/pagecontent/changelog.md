@@ -25,6 +25,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
 * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, PractitionerRole, Practitioner, Organization)
 * [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the introduction text according to the current status 
+* [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
