@@ -12,17 +12,15 @@ All significant changes to this FHIR implementation guide will be documented on 
       * MTP/PRE/DIS/PADV:
          * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device)
          * Composition.section.author: dito
-         * Entries: -
       * CARD:
          * Composition.author: Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR)
          * Composition.section.author: remove this element from differential
-         * Entries: 
-            * Author document: use CH Core Extension (remove ch-emed-ext-documentauthor) ([#146](https://github.com/hl7ch/ch-emed/issues/146), [#114](https://github.com/hl7ch/ch-emed/issues/114))
-            * Author medical decision: only allow PractitionerRole (remove ch-emed-ext-representedorganization) ([#114](https://github.com/hl7ch/ch-emed/issues/114))
+         * Entries - Author document: use CH Core Extension (remove ch-emed-ext-documentauthor) ([#146](https://github.com/hl7ch/ch-emed/issues/146), [#114](https://github.com/hl7ch/ch-emed/issues/114))
+         * Entries - Author medical decision: only allow PractitionerRole (remove ch-emed-ext-representedorganization) ([#114](https://github.com/hl7ch/ch-emed/issues/114))
       * LIST:
          * Composition.author: Reference(Device) (remove CH EMED Practitioner &#124; CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson &#124; CH Core Organization EPR) 
          * Composition.section.author: remove this element from differential
-         * Entries: add seperate profiles as mentioned above
+         * Entries: add seperate list profiles as mentioned above
    * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, PractitionerRole, Practitioner, Organization)   
    * [#151](https://github.com/hl7ch/ch-emed/issues/151): Various inputs on the topic
       
