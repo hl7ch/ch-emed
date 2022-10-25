@@ -17,8 +17,8 @@ The display "Clinical presentation" is not a valid display for the code {http://
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
-WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole'): The Implementation Guide contains no examples for this profile	
+WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-list'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation-list'): The Implementation Guide contains no examples for this profile	
 
 # The following code systems/value sets are external and not supported by terminology server (or an example)
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
@@ -26,14 +26,19 @@ Code System URI 'http://example.com/localcode' is unknown so the code cannot be 
 The value provided ('rm-CH') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#rm-CH) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))
 
 # Slicing information about narrativeLink extension
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense
+INFORMATION: Bundle/1-1-MedicationTreatmentPlan: Bundle.entry[0].resource.entry[7].resource.ofType(MedicationStatement).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+INFORMATION: Bundle/1-2-MedicationDispense: Bundle.entry[0].resource.entry[7].resource.ofType(MedicationDispense).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense
+INFORMATION: Bundle/2-1-MedicationList: Bundle.entry[8].resource.extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-list
+INFORMATION: Bundle/2-1-MedicationList: Bundle.entry[9].resource.extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense-list
+INFORMATION: Bundle/2-3-MedicationTreatmentPlan: Bundle.entry[0].resource.entry[7].resource.ofType(MedicationStatement).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+INFORMATION: Bundle/2-4-MedicationDispense: Bundle.entry[0].resource.entry[7].resource.ofType(MedicationDispense).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense
+INFORMATION: Bundle/2-5-MedicationTreatmentPlan: Bundle.entry[0].resource.entry[7].resource.ofType(MedicationStatement).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+INFORMATION: Bundle/PharmaceuticalAdvice-ChangeDosage: Bundle.entry[7].resource.entry[8].resource.ofType(MedicationStatement).extension[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
 
 # Problem in the base profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Build errors
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
-The link 'Bundle-2-7-MedicationCard-UUIDfulUrl.json.html' for "JSON" cannot be resolved
 The link 'StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda' for "mapping to CDA" cannot be resolved (valid targets: [publish-box, segment-post-footer, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, mappings-for-workflow-pattern-http-hl7-orgfhirworkflow, segment-footer, logo, segment-content, w5, cda, mappings-for-cda-r2-http-hl7-orgv3cda, segment-header, workflow, bottom, hl7-logo, resource-profile-chemedmedicationrequest-mappings, family-nav, ig-status, script10.6, mappings-for-hl7-v2-mapping-http-hl7-orgv2, hl7-nav, segment-navbar, v2, segment-breadcrumb, mappings-for-mapping-to-ncpdp-script-10-6-http-ncpdp-orgscript10_6, mappings-for-rim-mapping-http-hl7-orgv3])
 The link 'http://hl7.org/fhir/R4/snomed.html' for "http://snomed.info/sct" cannot be resolved
