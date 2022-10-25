@@ -18,7 +18,7 @@ The representation of the Medication Prescription document SHALL be embedded as 
 ### Profiles
 * [CH EMED Medication Prescription Document](StructureDefinition-ch-emed-document-medicationprescription.html)
 * [CH EMED Medication Prescription Composition](StructureDefinition-ch-emed-composition-medicationprescription.html)
-* [CH EMED MedicationRequest](StructureDefinition-ch-emed-medicationrequest.html)
+* [CH EMED MedicationRequest (PRE)](StructureDefinition-ch-emed-medicationrequest.html)
 * [CH EMED Medication](StructureDefinition-ch-emed-medication.html)
 * [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
 * [CH EMED Dosage Structured Normal Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)

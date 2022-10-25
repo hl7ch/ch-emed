@@ -3,10 +3,10 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
    <version value="0.1.0"/>
    <name value="CHEMEDObservation"/>
-   <title value="CH EMED Observation"/>
+   <title value="CH EMED Observation (PADV)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Definition of the observation"/>
+   <description value="Definition of the observation for the pharmaceutical advice document"/>
    <mapping>
       <identity value="cda"/>
       <uri value="http://hl7.org/v3/cda"/>
@@ -20,7 +20,7 @@
    <differential>
       <element id="Observation">
          <path value="Observation"/>
-         <short value="CH EMED Observation"/>
+         <short value="CH EMED Observation (PADV)"/>
          <mapping>
             <identity value="cda"/>
             <map value="observation"/>
@@ -97,23 +97,6 @@
          </mapping>
       </element>
 
-      <!-- document author -->
-      <element id="Observation.extension:authorDocument">
-         <path value="Observation.extension" />
-         <sliceName value="authorDocument" />
-         <short value="LIST: Author of the original document if different from the author of the medical decision (Observation.performer), see also 'Guidance - Different Authors'"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author" />
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author"/>
-         </mapping>
-      </element>
-
       <element id="Observation.identifier">
          <path value="Observation.identifier"/>
          <short value="Observation Identifier"/>
@@ -177,52 +160,6 @@
             <identity value="cda"/>
             <map value=".effectiveTime"/>
          </mapping>
-      </element>
-
-      <!-- Observation Author -->
-      <element id="Observation.performer">
-         <path value="Observation.performer"/>
-         <short value="LIST: The author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
-         <max value="1"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.assignedAuthor.assignedPerson/representedOrganization"/>
-         </mapping>
-      </element>
-
-      <element id="Observation.performer.extension">
-         <path value="Observation.performer.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Observation.performer.extension:time">
-         <path value="Observation.performer.extension"/>
-         <sliceName value="time"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.time"/>
-         </mapping>
-      </element>
-      <element id="Observation.performer.reference">
-         <path value="Observation.performer.reference"/>
-         <min value="1"/>
       </element>
 
       <element id="Observation.note">

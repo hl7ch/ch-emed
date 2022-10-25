@@ -19,7 +19,7 @@ The representation of the Medication Card document SHALL be embedded as a PDF in
 ### Profiles
 * [CH EMED Medication Card Document](StructureDefinition-ch-emed-document-medicationcard.html)
 * [CH EMED Medication Card Composition](StructureDefinition-ch-emed-composition-medicationcard.html)
-* [CH EMED MedicationStatement (Medication Card document)](StructureDefinition-ch-emed-medicationstatement-card.html)
+* [CH EMED MedicationStatement (CARD)](StructureDefinition-ch-emed-medicationstatement-card.html)
 * [CH EMED Medication](StructureDefinition-ch-emed-medication.html)
 * [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
 * [CH EMED Dosage Structured Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)

@@ -1,0 +1,72 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-observation-list"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation-list"/>
+   <version value="0.1.0"/>
+   <name value="CHEMEDObservationList"/>
+   <title value="CH EMED Observation (LIST)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <description value="Definition of the observation for the medication list document"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Observation"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Observation">
+         <path value="Observation"/>
+         <short value="CH EMED Observation (LIST)"/>
+      </element>
+
+      <!-- document author -->
+      <element id="Observation.extension:authorDocument">
+         <path value="Observation.extension" />
+         <sliceName value="authorDocument" />
+         <short value="Author of the original document if different from the author of the medical decision (Observation.performer), see also 'Guidance - Different Authors'"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension" />
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author" />
+         </type>
+      </element>
+
+      <!-- Observation Author -->
+      <element id="Observation.performer">
+         <path value="Observation.performer"/>
+         <short value="The author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+         </type>
+      </element>
+      <element id="Observation.performer.extension">
+         <path value="Observation.performer.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Observation.performer.extension:time">
+         <path value="Observation.performer.extension"/>
+         <sliceName value="time"/>
+         <short value="Timestamp of the authorship/data input"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+         </type>
+      </element>
+      <element id="Observation.performer.reference">
+         <path value="Observation.performer.reference"/>
+         <min value="1"/>
+      </element>
+
+   </differential>
+</StructureDefinition>

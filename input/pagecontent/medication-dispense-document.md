@@ -17,7 +17,7 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 ### Profiles
 * [CH EMED Medication Dispense Document](StructureDefinition-ch-emed-document-medicationdispense.html)
 * [CH EMED Medication Dispense Composition](StructureDefinition-ch-emed-composition-medicationdispense.html)
-* [CH EMED MedicationDispense](StructureDefinition-ch-emed-medicationdispense.html)
+* [CH EMED MedicationDispense (DIS)](StructureDefinition-ch-emed-medicationdispense.html)
 * [CH EMED Medication (MedicationDispense)](StructureDefinition-ch-emed-medication-medicationdispense.html)
 * [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html)
 * [CH EMED Dosage Structured Normal Dosing](StructureDefinition-ch-emed-dosage-structured-normal.html)

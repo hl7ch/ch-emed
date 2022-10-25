@@ -3,10 +3,10 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
    <version value="0.1.0"/>
    <name value="CHEMEDMedicationStatementTreatmentPlan"/>
-   <title value="CH EMED MedicationStatement (Medication Treatment Plan document)"/>
+   <title value="CH EMED MedicationStatement (MTP)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Definition of the medication statement for the Medication Treatment Plan document"/>
+   <description value="Definition of the medication statement for the medication treatment plan document"/>
    <mapping>
       <identity value="cda"/>
       <uri value="http://hl7.org/v3/cda"/>
@@ -20,21 +20,11 @@
    <differential>
       <element id="MedicationStatement">
          <path value="MedicationStatement"/>
-         <short value="CH EMED MedicationStatement (Medication Treatment Plan document)"/>
+         <short value="CH EMED MedicationStatement (MTP)"/>
          <mapping>
             <identity value="cda"/>
             <map value="substanceAdministration"/>
          </mapping>
-      </element>
-      <element id="MedicationStatement.extension">
-         <path value="MedicationStatement.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
       </element>
       <element id="MedicationStatement.extension:substitution">
          <path value="MedicationStatement.extension" />

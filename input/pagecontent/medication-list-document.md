@@ -16,7 +16,7 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 ### Profiles
 * [CH EMED Medication List Document](StructureDefinition-ch-emed-document-medicationlist.html)
 * [CH EMED Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html)
-* [CH EMED MedicationStatement (Medication Treatment Plan document)](StructureDefinition-ch-emed-medicationstatement-treatmentplan.html)
-* [CH EMED MedicationRequest](StructureDefinition-ch-emed-medicationrequest.html)
-* [CH EMED MedicationDispense](StructureDefinition-ch-emed-medicationdispense.html)
-* [CH EMED Observation](StructureDefinition-ch-emed-observation.html)
+* [CH EMED MedicationStatement (LIST)](StructureDefinition-ch-emed-medicationstatement-list.html)
+* [CH EMED MedicationRequest (LIST)](StructureDefinition-ch-emed-medicationrequest-list.html)
+* [CH EMED MedicationDispense (LIST)](StructureDefinition-ch-emed-medicationdispense-list.html)
+* [CH EMED Observation (LIST)](StructureDefinition-ch-emed-observation-list.html)
