@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 - v3.0.0 (2022-xx-xx)
+### STU3 - v3.0.0 (2022-xx-xx)
 
 #### Added / Updated
 * Different authors:
@@ -42,7 +42,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
 
-### STU 3 Ballot - v2.1.0 (2022-07-07)
+### STU3 Ballot - v2.1.0 (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -64,7 +64,7 @@ issue90-dosage
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
 * [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
 
-### STU 2 - v2.0.0 (2022-02-11)
+### STU2 - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.
