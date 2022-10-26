@@ -245,7 +245,7 @@
       <element id="Composition.section:list.entry:medicationStatement">
          <path value="Composition.section.entry"/>
          <sliceName value="medicationStatement"/>
-         <short value="MedicationStatement (from MTP or CARD)"/>
+         <short value="MedicationStatement (from MTP)"/>
          <min value="0"/>
          <max value="*"/>
          <type>

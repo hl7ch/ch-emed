@@ -10,20 +10,13 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationStatement"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
    <derivation value="constraint"/>
    <differential>
       <element id="MedicationStatement">
          <path value="MedicationStatement"/>
          <short value="CH EMED MedicationStatement (LIST)"/>
-         <constraint>
-            <key value="ch-list-1"/>
-            <severity value="error"/>
-            <human value="The MedicationStatement must be conform to one of these profiles: CH EMED MedicationStatement (MTP) or CH EMED MedicationStatement (CARD)"/>
-            <expression value="conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan') or 
-                               conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card')"/>
-         </constraint>
-      </element>
+      </element>   
 
       <!-- document author -->
       <element id="MedicationStatement.extension:authorDocument">
