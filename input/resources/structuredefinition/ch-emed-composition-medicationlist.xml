@@ -31,11 +31,6 @@
             <rules value="open"/>
          </slicing>
       </element>
-      <element id="Composition.extension:versionNumber">
-         <path value="Composition.extension"/>
-         <sliceName value="versionNumber"/>
-         <short value="Version number"/>
-      </element>
       <element id="Composition.extension:informationRecipient">
          <path value="Composition.extension"/>
          <sliceName value="informationRecipient"/>
