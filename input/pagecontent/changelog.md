@@ -35,14 +35,15 @@ All significant changes to this FHIR implementation guide will be documented on 
    * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
    * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
 
-
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
 * [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
-
+* [#160](https://github.com/hl7ch/ch-emed/issues/160): Add missing elements 'experimental=false' and 'description' to CodeSystems
 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
+
+
 
 ### STU3 Ballot - v2.1.0 (2022-07-07)
 
@@ -65,6 +66,8 @@ issue90-dosage
 #### Fixed
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
 * [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
+
+
 
 ### STU2 - v2.0.0 (2022-02-11)
 #### Open Issues
