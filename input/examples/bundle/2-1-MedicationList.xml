@@ -43,9 +43,6 @@
                 </subject>
                 <date value="2012-02-04T13:55:00+01:00"/>
                 <author>
-                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                        <valueDateTime value="2012-02-04T13:55:00+01:00"/>
-                    </extension>
                     <reference value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
                     <type value="Device"/>
                 </author>

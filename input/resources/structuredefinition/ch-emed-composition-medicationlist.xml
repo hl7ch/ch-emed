@@ -95,10 +95,6 @@
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
          </type>
       </element>
-      <element id="Composition.author.extension:time">
-         <path value="Composition.author.extension"/>
-         <short value="Timestamp of the authorship/data input"/>
-      </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
       </element>
