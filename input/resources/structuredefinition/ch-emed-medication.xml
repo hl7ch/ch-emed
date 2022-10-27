@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Medication"/>
@@ -21,10 +16,6 @@
       <element id="Medication">
          <path value="Medication"/>
          <short value="CH EMED Medication"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
-         </mapping>
          <constraint>
             <key value="ch-emed-med-1"/>
             <severity value="error"/>
@@ -45,14 +36,6 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".code"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:code"/>
-         </mapping>
       </element>
       <element id="Medication.code.coding:GTIN">
          <path value="Medication.code.coding"/>
@@ -80,14 +63,6 @@
          <short value="Medication name"/>
          <min value="1"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".name"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:name"/>
-         </mapping>
       </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
@@ -101,14 +76,6 @@
          <path value="Medication.form.coding"/>
          <min value="1"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:formCode"/>
-         </mapping>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:formCode"/>
-         </mapping>
       </element>
       <element id="Medication.form.coding.system">
          <path value="Medication.form.coding.system"/>
@@ -125,10 +92,6 @@
       <element id="Medication.amount">
          <path value="Medication.amount"/>
          <short value="Package size"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:capacityQuantity"/>
-         </mapping>
          <type>
             <code value="Ratio"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ratio"/>
@@ -136,10 +99,6 @@
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:ingredient"/>
-         </mapping>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept">
          <path value="Medication.ingredient.itemCodeableConcept"/>
@@ -151,29 +110,17 @@
             <strength value="extensible"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient"/>
          </binding>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:code"/>
-         </mapping>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.text">
          <path value="Medication.ingredient.itemCodeableConcept.text"/>
          <short value="Ingredient name"/>
          <min value="1"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:name"/>
-         </mapping>
       </element>
       <element id="Medication.ingredient.strength">
          <path value="Medication.ingredient.strength"/>
          <short value="Dose per unit"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:quantity"/>
-         </mapping>
          <type>
             <code value="Ratio"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ratio"/>

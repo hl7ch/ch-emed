@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the non-structured dosage"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -32,10 +27,6 @@
          <short value="Dosage instructions"/>
          <min value="1"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.substanceAdministration.text"/>
-         </mapping>
       </element>
       <element id="Dosage.additionalInstruction">
          <path value="Dosage.additionalInstruction"/>
@@ -46,10 +37,6 @@
          <path value="Dosage.patientInstruction"/>
          <short value="Patient medication instructions (e.g. 'take with food')"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.text"/>
-         </mapping>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
@@ -59,10 +46,6 @@
       <element id="Dosage.asNeededBoolean">
          <path value="Dosage.asNeededBoolean"/>
          <short value="In reserve (to be taken by the patient only if the need arises - e.g. pains)"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.code"/>
-         </mapping>
       </element>
       <element id="Dosage.site">
          <path value="Dosage.site"/>

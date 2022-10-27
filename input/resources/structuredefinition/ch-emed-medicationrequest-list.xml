@@ -29,10 +29,6 @@
             <code value="Extension" />
             <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author" />
          </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author"/>
-         </mapping>
       </element>
 
       <!-- MedicationRequest Author -->

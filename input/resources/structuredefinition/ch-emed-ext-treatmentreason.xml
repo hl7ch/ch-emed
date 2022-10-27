@@ -9,11 +9,6 @@
     <experimental value="false"/>
     <description value="Extension to represent the treatment reason"/>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="cda"/>
-        <uri value="http://hl7.org/v3/cda"/>
-        <name value="CDA (R2)"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -27,10 +22,6 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="CH EMED Extension"/>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".entryRelationship.observation.text"/>
-            </mapping>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>

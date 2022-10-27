@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Extension to reference the medication dispense"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <context>
@@ -48,10 +43,6 @@
          <type>
             <code value="Extension"/>
          </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.supply.id"/>
-         </mapping>
       </element>
       <element id="Extension.extension:id.extension">
          <path value="Extension.extension.extension"/>
@@ -80,10 +71,6 @@
          <type>
             <code value="Extension"/>
          </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.supply.reference.externalDocument.id"/>
-         </mapping>
       </element>
       <element id="Extension.extension:externalDocumentId.extension">
          <path value="Extension.extension.extension"/>
