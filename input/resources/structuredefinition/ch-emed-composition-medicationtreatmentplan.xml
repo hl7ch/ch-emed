@@ -41,11 +41,6 @@
          <sliceName value="informationRecipient"/>
          <short value="A recipient of this document (person or organization)"/>
       </element>
-      <element id="Composition.extension:dataEnterer">
-         <path value="Composition.extension"/>
-         <sliceName value="dataEnterer"/>
-         <short value="Person who entered information into this document if it is a person other than the author"/>
-      </element>
       <element id="Composition.identifier">
          <path value="Composition.identifier"/>
       </element>

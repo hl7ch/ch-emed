@@ -38,6 +38,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * Remove extensions from differential (since they are defined in the underlying CH Core EPR profiles, they can theoretically still be used): 
       * Remove time-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time) in author elements (profiles/examples)
       * Remove sectionId-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid) in Composition.section (profiles/examples) ([#155](https://github.com/hl7ch/ch-emed/issues/155))
+      * Remove dataEnterer-extension in Composition (profiles)
    * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
    * Remove the links to the CDA-CH-EMED documents (in the document tabs)
 
