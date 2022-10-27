@@ -185,21 +185,6 @@
          <min value="1"/>
          <max value="1"/>
       </element>
-      <!-- Extension for Section-ID -->
-      <element id="Composition.section:dispense.extension">
-         <path value="Composition.section.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.section:dispense.extension:sectionId">
-         <path value="Composition.section.extension"/>
-         <sliceName value="sectionId"/>
-      </element>
       <element id="Composition.section:dispense.title">
          <path value="Composition.section.title"/>
          <constraint>

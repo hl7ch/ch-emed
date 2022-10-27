@@ -235,21 +235,6 @@
          <max value="1"/>
          <mustSupport value="true"/>
       </element>
-      <!-- Extension for Section-ID -->
-      <element id="Composition.section:card.extension">
-         <path value="Composition.section.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.section:card.extension:sectionId">
-         <path value="Composition.section.extension"/>
-         <sliceName value="sectionId"/>
-      </element>
       <element id="Composition.section:card.title">
          <path value="Composition.section.title"/>
          <constraint>

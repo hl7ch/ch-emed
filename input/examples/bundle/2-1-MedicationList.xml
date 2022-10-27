@@ -62,12 +62,6 @@
                     <reference value="urn:uuid:c7ab130a-7962-47f8-bd62-4f40e0099f4d"/>
                 </custodian>
                 <section>
-                    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:f5ee14ee-52dc-48b0-8d96-e2713c99e607"/>
-                        </valueIdentifier>
-                    </extension>
                     <title value="Medikamentenliste"/>
                     <code>
                         <coding>
