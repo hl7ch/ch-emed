@@ -24,6 +24,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, [PractitionerRole](StructureDefinition-ch-emed-practitionerrole.html), [Practitioner](StructureDefinition-ch-emed-practitioner.html), [Organization](StructureDefinition-ch-emed-organization.html))   
    * [#151](https://github.com/hl7ch/ch-emed/issues/151): Include various inputs on the topic
 * [#72](https://github.com/hl7ch/ch-emed/issues/72): Add mapping for reserve medication as 'Dosage.asNeeded'
+* [#161](https://github.com/hl7ch/ch-emed/issues/161): [Home](index.html): Include the new IG fragments (IP Statements/Cross Version Analysis/Dependency Table/Globals Table) and remove Copyright (new included in IP Statements)
       
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
