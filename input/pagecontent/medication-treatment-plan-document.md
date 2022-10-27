@@ -3,7 +3,6 @@ The **Medication Treatment Plan document** describes ONE medication of a patient
 * [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eMedicationTreatmentPlan
 * [IHE Pharmacy Technical Framework Supplement: Community Medication Treatment Plan
 (MTP)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_MTP.pdf)
-* [CDA-CH-EMED Medication Treatment Plan document](https://art-decor.org/art-decor/decor-templates--cdachemed-?section=templates&id=2.16.756.5.30.1.1.10.1.7)  
 
 ### FHIR document (Bundle)
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
