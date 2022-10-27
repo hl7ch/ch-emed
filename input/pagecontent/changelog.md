@@ -40,6 +40,7 @@ All significant changes to this FHIR implementation guide will be documented on 
       * sectionId-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid) in Composition.section (profiles/examples) ([#155](https://github.com/hl7ch/ch-emed/issues/155))
       * dataEnterer-extension in Composition (profiles)
       * versionNumber-extension in Composition (profiles)
+      * informationRecipient in Composition (profiles) (note: is still a required element from CH Core EPR)
    * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
    * Remove the links to the CDA-CH-EMED documents (in the document tabs)
 
