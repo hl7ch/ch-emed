@@ -241,66 +241,71 @@
             <rules value="open"/>
          </slicing>
       </element>
-      <element id="Composition.section:list.entry:medicationTreatmentPlan">
+
+      <element id="Composition.section:list.entry:medicationStatement">
          <path value="Composition.section.entry"/>
-         <sliceName value="medicationTreatmentPlan"/>
-         <short value="Medication treatment plan"/>
+         <sliceName value="medicationStatement"/>
+         <short value="MedicationStatement (from MTP)"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-list"/>
          </type>
       </element>
-      <element id="Composition.section:list.entry:medicationTreatmentPlan.reference">
+      <element id="Composition.section:list.entry:medicationStatement.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section:list.entry:medicationPrescription">
+
+      <element id="Composition.section:list.entry:medicationRequest">
          <path value="Composition.section.entry"/>
-         <sliceName value="medicationPrescription"/>
-         <short value="Medication prescription"/>
+         <sliceName value="medicationRequest"/>
+         <short value="MedicationRequest (from PRE)"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-list"/>
          </type>
       </element>
-      <element id="Composition.section:list.entry:medicationPrescription.reference">
+      <element id="Composition.section:list.entry:medicationRequest.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
+
       <element id="Composition.section:list.entry:medicationDispense">
          <path value="Composition.section.entry"/>
          <sliceName value="medicationDispense"/>
-         <short value="Medication dispense"/>
+         <short value="MedicationDispense (from DIS)"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense-list"/>
          </type>
       </element>
       <element id="Composition.section:list.entry:medicationDispense.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
-      <element id="Composition.section:list.entry:pharmaceuticalAdvice">
+
+      <element id="Composition.section:list.entry:observation">
          <path value="Composition.section.entry"/>
-         <sliceName value="pharmaceuticalAdvice"/>
-         <short value="Pharmaceutical advice"/>
+         <sliceName value="observation"/>
+         <short value="Observation (from PADV)"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation-list"/>
          </type>
       </element>
-      <element id="Composition.section:list.entry:pharmaceuticalAdvice.reference">
+      <element id="Composition.section:list.entry:observation.reference">
          <path value="Composition.section.entry.reference"/>
          <min value="1"/>
       </element>
+
       <element id="Composition.section:list.section">
          <path value="Composition.section.section"/>
          <min value="0"/>

@@ -311,7 +311,15 @@
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
-         <description value="Example for MedicationDispense"/>
+         <description value="Example for MedicationDispense (DIS)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/2-1-MedDispTriatec"/>
+         </reference>
+         <name value="2-1 Medication Dispense with Medication Triatec"/>
+         <description value="Example for MedicationDispense (LIST)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
       <resource>
@@ -319,7 +327,7 @@
             <reference value="MedicationDispense/2-4-MedDispBeloczok"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Beloc Zok"/>
-         <description value="Example for MedicationDispense"/>
+         <description value="Example for MedicationDispense (DIS)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
       <resource>
@@ -327,7 +335,7 @@
             <reference value="MedicationRequest/2-6-MedReqNorvasc"/>
          </reference>
          <name value="2-6 Medication Request with Medication Norvasc"/>
-         <description value="Example for MedicationRequest"/>
+         <description value="Example for MedicationRequest (PRE)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
       </resource>
       <resource>
@@ -335,15 +343,23 @@
             <reference value="MedicationStatement/1-1-MedStatTriatec"/>
          </reference>
          <name value="1-1 Medication Statement with Medication Triatec"/>
-         <description value="Example for MedicationStatement"/>
+         <description value="Example for MedicationStatement (MTP)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationStatement/2-1-MedStatTriatec"/>
+         </reference>
+         <name value="2-1 Medication Statement with Medication Triatec"/>
+         <description value="Example for MedicationStatement (LIST)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-list"/>
       </resource>
       <resource>
          <reference>
             <reference value="MedicationStatement/2-3-MedStatBeloczok"/>
          </reference>
          <name value="2-3 Medication Statement with Medication Beloc Zok"/>
-         <description value="Example for MedicationStatement"/>
+         <description value="Example for MedicationStatement (MTP)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
@@ -351,7 +367,7 @@
             <reference value="MedicationStatement/2-5-MedStatNorvasc"/>
          </reference>
          <name value="2-5 Medication Statement with Medication Norvasc"/>
-         <description value="Example for MedicationStatement"/>
+         <description value="Example for MedicationStatement (MTP)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
       </resource>
       <resource>
@@ -359,7 +375,7 @@
             <reference value="MedicationStatement/2-7-MedStatBeloczok"/>
          </reference>
          <name value="2-7 Medication Statement with Medication Beloc Zok"/>
-         <description value="Example for MedicationStatement"/>
+         <description value="Example for MedicationStatement (CARD)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
       </resource>
       <resource>
@@ -367,7 +383,7 @@
             <reference value="MedicationStatement/2-7-MedStatNorvasc"/>
          </reference>
          <name value="2-7 Medication Statement with Medication Norvasc"/>
-         <description value="Example for MedicationStatment"/>
+         <description value="Example for MedicationStatment (CARD)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>
       </resource>
       <resource>
@@ -383,7 +399,7 @@
             <reference value="Observation/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Observation for Pharmaceutical Advice document"/>
-         <description value="Example for Observation"/>
+         <description value="Example for Observation (PADV)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
       </resource>
       <resource>
@@ -620,7 +636,17 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-medicationdispense-list"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationrequest-list"/>
          </reference>
       </resource>
       <resource>
@@ -630,17 +656,27 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-medicationstatement-card"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
          </reference>
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement-card"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement-list"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-observation"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-observation-list"/>
          </reference>
       </resource>
       <resource>

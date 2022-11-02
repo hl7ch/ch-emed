@@ -20,7 +20,7 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 ### Profiles
 * [CH EMED Pharmaceutical Advice Document](StructureDefinition-ch-emed-document-pharmaceuticaladvice.html)
 * [CH EMED Pharmaceutical Advice Composition](StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html)
-* [CH EMED Observation](StructureDefinition-ch-emed-observation.html)
+* [CH EMED Observation (PADV)](StructureDefinition-ch-emed-observation.html)
 
 ### Use Cases
 A Pharmaceutical Advice document contains one Observation. The Observation refers to ONE already existing document ([Medication Treatment Plan](StructureDefinition-ch-emed-ext-treatmentplan.html), [Medication Prescription](StructureDefinition-ch-emed-ext-prescription.html), [Medication Dispense](StructureDefinition-ch-emed-ext-dispense.html)) and defines ONE action (Observation.code) to be performed on the referenced medication.

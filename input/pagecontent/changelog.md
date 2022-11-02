@@ -1,41 +1,53 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 - v3.0.0 (2022-xx-xx)
+### STU3 - v3.0.0 (2022-xx-xx)
 
-#### Added
-* [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision in the Medication List document. Added description/use cases for the use of the different authors (document/section/entry) under [Guidance - Different Authors](different-authors.html)
-   * [#133](https://github.com/hl7ch/ch-emed/issues/133): Add a hint to the guidance in the profiles
-
+#### Added / Updated
+* Different authors:
+   * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision and the author of the document for the Medication List document. 
+      * Add separate profiles ([MedicationStatement](StructureDefinition-ch-emed-medicationstatement-list.html)/[MedicationDispense](StructureDefinition-ch-emed-medicationdispense-list.html)/[MedicationRequest](StructureDefinition-ch-emed-medicationrequest-list.html)/[Observation](StructureDefinition-ch-emed-observation-list.html)) for use in the Medication List document ([#114](https://github.com/hl7ch/ch-emed/issues/114)). 
+      * [#133](https://github.com/hl7ch/ch-emed/issues/133): Use case for prescription authors clarified by the separate list profiles and guidance (without additional adaptation needed)
+   * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under [Guidance - Different Authors](different-authors.html) and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
+      * [MTP](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)/[PRE](StructureDefinition-ch-emed-composition-medicationprescription.html)/[DIS](StructureDefinition-ch-emed-composition-medicationdispense.html)/[PADV](StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html):
+         * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device)
+         * Composition.section.author: dito
+      * [CARD](StructureDefinition-ch-emed-composition-medicationcard.html):
+         * Composition.author: Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR)
+         * Composition.section.author: remove this element from differential
+         * Entries - Author document: use CH Core Extension (remove ch-emed-ext-documentauthor) ([#146](https://github.com/hl7ch/ch-emed/issues/146), [#114](https://github.com/hl7ch/ch-emed/issues/114))
+         * Entries - Author medical decision: only allow PractitionerRole (remove ch-emed-ext-representedorganization) ([#114](https://github.com/hl7ch/ch-emed/issues/114))
+      * [LIST](StructureDefinition-ch-emed-composition-medicationlist.html):
+         * Composition.author: Reference(Device) (remove CH EMED Practitioner &#124; CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson &#124; CH Core Organization EPR) 
+         * Composition.section.author: remove this element from differential
+         * Entries: add seperate list profiles as mentioned above
+   * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, [PractitionerRole](StructureDefinition-ch-emed-practitionerrole.html), [Practitioner](StructureDefinition-ch-emed-practitioner.html), [Organization](StructureDefinition-ch-emed-organization.html))   
+   * [#151](https://github.com/hl7ch/ch-emed/issues/151): Include various inputs on the topic
+* [#72](https://github.com/hl7ch/ch-emed/issues/72): Add mapping for reserve medication as 'Dosage.asNeeded'
+* [#161](https://github.com/hl7ch/ch-emed/issues/161): [Home](index.html): Include the new IG fragments (IP Statements/Cross Version Analysis/Dependency Table/Globals Table) and remove Copyright (new included in IP Statements)
+      
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
-   * [#146](https://github.com/hl7ch/ch-emed/issues/146): Replacing the Extension 'CH EMED Extension Document Author' with the CH Core Extension 'Author of the content'
-* [#114](https://github.com/hl7ch/ch-emed/issues/114): Update mapping of the different authors in section and entry level
-   * Entry level: Usage of CH Core Extension 'Author of the content'
-   * Entry level: Limit references for author of medical decision to PractitionerRole (remove CH EMED Extension Represented Organization) 
-* [#151](https://github.com/hl7ch/ch-emed/issues/151): 
-   * MTP/PRE/DIS/PADV: Composition.author -> Remove reference to Device (it's always a person)
-   * LIST: Composition.author -> Remove all references except Device (it's always a device)
-      * Update example 2-1 Medication List document: Change Composition.author from person to device, add author of medical decision to entries
-   * CARD/LIST: Remove element Compositon.section.author from differential (profile)
-* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to 'MedicationStatemtent.note' 
-   * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of 'Observation.note'.
+* [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the [introduction](index.html#introduction) according to the current status 
+* [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '*Entry*.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to '[MedicationStatemtent.note](StructureDefinition-ch-emed-medicationstatement-card.html)' 
+   * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of '[Observation.note](StructureDefinition-ch-emed-observation.html)'.
 * Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
    * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
    * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
-* [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, PractitionerRole, Practitioner, Organization)
-* [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the introduction text according to the current status 
 * [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
 * [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
-
+* [#160](https://github.com/hl7ch/ch-emed/issues/160): Add missing elements 'experimental=false' and 'description' to CodeSystems
 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
+* [#134](https://github.com/hl7ch/ch-emed/issues/134): Issue was withdrawn
 
-### STU 3 Ballot - v2.1.0 (2022-07-07)
+
+
+### STU3 Ballot - v2.1.0 (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -57,7 +69,9 @@ issue90-dosage
 * [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
 * [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
 
-### STU 2 - v2.0.0 (2022-02-11)
+
+
+### STU2 - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.

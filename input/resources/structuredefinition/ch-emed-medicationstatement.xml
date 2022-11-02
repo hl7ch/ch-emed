@@ -56,23 +56,6 @@
          </slicing>
       </element>
 
-      <!-- document author -->
-      <element id="MedicationStatement.extension:authorDocument">
-         <path value="MedicationStatement.extension" />
-         <sliceName value="authorDocument" />
-         <short value="CARD/LIST: Author of the original document if different from the author of the medical decision (MedicationStatement.informationSource), see also 'Guidance - Different Authors'"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author" />
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author"/>
-         </mapping>
-      </element>
-
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <short value="MedicationStatement Identifier"/>
@@ -127,51 +110,6 @@
       </element>
       <element id="MedicationStatement.subject.reference">
          <path value="MedicationStatement.subject.reference"/>
-         <min value="1"/>
-      </element>
-
-      <!-- MedicationStatement Author -->
-      <element id="MedicationStatement.informationSource">
-         <path value="MedicationStatement.informationSource"/>
-         <short value="CARD/LIST: The author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.assignedAuthor.assignedPerson/representedOrganization"/>
-         </mapping>
-      </element>
-
-      <element id="MedicationStatement.informationSource.extension">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="MedicationStatement.informationSource.extension:time">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <sliceName value="time"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.time"/>
-         </mapping>
-      </element>
-      <element id="MedicationStatement.informationSource.reference">
-         <path value="MedicationStatement.informationSource.reference"/>
          <min value="1"/>
       </element>
 
