@@ -46,9 +46,6 @@
 
         <!-- author and his organization of the document-->
         <author>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-            <valueDateTime value="2020-03-04T10:05:00+01:00"/>
-          </extension>
           <reference value="PractitionerRole/AuthorDocument"/>
         </author>
 
@@ -100,9 +97,6 @@
 
           <!-- author (and his organization) of the section-->
           <author>
-            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-              <valueDateTime value="2020-03-04T11:05:00+01:00"/>
-            </extension>
             <reference value="PractitionerRole/AuthorSection"/>
           </author>
           <entry>
@@ -246,9 +240,6 @@
         <!-- author and her/his organization of the original document if different from the information source-->
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
           <valueReference>
-            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-              <valueDateTime value="2020-03-04T13:05:00+01:00"/>
-            </extension>
             <reference value="PractitionerRole/AuthorOriginalDocument"/>
           </valueReference>
         </extension>
@@ -267,9 +258,6 @@
 
         <!-- author (and his organization) of the medical decision-->
         <informationSource>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-            <valueDateTime value="2020-03-04T12:05:00+01:00"/>
-          </extension>
           <reference value="PractitionerRole/AuthorMedicalDecision"/>
         </informationSource>
 

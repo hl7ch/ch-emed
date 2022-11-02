@@ -2,7 +2,6 @@ The **Medication Dispense document** describes the direct dispensation of ONE dr
     
 * [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eDispense
 * [IHE Pharmacy Technical Framework Supplement: Community Dispense (DIS)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_DIS.pdf)
-* [CDA-CH-EMED Medication Dispense document](https://art-decor.org/art-decor/decor-templates--cdachemed-?section=templates&id=2.16.756.5.30.1.1.10.1.5)  
 
 
 ### FHIR document (Bundle)

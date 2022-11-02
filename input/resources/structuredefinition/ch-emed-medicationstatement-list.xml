@@ -41,28 +41,6 @@
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
          </type>
       </element>
-      <element id="MedicationStatement.informationSource.extension">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="MedicationStatement.informationSource.extension:time">
-         <path value="MedicationStatement.informationSource.extension"/>
-         <sliceName value="time"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-      </element>
       <element id="MedicationStatement.informationSource.reference">
          <path value="MedicationStatement.informationSource.reference"/>
          <min value="1"/>

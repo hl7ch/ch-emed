@@ -40,5 +40,3 @@ The string value contains text that looks like embedded HTML tags. If this conte
 
 # Build errors
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
-The link 'StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda' for "mapping to CDA" cannot be resolved (valid targets: [publish-box, segment-post-footer, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, mappings-for-workflow-pattern-http-hl7-orgfhirworkflow, segment-footer, logo, segment-content, w5, cda, mappings-for-cda-r2-http-hl7-orgv3cda, segment-header, workflow, bottom, hl7-logo, resource-profile-chemedmedicationrequest-mappings, family-nav, ig-status, script10.6, mappings-for-hl7-v2-mapping-http-hl7-orgv2, hl7-nav, segment-navbar, v2, segment-breadcrumb, mappings-for-mapping-to-ncpdp-script-10-6-http-ncpdp-orgscript10_6, mappings-for-rim-mapping-http-hl7-orgv3])
-The link 'http://hl7.org/fhir/R4/snomed.html' for "http://snomed.info/sct" cannot be resolved
