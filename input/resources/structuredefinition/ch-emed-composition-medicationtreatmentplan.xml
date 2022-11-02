@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the composition for the medication treatment plan document"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -25,31 +20,6 @@
       <element id="Composition.language">
          <path value="Composition.language"/>
          <short value="Language of the document"/>
-      </element>
-      <element id="Composition.extension">
-         <path value="Composition.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.extension:versionNumber">
-         <path value="Composition.extension"/>
-         <sliceName value="versionNumber"/>
-         <short value="Version number"/>
-      </element>
-      <element id="Composition.extension:informationRecipient">
-         <path value="Composition.extension"/>
-         <sliceName value="informationRecipient"/>
-         <short value="A recipient of this document (person or organization)"/>
-      </element>
-      <element id="Composition.extension:dataEnterer">
-         <path value="Composition.extension"/>
-         <sliceName value="dataEnterer"/>
-         <short value="Person who entered information into this document if it is a person other than the author"/>
       </element>
       <element id="Composition.identifier">
          <path value="Composition.identifier"/>
@@ -97,10 +67,6 @@
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
-      </element>
-      <element id="Composition.author.extension:time">
-         <path value="Composition.author.extension"/>
-         <short value="Timestamp of the authorship/data input"/>
       </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
@@ -188,21 +154,6 @@
          <min value="1"/>
          <max value="1"/>
       </element>
-      <!-- Extension for Section-ID -->
-      <element id="Composition.section:treatmentPlan.extension">
-         <path value="Composition.section.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.section:treatmentPlan.extension:sectionId">
-         <path value="Composition.section.extension"/>
-         <sliceName value="sectionId"/>
-      </element>
       <element id="Composition.section:treatmentPlan.title">
          <path value="Composition.section.title"/>
          <constraint>
@@ -237,34 +188,6 @@
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
       </element>
-
-      <element id="Composition.section:treatmentPlan.author.extension">
-         <path value="Composition.section.author.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.section:treatmentPlan.author.extension:time">
-         <path value="Composition.section.author.extension"/>
-         <sliceName value="time"/>
-         <short value="Timestamp of the authorship/data input"/>
-         <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
-         </type>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".author.time"/>
-         </mapping>
-      </element>
-
       <element id="Composition.section:treatmentPlan.author.reference">
          <path value="Composition.section.author.reference"/>
          <min value="1"/>

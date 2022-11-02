@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the composition for the medication list document"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Composition"/>
@@ -25,31 +20,6 @@
       <element id="Composition.language">
          <path value="Composition.language"/>
          <short value="Language of the document"/>
-      </element>
-      <element id="Composition.extension">
-         <path value="Composition.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.extension:versionNumber">
-         <path value="Composition.extension"/>
-         <sliceName value="versionNumber"/>
-         <short value="Version number"/>
-      </element>
-      <element id="Composition.extension:informationRecipient">
-         <path value="Composition.extension"/>
-         <sliceName value="informationRecipient"/>
-         <short value="A recipient of this document (person or organization)"/>
-      </element>
-      <element id="Composition.extension:dataEnterer">
-         <path value="Composition.extension"/>
-         <sliceName value="dataEnterer"/>
-         <short value="Person who entered information into this document if it is a person other than the author"/>
       </element>
       <element id="Composition.identifier">
          <path value="Composition.identifier"/>
@@ -94,10 +64,6 @@
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
          </type>
-      </element>
-      <element id="Composition.author.extension:time">
-         <path value="Composition.author.extension"/>
-         <short value="Timestamp of the authorship/data input"/>
       </element>
       <element id="Composition.author.reference">
          <path value="Composition.author.reference"/>
@@ -185,21 +151,6 @@
          <short value="Medication list"/>
          <min value="1"/>
          <max value="1"/>
-      </element>
-      <!-- Extension for Section-ID -->
-      <element id="Composition.section:list.extension">
-         <path value="Composition.section.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Composition.section:list.extension:sectionId">
-         <path value="Composition.section.extension"/>
-         <sliceName value="sectionId"/>         
       </element>
       <element id="Composition.section:list.title">
          <path value="Composition.section.title"/>

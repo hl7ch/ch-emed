@@ -2,7 +2,6 @@ The **Pharmaceutical Advice document** is a document in which health professiona
 
 * [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eMedicationComment
 * [IHE Pharmacy Technical Framework Supplement: Community Pharmaceutical Advice (PADV)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV.pdf)
-* [CDA-CH-EMED Pharmaceutical Advice Plan document](https://art-decor.org/art-decor/decor-templates--cdachemed-?section=templates&id=2.16.756.5.30.1.1.10.1.6)  
 
 This implementation guide describes the following two use cases: 
   - [Modifying an existing medication](#modifying-an-existing-medication)

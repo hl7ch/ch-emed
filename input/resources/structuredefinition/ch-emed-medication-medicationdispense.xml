@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the medication for the medication dispense"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Medication"/>
@@ -21,10 +16,6 @@
       <element id="Medication">
          <path value="Medication"/>
          <short value="CH EMED Medication (MedicationDispense)"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".consumable.manufacturedProduct.manufacturedMaterial"/>
-         </mapping>
       </element>
 
 
@@ -32,10 +23,6 @@
          <path value="Medication.amount"/>
          <short value="Package size"/>
          <min value="1"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:asContent.pharm:containerPackagedMedicine.pharm:capacityQuantity"/>
-         </mapping>
       </element>
       <element id="Medication.batch">
          <path value="Medication.batch"/>
@@ -44,10 +31,6 @@
       <element id="Medication.batch.lotNumber">
          <path value="Medication.batch.lotNumber"/>
          <short value="Identifier assigned to batch"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".pharm:formCode.lotNumberText"/>
-         </mapping>
       </element>
    </differential>
 </StructureDefinition>

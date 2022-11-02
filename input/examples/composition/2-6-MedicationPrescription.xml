@@ -32,9 +32,6 @@
   </subject>
   <date value="2012-02-04T14:00:00+01:00"/>
   <author>
-    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-      <valueDateTime value="2012-02-04T14:00:00+01:00"/>
-    </extension>
     <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
   </author>
   <title value="Rezept"/>

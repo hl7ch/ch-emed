@@ -7,11 +7,6 @@
    <status value="active"/>
    <experimental value="false"/>
    <description value="Definition of the structured dosage"/>
-   <mapping>
-      <identity value="cda"/>
-      <uri value="http://hl7.org/v3/cda"/>
-      <name value="CDA (R2)"/>
-   </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -35,10 +30,6 @@
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
          <short value="The order of the dosage instructions"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.sequenceNumber"/>
-         </mapping>
       </element>
       <element id="Dosage.text">
          <path value="Dosage.text"/>
@@ -49,18 +40,10 @@
          <path value="Dosage.patientInstruction"/>
          <short value="Patient medication instructions (e.g. 'take with food')"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.text"/>
-         </mapping>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".effectiveTime"/>
-         </mapping>
       </element>
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
@@ -70,24 +53,12 @@
          <path value="Dosage.timing.repeat.boundsPeriod"/>
          <short value="Start and/or end of treatment"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".low/.high"/>
-         </mapping>
       </element>
       <element id="Dosage.timing.repeat.boundsPeriod.start">
          <path value="Dosage.timing.repeat.boundsPeriod.start"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".low"/>
-         </mapping>
       </element>
       <element id="Dosage.timing.repeat.boundsPeriod.end">
          <path value="Dosage.timing.repeat.boundsPeriod.end"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".high"/>
-         </mapping>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
@@ -99,18 +70,10 @@
             <expression value="$this='MORN' or $this='NOON' or $this='EVE' or $this='NIGHT'"/>
          </constraint>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".event"/>
-         </mapping>
       </element>
       <element id="Dosage.asNeededBoolean">
          <path value="Dosage.asNeededBoolean"/>
          <short value="In reserve (to be taken by the patient only if the need arises - e.g. pains)"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".entryRelationship.act.code"/>
-         </mapping>
       </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
@@ -124,10 +87,6 @@
          <path value="Dosage.route.coding"/>
          <min value="1"/>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".routeCode"/>
-         </mapping>
       </element>
       <element id="Dosage.route.coding.system">
          <path value="Dosage.route.coding.system"/>
@@ -157,10 +116,6 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
          </type>
          <mustSupport value="true"/>
-         <mapping>
-            <identity value="cda"/>
-            <map value=".doseQuantity"/>
-         </mapping>
       </element>
    </differential>
 </StructureDefinition>

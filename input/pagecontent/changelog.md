@@ -34,6 +34,15 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
    * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
    * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
+* [#150](https://github.com/hl7ch/ch-emed/issues/150): Due to the decision that the CDA format will no longer be supported, CDA specific elements have been removed/adapted:
+   * Remove extensions from differential (since they are defined in the underlying CH Core EPR profiles, they can theoretically still be used): 
+      * time-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time) in author elements (profiles/examples)
+      * sectionId-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid) in Composition.section (profiles/examples) ([#155](https://github.com/hl7ch/ch-emed/issues/155))
+      * dataEnterer-extension in Composition (profiles)
+      * versionNumber-extension in Composition (profiles)
+      * informationRecipient in Composition (profiles) (note: is still a required element from CH Core EPR)
+   * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
+   * Remove the links to the CDA-CH-EMED documents (in the document tabs)
 * [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
 
 #### Fixed
@@ -83,7 +92,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
    * [CH EMED Dosage Structured Profile](StructureDefinition-ch-emed-dosage-structured.html) 
 * [#76](https://github.com/hl7ch/ch-emed/issues/76): Elaboration of the repeated dispense.
    * [Additional tab with detailed description](repeated-dispense.html) 
-   * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
+   * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
 
 #### Changed / Updated
 * [#64](https://github.com/hl7ch/ch-emed/issues/64): Dosage.timing.repeat.bounds[x] restricted to Period (start/end) instead of Duration, Range, Period to be equivalent to CDA.
