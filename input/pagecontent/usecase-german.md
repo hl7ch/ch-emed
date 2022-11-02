@@ -51,7 +51,7 @@ Er vermutet eine bekannte unerwünschte Arzneimittelnebenwirkung (UAW) für Rami
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
 | Triatec | Ramipril | | Tbl | 2.5 mg / Tbl | Morgens 1/2 Tablette nehmen | 0.5 | 0 | 0 | 0 | oral | | Bluthochdruck | Abgesetzt aufgrund UAW trockener Husten |
 
-*Kommentar zur Medikation*: [2-2 Pharmaceutical Advice document](Bundle-2-2-PharmaceuticalAdvice.html)
+*Pharmazeutischer Ratschlag*: [2-2 Pharmaceutical Advice document (CANCEL)](Bundle-2-2-PharmaceuticalAdvice.html)
 
 Da sich gleichzeitig die Blutdruckwerte verschlechtert haben, verordnet der Arzt eine Kombinationstherapie mit Amlodipin 10mg 2x täglich und Metoprolol 50mg in der Dosierung 1-0-0.5-0. Er gibt der Patientin Beloc Zok (Metoprolol) mit und verschreibt ihr Norvasc mit einem elektronischen Rezept.
 
