@@ -43,6 +43,7 @@ All significant changes to this FHIR implementation guide will be documented on 
       * informationRecipient in Composition (profiles) (note: is still a required element from CH Core EPR)
    * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
    * Remove the links to the CDA-CH-EMED documents (in the document tabs)
+* [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
@@ -51,6 +52,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
+* [#134](https://github.com/hl7ch/ch-emed/issues/134): Issue was withdrawn
 
 
 

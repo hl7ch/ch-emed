@@ -50,7 +50,7 @@ Il suspecte un effet indésirable (EI) connu du ramipril et arrête le Triatec.
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
 | Triatec | Ramipril | | Cpr. | 2.5 mg / Cpr. | 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | Hypertension | Arrêté en raison effet secondaire toux sèche |
 
-*Commentaire relatif à la médication*: [2-2 Pharmaceutical Advice document](Bundle-2-2-PharmaceuticalAdvice.html)
+*Conseil pharmaceutique*: [2-2 Pharmaceutical Advice document (CANCEL)](Bundle-2-2-PharmaceuticalAdvice.html)
 
 Étant donné que la tension artérielle de la patiente s’est également aggravée, le médecin prescrit un traitement combiné à base d’amlodipine, 2 x 10 mg par jour, et de métoprolol 50 mg, à raison de 1 comprimé le matin et d’un 1⁄2 comprimé le soir. Il remet du Beloc Zok (métoprolol) à la patiente et établit une ordonnance électronique pour du Norvasc.
 
