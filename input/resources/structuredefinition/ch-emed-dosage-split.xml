@@ -1,0 +1,127 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-dosage-split"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split"/>
+   <version value="2.0.0"/>
+   <name value="CHEMEDDosageSplit"/>
+   <title value="CH EMED Dosage Split"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <description value="Definition of the split dosage"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <type value="Dosage"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Dosage">
+         <path value="Dosage"/>
+         <short value="CH EMED Dosage Split"/>
+      </element>
+      <element id="Dosage.sequence">
+         <path value="Dosage.sequence"/>
+         <short value="The order of the dosage instructions"/>
+         <min value="1"/>
+         <constraint>
+            <key value="ch-dosage-2"/>
+            <severity value="error"/>
+            <human value="The sequence number must be greater than 1"/>
+            <expression value="$this > 1"/>
+         </constraint>
+      </element>
+      <element id="Dosage.text">
+         <path value="Dosage.text"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.additionalInstruction">
+         <path value="Dosage.additionalInstruction"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.patientInstruction">
+         <path value="Dosage.patientInstruction"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="Dosage.timing">
+         <path value="Dosage.timing"/>
+         <short value="When medication should be administered"/>
+      </element>
+      <element id="Dosage.timing.repeat">
+         <path value="Dosage.timing.repeat"/>
+         <short value="When the event is to occur"/>
+      </element>
+      <element id="Dosage.timing.repeat.boundsPeriod">
+         <path value="Dosage.timing.repeat.boundsPeriod"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.timing.repeat.when">
+         <path value="Dosage.timing.repeat.when"/>
+         <short value="Code for time period of occurrence"/>
+         <constraint>
+            <key value="ch-emed-event-timing"/>
+            <severity value="warning"/>
+            <human value="For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended."/>
+            <expression value="$this='MORN' or $this='NOON' or $this='EVE' or $this='NIGHT'"/>
+         </constraint>
+         <mustSupport value="true"/>
+      </element>
+
+      <element id="Dosage.asNeededBoolean">
+         <path value="Dosage.asNeededBoolean"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.site">
+         <path value="Dosage.site"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.route">
+         <path value="Dosage.route"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.method">
+         <path value="Dosage.method"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      
+      <element id="Dosage.doseAndRate">
+         <path value="Dosage.doseAndRate"/>
+         <short value="Amount of medication administered"/>
+         <max value="1"/>
+      </element>
+      <element id="Dosage.doseAndRate.dose[x]">
+         <path value="Dosage.doseAndRate.dose[x]"/>
+         <type>
+            <code value="Range"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
+         </type>
+         <type>
+            <code value="Quantity"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-quantity"/>
+         </type>
+         <mustSupport value="true"/>
+      </element>
+
+      <element id="Dosage.maxDosePerPeriod">
+         <path value="Dosage.maxDosePerPeriod"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.maxDosePerAdministration">
+         <path value="Dosage.maxDosePerAdministration"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Dosage.maxDosePerLifetime">
+         <path value="Dosage.maxDosePerLifetime"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+   </differential>
+</StructureDefinition>

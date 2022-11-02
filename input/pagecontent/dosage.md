@@ -40,7 +40,7 @@ Instructions to the patient regarding the administration of the medication, e.g.
 
 
 ### Normal Dosing
-The normal dosing is represented using **one dosage element**.  The dosage can be given either in a [structured form](#normal-dosing---structured) or as a [narrative text](#normal-dosing---narrative). 
+The normal dosing is represented using **one dosage element**.  The dosage can be in a [structured form](#normal-dosing---structured) and/or [narrative text](#normal-dosing---narrative). 
 
 #### Normal Dosing - Structured
 Dosing example based on the use case step 2-5:
@@ -56,32 +56,32 @@ Dosing example based on the use case step 2-5:
     {
       "patientInstruction" : "Take with food",
       "timing" : {
-          "repeat" : {
+        "repeat" : {
           "boundsPeriod" : {
               "start" : "2012-02-04"
           },
           "when" : [
-              "MORN",
-              "EVE"
+            "MORN",
+            "EVE"
           ]
         }
       },
       "route" : {
-          "coding" : [
+        "coding" : [
           {
-              "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
-              "code" : "20053000",
-              "display" : "Oral use"
+            "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
+            "code" : "20053000",
+            "display" : "Oral use"
           }
         ]
       },
       "doseAndRate" : [
-          {
+        {
           "doseQuantity" : {
-              "value" : 1,
-              "unit" : "Tablet (unit of presentation)",
-              "system" : "http://snomed.info/sct",
-              "code" : "732936001"
+            "value" : 1,
+            "unit" : "Tablet (unit of presentation)",
+            "system" : "http://snomed.info/sct",
+            "code" : "732936001"
           }
         }
       ]
@@ -92,7 +92,7 @@ Dosing example based on the use case step 2-5:
 See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.json.html)
 
 #### Normal Dosing - Narrative
-The narrative dosage instructions (`Dosage.text`) can only appear in the normal dosing.
+The narrative dosage instructions is represented in the `Dosage.text`element.
 
 Dosing example where no structured form is provided:
 
@@ -141,7 +141,7 @@ Dosing example where no structured form is provided:
 ```
 
 ### Split Dosing
-The split dosing differs from the normal dosing in that the dosage element can be repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`.   
+The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`. The information, which is the same for all dosage elements, e.g. route of administration, is mapped in the first dosage element.  
 
 Dosing example based on the use case step 2-3:
 
@@ -156,64 +156,51 @@ Dosing example based on the use case step 2-3:
       "sequence" : 1,
       "patientInstruction" : "Take with food",
       "timing" : {
-          "repeat" : {
+        "repeat" : {
           "boundsPeriod" : {
-              "start" : "2012-02-04"
+            "start" : "2012-02-04"
           },
           "when" : [
-              "MORN"
+            "MORN"
           ]
         }
       },
       "route" : {
-          "coding" : [
+        "coding" : [
           {
-              "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
-              "code" : "20053000",
-              "display" : "Oral use"
+            "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
+            "code" : "20053000",
+            "display" : "Oral use"
           }
         ]
       },
       "doseAndRate" : [
         {
           "doseQuantity" : {
-              "value" : 1,
-              "unit" : "Tablet (unit of presentation)",
-              "system" : "http://snomed.info/sct",
-              "code" : "732936001"
+            "value" : 1,
+            "unit" : "Tablet (unit of presentation)",
+            "system" : "http://snomed.info/sct",
+            "code" : "732936001"
           }
         }
       ]
     },
     {
       "sequence" : 2,
-      "patientInstruction" : "Take with food",
       "timing" : {
-          "repeat" : {
-          "boundsPeriod" : {
-              "start" : "2012-02-04"
-          },
+        "repeat" : {
           "when" : [
-              "EVE"
+            "EVE"
           ]
         }
       },
-      "route" : {
-          "coding" : [
-          {
-              "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
-              "code" : "20053000",
-              "display" : "Oral use"
-          }
-        ]
-      },
       "doseAndRate" : [
-          {
+        {
           "doseQuantity" : {
-              "value" : 0.5,
-              "unit" : "Tablet (unit of presentation)",
-              "system" : "http://snomed.info/sct",
-              "code" : "732936001"
+            "value" : 0.5,
+            "unit" : "Tablet (unit of presentation)",
+            "system" : "http://snomed.info/sct",
+            "code" : "732936001"
           }
         }
       ]
@@ -222,7 +209,3 @@ Dosing example based on the use case step 2-3:
 ```
 
 See the full example: [2-3 Medication Treatment Plan document](Bundle-2-3-MedicationTreatmentPlan.json.html)
-
-### Dosage Types and Profiles
-
-<div>{% include dosage.svg %}</div>
