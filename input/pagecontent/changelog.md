@@ -66,8 +66,8 @@ issue90-dosage
    * [#111](https://github.com/hl7ch/ch-emed/issues/111): UnitCode -> add UCUM code 'mo' (month)
 
 #### Fixed
-* [#97](https://github.com/hl7ch/ch-emed/issues/97): Typo
-* [#92](https://github.com/hl7ch/ch-emed/issues/92): Typo
+* [#97](https://github.com/hl7ch/ch-emed/issues/97), [#92](https://github.com/hl7ch/ch-emed/issues/92): Typos
+* [#164](https://github.com/hl7ch/ch-emed/issues/164): Fix id of the element 'medicationReference' in the differential (profile)
 
 
 
