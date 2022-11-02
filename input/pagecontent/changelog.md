@@ -42,6 +42,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
+* [#134](https://github.com/hl7ch/ch-emed/issues/134): Issue was withdrawn
 
 
 
