@@ -90,16 +90,16 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
  
 #### Added
 * [#73](https://github.com/hl7ch/ch-emed/issues/73): Add warning if non-recommended timing-event codes are used in the structured dosage.
-   * [CH EMED Dosage Structured Profile](StructureDefinition-ch-emed-dosage-structured.html) 
+   * [CH EMED Dosage Structured Profile](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured.html) 
 * [#76](https://github.com/hl7ch/ch-emed/issues/76): Elaboration of the repeated dispense.
    * [Additional tab with detailed description](repeated-dispense.html) 
    * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
 
 #### Changed / Updated
 * [#64](https://github.com/hl7ch/ch-emed/issues/64): Dosage.timing.repeat.bounds[x] restricted to Period (start/end) instead of Duration, Range, Period to be equivalent to CDA.
-   * [CH EMED Dosage Structured Profile](StructureDefinition-ch-emed-dosage-structured.html)
-   * [CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
-   * [CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)
+   * [CH EMED Dosage Structured Profile](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured.html)
+   * [CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
+   * [CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)
 * [#75](https://github.com/hl7ch/ch-emed/issues/75): Set mustSupport = true for patient (Composition.subject) and author (Composition.author) of the Medication Card document, because they belong to the minimal data set of IPAG.
    * [CH EMED Medication Card Composition Profile](StructureDefinition-ch-emed-composition-medicationcard.html)
 * [#74](https://github.com/hl7ch/ch-emed/issues/74): Change the description of the identifiers of MedicationStatement, MedicationRequest, MedicationDispense and Observation (clear naming without relation to the naming of the equivalent CDA element).

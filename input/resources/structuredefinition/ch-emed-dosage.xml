@@ -3,10 +3,10 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
    <version value="2.0.0"/>
    <name value="CHEMEDDosage"/>
-   <title value="CH EMED Dosage"/>
+   <title value="CH EMED Dosage (MedicationStatement / MedicationDispense)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Definition of the dosage"/>
+   <description value="Definition of the dosage (used in MedicationStatement / MedicationDispense)"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -15,7 +15,7 @@
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage"/>
+         <short value="CH EMED Dosage (MedicationStatement / MedicationDispense)"/>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>

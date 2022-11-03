@@ -115,7 +115,7 @@
          <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-medicationrequest"/>
          </type>
       </element>
       <element id="MedicationRequest.dosageInstruction:additionalEntry">
@@ -126,7 +126,7 @@
          <max value="*"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split-medicationrequest"/>
          </type>
       </element>
 

@@ -547,42 +547,22 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-nonstructured"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-normal"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-split"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-normal-medicationrequest"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/ch-emed-dosage"/>
          </reference>
       </resource>
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-dosage-split"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-medicationrequest"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-dosage-split-medicationrequest"/>
          </reference>
       </resource>
       <resource>

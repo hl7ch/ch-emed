@@ -1,21 +1,21 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-dosage-structured-split-medicationrequest"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
-   <version value="0.1.0"/>
-   <name value="CHEMEDDosageStructuredSplitMedicationRequest"/>
-   <title value="CH EMED Dosage Structured Split Dosing (MedicationRequest)"/>
+   <id value="ch-emed-dosage-split-medicationrequest"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split-medicationrequest"/>
+   <version value="2.0.0"/>
+   <name value="CHEMEDDosageSplitMedicationRequest"/>
+   <title value="CH EMED Dosage Split (MedicationRequest)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Split dosing (IHE PHARM 1.3.6.1.4.1.19376.1.5.3.1.4.9)"/>
+   <description value="Definition of the split dosage (used in MedicationRequest)"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage Structured Split Dosing (MedicationRequest)"/>
+         <short value="CH EMED Dosage Split (MedicationRequest)"/>
       </element>
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
