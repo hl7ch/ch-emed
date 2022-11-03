@@ -75,9 +75,6 @@
          <path value="MedicationStatement.note"/>
          <short value="Annotation comment"/>
       </element>
-      <element id="MedicationStatement.note.text">
-         <path value="MedicationStatement.note.text"/>
-      </element>
 
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>

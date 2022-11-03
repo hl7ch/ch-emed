@@ -23,9 +23,6 @@
             <expression value="code.text.exists() or ingredient.itemCodeableConcept.text.exists()"/>
          </constraint>
       </element>
-      <element id="Medication.code">
-         <path value="Medication.code"/>
-      </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
          <short value="Code of the medication (GTIN)"/>
@@ -96,12 +93,6 @@
             <code value="Ratio"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ratio"/>
          </type>
-      </element>
-      <element id="Medication.ingredient">
-         <path value="Medication.ingredient"/>
-      </element>
-      <element id="Medication.ingredient.itemCodeableConcept">
-         <path value="Medication.ingredient.itemCodeableConcept"/>
       </element>
       <element id="Medication.ingredient.itemCodeableConcept.coding">
          <path value="Medication.ingredient.itemCodeableConcept.coding"/>

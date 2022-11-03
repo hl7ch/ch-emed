@@ -46,6 +46,5 @@
          <path value="Observation.performer.reference"/>
          <min value="1"/>
       </element>
-
    </differential>
 </StructureDefinition>

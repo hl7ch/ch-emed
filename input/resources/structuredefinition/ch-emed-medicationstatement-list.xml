@@ -45,6 +45,5 @@
          <path value="MedicationStatement.informationSource.reference"/>
          <min value="1"/>
       </element>
- 
    </differential>
 </StructureDefinition>

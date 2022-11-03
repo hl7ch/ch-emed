@@ -21,9 +21,6 @@
          <path value="Composition.language"/>
          <short value="Language of the document"/>
       </element>
-      <element id="Composition.identifier">
-         <path value="Composition.identifier"/>
-      </element>
       <element id="Composition.identifier.system">
          <path value="Composition.identifier.system"/>
          <min value="1"/>
@@ -51,9 +48,6 @@
          <short value="A patient for whom this document instance was created"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.subject.reference">
-         <path value="Composition.subject.reference"/>
-      </element>
       <element id="Composition.date">
          <path value="Composition.date"/>
          <short value="The document's creation date and time"/>
@@ -71,9 +65,6 @@
          </type>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.author.reference">
-         <path value="Composition.author.reference"/>
-      </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
          <constraint>
@@ -83,9 +74,6 @@
                         or titles in other languages are also allowed"/>
             <expression value="($this='Medikationsplan' and %resource.language.startsWith('de')) or ($this='Plan de médication' and %resource.language.startsWith('fr')) or ($this='Piano farmacologico' and %resource.language.startsWith('it')) or ($this='Medication Card' and %resource.language.startsWith('en'))"/>
          </constraint>
-      </element>
-      <element id="Composition.confidentiality">
-         <path value="Composition.confidentiality"/>
       </element>
       <element id="Composition.confidentiality.extension">
          <path value="Composition.confidentiality.extension"/>
@@ -118,9 +106,6 @@
          <sliceName value="legalAuthenticator"/>
          <short value="The legal authenticator of the document (person)"/>
       </element>
-      <element id="Composition.attester.mode:legalAuthenticator">
-         <path value="Composition.attester.mode"/>
-      </element>
       <element id="Composition.attester.time:legalAuthenticator">
          <path value="Composition.attester.time"/>
          <short value="Timestamp of the signature"/>
@@ -133,9 +118,6 @@
          <path value="Composition.custodian"/>
          <short value="The organization in whose name the document has been created"/>
          <min value="1"/>
-      </element>
-      <element id="Composition.custodian.reference">
-         <path value="Composition.custodian.reference"/>
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
