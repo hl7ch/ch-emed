@@ -404,6 +404,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationStatement/AsNeededWithMaxDose"/>
+         </reference>
+         <name value="Medication Statement with a medication in reserve and a maximum dosage"/>
+         <description value="Example for MedicationStatment - Take Nitrostat 1 tablet as needed for chest pain, maximum 3 tablets in 15 minutes"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="Observation/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Observation for Pharmaceutical Advice document"/>
