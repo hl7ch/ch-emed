@@ -78,6 +78,7 @@
     <text value="Chest pain"/>
   </reasonCode>
   <dosage>
+    <text value="Maximum 3 tablets in 15 minutes"/>
     <patientInstruction value="Administer one tablet under the tongue at the first sign of an acute anginal attack. 
                                 One additional tablet may be administered every 5 minutes until relief is obtained. 
                                 No more than three tablets are recommended within a 15-minute period."/>
@@ -104,19 +105,5 @@
         <code value="732936001"/>
       </doseQuantity>
     </doseAndRate>
-    <maxDosePerPeriod>
-      <numerator>
-        <value value="3"/>
-        <unit value="Tablet (unit of presentation)"/>
-        <system value="http://snomed.info/sct"/>
-        <code value="732936001"/>
-      </numerator>
-      <denominator>
-        <value value="15"/>
-        <unit value="Minute"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="min"/>
-      </denominator>
-    </maxDosePerPeriod>
   </dosage>
 </MedicationStatement>
