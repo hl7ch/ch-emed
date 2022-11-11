@@ -92,7 +92,7 @@ Dosing example based on the use case step 2-5:
 See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.json.html)
 
 #### Normal Dosing - Narrative
-The narrative dosage instructions is represented in the `Dosage.text`element.
+The narrative dosage instructions is represented in the `Dosage.text` element.
 
 Dosing example where no structured form is provided:
 
