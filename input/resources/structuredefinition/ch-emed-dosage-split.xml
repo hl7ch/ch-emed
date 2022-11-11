@@ -69,8 +69,8 @@
          <mustSupport value="true"/>
       </element>
 
-      <element id="Dosage.asNeededBoolean">
-         <path value="Dosage.asNeededBoolean"/>
+      <element id="Dosage.asNeeded[x]">
+         <path value="Dosage.asNeeded[x]"/>
          <min value="0"/>
          <max value="0"/>
       </element>
