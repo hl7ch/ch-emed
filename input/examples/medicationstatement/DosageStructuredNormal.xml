@@ -66,7 +66,7 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:44bb63eb-168c-4659-bc18-a18a979120cb"/>
     </identifier>
-    <status value="completed"/>
+    <status value="active"/>
     <medicationReference>
         <reference value="#med"/>
     </medicationReference>

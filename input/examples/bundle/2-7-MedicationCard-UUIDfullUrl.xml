@@ -299,7 +299,7 @@
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:d0f885ca-afa6-4e7e-905d-f7698f9607aa"/>
         </identifier>
-        <status value="completed"/>
+        <status value="active"/>
         <medicationReference>
           <reference value="#med"/>
         </medicationReference>
@@ -446,7 +446,7 @@
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"/>
         </identifier>
-        <status value="completed"/>
+        <status value="active"/>
         <medicationReference>
           <reference value="#med"/>
         </medicationReference>
