@@ -10,15 +10,15 @@ All significant changes to this FHIR implementation guide will be documented on 
       * [#133](https://github.com/hl7ch/ch-emed/issues/133): Use case for prescription authors clarified by the separate list profiles and guidance (without additional adaptation needed)
    * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under [Guidance - Different Authors](different-authors.html) and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
       * [MTP](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)/[PRE](StructureDefinition-ch-emed-composition-medicationprescription.html)/[DIS](StructureDefinition-ch-emed-composition-medicationdispense.html)/[PADV](StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html):
-         * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device)
+         * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (~~CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device~~)
          * Composition.section.author: dito
       * [CARD](StructureDefinition-ch-emed-composition-medicationcard.html):
-         * Composition.author: Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson) (remove CH EMED Practitioner &#124; CH Core Organization EPR)
+         * Composition.author: Reference(CH EMED PractitionerRole &#124; Device &#124; CH Core Patient EPR &#124; RelatedPerson) (~~CH EMED Practitioner &#124; CH Core Organization EPR~~)
          * Composition.section.author: remove this element from differential
          * Entries - Author document: use CH Core Extension (remove ch-emed-ext-documentauthor) ([#146](https://github.com/hl7ch/ch-emed/issues/146), [#114](https://github.com/hl7ch/ch-emed/issues/114))
          * Entries - Author medical decision: only allow PractitionerRole (remove ch-emed-ext-representedorganization) ([#114](https://github.com/hl7ch/ch-emed/issues/114))
       * [LIST](StructureDefinition-ch-emed-composition-medicationlist.html):
-         * Composition.author: Reference(Device) (remove CH EMED Practitioner &#124; CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson &#124; CH Core Organization EPR) 
+         * Composition.author: Reference(Device) (~~CH EMED Practitioner &#124; CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson &#124; CH Core Organization EPR~~) 
          * Composition.section.author: remove this element from differential
          * Entries: add seperate list profiles as mentioned above
    * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, [PractitionerRole](StructureDefinition-ch-emed-practitionerrole.html), [Practitioner](StructureDefinition-ch-emed-practitioner.html), [Organization](StructureDefinition-ch-emed-organization.html))   
