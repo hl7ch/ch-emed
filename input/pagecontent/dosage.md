@@ -199,7 +199,8 @@ Dosing example with the structured form and supplemented by the narrative text:
 ```
 
 ### Split Dosing
-The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`. The information, which is the same for all dosage elements, e.g. route of administration, is mapped in the first dosage element.  
+The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`.   
+The information, which is the same for all dosage elements (`text`, `patientInstruction`, `asNeeded`, `route`) is mapped in the first dosage element.  
 
 Dosing example based on the use case step 2-3:
 
