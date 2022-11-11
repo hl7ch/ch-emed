@@ -209,3 +209,12 @@ Dosing example based on the use case step 2-3:
 ```
 
 See the full example: [2-3 Medication Treatment Plan document](Bundle-2-3-MedicationTreatmentPlan.json.html)
+
+### Profiles
+Definition of the dosage (base dosage entry 1..1):
+* [CH EMED Dosage (MedicationStatement / MedicationDispense)](StructureDefinition-ch-emed-dosage.html)
+* [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)
+
+Definition of the split dosage (additional dosage entry 0..*):
+* [CH EMED Dosage Split (MedicationStatement / MedicationDispense)](StructureDefinition-ch-emed-dosage-split.html)
+* [CH EMED Dosage Split (MedicationRequest)](StructureDefinition-ch-emed-dosage-split-medicationrequest.html)
