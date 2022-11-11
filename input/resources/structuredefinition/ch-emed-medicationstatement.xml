@@ -60,8 +60,12 @@
       </element>
       <element id="MedicationStatement.identifier.value">
          <path value="MedicationStatement.identifier.value"/>
-         <min value="1"/>
          <short value="Identifier value as UUID"/>
+         <min value="1"/>
+         <example>
+            <label value="CH EMED"/>
+            <valueString value="urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"/>
+         </example>
       </element>
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
