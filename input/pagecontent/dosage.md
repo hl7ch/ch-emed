@@ -1,6 +1,6 @@
 ### Overview
 
-This implementation guide currently describes the **normal dosing** and the **split dosing**. The normal dosing can be given in a structured form or as narrative text. If possible, the structured form should be provided. In case structured dosage instructions are not provided or for complex dosages, the dosage can be represented using narrative text.
+This implementation guide currently describes the **normal dosing** and the **split dosing**. The normal dosing can be given in a structured form and/or as narrative text. If possible, the structured form should be provided. In case structured dosage instructions are not provided or for complex dosages, the dosage can be represented using narrative text.
 
 In the structured form, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. For [normal dosing](#normal-dosing), the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For [split dosing](#split-dosing), the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).   
 
@@ -40,7 +40,7 @@ Instructions to the patient regarding the administration of the medication, e.g.
 
 
 ### Normal Dosing
-The normal dosing is represented using **one dosage element**.  The dosage can be in a [structured form](#normal-dosing---structured) and/or [narrative text](#normal-dosing---narrative). 
+The normal dosing is represented using **one dosage element**. The dosage can be in a [structured form](#normal-dosing---structured), [narrative text](#normal-dosing---narrative), or a [combination of both](#normal-dosing---structured--narrative). 
 
 #### Normal Dosing - Structured
 Dosing example based on the use case step 2-5:
@@ -94,7 +94,7 @@ See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-Medica
 #### Normal Dosing - Narrative
 The narrative dosage instructions is represented in the `Dosage.text` element.
 
-Dosing example where no structured form is provided:
+Dosing example where no structured form (of the timing event) is provided:
 
 {:class="table table-bordered"}
 <table>
@@ -124,6 +124,64 @@ Dosing example where no structured form is provided:
             "start" : "2022-09-01",
             "end" : "2022-09-14"
           }
+        }
+      },
+      "asNeededBoolean" : true,
+      "route" : {
+        "coding" : [
+          {
+            "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
+            "code" : "20003000",
+            "display" : "Cutaneous use"
+          }
+        ]
+      }
+    }
+  ]
+```
+
+#### Normal Dosing - Structured & Narrative
+Dosing example with the structured form and supplemented by the narrative text:
+
+{:class="table table-bordered"}
+<table>
+	<tbody>
+		<tr>
+			<th>Dosage morning</th>
+			<th>Dosage noon</th>
+			<th>Dosage evening</th>
+			<th>Dosage night</th>
+			<th>Route of administration</th>
+		</tr>
+		<tr>
+			<td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td rowspan="2">Cutaneous use</td>
+		</tr>
+    <tr>
+			<td colspan="4">Application as long as needed, but for a maximum of 14 days</td>
+		</tr>
+	</tbody>
+</table>
+
+```json
+  "dosage" : [
+    {
+      "text" : "Application as long as needed, but for a maximum of 14 days",
+      "patientInstruction" : "Apply cherry-sized amount of the gel to the elbow and rub in gently. Use as long as the pain is present (max. 14 days).",
+      "timing" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2022-09-01",
+            "end" : "2022-09-14"
+          },
+          "when" : [
+            "MORN",
+            "NOON",
+            "EVE"
+          ]
         }
       },
       "asNeededBoolean" : true,
