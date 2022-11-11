@@ -63,10 +63,6 @@
          <min value="1"/>
          <short value="Identifier value as UUID"/>
       </element>
-      <element id="MedicationStatement.status">
-         <path value="MedicationStatement.status"/>
-         <fixedCode value="completed"/>
-      </element>
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
          <short value="Reference to the contained medication"/>
