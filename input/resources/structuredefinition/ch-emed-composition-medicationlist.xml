@@ -70,13 +70,8 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <constraint>
-            <key value="ch-emed-title-pml"/>
-            <severity value="error"/>
-            <human value="'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
+         <short value="'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Medikationsliste' and %resource.language.startsWith('de')) or ($this='Liste de médication' and %resource.language.startsWith('fr')) or ($this='Elenco delle terapie farmacologiche' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
-         </constraint>
       </element>
       <element id="Composition.confidentiality">
          <path value="Composition.confidentiality"/>
@@ -154,13 +149,8 @@
       </element>
       <element id="Composition.section:list.title">
          <path value="Composition.section.title"/>
-         <constraint>
-               <key value="ch-emed-sect-list"/>
-               <severity value="error"/>
-               <human value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
-                        or titles in other languages are also allowed"/>
-               <expression value="($this='Medikamentenliste' and %resource.language.startsWith('de')) or ($this='Liste de médicaments' and %resource.language.startsWith('fr')) or ($this='Lista farmaci' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
-         </constraint>  
+         <short value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
+                        or titles in other languages are also allowed"/> 
          <min value="1"/>
          <max value="1"/>
       </element>

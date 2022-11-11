@@ -45,6 +45,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
    * Remove the links to the CDA-CH-EMED documents (in the document tabs)
 * [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
+* [#129](https://github.com/hl7ch/ch-emed/issues/129): Remove additional FHIR validation rules on 'Composition.title' and 'Composition.section.title'
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
