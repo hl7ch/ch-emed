@@ -133,14 +133,6 @@
       </resource>
       <resource>
          <reference>
-            <reference value="Bundle/MedicationCard-DifferentAuthors"/>
-         </reference>
-         <name value="Medication Card document with different authors (document/section/entry)"/>
-         <description value="Example for Bundle"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
-      </resource>
-      <resource>
-         <reference>
             <reference value="Bundle/PharmaceuticalAdvice-ChangeDosage"/>
          </reference>
          <name value="Pharmaceutical Advice document to change the dosage"/>
