@@ -58,7 +58,7 @@
          <short value="The &quot;last&quot; author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
          </type>
       </element>
       <element id="MedicationStatement.informationSource.reference">

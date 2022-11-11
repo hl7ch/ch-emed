@@ -38,7 +38,7 @@
          <min value="1"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
          </type>
       </element>
       <element id="MedicationRequest.performer.reference">
