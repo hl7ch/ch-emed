@@ -45,6 +45,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * Remove mapping between CDA and FHIR in profiles ([#157](https://github.com/hl7ch/ch-emed/issues/157)) 
    * Remove the links to the CDA-CH-EMED documents (in the document tabs)
 * [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
+* [#131](https://github.com/hl7ch/ch-emed/issues/131): Optimization of the descriptions of the extensions which represent the references to other documents
 
 #### Fixed
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
