@@ -1,4 +1,4 @@
-The **Medication List document** aims to fully comprise the current medication of a patient. It consists of Medication Treatment Plan, Medication Prescription, Medication Dispense and Pharmaceutical Advice entries.
+The **Medication List document** aims to fully comprise the past and current medication of a patient. It consists of the current and previous Medication Treatment Plan, Medication Prescription, Medication Dispense and Pharmaceutical Advice entries.
 
 * [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eCurrentMedication
 * [IHE Pharmacy Technical Framework Supplement: Community Medication List (PML)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PML.pdf)

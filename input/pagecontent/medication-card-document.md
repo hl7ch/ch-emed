@@ -1,4 +1,4 @@
-The **Medication Card document** describes the current medication of a patient, medications (MORE) that have been, is or will be taken by the patient.
+The **Medication Card document** provides as complete an overview as possible of the current medication (MORE) that a patient is taking or should be taking.
     
 * [IPAG report](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf): eCurrentMedication, different view
 * [IHE Pharmacy Technical Framework Supplement: Community Medication List (PML)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PML.pdf)
