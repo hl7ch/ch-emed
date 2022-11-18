@@ -49,6 +49,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#129](https://github.com/hl7ch/ch-emed/issues/129): Remove additional FHIR validation rules on 'Composition.title' and 'Composition.section.title'
 
 #### Fixed
+* [#128](https://github.com/hl7ch/ch-emed/issues/128): Remove requirement 'fixedValue' for 'MedicationStatement.status' and 'MedicationRequest.status', fixed wrong codes (~~completed~~) in examples
 * [#144](https://github.com/hl7ch/ch-emed/issues/144): Typo
 * [#135](https://github.com/hl7ch/ch-emed/issues/135): Broken link
 * [#160](https://github.com/hl7ch/ch-emed/issues/160): Add missing elements 'experimental=false' and 'description' to CodeSystems

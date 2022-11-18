@@ -55,10 +55,6 @@
             <valueString value="urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"/>
          </example>
       </element>
-      <element id="MedicationStatement.status">
-         <path value="MedicationStatement.status"/>
-         <fixedCode value="completed"/>
-      </element>
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
          <short value="Reference to the contained medication"/>
