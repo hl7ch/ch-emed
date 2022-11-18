@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-  <id value="2-3-MedStatBeloczok"/>
+  <id value="AsNeededWithMaxDose"/>
   <meta>
     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
   </meta>
+  <!-- https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79ba021e-183c-4b4d-822e-4ff5ef54ca61 -->
   <contained>
     <Medication>
       <id value="med"/>
       <code>
         <coding>
           <system value="urn:oid:2.51.1.1"/>
-          <code value="7680521101306"/>
-          <display value="BELOC ZOK Ret Tabl 50 mg 30 Stk"/>
+          <code value="00300710417243"/>
+          <display value="Nitrostat 0.3 mg/tablet"/>
         </coding>
-        <text value="BELOC ZOK Ret Tabl 50 mg"/>
+        <text value="Nitrostat 0.3 mg/tablet"/>
       </code>
       <form>
         <coding>
           <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-          <code value="10219000"/>
-          <display value="Tablet"/>
+          <code value="10318000"/>
+          <display value="Sublingual tablet"/>
         </coding>
       </form>
       <amount>
         <numerator>
-          <value value="30"/>
+          <value value="100"/>
           <unit value="Tablet (unit of presentation)"/>
           <system value="http://snomed.info/sct"/>
           <code value="732936001"/>
@@ -40,14 +41,14 @@
         <itemCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="372826007"/>
-            <display value="Metoprolol (substance)"/>
+            <code value="387404004"/>
+            <display value="Nitroglycerin"/>
           </coding>
-          <text value="Metoprolol"/>
+          <text value="Nitroglycerin"/>
         </itemCodeableConcept>
         <strength>
           <numerator>
-            <value value="50"/>
+            <value value="0.3"/>
             <unit value="milligram"/>
             <system value="http://unitsofmeasure.org"/>
             <code value="mg"/>
@@ -64,7 +65,7 @@
   </contained>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"/>
+    <value value="urn:uuid:e5adf8d0-99fd-4bc6-b089-da7f7075d3be"/>
   </identifier>
   <status value="completed"/>
   <medicationReference>
@@ -74,19 +75,21 @@
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
   <reasonCode>
-    <text value="Bluthochdruck"/>
+    <text value="Chest pain"/>
   </reasonCode>
   <dosage>
-    <sequence value="1"/>
-    <patientInstruction value="-"/>
+    <text value="Maximum 3 tablets in 15 minutes"/>
+    <patientInstruction value="Administer one tablet under the tongue at the first sign of an acute anginal attack. 
+                                One additional tablet may be administered every 5 minutes until relief is obtained. 
+                                No more than three tablets are recommended within a 15-minute period."/>
     <timing>
       <repeat>
         <boundsPeriod>
-          <start value="2012-02-04"/>
+          <start value="2022-11-01"/>
         </boundsPeriod>
-        <when value="MORN"/>
       </repeat>
     </timing>
+    <asNeededBoolean value="true"/>
     <route>
       <coding>
         <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
@@ -97,22 +100,6 @@
     <doseAndRate>
       <doseQuantity>
         <value value="1"/>
-        <unit value="Tablet (unit of presentation)"/>
-        <system value="http://snomed.info/sct"/>
-        <code value="732936001"/>
-      </doseQuantity>
-    </doseAndRate>
-  </dosage>
-  <dosage>
-    <sequence value="2"/>
-    <timing>
-      <repeat>
-        <when value="EVE"/>
-      </repeat>
-    </timing>
-    <doseAndRate>
-      <doseQuantity>
-        <value value="0.5"/>
         <unit value="Tablet (unit of presentation)"/>
         <system value="http://snomed.info/sct"/>
         <code value="732936001"/>

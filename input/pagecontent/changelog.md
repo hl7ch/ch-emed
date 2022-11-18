@@ -23,7 +23,6 @@ All significant changes to this FHIR implementation guide will be documented on 
          * Entries: add seperate list profiles as mentioned above
    * [#132](https://github.com/hl7ch/ch-emed/issues/132), [#125](https://github.com/hl7ch/ch-emed/issues/125): Practitioner and his/her organization (Composition.author) are mapped via PractitionerRole (updated profiles: all Compositions, [PractitionerRole](StructureDefinition-ch-emed-practitionerrole.html), [Practitioner](StructureDefinition-ch-emed-practitioner.html), [Organization](StructureDefinition-ch-emed-organization.html))   
    * [#151](https://github.com/hl7ch/ch-emed/issues/151): Include various inputs on the topic
-* [#72](https://github.com/hl7ch/ch-emed/issues/72): Add mapping for reserve medication as 'Dosage.asNeeded'
 * [#161](https://github.com/hl7ch/ch-emed/issues/161): [Home](index.html): Include the new IG fragments (IP Statements/Cross Version Analysis/Dependency Table/Globals Table) and remove Copyright (new included in IP Statements)
 * [#126](https://github.com/hl7ch/ch-emed/issues/126): Set IG parameter 'allow-extensible-warnings = true' to show the warning when codes are not in extensible bindings
       
@@ -32,9 +31,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the [introduction](index.html#introduction) according to the current status 
 * [#120](https://github.com/hl7ch/ch-emed/issues/120): Change mapping for patient instruction from '*Entry*.note' to 'Dosage.patientInstruction' to be able to map the annotation comment in the Medication Card document to '[MedicationStatemtent.note](StructureDefinition-ch-emed-medicationstatement-card.html)' 
    * [#116](https://github.com/hl7ch/ch-emed/issues/116): Update the description of '[Observation.note](StructureDefinition-ch-emed-observation.html)'.
-* Allow additional elements in [CH EMED Dosage Non-Structured](StructureDefinition-ch-emed-dosage-nonstructured.html):
-   * [#120](https://github.com/hl7ch/ch-emed/issues/120): 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction', this element must be allowed here 
-   * [#117](https://github.com/hl7ch/ch-emed/issues/117): 'asNeededBoolean' -> allow the mapping for reserve medication
+* Simplification/enhancement of dosing
+   * [#120](https://github.com/hl7ch/ch-emed/issues/120): Add element 'patientInstruction' -> because the mapping from element '.note' has changed to 'Dosage.patientInstruction'
+   * [#117](https://github.com/hl7ch/ch-emed/issues/117), [#72](https://github.com/hl7ch/ch-emed/issues/72): Add mapping for reserve medication as 'Dosage.asNeededBoolean'
+   * [#130](https://github.com/hl7ch/ch-emed/issues/130), [#127](https://github.com/hl7ch/ch-emed/issues/127): Allow more different cases of dosages
 * [#150](https://github.com/hl7ch/ch-emed/issues/150): Due to the decision that the CDA format will no longer be supported, CDA specific elements have been removed/adapted:
    * Remove extensions from differential (since they are defined in the underlying CH Core EPR profiles, they can theoretically still be used): 
       * time-extension (http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time) in author elements (profiles/examples)
@@ -54,6 +54,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Issues resolved without amendment
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
 * [#134](https://github.com/hl7ch/ch-emed/issues/134): Issue was withdrawn
+* [#124](https://github.com/hl7ch/ch-emed/issues/124): Due to the simplification of dosing, this request for stricter validation is no longer necessary
 
 
 
@@ -90,16 +91,16 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
  
 #### Added
 * [#73](https://github.com/hl7ch/ch-emed/issues/73): Add warning if non-recommended timing-event codes are used in the structured dosage.
-   * [CH EMED Dosage Structured Profile](StructureDefinition-ch-emed-dosage-structured.html) 
+   * [CH EMED Dosage Structured Profile](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured.html) 
 * [#76](https://github.com/hl7ch/ch-emed/issues/76): Elaboration of the repeated dispense.
    * [Additional tab with detailed description](repeated-dispense.html) 
    * Add element `MedicationRequest.dispenseRequest.validityPeriod` to be able to represent possible use cases ([profile](StructureDefinition-ch-emed-medicationrequest.html), [mapping to CDA](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-medicationrequest-mappings.html#mappings-for-cda-r2-http-hl7-org-v3-cda))
 
 #### Changed / Updated
 * [#64](https://github.com/hl7ch/ch-emed/issues/64): Dosage.timing.repeat.bounds[x] restricted to Period (start/end) instead of Duration, Range, Period to be equivalent to CDA.
-   * [CH EMED Dosage Structured Profile](StructureDefinition-ch-emed-dosage-structured.html)
-   * [CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
-   * [CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)](StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)
+   * [CH EMED Dosage Structured Profile](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured.html)
+   * [CH EMED Dosage Structured Profile Normal Dosing (MedicationRequest)](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured-normal-medicationrequest.html)
+   * [CH EMED Dosage Structured Profile Split Dosing (MedicationRequest)](https://fhir.ch/ig/ch-emed/2.0.0/StructureDefinition-ch-emed-dosage-structured-split-medicationrequest.html)
 * [#75](https://github.com/hl7ch/ch-emed/issues/75): Set mustSupport = true for patient (Composition.subject) and author (Composition.author) of the Medication Card document, because they belong to the minimal data set of IPAG.
    * [CH EMED Medication Card Composition Profile](StructureDefinition-ch-emed-composition-medicationcard.html)
 * [#74](https://github.com/hl7ch/ch-emed/issues/74): Change the description of the identifiers of MedicationStatement, MedicationRequest, MedicationDispense and Observation (clear naming without relation to the naming of the equivalent CDA element).

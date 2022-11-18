@@ -23,9 +23,6 @@
             <expression value="code.text.exists() or ingredient.itemCodeableConcept.text.exists()"/>
          </constraint>
       </element>
-      <element id="Medication.code">
-         <path value="Medication.code"/>
-      </element>
       <element id="Medication.code.coding">
          <path value="Medication.code.coding"/>
          <short value="Code of the medication (GTIN)"/>

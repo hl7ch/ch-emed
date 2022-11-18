@@ -49,6 +49,5 @@
          <path value="MedicationDispense.performer.actor.reference"/>
          <min value="1"/>
       </element>
-
    </differential>
 </StructureDefinition>     

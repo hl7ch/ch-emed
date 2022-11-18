@@ -29,10 +29,6 @@
          <path value="Bundle.identifier.value"/>
          <min value="1"/>
       </element>
-      <element id="Bundle.type">
-         <path value="Bundle.type" />
-         <fixedCode value="document" />
-      </element>
       <element id="Bundle.timestamp">
          <path value="Bundle.timestamp" />
          <short value="The document's creation date and time"/>

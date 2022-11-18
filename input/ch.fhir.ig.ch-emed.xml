@@ -396,6 +396,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationStatement/AsNeededWithMaxDose"/>
+         </reference>
+         <name value="Medication Statement with a medication in reserve and a maximum dosage"/>
+         <description value="Example for MedicationStatment - Take Nitrostat 1 tablet as needed for chest pain, maximum 3 tablets in 15 minutes"/>
+         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-card"/>-->
+      </resource>
+      <resource>
+         <reference>
             <reference value="Observation/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Observation for Pharmaceutical Advice document"/>
@@ -446,23 +454,6 @@
          <name value="Familien Hausarzt @ Hausarzt"/>
          <description value="Example for PractitionerRole"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
-      </resource>
-
-      <resource>
-         <reference>
-            <reference value="MedicationStatement/DosageStructuredNormal"/>
-         </reference>
-         <name value="Dosage structured normal"/>
-         <description value="Example for dosage structured normal (1-1-1-1)"/>
-         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationStatement/DosageNarrativeNormal"/>
-         </reference>
-         <name value="Dosage narrative normal"/>
-         <description value="Example for dosage narrative normal (free text)"/>
-         <!--<exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>-->
       </resource>
 
       <!-- references for code systems -->
@@ -556,32 +547,22 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-nonstructured"/>
+            <reference value="StructureDefinition/ch-emed-dosage"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured"/>
+            <reference value="StructureDefinition/ch-emed-dosage-split"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-normal"/>
+            <reference value="StructureDefinition/ch-emed-dosage-medicationrequest"/>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-split"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-normal-medicationrequest"/>
-         </reference>
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/ch-emed-dosage-structured-split-medicationrequest"/>
+            <reference value="StructureDefinition/ch-emed-dosage-split-medicationrequest"/>
          </reference>
       </resource>
       <resource>
