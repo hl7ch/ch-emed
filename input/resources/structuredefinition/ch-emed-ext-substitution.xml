@@ -7,7 +7,9 @@
     <title value="CH EMED Extension Substitution"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="Extension to represent the substitution of a medication"/>
+    <description value="This extension is used to indicate whether the medication can be substituted for this patient, i.e. whether it is allowed. 
+                        (For a prescription, MedicationRequest.substitution is used to record whether a substitution is allowed or not. 
+                        When dispensing, a performed substitution is recorded in MedicationDispense.substitution.)"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -36,7 +38,7 @@
         </element>
         <element id="Extension.valueCodeableConcept">
             <path value="Extension.valueCodeableConcept"/>
-            <short value="Substitution of the medication"/>
+            <short value="Whether substitution is allowed or not"/>
             <min value="1"/>
             <max value="1"/>
             <type>
