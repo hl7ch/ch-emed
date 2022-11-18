@@ -64,13 +64,8 @@
       </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <constraint>
-            <key value="ch-emed-title-padv"/>
-            <severity value="error"/>
-            <human value="'Kommentar zur Medikation' in german or 'Commentaire relatif à la médication' in french or 'Commento sulla terapia farmacologica' in italian or 'Pharmaceutical Advice' in english
+         <short value="'Kommentar zur Medikation' in german or 'Commentaire relatif à la médication' in french or 'Commento sulla terapia farmacologica' in italian or 'Pharmaceutical Advice' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Kommentar zur Medikation' and %resource.language.startsWith('de')) or ($this='Commentaire relatif à la médication' and %resource.language.startsWith('fr')) or ($this='Commento sulla terapia farmacologica' and %resource.language.startsWith('it')) or ($this='Pharmaceutical Advice' and %resource.language.startsWith('en'))"/>
-         </constraint>
       </element>
       <element id="Composition.confidentiality.extension">
          <path value="Composition.confidentiality.extension"/>
@@ -138,13 +133,8 @@
       </element>
       <element id="Composition.section:pharmaceuticalAdvice.title">
          <path value="Composition.section.title"/>
-         <constraint>
-            <key value="ch-emed-sect-padv"/>
-            <severity value="error"/>
-            <human value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english
+         <short value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Hinweise zur Medikation' and %resource.language.startsWith('de')) or ($this='Conseils sur les médicaments' and %resource.language.startsWith('fr')) or ($this='Consigli sui medicamenti' and %resource.language.startsWith('it')) or ($this='Pharmaceutical Advice' and %resource.language.startsWith('en'))"/>
-         </constraint>
          <min value="1"/>
          <max value="1"/>
       </element>
@@ -210,13 +200,8 @@
       </element>
       <element id="Composition.section.title:annotation">
          <path value="Composition.section.title"/>
-         <constraint>
-            <key value="ch-emed-sect-annoot"/>
-            <severity value="error"/>
-            <human value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
+         <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Kommentar' and %resource.language.startsWith('de')) or ($this='Commentaire' and %resource.language.startsWith('fr')) or ($this='Osservazione' and %resource.language.startsWith('it')) or ($this='Comment' and %resource.language.startsWith('en'))"/>
-         </constraint>
          <min value="1"/>
          <max value="1"/>
       </element>
