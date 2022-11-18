@@ -10,7 +10,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="MedicationStatement"/>
-   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
    <derivation value="constraint"/>
    <differential>
       <element id="MedicationStatement">
