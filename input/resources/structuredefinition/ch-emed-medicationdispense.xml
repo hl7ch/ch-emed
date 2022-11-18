@@ -171,15 +171,9 @@
  
       <element id="MedicationDispense.substitution">
          <path value="MedicationDispense.substitution"/>
-         <short value="Whether a substitution was performed on the dispense"/>
-      </element>
-      <element id="MedicationDispense.substitution.wasSubstituted">
-         <path value="MedicationDispense.substitution.wasSubstituted"/>
-         <short value="Whether a substitution was or was not performed on the dispense"/>
       </element>
       <element id="MedicationDispense.substitution.type">
          <path value="MedicationDispense.substitution.type"/>
-         <short value="Code signifying whether a different drug was dispensed from what was prescribed"/>
          <min value="1"/>
          <binding>
             <strength value="preferred"/>
