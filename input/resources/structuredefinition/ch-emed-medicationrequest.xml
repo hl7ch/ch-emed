@@ -155,7 +155,6 @@
       
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
-         <short value="Any restrictions on medication substitution"/>
       </element>
       <element id="MedicationRequest.substitution.allowedCodeableConcept">
          <path value="MedicationRequest.substitution.allowedCodeableConcept"/>
