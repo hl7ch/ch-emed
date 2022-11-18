@@ -26,7 +26,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#161](https://github.com/hl7ch/ch-emed/issues/161): [Home](index.html): Include the new IG fragments (IP Statements/Cross Version Analysis/Dependency Table/Globals Table) and remove Copyright (new included in IP Statements)
 * [#126](https://github.com/hl7ch/ch-emed/issues/126): Set IG parameter 'allow-extensible-warnings = true' to show the warning when codes are not in extensible bindings
 * [#141](https://github.com/hl7ch/ch-emed/issues/141): Add CH EMED examples in the profiles for 'identifier.value' (Bundle, Composition, MedicationDispense, MedicationRequest, MedicationStatement, Observation)
-      
+* [#91](https://github.com/hl7ch/ch-emed/issues/91): Allow [Extension Substitution](StructureDefinition-ch-emed-ext-substitution.html) also in Medication Card document (incl. updating the description of the extension to clarify the usage)
+
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)
 * [#123](https://github.com/hl7ch/ch-emed/issues/123): Update of the [introduction](index.html#introduction) according to the current status 
