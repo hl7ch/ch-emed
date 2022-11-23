@@ -48,6 +48,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#118](https://github.com/hl7ch/ch-emed/issues/118): Adaptation of the use case title (de/fr) for PADV document to avoid confusion 
 * [#131](https://github.com/hl7ch/ch-emed/issues/131): Optimization of the descriptions of the extensions which represent the references to other documents
 * [#129](https://github.com/hl7ch/ch-emed/issues/129): Remove additional FHIR validation rules on 'Composition.title' and 'Composition.section.title'
+* [#24 CDA](https://github.com/hl7ch/hl7ch-cda/issues/24): Update description of CARD and LIST 
 
 #### Fixed
 * [#128](https://github.com/hl7ch/ch-emed/issues/128): Remove requirement 'fixedValue' for 'MedicationStatement.status' and 'MedicationRequest.status', fixed wrong codes (~~completed~~) in examples
