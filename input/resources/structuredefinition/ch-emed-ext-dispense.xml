@@ -6,7 +6,7 @@
    <title value="CH EMED Extension Dispense"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Extension to reference the medication dispense"/>
+   <description value="Extension to reference an external MedicationDispense and the Medication Dispense document that contains it"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <context>
@@ -31,13 +31,14 @@
    <differential>
       <element id="Extension">
          <path value="Extension"/>
-         <short value="ID for Medication Dispense"/>
+         <short value="CH EMED Extension"/>
          <max value="1"/>
       </element>
+
       <element id="Extension.extension:id">
          <path value="Extension.extension"/>
          <sliceName value="id"/>
-         <short value="ID of a medication dispense"/>
+         <short value="Identifier of the referenced external MedicationDispense"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -62,10 +63,11 @@
             <code value="Identifier"/>
          </type>
       </element>
+
       <element id="Extension.extension:externalDocumentId">
          <path value="Extension.extension"/>
          <sliceName value="externalDocumentId"/>
-         <short value="ID of an external document"/>
+         <short value="Identifier of the referenced external Medication Dispense document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
@@ -90,6 +92,7 @@
             <code value="Identifier"/>
          </type>
       </element>
+
       <element id="Extension.url">
          <path value="Extension.url"/>
          <type>
