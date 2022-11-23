@@ -28,10 +28,10 @@
       <element id="Bundle.identifier.value">
          <path value="Bundle.identifier.value"/>
          <min value="1"/>
-      </element>
-      <element id="Bundle.type">
-         <path value="Bundle.type" />
-         <fixedCode value="document" />
+         <example>
+            <label value="CH EMED"/>
+            <valueString value="urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"/>
+         </example>
       </element>
       <element id="Bundle.timestamp">
          <path value="Bundle.timestamp" />

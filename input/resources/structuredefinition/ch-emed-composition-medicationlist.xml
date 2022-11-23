@@ -21,9 +21,6 @@
          <path value="Composition.language"/>
          <short value="Language of the document"/>
       </element>
-      <element id="Composition.identifier">
-         <path value="Composition.identifier"/>
-      </element>
       <element id="Composition.identifier.system">
          <path value="Composition.identifier.system"/>
          <min value="1"/>
@@ -31,6 +28,10 @@
       <element id="Composition.identifier.value">
          <path value="Composition.identifier.value"/>
          <min value="1"/>
+         <example>
+            <label value="CH EMED"/>
+            <valueString value="urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"/>
+         </example>
       </element>
       <element id="Composition.status">
          <path value="Composition.status"/>
@@ -50,9 +51,6 @@
          <path value="Composition.subject"/>
          <short value="A patient for whom this document instance was created"/>
       </element>
-      <element id="Composition.subject.reference">
-         <path value="Composition.subject.reference"/>
-      </element>
       <element id="Composition.date">
          <path value="Composition.date"/>
          <short value="The document's creation date and time"/>
@@ -65,21 +63,10 @@
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
          </type>
       </element>
-      <element id="Composition.author.reference">
-         <path value="Composition.author.reference"/>
-      </element>
       <element id="Composition.title">
          <path value="Composition.title"/>
-         <constraint>
-            <key value="ch-emed-title-pml"/>
-            <severity value="error"/>
-            <human value="'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
+         <short value="'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
                         or titles in other languages are also allowed"/>
-            <expression value="($this='Medikationsliste' and %resource.language.startsWith('de')) or ($this='Liste de médication' and %resource.language.startsWith('fr')) or ($this='Elenco delle terapie farmacologiche' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
-         </constraint>
-      </element>
-      <element id="Composition.confidentiality">
-         <path value="Composition.confidentiality"/>
       </element>
       <element id="Composition.confidentiality.extension">
          <path value="Composition.confidentiality.extension"/>
@@ -112,9 +99,6 @@
          <sliceName value="legalAuthenticator"/>
          <short value="The legal authenticator of the document (person)"/>
       </element>
-      <element id="Composition.attester.mode:legalAuthenticator">
-         <path value="Composition.attester.mode"/>
-      </element>
       <element id="Composition.attester.time:legalAuthenticator">
          <path value="Composition.attester.time"/>
          <short value="Timestamp of the signature"/>
@@ -127,9 +111,6 @@
          <path value="Composition.custodian"/>
          <short value="The organization in whose name the document has been created"/>
          <min value="1"/>
-      </element>
-      <element id="Composition.custodian.reference">
-         <path value="Composition.custodian.reference"/>
       </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
@@ -154,13 +135,8 @@
       </element>
       <element id="Composition.section:list.title">
          <path value="Composition.section.title"/>
-         <constraint>
-               <key value="ch-emed-sect-list"/>
-               <severity value="error"/>
-               <human value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
-                        or titles in other languages are also allowed"/>
-               <expression value="($this='Medikamentenliste' and %resource.language.startsWith('de')) or ($this='Liste de médicaments' and %resource.language.startsWith('fr')) or ($this='Lista farmaci' and %resource.language.startsWith('it')) or ($this='Medication List' and %resource.language.startsWith('en'))"/>
-         </constraint>  
+         <short value="'Medikamentenliste' in german or 'Liste de médicaments' in french or 'Lista farmaci' in italian or 'Medication List' in english
+                        or titles in other languages are also allowed"/> 
          <min value="1"/>
          <max value="1"/>
       </element>

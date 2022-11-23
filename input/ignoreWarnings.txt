@@ -19,6 +19,7 @@ The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
 WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-list'): The Implementation Guide contains no examples for this profile
 WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation-list'): The Implementation Guide contains no examples for this profile	
+WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement'): The Implementation Guide contains no examples for this profile
 
 # The following code systems/value sets are external and not supported by terminology server (or an example)
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated

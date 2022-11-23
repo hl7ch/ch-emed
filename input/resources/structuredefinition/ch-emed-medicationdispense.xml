@@ -16,20 +16,6 @@
       <element id="MedicationDispense">
          <path value="MedicationDispense"/>
          <short value="CH EMED MedicationDispense (DIS)"/>
-         <constraint>
-               <key value="ch-dosage-3"/>
-               <severity value="error"/>
-               <human value="If dosing is structured it must be normal or split dosing"/>
-               <expression value="dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 or dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0"/>
-         </constraint>
-         <constraint>
-               <key value="ch-dosage-6"/>
-               <severity value="error"/>
-               <human value="Provide dosage structured or unstructured, combination is not allowed (provide structured dosage if possible)"/>
-               <expression value="dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured')).count()=0 or
-                                 (dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal')).count()=0 and 
-                                  dosageInstruction.where($this.conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split')).count()=0)"/>
-         </constraint>
       </element>
       <element id="MedicationDispense.contained">
          <path value="MedicationDispense.contained"/>
@@ -107,6 +93,10 @@
          <path value="MedicationDispense.identifier.value"/>
          <short value="Identifier value as UUID"/>
          <min value="1"/>
+         <example>
+            <label value="CH EMED"/>
+            <valueString value="urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"/>
+         </example>
       </element>
       <element id="MedicationDispense.status">
          <path value="MedicationDispense.status"/>
@@ -142,6 +132,8 @@
          <path value="MedicationDispense.whenHandedOver"/>
          <short value="When product was given out"/>
       </element>
+
+      <!-- dosage -->
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
          <slicing>
@@ -149,44 +141,34 @@
                <type value="profile"/>
                <path value="$this"/>
             </discriminator>
-            <rules value="open"/>
+            <rules value="closed"/>
          </slicing>
          <short value="How the medication should be taken"/>
          <min value="1"/>
       </element>
-      <element id="MedicationDispense.dosageInstruction:nonstructured">
+      <element id="MedicationDispense.dosageInstruction:baseEntry">
          <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="nonstructured"/>
-         <short value="Free text dosage instructions"/>
-         <min value="0"/>
+         <sliceName value="baseEntry"/>
+         <short value="Base entry of the dosage instruction"/>
+         <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-nonstructured"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
          </type>
       </element>
-      <element id="MedicationDispense.dosageInstruction:structurednormal">
+      <element id="MedicationDispense.dosageInstruction:additionalEntry">
          <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="structurednormal"/>
-         <short value="Structured Normal Dosing"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-normal"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.dosageInstruction:structuredsplit">
-         <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="structuredsplit"/>
-         <short value="Structured Split Dosing"/>
+         <sliceName value="additionalEntry"/>
+         <short value="Additional entry of the dosage instruction"/>
          <min value="0"/>
          <max value="*"/>
          <type>
             <code value="Dosage"/>
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured-split"/>
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split"/>
          </type>
       </element>
+ 
       <element id="MedicationDispense.substitution">
          <path value="MedicationDispense.substitution"/>
          <short value="Whether a substitution was performed on the dispense"/>

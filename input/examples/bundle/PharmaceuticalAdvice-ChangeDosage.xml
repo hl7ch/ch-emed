@@ -359,7 +359,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <medicationReference>
                     <reference value="#med"/>
                 </medicationReference>

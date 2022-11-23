@@ -80,7 +80,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:uuid:d0f885ca-afa6-4e7e-905d-f7698f9607aa"/>
   </identifier>
-  <status value="completed"/>
+  <status value="active"/>
   <medicationReference>
     <reference value="#med"/>
   </medicationReference>
@@ -119,22 +119,11 @@
   </dosage>
   <dosage>
     <sequence value="2"/>
-    <patientInstruction value="-"/>
     <timing>
       <repeat>
-        <boundsPeriod>
-          <start value="2012-02-04"/>
-        </boundsPeriod>
         <when value="EVE"/>
       </repeat>
     </timing>
-    <route>
-      <coding>
-        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-        <code value="20053000"/>
-        <display value="Oral use"/>
-      </coding>
-    </route>
     <doseAndRate>
       <doseQuantity>
         <value value="0.5"/>

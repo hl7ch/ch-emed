@@ -17,8 +17,6 @@
          <path value="Medication"/>
          <short value="CH EMED Medication (MedicationDispense)"/>
       </element>
-
-
       <element id="Medication.amount">
          <path value="Medication.amount"/>
          <short value="Package size"/>

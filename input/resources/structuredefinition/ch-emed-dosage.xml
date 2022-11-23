@@ -1,12 +1,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ch-emed-dosage-structured"/>
-   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
-   <version value="0.1.0"/>
-   <name value="CHEMEDDosageStructured"/>
-   <title value="CH EMED Dosage Structured"/>
+   <id value="ch-emed-dosage"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage"/>
+   <version value="2.0.0"/>
+   <name value="CHEMEDDosage"/>
+   <title value="CH EMED Dosage (MedicationStatement / MedicationDispense)"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Definition of the structured dosage"/>
+   <description value="Definition of the dosage (used in MedicationStatement / MedicationDispense)"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -15,26 +15,22 @@
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage Structured (MedicationStatement / MedicationDispense)"/>
-      </element>
-      <element id="Dosage.extension">
-         <path value="Dosage.extension"/>
-         <slicing>
-            <discriminator>
-               <type value="value"/>
-               <path value="url"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
+         <short value="CH EMED Dosage (MedicationStatement / MedicationDispense)"/>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
          <short value="The order of the dosage instructions"/>
+         <constraint>
+            <key value="ch-dosage-1"/>
+            <severity value="error"/>
+            <human value="No sequence number (for one dosage element) or sequence number = 1 (for more than one dosage element)"/>
+            <expression value="$this.count() = 0 or $this = 1"/>
+         </constraint>
       </element>
       <element id="Dosage.text">
          <path value="Dosage.text"/>
-         <min value="0"/>
-         <max value="0"/>
+         <short value="Free text dosage instructions"/>
+         <mustSupport value="true"/>
       </element>
       <element id="Dosage.patientInstruction">
          <path value="Dosage.patientInstruction"/>
