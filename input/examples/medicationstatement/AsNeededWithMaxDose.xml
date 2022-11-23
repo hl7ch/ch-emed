@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
   <id value="AsNeededWithMaxDose"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
   </meta>
   <!-- https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79ba021e-183c-4b4d-822e-4ff5ef54ca61 -->
   <contained>
