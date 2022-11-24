@@ -61,7 +61,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#119](https://github.com/hl7ch/ch-emed/issues/119): Update the mapping to CDA for the Observation is no longer necessary
 * [#134](https://github.com/hl7ch/ch-emed/issues/134): Issue was withdrawn
 * [#124](https://github.com/hl7ch/ch-emed/issues/124): Due to the simplification of dosing, this request for stricter validation is no longer necessary
-
+* [#143](https://github.com/hl7ch/ch-emed/issues/143): Currently no representation of the product code
 
 
 ### STU3 Ballot - v2.1.0 (2022-07-07)
