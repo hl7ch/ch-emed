@@ -42,14 +42,15 @@
       <fhir:name value="TimingEvent"/>
       <fhir:title value="TimingEvent"/>
       <fhir:status value="active"/>
+      <fhir:experimental value="false"/>
       <fhir:date value="2021-05-26"/>
       <fhir:publisher value="eHealth Suisse"/>
       <fhir:contact>
         <fhir:name value="eHealth Suisse"/>
       </fhir:contact>
+      <fhir:description value="Translations of concepts for v3-TimingEvent"/>
       <fhir:content value="supplement"/>
       <fhir:supplements value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" />
-
       <xsl:apply-templates />
     </fhir:CodeSystem>
   </xsl:template>

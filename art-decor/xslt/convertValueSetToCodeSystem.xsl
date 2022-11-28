@@ -61,7 +61,19 @@
    			<xsl:attribute name="value"><xsl:value-of select="$title" /></xsl:attribute>
       </fhir:title>   
     </xsl:template>
-   
+
+    <xsl:template match="fhir:ValueSet/fhir:experimental">
+      <fhir:experimental>
+   			<xsl:attribute name="value"><xsl:value-of select="@value" /></xsl:attribute>
+      </fhir:experimental>   
+    </xsl:template>
+
+    <xsl:template match="fhir:ValueSet/fhir:description">
+      <fhir:description>
+   			<xsl:attribute name="value"><xsl:value-of select="@value" /></xsl:attribute>
+      </fhir:description>   
+    </xsl:template>
+
     <xsl:template match="fhir:ValueSet/fhir:immutable">
        <fhir:caseSensitive value="true"/>
        <fhir:content value="complete"/>
