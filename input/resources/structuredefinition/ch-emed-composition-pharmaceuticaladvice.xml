@@ -137,7 +137,7 @@
       </element>
       <element id="Composition.section:pharmaceuticalAdvice.title">
          <path value="Composition.section.title"/>
-         <short value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english
+         <short value="'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english
                         or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>

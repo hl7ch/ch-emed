@@ -137,7 +137,7 @@
       </element>
       <element id="Composition.section:treatmentPlan.title">
          <path value="Composition.section.title"/>
-            <short value="'Medikamentöser Behandlungsplan' in german or 'Plan de traitement médicamenteux' in french or 'Piano terapeutico farmacologico' in italian or 'Medication Treatment Plan' in english
+            <short value="'Medikamentöser Behandlungsplan' in german or 'Plan de traitement médicamenteux' in french or 'Piano terapeutico farmacologico' in italian or 'Medication Treatment Plan' in english
                         or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
