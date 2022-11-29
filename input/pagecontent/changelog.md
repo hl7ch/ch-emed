@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU3 - v3.0.0 (2022-xx-xx)
+### STU3 - v3.0.0 (2022-11-29)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#140](https://github.com/hl7ch/ch-emed/issues/140): Adding a new code (SCT) for Medication Card document (Composition.type)
@@ -55,6 +55,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#131](https://github.com/hl7ch/ch-emed/issues/131): Optimization of the descriptions of the extensions which represent the references to other documents
 * [#129](https://github.com/hl7ch/ch-emed/issues/129): Remove additional FHIR validation rules on 'Composition.title' and 'Composition.section.title'
 * [#24 CDA](https://github.com/hl7ch/hl7ch-cda/issues/24): Update description of CARD and LIST 
+* [#139](https://github.com/hl7ch/ch-emed/issues/139): Update description of CARD
 
 #### Fixed
 * [#128](https://github.com/hl7ch/ch-emed/issues/128): Remove requirement 'fixedValue' for 'MedicationStatement.status' and 'MedicationRequest.status', fixed wrong codes (~~completed~~) in examples
