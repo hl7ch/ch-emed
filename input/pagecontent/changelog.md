@@ -68,8 +68,9 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#124](https://github.com/hl7ch/ch-emed/issues/124): Due to the simplification of dosing, this request for stricter validation is no longer necessary
 * [#142](https://github.com/hl7ch/ch-emed/issues/142): Representation GTIN remains in Medication.code (not identifier)
 * [#143](https://github.com/hl7ch/ch-emed/issues/143): Currently no representation of the product code
-* [#136](https://github.com/hl7ch/ch-emed/issues/136): No update to MTP necessary
-* [#138](https://github.com/hl7ch/ch-emed/issues/136): Solved with other issue
+* [#136](https://github.com/hl7ch/ch-emed/issues/136): No update for MTP necessary
+* [#137](https://github.com/hl7ch/ch-emed/issues/137): No update for PRE necessary
+* [#138](https://github.com/hl7ch/ch-emed/issues/138): Solved with other issue
 
 
 ### STU3 Ballot - v2.1.0 (2022-07-07)
