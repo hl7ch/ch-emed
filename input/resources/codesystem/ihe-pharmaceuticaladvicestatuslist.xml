@@ -5,11 +5,6 @@
       <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.4--20200106135719"/>
    </meta>
    <url value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
-   <identifier>
-      <use value="official"/>
-      <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.756.5.30.1.1.11.4"/>
-   </identifier>
    <version value="2020-01-06T13:57:19"/>
    <name value="IHEPharmaceuticalAdviceStatusList"/>
    <title value="IHE Pharmaceutical Advice Status List"/>
