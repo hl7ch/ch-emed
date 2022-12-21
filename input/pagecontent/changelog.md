@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU3 - v3.0.0 (2022-11-29)
+### STU3 - v3.0.0 (2022-12-21)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#140](https://github.com/hl7ch/ch-emed/issues/140): Adding a new code (SCT) for Medication Card document (Composition.type)
