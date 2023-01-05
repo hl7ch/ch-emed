@@ -308,6 +308,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/MedicationWithATC"/>
+         </reference>
+         <name value="Medication with ATC"/>
+         <description value="Example for Non-Swiss Medication with ATC code"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
