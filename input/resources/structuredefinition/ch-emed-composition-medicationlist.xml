@@ -247,14 +247,14 @@
          <min value="0"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.title:annotation">
+      <element id="Composition.section:annotation.title">
          <path value="Composition.section.title"/>
          <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:annotation">
+      <element id="Composition.section:annotation.code">
          <path value="Composition.section.code"/>
          <min value="1"/>
          <patternCodeableConcept>
@@ -265,11 +265,16 @@
             </coding>
          </patternCodeableConcept>
       </element>
-      <element id="Composition.section.text:annotation">
+      <element id="Composition.section:annotation.text">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
+      </element>
+      <element id="Composition.section:annotation.section">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
       </element>
    </differential>
 </StructureDefinition>
