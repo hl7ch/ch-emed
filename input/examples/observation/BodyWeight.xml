@@ -1,0 +1,31 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BodyWeight"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <effectiveDateTime value="2023-01-05"/>
+  <valueQuantity>
+    <value value="65"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+</Observation>

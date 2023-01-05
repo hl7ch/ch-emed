@@ -261,10 +261,75 @@
          <max value="1"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.section.section:card">
+      <element id="Composition.section.section:annotation">
          <path value="Composition.section.section"/>
          <min value="0"/>
          <max value="0"/>
       </element>
+
+      <!-- Section VitalSigns -->
+      <element id="Composition.section:vitalSigns">
+         <path value="Composition.section"/>
+         <sliceName value="vitalSigns"/>
+         <short value="Vital signs"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section:vitalSigns.title">
+         <path value="Composition.section.title"/>
+         <short value="'TBD' in german or 'TBD' in french or 'TBD' in italian or 'Vital Signs' in english
+                        or titles in other languages are also allowed"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section:vitalSigns.code">
+         <path value="Composition.section.code"/>
+         <min value="1"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://loinc.org"/>
+               <code value="8716-3"/>
+               <display value="Vital signs"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
+      <element id="Composition.section:vitalSigns.text">
+         <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+      </element>
+      <element id="Composition.section:vitalSigns.entry">
+         <path value="Composition.section.entry"/>
+         <slicing>
+            <discriminator>
+               <type value="profile"/>
+               <path value="resolve()"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+         <short value="Notable vital signs or physical findings"/>
+         <definition value="Notable vital signs or physical findings as: blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+            <!--<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>-->
+         </type>
+      </element>
+      <element id="Composition.section:vitalSigns.entry:vitalSign">
+         <path value="Composition.section.entry"/>
+         <sliceName value="vitalSign"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+         </type>
+      </element>
+      <element id="Composition.section:vitalSigns.entry:vitalSign.reference">
+         <path value="Composition.section.entry.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Composition.section:vitalSigns.section">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
    </differential>
 </StructureDefinition>
