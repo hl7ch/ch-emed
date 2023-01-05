@@ -1,7 +1,10 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU3 - v3.0.0 (2022-12-21)
+### v3.1.0 (2023)
+
+
+### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#140](https://github.com/hl7ch/ch-emed/issues/140): Adding a new code (SCT) for Medication Card document (Composition.type)
@@ -74,7 +77,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#138](https://github.com/hl7ch/ch-emed/issues/138): Solved with other issue
 
 
-### STU3 Ballot - v2.1.0 (2022-07-07)
+### STU 3 Ballot - v2.1.0 (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -98,7 +101,7 @@ issue90-dosage
 
 
 
-### STU2 - v2.0.0 (2022-02-11)
+### STU 2 - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.
