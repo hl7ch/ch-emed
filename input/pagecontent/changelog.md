@@ -3,6 +3,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.1.0 (2023)
 
+#### Changed / Updated
+* [#175](https://github.com/hl7ch/ch-emed/issues/175): 
 
 ### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues

@@ -597,7 +597,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-medicationstatement-changed"/>
+            <reference value="StructureDefinition/ch-emed-ext-changedentry"/>
          </reference>
       </resource>
       <resource>

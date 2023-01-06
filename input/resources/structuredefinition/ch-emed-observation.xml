@@ -16,6 +16,12 @@
       <element id="Observation">
          <path value="Observation"/>
          <short value="CH EMED Observation (PADV)"/>
+         <constraint>
+            <key value="ch-obs-1"/>
+            <severity value="error"/>
+            <human value="In case of a 'CHANGE', reference shall be made to an entry containing the changes."/>
+            <expression value="code.coding.code='CHANGE' implies extension.where(url='http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry').exists()"/>
+         </constraint>
       </element>
       <element id="Observation.extension">
          <path value="Observation.extension"/>
@@ -60,15 +66,15 @@
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense" />
          </type>
       </element>
-      <element id="Observation.extension:medicationStatementChanged">
+      <element id="Observation.extension:changedEntry">
          <path value="Observation.extension" />
-         <sliceName value="medicationStatementChanged" />
-         <short value="Reference to the changed medication statement"/>
+         <sliceName value="changedEntry" />
+         <short value="Reference to the changed entry (MedicationStatement/MedicationRequest/MedicationDispense)"/>
          <min value="0"/>
          <max value="1"/>
          <type>
             <code value="Extension" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry" />
          </type>
       </element>
 

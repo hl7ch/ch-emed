@@ -257,7 +257,7 @@
                     </extension>
                 </extension>
                 <!-- Reference to new MedicationStatement with changed dosage of 1-0-0-0 -->
-                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed">
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry">
                     <valueReference>
                         <reference value="MedicationStatement/MedStatTriatec-ChangeDosage"/>
                     </valueReference>

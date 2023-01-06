@@ -4,8 +4,8 @@ The **Pharmaceutical Advice document** is a document in which health professiona
 * [IHE Pharmacy Technical Framework Supplement: Community Pharmaceutical Advice (PADV)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV.pdf)
 
 This implementation guide describes the following two use cases: 
-  - [Modifying an existing medication](#modifying-an-existing-medication)
-  - [Adding a comment on an existing medication](#adding-a-comment-on-an-existing-medication)
+   - Modifying an existing medication
+   - Adding a comment on an existing medication
 
 ### FHIR document (Bundle)
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
@@ -26,10 +26,10 @@ A Pharmaceutical Advice document contains one Observation. The Observation refer
 
 #### Modifying an existing medication
 * [CHANGE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
-   * The plannig of the medication has changed, e.g. the dosage. The Observation refers the original Medication Treatment Plan document and a new MedicationStatement with the changed information.
+   * The planning of the medication has changed, e.g. the dosage. The Observation refers the original Medication Treatment Plan document and a new MedicationStatement with the changed information.
       * [Example](Bundle-PharmaceuticalAdvice-ChangeDosage.html) with dosage change: 1 tablet in the morning instead of 0.5 tablet (as decided in use case step 1-1) 
-   * Prescription can be dispensed after indicated change. The Observation refers the original Medication Prescription document and includes the change as annotation.
-   * Any information of the dispense has changed except medication, e.g. patient instruction. The Observation refers the original Medication Dispense document and includes the changed information as annotation.
+   * Prescription can be dispensed after indicated change. The Observation refers the original Medication Prescription document and a new MedicationRequest with the changed information.
+   * Any information of the dispense has changed **except medication**, e.g. patient instruction. The Observation refers the original Medication Dispense document and a new MedicationDispense with the changed information and the same Medication.
 * [REFUSE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
    * This medication should not be taken/prescribed/dispensed. The Observation refers the original Medication Treatment Plan document and includes the refuse as annotation.
    * The prescription (provisional, not yet confirmed or confirmed) should not have been already dispensed, even partially. The Observation refers the original Medication Prescription document and includes the refuse as annotation.
