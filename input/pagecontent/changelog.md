@@ -3,6 +3,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.1.0 (2023)
 
+#### Added
+* [176](https://github.com/hl7ch/ch-emed/issues/176): Adding extensions to LIST entries for referencing the parent document.
+
 
 ### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues
