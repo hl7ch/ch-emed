@@ -238,5 +238,43 @@
          <min value="0"/>
          <max value="0"/>
       </element>
+
+      <!-- Section Annotation -->
+      <element id="Composition.section:annotation">
+         <path value="Composition.section"/>
+         <sliceName value="annotation"/>
+         <short value="Annotation"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section:annotation.title">
+         <path value="Composition.section.title"/>
+         <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
+                        or titles in other languages are also allowed"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section:annotation.code">
+         <path value="Composition.section.code"/>
+         <min value="1"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://loinc.org"/>
+               <code value="48767-8"/>
+               <display value="Annotation comment"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
+      <element id="Composition.section:annotation.text">
+         <path value="Composition.section.text"/>
+         <short value="Human readable text of this section"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Composition.section:annotation.section">
+         <path value="Composition.section.section"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
    </differential>
 </StructureDefinition>
