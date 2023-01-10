@@ -4,6 +4,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### v3.1.0 (2023)
 
 
+#### Fixed
+* [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections
+
+
 ### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
