@@ -140,12 +140,12 @@
          <max value="1"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.section.title:originalRepresentation">
+      <element id="Composition.section:originalRepresentation.title">
          <path value="Composition.section.title"/>
          <short value="'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in italian or 'Original representation' in english
                         or titles in other languages are also allowed"/>
       </element>
-      <element id="Composition.section.code:originalRepresentation">
+      <element id="Composition.section:originalRepresentation.code">
          <path value="Composition.section.code"/>
          <patternCodeableConcept>
             <coding>
@@ -155,11 +155,11 @@
             </coding>
          </patternCodeableConcept>
       </element>
-      <element id="Composition.section.text:originalRepresentation">
+      <element id="Composition.section:originalRepresentation.text">
          <path value="Composition.section.text"/>
          <short value="Representation of the original view"/>
       </element>
-      <element id="Composition.section.entry:originalRepresentation">
+      <element id="Composition.section:originalRepresentation.entry">
          <path value="Composition.section.entry"/>
          <short value="PDF"/>
          <type>
@@ -168,7 +168,7 @@
          </type>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.section.section:originalRepresentation">
+      <element id="Composition.section:originalRepresentation.section">
          <path value="Composition.section.section"/>
       </element>
 
@@ -236,14 +236,14 @@
          <max value="1"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.section.title:annotation">
+      <element id="Composition.section:annotation.title">
          <path value="Composition.section.title"/>
          <short value="'Kommentar' in german or 'Commentaire' in french or 'Osservazione' in italian or 'Comment' in english
                         or titles in other languages are also allowed"/>
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Composition.section.code:annotation">
+      <element id="Composition.section:annotation.code">
          <path value="Composition.section.code"/>
          <min value="1"/>
          <patternCodeableConcept>
@@ -254,14 +254,14 @@
             </coding>
          </patternCodeableConcept>
       </element>
-      <element id="Composition.section.text:annotation">
+      <element id="Composition.section:annotation.text">
          <path value="Composition.section.text"/>
          <short value="Human readable text of this section"/>
          <min value="1"/>
          <max value="1"/>
          <mustSupport value="true"/>
       </element>
-      <element id="Composition.section.section:card">
+      <element id="Composition.section:annotation.section">
          <path value="Composition.section.section"/>
          <min value="0"/>
          <max value="0"/>
