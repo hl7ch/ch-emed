@@ -590,7 +590,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose or multidose preparation consisting of solid, dry aggregates of powder particles that are sufficiently resistant to withstand handling. Granules are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of the active substance(s) (conventional&#xA;                        release). They may be swallowed as such and/or chewed before swallowing, and some may also be dissolved or dispersed in water or another suitable liquid before oral administration. Granules for oral solution and Granules for oral suspension are excluded."/>
+               <valueString value="Solid single-dose or multidose preparation consisting of solid, dry aggregates of powder particles that are sufficiently resistant to withstand handling. Granules are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of the active substance(s) (conventional release). They may be swallowed as such and/or chewed before swallowing, and some may also be dissolved or dispersed in water or another suitable liquid before oral administration. Granules for oral solution and Granules for oral suspension are excluded."/>
             </extension>
             <code value="10204000"/>
             <display value="Granules"/>
@@ -636,7 +636,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid preparation consisting of delayed-release granules intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. This deliberate modification is achieved by coating the granules with a gastro-resistant material or by embedding the solid particles in the gastro-resistant material. Gastro-resistant granules are usually&#xA;                        single-dose preparations intended for oral use."/>
+               <valueString value="Solid preparation consisting of delayed-release granules intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. This deliberate modification is achieved by coating the granules with a gastro-resistant material or by embedding the solid particles in the gastro-resistant material. Gastro-resistant granules are usually single-dose preparations intended for oral use."/>
             </extension>
             <code value="10206000"/>
             <display value="Gastro-resistant granules"/>
@@ -682,7 +682,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid preparation consisting of granules showing a rate and/or place of release different from that of conventional-release granules. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release granules are usually single-dose preparations intended for oral use, and include prolonged-release, delayed&#xA;                        release and pulsatile-release granules. The generic term 'modified-release granules' is used only when the more specific terms 'gastro-resistant granules' or 'prolonged-release granules' do not apply."/>
+               <valueString value="Solid preparation consisting of granules showing a rate and/or place of release different from that of conventional-release granules. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release granules are usually single-dose preparations intended for oral use, and include prolonged-release, delayed release and pulsatile-release granules. The generic term 'modified-release granules' is used only when the more specific terms 'gastro-resistant granules' or 'prolonged-release granules' do not apply."/>
             </extension>
             <code value="10208000"/>
             <display value="Modified-release granules"/>
@@ -728,7 +728,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation contained in a hard shell, the capacity of which can be varied. The shell is made of gelatin or other substances. It consists of two prefabricated cylindrical sections one end of which is rounded and closed, the other being open. The contents of the shell may be a solid or semi-solid preparation, which is filled into one of the&#xA;                        sections and closed by slipping the other section over it. Hard capsules are intended for oral use."/>
+               <valueString value="Solid single-dose preparation contained in a hard shell, the capacity of which can be varied. The shell is made of gelatin or other substances. It consists of two prefabricated cylindrical sections one end of which is rounded and closed, the other being open. The contents of the shell may be a solid or semi-solid preparation, which is filled into one of the sections and closed by slipping the other section over it. Hard capsules are intended for oral use."/>
             </extension>
             <code value="10210000"/>
             <display value="Capsule, hard"/>
@@ -751,7 +751,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation contained in a soft shell, the capacity and shape of which can be varied. The shell is made of gelatin or other substances and may contain (a) solid active substance(s). The shell is thicker than that of hard capsules and consists of one part as soft capsules usually are formed, filled and sealed in one operation. The contents&#xA;                        of the shell may be a semi-solid or liquid preparation. Soft capsules are intended for oral use."/>
+               <valueString value="Solid single-dose preparation contained in a soft shell, the capacity and shape of which can be varied. The shell is made of gelatin or other substances and may contain (a) solid active substance(s). The shell is thicker than that of hard capsules and consists of one part as soft capsules usually are formed, filled and sealed in one operation. The contents of the shell may be a semi-solid or liquid preparation. Soft capsules are intended for oral use."/>
             </extension>
             <code value="10211000"/>
             <display value="Capsule, soft"/>
@@ -774,7 +774,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose, delayed-release preparation contained in a hard shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Hard gastro-resistant capsules are usually made by filling hard capsules with gastro-resistant granules or solid particles made gastro-resistant by coating or, in&#xA;                        certain cases, by providing hard capsules with a gastro-resistant shell. They are intended for oral use."/>
+               <valueString value="Solid single-dose, delayed-release preparation contained in a hard shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Hard gastro-resistant capsules are usually made by filling hard capsules with gastro-resistant granules or solid particles made gastro-resistant by coating or, in certain cases, by providing hard capsules with a gastro-resistant shell. They are intended for oral use."/>
             </extension>
             <code value="10212000"/>
             <display value="Gastro-resistant capsule, hard"/>
@@ -797,7 +797,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose, delayed-release preparation contained in a soft shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Soft gastro-resistant capsules are usually formed, filled and sealed in one operation. They may contain a liquid or semi-solid preparation in the gastro-resistant&#xA;                        shell. Soft gastro-resistant capsules are intended for oral use."/>
+               <valueString value="Solid single-dose, delayed-release preparation contained in a soft shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Soft gastro-resistant capsules are usually formed, filled and sealed in one operation. They may contain a liquid or semi-solid preparation in the gastro-resistant shell. Soft gastro-resistant capsules are intended for oral use."/>
             </extension>
             <code value="10213000"/>
             <display value="Gastro-resistant capsule, soft"/>
@@ -889,7 +889,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation consisting of a hard shell containing a solid or semi-solid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Hard modified-release capsules are intended for&#xA;                        oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, hard' is used only when the more specific terms 'gastro-resistant capsule, hard' or 'prolonged-release capsule, hard' do not apply."/>
+               <valueString value="Solid single-dose preparation consisting of a hard shell containing a solid or semi-solid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Hard modified-release capsules are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, hard' is used only when the more specific terms 'gastro-resistant capsule, hard' or 'prolonged-release capsule, hard' do not apply."/>
             </extension>
             <code value="10217000"/>
             <display value="Modified-release capsule, hard"/>
@@ -912,7 +912,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation consisting of a soft shell containing a semi-solid or liquid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Soft modified-release capsules are intended for&#xA;                        oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, soft' is used only when the more specific terms 'gastro-resistant capsule, soft' or 'prolonged-release capsule, soft' do not apply."/>
+               <valueString value="Solid single-dose preparation consisting of a soft shell containing a semi-solid or liquid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Soft modified-release capsules are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, soft' is used only when the more specific terms 'gastro-resistant capsule, soft' or 'prolonged-release capsule, soft' do not apply."/>
             </extension>
             <code value="10218000"/>
             <display value="Modified-release capsule, soft"/>
@@ -935,7 +935,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose uncoated preparation obtained by compressing uniform volumes of particulate solids or by other means such as extrusion or moulding. Tablets include single-layer tablets resulting from a single compression of particles and multi-layer tablets consisting of concentric or parallel layers obtained by successive compressions of particles of&#xA;                        different composition. Tablets are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of active substance(s) (conventional release)."/>
+               <valueString value="Solid single-dose uncoated preparation obtained by compressing uniform volumes of particulate solids or by other means such as extrusion or moulding. Tablets include single-layer tablets resulting from a single compression of particles and multi-layer tablets consisting of concentric or parallel layers obtained by successive compressions of particles of different composition. Tablets are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of active substance(s) (conventional release)."/>
             </extension>
             <code value="10219000"/>
             <display value="Tablet"/>
@@ -958,7 +958,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation consisting of a tablet coated with one or more layers of mixtures of various substances such as sugars and waxes. To the coating colouring matter, flavouring substances and active substance(s) may be added. The thickness of the coating is greater than that of a film-coated tablet. Coated tablets have a smooth surface. They are&#xA;                        intended for oral use. When the coating dissolves or disintegrates the active substance(s) is (are) released into the gastrointestinal fluid at a rate depending essentially on its intrinsic properties (conventional release)."/>
+               <valueString value="Solid single-dose preparation consisting of a tablet coated with one or more layers of mixtures of various substances such as sugars and waxes. To the coating colouring matter, flavouring substances and active substance(s) may be added. The thickness of the coating is greater than that of a film-coated tablet. Coated tablets have a smooth surface. They are intended for oral use. When the coating dissolves or disintegrates the active substance(s) is (are) released into the gastrointestinal fluid at a rate depending essentially on its intrinsic properties (conventional release)."/>
             </extension>
             <code value="10220000"/>
             <display value="Coated tablet"/>
@@ -1073,7 +1073,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose, delayed-release tablet intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. These properties are achieved by coating the tablet with a gastro-resistant material or by embedding solid particles in the gastro-resistant material before compression. Gastro-resistant tablets are intended for oral&#xA;                        administration."/>
+               <valueString value="Solid single-dose, delayed-release tablet intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. These properties are achieved by coating the tablet with a gastro-resistant material or by embedding solid particles in the gastro-resistant material before compression. Gastro-resistant tablets are intended for oral administration."/>
             </extension>
             <code value="10225000"/>
             <display value="Gastro-resistant tablet"/>
@@ -1119,7 +1119,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation consisting of a tablet showing a rate, a place and/or a time of release different from that of a conventional-release tablet. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release tablets are intended for oral use, and include prolonged-release, delayed-release and&#xA;                        pulsatile-release preparations. The generic term 'modified-release tablet' is used only when the more specific terms 'gastro-resistant tablet' or 'prolonged-release tablet' do not apply."/>
+               <valueString value="Solid single-dose preparation consisting of a tablet showing a rate, a place and/or a time of release different from that of a conventional-release tablet. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release tablets are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release tablet' is used only when the more specific terms 'gastro-resistant tablet' or 'prolonged-release tablet' do not apply."/>
             </extension>
             <code value="10227000"/>
             <display value="Modified-release tablet"/>
@@ -1211,7 +1211,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid preparation for homoeopathic use, obtained from sucrose, lactose or other suitable excipients. Pillules may be prepared by impregnation of preformed pillules with a dilution or dilutions of homoeopathic stocks or by progressive addition of these excipients and the addition of a dilution or dilutions of homoeopathic stocks. Pillules are intended for&#xA;                        oral or sublingual use."/>
+               <valueString value="Solid preparation for homoeopathic use, obtained from sucrose, lactose or other suitable excipients. Pillules may be prepared by impregnation of preformed pillules with a dilution or dilutions of homoeopathic stocks or by progressive addition of these excipients and the addition of a dilution or dilutions of homoeopathic stocks. Pillules are intended for oral or sublingual use."/>
             </extension>
             <code value="10231000"/>
             <display value="Pillules"/>
@@ -1855,7 +1855,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid single-dose preparation to be applied to the buccal mucosa to obtain a systemic delivery over an extended period of time. Mucoadhesive buccal tablets are usually prepared by compression of mixtures of powders or granulations into tablets with a shape suited for the intended use. They usually contain hydrophilic polymers, which on wetting with saliva&#xA;                        produce a flexible hydrogel that adheres to the buccal mucosa."/>
+               <valueString value="Solid single-dose preparation to be applied to the buccal mucosa to obtain a systemic delivery over an extended period of time. Mucoadhesive buccal tablets are usually prepared by compression of mixtures of powders or granulations into tablets with a shape suited for the intended use. They usually contain hydrophilic polymers, which on wetting with saliva produce a flexible hydrogel that adheres to the buccal mucosa."/>
             </extension>
             <code value="10319000"/>
             <display value="Muco-adhesive buccal tablet"/>
@@ -2292,7 +2292,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Semi-solid single-dose or multidose preparation of homogeneous appearance consisting of a lipophilic phase and an aqueous phase, one of which is finely dispersed in the other. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic or hydrophobic. Creams are intended for cutaneous use. In certain cases, transdermal delivery may&#xA;                        be obtained."/>
+               <valueString value="Semi-solid single-dose or multidose preparation of homogeneous appearance consisting of a lipophilic phase and an aqueous phase, one of which is finely dispersed in the other. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic or hydrophobic. Creams are intended for cutaneous use. In certain cases, transdermal delivery may be obtained."/>
             </extension>
             <code value="10502000"/>
             <display value="Cream"/>
@@ -2384,7 +2384,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Flexible single-dose preparation intended to be applied to the skin to obtain, usually, a local effect. Medicated plasters consist of an adhesive basis containing the active substance and spread as a uniform layer on an appropriate support made of natural or synthetic material. The adhesive layer is covered by a suitable protective liner, which is removed&#xA;                        before applying the plaster to the skin. Medicated plasters are presented in a range of sizes or as larger sheets to be cut before use."/>
+               <valueString value="Flexible single-dose preparation intended to be applied to the skin to obtain, usually, a local effect. Medicated plasters consist of an adhesive basis containing the active substance and spread as a uniform layer on an appropriate support made of natural or synthetic material. The adhesive layer is covered by a suitable protective liner, which is removed before applying the plaster to the skin. Medicated plasters are presented in a range of sizes or as larger sheets to be cut before use."/>
             </extension>
             <code value="10506000"/>
             <display value="Medicated plaster"/>
@@ -2752,7 +2752,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Flexible single-dose preparation intended to be applied to the unbroken skin to obtain a systemic delivery over an extended period of time. Transdermal patches consist of a backing sheet supporting a reservoir or a matrix containing the active substance(s) and on the top a pressure-sensitive adhesive, which assures the adhesion of the preparation to the&#xA;                        skin. The backing sheet is impermeable to the active substance(s) and normally impermeable to water. In reservoir systems the active substance may be dissolved or dispersed in a semi-solid basis or in a solid polymer matrix, which is separated from the skin by a rate-controlling membrane. The pressure-sensitive adhesive may, in this case, be applied to some or all parts of the&#xA;                        membrane, or only around the border of the membrane and the backing sheet. Matrix systems contain the active substance in a solid or semi-solid matrix, the properties of which control the diffusion pattern to the skin. The matrix system may also be a solution or dispersion of the active substance in the pressure-sensitive adhesive. The releasing surface of the patch is covered&#xA;                        by a protective liner to be removed before applying the patch to the skin."/>
+               <valueString value="Flexible single-dose preparation intended to be applied to the unbroken skin to obtain a systemic delivery over an extended period of time. Transdermal patches consist of a backing sheet supporting a reservoir or a matrix containing the active substance(s) and on the top a pressure-sensitive adhesive, which assures the adhesion of the preparation to the skin. The backing sheet is impermeable to the active substance(s) and normally impermeable to water. In reservoir systems the active substance may be dissolved or dispersed in a semi-solid basis or in a solid polymer matrix, which is separated from the skin by a rate-controlling membrane. The pressure-sensitive adhesive may, in this case, be applied to some or all parts of the membrane, or only around the border of the membrane and the backing sheet. Matrix systems contain the active substance in a solid or semi-solid matrix, the properties of which control the diffusion pattern to the skin. The matrix system may also be a solution or dispersion of the active substance in the pressure-sensitive adhesive. The releasing surface of the patch is covered by a protective liner to be removed before applying the patch to the skin."/>
             </extension>
             <code value="10519000"/>
             <display value="Transdermal patch"/>
@@ -3074,7 +3074,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of a cream intended for ocular use. Eye creams may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye creams may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a&#xA;                        shape that facilitates administration without contamination."/>
+               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of a cream intended for ocular use. Eye creams may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye creams may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."/>
             </extension>
             <code value="10601000"/>
             <display value="Eye cream"/>
@@ -3097,7 +3097,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of a gel intended for ocular use. Eye gels may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye gels may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape&#xA;                        that facilitates administration without contamination."/>
+               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of a gel intended for ocular use. Eye gels may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye gels may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."/>
             </extension>
             <code value="10602000"/>
             <display value="Eye gel"/>
@@ -3120,7 +3120,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of an ointment intended for ocular use. Eye ointments may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye ointments may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes&#xA;                        are of a shape that facilitates administration without contamination."/>
+               <valueString value="Semi-solid sterile single-dose or multidose preparation consisting of an ointment intended for ocular use. Eye ointments may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye ointments may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."/>
             </extension>
             <code value="10603000"/>
             <display value="Eye ointment"/>
@@ -3304,7 +3304,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid sterile preparation of suitable size and shape, designed to be inserted in the conjunctival sac to produce a local or ocular effect by the release of active substance(s) over a determined period of time. Ophthalmic inserts generally consist of a reservoir of active substance(s) embedded in a matrix or bounded by a rate-controlling membrane. They are&#xA;                        presented individually in sterile containers."/>
+               <valueString value="Solid sterile preparation of suitable size and shape, designed to be inserted in the conjunctival sac to produce a local or ocular effect by the release of active substance(s) over a determined period of time. Ophthalmic inserts generally consist of a reservoir of active substance(s) embedded in a matrix or bounded by a rate-controlling membrane. They are presented individually in sterile containers."/>
             </extension>
             <code value="10612000"/>
             <display value="Ophthalmic insert"/>
@@ -3419,7 +3419,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose preparation consisting of an aqueous or oily solution intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be&#xA;                        administered as a small volume."/>
+               <valueString value="Liquid single-dose or multidose preparation consisting of an aqueous or oily solution intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."/>
             </extension>
             <code value="10704000"/>
             <display value="Ear drops, solution"/>
@@ -3442,7 +3442,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose preparation consisting of an aqueous or oily suspension intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be&#xA;                        administered as a small volume."/>
+               <valueString value="Liquid single-dose or multidose preparation consisting of an aqueous or oily suspension intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."/>
             </extension>
             <code value="10705000"/>
             <display value="Ear drops, suspension"/>
@@ -3465,7 +3465,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose preparation consisting of an emulsion intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small&#xA;                        volume."/>
+               <valueString value="Liquid single-dose or multidose preparation consisting of an emulsion intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."/>
             </extension>
             <code value="10706000"/>
             <display value="Ear drops, emulsion"/>
@@ -5397,7 +5397,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid sterile preparation of a size and shape suitable for implantation. It may be prepared by moulding or other means other than compression. Each implant is presented in a sterile container that may be provided with an administration device. Implants are intended for release over an extended period of time in order to obtain local or systemic effect.&#xA;                        'Implantation tablet', 'Implantation chain' and 'Implantation matrix' are excluded."/>
+               <valueString value="Solid sterile preparation of a size and shape suitable for implantation. It may be prepared by moulding or other means other than compression. Each implant is presented in a sterile container that may be provided with an administration device. Implants are intended for release over an extended period of time in order to obtain local or systemic effect. 'Implantation tablet', 'Implantation chain' and 'Implantation matrix' are excluded."/>
             </extension>
             <code value="11301000"/>
             <display value="Implant"/>
@@ -5420,7 +5420,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid sterile preparation prepared by compression of a solid active substance as such or of a formulation thereof into an implant of a size and shape suitable for implantation, usually subcutaneously. Each implantation tablet is presented in a sterile container. Implantation tablets are intended for release over an extended period of time in order to obtain&#xA;                        local or systemic effect."/>
+               <valueString value="Solid sterile preparation prepared by compression of a solid active substance as such or of a formulation thereof into an implant of a size and shape suitable for implantation, usually subcutaneously. Each implantation tablet is presented in a sterile container. Implantation tablets are intended for release over an extended period of time in order to obtain local or systemic effect."/>
             </extension>
             <code value="11302000"/>
             <display value="Implantation tablet"/>
@@ -5443,7 +5443,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid sterile preparation consisting of small spheres mounted on a non-degradable thread to form a chain that allows withdrawal of the remainder of the chain after a certain period of action. Each implantation chain is presented in a sterile container. The implantation chain is intended for release over an extended period of time in order to obtain local or&#xA;                        systemic effect."/>
+               <valueString value="Solid sterile preparation consisting of small spheres mounted on a non-degradable thread to form a chain that allows withdrawal of the remainder of the chain after a certain period of action. Each implantation chain is presented in a sterile container. The implantation chain is intended for release over an extended period of time in order to obtain local or systemic effect."/>
             </extension>
             <code value="11303000"/>
             <display value="Implantation chain"/>
@@ -5466,7 +5466,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid sterile preparation consisting of a usually pliable, absorbent piece of material (e.g. collagen), usually impregnated with a liquid preparation, intended for implantation in the body. The material may be cut into smaller pieces before implantation, and may be shaped around a tissue (e.g. a bone) or inserted into a medical device that is then implanted.&#xA;                        Implantation matrices are intended for release over an extended period of time, usually in order to obtain a local effect. Usually the matrix disappears with time. When the product is packaged as a separate matrix, powder and solvent (or matrix and solution), which are used to prepare the implantation matrix immediately before use, the appropriate combined term should be used"/>
+               <valueString value="Solid sterile preparation consisting of a usually pliable, absorbent piece of material (e.g. collagen), usually impregnated with a liquid preparation, intended for implantation in the body. The material may be cut into smaller pieces before implantation, and may be shaped around a tissue (e.g. a bone) or inserted into a medical device that is then implanted. Implantation matrices are intended for release over an extended period of time, usually in order to obtain a local effect. Usually the matrix disappears with time. When the product is packaged as a separate matrix, powder and solvent (or matrix and solution), which are used to prepare the implantation matrix immediately before use, the appropriate combined term should be used"/>
             </extension>
             <code value="11303300"/>
             <display value="Implantation matrix"/>
@@ -6133,7 +6133,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid sterile preparation consisting of a large-volume aqueous solution intended for irrigation of body cavities, wounds and surfaces, for example during surgical procedures. Irrigation solutions are either solutions of active substance(s), electrolytes or osmotically active substances in water for injections, or they consist of water for injections as&#xA;                        such."/>
+               <valueString value="Liquid sterile preparation consisting of a large-volume aqueous solution intended for irrigation of body cavities, wounds and surfaces, for example during surgical procedures. Irrigation solutions are either solutions of active substance(s), electrolytes or osmotically active substances in water for injections, or they consist of water for injections as such."/>
             </extension>
             <code value="12113000"/>
             <display value="Irrigation solution"/>
@@ -7191,7 +7191,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid preparation consisting of an excipient that contains no active substances itself but is intended to be used in the preparation of a pharmaceutical product, e.g. for diluting/dissolving/dispersing the item(s) containing the active substance(s). The term is intended to cover all such excipients, with the particular specifications (e.g. sterility&#xA;                        requirements) depending on the final product and its intended use."/>
+               <valueString value="Liquid preparation consisting of an excipient that contains no active substances itself but is intended to be used in the preparation of a pharmaceutical product, e.g. for diluting/dissolving/dispersing the item(s) containing the active substance(s). The term is intended to cover all such excipients, with the particular specifications (e.g. sterility requirements) depending on the final product and its intended use."/>
             </extension>
             <code value="13035000"/>
             <display value="Solvent for..."/>
@@ -7421,7 +7421,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid preparation intended for oral use, consisting of granules coated with one or more layers of mixtures of various substances that are usually applied as a solution or suspension in conditions in which evaporation of the vehicle occurs. When the coating dissolves or disintegrates any active substance is released into the gastrointestinal fluid at a rate&#xA;                        depending essentially on its intrinsic properties (conventional release)."/>
+               <valueString value="Solid preparation intended for oral use, consisting of granules coated with one or more layers of mixtures of various substances that are usually applied as a solution or suspension in conditions in which evaporation of the vehicle occurs. When the coating dissolves or disintegrates any active substance is released into the gastrointestinal fluid at a rate depending essentially on its intrinsic properties (conventional release)."/>
             </extension>
             <code value="13046000"/>
             <display value="Coated granules"/>
@@ -8525,7 +8525,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Solid preparation consisting of modified-release granules intended to be dispersed in the specified liquid to obtain a modified-release oral suspension. The generic term 'Modified-release granules for oral suspension' is used only when the more-specific terms 'Gastro-resistant granules for oral suspension' or 'Prolonged-release granules for oral suspension'&#xA;                        do not apply."/>
+               <valueString value="Solid preparation consisting of modified-release granules intended to be dispersed in the specified liquid to obtain a modified-release oral suspension. The generic term 'Modified-release granules for oral suspension' is used only when the more-specific terms 'Gastro-resistant granules for oral suspension' or 'Prolonged-release granules for oral suspension' do not apply."/>
             </extension>
             <code value="50036000"/>
             <display value="Modified-release granules for oral suspension"/>
@@ -8686,7 +8686,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid, usually multidose preparation consisting of a liquid active substance per se, intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the liquid. The measured dose may be diluted in water or another suitable liquid before&#xA;                        swallowing."/>
+               <valueString value="Liquid, usually multidose preparation consisting of a liquid active substance per se, intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the liquid. The measured dose may be diluted in water or another suitable liquid before swallowing."/>
             </extension>
             <code value="50037750"/>
             <display value="Oral drops, liquid"/>
@@ -9491,7 +9491,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Whole, live, medicinal leech, usually of the Hirudo genus (e.g. Hirudo medicinalis, Hirudo verbana), usually intended to be applied to the skin in order to restore or improve local blood flow or to provide other local effects. After attaching itself to the host, the leech creates an incision in the skin and secretes saliva containing a variety of active&#xA;                        substances (e.g. anaesthetics, anticoagulants, anti-inflammatories, vasodilators) that allow it to feed on the blood of the host."/>
+               <valueString value="Whole, live, medicinal leech, usually of the Hirudo genus (e.g. Hirudo medicinalis, Hirudo verbana), usually intended to be applied to the skin in order to restore or improve local blood flow or to provide other local effects. After attaching itself to the host, the leech creates an incision in the skin and secretes saliva containing a variety of active substances (e.g. anaesthetics, anticoagulants, anti-inflammatories, vasodilators) that allow it to feed on the blood of the host."/>
             </extension>
             <code value="13115000"/>
             <display value="Medicinal leech"/>
@@ -9560,7 +9560,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Whole, live, medicinal larvae, usually of a species of fly such as Lucilla sericata (common greenbottle fly), provided in an appropriate container such as a mesh bag, intended to be applied to a wound and covered with an appropriate dressing in order to allow debridement of necrotic tissue over a specified period of time (usually a few days). The larvae&#xA;                        secrete enzymes into the wound, liquefying the necrotic tissue, and ingest the resulting material."/>
+               <valueString value="Whole, live, medicinal larvae, usually of a species of fly such as Lucilla sericata (common greenbottle fly), provided in an appropriate container such as a mesh bag, intended to be applied to a wound and covered with an appropriate dressing in order to allow debridement of necrotic tissue over a specified period of time (usually a few days). The larvae secrete enzymes into the wound, liquefying the necrotic tissue, and ingest the resulting material."/>
             </extension>
             <code value="13124000"/>
             <display value="Medicinal larvae"/>
@@ -9675,7 +9675,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose, delayed-release preparation consisting of a suspension intended for oral use. The preparation is intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5&#xA;                        mL or multiples thereof."/>
+               <valueString value="Liquid single-dose or multidose, delayed-release preparation consisting of a suspension intended for oral use. The preparation is intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."/>
             </extension>
             <code value="13133000"/>
             <display value="Gastro-resistant oral suspension"/>
@@ -9698,7 +9698,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a slower release of the active substance(s) than that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Each dose from a multidose container is administered by&#xA;                        means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."/>
+               <valueString value="Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a slower release of the active substance(s) than that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."/>
             </extension>
             <code value="13134000"/>
             <display value="Prolonged-release oral suspension"/>
@@ -9721,7 +9721,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a rate, a place and/or a time of release of the active substance(s) that is different from that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. The generic term&#xA;                        'Modified-release oral suspension' is used only when the more-specific terms 'Gastro-resistant oral suspension' or 'Prolonged-release oral suspension' do not apply. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."/>
+               <valueString value="Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a rate, a place and/or a time of release of the active substance(s) that is different from that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. The generic term 'Modified-release oral suspension' is used only when the more-specific terms 'Gastro-resistant oral suspension' or 'Prolonged-release oral suspension' do not apply. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."/>
             </extension>
             <code value="13135000"/>
             <display value="Modified-release oral suspension"/>
