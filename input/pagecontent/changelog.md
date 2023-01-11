@@ -3,7 +3,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### v3.1.0 (2023)
 
-#### Added / Updated
+#### Added
+* [#176](https://github.com/hl7ch/ch-emed/issues/176): Adding extensions to LIST entries for referencing the parent document.
 * [#177](https://github.com/hl7ch/ch-emed/issues/177): Adding an annotation section in the [Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html), analogous to the other documents.
 
 #### Changed / Updated
