@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="MedReq-ChangeMedication"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+  </meta>
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <code>
+        <coding>
+          <system value="urn:oid:2.51.1.1"/>
+          <code value="7680588620079"/>
+          <display value="AMLODIPIN Spirig HC Tabl 10 mg"/>
+        </coding>
+        <text value="AMLODIPIN Spirig HC Tabl 10 mg"/>
+      </code>
+      <form>
+        <coding>
+          <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+          <code value="10219000"/>
+          <display value="Tablet"/>
+        </coding>
+      </form>
+      <amount>
+        <numerator>
+          <value value="30"/>
+          <unit value="Tablet (unit of presentation)"/>
+          <system value="http://snomed.info/sct"/>
+          <code value="732936001"/>
+        </numerator>
+        <denominator>
+          <value value="1"/>
+          <unit value="Package"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{Package}"/>
+        </denominator>
+      </amount>
+      <ingredient>
+        <itemCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="386864001"/>
+            <display value="Amlodipine (substance)"/>
+          </coding>
+          <text value="Amlodipine"/>
+        </itemCodeableConcept>
+        <strength>
+          <numerator>
+            <value value="10"/>
+            <unit value="milligram"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </numerator>
+          <denominator>
+            <value value="1"/>
+            <unit value="Tablet (unit of presentation)"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="732936001"/>
+          </denominator>
+        </strength>
+      </ingredient>
+    </Medication>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:9e5045e3-03a7-4885-a8e1-f3dc056af465"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationReference>
+    <reference value="#med"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/MonikaWegmueller"/>
+  </subject>
+  <reasonCode>
+    <text value="-"/>
+  </reasonCode>
+  <dosageInstruction>
+    <patientInstruction value="-"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2012-02-04"/>
+        </boundsPeriod>
+        <when value="MORN"/>
+        <when value="EVE"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="Tablet (unit of presentation)"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="732936001"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2012-02-04"/>
+      <end value="2012-05-03"/>
+    </validityPeriod>
+  </dispenseRequest>
+  <!-- substitution just as test case -->
+  <substitution>
+    <allowedCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+        <code value="E"/>
+        <display value="equivalent"/>
+      </coding>
+    </allowedCodeableConcept>
+  </substitution>
+</MedicationRequest>
