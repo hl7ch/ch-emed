@@ -26,10 +26,9 @@ A Pharmaceutical Advice document contains one Observation. The Observation refer
 
 #### Modifying an existing medication
 * [CHANGE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
-   * The planning of the medication has changed, e.g. the dosage. The Observation refers the original Medication Treatment Plan document and a new MedicationStatement with the changed information.
+   * The planning of the medication has changed, e.g. the dosage. The Observation ([example](Observation-PharmaceuticalAdvice-ChangeDosage.html)) refers the original Medication Treatment Plan document and a new MedicationStatement ([example](MedicationStatement-MedStatTriatec-ChangeDosage.html)) with the changed information.
       * [Example](Bundle-PharmaceuticalAdvice-ChangeDosage.html) with dosage change: 1 tablet in the morning instead of 0.5 tablet (as decided in use case step 1-1) 
-   * Prescription can be dispensed after indicated change. The Observation refers the original Medication Prescription document and a new MedicationRequest with the changed information.
-   * Any information of the dispense has changed **except medication**, e.g. patient instruction. The Observation refers the original Medication Dispense document and a new MedicationDispense with the changed information and the same Medication.
+   * Prescription can be dispensed after indicated change. The Observation ([example](Observation-PharmaceuticalAdvice-ChangeMedicament.html)) refers the original Medication Prescription document and a new MedicationRequest ([example](MedicationRequest-MedReq-ChangeMedication.html)) with the changed information.
 * [REFUSE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
    * This medication should not be taken/prescribed/dispensed. The Observation refers the original Medication Treatment Plan document and includes the refuse as annotation.
    * The prescription (provisional, not yet confirmed or confirmed) should not have been already dispensed, even partially. The Observation refers the original Medication Prescription document and includes the refuse as annotation.
