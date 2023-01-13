@@ -1,12 +1,9 @@
-<!--According to CH EMED issue #33 (https://github.com/hl7ch/ch-emed/issues/33)
-    https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV.pdf
-        6.3.4.3.3.12 Changed Medication Treatment Plan Item (page 39)
-
-    Additional use case to show how the dosage can be changed:
-    Initial situation:  1-1 Medication Treatment Plan document (http://build.fhir.org/ig/hl7ch/ch-emed/branches/master/Bundle-1-1-MedicationTreatmentPlan.html)
-                        Triatec:     0.5-0-0-0
-    Dosage change:      PharmaceuticalAdvice-ChangeDosage
-                        Triatec:     1-0-0-0
+<!--
+Additional use case to show how the dosage can be changed:
+Initial situation:  1-1 Medication Treatment Plan document
+                    Triatec:     0.5-0-0-0
+Dosage change:      PharmaceuticalAdvice-ChangeDosage
+                    Triatec:     1-0-0-0
 -->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="PharmaceuticalAdvice-ChangeDosage"/>
@@ -257,7 +254,7 @@
                     </extension>
                 </extension>
                 <!-- Reference to new MedicationStatement with changed dosage of 1-0-0-0 -->
-                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry">
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed">
                     <valueReference>
                         <reference value="MedicationStatement/MedStatTriatec-ChangeDosage"/>
                     </valueReference>
