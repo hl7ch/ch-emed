@@ -4,7 +4,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### v3.1.0 (2023)
 
 #### Changed / Updated
-* [#175](https://github.com/hl7ch/ch-emed/issues/175): 
+* [#175](https://github.com/hl7ch/ch-emed/issues/175): Update Observation (PADV) for 'CHANGE'
+   * Introducing the [Extension MedicationRequest Changed](StructureDefinition-ch-emed-ext-medicationrequest-changed.html) to the [Observation (PADV)](StructureDefinition-ch-emed-observation.html) to represent the changes in the context of a prescription.
+   * Removal of the textually described [use case of a PADV](pharmaceutical-advice-document.html#modifying-an-existing-medication) 'CHANGE' in the context of a dispense.
 
 ### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues
