@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'
+* [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a [ValueSet](ValueSet-ActSubstanceAdminSubstitutionCode.html) excluding 'none' to prevent contradictions. 
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections

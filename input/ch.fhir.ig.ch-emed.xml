@@ -332,6 +332,22 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasNotSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was not substituted"/>
+         <description value="Example for MedicationDispense (DIS): was not substituted"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was substituted"/>
+         <description value="Example for MedicationDispense (DIS): was substituted"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationRequest/2-6-MedReqNorvasc"/>
          </reference>
          <name value="2-6 Medication Request with Medication Norvasc"/>
@@ -714,6 +730,12 @@
       <resource>
          <reference>
             <reference value="ValueSet/UnitCode"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/ActSubstanceAdminSubstitutionCode"/>
          </reference>
          <exampleBoolean value="false"/>
       </resource>

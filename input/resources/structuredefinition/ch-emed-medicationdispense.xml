@@ -171,13 +171,23 @@
  
       <element id="MedicationDispense.substitution">
          <path value="MedicationDispense.substitution"/>
+         <constraint>
+            <key value="ch-emed-dis-1"/>
+            <severity value="error"/>
+            <human value="If a substitution was performed, define the type. If a substitution was not performed, no type expected."/>
+            <expression value="(wasSubstituted = true and type.exists()) or (wasSubstituted = false and type.exists().not())"/>
+         </constraint>
+      </element>
+      <element id="MedicationDispense.substitution.wasSubstituted">
+         <path value="MedicationDispense.substitution.wasSubstituted"/>
+         <short value="Whether a substitution was (true) or was not (false) performed on the dispense"/>
       </element>
       <element id="MedicationDispense.substitution.type">
          <path value="MedicationDispense.substitution.type"/>
-         <min value="1"/>
+         <short value="If 'wasSubstituted = true', define the type. If 'wasSubstituted = false', no type expected."/>
          <binding>
-            <strength value="preferred"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
+            <strength value="required"/>
+            <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActSubstanceAdminSubstitutionCode"/>
          </binding>
       </element>
    </differential>
