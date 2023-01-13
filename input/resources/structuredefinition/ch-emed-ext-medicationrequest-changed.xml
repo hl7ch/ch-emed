@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-emed-ext-changedentry"/>
-    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry"/>
+    <id value="ch-emed-ext-medicationrequest-changed"/>
+    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationrequest-changed"/>
     <version value="0.2.0"/>
-    <name value="CHEMEDExtChangedEntry"/>
-    <title value="CH EMED Extension Changed Entry"/>
+    <name value="CHEMEDExtMedicationRequestChanged"/>
+    <title value="CH EMED Extension MedicationRequest Changed"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="Extension to represent the changed entry in a PADV if the Observation code is 'CHANGE' (MedicationStatement/MedicationRequest/MedicationDispense)"/>
+    <description value="Extension to represent the changed MedicationRequest"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -32,18 +32,16 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-changedentry"/>
+            <fixedUri value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationrequest-changed"/>
         </element>
         <element id="Extension.valueReference">
             <path value="Extension.valueReference"/>
-            <short value="The changed entry"/>
+            <short value="The changed MedicationRequest"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
                 <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
-                <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
             </type>
         </element>
     </differential>

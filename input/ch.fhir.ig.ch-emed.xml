@@ -340,6 +340,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationRequest/MedReq-ChangeMedication"/>
+         </reference>
+         <name value="2-6 Medication Request with Medication Norvasc"/>
+         <description value="Example for MedicationRequest - Referenced from Observation: PADV 'CHANGE'"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationStatement/1-1-MedStatTriatec"/>
          </reference>
          <name value="1-1 Medication Statement with Medication Triatec"/>
@@ -404,10 +412,34 @@
       </resource>
       <resource>
          <reference>
+            <reference value="MedicationStatement/MedStatTriatec-ChangeDosage"/>
+         </reference>
+         <name value="Medication Statement with changed dosage"/>
+         <description value="Example for MedicationStatment - Referenced from Observation: PADV 'CHANGE'"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="Observation/2-2-PharmaceuticalAdvice"/>
          </reference>
          <name value="2-2 Observation for Pharmaceutical Advice document"/>
          <description value="Example for Observation (PADV)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/PharmaceuticalAdvice-ChangeDosage"/>
+         </reference>
+         <name value="Observation for Pharmaceutical Advice document"/>
+         <description value="Example for Observation (PADV): CHANGE with new MedicationStatement"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/PharmaceuticalAdvice-ChangeMedicament"/>
+         </reference>
+         <name value="Observation for Pharmaceutical Advice document"/>
+         <description value="Example for Observation (PADV): CHANGE with new MedicationRequest"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
       </resource>
       <resource>
@@ -597,7 +629,12 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/ch-emed-ext-changedentry"/>
+            <reference value="StructureDefinition/ch-emed-ext-medicationstatement-changed"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-ext-medicationrequest-changed"/>
          </reference>
       </resource>
       <resource>
