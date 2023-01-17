@@ -174,8 +174,8 @@
          <constraint>
             <key value="ch-emed-dis-1"/>
             <severity value="error"/>
-            <human value="If a substitution was performed, define the type. If a substitution was not performed, no type expected."/>
-            <expression value="(wasSubstituted = true and type.exists()) or (wasSubstituted = false and type.exists().not())"/>
+            <human value="If no substitution was performed, no type is expected."/>
+            <expression value="wasSubstituted = true or (wasSubstituted = false and type.exists().not())"/>
          </constraint>
       </element>
       <element id="MedicationDispense.substitution.wasSubstituted">
@@ -184,7 +184,7 @@
       </element>
       <element id="MedicationDispense.substitution.type">
          <path value="MedicationDispense.substitution.type"/>
-         <short value="If 'wasSubstituted = true', define the type. If 'wasSubstituted = false', no type expected."/>
+         <short value="If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."/>
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ActSubstanceAdminSubstitutionCode"/>
