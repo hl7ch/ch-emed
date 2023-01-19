@@ -8,10 +8,11 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#177](https://github.com/hl7ch/ch-emed/issues/177): Adding an annotation section in the [Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html), analogous to the other documents.
 
 #### Changed / Updated
-* [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'
+* [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'.
+* [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
 
 #### Fixed
-* [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections
+* [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
 
 
 ### STU 3 - v3.0.0 (2022-12-21)

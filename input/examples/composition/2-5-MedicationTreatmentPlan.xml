@@ -34,6 +34,9 @@
   <author>
     <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
   </author>
+  <author>
+    <reference value="Device/Device"/>
+  </author>
   <title value="Therapieentscheid Medikation"/>
   <confidentiality value="N">
     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
