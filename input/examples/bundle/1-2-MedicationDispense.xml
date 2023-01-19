@@ -32,7 +32,7 @@
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="60593-1"/>
-                        <display value="Medication dispensed.extended"/>
+                        <display value="Medication dispensed.extended Document"/>
                     </coding>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -54,7 +54,7 @@
                             <coding>
                                 <system value="http://snomed.info/sct"/>
                                 <code value="17621005"/>
-                                <display value="Normally accessible"/>
+                                <display value="Normal (qualifier value)"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -68,7 +68,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="60590-7"/>
-                            <display value="Medication dispensed.brief"/>
+                            <display value="Medication dispensed.brief Document"/>
                         </coding>
                     </code>
                     <text>
