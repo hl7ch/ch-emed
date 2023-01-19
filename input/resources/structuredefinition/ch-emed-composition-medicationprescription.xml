@@ -39,7 +39,6 @@
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
-         <short value="Medicinal prescription record"/>
          <patternCodeableConcept>
             <coding>
                <system value="http://snomed.info/sct"/>
@@ -147,7 +146,6 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="55108-5"/>
-               <display value="Clinical presentation"/>
             </coding>
          </patternCodeableConcept>
       </element>
@@ -189,7 +187,6 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="57828-6"/>
-               <display value="PRESCRIPTIONS"/>
             </coding>
          </patternCodeableConcept>
       </element>
@@ -256,7 +253,6 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="48767-8"/>
-               <display value="Annotation comment"/>
             </coding>
          </patternCodeableConcept>
       </element>
