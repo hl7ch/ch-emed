@@ -50,11 +50,6 @@
          <min value="1"/>
          <max value="1"/>
       </element>
-      <element id="Medication.code.coding:GTIN.display">
-         <path value="Medication.code.coding.display"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
       <element id="Medication.code.text">
          <path value="Medication.code.text"/>
          <short value="Medication name"/>
@@ -80,10 +75,6 @@
       </element>
       <element id="Medication.form.coding.code">
          <path value="Medication.form.coding.code"/>
-         <min value="1"/>
-      </element>
-      <element id="Medication.form.coding.display">
-         <path value="Medication.form.coding.display"/>
          <min value="1"/>
       </element>
       <element id="Medication.amount">

@@ -92,10 +92,6 @@
          <path value="Dosage.route.coding.code"/>
          <min value="1"/>
       </element>
-      <element id="Dosage.route.coding.display">
-         <path value="Dosage.route.coding.display"/>
-         <min value="1"/>
-      </element>
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
          <short value="Amount of medication administered"/>
