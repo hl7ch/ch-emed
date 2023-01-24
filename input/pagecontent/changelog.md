@@ -11,10 +11,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'.
 * [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a [ValueSet](ValueSet-ActSubstanceAdminSubstitutionCode.html) excluding 'none' to prevent contradictions. 
 * [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
+* [#149](https://github.com/hl7ch/ch-emed/issues/149): Add ATC-slice for Medication.code
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
-
 
 ### STU 3 - v3.0.0 (2022-12-21)
 #### Open Issues
