@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="edqm-standardterms"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20210601180330"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20210601180330"/>
    </meta>
    <url value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
    <version value="2021-06-01T18:03:30"/>

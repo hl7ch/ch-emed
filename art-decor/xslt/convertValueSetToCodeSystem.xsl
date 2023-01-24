@@ -56,6 +56,9 @@
       </fhir:name>   
     </xsl:template> 
 
+    <xsl:template match="fhir:ValueSet/fhir:identifier">
+    </xsl:template>
+
     <xsl:template match="fhir:ValueSet/fhir:title">
       <fhir:title>
    			<xsl:attribute name="value"><xsl:value-of select="$title" /></xsl:attribute>

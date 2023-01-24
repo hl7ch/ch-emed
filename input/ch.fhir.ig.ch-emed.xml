@@ -192,7 +192,7 @@
             <reference value="Composition/2-5-MedicationTreatmentPlan"/>
          </reference>
          <name value="2-5 Composition for Medication Treatment Plan document"/>
-         <description value="Example for Composition"/>
+         <description value="Example for Composition with a person and a device as authors"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
