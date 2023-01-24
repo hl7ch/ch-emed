@@ -39,7 +39,6 @@
       </element>
       <element id="Composition.type">
          <path value="Composition.type"/>
-         <short value="Record artifact"/>
          <patternCodeableConcept>
             <coding>
                <system value="http://snomed.info/sct"/>
@@ -175,7 +174,6 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="61357-0"/>
-               <display value="Medication pharmaceutical advice.brief"/>
             </coding>
          </patternCodeableConcept>
       </element>
@@ -242,7 +240,6 @@
             <coding>
                <system value="http://loinc.org"/>
                <code value="48767-8"/>
-               <display value="Annotation comment"/>
             </coding>
          </patternCodeableConcept>
       </element>

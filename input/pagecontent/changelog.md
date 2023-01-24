@@ -8,6 +8,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#177](https://github.com/hl7ch/ch-emed/issues/177): Adding an annotation section in the [Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html), analogous to the other documents.
 
 #### Changed / Updated
+* [#194](https://github.com/hl7ch/ch-emed/issues/179): Remove display values from patternCodeableConcepts, remove minimum cardinality = 1 for display values, using official display values in examples (valid with http://tx.fhir.org/r4).
 * [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'.
 * [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a [ValueSet](ValueSet-ActSubstanceAdminSubstitutionCode.html) excluding 'none' to prevent contradictions. 
 * [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
