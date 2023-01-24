@@ -2,13 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="edqm-pharmaceuticaldoseform"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20210601180330"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.3--20210601180330"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2021-06-01T18:03:30+02:00"/>
+         <start value="2021-06-01T18:03:30+01:00"/>
       </valuePeriod>
    </extension>
    <url

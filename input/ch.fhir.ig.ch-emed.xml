@@ -192,7 +192,7 @@
             <reference value="Composition/2-5-MedicationTreatmentPlan"/>
          </reference>
          <name value="2-5 Composition for Medication Treatment Plan document"/>
-         <description value="Example for Composition"/>
+         <description value="Example for Composition with a person and a device as authors"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
@@ -308,6 +308,14 @@
       </resource>
       <resource>
          <reference>
+            <reference value="Medication/MedicationWithATC"/>
+         </reference>
+         <name value="Medication with ATC"/>
+         <description value="Example for Non-Swiss Medication with ATC code"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+      </resource>
+      <resource>
+         <reference>
             <reference value="MedicationDispense/1-2-MedDispTriatec"/>
          </reference>
          <name value="1-2 Medication Dispense with Medication Triatec"/>
@@ -328,6 +336,22 @@
          </reference>
          <name value="1-2 Medication Dispense with Medication Beloc Zok"/>
          <description value="Example for MedicationDispense (DIS)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasNotSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was not substituted"/>
+         <description value="Example for MedicationDispense (DIS): was not substituted"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was substituted"/>
+         <description value="Example for MedicationDispense (DIS): was substituted"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
       <resource>
@@ -714,6 +738,12 @@
       <resource>
          <reference>
             <reference value="ValueSet/UnitCode"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/ActSubstanceAdminSubstitutionCode"/>
          </reference>
          <exampleBoolean value="false"/>
       </resource>

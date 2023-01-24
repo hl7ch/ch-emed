@@ -2,13 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="edqm-routeofadministration"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.2--20220608154214"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.2--20220608154214"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-06-08T15:42:14+02:00"/>
+         <start value="2022-06-08T15:42:14+01:00"/>
       </valuePeriod>
    </extension>
    <url
