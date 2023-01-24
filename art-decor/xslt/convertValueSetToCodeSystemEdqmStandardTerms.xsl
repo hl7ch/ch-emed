@@ -57,6 +57,9 @@
       <fhir:name value="EdqmStandardTerms" />
     </xsl:template>
 
+    <xsl:template match="fhir:ValueSet/fhir:identifier">
+    </xsl:template>
+    
     <!-- <title value="Pharmaceutical Dose Form (EDQM)"/> -->
     <xsl:template match="fhir:ValueSet/fhir:title">
       <fhir:title value="EDQM - Standard Terms" />
