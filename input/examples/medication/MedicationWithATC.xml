@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="MedicationWithATC"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+    </meta>
+    <code>
+        <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="N02CC02"/>
+            <display value="naratriptan"/>
+        </coding>
+        <text value="NaraDex 2,5 mg Filmtabletten"/>
+    </code>
+    <form>
+        <coding>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10221000"/>
+            <display value="Film-coated tablet"/>
+        </coding>
+    </form>
+    <amount>
+        <numerator>
+            <value value="2"/>
+            <unit value="Tablet (unit of presentation)"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="732936001"/>
+        </numerator>
+        <denominator>
+            <value value="1"/>
+            <unit value="Package"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{Package}"/>
+        </denominator>
+    </amount>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="363571003"/>
+                <display value="Naratriptan"/>
+            </coding>
+            <text value="Naratriptan"/>
+        </itemCodeableConcept>
+        <strength>
+            <numerator>
+                <value value="2.5"/>
+                <unit value="milligram"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
+            </numerator>
+            <denominator>
+                <value value="1"/>
+                <unit value="Tablet (unit of presentation)"/>
+                <system value="http://snomed.info/sct"/>
+                <code value="732936001"/>
+            </denominator>
+        </strength>
+    </ingredient>
+</Medication>

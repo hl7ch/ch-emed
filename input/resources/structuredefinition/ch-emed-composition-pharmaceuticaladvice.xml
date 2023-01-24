@@ -54,17 +54,43 @@
          <path value="Composition.date"/>
          <short value="The document's creation date and time"/>
       </element>
+
+      <!-- Author: Who and/or what authored the composition -->
       <element id="Composition.author">
          <path value="Composition.author"/>
+         <slicing>
+            <discriminator>
+               <type value="profile" />
+               <path value="resolve()" />
+            </discriminator>
+            <rules value="closed" />
+         </slicing>
+      </element>
+      <!-- Author - slice person -->
+      <element id="Composition.author:person">
+         <path value="Composition.author"/>
+         <sliceName value="person"/>
          <short value="The author of the document (person)"/>
+         <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
-            <!--<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>-->
             <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
          </type>
       </element>
+      <!-- Author - slice device -->
+      <element id="Composition.author:device">
+         <path value="Composition.author"/>
+         <sliceName value="device"/>
+         <short value="The device that created the document"/>
+         <min value="0"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+         </type>
+      </element>
+      
       <element id="Composition.title">
          <path value="Composition.title"/>
          <short value="'Kommentar zur Medikation' in german or 'Commentaire relatif à la médication' in french or 'Commento sulla terapia farmacologica' in italian or 'Pharmaceutical Advice' in english
