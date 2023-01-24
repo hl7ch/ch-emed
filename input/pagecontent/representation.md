@@ -23,7 +23,7 @@ Option 4: Instead of creating a separate section just add the extension to the t
             <coding>
               <system value="http://loinc.org"/>
               <code value="55108-5"/>
-              <display value="Clinical presentation"/>
+              <display value="Clinical presentation Document"/>
             </coding>
           </code>
           <text>
@@ -43,7 +43,7 @@ CDA:
 ```xml
        <section>
           <templateId root="2.16.756.5.30.1.1.10.3.45"/>
-          <code code="55108-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical presentation"/>
+          <code code="55108-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical presentation Document"/>
           <title>Original representation</title>
           <text>
             Representation of the original view:

@@ -43,7 +43,7 @@ In this case, the author of the document and the author of the medical decision 
 * For each entry:
    * **Author medical decision**
       * MTP: MedicationStatement.informationSource (*Dr. med. Familien Hausarzt*)
-      * PRE: MedicationRequest.performer
+      * PRE: MedicationRequest.requester
       * DIS: MedicationDispense.performer.actor
       * PADV: Observation.performer (*Dr. med. Sandra Meier*)
    * **Author original document** (if different from the author of the medical decision)
@@ -59,7 +59,7 @@ In this case, the author of the document and the author of the medical decision 
 | --- | --- | --- |
 | Document (Composition.author) | Author document (person or device) | Author document (device, which dynamically generates the document) |
 | Section (Composition.section.author) | x | x |
-| Entries: Author medical decision | MedicationStatement.informationSource* (person) | MedicationStatement.informationSource (person), <br>MedicationRequest.performer (person), <br>MedicationDispense.performer.actor (person), <br>Observation.performer (person) |
+| Entries: Author medical decision | MedicationStatement.informationSource* (person) | MedicationStatement.informationSource (person), <br>MedicationRequest.requester (person), <br>MedicationDispense.performer.actor (person), <br>Observation.performer (person) |
 | Entries: Author original document (if different from the author of the medical decision) | MedicationStatement.extension:authorDocument* (person) | MedicationStatement.extension:authorDocument (person), <br>MedicationRequest.extension:authorDocument (person), <br>MedicationDispense.extension:authorDocument (person), <br>Observation.extension:authorDocument (person) |   
 
 _*: The CARD is an aggregation of all medications, respectively all documents, which may have had different authors. The "last author" (author of the last input for this treatment) is indicated in each case._

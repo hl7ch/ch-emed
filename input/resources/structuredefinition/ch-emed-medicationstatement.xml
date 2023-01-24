@@ -19,9 +19,7 @@
       </element>
       <element id="MedicationStatement.contained">
          <path value="MedicationStatement.contained"/>
-         <short value="Medication inline resource"/>
          <min value="1"/>
-         <max value="1"/>
       </element>
 
       <element id="MedicationStatement.extension">
@@ -72,6 +70,7 @@
          <type>
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
+            <aggregation value="contained"/>
          </type>
       </element>
       <element id="MedicationStatement.subject">

@@ -2,13 +2,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="UnitCode"/>
    <meta>
-      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.83--20220608150046"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.83--20220608150046"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-06-08T15:00:46+02:00"/>
+         <start value="2022-06-08T15:00:46+01:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -35,6 +35,1017 @@
    <immutable value="false"/>
    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
    <compose>
+      <include>
+         <system value="http://unitsofmeasure.org"/>
+         <concept>
+            <code value="%"/>
+            <display value="percent"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="%"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="%"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="%"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="%"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="%"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="Bq"/>
+            <display value="Becquerel"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Bq"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Bq"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Bq"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Bq"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Bq"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="kBq"/>
+            <display value="kiloBecquerel"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="kBq"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="kBq"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="kBq"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="kBq"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="kBq"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="MBq"/>
+            <display value="megaBecquerel"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="MBq"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="MBq"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="MBq"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="MBq"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="MBq"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="GBq"/>
+            <display value="gigaBecquerel"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="GBq"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="GBq"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="GBq"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="GBq"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="GBq"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="ng"/>
+            <display value="nanogram"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="ng"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="ng"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="ng"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="ng"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="ng"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="ug"/>
+            <display value="microgram"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="µg"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="µg"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="µg"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="µg"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="µg"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mg"/>
+            <display value="milligram"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mg"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mg"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mg"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="mg"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="mg"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="g"/>
+            <display value="gram"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="g"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="g"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="g"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="g"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="g"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="kg"/>
+            <display value="kilogram"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="kg"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="kg"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="kg"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="kg"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="kg"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="kcal"/>
+            <display value="kilocalorie"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="kcal"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="kcal"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="kcal"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="kcal"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="kcal"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="kJ"/>
+            <display value="kilojoule"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="kJ"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="kJ"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="kJ"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="kJ"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="kJ"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="meq"/>
+            <display value="milliequivalent"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="meq"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mEq"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mEq"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="meq"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="meq"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="umol"/>
+            <display value="micromole"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="µmol"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="µmol"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="µmol"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="µmol"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="µmol"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mmol"/>
+            <display value="millimole"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mmol"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mmol"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mmol"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="mmol"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="mmol"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mol"/>
+            <display value="mole"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mol"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mol"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mol"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="mol"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="mol"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="nL"/>
+            <display value="nanoliter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="nl"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="nl"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="nl"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="nl"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="nl"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="uL"/>
+            <display value="microliter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="µl"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="µl"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="µl"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="µl"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="µl"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mL"/>
+            <display value="milliliter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="ml"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="ml"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="ml"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="ml"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="ml"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="L"/>
+            <display value="liter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="lt"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="lt"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="l"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="lt"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="lt"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mm2"/>
+            <display value="square millimeter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mm2"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mm2"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mm2"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="mm2"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="mm2"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="cm"/>
+            <display value="centimeter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="cm"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="cm"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="cm"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="cm"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="cm"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="cm2"/>
+            <display value="square centimeter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="cm2"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="cm2"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="cm2"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="cm2"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="cm2"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="cm3"/>
+            <display value="cubic centimeter"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="cm3"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="cm3"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="cm3"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="cm3"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="cm3"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="s"/>
+            <display value="Second"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="sec"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="sec"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="sec"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="sec"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="sec"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="min"/>
+            <display value="Minute"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="min"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="min"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="min"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="min"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="min"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="h"/>
+            <display value="Hour"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="h"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="h"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="h"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="h"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="h"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="d"/>
+            <display value="Day"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="d"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="d"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="d"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="d"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="d"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="a"/>
+            <display value="Year"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="a"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="a"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="a"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="a"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="a"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="mo"/>
+            <display value="Month"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mo"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="mo"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="mo"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="mo"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="{Dose}"/>
+            <display value="Dose"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Dos"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="dose"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="dose"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Dos"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dose"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="[tbs_m]"/>
+            <display value="tablespoon - metric"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Esslöffel"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="c. à soupe"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="cucchiaio da minestra"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Esslöffel"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="tablespoon - metric"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="10*6.{Unit}"/>
+            <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="MioU"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="10*6.[iU]"/>
+            <display value="MillionInternationalUnit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="MioUI"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="MioUI"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="MioUI"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="MioUI"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="MillionInternationalUnit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="[ppm]"/>
+            <display value="Parts Per Million"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="ppm"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="ppm"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="ppm"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="ppm"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="ppm"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="{Package}"/>
+            <display value="Package"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Packung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="emballage"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="confezione"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Packung"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Package"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="{Piece}"/>
+            <display value="Piece"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Stk"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="pce"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="pz"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Stk"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Piece(s)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="[tsp_m]"/>
+            <display value="teaspoon - metric"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Teelöffel"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="c. à café"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="cucchiaino da caffè"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Teelöffel"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="teaspoon - metric"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="10*3.{Unit}"/>
+            <display value="Thousand Per * Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Tausend Einheiten"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="millier d'unités"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mille per unità *"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Tausend Einheiten"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Thousand Per * Unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="{Unit}"/>
+            <display value="Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Einheit"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="unité(s)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="unità"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Einheit"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="[iU]"/>
+            <display value="international unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Internationale Einheit"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="unité(s) internationale(s)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="unità internazionale(i)"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Internationale Einheit"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="international unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="[CFU]"/>
+            <display value="Colony Forming Units"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="CFU"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="CFU"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="CFU"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="CFU"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="CFU"/>
+            </designation>
+         </concept>
+      </include>
       <include>
          <system value="http://snomed.info/sct"/>
          <concept>
@@ -1215,1017 +2226,6 @@
             <designation>
                <language value="en-US"/>
                <value value="Vial"/>
-            </designation>
-         </concept>
-      </include>
-      <include>
-         <system value="http://unitsofmeasure.org"/>
-         <concept>
-            <code value="%"/>
-            <display value="percent"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="%"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="%"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="%"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="%"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="%"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="Bq"/>
-            <display value="Becquerel"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Bq"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="Bq"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="Bq"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Bq"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Bq"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="kBq"/>
-            <display value="kiloBecquerel"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="kBq"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="kBq"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="kBq"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="kBq"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="kBq"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="MBq"/>
-            <display value="megaBecquerel"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="MBq"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="MBq"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="MBq"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="MBq"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="MBq"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="GBq"/>
-            <display value="gigaBecquerel"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="GBq"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="GBq"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="GBq"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="GBq"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="GBq"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="ng"/>
-            <display value="nanogram"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="ng"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="ng"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="ng"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="ng"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="ng"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="ug"/>
-            <display value="microgram"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="µg"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="µg"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="µg"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="µg"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="µg"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mg"/>
-            <display value="milligram"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="mg"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mg"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mg"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="mg"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="mg"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="g"/>
-            <display value="gram"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="g"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="g"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="g"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="g"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="g"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="kg"/>
-            <display value="kilogram"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="kg"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="kg"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="kg"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="kg"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="kg"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="kcal"/>
-            <display value="kilocalorie"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="kcal"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="kcal"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="kcal"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="kcal"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="kcal"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="kJ"/>
-            <display value="kilojoule"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="kJ"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="kJ"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="kJ"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="kJ"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="kJ"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="meq"/>
-            <display value="milliequivalent"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="meq"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mEq"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mEq"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="meq"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="meq"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="umol"/>
-            <display value="micromole"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="µmol"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="µmol"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="µmol"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="µmol"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="µmol"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mmol"/>
-            <display value="millimole"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="mmol"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mmol"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mmol"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="mmol"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="mmol"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mol"/>
-            <display value="mole"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="mol"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mol"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mol"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="mol"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="mol"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="nL"/>
-            <display value="nanoliter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="nl"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="nl"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="nl"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="nl"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="nl"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="uL"/>
-            <display value="microliter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="µl"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="µl"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="µl"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="µl"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="µl"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mL"/>
-            <display value="milliliter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="ml"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="ml"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="ml"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="ml"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="ml"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="L"/>
-            <display value="liter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="lt"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="lt"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="l"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="lt"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="lt"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mm2"/>
-            <display value="square millimeter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="mm2"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mm2"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mm2"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="mm2"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="mm2"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="cm"/>
-            <display value="centimeter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="cm"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="cm"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="cm"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="cm"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="cm"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="cm2"/>
-            <display value="square centimeter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="cm2"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="cm2"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="cm2"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="cm2"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="cm2"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="cm3"/>
-            <display value="cubic centimeter"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="cm3"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="cm3"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="cm3"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="cm3"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="cm3"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="s"/>
-            <display value="Second"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="sec"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="sec"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="sec"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="sec"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="sec"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="min"/>
-            <display value="Minute"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="min"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="min"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="min"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="min"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="min"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="h"/>
-            <display value="Hour"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="h"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="h"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="h"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="h"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="h"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="d"/>
-            <display value="Day"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="d"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="d"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="d"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="d"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="d"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="a"/>
-            <display value="Year"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="a"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="a"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="a"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="a"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="a"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="mo"/>
-            <display value="Month"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="mo"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="mo"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mo"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="mo"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="mo"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="{Dose}"/>
-            <display value="Dose"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Dos"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="dose"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="dose"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Dos"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Dose"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="[tbs_m]"/>
-            <display value="tablespoon - metric"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Esslöffel"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="c. à soupe"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="cucchiaio da minestra"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Esslöffel"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="tablespoon - metric"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="10*6.{Unit}"/>
-            <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="MioU"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="10*6.[iU]"/>
-            <display value="MillionInternationalUnit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="MioUI"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="MioUI"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="MioUI"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="MioUI"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="MillionInternationalUnit"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="[ppm]"/>
-            <display value="Parts Per Million"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="ppm"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="ppm"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="ppm"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="ppm"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="ppm"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="{Package}"/>
-            <display value="Package"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Packung"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="emballage"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="confezione"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Packung"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Package"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="{Piece}"/>
-            <display value="Piece"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Stk"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="pce"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="pz"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Stk"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Piece(s)"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="[tsp_m]"/>
-            <display value="teaspoon - metric"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Teelöffel"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="c. à café"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="cucchiaino da caffè"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Teelöffel"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="teaspoon - metric"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="10*3.{Unit}"/>
-            <display value="Thousand Per * Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Tausend Einheiten"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="millier d'unités"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mille per unità *"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Tausend Einheiten"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Thousand Per * Unit"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="{Unit}"/>
-            <display value="Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Einheit"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="unité(s)"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="unità"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Einheit"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="unit"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="[iU]"/>
-            <display value="international unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Internationale Einheit"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="unité(s) internationale(s)"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="unità internazionale(i)"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Internationale Einheit"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="international unit"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="[CFU]"/>
-            <display value="Colony Forming Units"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="CFU"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="CFU"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="CFU"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="CFU"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="CFU"/>
             </designation>
          </concept>
       </include>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="ActSubstanceAdminSubstitutionCode"/>
+   <url value="http://fhir.ch/ig/ch-emed/ValueSet/ActSubstanceAdminSubstitutionCode"/>
+   <name value="ActSubstanceAdminSubstitutionCode"/>
+   <title value="ActSubstanceAdminSubstitutionCode"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <description value="ActSubstanceAdminSubstitutionCode"/>
+   <compose>
+      <include>
+         <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+         <filter>
+            <property value="concept"/>
+            <op value="is-a"/>
+            <value value="_ActSubstanceAdminSubstitutionCode"/>
+         </filter>
+      </include>
+      <exclude>
+         <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+         <concept>
+            <code value="_ActSubstanceAdminSubstitutionCode"/>
+         </concept>
+         <concept>
+            <code value="N"/>
+         </concept>
+      </exclude>
+   </compose>
+</ValueSet>
