@@ -34,10 +34,6 @@
         </fhir:source>
       </fhir:meta>
       <fhir:url value="http://fhir.ch/ig/ch-emed/CodeSystem/v3-TimingEvent"/>
-      <fhir:identifier>
-        <fhir:system value="urn:ietf:rfc:3986"/>
-        <fhir:value value="urn:oid:2.16.840.1.113883.5.139"/>
-      </fhir:identifier>
       <fhir:version value="2.0.0"/>
       <fhir:name value="TimingEvent"/>
       <fhir:title value="TimingEvent"/>

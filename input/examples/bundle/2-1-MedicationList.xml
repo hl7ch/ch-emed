@@ -357,6 +357,21 @@
                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                     <valueUrl value="#mtp.1"/>
                 </extension>
+                <!-- parent document: 1-1-MTP -->
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
@@ -473,6 +488,21 @@
                 </contained>
                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                     <valueUrl value="#dis.1"/>
+                </extension>
+                <!-- parent document: 1-2-DIS -->
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:488bd23a-20c6-11e6-b67b-9e71128cae77"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:488bd23a-20c6-11e6-b67b-9e71128cae77"/>
+                        </valueIdentifier>
+                    </extension>
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">

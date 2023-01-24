@@ -192,7 +192,7 @@
             <reference value="Composition/2-5-MedicationTreatmentPlan"/>
          </reference>
          <name value="2-5 Composition for Medication Treatment Plan document"/>
-         <description value="Example for Composition"/>
+         <description value="Example for Composition with a person and a device as authors"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan"/>
       </resource>
       <resource>
@@ -336,6 +336,22 @@
          </reference>
          <name value="1-2 Medication Dispense with Medication Beloc Zok"/>
          <description value="Example for MedicationDispense (DIS)"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasNotSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was not substituted"/>
+         <description value="Example for MedicationDispense (DIS): was not substituted"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationDispense/MedDispTriatec-WasSubstituted"/>
+         </reference>
+         <name value="Medication Dispense was substituted"/>
+         <description value="Example for MedicationDispense (DIS): was substituted"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationdispense"/>
       </resource>
       <resource>
@@ -725,6 +741,12 @@
          </reference>
          <exampleBoolean value="false"/>
       </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/ActSubstanceAdminSubstitutionCode"/>
+         </reference>
+         <exampleBoolean value="false"/>
+      </resource>
       <!-- pages -->
       <page>
          <nameUrl value="toc.html"/>
@@ -793,12 +815,12 @@
          <page>
             <nameUrl value="profiles.html"/>
             <title value="Profiles"/>
-            <generation value="html"/>
+            <generation value="markdown"/>
          </page>
          <page>
             <nameUrl value="extensions.html"/>
             <title value="Extensions"/>
-            <generation value="html"/>
+            <generation value="markdown"/>
          </page>
          <page>
             <nameUrl value="terminology.html"/>
