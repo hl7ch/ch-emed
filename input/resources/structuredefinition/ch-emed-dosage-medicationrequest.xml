@@ -16,18 +16,12 @@
       <element id="Dosage">
          <path value="Dosage"/>
          <short value="CH EMED Dosage (MedicationRequest)"/>
-      </element>
-      <element id="Dosage.timing">
-         <path value="Dosage.timing"/>
-         <min value="1"/>
-      </element>
-      <element id="Dosage.timing.repeat">
-         <path value="Dosage.timing.repeat"/>
-         <min value="1"/>
-      </element>
-      <element id="Dosage.timing.repeat.when">
-         <path value="Dosage.timing.repeat.when"/>
-          <min value="1"/>
+         <constraint>
+            <key value="ch-dosage-3"/>
+            <severity value="error"/>
+            <human value="Free text dosage instruction, timing or as needed has to be specified"/>
+            <expression value="text.exists() or timing.exists() or asNeededBoolean.exists()"/>
+         </constraint>
       </element>
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
