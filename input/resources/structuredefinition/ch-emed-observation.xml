@@ -20,7 +20,7 @@
             <key value="ch-obs-1"/>
             <severity value="error"/>
             <human value="In case of a 'CHANGE', reference shall be made to an entry containing the changes."/>
-            <expression value="code.coding.code='CHANGE' implies extension.where(url='http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed' or url='http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationrequest-changed').exists()"/>
+            <expression value="code.coding.code='CHANGE' implies extension.where(valueReference.resolve().conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement') or valueReference.resolve().conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest')).exists()"/>
          </constraint>
       </element>
       <element id="Observation.extension">
