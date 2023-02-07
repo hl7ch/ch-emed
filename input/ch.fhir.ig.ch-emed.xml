@@ -29,7 +29,7 @@
    <dependsOn id="chcore">
       <uri value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
       <packageId value="ch.fhir.ig.ch-core"/>
-      <version value="3.0.0"/>
+      <version value="current"/>
    </dependsOn>
    <definition>
       <grouping>
