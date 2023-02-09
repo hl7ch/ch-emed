@@ -366,8 +366,16 @@
          <reference>
             <reference value="MedicationRequest/MedReq-ChangeMedication"/>
          </reference>
-         <name value="2-6 Medication Request with Medication Norvasc"/>
+         <name value="Medication Request - Changed Medication"/>
          <description value="Example for MedicationRequest - Referenced from Observation: PADV 'CHANGE'"/>
+         <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="MedicationRequest/MedReq-ComplexDosage"/>
+         </reference>
+         <name value="Medication Request - Complex Dosage"/>
+         <description value="Example for MedicationRequest - Complex Dosage (free text), in reserve, without timing"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
       </resource>
       <resource>
