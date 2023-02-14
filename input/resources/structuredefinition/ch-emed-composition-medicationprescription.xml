@@ -41,8 +41,8 @@
          <path value="Composition.type"/>
          <patternCodeableConcept>
             <coding>
-               <system value="http://snomed.info/sct"/>
-               <code value="761938008"/>
+               <system value="http://loinc.org"/>
+               <code value="57833-6"/>
             </coding>
          </patternCodeableConcept>
       </element>
