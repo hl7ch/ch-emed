@@ -13,6 +13,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * Removal of the textually described [use case of a PADV](pharmaceutical-advice-document.html#modifying-an-existing-medication) 'CHANGE' in the context of a dispense.
 * [#194](https://github.com/hl7ch/ch-emed/issues/179): Remove display values from patternCodeableConcepts, remove minimum cardinality = 1 for display values, using official display values in examples (valid with http://tx.fhir.org/r4).
 * [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'.
+* [#206](https://github.com/hl7ch/ch-emed/issues/206): Change required CodeableConcepts of Composition.type from SNOMED CT to LOINC (MTP/DIS/PRE/PADV/LIST) to be able to distinguish all document types.
 * [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a [ValueSet](ValueSet-ActSubstanceAdminSubstitutionCode.html) excluding 'none' to prevent contradictions. 
 * [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
 * [#149](https://github.com/hl7ch/ch-emed/issues/149): Add ATC-slice for Medication.code
