@@ -41,7 +41,9 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+                <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-changed"/>
+                <aggregation value="referenced"/>
+                <aggregation value="bundled"/>
             </type>
         </element>
     </differential>
