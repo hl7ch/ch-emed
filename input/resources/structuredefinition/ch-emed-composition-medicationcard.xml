@@ -112,11 +112,6 @@
          <path value="Composition.attester.party"/>
          <short value="Who attested the composition"/>
       </element>
-      <element id="Composition.custodian">
-         <path value="Composition.custodian"/>
-         <short value="The organization in whose name the document has been created"/>
-         <min value="1"/>
-      </element>
       <element id="Composition.section">
          <path value="Composition.section"/>
          <min value="1"/>

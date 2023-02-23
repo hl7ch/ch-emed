@@ -18,6 +18,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
 * [#149](https://github.com/hl7ch/ch-emed/issues/149): Add ATC-slice for Medication.code
 * [#200](https://github.com/hl7ch/ch-emed/issues/200): Relax minimum cardinality of timing in [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)
+* [#211](https://github.com/hl7ch/ch-emed/issues/211): Remove element/entry custodian (was required because of CDA), analog to CH Core EPR 
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
