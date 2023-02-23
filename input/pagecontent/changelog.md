@@ -6,6 +6,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 * [#176](https://github.com/hl7ch/ch-emed/issues/176): Adding extensions to LIST entries for referencing the parent document.
 * [#177](https://github.com/hl7ch/ch-emed/issues/177): Adding an annotation section in the [Medication List Composition](StructureDefinition-ch-emed-composition-medicationlist.html), analogous to the other documents.
+* [#210](https://github.com/hl7ch/ch-emed/issues/210): Clarification of the handling of the changed entries in case of an Observation CHANGE:
+   * Add aggregation type 'referenced/bundled' to the references for the changed MedicationStatement/MedicationRequest.
+   * Introducing of separate profiles for changed MedicationStatement/MedicationRequest (based on those used before) with the additional required reference back to the Observation.
 
 #### Changed / Updated
 * [#175](https://github.com/hl7ch/ch-emed/issues/175): Update Observation (PADV) for 'CHANGE'
