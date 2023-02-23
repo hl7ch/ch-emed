@@ -48,7 +48,7 @@
             <rules value="open" />
          </slicing>
       </element>
-      
+
       <element id="Bundle.entry:Composition">
          <path value="Bundle.entry" />
          <sliceName value="Composition" />
@@ -78,16 +78,29 @@
          </type>
       </element>
 
-      <element id="Bundle.entry:MedicationStatement">
+      <element id="Bundle.entry:MedicationStatementChanged">
          <path value="Bundle.entry" />
-         <sliceName value="MedicationStatement" />
+         <sliceName value="MedicationStatementChanged" />
       </element>
-      <element id="Bundle.entry:MedicationStatement.resource">
+      <element id="Bundle.entry:MedicationStatementChanged.resource">
          <path value="Bundle.entry.resource" />
          <min value="1" />
          <type>
             <code value="Resource" />
-            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-changed" />
+         </type>
+      </element>
+
+      <element id="Bundle.entry:MedicationRequestChanged">
+         <path value="Bundle.entry" />
+         <sliceName value="MedicationRequestChanged" />
+      </element>
+      <element id="Bundle.entry:MedicationRequestChanged.resource">
+         <path value="Bundle.entry.resource" />
+         <min value="1" />
+         <type>
+            <code value="Resource" />
+            <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-changed" />
          </type>
       </element>
    </differential>
