@@ -701,6 +701,11 @@
       </resource>
       <resource>
          <reference>
+            <reference value="StructureDefinition/ch-emed-medicationrequest-changed"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
             <reference value="StructureDefinition/ch-emed-medicationstatement"/>
          </reference>
       </resource>
@@ -712,6 +717,11 @@
       <resource>
          <reference>
             <reference value="StructureDefinition/ch-emed-medicationstatement-list"/>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/ch-emed-medicationstatement-changed"/>
          </reference>
       </resource>
       <resource>
