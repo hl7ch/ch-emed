@@ -2,7 +2,7 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="MedReq-ChangeMedication"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest"/>
+    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-changed"/>
   </meta>
   <contained>
     <Medication>
@@ -74,6 +74,9 @@
   <subject>
     <reference value="Patient/MonikaWegmueller"/>
   </subject>
+  <supportingInformation>
+    <reference value="Observation/PharmaceuticalAdvice-ChangeMedicament"/>
+  </supportingInformation>
   <reasonCode>
     <text value="-"/>
   </reasonCode>
