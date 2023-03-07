@@ -46,9 +46,6 @@
       </valueCodeableConcept>
     </extension>
   </confidentiality>
-  <custodian>
-    <reference value="Organization/Custodian"/>
-  </custodian>
   <section>
     <title value="Kommentar"/>
     <code>
