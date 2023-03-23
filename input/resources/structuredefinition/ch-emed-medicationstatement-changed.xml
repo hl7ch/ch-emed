@@ -1,0 +1,33 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="ch-emed-medicationstatement-changed"/>
+   <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-changed"/>
+   <version value="3.1.0"/>
+   <name value="CHEMEDMedicationStatementChanged"/>
+   <title value="CH EMED MedicationStatement Changed"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <description value="Definition of the changed medication statement for the pharmaceutical advice document"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="MedicationStatement"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="MedicationStatement">
+         <path value="MedicationStatement"/>
+         <short value="CH EMED MedicationStatement Changed (PADV)"/>
+      </element>
+      <element id="MedicationStatement.partOf">
+         <path value="MedicationStatement.partOf"/>
+         <short value="Reference to the Observation from type 'CHANGE'"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation"/>
+            <aggregation value="referenced"/>
+            <aggregation value="bundled"/>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

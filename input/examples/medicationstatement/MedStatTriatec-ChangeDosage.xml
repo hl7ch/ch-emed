@@ -2,7 +2,7 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
     <id value="MedStatTriatec-ChangeDosage"/>
     <meta>
-        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement"/>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-changed"/>
     </meta>
     <contained>
         <Medication>
@@ -69,6 +69,9 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"/>
     </identifier>
+    <partOf>
+        <reference value="Observation/PharmaceuticalAdvice-ChangeDosage"/>
+    </partOf>
     <status value="active"/>
     <medicationReference>
         <reference value="#med"/>
