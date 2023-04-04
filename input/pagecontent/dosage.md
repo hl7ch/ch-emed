@@ -22,7 +22,8 @@ There is an option to indicate whether the medication is taken only as needed (e
 A code for specifying the route of administration into or onto a patient's body comes from the [ValueSet EDQM - RouteOfAdministration](ValueSet-edqm-routeofadministration.html).
 
 #### Patient Instruction
-Instructions to the patient regarding the administration of the medication, e.g. taking with food. The instructions are in a patient understandable language.
+Instructions to the patient regarding the administration of the medication, e.g. taking with food. The instructions are in a patient understandable language.   
+Additionally, if no structured dosage instructions are provided or the dosage is complex, the dosage can be represented here using narrative text. 
 
 
 <div markdown="5" class="dragon">
@@ -46,9 +47,9 @@ The normal dosing is represented using **one dosage element**. The dosage can be
 Dosing example based on the use case step 2-5:
 
 {:class="table table-bordered"}
-| Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
-| :------- | :------- | :------- | :------- | :------- |
-| 1 | 0 | 1 | 0 | oral |
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Unit | In reserve | Route of administration | Start and/or end date | Patient instruction |
+| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
+| 1 | 0 | 1 | 0 | tablet | as needed | oral | 04.02.2012 - | Take with food |
 
 
 ```json
@@ -66,6 +67,7 @@ Dosing example based on the use case step 2-5:
           ]
         }
       },
+      "asNeededBoolean" : true,
       "route" : {
         "coding" : [
           {
@@ -89,53 +91,20 @@ Dosing example based on the use case step 2-5:
   ]
 ```
 
-See the full example: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.json.html)
-
 #### Normal Dosing - Narrative
-The narrative dosage instructions is represented in the `Dosage.text` element.
+The narrative dosage instructions is represented in the `Dosage.patientInstruction` element.
 
-Dosing example where no structured form (of the timing event) is provided:
+Dosing example where no structured form is provided:
 
 {:class="table table-bordered"}
-<table>
-	<tbody>
-		<tr>
-			<th>Dosage morning</th>
-			<th>Dosage noon</th>
-			<th>Dosage evening</th>
-			<th>Dosage night</th>
-			<th>Route of administration</th>
-		</tr>
-		<tr>
-			<td colspan="4">Application 3-4 times a day, for a maximum of 14 days</td>
-			<td>Cutaneous use</td>
-		</tr>
-	</tbody>
-</table>
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Unit | In reserve | Route of administration | Start and/or end date | Patient instruction |
+| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
+|  |  |  |  |  |  |  |  | Take 2 tablets daily as usual before dinner with a little water, reduce the dosage one week before surgery to 1 tablet daily. |
 
 ```json
   "dosage" : [
     {
-      "text" : "Application 3-4 times a day, for a maximum of 14 days",
-      "patientInstruction" : "Apply cherry-sized amount of the gel to the elbow and rub in gently. Use as long as the pain is present (max. 14 days).",
-      "timing" : {
-        "repeat" : {
-          "boundsPeriod" : {
-            "start" : "2022-09-01",
-            "end" : "2022-09-14"
-          }
-        }
-      },
-      "asNeededBoolean" : true,
-      "route" : {
-        "coding" : [
-          {
-            "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
-            "code" : "20003000",
-            "display" : "Cutaneous use"
-          }
-        ]
-      }
+      "patientInstruction" : "Take 2 tablets daily as usual before dinner with a little water, reduce the dosage one week before surgery to 1 tablet daily.",
     }
   ]
 ```
@@ -144,33 +113,14 @@ Dosing example where no structured form (of the timing event) is provided:
 Dosing example with the structured form and supplemented by the narrative text:
 
 {:class="table table-bordered"}
-<table>
-	<tbody>
-		<tr>
-			<th>Dosage morning</th>
-			<th>Dosage noon</th>
-			<th>Dosage evening</th>
-			<th>Dosage night</th>
-			<th>Route of administration</th>
-		</tr>
-		<tr>
-			<td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td rowspan="2">Cutaneous use</td>
-		</tr>
-    <tr>
-			<td colspan="4">Application as long as needed, but for a maximum of 14 days</td>
-		</tr>
-	</tbody>
-</table>
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Unit | In reserve | Route of administration | Start and/or end date | Patient instruction |
+| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
+|  |  |  |  |  |  | oral | 01.09.2022 - 14.09.2022 | Take one tablet in the morning and one in the evening on even days. On odd days, take half a tablet in the morning and half in the evening. |
 
 ```json
   "dosage" : [
     {
-      "text" : "Application as long as needed, but for a maximum of 14 days",
-      "patientInstruction" : "Apply cherry-sized amount of the gel to the elbow and rub in gently. Use as long as the pain is present (max. 14 days).",
+      "patientInstruction" : "Take one tablet in the morning and one in the evening on even days. On odd days, take half a tablet in the morning and half in the evening.",
       "timing" : {
         "repeat" : {
           "boundsPeriod" : {
@@ -179,18 +129,16 @@ Dosing example with the structured form and supplemented by the narrative text:
           },
           "when" : [
             "MORN",
-            "NOON",
             "EVE"
           ]
         }
       },
-      "asNeededBoolean" : true,
       "route" : {
         "coding" : [
           {
             "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
-            "code" : "20003000",
-            "display" : "Cutaneous use"
+            "code" : "20053000",
+            "display" : "Oral use"
           }
         ]
       }
@@ -200,14 +148,14 @@ Dosing example with the structured form and supplemented by the narrative text:
 
 ### Split Dosing
 The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`.   
-The information, which is the same for all dosage elements (`text`, `patientInstruction`, `asNeeded`, `route`) is mapped in the first dosage element.  
+The information, which is the same for all dosage elements (`patientInstruction`, `timing.repeat.boundsPeriod`, `asNeeded`, `route`) is mapped in the first dosage element.  
 
 Dosing example based on the use case step 2-3:
 
 {:class="table table-bordered"}
-| Dosage morning | Dosage noon | Dosage evening | Dosage night | Route of administration | 
-| :------- | :------- | :------- | :------- | :------- |
-| 1 | 0 | 0.5 | 0 | oral |
+| Dosage morning | Dosage noon | Dosage evening | Dosage night | Unit | In reserve | Route of administration | Start and/or end date | Patient instruction |
+| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
+| 1 | 0 | 0.5 | 0 | tablet |  | oral | 04.02.2012 -  | Take with food |
 
 ```json
   "dosage" : [
@@ -266,8 +214,6 @@ Dosing example based on the use case step 2-3:
     }
   ]
 ```
-
-See the full example: [2-3 Medication Treatment Plan document](Bundle-2-3-MedicationTreatmentPlan.json.html)
 
 ### Profiles
 Definition of the dosage (base dosage entry 1..1):
