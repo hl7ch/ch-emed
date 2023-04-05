@@ -3,10 +3,10 @@
    <url value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split"/>
    <version value="2.0.0"/>
    <name value="CHEMEDDosageSplit"/>
-   <title value="CH EMED Dosage Split (MedicationStatement / MedicationDispense)"/>
+   <title value="CH EMED Dosage Split"/>
    <status value="active"/>
    <experimental value="false"/>
-   <description value="Definition of the split dosage  (used in MedicationStatement / MedicationDispense)"/>
+   <description value="Definition of the split dosage (used in MedicationStatement / MedicationDispense / MedicationRequest)"/>
    <kind value="complex-type"/>
    <abstract value="false"/>
    <type value="Dosage"/>
@@ -15,7 +15,7 @@
    <differential>
       <element id="Dosage">
          <path value="Dosage"/>
-         <short value="CH EMED Dosage Split (MedicationStatement / MedicationDispense)"/>
+         <short value="CH EMED Dosage Split (MedicationStatement / MedicationDispense / MedicationRequest)"/>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
@@ -47,10 +47,12 @@
       <element id="Dosage.timing">
          <path value="Dosage.timing"/>
          <short value="When medication should be administered"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.timing.repeat">
          <path value="Dosage.timing.repeat"/>
          <short value="When the event is to occur"/>
+         <min value="1"/>
       </element>
       <element id="Dosage.timing.repeat.boundsPeriod">
          <path value="Dosage.timing.repeat.boundsPeriod"/>
@@ -60,6 +62,7 @@
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
          <short value="Code for time period of occurrence"/>
+         <min value="1"/>
          <constraint>
             <key value="ch-emed-event-timing"/>
             <severity value="warning"/>
@@ -93,10 +96,12 @@
       <element id="Dosage.doseAndRate">
          <path value="Dosage.doseAndRate"/>
          <short value="Amount of medication administered"/>
+         <min value="1"/>
          <max value="1"/>
       </element>
       <element id="Dosage.doseAndRate.dose[x]">
          <path value="Dosage.doseAndRate.dose[x]"/>
+         <min value="1"/>
          <type>
             <code value="Range"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-range"/>
