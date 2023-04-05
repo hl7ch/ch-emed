@@ -123,14 +123,14 @@
          <description value="Example for Bundle"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
       </resource>
-      <!--<resource>
+      <resource>
          <reference>
             <reference value="Bundle/2-7-MedicationCard-UUIDfullUrl"/>
          </reference>
          <name value="2-7 Medication Card document (with references/fullUrls as UUIDs)"/>
          <description value="Example for Bundle (with references/fullUrls as UUIDs)"/>
          <exampleCanonical value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard"/>
-      </resource>-->
+      </resource>
       <resource>
          <reference>
             <reference value="Bundle/PharmaceuticalAdvice-ChangeDosage"/>
