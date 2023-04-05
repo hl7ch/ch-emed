@@ -16,6 +16,12 @@
       <element id="Dosage">
          <path value="Dosage"/>
          <short value="CH EMED Dosage (MedicationStatement / MedicationDispense)"/>
+         <constraint>
+            <key value="ch-dosage-4"/>
+            <severity value="error"/>
+            <human value="For split dosage timing event and dose/rate are required"/>
+            <expression value="sequence.exists() implies (timing.repeat.when.exists() and (doseAndRate.doseRange.exists() or doseAndRate.doseQuantity.exists()))"/>
+         </constraint>
       </element>
       <element id="Dosage.sequence">
          <path value="Dosage.sequence"/>
