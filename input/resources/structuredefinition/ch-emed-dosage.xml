@@ -33,14 +33,9 @@
             <expression value="$this.count() = 0 or $this = 1"/>
          </constraint>
       </element>
-      <element id="Dosage.text">
-         <path value="Dosage.text"/>
-         <short value="Free text dosage instructions"/>
-         <mustSupport value="true"/>
-      </element>
       <element id="Dosage.patientInstruction">
          <path value="Dosage.patientInstruction"/>
-         <short value="Patient medication instructions (e.g. 'take with food')"/>
+         <short value="Patient instructions (e.g. 'take with food'), incl. free text dosage instructions (e.g. for complex dosage)"/>
          <mustSupport value="true"/>
       </element>
       <element id="Dosage.timing">
