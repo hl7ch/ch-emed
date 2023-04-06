@@ -22,6 +22,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#149](https://github.com/hl7ch/ch-emed/issues/149): Add ATC-slice for Medication.code
 * [#200](https://github.com/hl7ch/ch-emed/issues/200): Relax minimum cardinality of timing in [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)
 * [#211](https://github.com/hl7ch/ch-emed/issues/211): Remove element/entry custodian (was required because of CDA), analog to CH Core EPR 
+* [#215](https://github.com/hl7ch/ch-emed/issues/215): Clarify usage of `Dosage.patientInstruction`: Use it for the patient instructions (e.g. 'take with food'), incl. free text dosage instructions (e.g. for complexe dosage). Don't active support `Dosage.text` anymore.
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
