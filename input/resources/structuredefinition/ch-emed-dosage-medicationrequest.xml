@@ -19,8 +19,8 @@
          <constraint>
             <key value="ch-dosage-3"/>
             <severity value="error"/>
-            <human value="Free text dosage instruction, timing or as needed has to be specified"/>
-            <expression value="text.exists() or timing.exists() or asNeededBoolean.exists()"/>
+            <human value="Patient instruction/free text dosage instruction, timing or as needed has to be specified"/>
+            <expression value="patientInstruction.exists() or timing.exists() or asNeededBoolean.exists()"/>
          </constraint>
       </element>
       <element id="Dosage.doseAndRate">

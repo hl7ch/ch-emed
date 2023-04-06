@@ -221,5 +221,4 @@ Definition of the dosage (base dosage entry 1..1):
 * [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)
 
 Definition of the split dosage (additional dosage entry 0..*):
-* [CH EMED Dosage Split (MedicationStatement / MedicationDispense)](StructureDefinition-ch-emed-dosage-split.html)
-* [CH EMED Dosage Split (MedicationRequest)](StructureDefinition-ch-emed-dosage-split-medicationrequest.html)
+* [CH EMED Dosage Split](StructureDefinition-ch-emed-dosage-split.html)
