@@ -225,6 +225,7 @@
                 <code value="10219000"/>
                 <display value="Tablet"/>
               </coding>
+              <text value="Tablette"/>
             </form>
             <amount>
               <numerator>
@@ -362,6 +363,7 @@
                 <code value="10219000"/>
                 <display value="Tablet"/>
               </coding>
+              <text value="Tablette"/>
             </form>
             <amount>
               <numerator>
