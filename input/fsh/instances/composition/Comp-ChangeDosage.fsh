@@ -5,8 +5,6 @@ Description: "Example for Composition"
 Usage: #example
 * id = "Comp-ChangeDosage"
 * language = #de-CH
-* extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
-* extension.valueReference = Reference(MonikaWegmuellerRecipient)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"
 * status = #final

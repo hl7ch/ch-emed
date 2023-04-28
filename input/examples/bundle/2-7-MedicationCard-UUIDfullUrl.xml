@@ -15,11 +15,6 @@
     <resource>
       <Composition>
         <language value="de-CH"/>
-        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
-          <valueReference>
-            <reference value="urn:uuid:8f1b85a0-3c98-4a23-beb3-f514897743e4"/>
-          </valueReference>
-        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"/>
@@ -185,23 +180,6 @@
           <country value="CH"/>
         </address>
       </Organization>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:8f1b85a0-3c98-4a23-beb3-f514897743e4"/>
-    <resource>
-      <Patient>
-        <name>
-          <family value="Wegmüller"/>
-          <given value="Monika"/>
-        </name>
-        <address>
-          <line value="Wiesenstr. 12"/>
-          <city value="Zürich"/>
-          <postalCode value="8003"/>
-          <country value="CH"/>
-        </address>
-      </Patient>
     </resource>
   </entry>
   <entry>
