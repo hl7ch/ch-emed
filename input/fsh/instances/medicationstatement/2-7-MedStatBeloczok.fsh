@@ -23,6 +23,7 @@ Usage: #example
 * dosage[baseEntry].timing.repeat.boundsPeriod.start = "2012-02-04"
 * dosage[baseEntry].timing.repeat.when = #MORN
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage[baseEntry].route.text = "zum Einnehmen"
 * dosage[baseEntry].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 * dosage[additionalEntry].sequence = 2

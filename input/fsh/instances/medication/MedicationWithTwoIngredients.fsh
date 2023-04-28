@@ -8,6 +8,7 @@ Usage: #example
 * code = urn:oid:2.51.1.1#7680577710149 "Exforge 10/160mg"
 * code.text = "Exforge 10/160mg"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
+* form.text = "Tablette"
 * amount.numerator = 28 '{Piece}' "Stk"
 * amount.denominator = 1 '{Package}' "Package"
 * ingredient[0].itemCodeableConcept = $sct#386864001 "Amlodipine (substance)"

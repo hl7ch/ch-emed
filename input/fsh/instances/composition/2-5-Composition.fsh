@@ -5,8 +5,6 @@ Description: "Example for Composition with a person and a device as authors"
 Usage: #example
 * id = "2-5-Composition"
 * language = #de-CH
-* extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
-* extension.valueReference.reference = "Patient/MonikaWegmuellerRecipient"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
 * status = #final

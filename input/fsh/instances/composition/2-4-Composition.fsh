@@ -5,8 +5,6 @@ Description: "Example for Composition"
 Usage: #example
 * id = "2-4-Composition"
 * language = #de-CH
-* extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
-* extension.valueReference.reference = "Patient/MonikaWegmuellerRecipient"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"
 * status = #final
