@@ -1,0 +1,20 @@
+Instance: MedicationWithTwoIngredients
+InstanceOf: CHEMEDMedication
+Title: "Medication with 2 ingredients"
+Description: "Example for Medication with 2 ingredients"
+Usage: #example
+* meta.profile[0] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"
+* meta.profile[+] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"
+* code = urn:oid:2.51.1.1#7680577710149 "Exforge 10/160mg"
+* code.text = "Exforge 10/160mg"
+* form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
+* amount.numerator = 28 '{Piece}' "Stk"
+* amount.denominator = 1 '{Package}' "Package"
+* ingredient[0].itemCodeableConcept = $sct#386864001 "Amlodipine (substance)"
+* ingredient[=].itemCodeableConcept.text = "Amlodipine (substance)"
+* ingredient[=].strength.numerator = 10 'mg' "milligram"
+* ingredient[=].strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* ingredient[+].itemCodeableConcept = $sct#386876001 "Valsartan (substance)"
+* ingredient[=].itemCodeableConcept.text = "Valsartan (substance)"
+* ingredient[=].strength.numerator = 160 'mg' "milligram"
+* ingredient[=].strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
