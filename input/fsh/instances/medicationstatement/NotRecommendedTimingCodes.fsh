@@ -22,4 +22,5 @@ Usage: #example
 * dosage[baseEntry].timing.repeat.when[0] = #CM
 * dosage[baseEntry].timing.repeat.when[+] = #CV
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage[baseEntry].route.text = "zum Einnehmen"
 * dosage[baseEntry].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"

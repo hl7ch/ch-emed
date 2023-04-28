@@ -311,6 +311,7 @@
               <code value="20053000"/>
               <display value="Oral use"/>
             </coding>
+            <text value="zum Einnehmen"/>
           </route>
           <doseAndRate>
             <doseQuantity>
@@ -447,6 +448,7 @@
               <code value="20053000"/>
               <display value="Oral use"/>
             </coding>
+            <text value="zum Einnehmen"/>
           </route>
           <doseAndRate>
             <doseQuantity>
