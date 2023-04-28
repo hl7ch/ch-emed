@@ -4,7 +4,7 @@ When creating/publishing an eMedication document, there may be one or more autho
 ### "Elementary" Documents (MTP, PRE, DIS, PADV)
 
 #### One Author
-*The general practitioner Dr. med. Familien Hausarzt recommends medication treatment with Triatec to Monika Wegmüller. He documents his therapy decision using the [Medication Treatment Plan document](Composition-1-1-MedicationTreatmentPlan.html).*
+*The general practitioner Dr. med. Familien Hausarzt recommends medication treatment with Triatec to Monika Wegmüller. He documents his therapy decision using the [Medication Treatment Plan document](Composition-1-1-Composition.html).*
 
 In this case, the author of the document and the medical decision is the same. In the eMedication document Dr. med. Familien Hausarzt is mapped once.
 * **Author document & author medical decision**: Composition.author (*Dr. med. Familien Hausarzt*)
