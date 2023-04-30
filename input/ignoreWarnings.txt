@@ -16,3 +16,4 @@ The string value contains text that looks like embedded HTML tags. If this conte
 # Build errors
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
 The image source '2-7-pdf' cannot be resolved
+
