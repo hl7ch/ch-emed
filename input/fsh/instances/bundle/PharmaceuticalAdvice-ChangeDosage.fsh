@@ -18,8 +18,6 @@ Usage: #example
 * entry[=].resource = FamilienHausarzt
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Hausarzt"
 * entry[=].resource = Hausarzt
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MonikaWegmuellerRecipient"
-* entry[=].resource = MonikaWegmuellerRecipient
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/Obs-ChangeDosage"
 * entry[=].resource = Obs-ChangeDosage
 * entry[+].fullUrl = "http://test.fhir.ch/r4/MedicationStatement/MedStatTriatec-ChangeDosage"

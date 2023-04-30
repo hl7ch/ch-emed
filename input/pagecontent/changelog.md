@@ -24,6 +24,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#211](https://github.com/hl7ch/ch-emed/issues/211): Remove element/entry custodian (was required because of CDA), analog to CH Core EPR 
 * [#214](https://github.com/hl7ch/ch-emed/issues/214): Require dose/rate and frequency for split dosage 
 * [#215](https://github.com/hl7ch/ch-emed/issues/215): Clarify usage of `Dosage.patientInstruction`: Use it for the patient instructions (e.g. 'take with food'), incl. free text dosage instructions (e.g. for complexe dosage). Don't active support `Dosage.text` anymore.
+* [#219](https://github.com/hl7ch/ch-emed/issues/219): Update the examples to be conformant to CH-EMED-EPR.
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
