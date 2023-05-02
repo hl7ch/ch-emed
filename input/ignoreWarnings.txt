@@ -8,7 +8,7 @@ WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDef
 # The following code systems/value sets are external and not supported by terminology server (or an example)
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
 Code System URI 'http://example.com/localcode' is unknown so the code cannot be validated
-The value provided ('rm-CH') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code urn:ietf:bcp:47#rm-CH is not in the value set 'http://hl7.org/fhir/ValueSet/languages' (from null))
+The value provided ('rm-CH') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code urn:ietf:bcp:47#rm-CH is not in the value set 'http://hl7.org/fhir/ValueSet/languages' (from Tx-Server))
 
 # Problem in the base profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -16,3 +16,4 @@ The string value contains text that looks like embedded HTML tags. If this conte
 # Build errors
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
 The image source '2-7-pdf' cannot be resolved
+The link 'urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef' for "Representation of the original view" cannot be resolved
