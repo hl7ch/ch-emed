@@ -11,7 +11,11 @@ Description: "Definition of the composition for the medication dispense document
 * identifier.value ^example.label = "CH EMED"
 * identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
 * status = #final (exactly)
+
 * type = $loinc#60593-1
+* type ^short = "Medication dispensed.extended"
+* type obeys ch-emed-comp-dis
+
 * subject ^short = "A patient for whom this document instance was created"
 * date ^short = "The document's creation date and time"
 
