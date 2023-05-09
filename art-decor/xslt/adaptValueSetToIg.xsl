@@ -66,6 +66,16 @@
        </xsl:choose>
      </xsl:template>
  
+    <xsl:template match="fhir:ValueSet/fhir:compose/fhir:include/fhir:system[@value='http://snomed.info/sct']">
+      <fhir:system value="http://snomed.info/sct" />
+      <fhir:version value="http://snomed.info/sct/2011000195101" />
+    </xsl:template>
+
+    <xsl:template match="fhir:ValueSet/fhir:compose/fhir:include/fhir:system[@value='urn:oid:2.16.756.5.30.1.127.3.4']">
+      <fhir:system value="http://snomed.info/sct" />
+      <fhir:version value="http://snomed.info/sct/2011000195101" />
+    </xsl:template>
+
 
     <!-- The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/designation-use (http://hl7.org/fhir/ValueSet/designation-use, and a code should come from this value set unless it has no suitable code) (error message = The code system "http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType" is not known; The code provided (http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType#preferred) is not valid in the value set DesignationUse) -->
     <!-- remove it -->

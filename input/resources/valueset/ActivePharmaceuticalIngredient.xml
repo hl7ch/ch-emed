@@ -8,7 +8,7 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-03-02T15:25:14+01:00"/>
+         <start value="2022-03-02T15:25:14+02:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -37,6 +37,8 @@
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
+         <version
+                       value="http://snomed.info/sct/2011000195101"/>
          <concept>
             <code value="1156222009"/>
             <display value="Trofosfamide (substance)"/>
