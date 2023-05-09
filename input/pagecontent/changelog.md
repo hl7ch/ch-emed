@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#210](https://github.com/hl7ch/ch-emed/issues/210): Clarification of the handling of the changed entries in case of an Observation CHANGE:
    * Add aggregation type 'referenced/bundled' to the references for the changed MedicationStatement/MedicationRequest.
    * Introducing of separate profiles for changed MedicationStatement/MedicationRequest (based on those used before) with the additional required reference back to the Observation.
+* [#224](https://github.com/hl7ch/ch-emed/issues/224): Add SNOMED CT Swiss extension version.
 
 #### Changed / Updated
 * [#175](https://github.com/hl7ch/ch-emed/issues/175): Update Observation (PADV) for 'CHANGE'
