@@ -8,8 +8,8 @@ Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
 * status = #final
-* type.coding[0] = $loinc#77603-9 "Medication treatment plan.extended Document"
-* type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
+* type.coding[0] = $loinc#77603-9 "Medication treatment plan.extended Document" 
+* type.coding[+] = $sct#761931002 "Medication treatment plan report (record artifact)"
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2012-02-04T14:00:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"

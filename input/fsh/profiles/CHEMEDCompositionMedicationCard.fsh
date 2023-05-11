@@ -10,7 +10,11 @@ Description: "Definition of the composition for the medication card document"
 * identifier.value ^example.label = "CH EMED"
 * identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
 * status = #final (exactly)
-* type = $sct#721912009
+
+* type = $sct#736378000
+* type ^short = "Medication management plan (record artifact)"
+* type obeys ch-emed-comp-card
+
 * subject MS
 * subject ^short = "A patient for whom this document instance was created"
 * date MS

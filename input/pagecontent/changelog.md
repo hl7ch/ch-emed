@@ -24,8 +24,12 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#200](https://github.com/hl7ch/ch-emed/issues/200): Relax minimum cardinality of timing in [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)
 * [#211](https://github.com/hl7ch/ch-emed/issues/211): Remove element/entry custodian (was required because of CDA), analog to CH Core EPR 
 * [#214](https://github.com/hl7ch/ch-emed/issues/214): Require dose/rate and frequency for split dosage 
-* [#215](https://github.com/hl7ch/ch-emed/issues/215): Clarify usage of `Dosage.patientInstruction`: Use it for the patient instructions (e.g. 'take with food'), incl. free text dosage instructions (e.g. for complexe dosage). Don't active support `Dosage.text` anymore.
+* [#215](https://github.com/hl7ch/ch-emed/issues/215): Clarify usage of `Dosage.patientInstruction`: Use it for the patient instructions (e.g. 'take with food'), incl. free text dosage instructions (e.g. for complex dosage). Don't active support `Dosage.text` anymore.
 * [#219](https://github.com/hl7ch/ch-emed/issues/219): Update the examples to be conformant to CH-EMED-EPR.
+* [#140](https://github.com/hl7ch/ch-emed/issues/140): Add new SNOMED CT document type codes (`Composition.type`) and update the profiles to check the correctness of the second provided coding (LOINC):
+   * CARD: SCT#736378000 'Medication management plan (record artifact)'
+   * MTP: SCT#761931002 'Medication treatment plan report (record artifact)'
+   * DIS: SCT#294121000195110 'Medication dispense document (record artifact)'
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
