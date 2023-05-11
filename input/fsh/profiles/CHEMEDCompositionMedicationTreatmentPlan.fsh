@@ -13,7 +13,7 @@ Description: "Definition of the composition for the medication treatment plan do
 * status = #final (exactly)
 
 * type = $sct#761931002
-* type ^short = "761931002 Medication treatment plan report (record artifact)"
+* type ^short = "Medication treatment plan report (record artifact)"
 * type obeys ch-emed-comp-mtp
 
 * subject ^short = "A patient for whom this document instance was created"
