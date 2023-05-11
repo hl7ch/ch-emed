@@ -10,12 +10,14 @@ Usage: #example
 * status = #final
 * type.coding[0] = $loinc#60593-1 "Medication dispensed.extended Document"
 * type.coding[+] = $sct#294121000195110 "Medication dispense document (record artifact)"
+* type.coding[=].version = "http://snomed.info/sct/2011000195101"
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2011-11-29T11:01:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * title = "Abgabe"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
+* confidentiality.extension.valueCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * confidentiality = #N
 
 * section[dispense].title = "Abgabe eines Medikaments"
