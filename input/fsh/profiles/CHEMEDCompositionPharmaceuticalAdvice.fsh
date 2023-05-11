@@ -11,7 +11,11 @@ Description: "Definition of the composition for the pharmaceutical advice docume
 * identifier.value ^example.label = "CH EMED"
 * identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
 * status = #final (exactly)
-* type = $loinc#61356-2
+
+* type = $sct#419891008
+* type ^short = "Record artifact (record artifact)"
+* type obeys ch-emed-comp-padv
+
 * subject ^short = "A patient for whom this document instance was created"
 * date ^short = "The document's creation date and time"
 

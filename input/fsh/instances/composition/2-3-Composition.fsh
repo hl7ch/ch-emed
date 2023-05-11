@@ -9,7 +9,7 @@ Usage: #example
 * identifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
 * status = #final
 * type.coding[0] = $loinc#77603-9 "Medication treatment plan.extended Document"
-* type.coding[+] = $sct#419891008 "Record artifact (record artifact)"
+* type.coding[+] = $sct#761931002 "Medication treatment plan report (record artifact)"
 * type.coding[=].version = "http://snomed.info/sct/2011000195101"
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2012-02-04T14:00:00+01:00"

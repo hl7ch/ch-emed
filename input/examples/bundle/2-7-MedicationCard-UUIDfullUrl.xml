@@ -29,8 +29,8 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/2011000195101"/>
-            <code value="721912009"/>
-            <display value="Medication summary document (record artifact)"/>
+            <code value="736378000"/>
+            <display value="Medication management plan (record artifact)"/>
           </coding>
         </type>
         <subject>
