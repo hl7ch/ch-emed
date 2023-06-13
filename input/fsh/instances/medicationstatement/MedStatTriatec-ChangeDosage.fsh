@@ -5,7 +5,7 @@ Description: "Example for MedicationStatment - Referenced from Observation: PADV
 Usage: #example
 * contained = Amlodipin
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:adab8d2d-ae14-48d6-8d15-b726d6ea82c5"
+* identifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
 * partOf.reference = "Observation/PharmaceuticalAdvice-ChangeDosage"
 * status = #active
 * medicationReference.reference = "#Amlodipin"
