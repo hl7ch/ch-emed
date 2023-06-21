@@ -16,7 +16,8 @@ Usage: #example
 * status = #completed
 * medicationReference.reference = "#Beloczok"
 * subject.reference = "Patient/MonikaWegmueller"
-* quantity.value = 1
+* quantity = 1 '{Package}' "Package"
+* whenHandedOver = "2012-02-04T14:00:00+01:00"
 
 * dosageInstruction[baseEntry].sequence = 1
 * dosageInstruction[baseEntry].patientInstruction = "-"

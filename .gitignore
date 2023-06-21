@@ -11,3 +11,4 @@ fsh-generated/**
 www/*
 !www/package-list.json
 !www/publish.ini
+publisher.jar:Zone.Identifier

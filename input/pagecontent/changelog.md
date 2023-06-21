@@ -30,6 +30,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * CARD: SCT#736378000 'Medication management plan (record artifact)'
    * MTP: SCT#761931002 'Medication treatment plan report (record artifact)'
    * DIS: SCT#294121000195110 'Medication dispense document (record artifact)'
+* [#226](https://github.com/hl7ch/ch-emed/issues/226): Added values to examples (MedicationDispense.whenHandedOver, MedicationDispense.quantity.code/unit/system) and corrected identifier of the changed MedicationStatement (added a note to the Observation profile)   
 
 #### Fixed
 * [#182](https://github.com/hl7ch/ch-emed/issues/182): Don't allow nested sections.
