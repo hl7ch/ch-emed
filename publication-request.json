@@ -1,8 +1,8 @@
 {
   "package-id" : "ch.fhir.ig.ch-emed",
-  "version" : "3.1.0",
-  "path" : "http://fhir.ch/ig/ch-emed/3.1.0",
-  "milestone" : false,
+  "version" : "4.0.0-ballot",
+  "path" : "http://fhir.ch/ig/ch-emed/4.0.0-ballot",
+  "mode" : "milestone",
   "status" : "ballot",
   "sequence" : "STU 4",
   "desc" : "HL7 Switzerland STU 4",
