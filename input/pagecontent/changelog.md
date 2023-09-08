@@ -1,7 +1,16 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 4 Ballot - v3.1.0 (2023)
+### STU 4 Sequence - v4.0.0 (2023)
+
+#### Added
+
+#### Changed / Updated
+
+#### Fixed
+
+
+### STU 4 Sequence - v4.0.0-ballot (2023-06-29)
 
 #### Added
 * [#176](https://github.com/hl7ch/ch-emed/issues/176): Adding extensions to LIST entries for referencing the parent document.
@@ -39,7 +48,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#209](https://github.com/hl7ch/ch-emed/issues/209): Allow Patient and RelatedPerson as reference of MedicationStatement.informationSource (CARD)
 
 
-### STU 3 - v3.0.0 (2022-12-21)
+### STU 3 Sequence - v3.0.0 (2022-12-21)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#140](https://github.com/hl7ch/ch-emed/issues/140): Adding a new code (SCT) for Medication Card document (Composition.type)
@@ -112,7 +121,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#138](https://github.com/hl7ch/ch-emed/issues/138): Solved with other issue
 
 
-### STU 3 Ballot - v2.1.0 (2022-07-07)
+### STU 3 Sequence - v2.1.0-ballot (2022-07-07)
 
 #### Changed / Updated
 * [#95](https://github.com/hl7ch/ch-emed/issues/95): Update description of Composition/Bundle.identifier
@@ -136,7 +145,7 @@ issue90-dosage
 
 
 
-### STU 2 - v2.0.0 (2022-02-11)
+### STU 2 Sequence - v2.0.0 (2022-02-11)
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 * [#72](https://github.com/hl7ch/ch-emed/issues/72) Representation of status "in reserve" (InRes) for a medication is missing.
