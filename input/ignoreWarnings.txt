@@ -17,3 +17,8 @@ The string value contains text that looks like embedded HTML tags. If this conte
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
 The image source '2-7-pdf' cannot be resolved
 The link 'urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef' for "Representation of the original view" cannot be resolved
+
+# Not yet a stable version, which can be published (see https://github.com/hl7ch/ch-epr-term/issues/17)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#77603-9, http://snomed.info/sct#761931002)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#56445-0, http://snomed.info/sct#736378000)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60593-1, http://snomed.info/sct#82291000195104)
