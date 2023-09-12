@@ -11,6 +11,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
 * [#228](https://github.com/hl7ch/ch-emed/issues/228): Correct the SNOMED CT code for DIS
 
+#### Issues resolved without amendment
+* [#230](https://github.com/hl7ch/ch-emed/issues/230): Extension from CH Core not CH EMED
+
 
 ### STU 4 Sequence - v4.0.0-ballot (2023-06-29)
 
