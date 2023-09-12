@@ -17,7 +17,6 @@ Usage: #example
 * title = "Abgabe"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
-* confidentiality.extension.valueCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * confidentiality = #N
 
 * section[dispense].title = "Abgabe eines Medikaments"

@@ -28,7 +28,6 @@
           </coding>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/2011000195101"/>
             <code value="736378000"/>
             <display value="Medication management plan (record artifact)"/>
           </coding>
@@ -46,7 +45,6 @@
             <valueCodeableConcept>
               <coding>
                 <system value="http://snomed.info/sct"/>
-                <version value="http://snomed.info/sct/2011000195101"/>
                 <code value="17621005"/>
                 <display value="Normal (qualifier value)"/>
               </coding>
@@ -225,7 +223,6 @@
               <itemCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct"/>
-                  <version value="http://snomed.info/sct/2011000195101"/>
                   <code value="372826007"/>
                   <display value="Metoprolol (substance)"/>
                 </coding>
@@ -364,7 +361,6 @@
               <itemCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct"/>
-                  <version value="http://snomed.info/sct/2011000195101"/>
                   <code value="386864001"/>
                   <display value="Amlodipine (substance)"/>
                 </coding>

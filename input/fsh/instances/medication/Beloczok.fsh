@@ -8,7 +8,6 @@ Usage: #inline
 * amount.numerator = 20 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * amount.denominator = 1 '{Package}' "Package"
 * ingredient.itemCodeableConcept = $sct#372826007 "Metoprolol (substance)"
-* ingredient.itemCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * ingredient.itemCodeableConcept.text = "Metoprolol"
 * ingredient.strength.numerator = 50 'mg' "milligram"
 * ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"

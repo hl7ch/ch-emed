@@ -10,14 +10,12 @@ Usage: #example
 * status = #final
 * type.coding[0] = $loinc#77603-9 "Medication treatment plan.extended Document"
 * type.coding[+] = $sct#761931002 "Medication treatment plan report (record artifact)"
-* type.coding[=].version = "http://snomed.info/sct/2011000195101"
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2011-11-29T11:00:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * title = "Therapieentscheid Medikation"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
-* confidentiality.extension.valueCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * confidentiality = #N
 
 * section[treatmentPlan].title = "Medikamentöser Behandlungsplan"
