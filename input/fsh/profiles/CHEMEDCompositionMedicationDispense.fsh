@@ -15,7 +15,6 @@ Description: "Definition of the composition for the medication dispense document
 * type = $sctswiss#82291000195104
 * type ^short = "Medication dispense document (record artifact)"
 * type obeys ch-emed-comp-dis
-* type.coding.version ^short = "SNOMED CT Swiss Extension"
 
 * subject ^short = "A patient for whom this document instance was created"
 * date ^short = "The document's creation date and time"
