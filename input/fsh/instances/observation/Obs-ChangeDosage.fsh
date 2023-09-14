@@ -26,3 +26,4 @@ Usage: #example
 * note.extension.url = "http://hl7.org/fhir/StructureDefinition/narrativeLink"
 * note.extension.valueUrl = "#padv.1.note"
 * note.text = "Dosierungsänderung: Morgens 1 Tablette anstatt 0.5 Tablette"
+* performer.reference = "PractitionerRole/FamilienHausarztAtHausarzt"

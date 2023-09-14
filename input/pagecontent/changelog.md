@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#234](https://github.com/hl7ch/ch-emed/issues/234): Add performer to Observations (best practice)
 
 #### Fixed
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
