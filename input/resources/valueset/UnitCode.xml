@@ -1048,8 +1048,6 @@
       </include>
       <include>
          <system value="http://snomed.info/sct"/>
-         <version
-                       value="http://snomed.info/sct/2011000195101"/>
          <concept>
             <code value="732981002"/>
             <display value="Actuation (unit of presentation)"/>
