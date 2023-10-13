@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
 * [#238](https://github.com/hl7ch/ch-emed/issues/238): List the data type profiles under tab profile
 
 #### Fixed

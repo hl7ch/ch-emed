@@ -37,8 +37,6 @@
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
-         <version
-                       value="http://snomed.info/sct/2011000195101"/>
          <concept>
             <code value="1156222009"/>
             <display value="Trofosfamide (substance)"/>
