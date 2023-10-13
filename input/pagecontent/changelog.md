@@ -7,10 +7,12 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
+* [#238](https://github.com/hl7ch/ch-emed/issues/238): List the data type profiles under tab profile
 
 #### Fixed
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
 * [#228](https://github.com/hl7ch/ch-emed/issues/228): Correct the SNOMED CT code for DIS
+* [#236](https://github.com/hl7ch/ch-emed/issues/236): Fix constraint for Composition.type
 
 #### Issues resolved without amendment
 * [#230](https://github.com/hl7ch/ch-emed/issues/230): Extension from CH Core not CH EMED
