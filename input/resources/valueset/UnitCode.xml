@@ -758,7 +758,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="{Dose}"/>
             <display value="Dose"/>
             <designation>
                <language value="de-CH"/>
@@ -806,7 +806,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="10*6.{Unit}"/>
             <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
             <designation>
                <language value="de-CH"/>
@@ -878,7 +878,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="{Package}"/>
             <display value="Package"/>
             <designation>
                <language value="de-CH"/>
@@ -902,7 +902,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="{Piece}"/>
             <display value="Piece"/>
             <designation>
                <language value="de-CH"/>
@@ -950,7 +950,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="10*3.{Unit}"/>
             <display value="Thousand Per * Unit"/>
             <designation>
                <language value="de-CH"/>
@@ -974,7 +974,7 @@
             </designation>
          </concept>
          <concept>
-            <code value="1"/>
+            <code value="{Unit}"/>
             <display value="Unit"/>
             <designation>
                <language value="de-CH"/>

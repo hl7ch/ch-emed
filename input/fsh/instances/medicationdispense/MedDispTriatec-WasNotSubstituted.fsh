@@ -9,7 +9,7 @@ Usage: #example
 * status = #completed
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"
-* quantity = 1 '1' "Package"
+* quantity = 1 '{Package}' "Package"
 * whenHandedOver = "2011-11-29"
 * dosageInstruction[baseEntry].patientInstruction = "-"
 * dosageInstruction[baseEntry].timing.repeat.boundsPeriod.start = "2011-11-29"

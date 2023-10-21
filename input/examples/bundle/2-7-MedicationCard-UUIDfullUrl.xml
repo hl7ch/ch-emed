@@ -218,7 +218,7 @@
                 <value value="1"/>
                 <unit value="Package"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="1"/>
+                <code value="{Package}"/>
               </denominator>
             </amount>
             <ingredient>
@@ -357,7 +357,7 @@
                 <value value="1"/>
                 <unit value="Package"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="1"/>
+                <code value="{Package}"/>
               </denominator>
             </amount>
             <ingredient>

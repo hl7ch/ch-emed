@@ -21,14 +21,3 @@ The image source '2-7-pdf' cannot be resolved
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#77603-9, http://snomed.info/sct#761931002)
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#56445-0, http://snomed.info/sct#736378000)
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode|2.0.9), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#60593-1, http://snomed.info/sct#82291000195104)
-
-# If a LOINC code is specified, it has to be the defined one
-ch-emed-comp-card: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '56445-0'' may fail or return false if there is more than one item in the content being evaluated
-ch-emed-comp-dis: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '60593-1'' may fail or return false if there is more than one item in the content being evaluated
-ch-emed-comp-list: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '56445-0'' may fail or return false if there is more than one item in the content being evaluated
-ch-emed-comp-pre: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '57833-6'' may fail or return false if there is more than one item in the content being evaluated
-ch-emed-comp-mtp: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '77603-9'' may fail or return false if there is more than one item in the content being evaluated
-ch-emed-comp-padv: The left side is inherently a collection, and so the expression 'coding.where(system = 'http://loinc.org').code = '61356-2'' may fail or return false if there is more than one item in the content being evaluated
-
-# The element has a required binding and therefore include the defined code
-ch-obs-1: The left side is inherently a collection, and so the expression 'code.coding.code = 'CHANGE'' may fail or return false if there is more than one item in the content being evaluated
