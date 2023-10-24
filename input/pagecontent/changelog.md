@@ -17,6 +17,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment
 * [#230](https://github.com/hl7ch/ch-emed/issues/230): Extension from CH Core not CH EMED
+* [#243](https://github.com/hl7ch/ch-emed/issues/243): Document names
 
 
 ### STU 4 Sequence - v4.0.0-ballot (2023-06-29)
