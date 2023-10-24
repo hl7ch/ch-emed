@@ -10,7 +10,7 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 {% include img.html img="medication-dispense-document.png" caption="Fig.: Medication Dispense document" width="40%" %}
 
 #### Example instances
-* 1-1 Medication Dispense document: [XML](Bundle-1-2-MedicationDispense.xml.html), [JSON](Bundle-1-2-MedicationDispense.json.html)
+* 1-2 Medication Dispense document: [XML](Bundle-1-2-MedicationDispense.xml.html), [JSON](Bundle-1-2-MedicationDispense.json.html)
 * 2-4 Medication Dispense document: [XML](Bundle-2-4-MedicationDispense.xml.html), [JSON](Bundle-2-4-MedicationDispense.json.html)
 
 ### Profiles
