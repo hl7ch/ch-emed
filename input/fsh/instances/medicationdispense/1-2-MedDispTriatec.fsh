@@ -16,6 +16,7 @@ Usage: #example
 * status = #completed
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"
+* performer.actor.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * quantity = 1 '{Package}' "Package"
 * whenHandedOver = "2011-11-29T11:01:00+01:00"
 * dosageInstruction[baseEntry].patientInstruction = "-"

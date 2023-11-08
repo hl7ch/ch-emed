@@ -17,6 +17,7 @@ Usage: #example
 * intent = #order
 * medicationReference.reference = "#Norvasc"
 * subject.reference = "Patient/MonikaWegmueller"
+* requester.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "-"
 * dosageInstruction[baseEntry].patientInstruction = "-"
 * dosageInstruction[baseEntry].timing.repeat.boundsPeriod.start = "2012-02-04"

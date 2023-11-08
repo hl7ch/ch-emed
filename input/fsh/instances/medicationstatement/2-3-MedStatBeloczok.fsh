@@ -9,6 +9,7 @@ Usage: #example
 * status = #active
 * medicationReference.reference = "#Beloczok"
 * subject.reference = "Patient/MonikaWegmueller"
+* informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "Bluthochdruck"
 
 * dosage[baseEntry].sequence = 1

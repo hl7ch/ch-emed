@@ -22,5 +22,6 @@ Usage: #example
 * status = #final
 * code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CHANGE
 * subject.reference = "Patient/MonikaWegmueller"
+* performer.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * effectiveDateTime = "2012-02-04T14:00:00+01:00"
 * note.text = "Generika: Amlodipin anstatt Norvasc"

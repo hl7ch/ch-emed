@@ -51,9 +51,6 @@ Description: "Definition of the composition for the medication treatment plan do
 * section[treatmentPlan].title ^short = "'Medikamentöser Behandlungsplan' in german or 'Plan de traitement médicamenteux' in french or 'Piano terapeutico farmacologico' in italian or 'Medication Treatment Plan' in english\r\n                        or titles in other languages are also allowed"
 * section[treatmentPlan].code 1..
 * section[treatmentPlan].code = $loinc#77604-7
-* section[treatmentPlan].author only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
-* section[treatmentPlan].author ^short = "The author of the medical decision (person) if different from the author of the document (Composition.author), see also 'Guidance - Different Authors'"
-* section[treatmentPlan].author.reference 1..
 * section[treatmentPlan].text 1..1
 * section[treatmentPlan].text ^short = "Human readable text of this section"
 * section[treatmentPlan].entry 1..1

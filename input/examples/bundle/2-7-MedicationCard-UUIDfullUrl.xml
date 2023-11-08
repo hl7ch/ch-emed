@@ -270,6 +270,9 @@
         <subject>
           <reference value="urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd"/>
         </subject>
+        <informationSource>
+          <reference value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
+        </informationSource>
         <reasonCode>
           <text value="Bluthochdruck"/>
         </reasonCode>
@@ -408,6 +411,9 @@
         <subject>
           <reference value="urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd"/>
         </subject>
+        <informationSource>
+          <reference value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
+        </informationSource>
         <reasonCode>
           <text value="Bluthochdruck"/>
         </reasonCode>

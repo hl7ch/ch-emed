@@ -22,6 +22,7 @@ Usage: #example
 * status = #final
 * code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CHANGE
 * subject = Reference(MonikaWegmueller)
+* performer = Reference(FamilienHausarztAtHausarzt)
 * effectiveDateTime = "2012-02-04T14:00:00+01:00"
 * note.extension.url = "http://hl7.org/fhir/StructureDefinition/narrativeLink"
 * note.extension.valueUrl = "#padv.1.note"

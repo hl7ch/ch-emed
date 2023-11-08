@@ -9,6 +9,7 @@ Usage: #example
 * status = #active
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"
+* informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "Bluthochdruck"
 * dosage[baseEntry].patientInstruction = "-"
 * dosage[baseEntry].timing.repeat.boundsPeriod.start = "2011-11-29"

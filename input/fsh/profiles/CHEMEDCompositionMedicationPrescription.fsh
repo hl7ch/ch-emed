@@ -59,9 +59,6 @@ Description: "Definition of the composition for the medication prescription docu
 * section[prescription].title ^short = "'Arzneimittelverordnung' in german or 'Prescription médicamenteuse' in french or 'Prescrizione di droga' in italian or 'Prescription for medication' in english\r\n                        or titles in other languages are also allowed"
 * section[prescription].code 1..
 * section[prescription].code = $loinc#57828-6
-* section[prescription].author only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
-* section[prescription].author ^short = "The author of the medical decision (person) if different from the author of the document (Composition.author), see also 'Guidance - Different Authors'"
-* section[prescription].author.reference 1..
 * section[prescription].text 0..1
 * section[prescription].text ^short = "Human readable text of this section"
 * section[prescription].entry 1..*

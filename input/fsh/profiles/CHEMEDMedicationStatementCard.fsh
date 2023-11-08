@@ -11,8 +11,9 @@ Description: "Definition of the medication statement for the medication card doc
 * extension[authorDocument] ^short = "\"Last\" author of the original document if different from the author of the medical decision (MedicationStatement.informationSource), see also 'Guidance - Different Authors'"
 * medicationReference only Reference(CHEMEDMedication)
 * medicationReference MS
+* informationSource 1..
 * informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
-* informationSource ^short = "The \"last\" author and her/his organization of the medical decision, see also 'Guidance - Different Authors'"
+* informationSource ^short = "The \"last\" author of the medical decision, see also 'Guidance - Different Authors'"
 * informationSource.reference 1..
 * reasonCode.text MS
 * note ^short = "Annotation comment"

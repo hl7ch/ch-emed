@@ -25,6 +25,10 @@ Description: "Definition of the medication statement for the medication treatmen
 * subject only Reference(CHCorePatient)
 * subject ^short = "Patient"
 * subject.reference 1..
+* informationSource 1..
+* informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* informationSource ^short = "The author of the medical decision, see also 'Guidance - Different Authors'"
+* informationSource.reference 1..
 * reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosage ^slicing.discriminator.type = #profile
