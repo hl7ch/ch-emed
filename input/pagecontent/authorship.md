@@ -48,7 +48,7 @@ In this case, the author of the document and the author of the medical decision 
 {:class="table table-bordered"}
 | Document | Author of the document<br>(person &#124; device) | Author of the medical decision<br>(person) | Author original document; if different from the author of the medical decision<br>(person) |
 | --- | --- | --- | --- |
-| **CARD** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationStatement.informationSource 1.. | - |
+| **MTP** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationStatement.informationSource 1.. | - |
 | **PRE** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationRequest.requester 1.. | - |
 | **DIS** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationDispense.performer.actor 1.. | - |
 | **PADV** | Composition.author 1..<br>(person 1.. &#124; device 0..) | Observation.performer 1.. | - |
