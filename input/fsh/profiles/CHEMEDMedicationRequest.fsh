@@ -27,7 +27,7 @@ Description: "Definition of the medication request for the medication prescripti
 * subject.reference 1..
 * requester 1..
 * requester only Reference(CHEMEDPractitionerRole)
-* requester ^short = "The author of the medical decision, see also 'Guidance - Different Authors'"
+* requester ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
 * requester.reference 1..
 * reasonCode ..1
 * reasonCode ^short = "Treatment reason"
