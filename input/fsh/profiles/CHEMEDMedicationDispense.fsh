@@ -39,7 +39,7 @@ Description: "Definition of the medication dispense for the medication dispense 
 * performer.actor.reference 1..
 * quantity 1..
 * quantity ^short = "Number of packages"
-* whenHandedOver ^short = "When product was given out"
+* whenHandedOver 1..
 * dosageInstruction ^slicing.discriminator.type = #profile
 * dosageInstruction ^slicing.discriminator.path = "$this"
 * dosageInstruction ^slicing.rules = #closed

@@ -25,6 +25,7 @@ Description: "Definition of the medication statement for the medication treatmen
 * subject only Reference(CHCorePatient)
 * subject ^short = "Patient"
 * subject.reference 1..
+* dateAsserted 1..
 * informationSource 1..
 * informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
 * informationSource ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
