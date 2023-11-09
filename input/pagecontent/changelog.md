@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 4 Sequence - v4.0.0 (2023)
 
 #### Added
+* [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
 
 #### Changed / Updated
 * [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
