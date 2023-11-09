@@ -9,6 +9,7 @@ Usage: #example
 * status = #active
 * medicationReference.reference = "#Norvasc"
 * subject.reference = "Patient/MonikaWegmueller"
+* dateAsserted = "2012-02-04T14:00:00+01:00"
 * informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "Bluthochdruck"
 * dosage[baseEntry].patientInstruction = "-"

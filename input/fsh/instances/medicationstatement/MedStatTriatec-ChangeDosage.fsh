@@ -10,6 +10,7 @@ Usage: #example
 * status = #active
 * medicationReference.reference = "#Amlodipin"
 * subject.reference = "Patient/MonikaWegmueller"
+* dateAsserted = "2012-02-04T14:00:00+01:00"
 * informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.extension.url = "http://hl7.org/fhir/StructureDefinition/narrativeLink"
 * reasonCode.extension.valueUrl = "#padv.1.reason"

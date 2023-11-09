@@ -9,6 +9,7 @@ Usage: #example
 * status = #completed
 * medicationReference.reference = "#Nitrostat"
 * subject.reference = "Patient/MonikaWegmueller"
+* dateAsserted = "2022-11-01"
 * informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "Chest pain"
 * dosage[baseEntry].patientInstruction = "Administer one tablet under the tongue at the first sign of an acute anginal attack. \r\n                                One additional tablet may be administered every 5 minutes until relief is obtained. \r\n                                No more than three tablets are recommended within a 15-minute period."

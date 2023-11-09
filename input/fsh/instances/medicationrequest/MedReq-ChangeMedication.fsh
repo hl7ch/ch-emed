@@ -10,6 +10,7 @@ Usage: #example
 * intent = #order
 * medicationReference.reference = "#Amlodipin"
 * subject.reference = "Patient/MonikaWegmueller"
+* authoredOn = "2012-02-04T14:00:00+01:00"
 * requester.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * supportingInformation.reference = "Observation/PharmaceuticalAdvice-ChangeMedicament"
 * reasonCode.text = "-"

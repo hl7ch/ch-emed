@@ -270,6 +270,7 @@
         <subject>
           <reference value="urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd"/>
         </subject>
+        <dateAsserted value="2012-02-04T14:00:00+01:00"/>
         <informationSource>
           <reference value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
         </informationSource>
@@ -411,6 +412,7 @@
         <subject>
           <reference value="urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd"/>
         </subject>
+        <dateAsserted value="2012-02-04T14:00:00+01:00"/>
         <informationSource>
           <reference value="urn:uuid:9837b87a-aaa7-4389-aa03-39442cee2c45"/>
         </informationSource>

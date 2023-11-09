@@ -25,4 +25,5 @@ Usage: #example
 * subject.reference = "Patient/MonikaWegmueller"
 * performer.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * effectiveDateTime = "2012-02-04T14:00:00+01:00"
+* issued = "2012-02-04T14:00:00+01:00"
 * note.text = "Dosierungsänderung: Morgens 1 Tablette anstatt 0.5 Tablette"
