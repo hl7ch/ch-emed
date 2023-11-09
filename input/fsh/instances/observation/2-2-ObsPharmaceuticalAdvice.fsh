@@ -18,4 +18,3 @@ Usage: #example
 * subject.reference = "Patient/MonikaWegmueller"
 * effectiveDateTime = "2012-02-04T14:00:00+01:00"
 * note.text = "Abgesetzt aufgrund UAW trockener Husten"
-* performer.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
