@@ -60,7 +60,7 @@ In this case, the author of the document and the author of the medical decision 
 ### Timestamp
 * The document's creation date and time is mapped for all documents in Bundle.timestamp and Composition.date.   
 * In addition, a timestamp is specified at entry level:
-   * [MedicationStatement.dateAsserted](StructureDefinition-ch-emed-medicationstatement-definitions.html#MedicationStatement.dateAsserted) (1..1) When the statement was asserted
-   * [MedicationRequest.authoredOn](StructureDefinition-ch-emed-medicationrequest-definitions.html#MedicationRequest.authoredOn) (1..1) When request was initially authored
-   * [MedicationDispense.whenHandedOver](StructureDefinition-ch-emed-medicationdispense-definitions.html#MedicationDispense.whenHandedOver) (1..1) When product was given out
-   * [Observation.issued](StructureDefinition-ch-emed-observation-definitions.html#Observation.issued) (1..1) Date/Time this version was made available
+   * [MedicationStatement.dateAsserted](StructureDefinition-ch-emed-medicationstatement.html) (1..1) When the statement was asserted
+   * [MedicationRequest.authoredOn](StructureDefinition-ch-emed-medicationrequest.html) (1..1) When request was initially authored
+   * [MedicationDispense.whenHandedOver](StructureDefinition-ch-emed-medicationdispense.html) (1..1) When product was given out
+   * [Observation.issued](StructureDefinition-ch-emed-observation.html) (1..1) Date/Time this version was made available
