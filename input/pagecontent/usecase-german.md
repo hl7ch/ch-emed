@@ -92,6 +92,13 @@ Zusätzlich zum IPAG Anwendungsfall erstellt der Hausarzt einen Medikationsplan 
 *Medikationsplan*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
 
 ### Weiteres Fallbeispiel
-TODO
 
-*Anwendung*: [3-1 Medication Dispense document](Bundle-3-1-MedicationDispense.html)
+#### Unfall mit Medikation durch den Rettungsdienst
+
+**Unfall vom 3. Februar 2020**
+
+Herr Max Moser (Name geändert), geboren am 27.11.1988 (Datum geändert), Inhaber eines EPD, spaziert am 3. Februar 2020 (eisiger Wintertag mit Glatteis) in Bern. Auf einer Treppe rutscht er aus und verletzt sich so stark, dass er selbst nicht mehr weitergehen kann. Herr Moser hat starke Schmerzen.   
+Der herbeigerufene Rettungsdienst vermutet einen Bruch des Unterschenkels, der im Spital behandelt werden muss. Um Herrn Moser transportfähig zu machen, werden ihm von Rettungssanitäterin Priska Huber (Name geändert) um 14:32 eine Infusion mit NaCL 0.9% gesteckt und zur Schmerzbehandlung 0.05 mg Fentanyl i.v. verabreicht.    
+Die Medikation wird vom Team des Rettungsdienstes im elektronischen Einsatzprotokoll erfasst. Herr Moser wird nun ins Spital gebracht. Bei der Patientenübergabe wird das Team in der Notfallstation neben der Verdachtsdiagnose auch über die verabreichte Medikation informiert. Die Medikationsanwendung wird durch den Rettungsdienst im Elektronischen Patientendossier von Herrn Moser abgelegt.
+
+*Anwendung*: [3-1 Medication Dispense document (NaCL)](Bundle-3-1-MedicationDispense.html) & [3-2 Medication Dispense document (Fentanyl)](Bundle-3-2-MedicationDispense.html)

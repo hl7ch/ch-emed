@@ -92,6 +92,13 @@ En plus du cas d’application IPAG, le médecin de premier recours élabore un 
 *Plan de médication*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
 
 ### Autre exemple de cas
-TODO
 
-*Application* : [3-1 Medication Dispense document](Bundle-3-1-MedicationDispense.html)
+#### Accident avec médication par les services de secours
+
+**Accident du 3 février 2020**
+
+Monsieur Max Moser (nom modifié), né le 27.11.1988 (date modifiée), titulaire d'un DEP, se promène le 3 février 2020 (journée d'hiver glaciale avec du verglas) à Berne. Il glisse dans un escalier et se blesse si gravement qu'il ne peut plus continuer à marcher lui-même. Monsieur Moser souffre beaucoup.     
+Les services de secours appelés sur place soupçonnent une fracture de la jambe qui doit être traitée à l'hôpital. Afin de rendre Monsieur Moser transportable, l'ambulancière Priska Huber (nom modifié) lui pose une perfusion de NaCL 0,9% à 14h32 et lui administre 0,05 mg de Fentanyl i.v. pour traiter la douleur.     
+La médication est enregistrée par l'équipe du service de secours dans le protocole d'intervention électronique. Monsieur Moser est alors transporté à l'hôpital. Lors du transfert du patient, l'équipe du service des urgences est informée non seulement du diagnostic de suspicion, mais aussi de la médication administrée. L'application de la médication est classée par le service de secours dans le dossier électronique du patient de Monsieur Moser.      
+
+*Application* : [3-1 Medication Dispense document (NaCL)](Bundle-3-1-MedicationDispense.html) & [3-2 Medication Dispense document (Fentanyl)](Bundle-3-2-MedicationDispense.html)
