@@ -37,3 +37,11 @@ Description: "Definition of the medication administration for the medication dis
 * reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosage 1..
+* dosage.route from $edqm-routeofadministration (required)
+* dosage.route ^short = "Route of administration"
+* dosage.route.coding 1.. MS
+* dosage.route.coding.system 1..
+* dosage.route.coding.code 1..
+* dosage.dose ^short = "Amount of medication administered"
+* dosage.dose only CHEMEDQuantityWithEmedUnits
+* dosage.dose MS
