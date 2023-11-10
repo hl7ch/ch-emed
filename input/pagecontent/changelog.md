@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 4 Sequence - v4.0.0 (2023)
 
 #### Added
+* [#242](https://github.com/hl7ch/ch-emed/issues/242): Add MedicationAdministration to Medication Dispense document (DIS)
 
 #### Changed / Updated
 * [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)

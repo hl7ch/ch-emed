@@ -59,8 +59,8 @@ Description: "Definition of the composition for the medication list document"
 * section[list].entry[medicationRequest] only Reference(CHEMEDMedicationRequestList)
 * section[list].entry[medicationRequest] ^short = "MedicationRequest (from PRE)"
 * section[list].entry[medicationRequest].reference 1..
-* section[list].entry[medicationDispense] only Reference(CHEMEDMedicationDispenseList)
-* section[list].entry[medicationDispense] ^short = "MedicationDispense (from DIS)"
+* section[list].entry[medicationDispense] only Reference(CHEMEDMedicationDispenseList or CHEMEDMedicationAdministrationList)
+* section[list].entry[medicationDispense] ^short = "MedicationDispense or MedicationAdministration (from DIS)"
 * section[list].entry[medicationDispense].reference 1..
 * section[list].entry[observation] only Reference(CHEMEDObservationList)
 * section[list].entry[observation] ^short = "Observation (from PADV)"
