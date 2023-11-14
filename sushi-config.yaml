@@ -82,8 +82,8 @@ pages:
     title: Dosage
   repeated-dispense.md:
     title: Repeated Dispense
-  different-authors.md:
-    title: Different Authors
+  authorship.md:
+    title: Authorship
   profiles.md:
     title: Profiles
   extensions.md:
@@ -108,7 +108,7 @@ menu:
   Guidance:
     Dosage: dosage.html
     Repeated Dispense (Prescription): repeated-dispense.html
-    Different Authors: different-authors.html
+    Authorship: authorship.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

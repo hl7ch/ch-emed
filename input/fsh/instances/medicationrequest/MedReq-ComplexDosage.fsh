@@ -10,6 +10,8 @@ Usage: #example
 * intent = #order
 * medicationReference.reference = "#Wallwurz"
 * subject.reference = "Patient/MonikaWegmueller"
+* authoredOn = "2020-02-02"
+* requester.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * reasonCode.text = "Rheumatischen Beschwerden"
 * dosageInstruction[baseEntry].patientInstruction = "Je nach Grösse der betroffenen Stellen ein 2-5 cm langes Stück Amavita Wallwurz-Gel bis 5-mal täglich auf die betroffenen Stellen einreiben und trocknen lassen."
 * dosageInstruction[baseEntry].asNeededBoolean = true

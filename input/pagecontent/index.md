@@ -19,7 +19,7 @@ The use case ([de](usecase-german.html), [fr](usecase-french.html)) illustrates 
 To explain the different focus areas in more detail, there is a guidance section with the following topics:
 * [Dosage](dosage.html)
 * [Repeated Dispense (Prescription)](repeated-dispense.html)
-* [Different Authors](different-authors.html)
+* [Authorship (Author(s) & Timestamp)](authorship.html)
 
 <div markdown="1" class="stu-note">
 

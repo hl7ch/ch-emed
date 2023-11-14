@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 4 Sequence - v4.0.0 (2023)
 
 #### Added
+* [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
 
 #### Changed / Updated
 * [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
@@ -71,7 +72,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
    * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision and the author of the document for the Medication List document. 
       * Add separate profiles ([MedicationStatement](StructureDefinition-ch-emed-medicationstatement-list.html)/[MedicationDispense](StructureDefinition-ch-emed-medicationdispense-list.html)/[MedicationRequest](StructureDefinition-ch-emed-medicationrequest-list.html)/[Observation](StructureDefinition-ch-emed-observation-list.html)) for use in the Medication List document ([#114](https://github.com/hl7ch/ch-emed/issues/114)). 
       * [#133](https://github.com/hl7ch/ch-emed/issues/133): Use case for prescription authors clarified by the separate list profiles and guidance (without additional adaptation needed)
-   * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under [Guidance - Different Authors](different-authors.html) and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
+   * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under Guidance and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
       * [MTP](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)/[PRE](StructureDefinition-ch-emed-composition-medicationprescription.html)/[DIS](StructureDefinition-ch-emed-composition-medicationdispense.html)/[PADV](StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html):
          * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (~~CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device~~)
          * Composition.section.author: dito
