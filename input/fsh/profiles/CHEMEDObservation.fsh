@@ -35,5 +35,10 @@ Description: "Definition of the observation for the pharmaceutical advice docume
 * subject ^short = "Patient"
 * subject.reference 1..
 * effectiveDateTime ^short = "Effective Time"
+* issued 1..
+* performer 1..1
+* performer only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* performer ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
+* performer.reference 1..
 * note 1..1
 * note ^short = "COMMENT: the actual comment. OK/CHANGE/REFUSE/CANCEL/SUSPEND: the reason why the action was done."

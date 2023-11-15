@@ -33,9 +33,13 @@ Description: "Definition of the medication dispense for the medication dispense 
 * subject only Reference(CHCorePatient)
 * subject ^short = "Patient"
 * subject.reference 1..
+* performer 1..1
+* performer.actor only Reference(CHEMEDPractitionerRole)
+* performer.actor ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
+* performer.actor.reference 1..
 * quantity 1..
 * quantity ^short = "Number of packages"
-* whenHandedOver ^short = "When product was given out"
+* whenHandedOver 1..
 * dosageInstruction ^slicing.discriminator.type = #profile
 * dosageInstruction ^slicing.discriminator.path = "$this"
 * dosageInstruction ^slicing.rules = #closed

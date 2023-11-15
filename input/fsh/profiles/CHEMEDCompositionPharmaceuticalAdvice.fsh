@@ -51,9 +51,6 @@ Description: "Definition of the composition for the pharmaceutical advice docume
 * section[pharmaceuticalAdvice].title ^short = "'Hinweise zur Medikation' in german or 'Conseils sur les médicaments' in french or 'Consigli sui medicamenti' in italian or 'Pharmaceutical Advice' in english\r\n                        or titles in other languages are also allowed"
 * section[pharmaceuticalAdvice].code 1..
 * section[pharmaceuticalAdvice].code = $loinc#61357-0
-* section[pharmaceuticalAdvice].author only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
-* section[pharmaceuticalAdvice].author ^short = "The author of the medical decision (person) if different from the author of the document (Composition.author), see also 'Guidance - Different Authors'"
-* section[pharmaceuticalAdvice].author.reference 1..
 * section[pharmaceuticalAdvice].text 1..1
 * section[pharmaceuticalAdvice].text ^short = "Human readable text of this section"
 * section[pharmaceuticalAdvice].entry 1..1
