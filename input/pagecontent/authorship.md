@@ -35,12 +35,12 @@ In this case, the author of the document and the author of the medical decision 
    * **Author of the medical decision**
       * MTP: MedicationStatement.informationSource (*Dr. med. Familien Hausarzt*)
       * PRE: MedicationRequest.requester
-      * DIS: MedicationDispense.performer.actor
+      * DIS: MedicationDispense.performer.actor, MedicationAdministration.performer.actor
       * PADV: Observation.performer (*Dr. med. Sandra Meier*)
    * **Author of the original document** (if different from the author of the medical decision)
       * MTP: MedicationStatement.extension:authorDocument (*no value because identical with author medical decision*)
       * PRE: MedicationRequest.extension:authorDocument
-      * DIS: MedicationDispense.extension:authorDocument
+      * DIS: MedicationDispense.extension:authorDocument, MedicationAdministration.extension:authorDocument
       * PADV: Observation.extension:authorDocument (*Andrew Stabilo*)
 
 #### Overview Table
@@ -50,9 +50,9 @@ In this case, the author of the document and the author of the medical decision 
 | --- | --- | --- | --- |
 | **MTP** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationStatement.informationSource 1.. | - |
 | **PRE** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationRequest.requester 1.. | - |
-| **DIS** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationDispense.performer.actor 1.. | - |
+| **DIS** | Composition.author 1..<br>(person 1.. &#124; device 0..) | MedicationDispense.performer.actor 1..<br>MedicationAdministration.performer.actor 1.. | - |
 | **PADV** | Composition.author 1..<br>(person 1.. &#124; device 0..) | Observation.performer 1.. | - |
-| **LIST** | Composition.author 1..<br>(device, which dynamically<br>generates the document) | MedicationStatement.informationSource 1..<br>MedicationRequest.requester 1..<br>MedicationDispense.performer.actor 1..<br>Observation.performer 1.. | MedicationStatement.extension:authorDocument 0..<br>MedicationRequest.extension:authorDocument 0..<br>MedicationDispense.extension:authorDocument 0..<br>Observation.extension:authorDocument 0.. |
+| **LIST** | Composition.author 1..<br>(device, which dynamically<br>generates the document) | MedicationStatement.informationSource 1..<br>MedicationRequest.requester 1..<br>MedicationDispense.performer.actor 1..<br>MedicationAdministration.performer.actor 1..<br>Observation.performer 1.. | MedicationStatement.extension:authorDocument 0..<br>MedicationRequest.extension:authorDocument 0..<br>MedicationDispense.extension:authorDocument 0..<br>MedicationAdministration.extension:authorDocument 0..<br>Observation.extension:authorDocument 0.. |
 | **CARD** | Composition.author 1..<br>(person or device) | MedicationStatement.informationSource* 1.. | MedicationStatement.extension:authorDocument* 0.. |
 
 *: The CARD is an aggregation of all medications, respectively all documents, which may have had different authors. The “last author” (author of the last input for this treatment) is indicated in each case.
@@ -63,4 +63,5 @@ In this case, the author of the document and the author of the medical decision 
    * [MedicationStatement.dateAsserted](StructureDefinition-ch-emed-medicationstatement.html) (1..1) When the statement was asserted
    * [MedicationRequest.authoredOn](StructureDefinition-ch-emed-medicationrequest.html) (1..1) When request was initially authored
    * [MedicationDispense.whenHandedOver](StructureDefinition-ch-emed-medicationdispense.html) (1..1) When product was given out
+   * [MedicationAdministration.effective[x]](StructureDefinition-ch-emed-medicationadministration.html) (1..1) Start and end time of administration
    * [Observation.issued](StructureDefinition-ch-emed-observation.html) (1..1) Date/Time this version was made available
