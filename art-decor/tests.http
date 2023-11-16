@@ -1,0 +1,7 @@
+### not working anymore need to specify the version
+GET https://art-decor.org/fhir/4.0/ch-pharm-/ValueSet/2.16.756.5.30.1.1.11.2 HTTP/1.1
+Accept: application/fhir+json
+
+###2022‑06‑08 15:42:14
+GET https://art-decor.org/fhir/4.0/ch-pharm-/ValueSet/2.16.756.5.30.1.1.11.2--20220608154214 HTTP/1.1
+Accept: application/fhir+json
