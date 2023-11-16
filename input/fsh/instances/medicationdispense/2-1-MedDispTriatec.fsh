@@ -17,7 +17,7 @@ Usage: #example
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"
 * performer.actor.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
-* quantity = 1 '{Package}' "Package"
+* quantity = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * whenHandedOver = "2011-11-29T11:01:00+01:00"
 * dosageInstruction[baseEntry].patientInstruction = "-"
 * dosageInstruction[baseEntry].timing.repeat.boundsPeriod.start = "2011-11-29"

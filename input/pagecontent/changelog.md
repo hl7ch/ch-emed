@@ -7,7 +7,13 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#248](https://github.com/hl7ch/ch-emed/issues/248): Add SCT code 106181007 'Immunologic substance (substance)' to ValueSet ActivePharmaceuticalIngredient
 
 #### Changed / Updated
-* [#234](https://github.com/hl7ch/ch-emed/issues/234): UCUM anotations (TODO)
+* [#234](https://github.com/hl7ch/ch-emed/issues/234): Replacing UCUM codes with human readable annotations with SCT codes (ValueSet UnitCode)
+   * {Dose} 'Dose' -> 408102007 'Unit dose (qualifier value)'
+   * 10*6.{Unit} '(the number ten for arbitrary powers ^ 6) * Unit' -> 396186001 'Million unit (qualifier value)'
+   * {Package} 'Package' -> 1681000175101 'Package - unit of product usage (qualifier value)'
+   * 10*3.{Unit} 'Thousand Per * Unit' -> 2011000175108 'Thousand unit (qualifier value)'
+   * {Unit} 'Unit' -> 767525000 'Unit (qualifier value)'
+   * {Piece} 'Piece' -> not done yet, see [#252](https://github.com/hl7ch/ch-emed/issues/252)
 
 #### Fixed
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
