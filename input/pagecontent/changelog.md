@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 4 Sequence - v4.0.0 (2023)
 
 #### Added
+* [#248](https://github.com/hl7ch/ch-emed/issues/248): Add SCT code 106181007 'Immunologic substance (substance)' to ValueSet ActivePharmaceuticalIngredient
 
 #### Changed / Updated
 * [#234](https://github.com/hl7ch/ch-emed/issues/234): UCUM anotations (TODO)
