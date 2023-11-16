@@ -3,13 +3,10 @@ Die hier skizzierten Anwendungsfälle (UC = Use Case) beziehen sich auf Beispiel
 Ziel ist einerseits die Bereitstellung von Informationen zum Gesundheitszustand des Patienten in einer menschlich lesbaren Form für die am Behandlungspfad beteiligten Personen. Andererseits sollen durch die elektronische Verarbeitung der Informationen Prozesse in den ICT-Systemen optimiert werden können.  
 Nachfolgend beschriebene Anwendungsfälle verdeutlichen diese Zusammenhänge im vorliegenden Kontext. 
 
-### Einführung
+### IPAG Fallbeispiel
 Die IPAG hat in ihrem Bericht ein Use Case erarbeitet für die Illustration der interprofessionellen Prozesse und Kommunikation in der eMedikation. Im Fallbeispiel werden Situationen geschildert, mit welchen die verschiedenen, an der medikamentösen Behandlung eines Patienten beteiligten Gesundheitsfachpersonen im Alltag konfrontiert werden können. Dieses Fallbeispiel beschreibt die ersten 2 Schritte des Use Case des [IPAG Bericht eMedikation](https://www.e-health-suisse.ch/fileadmin/user_upload/Dokumente/2017/D/170607_Bericht_eMedikation_IPAG.pdf) im Kapitel 6 Appendix II: Use Case Frau Wegmüller. 
 
-
 *Im folgenden Text werden Tabellen dargestellt, welche die Empfehlungen der IPAG aufnehmen und anwenden. Diese Tabellen sollen exemplarisch die Anwendbarkeit der eDokumente darstellen. Die dargestellten Medikationslisten wurden inhaltlich und klinisch noch nicht validiert.*
-
-### Fallbeispiel
 
 #### Erstbesuch beim Hausarzt
 
@@ -93,3 +90,15 @@ Zusätzlich zum IPAG Anwendungsfall erstellt der Hausarzt einen Medikationsplan 
 | Norvasc | Amlodipin | | Tbl | 10 mg / Tbl | Morgens und abends je 1 Tablette einnehmen | 1 | 0 | 1 | 0 | oral | | | Bluthochdruck |
 
 *Medikationsplan*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
+
+### Weiteres Fallbeispiel
+
+#### Unfall mit Medikation durch den Rettungsdienst
+
+**Unfall vom 3. Februar 2020**
+
+Herr Max Moser (Name geändert), geboren am 27.11.1988 (Datum geändert), Inhaber eines EPD, spaziert am 3. Februar 2020 (eisiger Wintertag mit Glatteis) in Bern. Auf einer Treppe rutscht er aus und verletzt sich so stark, dass er selbst nicht mehr weitergehen kann. Herr Moser hat starke Schmerzen.   
+Der herbeigerufene Rettungsdienst vermutet einen Bruch des Unterschenkels, der im Spital behandelt werden muss. Um Herrn Moser transportfähig zu machen, werden ihm von Rettungssanitäterin Priska Huber (Name geändert) um 14:32 eine Infusion mit NaCL 0.9% gesteckt und zur Schmerzbehandlung 0.05 mg Fentanyl i.v. verabreicht.    
+Die Medikation wird vom Team des Rettungsdienstes im elektronischen Einsatzprotokoll erfasst. Herr Moser wird nun ins Spital gebracht. Bei der Patientenübergabe wird das Team in der Notfallstation neben der Verdachtsdiagnose auch über die verabreichte Medikation informiert. Die Medikationsanwendung wird durch den Rettungsdienst im Elektronischen Patientendossier von Herrn Moser abgelegt.
+
+*Anwendung*: [3-1 Medication Dispense document (NaCL)](Bundle-3-1-MedicationDispense.html) & [3-2 Medication Dispense document (Fentanyl)](Bundle-3-2-MedicationDispense.html)

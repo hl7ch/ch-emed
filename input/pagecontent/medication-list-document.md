@@ -18,4 +18,5 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 * [CH EMED MedicationStatement (LIST)](StructureDefinition-ch-emed-medicationstatement-list.html)
 * [CH EMED MedicationRequest (LIST)](StructureDefinition-ch-emed-medicationrequest-list.html)
 * [CH EMED MedicationDispense (LIST)](StructureDefinition-ch-emed-medicationdispense-list.html)
+* [CH EMED MedicationAdministration (LIST)](StructureDefinition-ch-emed-medicationadministration-list.html)
 * [CH EMED Observation (LIST)](StructureDefinition-ch-emed-observation-list.html)

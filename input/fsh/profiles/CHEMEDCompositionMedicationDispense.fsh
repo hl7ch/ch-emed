@@ -54,8 +54,8 @@ Description: "Definition of the composition for the medication dispense document
 * section[dispense].text 1..1
 * section[dispense].text ^short = "Human readable text of this section"
 * section[dispense].entry 1..1
-* section[dispense].entry only Reference(CHEMEDMedicationDispense)
-* section[dispense].entry ^short = "Medication dispense"
+* section[dispense].entry only Reference(CHEMEDMedicationDispense or CHEMEDMedicationAdministration)
+* section[dispense].entry ^short = "Medication dispense or administration"
 * section[dispense].entry.reference 1..
 * section[dispense].section 0..0
 * section[annotation] ^short = "Annotation"

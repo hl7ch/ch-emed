@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 4 Sequence - v4.0.0 (2023)
 
 #### Added
+* [#242](https://github.com/hl7ch/ch-emed/issues/242): Add MedicationAdministration to Medication Dispense document (DIS)
 * [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
 
 #### Changed / Updated
