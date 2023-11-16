@@ -51,14 +51,11 @@ Description: "Definition of the composition for the medication dispense document
 * section[dispense].title ^short = "'Abgabe eines Medikaments' in german or 'Dispensation d'un médicament' in french or 'Dispensazione di un medicamento' in italian or 'Medication dispensed' in english\r\n                        or titles in other languages are also allowed"
 * section[dispense].code 1..
 * section[dispense].code = $loinc#60590-7
-* section[dispense].author only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
-* section[dispense].author ^short = "The author of the medical decision (person) if different from the author of the document (Composition.author), see also 'Guidance - Different Authors'"
-* section[dispense].author.reference 1..
 * section[dispense].text 1..1
 * section[dispense].text ^short = "Human readable text of this section"
 * section[dispense].entry 1..1
-* section[dispense].entry only Reference(CHEMEDMedicationDispense)
-* section[dispense].entry ^short = "Medication dispense"
+* section[dispense].entry only Reference(CHEMEDMedicationDispense or CHEMEDMedicationAdministration)
+* section[dispense].entry ^short = "Medication dispense or administration"
 * section[dispense].entry.reference 1..
 * section[dispense].section 0..0
 * section[annotation] ^short = "Annotation"

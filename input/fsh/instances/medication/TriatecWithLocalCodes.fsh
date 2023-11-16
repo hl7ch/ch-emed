@@ -13,7 +13,6 @@ Usage: #example
 * amount.numerator = 20 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * ingredient.itemCodeableConcept = $sct#386872004 "Ramipril (substance)"
-* ingredient.itemCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * ingredient.itemCodeableConcept.text = "Ramipril"
 * ingredient.strength.numerator = 2.5 'mg' "milligram"
 * ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"

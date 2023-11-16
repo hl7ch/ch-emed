@@ -14,6 +14,12 @@ All significant changes to this FHIR implementation guide will be documented on 
    * 10*3.{Unit} 'Thousand Per * Unit' -> 2011000175108 'Thousand unit (qualifier value)'
    * {Unit} 'Unit' -> 767525000 'Unit (qualifier value)'
    * {Piece} 'Piece' -> not done yet, see [#252](https://github.com/hl7ch/ch-emed/issues/252)
+* [#242](https://github.com/hl7ch/ch-emed/issues/242): Add MedicationAdministration to Medication Dispense document (DIS)
+* [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
+
+#### Changed / Updated
+* [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
+* [#238](https://github.com/hl7ch/ch-emed/issues/238): List the data type profiles under tab profile
 
 #### Fixed
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
@@ -22,7 +28,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment
 * [#230](https://github.com/hl7ch/ch-emed/issues/230): Concerning extension from CH Core not CH EMED
-
+* [#236](https://github.com/hl7ch/ch-emed/issues/236): Fix constraint for Composition.type
+* [#246](https://github.com/hl7ch/ch-emed/issues/246): Fix typo
+* [#243](https://github.com/hl7ch/ch-emed/issues/243): Document names
+* [#244](https://github.com/hl7ch/ch-emed/issues/244): CH EMED extensions
 
 ### STU 4 Sequence - v4.0.0-ballot (2023-06-29)
 
@@ -74,7 +83,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
    * [#113](https://github.com/hl7ch/ch-emed/issues/113): Mapping of the author of the medical decision and the author of the document for the Medication List document. 
       * Add separate profiles ([MedicationStatement](StructureDefinition-ch-emed-medicationstatement-list.html)/[MedicationDispense](StructureDefinition-ch-emed-medicationdispense-list.html)/[MedicationRequest](StructureDefinition-ch-emed-medicationrequest-list.html)/[Observation](StructureDefinition-ch-emed-observation-list.html)) for use in the Medication List document ([#114](https://github.com/hl7ch/ch-emed/issues/114)). 
       * [#133](https://github.com/hl7ch/ch-emed/issues/133): Use case for prescription authors clarified by the separate list profiles and guidance (without additional adaptation needed)
-   * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under [Guidance - Different Authors](different-authors.html) and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
+   * Add description/use cases for the use of the different authors at the different document levels (document/section/entry) under Guidance and update the profiles/examples according to the guidance ([#113](https://github.com/hl7ch/ch-emed/issues/113)):
       * [MTP](StructureDefinition-ch-emed-composition-medicationtreatmentplan.html)/[PRE](StructureDefinition-ch-emed-composition-medicationprescription.html)/[DIS](StructureDefinition-ch-emed-composition-medicationdispense.html)/[PADV](StructureDefinition-ch-emed-composition-pharmaceuticaladvice.html):
          * Composition.author: Reference(CH EMED PractitionerRole &#124; CH Core Patient EPR &#124; RelatedPerson) (~~CH EMED Practitioner &#124; CH Core Organization EPR &#124; Device~~)
          * Composition.section.author: dito

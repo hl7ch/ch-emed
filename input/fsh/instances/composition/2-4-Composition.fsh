@@ -8,16 +8,15 @@ Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"
 * status = #final
-* type.coding[0] = $loinc#60593-1 "Medication dispensed.extended Document"
-* type.coding[+] = $sct#82291000195104 "Medication dispense document (record artifact)"
+* type.coding[0] = $sct#82291000195104 "Medication dispense document (record artifact)"
 * type.coding[=].version = "http://snomed.info/sct/2011000195101"
+* type.coding[+] = $loinc#60593-1 "Medication dispensed.extended Document"
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2012-02-04T14:00:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 * title = "Abgabe"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
-* confidentiality.extension.valueCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * confidentiality = #N
 
 * section[dispense].title = "Abgabe eines Medikaments"

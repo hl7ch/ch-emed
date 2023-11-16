@@ -68,12 +68,16 @@
  
     <xsl:template match="fhir:ValueSet/fhir:compose/fhir:include/fhir:system[@value='http://snomed.info/sct']">
       <fhir:system value="http://snomed.info/sct" />
-      <fhir:version value="http://snomed.info/sct/2011000195101" />
+      <xsl:if test="not($resourceId='ActivePharmaceuticalIngredient' or $resourceId='UnitCode')">
+        <fhir:version value="http://snomed.info/sct/2011000195101" />
+      </xsl:if>
     </xsl:template>
 
     <xsl:template match="fhir:ValueSet/fhir:compose/fhir:include/fhir:system[@value='urn:oid:2.16.756.5.30.1.127.3.4']">
       <fhir:system value="http://snomed.info/sct" />
-      <fhir:version value="http://snomed.info/sct/2011000195101" />
+      <xsl:if test="not($resourceId='ActivePharmaceuticalIngredient' or $resourceId='UnitCode')">
+        <fhir:version value="http://snomed.info/sct/2011000195101" />
+      </xsl:if>
     </xsl:template>
 
 

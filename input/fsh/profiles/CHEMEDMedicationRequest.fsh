@@ -25,6 +25,11 @@ Description: "Definition of the medication request for the medication prescripti
 * subject only Reference(CHCorePatient)
 * subject ^short = "Patient"
 * subject.reference 1..
+* authoredOn 1..
+* requester 1..
+* requester only Reference(CHEMEDPractitionerRole)
+* requester ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
+* requester.reference 1..
 * reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosageInstruction ^slicing.discriminator.type = #profile

@@ -22,6 +22,7 @@ Description: "Definition of the bundle for the medication list document"
     MedicationStatement 0..* and
     MedicationRequest 0..* and
     MedicationDispense 0..* and
+    MedicationAdministration 0..* and
     Observation 0..* and
     MedicationStatementChanged 0..* and
     MedicationRequestChanged 0..*
@@ -30,7 +31,9 @@ Description: "Definition of the bundle for the medication list document"
 * entry[MedicationRequest].resource 1..
 * entry[MedicationRequest].resource only CHEMEDMedicationRequestList
 * entry[MedicationDispense].resource 1..
-* entry[MedicationDispense].resource only CHEMEDMedicationDispenseList
+* entry[MedicationDispense].resource only CHEMEDMedicationDispenseList 
+* entry[MedicationAdministration].resource 1..
+* entry[MedicationAdministration].resource only CHEMEDMedicationAdministration
 * entry[Observation].resource 1..
 * entry[Observation].resource only CHEMEDObservationList
 * entry[MedicationStatementChanged].resource 1..

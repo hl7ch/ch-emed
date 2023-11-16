@@ -8,7 +8,6 @@ Usage: #inline
 * amount.numerator = 30 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * ingredient.itemCodeableConcept = $sct#386864001 "Amlodipine (substance)"
-* ingredient.itemCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * ingredient.itemCodeableConcept.text = "Amlodipine"
 * ingredient.strength.numerator = 10 'mg' "milligram"
 * ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"

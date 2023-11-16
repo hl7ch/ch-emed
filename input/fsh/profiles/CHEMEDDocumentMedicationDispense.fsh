@@ -18,6 +18,10 @@ Description: "Definition of the bundle for the medication dispense document"
 * entry[Composition] ^short = "Medication dispense composition"
 * entry[Composition].resource 1..
 * entry[Composition].resource only CHEMEDCompositionMedicationDispense
-* entry contains MedicationDispense 0..*
+* entry contains 
+    MedicationDispense 0..* and
+    MedicationAdministration 0..*
 * entry[MedicationDispense].resource 1..
 * entry[MedicationDispense].resource only CHEMEDMedicationDispense
+* entry[MedicationAdministration].resource 1..
+* entry[MedicationAdministration].resource only CHEMEDMedicationAdministration

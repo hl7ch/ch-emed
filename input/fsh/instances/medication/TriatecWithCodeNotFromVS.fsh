@@ -13,7 +13,6 @@ Usage: #example
 // code from VS: SCT #386872004 'Ramipril (substance)'
 // the following code is not in the VS (extensible)
 * ingredient.itemCodeableConcept.coding = $sct#408050008 "Ramipril 2.5 mg oral tablet"
-* ingredient.itemCodeableConcept.coding.version = "http://snomed.info/sct/2011000195101"
 * ingredient.itemCodeableConcept.text = "Ramipril"
 * ingredient.strength.numerator = 2.5 'mg' "milligram"
 * ingredient.strength.denominator = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
