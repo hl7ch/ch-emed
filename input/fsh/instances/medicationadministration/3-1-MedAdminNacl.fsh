@@ -14,4 +14,4 @@ Usage: #example
 // * reasonCode.text = "Schmerzbehandlung"
 * dosage.route = urn:oid:0.4.0.127.0.16.1.1.2.1#20045000 "Intravenous use"
 * dosage.route.text = "intravenöse Anwendung"
-* dosage.dose = 0.5 '{Package}' "Package"
+* dosage.dose = 0.5 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
