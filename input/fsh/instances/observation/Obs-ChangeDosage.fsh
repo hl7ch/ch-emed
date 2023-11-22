@@ -1,7 +1,7 @@
 Instance: Obs-ChangeDosage
 InstanceOf: CHEMEDObservation
 Title: "Observation for Pharmaceutical Advice document"
-Description: "Example for Observation (PADV): CHANGE"
+Description: "Example for Observation (PADV): CHANGE with new MedicationStatement"
 Usage: #example
 
 // Reference to 1-1 Medication Treatment Plan document with original dosage of 0.5-0-0-0
@@ -25,6 +25,4 @@ Usage: #example
 * performer = Reference(FamilienHausarztAtHausarzt)
 * effectiveDateTime = "2012-02-04T14:00:00+01:00"
 * issued = "2012-02-04T14:00:00+01:00"
-* note.extension.url = "http://hl7.org/fhir/StructureDefinition/narrativeLink"
-* note.extension.valueUrl = "#padv.1.note"
 * note.text = "Dosierungsänderung: Morgens 1 Tablette anstatt 0.5 Tablette"

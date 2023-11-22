@@ -26,7 +26,7 @@ A Pharmaceutical Advice document contains one Observation. The Observation refer
 
 #### Modifying an existing medication
 * [CHANGE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
-   * The planning of the medication has changed, e.g. the dosage. The Observation ([example](Observation-PharmaceuticalAdvice-ChangeDosage.html)) refers the original Medication Treatment Plan document and a new MedicationStatement ([example](MedicationStatement-MedStatTriatec-ChangeDosage.html)) with the changed information.
+   * The planning of the medication has changed, e.g. the dosage. The Observation ([example](Observation-Obs-ChangeDosage.html)) refers the original Medication Treatment Plan document and a new MedicationStatement ([example](MedicationStatement-MedStatTriatec-ChangeDosage.html)) with the changed information.
       * [Example](Bundle-PharmaceuticalAdvice-ChangeDosage.html) with dosage change: 1 tablet in the morning instead of 0.5 tablet (as decided in use case step 1-1) 
    * Prescription can be dispensed after indicated change. The Observation ([example](Observation-PharmaceuticalAdvice-ChangeMedicament.html)) refers the original Medication Prescription document and a new MedicationRequest ([example](MedicationRequest-MedReq-ChangeMedication.html)) with the changed information.
 * [REFUSE](ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
