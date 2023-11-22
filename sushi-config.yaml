@@ -1,3 +1,4 @@
+# https://fshschool.org/docs/sushi/configuration/#exhaustive-example
 id: ch.fhir.ig.ch-emed
 canonical: http://fhir.ch/ig/ch-emed
 url: http://fhir.ch/ig/ch-emed/ImplementationGuide/ch.fhir.ig.ch-emed
@@ -6,8 +7,8 @@ title: CH EMED (R4)
 description: Implementation Guide for the eMedication in Switzerland.
 status: active
 experimental: false
-date: 2023-06-29
-version: 4.0.0-ci-build
+date: 2023-11-22
+version: 4.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaselabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
