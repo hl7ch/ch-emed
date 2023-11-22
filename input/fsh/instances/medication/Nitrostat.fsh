@@ -6,7 +6,7 @@ Usage: #inline
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10318000 "Sublingual tablet"
 * form.text = "Sublingualtablette"
 * amount.numerator = 100 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
-* amount.denominator = 1 '{Package}' "Package"
+* amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * ingredient.itemCodeableConcept = $sct#387404004 "Nitroglycerin"
 * ingredient.itemCodeableConcept.text = "Nitroglycerin"
 * ingredient.strength.numerator = 0.3 'mg' "milligram"

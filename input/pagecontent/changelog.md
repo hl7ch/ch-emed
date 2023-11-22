@@ -13,6 +13,16 @@ During the ballot, the following comments came in, which will be taken into acco
 See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 #### Added
+* [#248](https://github.com/hl7ch/ch-emed/issues/248): Add SCT code 106181007 'Immunologic substance (substance)' to ValueSet ActivePharmaceuticalIngredient
+
+#### Changed / Updated
+* [#234](https://github.com/hl7ch/ch-emed/issues/234): Replacing UCUM codes with human readable annotations with SCT codes (ValueSet UnitCode)
+   * {Dose} 'Dose' -> 408102007 'Unit dose (qualifier value)'
+   * 10*6.{Unit} '(the number ten for arbitrary powers ^ 6) * Unit' -> 396186001 'Million unit (qualifier value)'
+   * {Package} 'Package' -> 1681000175101 'Package - unit of product usage (qualifier value)'
+   * 10*3.{Unit} 'Thousand Per * Unit' -> 2011000175108 'Thousand unit (qualifier value)'
+   * {Unit} 'Unit' -> 767525000 'Unit (qualifier value)'
+   * {Piece} 'Piece' -> not done yet, see [#252](https://github.com/hl7ch/ch-emed/issues/252)
 * [#242](https://github.com/hl7ch/ch-emed/issues/242): Add MedicationAdministration to Medication Dispense document (DIS)
 * [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
 
@@ -23,14 +33,14 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 #### Fixed
 * [#231](https://github.com/hl7ch/ch-emed/issues/231): Correct referenced identifier for Beloc Zok (in 2-7)
 * [#228](https://github.com/hl7ch/ch-emed/issues/228): Correct the SNOMED CT code for DIS
-* [#236](https://github.com/hl7ch/ch-emed/issues/236): Fix constraint for Composition.type
-* [#246](https://github.com/hl7ch/ch-emed/issues/246): Fix typo
+* [#234](https://github.com/hl7ch/ch-emed/issues/234): Fix rules concerning collection (ch-obs-1 & ch-emed-comp-card/dis/list/pre/mtp/padv)
 
 #### Issues resolved without amendment
-* [#230](https://github.com/hl7ch/ch-emed/issues/230): Extension from CH Core not CH EMED
+* [#230](https://github.com/hl7ch/ch-emed/issues/230): Concerning extension from CH Core not CH EMED
+* [#236](https://github.com/hl7ch/ch-emed/issues/236): Fix constraint for Composition.type
+* [#246](https://github.com/hl7ch/ch-emed/issues/246): Fix typo
 * [#243](https://github.com/hl7ch/ch-emed/issues/243): Document names
 * [#244](https://github.com/hl7ch/ch-emed/issues/244): CH EMED extensions
-
 
 ### STU 4 Sequence - v4.0.0-ballot (2023-06-29)
 

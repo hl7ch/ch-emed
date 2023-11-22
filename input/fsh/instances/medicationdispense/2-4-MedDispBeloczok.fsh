@@ -16,8 +16,8 @@ Usage: #example
 * status = #completed
 * medicationReference.reference = "#Beloczok"
 * subject.reference = "Patient/MonikaWegmueller"
+* quantity = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * performer.actor.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
-* quantity = 1 '{Package}' "Package"
 * whenHandedOver = "2012-02-04T14:00:00+01:00"
 
 * dosageInstruction[baseEntry].sequence = 1

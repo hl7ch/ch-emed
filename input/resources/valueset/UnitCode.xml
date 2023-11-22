@@ -3,12 +3,13 @@
    <id value="UnitCode"/>
    <meta>
       <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.83--20220608150046"/>
+      <source value="https://art-decor.org/fhir/4.0/ch-pharm-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-06-08T15:00:46+02:00"/>
+         <start value="2022-06-08T15:00:46+01:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -758,30 +759,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="{Dose}"/>
-            <display value="Dose"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Dos"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="dose"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="dose"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Dos"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Dose"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="[tbs_m]"/>
             <display value="tablespoon - metric"/>
             <designation>
@@ -803,30 +780,6 @@
             <designation>
                <language value="en-US"/>
                <value value="tablespoon - metric"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="10*6.{Unit}"/>
-            <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="MioU"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="MioU"/>
             </designation>
          </concept>
          <concept>
@@ -878,30 +831,6 @@
             </designation>
          </concept>
          <concept>
-            <code value="{Package}"/>
-            <display value="Package"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Packung"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="emballage"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="confezione"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Packung"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Package"/>
-            </designation>
-         </concept>
-         <concept>
             <code value="{Piece}"/>
             <display value="Piece"/>
             <designation>
@@ -947,54 +876,6 @@
             <designation>
                <language value="en-US"/>
                <value value="teaspoon - metric"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="10*3.{Unit}"/>
-            <display value="Thousand Per * Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Tausend Einheiten"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="millier d'unités"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="mille per unità *"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Tausend Einheiten"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Thousand Per * Unit"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="{Unit}"/>
-            <display value="Unit"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Einheit"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="unité(s)"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="unità"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="Einheit"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="unit"/>
             </designation>
          </concept>
          <concept>
@@ -1048,6 +929,8 @@
       </include>
       <include>
          <system value="http://snomed.info/sct"/>
+<!-- no swiss specific codes here remove manually         <version
+                       value="http://snomed.info/sct/2011000195101"/>  -->
          <concept>
             <code value="732981002"/>
             <display value="Actuation (unit of presentation)"/>
@@ -2226,6 +2109,126 @@
             <designation>
                <language value="en-US"/>
                <value value="Vial"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408102007"/>
+            <display value="Dose"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Dos"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="dose"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="dose"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Dos"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dose"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="396186001"/>
+            <display value="(the number ten for arbitrary powers ^ 6) * Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="MioU"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="MioU"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1681000175101"/>
+            <display value="Package"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Packung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="emballage"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="confezione"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Packung"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Package"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="2011000175108"/>
+            <display value="Thousand Per * Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Tausend Einheiten"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="millier d'unités"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="mille per unità *"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Tausend Einheiten"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Thousand Per * Unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="767525000"/>
+            <display value="Unit"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Einheit"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="unité(s)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="unità"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Einheit"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="unit"/>
             </designation>
          </concept>
       </include>

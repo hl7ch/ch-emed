@@ -2,13 +2,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ActivePharmaceuticalIngredient"/>
    <meta>
-      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.82--20220302152514"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.82--20231027132437"/>
+      <lastUpdated value="2023-11-09T10:10:15Z"/>
+      <source value="https://art-decor.org/fhir/4.0/ch-pharm-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-03-02T15:25:14+02:00"/>
+         <start value="2023-10-27T13:24:37+01:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -18,10 +20,10 @@
       <system value="urn:ietf:rfc:3986"/>
       <value value="urn:oid:2.16.756.5.30.1.1.11.82"/>
    </identifier>
-   <version value="2022-03-02T15:25:14"/>
+   <version value="2023-10-27T13:24:37"/>
    <name value="ActivePharmaceuticalIngredient"/>
    <title value="ActivePharmaceuticalIngredient"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
    <contact>
@@ -37,6 +39,8 @@
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
+<!--         <version
+                       value="http://snomed.info/sct/2011000195101"/> -->
          <concept>
             <code value="1156222009"/>
             <display value="Trofosfamide (substance)"/>
@@ -13427,6 +13431,30 @@
             <designation>
                <language value="en-US"/>
                <value value="Imiquimod"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="106181007"/>
+            <display value="Immunologic substance (substance)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Immunologic substance"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="substance immunologique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Immunologic substance"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="Immunologic substance"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Immunologic substance"/>
             </designation>
          </concept>
          <concept>

@@ -10,7 +10,7 @@ Usage: #example
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000 "Tablet"
 * form.text = "Tablette"
 * amount.numerator = 28 '{Piece}' "Stk"
-* amount.denominator = 1 '{Package}' "Package"
+* amount.denominator = 1 http://snomed.info/sct#1681000175101 "Package - unit of product usage (qualifier value)"
 * ingredient[0].itemCodeableConcept = $sct#386864001 "Amlodipine (substance)"
 * ingredient[=].itemCodeableConcept.text = "Amlodipine (substance)"
 * ingredient[=].strength.numerator = 10 'mg' "milligram"
