@@ -1,7 +1,9 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 4 Sequence - v4.0.0 (2023)
+### STU 4 Sequence - v4.0.1 (2023)
+
+* [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
 
 ### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
