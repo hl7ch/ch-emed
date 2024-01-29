@@ -20,7 +20,7 @@
    </contact>
    <description value="EDQM - Standard Terms used in Switzerland (aggregations of codes of ValueSets RouteOfAdministration, Dose Form, see original codes system defined in https://standardterms.edqm.eu/#)"/>
    <caseSensitive value="false"/>
-   <content value="content"/>
+   <content value="complete"/>
    <concept>
       <code value="10100500"/>
       <display value="Concentrate for oral suspension"/>
