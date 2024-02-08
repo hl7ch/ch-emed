@@ -7,8 +7,8 @@ title: CH EMED (R4)
 description: Implementation Guide for the eMedication in Switzerland.
 status: active
 experimental: false
-date: 2023-12-28
-version: 4.0.1
+date: 2024-02-08
+version: 5.0.0-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaselabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -55,8 +55,6 @@ resources:
   ValueSet/ihe-pharmaceuticaladvicestatuslist:
     exampleBoolean: false
   ValueSet/UnitCode:
-    exampleBoolean: false
-  ValueSet/ActSubstanceAdminSubstitutionCode:
     exampleBoolean: false
      
 pages:

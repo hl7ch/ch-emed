@@ -53,5 +53,5 @@ Description: "Definition of the medication dispense for the medication dispense 
 * dosageInstruction[additionalEntry] ^short = "Additional entry of the dosage instruction"
 * substitution obeys ch-emed-dis-1
 * substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
-* substitution.type from ActSubstanceAdminSubstitutionCode (required)
+* substitution.type from $ActSubstanceAdminSubstitutionCode (required)
 * substitution.type ^short = "If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."

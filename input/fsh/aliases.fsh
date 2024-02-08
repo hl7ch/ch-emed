@@ -9,5 +9,6 @@ Alias: $edqm-routeofadministration =            http://fhir.ch/ig/ch-emed/ValueS
 Alias: $edqm-pharmaceuticaldoseform =           http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform
 Alias: $ActivePharmaceuticalIngredient =        http://fhir.ch/ig/ch-emed/ValueSet/ActivePharmaceuticalIngredient
 Alias: $v3-ActSubstanceAdminSubstitutionCode =  http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode
+Alias: $ActSubstanceAdminSubstitutionCode =     http://fhir.ch/ig/ch-epr-term/ValueSet/ActSubstanceAdminSubstitutionCode
 Alias: $ihe-pharmaceuticaladvicestatuslist =    http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist
 Alias: $UnitCode =                              http://fhir.ch/ig/ch-emed/ValueSet/UnitCode
