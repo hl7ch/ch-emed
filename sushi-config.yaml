@@ -34,28 +34,6 @@ resources:
     name: 2-7 Medication Card document (with references/fullUrls as UUIDs)
     description: Example for Bundle (with references/fullUrls as UUIDs)
     exampleBoolean: true
-  CodeSystem/edqm-standardterms:
-    exampleBoolean: false
-  CodeSystem/ihe-pharmaceuticaladvicestatuslist:
-    exampleBoolean: false
-  CodeSystem/v3-TimingEvent:
-    exampleBoolean: false
-    name: v3-TimingEvent Supplement
-    description: Translations of concepts for v3-TimingEvent
-  CodeSystem/event-timing:
-    exampleBoolean: false
-    name: event-timing Supplement
-    description: Translations of concepts for event-timing
-  ValueSet/ActivePharmaceuticalIngredient:
-    exampleBoolean: false
-  ValueSet/edqm-pharmaceuticaldoseform:
-    exampleBoolean: false
-  ValueSet/edqm-routeofadministration:
-    exampleBoolean: false
-  ValueSet/ihe-pharmaceuticaladvicestatuslist:
-    exampleBoolean: false
-  ValueSet/UnitCode:
-    exampleBoolean: false
      
 pages:
   index.md:

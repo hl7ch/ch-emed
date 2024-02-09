@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 * [#256](https://github.com/hl7ch/ch-emed/issues/256): Move all terminology to CH Term
    * Update the canonical URLs in the VS binding in the profiles
+   * Fix links from internal (CH EMED) to external (CH Term) artefacts
 
 ### STU 4 Sequence - v4.0.1 (2023-12-28)
 
