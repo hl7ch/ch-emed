@@ -7,8 +7,8 @@ title: CH EMED (R4)
 description: Implementation Guide for the eMedication in Switzerland.
 status: active
 experimental: false
-date: 2023-12-28
-version: 4.0.1
+date: 2024-02-08
+version: 5.0.0-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaselabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -26,7 +26,7 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-core: 4.0.1
+  ch.fhir.ig.ch-core: current
   hl7.terminology: 5.4.0
 
 resources:
@@ -34,30 +34,6 @@ resources:
     name: 2-7 Medication Card document (with references/fullUrls as UUIDs)
     description: Example for Bundle (with references/fullUrls as UUIDs)
     exampleBoolean: true
-  CodeSystem/edqm-standardterms:
-    exampleBoolean: false
-  CodeSystem/ihe-pharmaceuticaladvicestatuslist:
-    exampleBoolean: false
-  CodeSystem/v3-TimingEvent:
-    exampleBoolean: false
-    name: v3-TimingEvent Supplement
-    description: Translations of concepts for v3-TimingEvent
-  CodeSystem/event-timing:
-    exampleBoolean: false
-    name: event-timing Supplement
-    description: Translations of concepts for event-timing
-  ValueSet/ActivePharmaceuticalIngredient:
-    exampleBoolean: false
-  ValueSet/edqm-pharmaceuticaldoseform:
-    exampleBoolean: false
-  ValueSet/edqm-routeofadministration:
-    exampleBoolean: false
-  ValueSet/ihe-pharmaceuticaladvicestatuslist:
-    exampleBoolean: false
-  ValueSet/UnitCode:
-    exampleBoolean: false
-  ValueSet/ActSubstanceAdminSubstitutionCode:
-    exampleBoolean: false
      
 pages:
   index.md:
@@ -88,8 +64,6 @@ pages:
     title: Profiles
   extensions.md:
     title: Extensions
-  terminology.md:
-    title: Terminology 
   changelog.md:
     title: Change Log
 
@@ -111,7 +85,6 @@ menu:
     Authorship: authorship.html
   Profiles: profiles.html
   Extensions: extensions.html
-  Terminology: terminology.html
   Artifacts: artifacts.html
       
 # For parameters defined by core FHIR see: 

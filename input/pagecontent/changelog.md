@@ -1,11 +1,18 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 4 Sequence - v4.0.1 (2023)
+### STU 5 Sequence - v5.0.0-ballot (2024)
+
+#### Changed / Updated
+* [#256](https://github.com/hl7ch/ch-emed/issues/256): Move all terminology to CH Term
+   * Update the canonical URLs in the VS binding in the profiles
+   * Fix links from internal (CH EMED) to external (CH Term) artefacts
+
+### STU 4 Sequence - v4.0.1 (2023-12-28)
 
 * [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
 
-### Open Issues
+#### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
 
 * [#252](https://github.com/hl7ch/ch-emed/issues/252): SCT code for {Piece} (UCUM)
@@ -27,8 +34,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
    * {Piece} 'Piece' -> not done yet, see [#252](https://github.com/hl7ch/ch-emed/issues/252)
 * [#242](https://github.com/hl7ch/ch-emed/issues/242): Add MedicationAdministration to Medication Dispense document (DIS)
 * [#241](https://github.com/hl7ch/ch-emed/issues/241): Add required author and timestamp elements on entry level, see details under 'Guidance - Authorship'
-
-#### Changed / Updated
 * [#233](https://github.com/hl7ch/ch-emed/issues/233): Remove the version (SCT Swiss extension) for SCT codings, where the code is from the international edition. (Only Composition.type DIS has a SCT code from the Swiss extension.)
 * [#238](https://github.com/hl7ch/ch-emed/issues/238): List the data type profiles under tab profile
 
@@ -61,7 +66,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#194](https://github.com/hl7ch/ch-emed/issues/179): Remove display values from patternCodeableConcepts, remove minimum cardinality = 1 for display values, using official display values in examples (valid with http://tx.fhir.org/r4).
 * [#179](https://github.com/hl7ch/ch-emed/issues/179): Change the author element for MedicationRequest from 'performer' to 'requester'.
 * [#206](https://github.com/hl7ch/ch-emed/issues/206): Change required CodeableConcepts of Composition.type from SNOMED CT to LOINC (MTP/DIS/PRE/PADV/LIST) to be able to distinguish all document types.
-* [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a [ValueSet](ValueSet-ActSubstanceAdminSubstitutionCode.html) excluding 'none' to prevent contradictions. 
+* [#156](https://github.com/hl7ch/ch-emed/issues/156): Set minimum cardinality of MedicationDispense.substitution.type back to 0 and define a ValueSet ActSubstanceAdminSubstitutionCode excluding 'none' to prevent contradictions. 
 * [#195](https://github.com/hl7ch/ch-emed/issues/195): Add additional slice in Composition.author to reference a device (MTP/PRE/DIS/PADV).
 * [#149](https://github.com/hl7ch/ch-emed/issues/149): Add ATC-slice for Medication.code
 * [#200](https://github.com/hl7ch/ch-emed/issues/200): Relax minimum cardinality of timing in [CH EMED Dosage (MedicationRequest)](StructureDefinition-ch-emed-dosage-medicationrequest.html)

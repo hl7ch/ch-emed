@@ -13,13 +13,13 @@ The (outer) bounds of the treatment period are mapped as start and/or end dates 
 For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) are highly recommended for the Swiss use.
 
 #### Dose and Rate
-The amount of medication administered according to the 1-1-1-1 scheme is represented with SNOMED CT or UCUM codes, which are defined in the [ValueSet UnitCode](ValueSet-UnitCode.html).
+The amount of medication administered according to the 1-1-1-1 scheme is represented with SNOMED CT or UCUM codes, which are defined in the [ValueSet UnitCode](http://fhir.ch/ig/ch-term/ValueSet-UnitCode.html).
 
 #### In Reserve
 There is an option to indicate whether the medication is taken only as needed (e.g., when pain occurs) as part of the specified dosing schedule. If it is a reserve medication, the dosage indicated is the maximum dosage the patient may take.
 
 #### Route of Administration
-A code for specifying the route of administration into or onto a patient's body comes from the [ValueSet EDQM - RouteOfAdministration](ValueSet-edqm-routeofadministration.html).
+A code for specifying the route of administration into or onto a patient's body comes from the [ValueSet EDQM - RouteOfAdministration](http://fhir.ch/ig/ch-term/ValueSet-edqm-routeofadministration.html).
 
 #### Patient Instruction
 Instructions to the patient regarding the administration of the medication, e.g. taking with food. The instructions are in a patient understandable language.   
