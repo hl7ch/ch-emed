@@ -1,16 +1,15 @@
 Profile: CHEMEDMedicationDispense
-Parent: MedicationDispense
+Parent: CHCoreMedicationDispense
 Id: ch-emed-medicationdispense
 Title: "CH EMED MedicationDispense (DIS)"
 Description: "Definition of the medication dispense for the medication dispense document"
-
 * . ^short = "CH EMED MedicationDispense (DIS)"
 * contained 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    CHEMEDExtTreatmentReason named treatmentReason 0..1 and
+// CH Core:    CHEMEDExtTreatmentReason named treatmentReason 0..1 and
     CHEMEDExtPrescription named prescription 0..1 and
     CHEMEDExtPharmaceuticalAdvice named pharmaceuticalAdvice 0..1 and
     CHEMEDExtTreatmentPlan named treatmentPlan 0..1
@@ -52,6 +51,6 @@ Description: "Definition of the medication dispense for the medication dispense 
 * dosageInstruction[additionalEntry] only CHEMEDDosageSplit
 * dosageInstruction[additionalEntry] ^short = "Additional entry of the dosage instruction"
 * substitution obeys ch-emed-dis-1
-* substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
+// CH Core: * substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
 * substitution.type from $ActSubstanceAdminSubstitutionCode (required)
-* substitution.type ^short = "If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."
+// CH Core: * substitution.type ^short = "If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."

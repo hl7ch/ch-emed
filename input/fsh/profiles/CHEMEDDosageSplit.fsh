@@ -1,5 +1,5 @@
 Profile: CHEMEDDosageSplit
-Parent: Dosage
+Parent: CHCoreDosage
 Id: ch-emed-dosage-split
 Title: "CH EMED Dosage Split"
 Description: "Definition of the split dosage (used in MedicationStatement / MedicationDispense / MedicationRequest)"
@@ -26,7 +26,7 @@ Description: "Definition of the split dosage (used in MedicationStatement / Medi
 * doseAndRate 1..1
 * doseAndRate ^short = "Amount of medication administered"
 * doseAndRate.dose[x] 1.. MS
-* doseAndRate.dose[x] only CHEMEDRangeWithEmedUnits or CHEMEDQuantityWithEmedUnits
+// CH Core: * doseAndRate.dose[x] only CHEMEDRangeWithEmedUnits or CHEMEDQuantityWithEmedUnits
 * maxDosePerPeriod 0..0
 * maxDosePerAdministration 0..0
 * maxDosePerLifetime 0..0

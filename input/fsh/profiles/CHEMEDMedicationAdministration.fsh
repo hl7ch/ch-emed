@@ -1,5 +1,5 @@
 Profile: CHEMEDMedicationAdministration
-Parent: MedicationAdministration
+Parent: CHCoreMedicationAdministration
 Id: ch-emed-medicationadministration
 Title: "CH EMED MedicationAdministration (DIS)"
 Description: "Definition of the medication administration for the medication dispense document"
@@ -43,5 +43,5 @@ Description: "Definition of the medication administration for the medication dis
 * dosage.route.coding.system 1..
 * dosage.route.coding.code 1..
 * dosage.dose ^short = "Amount of medication administered"
-* dosage.dose only CHEMEDQuantityWithEmedUnits
+// CH Core: * dosage.dose only CHEMEDQuantityWithEmedUnits
 * dosage.dose MS

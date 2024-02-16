@@ -26,14 +26,8 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-core: current
+  ch.fhir.ig.ch-core: dev
   hl7.terminology: 5.4.0
-
-resources:
-  Bundle/2-7-MedicationCard-UUIDfullUrl:
-    name: 2-7 Medication Card document (with references/fullUrls as UUIDs)
-    description: Example for Bundle (with references/fullUrls as UUIDs)
-    exampleBoolean: true
      
 pages:
   index.md:
