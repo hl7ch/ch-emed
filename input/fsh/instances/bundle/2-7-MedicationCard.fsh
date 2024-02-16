@@ -1,5 +1,4 @@
 // NOTE: identical example but with uuid as fullUrl, adjust both instances when making changes
-// input\examples\bundle\2-7-MedicationCard-UUIDfullUrl.xml
 
 Instance: 2-7-MedicationCard
 InstanceOf: CHEMEDDocumentMedicationCard
