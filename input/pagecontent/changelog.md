@@ -6,7 +6,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 * [#256](https://github.com/hl7ch/ch-emed/issues/256): Move all terminology to CH Term
    * Update the canonical URLs in the VS binding in the profiles
-   * Fix links from internal (CH EMED) to external (CH Term) artefacts
+   * Fix links from internal (CH EMED) to external (CH Term) artifacts
+* [#258](https://github.com/hl7ch/ch-emed/issues/258): CH Core base profiles as parent
 
 ### STU 4 Sequence - v4.0.1 (2023-12-28)
 
@@ -117,7 +118,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#161](https://github.com/hl7ch/ch-emed/issues/161): [Home](index.html): Include the new IG fragments (IP Statements/Cross Version Analysis/Dependency Table/Globals Table) and remove Copyright (new included in IP Statements)
 * [#126](https://github.com/hl7ch/ch-emed/issues/126): Set IG parameter 'allow-extensible-warnings = true' to show the warning when codes are not in extensible bindings
 * [#141](https://github.com/hl7ch/ch-emed/issues/141): Add CH EMED examples in the profiles for 'identifier.value' (Bundle, Composition, MedicationDispense, MedicationRequest, MedicationStatement, Observation)
-* [#91](https://github.com/hl7ch/ch-emed/issues/91): Allow [Extension Substitution](StructureDefinition-ch-emed-ext-substitution.html) also in Medication Card document (incl. updating the description of the extension to clarify the usage)
+* [#91](https://github.com/hl7ch/ch-emed/issues/91): Allow Extension Substitution also in Medication Card document (incl. updating the description of the extension to clarify the usage)
 
 #### Changed / Updated
 * Update dependency to the current version of CH Core -> STU3 (v3.0.0)

@@ -1,9 +1,8 @@
 Profile: CHEMEDDosage
-Parent: Dosage
+Parent: CHCoreDosage
 Id: ch-emed-dosage
 Title: "CH EMED Dosage (MedicationStatement / MedicationDispense)"
 Description: "Definition of the dosage (used in MedicationStatement / MedicationDispense)"
-
 * obeys ch-dosage-4
 * . ^short = "CH EMED Dosage (MedicationStatement / MedicationDispense)"
 * sequence obeys ch-dosage-1
@@ -25,5 +24,5 @@ Description: "Definition of the dosage (used in MedicationStatement / Medication
 * route.coding.code 1..
 * doseAndRate ..1
 * doseAndRate ^short = "Amount of medication administered"
-* doseAndRate.dose[x] only CHEMEDRangeWithEmedUnits or CHEMEDQuantityWithEmedUnits
+// CH Core: * doseAndRate.dose[x] only CHEMEDRangeWithEmedUnits or CHEMEDQuantityWithEmedUnits
 * doseAndRate.dose[x] MS

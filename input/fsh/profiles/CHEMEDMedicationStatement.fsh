@@ -1,16 +1,17 @@
 Profile: CHEMEDMedicationStatement
-Parent: MedicationStatement
+Parent: CHCoreMedicationStatement
 Id: ch-emed-medicationstatement
 Title: "CH EMED MedicationStatement"
 Description: "Definition of the medication statement for the medication treatment plan document (and as basis medication statement)"
-
 * . ^short = "CH EMED MedicationStatement (MTP and basis)"
 * contained 1..
+/* CH Core
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains CHEMEDExtSubstitution named substitution 0..1
 * extension[substitution] ^short = "Whether substitution is allowed or not"
+*/
 * identifier 1..1
 * identifier ^short = "MedicationStatement Identifier"
 * identifier.system 1..

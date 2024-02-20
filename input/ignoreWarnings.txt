@@ -2,9 +2,7 @@
 
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this extension
-WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationrequest-list'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-observation-list'): The Implementation Guide contains no examples for this profile	
-WARNING: StructureDefinition​.where(url = 'http:​/​/fhir​.ch​/ig​/ch-emed​/StructureDefinition​/ch-emed-medicationadministration-list'): The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no examples for this profile
 
 # Problem in the base profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -22,7 +20,14 @@ None of the codings provided are in the value set 'DocumentEntry.typeCode' (http
 UCUM Codes that contain human readable annotations like {Piece} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'Stk' SHOULD contain the annotation (it does not)
 
 # Swiss specific value
-The value provided ('rm-CH') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#rm-CH' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+Der Displayname f\u00fcr http://loinc.org#57828-6 sollte einer von ''Prescription list'' anstelle von 'PRESCRIPTIONS' sein.
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.com/localcode' could not be found, so the code cannot be validated
+
+# Test case for extensible value set binding (parameter = allow-extensible-warnings)
+The code provided (http://snomed.info/sct#408050008) is not in the value set in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|3.0.0-ci-build), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)
+
+# Test case for using not recommended timing codes (1-1-1-1)
+Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)

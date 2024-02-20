@@ -1,9 +1,8 @@
 Profile: CHEMEDMedicationRequest
-Parent: MedicationRequest
+Parent: CHCoreMedicationRequest
 Id: ch-emed-medicationrequest
 Title: "CH EMED MedicationRequest (PRE)"
 Description: "Definition of the medication request for the medication prescription document"
-
 * . ^short = "CH EMED MedicationRequest (PRE)"
 * contained 1..
 * extension ^slicing.discriminator.type = #value
