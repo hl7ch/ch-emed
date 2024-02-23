@@ -15,3 +15,4 @@ Usage: #example
 * dosage.route = urn:oid:0.4.0.127.0.16.1.1.2.1#20045000 "Intravenous use"
 * dosage.route.text = "intravenöse Anwendung"
 * dosage.dose = 1 http://snomed.info/sct#732978007 "Ampule (unit of presentation)"
+* dosage.method = $edqm#0009 "Infusion"
