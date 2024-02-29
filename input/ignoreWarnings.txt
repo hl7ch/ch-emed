@@ -16,15 +16,13 @@ None of the codings provided are in the value set 'DocumentEntry.typeCode' (http
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#56445-0, http://snomed.info/sct#736378000)
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#82291000195104, http://loinc.org#60593-1)
 
-# Fixed with next release: https://github.com/hl7ch/ch-emed/issues/252
-UCUM Codes that contain human readable annotations like {Piece} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'Stk' SHOULD contain the annotation (it does not)
-
 # Swiss specific value
 Der Displayname f\u00fcr http://loinc.org#57828-6 sollte einer von ''Prescription list'' anstelle von 'PRESCRIPTIONS' sein.
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.com/localcode' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 
 # Test case for extensible value set binding (parameter = allow-extensible-warnings)
 The code provided (http://snomed.info/sct#408050008) is not in the value set in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|3.0.0-ci-build), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)
