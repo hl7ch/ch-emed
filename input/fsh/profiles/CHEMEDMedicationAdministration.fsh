@@ -42,6 +42,11 @@ Description: "Definition of the medication administration for the medication dis
 * dosage.route.coding 1.. MS
 * dosage.route.coding.system 1..
 * dosage.route.coding.code 1..
+* dosage.method from $edqm-administrationmethod (required)
+* dosage.method ^short = "Administration method"
+* dosage.method.coding 1.. 
+* dosage.method.coding.system 1..
+* dosage.method.coding.code 1..
 * dosage.dose ^short = "Amount of medication administered"
 // CH Core: * dosage.dose only CHEMEDQuantityWithEmedUnits
 * dosage.dose MS

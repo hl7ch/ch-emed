@@ -22,6 +22,11 @@ Description: "Definition of the dosage (used in MedicationStatement / Medication
 * route.coding 1.. MS
 * route.coding.system 1..
 * route.coding.code 1..
+* method from $edqm-administrationmethod (required)
+* method ^short = "Administration method"
+* method.coding 1.. 
+* method.coding.system 1..
+* method.coding.code 1..
 * doseAndRate ..1
 * doseAndRate ^short = "Amount of medication administered"
 // CH Core: * doseAndRate.dose[x] only CHEMEDRangeWithEmedUnits or CHEMEDQuantityWithEmedUnits
