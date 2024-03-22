@@ -7,8 +7,8 @@ Description: "Extension to represent the changed MedicationStatement"
 * ^context.expression = "Observation"
 * . ^short = "CH EMED Extension"
 * url only uri
-* valueReference 1..1
-* valueReference only Reference(CHEMEDMedicationStatementChanged)
-* valueReference ^short = "The changed MedicationStatement"
-* valueReference ^type.aggregation[0] = #referenced
-* valueReference ^type.aggregation[+] = #bundled
+* value[x] 1..1
+* value[x] only Reference(CHEMEDMedicationStatementChanged)
+* value[x] ^short = "The changed MedicationStatement"
+* value[x] ^type.aggregation[0] = #referenced
+* value[x] ^type.aggregation[+] = #bundled

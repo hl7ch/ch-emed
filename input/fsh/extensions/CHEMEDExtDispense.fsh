@@ -18,11 +18,11 @@ Description: "Extension to reference an external MedicationDispense and the Medi
 * extension[id] only Extension
 * extension[id] ^short = "Identifier of the referenced external MedicationDispense"
 * extension[id].url only uri
-* extension[id].valueIdentifier only Identifier
-* extension[id].valueIdentifier ^short = "Value of extension"
+* extension[id].value[x] only Identifier
+* extension[id].value[x] ^short = "Value of extension"
 * extension[externalDocumentId] only Extension
 * extension[externalDocumentId] ^short = "Identifier of the referenced external Medication Dispense document"
 * extension[externalDocumentId].url only uri
-* extension[externalDocumentId].valueIdentifier only Identifier
-* extension[externalDocumentId].valueIdentifier ^short = "Value of extension"
+* extension[externalDocumentId].value[x] only Identifier
+* extension[externalDocumentId].value[x] ^short = "Value of extension"
 * url only uri
