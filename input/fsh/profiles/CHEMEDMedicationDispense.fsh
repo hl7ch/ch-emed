@@ -4,6 +4,7 @@ Id: ch-emed-medicationdispense
 Title: "CH EMED MedicationDispense (DIS)"
 Description: "Definition of the medication dispense for the medication dispense document"
 * . ^short = "CH EMED MedicationDispense (DIS)"
+* obeys ch-dosage-meddis
 * contained 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

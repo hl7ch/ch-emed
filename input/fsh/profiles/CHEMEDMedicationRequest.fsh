@@ -4,6 +4,7 @@ Id: ch-emed-medicationrequest
 Title: "CH EMED MedicationRequest (PRE)"
 Description: "Definition of the medication request for the medication prescription document"
 * . ^short = "CH EMED MedicationRequest (PRE)"
+* obeys ch-dosage-medreq
 * contained 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

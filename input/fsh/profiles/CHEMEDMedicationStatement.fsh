@@ -4,6 +4,7 @@ Id: ch-emed-medicationstatement
 Title: "CH EMED MedicationStatement"
 Description: "Definition of the medication statement for the medication treatment plan document (and as basis medication statement)"
 * . ^short = "CH EMED MedicationStatement (MTP and basis)"
+* obeys ch-dosage-medstat
 * contained 1..
 /* CH Core
 * extension ^slicing.discriminator.type = #value
