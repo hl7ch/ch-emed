@@ -11,6 +11,8 @@ Usage: #example
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
 * extension.extension[=].valueIdentifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
+* extension[lastConsideredDocument].valueIdentifier.system = "urn:ietf:rfc:3986"
+* extension[lastConsideredDocument].valueIdentifier.value = "urn:uuid:d6f95b15-d88b-4723-91f7-72fe897a0bc7"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"
 * status = #active

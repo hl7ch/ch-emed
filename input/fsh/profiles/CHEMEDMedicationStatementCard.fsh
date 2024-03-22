@@ -6,9 +6,11 @@ Description: "Definition of the medication statement for the medication card doc
 * . ^short = "CH EMED MedicationStatement (CARD)"
 * extension contains
     CHEMEDExtTreatmentPlan named treatmentPlan 0..1 and
-    Author named authorDocument 0..1
+    Author named authorDocument 0..1 and
+    CHEMEDExtLastConsideredDocument named lastConsideredDocument 0..1
 * extension[treatmentPlan] ^short = "Reference to the medication treatment plan"
 * extension[authorDocument] ^short = "\"Last\" author of the original document if different from the author of the medical decision (MedicationStatement.informationSource), see also 'Guidance - Authorship'"
+* extension[lastConsideredDocument] ^short = "Identifier of the last considered document for consolidating this MedicationStatement"
 * medicationReference only Reference(CHEMEDMedication)
 * medicationReference MS
 * informationSource 1..

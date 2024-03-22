@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * [#245](https://github.com/hl7ch/ch-emed/issues/245): Include EDQM Administration Method
+* [#262](https://github.com/hl7ch/ch-emed/issues/262): Add extension to include the identifier of the last considered document (CARD)
 
 #### Changed / Updated
 * [#256](https://github.com/hl7ch/ch-emed/issues/256): Move all terminology to CH Term
