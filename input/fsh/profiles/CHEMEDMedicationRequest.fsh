@@ -30,7 +30,6 @@ Description: "Definition of the medication request for the medication prescripti
 * requester only Reference(CHEMEDPractitionerRole)
 * requester ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
 * requester.reference 1..
-* reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosageInstruction ^slicing.discriminator.type = #profile
 * dosageInstruction ^slicing.discriminator.path = "$this"

@@ -32,7 +32,6 @@ Description: "Definition of the medication statement for the medication treatmen
 * informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
 * informationSource ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
 * informationSource.reference 1..
-* reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosage ^slicing.discriminator.type = #profile
 * dosage ^slicing.discriminator.path = "$this"
