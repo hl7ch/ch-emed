@@ -34,7 +34,6 @@ Description: "Definition of the medication administration for the medication dis
 * performer.actor only Reference(CHEMEDPractitionerRole)
 * performer.actor.reference 1..
 * performer.actor ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
-* reasonCode ..1
 * reasonCode ^short = "Treatment reason"
 * dosage 1..
 * dosage.route from $edqm-routeofadministration (required)

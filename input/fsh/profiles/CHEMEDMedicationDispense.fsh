@@ -10,7 +10,7 @@ Description: "Definition of the medication dispense for the medication dispense 
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-// CH Core:    CHEMEDExtTreatmentReason named treatmentReason 0..1 and
+// CH Core:    CHEMEDExtTreatmentReason named treatmentReason 0..* and
     CHEMEDExtPrescription named prescription 0..1 and
     CHEMEDExtPharmaceuticalAdvice named pharmaceuticalAdvice 0..1 and
     CHEMEDExtTreatmentPlan named treatmentPlan 0..1
