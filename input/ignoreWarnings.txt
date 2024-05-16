@@ -13,12 +13,12 @@ The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be re
 The image source '2-7-pdf' cannot be resolved
 
 # Not yet a stable version, which can be published (see https://github.com/hl7ch/ch-epr-term/issues/17)
-None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#77603-9, http://snomed.info/sct#761931002)
-None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#56445-0, http://snomed.info/sct#736378000)
-None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#82291000195104, http://loinc.org#60593-1)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#77603-9, http://snomed.info/sct#761931002)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#56445-0, http://snomed.info/sct#736378000)
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#82291000195104, http://loinc.org#60593-1)
 
 # Swiss specific value
-Der Displayname f\u00fcr http://loinc.org#57828-6 sollte einer von ''Prescription list'' anstelle von 'PRESCRIPTIONS' sein.
+Der Displayname%
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
@@ -26,7 +26,10 @@ A definition for CodeSystem 'http://example.com/localcode' could not be found, s
 A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 
 # Test case for extensible value set binding (parameter = allow-extensible-warnings)
-The code provided (http://snomed.info/sct#408050008) is not in the value set in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|3.0.0-ci-build), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)
+The code provided (http://snomed.info/sct#408050008) is not in the value set in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)
 
 # Test case for using not recommended timing codes (1-1-1-1)
 Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
+
+# https://github.com/HL7/fhir-ig-publisher/issues/898
+The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved

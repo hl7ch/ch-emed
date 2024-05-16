@@ -7,11 +7,11 @@ title: CH EMED (R4)
 description: Implementation Guide for the eMedication in Switzerland.
 status: active
 experimental: false
-date: 2024-02-08
-version: 5.0.0-ci-build
+date: 2024-05-16
+version: 5.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2020+
-releaselabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaselabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: HL7 Switzerland
   url: https://www.hl7.ch/
@@ -26,8 +26,8 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-core: current
-  hl7.terminology: 5.4.0
+  ch.fhir.ig.ch-core: 5.0.0-ballot
+  hl7.terminology: 5.5.0
      
 pages:
   index.md:
