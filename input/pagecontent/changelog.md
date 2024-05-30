@@ -1,6 +1,8 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+* [#278](https://github.com/hl7ch/ch-emed/issues/278): Update the figures of the documents
+
 ### STU 5 Sequence - v5.0.0-ballot (2024-05-16)
 
 #### Added
