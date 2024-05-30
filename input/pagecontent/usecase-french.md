@@ -16,14 +16,14 @@ Madame Wegmüller Monika (nom modifié), née le 15 mai 1943 (date modifiée), s
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension |
+| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension |
 
 *Décision thérapeutique relative à la médication*: [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.html)
 
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Taille de l’emballage | Packungs- grösse | Posologie | Pos. Morgen| Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement | Date/heure de l’administration | Identification du patient |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ | :------- | :------ | :------- | :------ |
-| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | 1 | 20 pces | 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension | | |
+| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | 1 | 20 pces | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension | | |
 
 *Remise*: [1-2 Medication Dispense document](Bundle-1-2-MedicationDispense.html)
 
@@ -36,7 +36,7 @@ Lors d’un contrôle de son hypertension, Madame Wegmüller se plaint d’une t
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité |Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | 1/2 comprimé le matin | 0.5 | 0  | 0  | 0  | oral | | | Hypertension |
+| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | Prendre 1/2 comprimé le matin | 0.5 | 0  | 0  | 0  | oral | | | Hypertension |
 
 *Liste de médication*: [2-1 Medication List document](Bundle-2-1-MedicationList.html)
 
@@ -45,7 +45,7 @@ Il suspecte un effet indésirable (EI) connu du ramipril et arrête le Triatec.
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Durée du traitement | Motif du traitement | Commentaire |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | Hypertension | Arrêté en raison effet secondaire toux sèche |
+| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | Hypertension | Arrêté en raison effet secondaire toux sèche |
 
 *Conseil pharmaceutique*: [2-2 Pharmaceutical Advice document (CANCEL)](Bundle-2-2-PharmaceuticalAdvice.html)
 
@@ -54,14 +54,14 @@ Il suspecte un effet indésirable (EI) connu du ramipril et arrête le Triatec.
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | 1 comprimé le matin et 1/2 comprimé le soir | 1 | 0 | 0.5 | 0 | oral | | | Hypertension |
+| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | Prendre 1 comprimé le matin et 1/2 comprimé le soir | 1 | 0 | 0.5 | 0 | oral | | | Hypertension |
 
 *Décision thérapeutique relative à la médication*: [2-3 Medication Treatment Plan document](Bundle-2-3-MedicationTreatmentPlan.html)
 
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Taille de l’emballage | Taille de l’emballage | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement | Date/heure de l’administration | Identification du patient |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ | :------- | :------- | :------- | :------ |
-| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | 1 | 30 pces | 1 comprimé le matin et 1/2 comprimé le soir | 1  | 0  | 0.5 | 0  | oral | | | Hypertension | | |
+| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | 1 | 30 pces | Prendre 1 comprimé le matin et 1/2 comprimé le soir | 1  | 0  | 0.5 | 0  | oral | | | Hypertension | | |
 
 *Remise*: [2-4 Medication Dispense document](Bundle-2-4-MedicationDispense.html)
 
@@ -69,14 +69,14 @@ Il suspecte un effet indésirable (EI) connu du ramipril et arrête le Triatec.
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | 1 comprimé le matin et le soir | 1 | 0 | 1 | 0 | oral | | | Hypertension |
+| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | Prendre 1 comprimé le matin et 1 comprimé le soir | 1 | 0 | 1 | 0 | oral | | | Hypertension |
 
 *Décision thérapeutique relative à la médication*: [2-5 Medication Treatment Plan document](Bundle-2-5-MedicationTreatmentPlan.html)
 
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Retrait répété du médicament | GTIN | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Substituabilité |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ | :------- | :------ |
-| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | Ordonnance pour 3 mois | | 1 comprimé le matin et le soir | 1 | 0 | 1 | 0 | oral | | | |
+| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | Ordonnance pour 3 mois | | Prendre 1 comprimé le matin et 1 comprimé le soir | 1 | 0 | 1 | 0 | oral | | | |
 
 *Ordonnance*: [2-6 Medication Prescription document](Bundle-2-6-MedicationPrescription.html)
 
@@ -86,8 +86,8 @@ En plus du cas d’application IPAG, le médecin de premier recours élabore un 
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | 1 comprimé le matin et 1/2 comprimé le soir | 1 | 0 | 0.5 | 0 | oral | | | Hypertension |        
-| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | 1 comprimé le matin et le soir | 1 | 0 | 1 | 0 | oral | | | Hypertension |
+| Beloc Zok | Metoprolol | Cpr. Ret. | 50 mg / Cpr. | Prendre 1 comprimé le matin et 1/2 comprimé le soir | 1 | 0 | 0.5 | 0 | oral | | | Hypertension |        
+| Norvasc | Amlodipin | Cpr. | 10 mg / Cpr. | Prendre 1 comprimé le matin et 1 comprimé le soir | 1 | 0 | 1 | 0 | oral | | | Hypertension |
 
 *Plan de médication*: [2-7 Medication Card document](Bundle-2-7-MedicationCard.html)
 
