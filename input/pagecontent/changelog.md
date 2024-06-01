@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#278](https://github.com/hl7ch/ch-emed/issues/278): Update the figures of the documents
 
 #### Fixed
 * [#271](https://github.com/hl7ch/ch-emed/issues/271): Validation issue with display values fixed through new version of the IG publisher
