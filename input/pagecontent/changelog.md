@@ -9,8 +9,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Fixed
 * [#271](https://github.com/hl7ch/ch-emed/issues/271): Validation issue with display values fixed through new version of the IG publisher
+* [#275](https://github.com/hl7ch/ch-emed/issues/275): Fix old link
 
 #### Issues resolved without amendment (in IG)
+
 
 ### STU 5 Sequence - v5.0.0-ballot (2024-05-16)
 
