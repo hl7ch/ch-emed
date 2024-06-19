@@ -1,4 +1,4 @@
-# CH EMED Implementation Guide (R4)
+# CH EMED Implementation Guide (R4) 
 eMedication FHIR IG for Switzerland, see also [fhir.ch](https://fhir.ch).
 
 * [CI Build](http://build.fhir.org/ig/hl7ch/ch-emed/branches/master/index.html) 
