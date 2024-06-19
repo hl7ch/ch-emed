@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#278](https://github.com/hl7ch/ch-emed/issues/278): Update the figures of the documents
+* [#274](https://github.com/hl7ch/ch-emed/issues/274): Add profiles for Medication List document when the Composition entries come from changed entries (PADV): CHEMEDMedicationStatementChangedList and CHEMEDMedicationRequestChangedList
 
 #### Fixed
 * [#271](https://github.com/hl7ch/ch-emed/issues/271): Validation issue with display values fixed through new version of the IG publisher
