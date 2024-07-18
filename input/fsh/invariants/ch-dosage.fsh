@@ -12,9 +12,9 @@ Expression: "$this > 1"
 
 // MedicationRequest
 Invariant: ch-dosage-3
-Description: "Patient instruction/free text dosage instruction, timing or as needed has to be specified"
+Description: "Patient instruction/free text dosage instruction, or timing and dose/rate has to be specified"
 Severity: #error
-Expression: "patientInstruction.exists() or timing.exists() or asNeeded.exists()"
+Expression: "patientInstruction.exists() or (timing.exists() and doseAndRate.exists())"
 
 // Dosage
 Invariant: ch-dosage-4
