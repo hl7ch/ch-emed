@@ -37,6 +37,6 @@ Description: "Definition of the bundle for the medication list document"
 * entry[Observation].resource 1..
 * entry[Observation].resource only CHEMEDObservationList
 * entry[MedicationStatementChanged].resource 1..
-* entry[MedicationStatementChanged].resource only CHEMEDMedicationStatementChanged
+* entry[MedicationStatementChanged].resource only CHEMEDMedicationStatementChangedList
 * entry[MedicationRequestChanged].resource 1..
-* entry[MedicationRequestChanged].resource only CHEMEDMedicationRequestChanged
+* entry[MedicationRequestChanged].resource only CHEMEDMedicationRequestChangedList
