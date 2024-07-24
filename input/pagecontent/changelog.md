@@ -17,6 +17,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#263](https://github.com/hl7ch/ch-emed/issues/263): Add additional constraints beside ch-dosage-1 to check, if the sequence number is present in split dosage elements
 * [#269](https://github.com/hl7ch/ch-emed/issues/269): Remove discriminator for slicing Practitioner.identifier (coming from CH Core parent profile)
 * [#268](https://github.com/hl7ch/ch-emed/issues/268): Relax max card for treatment reason from 1 to * (MedicationStatement, MedicationRequest, MedicationDispense, MedicationAdministration)
+* [#283](https://github.com/hl7ch/ch-emed/issues/283): Relax min card for doseAndRate from 1 to 0 and fix FHIRPath in ch-dosage-3 constraint (DosageMedicationRequest)
 
 ### STU 4 Sequence - v4.0.1 (2023-12-28)
 
