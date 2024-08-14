@@ -13,7 +13,7 @@ Usage: #example
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2012-02-04T14:00:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"
-// * author[device].reference = "Device/ExampleDevice"
+* author[device].reference = "Device/ExampleDevice"
 * title = "Therapieentscheid Medikation"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
