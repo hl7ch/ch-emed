@@ -18,3 +18,7 @@ Usage: #example
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
 * dosage[baseEntry].route.text = "zum Einnehmen"
 * dosage[baseEntry].doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* extension[parentDocument].extension[id].valueIdentifier.system = "urn:ietf:rfc:3986"
+* extension[parentDocument].extension[id].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[parentDocument].extension[externalDocumentId].valueIdentifier.system = "urn:ietf:rfc:3986"
+* extension[parentDocument].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
