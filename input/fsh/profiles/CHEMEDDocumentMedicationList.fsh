@@ -15,7 +15,7 @@ Description: "Definition of the bundle for the medication list document"
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry[Composition] 1..1
-* entry[Composition] ^short = "Medication list composition"
+* entry[Composition].resource ^short = "CH EMED Medication List Composition"
 * entry[Composition].resource 1..
 * entry[Composition].resource only CHEMEDCompositionMedicationList
 * entry contains
@@ -23,20 +23,19 @@ Description: "Definition of the bundle for the medication list document"
     MedicationRequest 0..* and
     MedicationDispense 0..* and
     MedicationAdministration 0..* and
-    Observation 0..* and
-    MedicationStatementChanged 0..* and
-    MedicationRequestChanged 0..*
+    Observation 0..*
+* entry[MedicationStatement].resource ^short = "CH EMED MedicationStatement (LIST) | CH EMED MedicationStatement Changed (LIST)"
 * entry[MedicationStatement].resource 1..
-* entry[MedicationStatement].resource only CHEMEDMedicationStatementList
+* entry[MedicationStatement].resource only CHEMEDMedicationStatement
+* entry[MedicationRequest].resource ^short = "CH EMED MedicationRequest (LIST) | CH EMED MedicationRequest Changed (LIST)"
 * entry[MedicationRequest].resource 1..
-* entry[MedicationRequest].resource only CHEMEDMedicationRequestList
+* entry[MedicationRequest].resource only CHEMEDMedicationRequest
+* entry[MedicationDispense].resource ^short = "CH EMED MedicationDispense (LIST)"
 * entry[MedicationDispense].resource 1..
-* entry[MedicationDispense].resource only CHEMEDMedicationDispenseList 
+* entry[MedicationDispense].resource only CHEMEDMedicationDispense
+* entry[MedicationAdministration].resource ^short = "CH EMED MedicationAdministration (LIST)"
 * entry[MedicationAdministration].resource 1..
 * entry[MedicationAdministration].resource only CHEMEDMedicationAdministration
+* entry[Observation].resource ^short = "CH EMED Observation (LIST)"
 * entry[Observation].resource 1..
-* entry[Observation].resource only CHEMEDObservationList
-* entry[MedicationStatementChanged].resource 1..
-* entry[MedicationStatementChanged].resource only CHEMEDMedicationStatementChangedList
-* entry[MedicationRequestChanged].resource 1..
-* entry[MedicationRequestChanged].resource only CHEMEDMedicationRequestChangedList
+* entry[Observation].resource only CHEMEDObservation
