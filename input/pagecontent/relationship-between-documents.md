@@ -6,7 +6,9 @@ _Note on the colors:_
 _The background color of the resources reflects the medication (Triatec: orange, Beloc Zok: purple, Norvasc: blue)._   
 _The colors of the identifiers and the resource box should reflect the relationships/origins. Note that from use case step 2-3 onwards, the colors are repeated without a reference to the previous steps._
 
-{% include img.html img="overview-relationships.png" caption="Fig.: Schematic overview of the relationship between the documents from the use case." width="100%" %}
+{% include img.html img="overview-relationships-1.png" width="100%" %}
+
+{% include img.html img="overview-relationships-2.png" caption="Fig.: Schematic overview of the relationship between the documents from the use case." width="100%" %}
 
 ### Identifiers
 
