@@ -15,6 +15,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#275](https://github.com/hl7ch/ch-emed/issues/275): Fix old link
 * [#267](https://github.com/hl7ch/ch-emed/issues/267): Resolving inconsistencies between data set (use case) and PDF
 * [#285](https://github.com/hl7ch/ch-emed/issues/285): Update slicing in Medication List document to allow validation of _changed_ entries
+* [#288](https://github.com/hl7ch/ch-emed/issues/288): Typo
 
 #### Issues resolved without amendment (in IG)
 

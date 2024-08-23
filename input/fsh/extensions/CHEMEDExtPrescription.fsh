@@ -1,7 +1,7 @@
 Extension: CHEMEDExtPrescription
 Id: ch-emed-ext-prescription
 Title: "CH EMED Extension Prescription"
-Description: "Extension to reference an external MedicationRequest and the Medication Prescritpion document that contains it"
+Description: "Extension to reference an external MedicationRequest and the Medication Prescription document that contains it"
 
 * ^context[0].type = #element
 * ^context[=].expression = "MedicationRequest"
@@ -20,7 +20,7 @@ Description: "Extension to reference an external MedicationRequest and the Medic
 * extension[id].url only uri
 * extension[id].value[x] only Identifier
 * extension[externalDocumentId] only Extension
-* extension[externalDocumentId] ^short = "Identifier of the referenced external Medication Prescritpion document"
+* extension[externalDocumentId] ^short = "Identifier of the referenced external Medication Prescription document"
 * extension[externalDocumentId].url only uri
 * extension[externalDocumentId].value[x] only Identifier
 * url only uri
