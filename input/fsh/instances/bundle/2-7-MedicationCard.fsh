@@ -8,7 +8,7 @@ Usage: #example
 * id = "2-7-MedicationCard"
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"
+* identifier.value = "urn:uuid:b4bbd9ed-bada-41b5-a513-b4bc73ca0ebb"
 * type = #document
 * timestamp = "2012-02-04T14:05:00+01:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/2-7-Composition"

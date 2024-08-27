@@ -20,6 +20,7 @@ To explain the different focus areas in more detail, there is a guidance section
 * [Dosage](dosage.html)
 * [Repeated Dispense (Prescription)](repeated-dispense.html)
 * [Authorship (Author(s) & Timestamp)](authorship.html)
+* [Relationship Between Documents](relationship-between-documents.html)
 
 <div markdown="1" class="stu-note">
 

@@ -7,10 +7,10 @@ Usage: #example
 // Reference to 1-1 Medication Treatment Plan document with original dosage of 0.5-0-0-0
 * extension[0].extension[0].url = "id"
 * extension[=].extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[=].extension[=].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[=].extension[=].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension[=].extension[+].url = "externalDocumentId"
 * extension[=].extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[=].extension[=].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[=].extension[=].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension[=].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 
 // Reference to new MedicationStatement with changed dosage of 1-0-0-0

@@ -6,13 +6,13 @@ Usage: #example
 * contained = Norvasc
 * extension.extension[0].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:0e9a0b8a-8306-4e35-bb92-0ba424696349"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:0e9a0b8a-8306-4e35-bb92-0ba424696349"
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:d41d72ba-2100-11e6-b67b-9e71128cae77"
+* identifier.value = "urn:uuid:1c5b5e9b-24f7-45ed-ae9c-6e2ec53e7b05"
 * status = #active
 * intent = #order
 * medicationReference.reference = "#Norvasc"

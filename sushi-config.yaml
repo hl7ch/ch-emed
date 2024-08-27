@@ -54,6 +54,8 @@ pages:
     title: Repeated Dispense
   authorship.md:
     title: Authorship
+  relationship-between-documents.md:
+    title: Relationship Between Documents
   profiles.md:
     title: Profiles
   extensions.md:
@@ -77,6 +79,7 @@ menu:
     Dosage: dosage.html
     Repeated Dispense (Prescription): repeated-dispense.html
     Authorship: authorship.html
+    Relationship Between Documents: relationship-between-documents.html
   Profiles: profiles.html
   Extensions: extensions.html
   Artifacts: artifacts.html
