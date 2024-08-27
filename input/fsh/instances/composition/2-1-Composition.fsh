@@ -6,7 +6,7 @@ Usage: #example
 * id = "2-1-Composition"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cae77"
+* identifier.value = "urn:uuid:67a4e752-c39a-4620-9516-a02b36ff5061"
 * status = #final
 * type.coding[0] = $loinc#56445-0 "Medication summary Document"
 * type.coding[+] = $sct#721912009 "Medication summary document (record artifact)"

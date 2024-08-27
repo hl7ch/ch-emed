@@ -7,10 +7,10 @@ Usage: #example
 // Reference to 2-6 Medication Prescription document with original medication - NORVASC Tabl 10 mg
 * extension[0].extension[0].url = "id"
 * extension[=].extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[=].extension[=].valueIdentifier.value = "urn:uuid:d41d72ba-2100-11e6-b67b-9e71128cae77"
+* extension[=].extension[=].valueIdentifier.value = "urn:uuid:1c5b5e9b-24f7-45ed-ae9c-6e2ec53e7b05"
 * extension[=].extension[+].url = "externalDocumentId"
 * extension[=].extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[=].extension[=].valueIdentifier.value = "urn:uuid:d41d72ba-2100-11e6-b67b-9e71128cae77"
+* extension[=].extension[=].valueIdentifier.value = "urn:uuid:1c5b5e9b-24f7-45ed-ae9c-6e2ec53e7b05"
 * extension[=].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription"
 
 // Reference to new MedicationRequest with changed medication (substitution) - AMLODIPIN Spirig HC Tabl 10 mg

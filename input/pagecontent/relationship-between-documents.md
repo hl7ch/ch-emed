@@ -23,7 +23,7 @@ Document identifier in [1-1 Medication Treatment Plan document](Bundle-1-1-Medic
 ``` json
   "identifier" : {
     "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+    "value" : "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
   }
 ```
 
@@ -34,7 +34,7 @@ Resource identifier in [1-1 Medication Treatment Plan document](Bundle-1-1-Medic
 ``` json
   "identifier" : {
     "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+    "value" : "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
   }
 ```
 
@@ -51,14 +51,14 @@ Extension in [1-2 Medication Dispense document](Bundle-1-2-MedicationDispense.js
         "url" : "id",
         "valueIdentifier" : {
             "system" : "urn:ietf:rfc:3986",
-            "value" : "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+            "value" : "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
         }
       },
       {
         "url" : "externalDocumentId",
         "valueIdentifier" : {
             "system" : "urn:ietf:rfc:3986",
-            "value" : "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+            "value" : "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
         }
       }
     ],

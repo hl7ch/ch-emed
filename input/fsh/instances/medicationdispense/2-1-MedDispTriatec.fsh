@@ -6,16 +6,16 @@ Usage: #example
 * contained = Triatec
 // MedicationDispense.extension:treatmentPlan
 * extension[treatmentPlan].extension[id].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[treatmentPlan].extension[id].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[treatmentPlan].extension[id].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension[treatmentPlan].extension[externalDocumentId].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[treatmentPlan].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[treatmentPlan].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 // MedicationDispense.extension:parentDocument
 * extension[parentDocument].extension[id].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[parentDocument].extension[id].valueIdentifier.value = "urn:uuid:488bd23a-20c6-11e6-b67b-9e71128cae77"
+* extension[parentDocument].extension[id].valueIdentifier.value = "urn:uuid:d428e837-46fe-49cc-9212-245d153c68ee"
 * extension[parentDocument].extension[externalDocumentId].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[parentDocument].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:488bd23a-20c6-11e6-b67b-9e71128cae77"
+* extension[parentDocument].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:d428e837-46fe-49cc-9212-245d153c68ee"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:488bd23a-20c6-11e6-b67b-9e71128cae77"
+* identifier.value = "urn:uuid:d428e837-46fe-49cc-9212-245d153c68ee"
 * status = #completed
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"

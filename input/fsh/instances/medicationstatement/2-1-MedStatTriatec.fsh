@@ -5,7 +5,7 @@ Description: "Example for MedicationStatement (LIST)"
 Usage: #example
 * contained = Triatec
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* identifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * status = #active
 * medicationReference.reference = "#Triatec"
 * subject.reference = "Patient/MonikaWegmueller"
@@ -19,6 +19,6 @@ Usage: #example
 * dosage[baseEntry].route.text = "zum Einnehmen"
 * dosage[baseEntry].doseAndRate.doseQuantity = 0.5 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 * extension[parentDocument].extension[id].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[parentDocument].extension[id].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[parentDocument].extension[id].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension[parentDocument].extension[externalDocumentId].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[parentDocument].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension[parentDocument].extension[externalDocumentId].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"

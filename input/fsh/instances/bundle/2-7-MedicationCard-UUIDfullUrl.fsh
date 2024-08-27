@@ -7,7 +7,7 @@ Description: "Example for Bundle (with references/fullUrls as UUIDs)"
 Usage: #example
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"
+* identifier.value = "urn:uuid:b4bbd9ed-bada-41b5-a513-b4bc73ca0ebb"
 * type = #document
 * timestamp = "2012-02-04T14:05:00+01:00"
 * entry[0].fullUrl = "urn:uuid:d543ae7b-3a94-4a2a-a120-6ce2ee3027fc"
@@ -32,7 +32,7 @@ InstanceOf: CHEMEDCompositionMedicationCard
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"
+* identifier.value = "urn:uuid:b4bbd9ed-bada-41b5-a513-b4bc73ca0ebb"
 * status = #final
 * type.coding[0] = $loinc#56445-0 "Medication summary Document"
 * type.coding[+] = $sct#736378000 "Medication management plan (record artifact)"
@@ -104,12 +104,12 @@ Usage: #inline
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * extension.extension[0].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:56c82cf2-123e-4401-80a4-28a5dd059979"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:56c82cf2-123e-4401-80a4-28a5dd059979"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:d0f885ca-afa6-4e7e-905d-f7698f9607aa"
+* identifier.value = "urn:uuid:af9e960d-99bf-46d5-8a72-8f863512246b"
 * status = #active
 * medicationReference = Reference(Beloczok)
 * subject = Reference(urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd)
@@ -136,12 +136,12 @@ Usage: #inline
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * extension.extension[0].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:0e9a0b8a-8306-4e35-bb92-0ba424696349"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:0e9a0b8a-8306-4e35-bb92-0ba424696349"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"
+* identifier.value = "urn:uuid:92f5d646-2b51-4266-84e3-a50f531ca287"
 * status = #active
 * medicationReference = Reference(Norvasc)
 * subject = Reference(urn:uuid:9616e879-c4d0-411e-88c3-e001cb7a8fcd)
