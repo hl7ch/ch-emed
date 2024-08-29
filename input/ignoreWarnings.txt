@@ -35,3 +35,4 @@ The link 'StructureDefinition-originalText.html' for "originalText extension" ca
 # Build error
 The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
 The image source '2-7-pdf' cannot be resolved
+The image source 'd5c77e2e-798d-4437-8f73-4875c35065ef' cannot be resolved
