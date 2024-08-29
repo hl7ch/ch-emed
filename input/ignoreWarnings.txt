@@ -32,7 +32,7 @@ Constraint failed: ch-emed-event-timing: 'For the representation of the time of 
 # https://github.com/HL7/fhir-ig-publisher/issues/898
 The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
 
-# Build error
-The link 'Binary/2-6-pdf' for "Representation of the original view" cannot be resolved
+# Build error from referencing the Binary in the narrative (see https://github.com/hl7ch/ch-emed/blob/master/input/pagecontent/representation.md)
+The image source '2-6-pdf' cannot be resolved
 The image source '2-7-pdf' cannot be resolved
 The image source 'd5c77e2e-798d-4437-8f73-4875c35065ef' cannot be resolved

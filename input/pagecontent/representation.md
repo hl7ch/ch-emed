@@ -7,14 +7,14 @@
 
 ### Adding the PDF to the FHIR Bundle
 
-To represent the PFD in the FHIR document is added as a Binary resource within the bundle which is then reference from the narrative part of this section via an img element [id form the narrative text](http://hl7.org/fhir/narrative.html#id). 
+To represent the PFD in the FHIR document is added as a Binary resource within the bundle which is then reference from the narrative part of this section via an img element [id form the narrative text](http://hl7.org/fhir/narrative.html#id). See also discussion on [zulip](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Narrative.20.20reference.20to.20a.20PDF.20as.20FHIR.20doc.20representation).
 
-Open Issue: The PDF is reference with the <img> tag, but the pfd is actually not a image, this will not work directly with an XSLT Transformation, stylesheet. 
+**Open Issue:** The PDF is reference with the <img> tag, but the pfd is actually not a image, this will not work directly with an XSLT Transformation, stylesheet. 
 
-Option 1: Leave it as it is with the img tag.
-Option 2: Remove the img element completely?
-Option 3: Option 2 + Create a text extension that references the PDF directly
-Option 4: Instead of creating a separate section just add the extension to the text pointing to the pdf to Composition.text and don't use the original section? 
+Option 1: Leave it as it is with the img tag.   
+Option 2: Remove the img element completely?   
+Option 3: Option 2 + Create a text extension that references the PDF directly   
+Option 4: Instead of creating a separate section just add the extension to the text pointing to the pdf to Composition.text and don't use the original section?    
 
 ```xml
         <section>
@@ -61,7 +61,7 @@ CDA:
 
 ### Referring to the PDF from another section
 
-Since the representation of the other sections is described in the original representation it is not necessary for the other sections we have two possiblities
+Since the representation of the other sections is described in the original representation it is not necessary for the other sections we have two possibilities
 
 Option 1: Add a text referring to the embedded PDF.
 
