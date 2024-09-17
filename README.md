@@ -11,4 +11,3 @@ eMedication FHIR IG for Switzerland, see also [fhir.ch](https://fhir.ch).
    * [HL7 Switzerland STU2 Ballot (v1.0.0)](https://github.com/hl7ch/ch-emed/blob/master/ballots/1.0.0_STU2-ballot.md)
    * [eHealth Suisse STU1 Informative Ballot (v0.2.0)](https://github.com/hl7ch/ch-emed/blob/master/ballots/0.2.0_STU1-informative-ballot.md)
 * [Publication (Version) History IG](http://fhir.ch/ig/ch-emed/history.html)
-
