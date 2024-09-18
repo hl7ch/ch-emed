@@ -54,8 +54,9 @@ Usage: #inline
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              <a href=\"urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef\">Representation of the original view</a>\n            </div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n            Representation of the original view:\r\n        <img src=\"d5c77e2e-798d-4437-8f73-4875c35065ef\"/></div>"
 * section[originalRepresentation].entry = Reference(urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef)
+
 
 Instance: 9616e879-c4d0-411e-88c3-e001cb7a8fcd
 InstanceOf: CHCorePatientEPR

@@ -54,6 +54,8 @@ pages:
     title: Repeated Dispense
   authorship.md:
     title: Authorship
+  original-representation.md:
+    title: Original Representation  
   profiles.md:
     title: Profiles
   extensions.md:

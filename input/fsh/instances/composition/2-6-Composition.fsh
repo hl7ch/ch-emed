@@ -26,7 +26,7 @@ Usage: #example
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"Binary/2-6-pdf\">Representation of the original view</a></div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n            Representation of the original view:\r\n        <img src=\"2-6-pdf\"/></div>"
 * section[originalRepresentation].entry.reference = "Binary/2-6-pdf"
 
 * section[prescription].title = "Arzneimittelverordnung"
