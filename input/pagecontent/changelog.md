@@ -19,7 +19,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#292](https://github.com/hl7ch/ch-emed/issues/292): Fix the reference to Binary for the original representation
 
 #### Issues resolved without amendment (in IG)
-
+* [#295](https://github.com/hl7ch/ch-emed/issues/295): Typo generated in narrative (tooling side)
 
 
 ### STU 5 Sequence - v5.0.0-ballot (2024-05-16)
