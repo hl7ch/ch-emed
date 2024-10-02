@@ -1,4 +1,4 @@
-== Suppressed Messages ==
+== Suppressed Messages == 
 
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this extension
