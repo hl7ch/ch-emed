@@ -34,7 +34,7 @@ A Pharmaceutical Advice document contains one Observation. The Observation refer
    * The prescription (provisional, not yet confirmed or confirmed) should not have been already dispensed, even partially. The Observation refers the original Medication Prescription document and includes the refuse as annotation.
 * [CANCEL](http://fhir.ch/ig/ch-term/ValueSet-ihe-pharmaceuticaladvicestatuslist.html)
    * Medication is definitively stopped (not active anymore). The Observation refers the original Medication Treatment Plan document and includes the cancellation as annotation.
-      * [Example PADV document](Bundle-2-2-PharmaceuticalAdvice.html) from use case step 2-2: Medication is being stopped due to adverse medication reaction (dry cough)
+      * [Example PADV document](Bundle-2-2-PharmaceuticalAdvice.html) from use case step 2-2: _Medication is being stopped due to adverse medication reaction (dry cough)_
    * No dispense of this item can be performed anymore (or no dispense at all if the prescription was still not approved). The Observation refers the original Medication Prescription document and includes the cancellation as annotation.
    * No dispense of the related prescription item can occur anymore and the patient has to stop taking this medication. The Observation refers the original Medication Dispense document and includes the cancellation as annotation.
 
