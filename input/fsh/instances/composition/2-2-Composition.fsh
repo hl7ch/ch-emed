@@ -1,7 +1,7 @@
 Instance: 2-2-Composition
 InstanceOf: CHEMEDCompositionPharmaceuticalAdvice
 Title: "2-2 Composition for Pharmaceutical Advice document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 2-2: First entry (including header information, section(s) and references) in the PADV document."
 Usage: #example
 * id = "2-2-Composition"
 * language = #de-CH

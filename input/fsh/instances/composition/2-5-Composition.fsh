@@ -1,7 +1,7 @@
 Instance: 2-5-Composition
 InstanceOf: CHEMEDCompositionMedicationTreatmentPlan
 Title: "2-5 Composition for Medication Treatment Plan document"
-Description: "Example for Composition with a person and a device as authors"
+Description: "Example for Composition - Use case step 2-5: First entry (including header information, section(s) and references) in the MTP document. The authors of the document are represented as person and device."
 Usage: #example
 * id = "2-5-Composition"
 * language = #de-CH

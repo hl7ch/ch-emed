@@ -1,7 +1,7 @@
 Instance: 3-2-MedicationDispense
 InstanceOf: CHEMEDDocumentMedicationDispense
 Title: "3-2 Medication Dispense document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 3-2: Documentation of the medication administration of Fentanyl to Max Moser."
 Usage: #example
 * id = "3-2-MedicationDispense"
 * identifier.system = "urn:ietf:rfc:3986"

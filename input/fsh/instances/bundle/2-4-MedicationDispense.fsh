@@ -1,7 +1,7 @@
 Instance: 2-4-MedicationDispense
 InstanceOf: CHEMEDDocumentMedicationDispense
 Title: "2-4 Medication Dispense document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 2-4: Medication dispense of Beloc Zok to Monika Wegmüller."
 Usage: #example
 * id = "2-4-MedicationDispense"
 * meta.lastUpdated = "2020-02-20T12:31:59.738+00:00"

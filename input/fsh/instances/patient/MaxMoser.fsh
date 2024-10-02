@@ -1,7 +1,7 @@
 Instance: MaxMoser
 InstanceOf: CHCorePatientEPR
 Title: "Max Moser"
-Description: "Example for Patient"
+Description: "Example for Patient - Use case steps 3.x: Male patient with a local patient identifier, date of birth and address."
 Usage: #example
 * identifier.type = $v2-0203#MR
 * identifier.system = "urn:oid:2.999.1"

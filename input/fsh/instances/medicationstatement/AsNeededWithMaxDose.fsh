@@ -1,7 +1,7 @@
 Instance: AsNeededWithMaxDose
 InstanceOf: CHEMEDMedicationStatement
 Title: "Medication Statement with a medication in reserve and a maximum dosage"
-Description: "Example for MedicationStatment - Take Nitrostat 1 tablet as needed for chest pain, maximum 3 tablets in 15 minutes"
+Description: "Example for MedicationStatment - Nitrostat with the dosage instruction: 'Take 1 tablet as needed for chest pain, maximum 3 tablets in 15 minutes'."
 Usage: #example
 * contained = Nitrostat
 * identifier.system = "urn:ietf:rfc:3986"

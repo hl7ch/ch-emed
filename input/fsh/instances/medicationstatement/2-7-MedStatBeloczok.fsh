@@ -1,7 +1,7 @@
 Instance: 2-7-MedStatBeloczok
 InstanceOf: CHEMEDMedicationStatementCard
 Title: "2-7 Medication Statement with Medication Beloc Zok"
-Description: "Example for MedicationStatement (CARD)"
+Description: "Example for MedicationStatement (CARD) - Use case step 2-7: The record of Beloc Zok as part of the current medication of Monika Wegmüller."
 Usage: #example
 * contained = Beloczok
 * extension.extension[0].url = "id"

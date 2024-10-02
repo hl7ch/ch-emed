@@ -1,7 +1,7 @@
 Instance: TriatecWithCodeNotFromVS
 InstanceOf: CHEMEDMedication
 Title: "Triatec with code not from VS"
-Description: "Example for Medication with ingredient code, which is NOT included in the SCT-VS with extensible binding (to show the warning)"
+Description: "Example for Medication - Triatec with an ingredient code (SCT), which is NOT included in the SCT-VS which has an extensible binding."
 Usage: #example
 * code = urn:oid:2.51.1.1#7680538751228 "TRIATEC Tabl 2.5 mg 20 Stk"
 * code.text = "TRIATEC Tabl 2.5 mg"

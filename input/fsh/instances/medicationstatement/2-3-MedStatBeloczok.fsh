@@ -1,7 +1,7 @@
 Instance: 2-3-MedStatBeloczok
 InstanceOf: CHEMEDMedicationStatement
 Title: "2-3 Medication Statement with Medication Beloc Zok"
-Description: "Example for MedicationStatement (MTP)"
+Description: "Example for MedicationStatement (MTP) - Use case step 2-3: The record of the medication Beloc Zok, to be taken by Monika Wegmüller in the future."
 Usage: #example
 * contained = Beloczok
 * identifier.system = "urn:ietf:rfc:3986"

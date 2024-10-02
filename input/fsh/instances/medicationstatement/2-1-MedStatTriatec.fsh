@@ -1,7 +1,7 @@
 Instance: 2-1-MedStatTriatec
 InstanceOf: CHEMEDMedicationStatementList
 Title: "2-1 Medication Statement with Medication Triatec"
-Description: "Example for MedicationStatement (LIST)"
+Description: "Example for MedicationStatement (LIST) - Use case step 2-1: Entry in the dynamically generated medication list for Monika Wegmüller."
 Usage: #example
 * contained = Triatec
 * identifier.system = "urn:ietf:rfc:3986"

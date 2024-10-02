@@ -1,7 +1,7 @@
 Instance: MedicationWithTwoIngredients
 InstanceOf: CHEMEDMedication
 Title: "Medication with 2 ingredients"
-Description: "Example for Medication with 2 ingredients"
+Description: "Example for Medication - Exforge with the two ingredients Amlodipine and Valsartan."
 Usage: #example
 * meta.profile[0] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"
 * meta.profile[+] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"

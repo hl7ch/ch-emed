@@ -3,7 +3,7 @@
 Instance: 2-7-MedicationCard-UUIDfullUrl
 InstanceOf: CHEMEDDocumentMedicationCard
 Title: "2-7 Medication Card document (with references/fullUrls as UUIDs)"
-Description: "Example for Bundle (with references/fullUrls as UUIDs)"
+Description: "Example for Bundle - Use case step 2-7: Medication plan for Monika Wegmüller, created by her general practitioner. The 'fullUrl' elements of the entries and the references use UUIDs."
 Usage: #example
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"
 * identifier.system = "urn:ietf:rfc:3986"

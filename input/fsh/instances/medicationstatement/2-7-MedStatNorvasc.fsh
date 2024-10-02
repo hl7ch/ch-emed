@@ -1,7 +1,7 @@
 Instance: 2-7-MedStatNorvasc
 InstanceOf: CHEMEDMedicationStatementCard
 Title: "2-7 Medication Statement with Medication Norvasc"
-Description: "Example for MedicationStatment (CARD)"
+Description: "Example for MedicationStatement (CARD) - Use case step 2-7: The record of Norvasc as part of the current medication of Monika Wegmüller."
 Usage: #example
 * contained = Norvasc
 * extension.extension[0].url = "id"

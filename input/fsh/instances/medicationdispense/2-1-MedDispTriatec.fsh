@@ -1,7 +1,7 @@
 Instance: 2-1-MedDispTriatec
 InstanceOf: CHEMEDMedicationDispenseList
 Title: "2-1 Medication Dispense with Medication Triatec"
-Description: "Example for MedicationDispense (LIST)"
+Description: "Example for MedicationDispense (LIST) - Use case step 2-1: Entry in the dynamically generated medication list for Monika Wegmüller."
 Usage: #example
 * contained = Triatec
 * extension.extension[0].url = "id"

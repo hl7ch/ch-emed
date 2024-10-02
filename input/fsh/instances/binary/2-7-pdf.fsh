@@ -1,7 +1,7 @@
 Instance: 2-7-pdf
 InstanceOf: Binary
 Title: "2-7 PDF as original representation of the Medication Card document"
-Description: "Example for Binary"
+Description: "Example for Binary - Use case step 2-7: Original representation (PDF) in the CARD document."
 Usage: #example
 * language = #de-CH
 * contentType = #application/pdf

@@ -1,7 +1,7 @@
 Instance: 2-2-ObsPharmaceuticalAdvice
 InstanceOf: CHEMEDObservation
 Title: "2-2 Observation for Pharmaceutical Advice document"
-Description: "Example for Observation (PADV)"
+Description: "Example for Observation (PADV) - Use case step 2-2: Cancellation of Triatec due to undesired side effects."
 Usage: #example
 * id = "2-2-ObsPharmaceuticalAdvice"
 * extension.extension[0].url = "id"

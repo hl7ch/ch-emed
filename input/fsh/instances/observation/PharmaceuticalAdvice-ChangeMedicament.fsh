@@ -1,7 +1,7 @@
 Instance: PharmaceuticalAdvice-ChangeMedicament
 InstanceOf: CHEMEDObservation
 Title: "Observation for Pharmaceutical Advice document"
-Description: "Example for Observation (PADV): CHANGE with new MedicationRequest"
+Description: "Example for Observation (PADV) - CHANGE with new MedicationRequest (generic medication: Amlodipine instead of Norvasc)."
 Usage: #example
 
 // Reference to 2-6 Medication Prescription document with original medication - NORVASC Tabl 10 mg
