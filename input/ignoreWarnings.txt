@@ -1,4 +1,4 @@
-== Suppressed Messages ==
+== Suppressed Messages == 
 
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this extension
@@ -21,7 +21,6 @@ Der Displayname%
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.com/localcode' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
-A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated (error because this is a required binding)
 
 # Test case for extensible value set binding (parameter = allow-extensible-warnings)
 The code provided (http://snomed.info/sct#408050008) is not in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)

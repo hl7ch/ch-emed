@@ -1,7 +1,7 @@
 Instance: Comp-ChangeDosage
 InstanceOf: CHEMEDCompositionPharmaceuticalAdvice
 Title: "Composition - Change Dosage"
-Description: "Example for Composition"
+Description: "Example for Composition - First entry (including header information, section(s) and references) in the PADV document with a dosage change."
 Usage: #example
 * id = "Comp-ChangeDosage"
 * language = #de-CH

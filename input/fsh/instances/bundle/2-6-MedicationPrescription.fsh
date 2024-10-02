@@ -1,7 +1,7 @@
 Instance: 2-6-MedicationPrescription
 InstanceOf: CHEMEDDocumentMedicationPrescription
 Title: "2-6 Medication Prescription document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case 2-6: Prescription for Belok Zok for Monika Wegmüller."
 Usage: #example
 * id = "2-6-MedicationPrescription"
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"

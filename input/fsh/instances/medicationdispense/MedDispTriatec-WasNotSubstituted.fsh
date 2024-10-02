@@ -1,7 +1,7 @@
 Instance: MedDispTriatec-WasNotSubstituted
 InstanceOf: CHEMEDMedicationDispense
 Title: "Medication Dispense was not substituted"
-Description: "Example for MedicationDispense (DIS): was not substituted"
+Description: "Example for MedicationDispense (DIS) - Triatec with the explicit statement, that is was NOT substituted."
 Usage: #example
 * contained = Triatec
 * identifier.system = "urn:ietf:rfc:3986"

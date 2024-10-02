@@ -1,7 +1,7 @@
 Instance: Rettungsdienst
 InstanceOf: CHEMEDOrganization
 Title: "Rettungsdienst"
-Description: "Example for Organization"
+Description: "Example for Organization - Use case steps 3.x: Organization with a GLN and the address."
 Usage: #example
 * identifier.system = "urn:oid:2.51.1.3"
 * identifier.value = "7601000000514"

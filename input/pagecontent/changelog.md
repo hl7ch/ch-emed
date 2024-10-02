@@ -1,6 +1,6 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
-
+ 
 ### STU 5 Sequence - v5.0.0 (2024)
 
 #### Added
@@ -11,6 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#283](https://github.com/hl7ch/ch-emed/issues/283): Relax min card for doseAndRate from 1 to 0 and fix FHIRPath in ch-dosage-3 constraint (DosageMedicationRequest)
 * [#301](https://github.com/hl7ch/ch-emed/issues/301): Add links to mentioned sections for better navigation
 * [#298](https://github.com/hl7ch/ch-emed/issues/298): Update the descriptions for PADV use cases and the according examples
+* [#297](https://github.com/hl7ch/ch-emed/issues/297): Update the descriptions of the examples
 
 #### Fixed
 * [#271](https://github.com/hl7ch/ch-emed/issues/271): Validation issue with display values fixed through new version of the IG publisher

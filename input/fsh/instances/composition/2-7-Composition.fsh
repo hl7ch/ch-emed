@@ -1,7 +1,7 @@
 Instance: 2-7-Composition
 InstanceOf: CHEMEDCompositionMedicationCard
 Title: "2-7 Composition for Medication Card document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 2-7: First entry (including header information, section(s) and references) in the CARD document."
 Usage: #example
 * id = "2-7-Composition"
 * language = #de-CH
