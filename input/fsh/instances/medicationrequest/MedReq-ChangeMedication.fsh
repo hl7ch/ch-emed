@@ -1,7 +1,7 @@
 Instance: MedReq-ChangeMedication
 InstanceOf: CHEMEDMedicationRequestChanged
 Title: "Medication Request - Changed Medication"
-Description: "Example for MedicationRequest - Referenced from Observation: PADV 'CHANGE'"
+Description: "Example for MedicationRequest - A new MedicationRequest with the new medication. It is referenced from Observation (PADV 'CHANGE') which includes the note to the change and it references the Observation itself."
 Usage: #example
 * contained = Amlodipin
 * identifier.system = "urn:ietf:rfc:3986"
