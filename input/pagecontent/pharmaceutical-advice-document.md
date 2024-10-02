@@ -4,8 +4,8 @@ The **Pharmaceutical Advice document** is a document in which health professiona
 * [IHE Pharmacy Technical Framework Supplement: Community Pharmaceutical Advice (PADV)](https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_PADV.pdf)
 
 This implementation guide describes the following two use cases: 
-   - Modifying an existing medication
-   - Adding a comment on an existing medication
+   - [Modifying an existing medication](#modifying-an-existing-medication)
+   - [Adding a comment on an existing medication](#adding-a-comment-on-an-existing-medication)
 
 ### FHIR document (Bundle)
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
