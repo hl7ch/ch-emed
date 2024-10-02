@@ -20,6 +20,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment (in IG)
 * [#295](https://github.com/hl7ch/ch-emed/issues/295): Typo generated in narrative (tooling side)
+* [#299](https://github.com/hl7ch/ch-emed/issues/299): Clarification of the links in the generated narrative of the examples
 
 
 ### STU 5 Sequence - v5.0.0-ballot (2024-05-16)
