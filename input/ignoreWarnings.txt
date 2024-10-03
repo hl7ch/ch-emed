@@ -29,7 +29,6 @@ The code provided (http://snomed.info/sct#408050008) is not in the value set 'Ac
 # Test case for using not recommended timing codes (1-1-1-1)
 Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
 
-# Build error from referencing the Binary in the narrative (see https://github.com/hl7ch/ch-emed/blob/master/input/pagecontent/representation.md)
-The image source '2-6-pdf' cannot be resolved
-The image source '2-7-pdf' cannot be resolved
-The image source 'd5c77e2e-798d-4437-8f73-4875c35065ef' cannot be resolved
+# Warning on composition as standalone instance (in the document context (bundle) there is no warning)
+WARNING: Composition/2-6-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-6-pdf' was not found in the resource
+WARNING: Composition/2-7-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-7-pdf' was not found in the resource

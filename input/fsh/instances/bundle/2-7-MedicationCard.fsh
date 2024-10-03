@@ -27,3 +27,4 @@ Usage: #example
 * entry[=].resource = 2-7-MedStatNorvasc
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Binary/2-7-pdf"
 * entry[=].resource = 2-7-pdf
+* entry[=].id = "2-7-pdf"

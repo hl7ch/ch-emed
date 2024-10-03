@@ -28,7 +28,6 @@ Usage: #example
 * section[originalRepresentation].text.status = #generated
 * section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span idref=\"2-7-pdf\">PDF</span></div>"
 * section[originalRepresentation].entry.reference = "Binary/2-7-pdf"
-* section[originalRepresentation].entry.id = "2-7-pdf"
 
 * section[card].title = "Medikamentenliste"
 * section[card].code = $loinc#10160-0 "History of Medication use Narrative"
