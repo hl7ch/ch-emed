@@ -18,7 +18,7 @@ For representing UUIDs the `system` needs to be `urn:ietf:rfc:3986` as described
 
 #### Document Identifier
 Document identifier in [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.html):   
-`Bundle.identifier`/`Composition.identifier`
+`Bundle.identifier`
 
 ``` json
   "identifier" : {
