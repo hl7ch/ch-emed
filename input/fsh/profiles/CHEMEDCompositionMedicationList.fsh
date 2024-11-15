@@ -30,10 +30,6 @@ Description: "Definition of the composition for the medication list document"
 * attester[legalAuthenticator].time ^short = "Timestamp of the signature"
 * attester[legalAuthenticator].party ^short = "Who attested the composition"
 
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
 * section ^short = "Medication list"
 * section contains
     list 1..1 and

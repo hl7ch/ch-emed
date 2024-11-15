@@ -20,6 +20,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#285](https://github.com/hl7ch/ch-emed/issues/285): Update slicing in Medication List document to allow validation of _changed_ entries
 * [#288](https://github.com/hl7ch/ch-emed/issues/288): Typo
 * [#300](https://github.com/hl7ch/ch-emed/issues/300) & [#292](https://github.com/hl7ch/ch-emed/issues/292): Define link from narrative to the binary (original representation)
+* [#307](https://github.com/hl7ch/ch-emed/issues/307): Replace deprecated discriminator (`pattern` -> `value`) resp. removal of the redundant slice definition (inherited from parent profile)
 
 
 #### Issues resolved without amendment (in IG)

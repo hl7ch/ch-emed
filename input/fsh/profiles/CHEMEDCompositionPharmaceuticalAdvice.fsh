@@ -39,10 +39,6 @@ Description: "Definition of the composition for the pharmaceutical advice docume
 * attester[legalAuthenticator].time ^short = "Timestamp of the signature"
 * attester[legalAuthenticator].party ^short = "Who attested the composition"
 
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
 * section contains
     pharmaceuticalAdvice 1..1 and
     annotation 0..1
