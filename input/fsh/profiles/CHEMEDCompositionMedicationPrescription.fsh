@@ -40,10 +40,7 @@ Description: "Definition of the composition for the medication prescription docu
 * attester[legalAuthenticator].party ^short = "Who attested the composition"
 
 * section 1..
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
+
 * section[originalRepresentation] 1..1
 * section[originalRepresentation] ^short = "Original representation"
 * section[originalRepresentation].title ^short = "'Original Darstellung' in german or 'Représentation originale' in french or 'Rappresentazione originale' in italian or 'Original representation' in english\r\n                        or titles in other languages are also allowed"
