@@ -14,6 +14,8 @@ None of the codings provided are in the value set 'DocumentEntry.typeCode' (http
 
 # Swiss specific value
 Der Displayname%
+There are no valid display names%
+Wrong Display Name%
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
