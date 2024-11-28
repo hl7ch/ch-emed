@@ -34,10 +34,6 @@ Description: "Definition of the composition for the medication card document"
 * attester[legalAuthenticator].party ^short = "Who attested the composition"
 
 * section 1..
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
 
 * section[originalRepresentation] 1..1 MS
 * section[originalRepresentation] ^short = "Original representation"

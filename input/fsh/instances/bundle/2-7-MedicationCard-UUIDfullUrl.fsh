@@ -3,7 +3,7 @@
 Instance: 2-7-MedicationCard-UUIDfullUrl
 InstanceOf: CHEMEDDocumentMedicationCard
 Title: "2-7 Medication Card document (with references/fullUrls as UUIDs)"
-Description: "Example for Bundle (with references/fullUrls as UUIDs)"
+Description: "Example for Bundle - Use case step 2-7: Medication plan for Monika Wegmüller, created by her general practitioner. The 'fullUrl' elements of the entries and the references use UUIDs."
 Usage: #example
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"
 * identifier.system = "urn:ietf:rfc:3986"
@@ -26,6 +26,7 @@ Usage: #example
 * entry[=].resource = 99e5810c-1afa-43da-8a0e-e7f9086e300a
 * entry[+].fullUrl = "urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef"
 * entry[=].resource = d5c77e2e-798d-4437-8f73-4875c35065ef
+* entry[=].id = "d5c77e2e-798d-4437-8f73-4875c35065ef"
 
 Instance: d543ae7b-3a94-4a2a-a120-6ce2ee3027fc
 InstanceOf: CHEMEDCompositionMedicationCard
@@ -54,8 +55,9 @@ Usage: #inline
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              <a href=\"urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef\">Representation of the original view</a>\n            </div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span idref=\"d5c77e2e-798d-4437-8f73-4875c35065ef\">PDF</span></div>"
 * section[originalRepresentation].entry = Reference(urn:uuid:d5c77e2e-798d-4437-8f73-4875c35065ef)
+
 
 Instance: 9616e879-c4d0-411e-88c3-e001cb7a8fcd
 InstanceOf: CHCorePatientEPR

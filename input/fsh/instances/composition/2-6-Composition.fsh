@@ -1,7 +1,7 @@
 Instance: 2-6-Composition
 InstanceOf: CHEMEDCompositionMedicationPrescription
 Title: "2-6 Composition for Medication Prescription document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 2-6: First entry (including header information, section(s) and references) in the PRE document."
 Usage: #example
 * id = "2-6-Composition"
 * language = #de-CH
@@ -26,7 +26,7 @@ Usage: #example
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"Binary/2-6-pdf\">Representation of the original view</a></div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span idref=\"2-6-pdf\">PDF</span></div>"
 * section[originalRepresentation].entry.reference = "Binary/2-6-pdf"
 
 * section[prescription].title = "Arzneimittelverordnung"

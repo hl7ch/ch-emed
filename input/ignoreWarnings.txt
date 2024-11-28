@@ -1,4 +1,4 @@
-== Suppressed Messages ==
+== Suppressed Messages == 
 
 # All important examples are contained in the IG
 The Implementation Guide contains no examples for this extension
@@ -28,8 +28,6 @@ The code provided (http://snomed.info/sct#408050008) is not in the value set 'Ac
 # Test case for using not recommended timing codes (1-1-1-1)
 Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
 
-# https://github.com/HL7/fhir-ig-publisher/issues/898
-The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
-
-# https://chat.fhir.org/#narrow/stream/179239-tooling/topic/latest.20IG.20Publisher.20console.20messages
-The html source has duplicate anchor Ids:%
+# Warning on composition as standalone instance (in the document context (bundle) there is no warning)
+WARNING: Composition/2-6-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-6-pdf' was not found in the resource
+WARNING: Composition/2-7-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-7-pdf' was not found in the resource

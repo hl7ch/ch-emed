@@ -1,7 +1,7 @@
 Instance: PharmaceuticalAdvice
 InstanceOf: CHEMEDDocumentPharmaceuticalAdvice
 Title: "Pharmaceutical Advice document to change the dosage"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Documentation of a dosage change (1 tablet in the morning instead of 0.5 tablet) for the medication Triatec."
 Usage: #example
 * id = "PharmaceuticalAdvice-ChangeDosage"
 * identifier.system = "urn:ietf:rfc:3986"

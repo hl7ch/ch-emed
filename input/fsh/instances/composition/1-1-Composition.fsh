@@ -1,7 +1,7 @@
 Instance: 1-1-Composition
 InstanceOf: CHEMEDCompositionMedicationTreatmentPlan
 Title: "1-1 Composition for Medication Treatment Plan document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 1-1: First entry (including header information, section(s) and references) in the MTP document."
 Usage: #example
 * id = "1-1-Composition"
 * language = #de-CH

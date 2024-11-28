@@ -1,7 +1,7 @@
 Instance: NotRecommendedTimingCodes
 InstanceOf: CHEMEDMedicationStatementCard
 Title: "Medication Statement with NOT recommended timing codes"
-Description: "Example for MedicationStatment with NOT recommended timing codes"
+Description: "Example for MedicationStatment - Norvasc with NOT recommended timing codes."
 Usage: #example
 * contained = Norvasc
 * extension.extension[0].url = "id"

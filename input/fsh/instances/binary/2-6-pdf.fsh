@@ -1,7 +1,7 @@
 Instance: 2-6-pdf
 InstanceOf: Binary
 Title: "2-6 PDF as original representation of the Medication Prescription document"
-Description: "Example for Binary"
+Description: "Example for Binary - Use case step 2-6: Original representation (PDF) in the PRE document."
 Usage: #example
 * language = #de-CH
 * contentType = #application/pdf

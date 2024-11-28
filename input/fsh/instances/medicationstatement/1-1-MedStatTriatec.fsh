@@ -1,7 +1,7 @@
 Instance: 1-1-MedStatTriatec
 InstanceOf: CHEMEDMedicationStatement
 Title: "1-1 Medication Statement with Medication Triatec"
-Description: "Example for MedicationStatement (MTP)"
+Description: "Example for MedicationStatement (MTP) - Use case step 1-1: The record of the medication Triatec, to be taken by Monika Wegmüller in the future."
 Usage: #example
 * contained = Triatec
 * identifier.system = "urn:ietf:rfc:3986"

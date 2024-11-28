@@ -1,7 +1,7 @@
 Instance: MedStatTriatec-ChangeDosage
 InstanceOf: CHEMEDMedicationStatementChanged
 Title: "Medication Statement with changed dosage"
-Description: "Example for MedicationStatment - Referenced from Observation: PADV 'CHANGE'"
+Description: "Example for MedicationStatment - A new MedicationStatement with the a new dosage. It is referenced from the Observation (PADV 'CHANGE') which includes the note to the change and it references the Observation itself."
 Usage: #example
 * contained = Amlodipin
 * identifier.system = "urn:ietf:rfc:3986"

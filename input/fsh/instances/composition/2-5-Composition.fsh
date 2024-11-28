@@ -1,7 +1,7 @@
 Instance: 2-5-Composition
 InstanceOf: CHEMEDCompositionMedicationTreatmentPlan
 Title: "2-5 Composition for Medication Treatment Plan document"
-Description: "Example for Composition with a person and a device as authors"
+Description: "Example for Composition - Use case step 2-5: First entry (including header information, section(s) and references) in the MTP document. The authors of the document are represented as person and device."
 Usage: #example
 * id = "2-5-Composition"
 * language = #de-CH
@@ -13,7 +13,7 @@ Usage: #example
 * subject.reference = "Patient/MonikaWegmueller"
 * date = "2012-02-04T14:00:00+01:00"
 * author[person].reference = "PractitionerRole/FamilienHausarztAtHausarzt"
-// * author[device].reference = "Device/ExampleDevice"
+* author[device].reference = "Device/ExampleDevice"
 * title = "Therapieentscheid Medikation"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"

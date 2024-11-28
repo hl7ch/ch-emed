@@ -1,7 +1,7 @@
 Instance: 2-2-PharmaceuticalAdvice
 InstanceOf: CHEMEDDocumentPharmaceuticalAdvice
 Title: "2-2 Pharmaceutical Advice document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 2-2: Cancellation of medication with Triatec due to undesired side effects of the active ingredient Ramipril."
 Usage: #example
 * id = "2-2-PharmaceuticalAdvice"
 * meta.lastUpdated = "2020-03-09T12:31:59.738+00:00"

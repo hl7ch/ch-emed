@@ -1,7 +1,7 @@
 Instance: 2-1-Composition
 InstanceOf: CHEMEDCompositionMedicationList
 Title: "2-1 Composition for Medication List document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 2-1: First entry (including header information, section(s) and references) in the LIST document."
 Usage: #example
 * id = "2-1-Composition"
 * language = #de-CH

@@ -1,7 +1,7 @@
 Instance: 2-4-MedDispBeloczok
 InstanceOf: CHEMEDMedicationDispense
 Title: "1-2 Medication Dispense with Medication Beloc Zok"
-Description: "Example for MedicationDispense (DIS)"
+Description: "Example for MedicationDispense (DIS) - Use case step 2-4: The record of the supply of Beloc Zok."
 Usage: #example
 * contained = Beloczok
 * extension.extension[0].url = "id"

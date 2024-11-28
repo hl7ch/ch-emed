@@ -1,7 +1,7 @@
 Instance: MedReq-ComplexDosage
 InstanceOf: CHEMEDMedicationRequest
 Title: "Medication Request - Complex Dosage"
-Description: "Example for MedicationRequest - Complex Dosage (free text), in reserve, without timing"
+Description: "Example for MedicationRequest - Order for the supply of Wallwurz Gel with a complex dosage (free text), as a reserve medication and without timing information."
 Usage: #example
 * contained = Wallwurz
 * identifier.system = "urn:ietf:rfc:3986"

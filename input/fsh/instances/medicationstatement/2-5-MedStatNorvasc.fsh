@@ -1,7 +1,7 @@
 Instance: 2-5-MedStatNorvasc
 InstanceOf: CHEMEDMedicationStatement
 Title: "2-5 Medication Statement with Medication Norvasc"
-Description: "Example for MedicationStatement (MTP)"
+Description: "Example for MedicationStatement (MTP) - Use case step 2-5: The record of the medication Norvasc, to be taken by Monika Wegmüller in the future."
 Usage: #example
 * contained = Norvasc
 * identifier.system = "urn:ietf:rfc:3986"

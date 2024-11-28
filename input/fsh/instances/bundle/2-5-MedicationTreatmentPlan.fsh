@@ -1,7 +1,7 @@
 Instance: 2-5-MedicationTreatmentPlan
 InstanceOf: CHEMEDDocumentMedicationTreatmentPlan
 Title: "2-5 Medication Treatment Plan document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 2-5: Decistion for Norvasc as new medication treatment for Monika Wegmüller."
 Usage: #example
 * id = "2-5-MedicationTreatmentPlan"
 * meta.lastUpdated = "2020-03-09T12:31:59.738+00:00"

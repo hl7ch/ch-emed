@@ -1,7 +1,7 @@
 Instance: MedicationWithATC
 InstanceOf: CHEMEDMedication
 Title: "Medication with ATC"
-Description: "Example for Non-Swiss Medication with ATC code"
+Description: "Example for Medication - NaraDex as a foreign product (non-Swiss) and therefore using the ATC code."
 Usage: #example
 * code = $atc#N02CC02 "naratriptan"
 * code.text = "NaraDex 2,5 mg Filmtabletten"

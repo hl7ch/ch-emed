@@ -3,7 +3,7 @@
 Instance: 2-7-MedicationCard
 InstanceOf: CHEMEDDocumentMedicationCard
 Title: "2-7 Medication Card document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 2-7: Medication plan for Monika Wegmüller, created by her general practitioner. The 'fullUrl' elements of the entries and the references use absolute URLs."
 Usage: #example
 * id = "2-7-MedicationCard"
 * meta.lastUpdated = "2020-02-21T12:31:59.738+00:00"
@@ -27,3 +27,4 @@ Usage: #example
 * entry[=].resource = 2-7-MedStatNorvasc
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Binary/2-7-pdf"
 * entry[=].resource = 2-7-pdf
+* entry[=].id = "2-7-pdf"

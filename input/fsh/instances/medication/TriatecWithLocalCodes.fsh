@@ -1,7 +1,7 @@
 Instance: TriatecWithLocalCodes
 InstanceOf: CHEMEDMedication
 Title: "Triatec with local codes"
-Description: "Example for Medication with local medication codes"
+Description: "Example for Medication - Triatec with the defined GTIN and a local medication code."
 Usage: #example
 * meta.profile[0] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"
 * meta.profile[+] = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"

@@ -1,7 +1,7 @@
 Instance: 2-6-MedReqNorvasc
 InstanceOf: CHEMEDMedicationRequest
 Title: "2-6 Medication Request with Medication Norvasc"
-Description: "Example for MedicationRequest (PRE)"
+Description: "Example for MedicationRequest (PRE) - Use case step 2-6: The order for the supply of Norvasc."
 Usage: #example
 * contained = Norvasc
 * extension.extension[0].url = "id"

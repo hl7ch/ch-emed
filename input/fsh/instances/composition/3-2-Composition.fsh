@@ -1,7 +1,7 @@
 Instance: 3-2-Composition
 InstanceOf: CHEMEDCompositionMedicationDispense
 Title: "3-2 Composition for Medication Dispense document"
-Description: "Example for Composition"
+Description: "Example for Composition - Use case step 3-3: First entry (including header information, section(s) and references) in the DIS document."
 Usage: #example
 * id = "3-2-Composition"
 * language = #de-CH

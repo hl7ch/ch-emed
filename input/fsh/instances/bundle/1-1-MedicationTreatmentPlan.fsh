@@ -1,7 +1,7 @@
 Instance: 1-1-MedicationTreatmentPlan
 InstanceOf: CHEMEDDocumentMedicationTreatmentPlan
 Title: "1-1 Medication Treatment Plan document"
-Description: "Example for Bundle"
+Description: "Example for Bundle - Use case step 1-1: Decision for Triatec as medication treatment for Monika Wegmüller."
 Usage: #example
 * id = "1-1-MedicationTreatmentPlan"
 * meta.lastUpdated = "2020-03-09T12:31:59.738+00:00"

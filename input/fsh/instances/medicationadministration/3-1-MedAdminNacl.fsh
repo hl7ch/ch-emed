@@ -1,7 +1,7 @@
 Instance: 3-1-MedAdminNacl
 InstanceOf: CHEMEDMedicationAdministration
 Title: "Medication Administration NaCL"
-Description: "Example for MedicationAdministration (DIS)"
+Description: "Example for MedicationAdministration (DIS) - Use case step 3-1: The record of the administration (consumation) of NaCL."
 Usage: #example
 * contained = Nacl
 * identifier.system = "urn:ietf:rfc:3986"
