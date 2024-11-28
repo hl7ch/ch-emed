@@ -3,6 +3,13 @@ All significant changes to this FHIR implementation guide will be documented on 
  
 ### STU 5 Sequence - v5.0.0 (2024-12-17)
 
+#### Open Issues
+During the ballot, the following comments came in, which will be taken into account in the further development of CH EMED:
+
+* [#294](https://github.com/hl7ch/ch-emed/issues/294): CH EMED Organization address
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
+
 #### Added
 * [#272](https://github.com/hl7ch/ch-emed/issues/272): Add guidance for 'Relationship between documents'
 
