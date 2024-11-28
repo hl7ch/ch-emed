@@ -6,7 +6,7 @@ Usage: #example
 * id = "1-1-MedicationTreatmentPlan"
 * meta.lastUpdated = "2020-03-09T12:31:59.738+00:00"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* identifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * type = #document
 * timestamp = "2011-11-29T11:00:00+01:00"
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/1-1-Composition"

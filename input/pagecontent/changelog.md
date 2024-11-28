@@ -1,14 +1,16 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
  
-### STU 5 Sequence - v5.0.0 (2024)
+### STU 5 Sequence - v5.0.0 (2024-12-17)
 
 #### Added
+* [#272](https://github.com/hl7ch/ch-emed/issues/272): Add guidance for 'Relationship between documents'
 
 #### Changed / Updated
 * [#278](https://github.com/hl7ch/ch-emed/issues/278): Update the figures of the documents
 * [#274](https://github.com/hl7ch/ch-emed/issues/274): Add profiles for Medication List document when the Composition entries come from changed entries (PADV): CHEMEDMedicationStatementChangedList and CHEMEDMedicationRequestChangedList
 * [#283](https://github.com/hl7ch/ch-emed/issues/283): Relax min card for doseAndRate from 1 to 0 and fix FHIRPath in ch-dosage-3 constraint (DosageMedicationRequest)
+* [#289](https://github.com/hl7ch/ch-emed/issues/289): Add extension parentDocument to the entries in 2-1 Medication List document
 * [#301](https://github.com/hl7ch/ch-emed/issues/301): Add links to mentioned sections for better navigation
 * [#298](https://github.com/hl7ch/ch-emed/issues/298): Update the descriptions for PADV use cases and the according examples
 * [#297](https://github.com/hl7ch/ch-emed/issues/297): Update the descriptions of the examples
@@ -21,7 +23,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#288](https://github.com/hl7ch/ch-emed/issues/288): Typo
 * [#300](https://github.com/hl7ch/ch-emed/issues/300) & [#292](https://github.com/hl7ch/ch-emed/issues/292): Define link from narrative to the binary (original representation)
 * [#307](https://github.com/hl7ch/ch-emed/issues/307): Replace deprecated discriminator (`pattern` -> `value`) resp. removal of the redundant slice definition (inherited from parent profile)
-
 
 #### Issues resolved without amendment (in IG)
 * [#295](https://github.com/hl7ch/ch-emed/issues/295): Typo generated in narrative (tooling side)

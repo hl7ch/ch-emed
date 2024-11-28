@@ -5,7 +5,7 @@ Description: "Example for MedicationStatement (MTP) - Use case step 2-3: The rec
 Usage: #example
 * contained = Beloczok
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
+* identifier.value = "urn:uuid:56c82cf2-123e-4401-80a4-28a5dd059979"
 * status = #active
 * medicationReference.reference = "#Beloczok"
 * subject.reference = "Patient/MonikaWegmueller"

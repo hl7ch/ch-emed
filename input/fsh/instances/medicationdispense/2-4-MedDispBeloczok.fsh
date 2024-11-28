@@ -6,13 +6,13 @@ Usage: #example
 * contained = Beloczok
 * extension.extension[0].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:56c82cf2-123e-4401-80a4-28a5dd059979"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:56c82cf2-123e-4401-80a4-28a5dd059979"
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"
+* identifier.value = "urn:uuid:874d3dae-2304-499a-96e3-f7e139480991"
 * status = #completed
 * medicationReference.reference = "#Beloczok"
 * subject.reference = "Patient/MonikaWegmueller"

@@ -6,13 +6,13 @@ Usage: #example
 * id = "2-2-ObsPharmaceuticalAdvice"
 * extension.extension[0].url = "id"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension.extension[+].url = "externalDocumentId"
 * extension.extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension.extension[=].valueIdentifier.value = "urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"
+* extension.extension[=].valueIdentifier.value = "urn:uuid:7aa20b27-eac0-4fef-a7b9-b10196718b9f"
 * extension.url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:8ed02d0a-2971-11e6-b67b-9e71128cae77"
+* identifier.value = "urn:uuid:e68055ce-1540-4b26-b72d-d9c3e595416a"
 * status = #final
 * code = urn:oid:1.3.6.1.4.1.19376.1.9.2.1#CANCEL
 * subject.reference = "Patient/MonikaWegmueller"
