@@ -4,6 +4,7 @@ Id: ch-emed-medicationdispense
 Title: "CH EMED MedicationDispense (DIS)"
 Description: "Definition of the medication dispense for the medication dispense document"
 * . ^short = "CH EMED MedicationDispense (DIS)"
+* ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.eu/fhir/mpd/StructureDefinition/MedicationDispense-eu-mpd)
 * obeys ch-dosage-meddis
 * contained 1..
 * extension ^slicing.discriminator.type = #value

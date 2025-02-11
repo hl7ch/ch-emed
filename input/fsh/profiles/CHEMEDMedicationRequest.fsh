@@ -4,6 +4,7 @@ Id: ch-emed-medicationrequest
 Title: "CH EMED MedicationRequest (PRE)"
 Description: "Definition of the medication request for the medication prescription document"
 * . ^short = "CH EMED MedicationRequest (PRE)"
+* ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd)
 * obeys ch-dosage-medreq
 * contained 1..
 * extension ^slicing.discriminator.type = #value

@@ -3,9 +3,9 @@ Parent: CHCoreMedication
 Id: ch-emed-medication
 Title: "CH EMED Medication"
 Description: "Definition of the medication"
-
-* obeys ch-emed-med-1
 * . ^short = "CH EMED Medication"
+* obeys ch-emed-med-1
+* ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.eu/fhir/mpd/StructureDefinition/Medication-eu-mpd)
 // CH Core:
 //* code.coding ^slicing.discriminator.type = #value
 //* code.coding ^slicing.discriminator.path = "system"
