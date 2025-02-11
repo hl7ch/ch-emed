@@ -31,3 +31,6 @@ Constraint failed: ch-emed-event-timing: 'For the representation of the time of 
 # Warning on composition as standalone instance (in the document context (bundle) there is no warning)
 WARNING: Composition/2-6-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-6-pdf' was not found in the resource
 WARNING: Composition/2-7-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-7-pdf' was not found in the resource
+
+# Also showing up in https://build.fhir.org/ig/hl7-eu/mpd/qa.html
+ValueSet 'http://terminology.ehdsi.eu/ValueSet/eHDSIDoseForm' not found

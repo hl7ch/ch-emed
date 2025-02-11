@@ -14,3 +14,4 @@ Alias: $ActSubstanceAdminSubstitutionCode =     http://fhir.ch/ig/ch-term/ValueS
 Alias: $ihe-pharmaceuticaladvicestatuslist =    http://fhir.ch/ig/ch-term/ValueSet/ihe-pharmaceuticaladvicestatuslist
 Alias: $UnitCode =                              http://fhir.ch/ig/ch-term/ValueSet/UnitCode
 Alias: $edqm =                                  urn:oid:0.4.0.127.0.16.1.1.2.1
+Alias: $imposeProfile =                         http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
