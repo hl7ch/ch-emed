@@ -9,18 +9,11 @@ The Implementation Guide contains no explicitly linked examples for this profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# Not yet a stable version, which can be published (see https://github.com/hl7ch/ch-term/issues/17)
-None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|%
-
 # Swiss specific value
-Der Displayname%
-There are no valid display names%
-Wrong Display Name%
 
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.com/localcode' could not be found, so the code cannot be validated
-A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 
 # Test case for extensible value set binding (parameter = allow-extensible-warnings)
 The code provided (http://snomed.info/sct#408050008) is not in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|%
