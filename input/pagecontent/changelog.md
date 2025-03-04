@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Fixed 
 * [#309](https://github.com/hl7ch/ch-emed/issues/309): Correction of the level for the restriction (bounds[x] instead of boundsPeriod)
+* [#314](https://github.com/hl7ch/ch-emed/issues/314): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension
 
 
 ### STU 5 Sequence - v5.0.0 (2024-12-17)
