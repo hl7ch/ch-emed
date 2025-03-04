@@ -30,5 +30,5 @@ Usage: #example
 * section[originalRepresentation].entry.reference = "Binary/2-6-pdf"
 
 * section[prescription].title = "Arzneimittelverordnung"
-* section[prescription].code = $loinc#57828-6 "PRESCRIPTIONS"
+* section[prescription].code = $loinc#57828-6 "Prescription list"
 * section[prescription].entry.reference = "MedicationRequest/2-6-MedReqNorvasc"

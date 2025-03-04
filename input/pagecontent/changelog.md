@@ -1,6 +1,8 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
- 
+
+* [#312](https://github.com/hl7ch/ch-emed/issues/312): Fix display value for [LOINC 57828-6](https://loinc.org/57828-6/) (PRESCRIPTIONS -> Prescription list)
+
 ### STU 5 Sequence - v5.0.0 (2024-12-17)
 
 #### Open Issues
