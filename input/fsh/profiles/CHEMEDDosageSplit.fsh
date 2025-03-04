@@ -15,7 +15,7 @@ Description: "Definition of the split dosage (used in MedicationStatement / Medi
 * timing ^short = "When medication should be administered"
 * timing.repeat 1..
 * timing.repeat ^short = "When the event is to occur"
-* timing.repeat.boundsPeriod 0..0
+* timing.repeat.bounds[x] 0..0
 * timing.repeat.when 1.. MS
 * timing.repeat.when obeys ch-emed-event-timing
 * timing.repeat.when ^short = "Code for time period of occurrence"

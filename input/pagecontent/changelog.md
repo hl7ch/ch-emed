@@ -1,6 +1,12 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
- 
+
+### STU 6 Sequence - v6.0.0-ballot (2025-05)
+
+#### Fixed 
+* [#309](https://github.com/hl7ch/ch-emed/issues/309): Correction of the level for the restriction (bounds[x] instead of boundsPeriod)
+
+
 ### STU 5 Sequence - v5.0.0 (2024-12-17)
 
 #### Open Issues
