@@ -1,6 +1,12 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
- 
+
+### STU 6 Sequence - v6.0.0-ballot (2025-05)
+
+#### Fixed 
+* [#313](https://github.com/hl7ch/ch-core/issues/313): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension
+
+
 ### STU 5 Sequence - v5.0.0 (2024-12-17)
 
 #### Open Issues
