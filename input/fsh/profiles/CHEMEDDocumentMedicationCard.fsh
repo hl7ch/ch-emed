@@ -12,11 +12,10 @@ Description: "Definition of the bundle for the medication card document"
 * identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
 * timestamp MS
 * timestamp ^short = "The document's creation date and time"
-* entry MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
-* entry[Composition] 1..1 MS
+* entry[Composition] 1..1 
 * entry[Composition] ^short = "Medication card composition"
 * entry[Composition].resource 1..
 * entry[Composition].resource only CHEMEDCompositionMedicationCard

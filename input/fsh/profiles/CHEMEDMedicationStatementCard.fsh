@@ -19,4 +19,5 @@ Description: "Definition of the medication statement for the medication card doc
 * informationSource.reference 1..
 * reasonCode.text MS
 * note ^short = "Annotation comment"
-* dosage MS
+* dosage[baseEntry] MS
+* dosage[additionalEntry] MS
