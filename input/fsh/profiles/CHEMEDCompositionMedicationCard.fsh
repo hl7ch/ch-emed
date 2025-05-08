@@ -20,7 +20,7 @@ Description: "Definition of the composition for the medication card document"
 * date MS
 * date ^short = "The document's creation date and time"
 
-* author only Reference(CHEMEDPractitionerRole or Device or CHCorePatientEPR or RelatedPerson)
+* author only Reference(CHEMEDPractitionerRole or Device or CHCorePatientEPR or CHCoreRelatedPerson)
 * author MS
 * author ^short = "The author of the document (person or device)"
 

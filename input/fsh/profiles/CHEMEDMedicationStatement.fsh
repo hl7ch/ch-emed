@@ -29,7 +29,7 @@ Description: "Definition of the medication statement for the medication treatmen
 * subject.reference 1..
 * dateAsserted 1..
 * informationSource 1..
-* informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or CHCoreRelatedPerson)
 * informationSource ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
 * informationSource.reference 1..
 * reasonCode ^short = "Treatment reason"

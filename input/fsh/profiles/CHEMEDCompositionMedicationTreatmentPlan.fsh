@@ -25,7 +25,7 @@ Description: "Definition of the composition for the medication treatment plan do
 * author contains
     person 1..* and
     device 0..*
-* author[person] only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* author[person] only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or CHCoreRelatedPerson)
 * author[person] ^short = "The author of the document (person)"
 * author[device] only Reference(Device)
 * author[device] ^short = "The device that created the document"
