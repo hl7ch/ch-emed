@@ -3,6 +3,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 6 Sequence - v6.0.0-ballot (2025-05)
 
+#### Changed / Updated
+* [#323](https://github.com/hl7ch/ch-emed/issues/323): Adapt the RelatedPerson references to the new introduced CH Core RelatedPerson
+
 #### Fixed 
 * [#309](https://github.com/hl7ch/ch-emed/issues/309): Correction of the level for the restriction (bounds[x] instead of boundsPeriod)
 * [#314](https://github.com/hl7ch/ch-emed/issues/314): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension

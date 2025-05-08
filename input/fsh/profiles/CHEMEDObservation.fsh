@@ -37,7 +37,7 @@ Description: "Definition of the observation for the pharmaceutical advice docume
 * effectiveDateTime ^short = "Effective Time"
 * issued 1..
 * performer 1..1
-* performer only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* performer only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or CHCoreRelatedPerson)
 * performer ^short = "The author of the medical decision, see also 'Guidance - Authorship'"
 * performer.reference 1..
 * note 1..1

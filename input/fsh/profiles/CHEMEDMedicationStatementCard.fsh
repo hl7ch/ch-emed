@@ -14,7 +14,7 @@ Description: "Definition of the medication statement for the medication card doc
 * medicationReference only Reference(CHEMEDMedication)
 * medicationReference MS
 * informationSource 1..
-* informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or RelatedPerson)
+* informationSource only Reference(CHEMEDPractitionerRole or CHCorePatientEPR or CHCoreRelatedPerson)
 * informationSource ^short = "The \"last\" author of the medical decision, see also 'Guidance - Authorship'"
 * informationSource.reference 1..
 * reasonCode.text MS
