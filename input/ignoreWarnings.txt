@@ -29,11 +29,3 @@ WARNING: Composition/2-7-Composition: Composition.section[1].text.div: The targe
 # Caused through underlying profile (showing up in snapshot)
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
-
-# Will resolve with the next version of the IG Publisher
-URL value 'urn:oid:2.999.1' does not resolve
-URL value 'urn:oid:2.51.1.3' does not resolve
-URL value 'urn:oid:2.51.1.1' does not resolve
-URL value 'urn:oid:2.16.756.5.30.1.123.100.2.1.1' does not resolve
-URL value 'urn:oid:2.16.756.5.35' does not resolve
-URL value 'urn:oid:2.16.756.5.45' does not resolve
