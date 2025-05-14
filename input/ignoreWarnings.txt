@@ -9,9 +9,6 @@ The Implementation Guide contains no explicitly linked examples for this profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# Information: There are no valid display names found for the code xxx for language(s) 'de-CH'. The display is 'xxx' the default language display
-There are no valid display names found for the code%
-
 # External code system
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.com/localcode' could not be found, so the code cannot be validated
