@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 6 Sequence - v6.0.0-ballot (2025-05)
+### STU 6 Sequence - v6.0.0-ballot (2025-05-22)
 
 #### Changed / Updated
 * [#323](https://github.com/hl7ch/ch-emed/issues/323): Adapt the RelatedPerson references to the new introduced CH Core RelatedPerson
