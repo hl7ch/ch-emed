@@ -25,8 +25,13 @@ Usage: #example
 
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
+* section[originalRepresentation].text.extension.url = "http://hl7.org/fhir/StructureDefinition/textLink"
+* section[originalRepresentation].text.extension.extension[0].url = "htmlid"
+* section[originalRepresentation].text.extension.extension[=].valueString = "e1464734-f291-41e4-8d53-ef5c3a7fd123"
+* section[originalRepresentation].text.extension.extension[+].url = "data"
+* section[originalRepresentation].text.extension.extension[=].valueUri = "http://test.fhir.ch/r4/Binary/2-7-pdf"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span idref=\"2-7-pdf\">PDF</span></div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span id=\"e1464734-f291-41e4-8d53-ef5c3a7fd123\">PDF</span></div>"
 * section[originalRepresentation].entry.reference = "Binary/2-7-pdf"
 
 * section[card].title = "Medikamentenliste"

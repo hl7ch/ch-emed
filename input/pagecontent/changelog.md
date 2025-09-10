@@ -8,7 +8,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 
 #### Fixed 
-
+* [#313](https://github.com/hl7ch/ch-emed/issues/313): Apply textLink extension in examples (according to guidance in CH Core)
 
 ### STU 6 Sequence - v6.0.0-ballot (2025-05-22)
 
