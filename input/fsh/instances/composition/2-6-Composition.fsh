@@ -2,7 +2,7 @@ Instance: 2-6-Composition
 InstanceOf: CHEMEDCompositionMedicationPrescription
 Title: "2-6 Composition for Medication Prescription document"
 Description: "Example for Composition - Use case step 2-6: First entry (including header information, section(s) and references) in the PRE document."
-Usage: #example
+Usage: #inline
 * id = "2-6-Composition"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"

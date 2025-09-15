@@ -19,10 +19,11 @@ The code provided (http://snomed.info/sct#408050008) is not in the value set 'Ac
 # Test case for using not recommended timing codes (1-1-1-1)
 Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
 
-# Warning on composition as standalone instance (in the document context (bundle) there is no warning)
-WARNING: Composition/2-6-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-6-pdf' was not found in the resource
-WARNING: Composition/2-7-Composition: Composition.section[1].text.div: The target of the HTML idref attribute '2-7-pdf' was not found in the resource
-
 # Caused through underlying profile (showing up in snapshot)
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+
+# Display values
+Wrong Display Name%
+There are no valid display names found for the code%
+%has no Display Names for the language de-CH
