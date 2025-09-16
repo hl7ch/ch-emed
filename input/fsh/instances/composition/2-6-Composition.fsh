@@ -2,7 +2,7 @@ Instance: 2-6-Composition
 InstanceOf: CHEMEDCompositionMedicationPrescription
 Title: "2-6 Composition for Medication Prescription document"
 Description: "Example for Composition - Use case step 2-6: First entry (including header information, section(s) and references) in the PRE document."
-Usage: #example
+Usage: #inline
 * id = "2-6-Composition"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -25,8 +25,13 @@ Usage: #example
 
 * section[originalRepresentation].title = "Original Darstellung"
 * section[originalRepresentation].code = $loinc#55108-5 "Clinical presentation Document"
+* section[originalRepresentation].text.extension.url = "http://hl7.org/fhir/StructureDefinition/textLink"
+* section[originalRepresentation].text.extension.extension[0].url = "htmlid"
+* section[originalRepresentation].text.extension.extension[=].valueString = "7a010bd8-0caf-4d31-9674-3f50e3cbf89a"
+* section[originalRepresentation].text.extension.extension[+].url = "data"
+* section[originalRepresentation].text.extension.extension[=].valueUri = "http://test.fhir.ch/r4/Binary/2-6-pdf"
 * section[originalRepresentation].text.status = #generated
-* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span idref=\"2-6-pdf\">PDF</span></div>"
+* section[originalRepresentation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Representation of the original view: <span id=\"7a010bd8-0caf-4d31-9674-3f50e3cbf89a\">PDF</span></div>"
 * section[originalRepresentation].entry.reference = "Binary/2-6-pdf"
 
 * section[prescription].title = "Arzneimittelverordnung"
