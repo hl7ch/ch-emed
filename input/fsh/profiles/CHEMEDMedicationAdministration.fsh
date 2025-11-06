@@ -17,12 +17,7 @@ Description: "Definition of the medication administration for the medication dis
 * extension[treatmentPlan] ^short = "Reference to the medication treatment plan"
 * identifier 1..1
 * identifier ^short = "MedicationAdministration Identifier"
-* identifier.system 1..
-* identifier.system = "urn:ietf:rfc:3986" (exactly)
-* identifier.value 1..
-* identifier.value ^short = "Identifier value as UUID"
-* identifier.value ^example.label = "CH EMED"
-* identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
+* identifier only CHEMEDUUIDIdentifier
 * status = #completed (exactly)
 * medicationReference only Reference(CHEMEDMedicationMedicationDispense)
 * medicationReference ^short = "Reference to the contained medication"

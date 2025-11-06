@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 6 Sequence - v6.0.0 (2025-12)
 
 #### Added
+* [#331](https://github.com/hl7ch/ch-emed/issues/331): Introduction UUID Identifier data type profile to validate identifier requirements as described in the relationship between documents guidance
 
 #### Changed / Updated
 

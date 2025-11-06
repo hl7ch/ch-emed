@@ -15,12 +15,7 @@ Description: "Definition of the medication statement for the medication treatmen
 */
 * identifier 1..1
 * identifier ^short = "MedicationStatement Identifier"
-* identifier.system 1..
-* identifier.system = "urn:ietf:rfc:3986" (exactly)
-* identifier.value 1..
-* identifier.value ^short = "Identifier value as UUID"
-* identifier.value ^example.label = "CH EMED"
-* identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
+* identifier only CHEMEDUUIDIdentifier
 * medicationReference only Reference(CHEMEDMedication)
 * medicationReference ^short = "Reference to the contained medication"
 * medicationReference ^type.aggregation = #contained

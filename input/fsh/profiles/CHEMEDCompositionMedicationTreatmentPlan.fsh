@@ -6,10 +6,7 @@ Description: "Definition of the composition for the medication treatment plan do
 
 * . ^short = "CH EMED Medication Treatment Plan Composition"
 * language ^short = "Language of the document"
-* identifier.system 1..
-* identifier.value 1..
-* identifier.value ^example.label = "CH EMED"
-* identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
+* identifier only CHEMEDUUIDIdentifier
 * status = #final (exactly)
 
 * type = $sct#761931002

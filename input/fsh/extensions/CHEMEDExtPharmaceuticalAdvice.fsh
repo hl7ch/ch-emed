@@ -18,9 +18,9 @@ Description: "Extension to reference an external Observation and the Pharmaceuti
 * extension[id] only Extension
 * extension[id] ^short = "Identifier of the referenced external Observation"
 * extension[id].url only uri
-* extension[id].value[x] only Identifier
+* extension[id].value[x] only CHEMEDUUIDIdentifier
 * extension[externalDocumentId] only Extension
 * extension[externalDocumentId] ^short = "Identifier of the referenced external Pharmaceutical Advice document"
 * extension[externalDocumentId].url only uri
-* extension[externalDocumentId].value[x] only Identifier
+* extension[externalDocumentId].value[x] only CHEMEDUUIDIdentifier
 * url only uri
