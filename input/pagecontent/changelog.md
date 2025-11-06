@@ -3,6 +3,12 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 6 Sequence - v6.0.0 (2025-12)
 
+#### Open Issues
+During the ballot, the following comment came in, which will be taken into account in the further development of CH EMED:
+* [#332](https://github.com/hl7ch/ch-emed/issues/332): Integration of actor definitions
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
+
 #### Added
 
 #### Changed / Updated
