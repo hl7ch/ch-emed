@@ -23,7 +23,8 @@ Constraint failed: ch-emed-event-timing: 'For the representation of the time of 
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 
-# Display values
+# Display values (and LOINC additional to SCT codes)
 Wrong Display Name%
 There are no valid display names found for the code%
 %has no Display Names for the language de-CH
+The provided code%
