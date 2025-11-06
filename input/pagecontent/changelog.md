@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 6 Sequence - v6.0.0 (2025-12)
 
 #### Added
+* [#328](https://github.com/hl7ch/ch-emed/issues/328): Introduction of conformance verbiage with RFC 2119 key words
 
 #### Changed / Updated
 
