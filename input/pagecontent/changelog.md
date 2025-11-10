@@ -3,13 +3,22 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 6 Sequence - v6.0.0 (2025-12)
 
+#### Open Issues
+During the ballot, the following comment came in, which will be taken into account in the further development of CH EMED:
+* [#332](https://github.com/hl7ch/ch-emed/issues/332): Integration of actor definitions
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
+
 #### Added
 * [#331](https://github.com/hl7ch/ch-emed/issues/331): Introduction UUID Identifier data type profile to validate identifier requirements as described in the relationship between documents guidance
+* [#328](https://github.com/hl7ch/ch-emed/issues/328): Introduction of conformance verbiage with RFC 2119 key words
 
 #### Changed / Updated
 
 #### Fixed 
 * [#313](https://github.com/hl7ch/ch-emed/issues/313): Apply textLink extension in examples (according to guidance in CH Core)
+* [#329](https://github.com/hl7ch/ch-emed/issues/329): Typo
+* [#330](https://github.com/hl7ch/ch-emed/issues/330): Use unique GLN for Practitioner and Organizations
 
 ### STU 6 Sequence - v6.0.0-ballot (2025-05-22)
 

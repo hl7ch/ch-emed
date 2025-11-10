@@ -97,7 +97,7 @@ Instance: 7801bb18-5c19-4d4c-bcb5-536a1f51f83e
 InstanceOf: CHCoreOrganization
 Usage: #inline
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000234438"
+* identifier[GLN].value = "7601000618627"
 * name = "Hausarzt"
 * address.line = "Krankenstrasse 2"
 * address.city = "Zürich"

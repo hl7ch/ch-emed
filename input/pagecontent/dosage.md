@@ -1,6 +1,6 @@
 ### Overview
 
-This implementation guide currently describes the **normal dosing** and the **split dosing**. The normal dosing can be given in a structured form and/or as narrative text. If possible, the structured form should be provided. In case structured dosage instructions are not provided or for complex dosages, the dosage can be represented using narrative text.
+This implementation guide currently describes the **normal dosing** and the **split dosing**. The normal dosing can be given in a structured form and/or as narrative text. If possible, the structured form SHOULD be provided. In case structured dosage instructions are not provided or for complex dosages, the dosage can be represented using narrative text.
 
 In the structured form, the format 1-1-1-1, meaning the administration time in the morning, at noon, in the evening, at night, is supported. For [normal dosing](#normal-dosing), the dose quantity is the same at the defined administration times (e.g. 1-0-0-0, 1-0-1-0). For [split dosing](#split-dosing), the dose quantity varies depending on the administration time (e.g. 1-0-2-0, 2-1-2-0).   
 
@@ -10,16 +10,16 @@ The dosage instruction is based on the *6.3.4.6 Dosage Instructions Content Modu
 ##### Start and Stop
 The (outer) bounds of the treatment period are mapped as start and/or end dates (with or without time).
 ##### Timing Event
-For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) are highly recommended for the Swiss use.
+For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT from the [ValueSet EventTiming](https://www.hl7.org/fhir/valueset-event-timing.html) SHOULD be used for the Swiss use.
 
 #### Dose and Rate
-The amount of medication administered according to the 1-1-1-1 scheme is represented with SNOMED CT or UCUM codes, which are defined in the [ValueSet UnitCode](http://fhir.ch/ig/ch-term/ValueSet-UnitCode.html).
+The amount of medication administered according to the 1-1-1-1 scheme SHALL be represented with SNOMED CT or UCUM codes, which are defined in the [ValueSet UnitCode](http://fhir.ch/ig/ch-term/ValueSet-UnitCode.html).
 
 #### In Reserve
-There is an option to indicate whether the medication is taken only as needed (e.g., when pain occurs) as part of the specified dosing schedule. If it is a reserve medication, the dosage indicated is the maximum dosage the patient may take.
+Implementations MAY indicate whether the medication is taken only as needed (e.g., when pain occurs) as part of the specified dosing schedule. If it is a reserve medication, the dosage indicated is the maximum dosage the patient may take.
 
 #### Route of Administration
-A code for specifying the route of administration into or onto a patient's body comes from the [ValueSet EDQM - RouteOfAdministration](http://fhir.ch/ig/ch-term/ValueSet-edqm-routeofadministration.html).
+A code for specifying the route of administration into or onto a patient's body SHALL be taken from the [ValueSet EDQM - RouteOfAdministration](http://fhir.ch/ig/ch-term/ValueSet-edqm-routeofadministration.html).
 
 #### Patient Instruction
 Instructions to the patient regarding the administration of the medication, e.g. taking with food. The instructions are in a patient understandable language.   
@@ -147,8 +147,8 @@ Dosing example with the structured form and supplemented by the narrative text:
 ```
 
 ### Split Dosing
-The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element can occur once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions is defined by the required element `Dosage.sequence`.   
-The information, which is the same for all dosage elements (`patientInstruction`, `timing.repeat.boundsPeriod`, `asNeeded`, `route`) is mapped in the first dosage element.  
+The split dosing differs from the normal dosing in that the dosage element is repeated. In contrast to normal dosing, where the dosage element occurs once, the **dosage element** can be repeated **n times** in split dosing. The order of the dosage instructions SHALL be defined by the required element `Dosage.sequence`.   
+The information, which is the same for all dosage elements (`patientInstruction`, `timing.repeat.boundsPeriod`, `asNeeded`, `route`) MUST be mapped in the first dosage element.  
 
 Dosing example based on the use case step 2-3:
 

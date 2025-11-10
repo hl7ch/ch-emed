@@ -16,14 +16,14 @@ Madame Wegmüller Monika (nom modifié), née le 15 mai 1943 (date modifiée), s
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Posologie | Pos. Matin | Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension |
+| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension |
 
 *Décision thérapeutique relative à la médication*: [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.html)
 
 {:class="table table-bordered"}
 | Nom de la préparation | Nom du principe actif | Forme galénique | Dose par unité | Taille de l’emballage | Packungs- grösse | Posologie | Pos. Morgen| Pos. Midi | Pos. Soir | Pos. Nuit | Mode d’administration | Commentaire | Durée du traitement | Motif du traitement | Date/heure de l’administration | Identification du patient |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ | :------- | :------ | :------- | :------ |
-| Triatec | Rampiril | Cpr. | 2.5 mg / Cpr. | 1 | 20 pces | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension | | |
+| Triatec | Ramipril | Cpr. | 2.5 mg / Cpr. | 1 | 20 pces | Prendre 1/2 comprimé le matin | 0.5 | 0 | 0 | 0 | oral | | | Hypertension | | |
 
 *Remise*: [1-2 Medication Dispense document](Bundle-1-2-MedicationDispense.html)
 
