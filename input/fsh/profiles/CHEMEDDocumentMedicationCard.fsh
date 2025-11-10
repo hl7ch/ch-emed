@@ -6,10 +6,7 @@ Description: "Definition of the bundle for the medication card document"
 
 * . ^short = "CH EMED Medication Card Document"
 * identifier 1..
-* identifier.system 1..
-* identifier.value 1..
-* identifier.value ^example.label = "CH EMED"
-* identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
+* identifier only CHEMEDUUIDIdentifier
 * timestamp MS
 * timestamp ^short = "The document's creation date and time"
 * entry ^slicing.discriminator.type = #profile

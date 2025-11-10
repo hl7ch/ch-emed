@@ -18,9 +18,9 @@ Description: "Extension to reference an external MedicationStatement and the Med
 * extension[id] only Extension
 * extension[id] ^short = "Identifier of the referenced external MedicationStatement"
 * extension[id].url only uri
-* extension[id].value[x] only Identifier
+* extension[id].value[x] only CHEMEDUUIDIdentifier
 * extension[externalDocumentId] only Extension
 * extension[externalDocumentId] ^short = "Identifier of the referenced external Medication Treatment Plan document"
 * extension[externalDocumentId].url only uri
-* extension[externalDocumentId].value[x] only Identifier
+* extension[externalDocumentId].value[x] only CHEMEDUUIDIdentifier
 * url only uri

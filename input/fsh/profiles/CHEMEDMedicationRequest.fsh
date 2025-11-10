@@ -13,12 +13,7 @@ Description: "Definition of the medication request for the medication prescripti
 * extension[treatmentplan] ^short = "Reference to the medication treatment plan"
 * identifier 1..1
 * identifier ^short = "MedicationRequest Identifier"
-* identifier.system 1..
-* identifier.system = "urn:ietf:rfc:3986" (exactly)
-* identifier.value 1..
-* identifier.value ^short = "Identifier value as UUID"
-* identifier.value ^example.label = "CH EMED"
-* identifier.value ^example.valueString = "urn:uuid:daa8cd41-34a1-4a9c-9a6d-cd3f850142e9"
+* identifier only CHEMEDUUIDIdentifier
 * medicationReference only Reference(CHEMEDMedication)
 * medicationReference ^short = "Reference to the contained medication"
 * medicationReference ^type.aggregation = #contained

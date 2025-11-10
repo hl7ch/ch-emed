@@ -10,6 +10,7 @@ During the ballot, the following comment came in, which will be taken into accou
 See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 
 #### Added
+* [#331](https://github.com/hl7ch/ch-emed/issues/331): Introduction UUID Identifier data type profile to validate identifier requirements as described in the relationship between documents guidance
 * [#328](https://github.com/hl7ch/ch-emed/issues/328): Introduction of conformance verbiage with RFC 2119 key words
 
 #### Changed / Updated

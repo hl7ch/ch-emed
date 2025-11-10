@@ -13,8 +13,8 @@ _The colors of the identifiers and the resource box should reflect the relations
 ### Identifiers
 
 #### Identifier Format
-In CH EMED it is specified to use an [UUID](https://hl7.org/fhir/R4/datatypes.html#uuid) as identifier, for both the document and resource identifiers.   
-For representing UUIDs the `system` needs to be `urn:ietf:rfc:3986` as described [here](https://hl7.org/fhir/R4/datatypes.html#:~:text=If%20the%20identifier,of%20some%20kind). The `value` has to start with `urn:uuid:`.
+CH EMED REQUIRES the use of [UUIDs](https://hl7.org/fhir/R4/datatypes.html#uuid) as identifiers for both document and resource identifiers (see also data type profile [CH EMED UUID Identifier](StructureDefinition-ch-emed-uuid-identifier.html)).   
+For representing UUIDs the `system` SHALL be `urn:ietf:rfc:3986` as described [here](https://hl7.org/fhir/R4/datatypes.html#:~:text=If%20the%20identifier,of%20some%20kind). The `value` SHALL start with `urn:uuid:`.
 
 #### Document Identifier
 Document identifier in [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.html):   
