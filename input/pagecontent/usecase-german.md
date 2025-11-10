@@ -17,14 +17,14 @@ Frau Wegmüller Monika (Name geändert), geboren am 15. Mai 1943 (Datum geänder
 {:class="table table-bordered"}
 | Präparate- name | Wirkstoff- name | Galenische Form | Dosis pro Einheit | Dosierung | Dos. Morgen | Dos. Mittag | Dos. Abend | Dos. Nacht | Verabreichungs- weg | Kommentar | Anwendungs- dauer | Behandlungs- grund |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ |
-| Triatec | Rampiril | Tbl | 2.5 mg / Tbl | Morgens 1/2 Tablette einnehmen | 0.5 | 0 | 0 | 0 | oral | | | Bluthochdruck |
+| Triatec | Ramipril | Tbl | 2.5 mg / Tbl | Morgens 1/2 Tablette einnehmen | 0.5 | 0 | 0 | 0 | oral | | | Bluthochdruck |
 
 *Therapieentscheid Medikation*: [1-1 Medication Treatment Plan document](Bundle-1-1-MedicationTreatmentPlan.html)
 
 {:class="table table-bordered"}
 | Präparate- name | Wirkstoff- name | Galenische Form | Dosis pro Einheit | Anzahl Packungen | Packungs- grösse | Dosierung | Dos. Morgen| Dos. Mittag | Dos. Abend | Dos. Nacht | Verabreichungs- weg | Kommentar | Anwendungs- dauer | Behandlungs- grund | Datum/Zeit der Abgabe/Anwendung | Identifikation des Empfängers |
 | :------- | :------ | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------ | :------- | :------ | :------- | :------ |
-| Triatec | Rampiril | Tbl | 2.5 mg / Tbl | 1 | 20 Stk. | Morgens 1/2 Tablette einnehmen | 0.5 | 0 | 0 | 0 | oral | | | Bluthochdruck | | |
+| Triatec | Ramipril | Tbl | 2.5 mg / Tbl | 1 | 20 Stk. | Morgens 1/2 Tablette einnehmen | 0.5 | 0 | 0 | 0 | oral | | | Bluthochdruck | | |
 
 *Abgabe*: [1-2 Medication Dispense document](Bundle-1-2-MedicationDispense.html)
 
