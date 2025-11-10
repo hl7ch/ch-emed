@@ -18,8 +18,8 @@ Description: "Definition of the observation for the pharmaceutical advice docume
 * extension[treatmentPlan] ^short = "Reference to the medication treatment plan"
 * extension[prescription] ^short = "Reference to the medication prescription"
 * extension[dispense] ^short = "Reference to the medication dispense"
-* extension[medicationStatementChanged] ^short = "Reference to the changed medication statement (it shall have the same identifier as the entry it replaces)"
-* extension[medicationRequestChanged] ^short = "Reference to the changed medication request (it shall have the same identifier as the entry it replaces)"
+* extension[medicationStatementChanged] ^short = "Reference to the changed medication statement (it SHALL have the same identifier as the entry it replaces)"
+* extension[medicationRequestChanged] ^short = "Reference to the changed medication request (it SHALL have the same identifier as the entry it replaces)"
 * identifier 1..1
 * identifier ^short = "Observation Identifier"
 * identifier.system 1..

@@ -17,7 +17,7 @@ A definition for CodeSystem 'http://example.com/localcode' could not be found, s
 The code provided (http://snomed.info/sct#408050008) is not in the value set 'ActivePharmaceuticalIngredient' (http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient|%
 
 # Test case for using not recommended timing codes (1-1-1-1)
-Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT are highly recommended.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
+Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT SHOULD be used.' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
 
 # Caused through underlying profile (showing up in snapshot)
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
