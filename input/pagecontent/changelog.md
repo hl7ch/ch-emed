@@ -13,8 +13,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-emed/issues).
 * [#331](https://github.com/hl7ch/ch-emed/issues/331): Introduction UUID Identifier data type profile to validate identifier requirements as described in the relationship between documents guidance
 * [#328](https://github.com/hl7ch/ch-emed/issues/328): Introduction of conformance verbiage with RFC 2119 key words
 
-#### Changed / Updated
-
 #### Fixed 
 * [#313](https://github.com/hl7ch/ch-emed/issues/313): Apply textLink extension in examples (according to guidance in CH Core)
 * [#329](https://github.com/hl7ch/ch-emed/issues/329): Typo
