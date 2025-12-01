@@ -22,11 +22,6 @@ Description: "Definition of the composition for the medication list document"
 
 * confidentiality.extension[confidentialityCode] ^short = "Swiss realm of confidentiality code according to the Swiss EPR regulation"
 
-* attester ^short = "The authenticator of the document (person)"
-* attester[legalAuthenticator] ^short = "The legal authenticator of the document (person)"
-* attester[legalAuthenticator].time ^short = "Timestamp of the signature"
-* attester[legalAuthenticator].party ^short = "Who attested the composition"
-
 * section ^short = "Medication list"
 * section contains
     list 1..1 and
