@@ -1,7 +1,7 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 6 Sequence - v6.0.0 (2025-12)
+### STU 6 Sequence - v6.0.0 (2025-12-15)
 
 #### Open Issues
 During the ballot, the following comment came in, which will be taken into account in the further development of CH EMED:
