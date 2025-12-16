@@ -1,6 +1,9 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### STU 7 Sequence - v7.0.0-ballot (unreleased)
+
+
 ### STU 6 Sequence - v6.0.0 (2025-12-16)
 
 #### Open Issues
