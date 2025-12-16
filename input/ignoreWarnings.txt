@@ -19,15 +19,16 @@ The code provided (http://snomed.info/sct#408050008) is not in the value set 'Ac
 # Test case for using not recommended timing codes (1-1-1-1)
 Constraint failed: ch-emed-event-timing: 'For the representation of the time of administration according to the 1-1-1-1 scheme, the values MORN-NOON-EVE-NIGHT SHOULD be used. ($this='MORN' or $this='NOON' or $this='EVE' or $this='NIGHT')' (defined in http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage)
 
-# Caused through underlying profile (showing up in snapshot)
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
-The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+# Caused through underlying profile 
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|%
+The extension http://hl7.org/fhir/StructureDefinition/regex|%
+The extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer|%
+The extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time|%
 
 # Display values (and LOINC additional to SCT codes)
 Wrong Display Name%
 There are no valid display names found for the code%
 %has no Display Names for the language de-CH
-The provided code%
 
 # Known IG Publisher issue (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Publisher.20v2.2E0.2E24.20-.20error.20in.20local.20build/with/547712458)
 The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
