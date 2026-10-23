@@ -28,7 +28,7 @@ To explain the different focus areas in more detail, there is a guidance section
 
 </div>
 
-**Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+**Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](../package.tgz).
 
 ### Conformance Expectations
 

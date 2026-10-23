@@ -1,6 +1,6 @@
 Instance: Obs-ChangeDosage
 InstanceOf: CHEMEDObservation
-Title: "Observation for Pharmaceutical Advice document"
+Title: "Observation for Pharmaceutical Advice document - change of dosage"
 Description: "Example for Observation (PADV) - CHANGE with new MedicationStatement (change in dosage: 1 tablet in the morning instead of 0.5 tablet)."
 Usage: #example
 

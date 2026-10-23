@@ -1,8 +1,12 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 7 Sequence - v7.0.0-ballot (unreleased)
-
+### STU 6 Sequence - v6.0.1 (unreleased)
+Updated dependencies; applied corresponding IG updates and technical fixes required by the updated HL7 IG Publisher.
+* [#340](https://github.com/hl7ch/ch-emed/issues/340): Update dependencies
+   * CH Core: 6.0.0 -> 7.0.0
+   * hl7.terminology.r4: 7.0.1 -> 7.4.0
+   * hl7.fhir.uv.extensions.r4: 5.2.0 -> 5.3.0
 
 ### STU 6 Sequence - v6.0.0 (2025-12-16)
 
